@@ -96,12 +96,13 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     val scope = rememberCoroutineScope()
     var route by rememberSaveable { mutableStateOf("home") }
     var selectedSection by rememberSaveable { mutableStateOf<String?>(null) }
-    var importedSharedText by remember { mutableStateOf(false) }
+    var importedSharedText by rememberSaveable { mutableStateOf(false) }
     LaunchedEffect(auth, sharedText) {
         if (auth is AuthState.SignedIn && !sharedText.isNullOrBlank() && !importedSharedText) {
-            runCatching { vm.importSharedText(sharedText) }
-            selectedSection = "Notes"
-            importedSharedText = true
+            runCatching { vm.importSharedText(sharedText) }.onSuccess {
+                selectedSection = "Notes"
+                importedSharedText = true
+            }
         }
     }
 
@@ -110,7 +111,8 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
         return
     }
     BackHandler(enabled = drawerState.currentValue == DrawerValue.Closed && (selectedSection != null || route != "home")) {
-        if (selectedSection != null) selectedSection = null else route = "home"
+        selectedSection = null
+        route = "home"
     }
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -176,7 +178,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 section = selectedSection!!,
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
-                onAssistant = { context -> route = "assistant"; vm.send(context) }
+                onAssistant = { context -> selectedSection = null; route = "assistant"; vm.send(context) }
             )
             else -> SuricHome(
                 email = (auth as? AuthState.SignedIn)?.email,

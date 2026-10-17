@@ -31,6 +31,6 @@ Use a physical Android 13+ device. No real-device check should be inferred from 
 
 ## Current environment evidence
 
-On 17 October 2026, the final local source revision passed `testDebugUnitTest`, `lintDebug`, and `assembleDebug` with Java 17 and Android SDK Platform 36. The debug APK was produced at `app/build/outputs/apk/debug/app-debug.apk` (19,509,221 bytes; SHA-256 `1F8951D2263BB522B7B6686E5D334F04B70317A84F7CDB9FB98BDEA9B53B7944`). The APK is a local debug artifact and is not a release build.
+On 17 October 2026, the current local source passed `testDebugUnitTest`, `lintDebug`, and `assembleDebug` with Java 17 and Android SDK Platform 36. The debug APK was produced at `app/build/outputs/apk/debug/app-debug.apk` (19,692,265 bytes; SHA-256 `2386C336148BF1AA0C7460E95CBE720C0E5AD8862F023061EE4DC4D584E06108`). The APK is a local debug artifact and is not a release build.
 
-No Android phone or emulator is connected (`adb devices -l` returned no devices). Suric's screen behavior, ChatGPT sign-in, live AI response, photo request, restart recovery, calendar flow, and error handling remain unverified on-device. These local checks do not establish that GitHub Actions passed; no workflow run has been triggered for this revision.
+No Android phone or emulator is connected (`adb devices -l` returned no devices). Suric's screen behavior, ChatGPT sign-in, live AI response, photo request, restart recovery, calendar flow, and error handling remain **NOT VERIFIED on-device**. GitHub Actions and CodeQL results are revision-specific; consult the pull request checks for the current branch head. Passing CI does not establish phone behavior.
