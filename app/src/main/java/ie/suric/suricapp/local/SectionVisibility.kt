@@ -6,7 +6,7 @@ import android.content.Context
 object SectionVisibility {
     val sectionIds = listOf("Garden", "Pottery", "Shopping", "Bills", "DIY & Home", "Cooking", "Cleaning", "Retro & Android", "Notes")
     fun sanitize(stored: Set<String>): Set<String> = stored.intersect(sectionIds.toSet())
-    fun filterInDefaultOrder<T>(items: List<T>, id: (T) -> String, visible: Set<String>): List<T> =
+    fun <T> filterInDefaultOrder(items: List<T>, id: (T) -> String, visible: Set<String>): List<T> =
         items.filter { id(it) in sanitize(visible) }
 }
 
