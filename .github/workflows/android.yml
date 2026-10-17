@@ -38,6 +38,10 @@ jobs:
         run: ./gradlew --no-daemon lintDebug
       - name: Build debug APK
         run: ./gradlew --no-daemon assembleDebug
+      - name: Android release lint
+        run: ./gradlew --no-daemon lintRelease
+      - name: Build unsigned release APK
+        run: ./gradlew --no-daemon assembleRelease
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:

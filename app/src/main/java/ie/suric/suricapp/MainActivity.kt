@@ -88,6 +88,8 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     private val _localDataError = MutableStateFlow<String?>(null)
     val localDataError = _localDataError.asStateFlow()
     private val localEntriesMutex = Mutex()
+    private val aiSaveMutex = Mutex()
+    private val savedAiResponses = mutableMapOf<String, PersonalEntry>()
     private val credentialMutex = Mutex()
 
     private fun transitionAuth(event: AuthStateMachine.Event) {
@@ -175,6 +177,13 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         withContext(Dispatchers.IO) { localEntries.restore(entry); _personalEntries.value = localEntries.allEntries() }
         _localDataError.value = null
     }
+    suspend fun saveAssistantResponse(text: String): PersonalEntry = aiSaveMutex.withLock {
+        val body = text.trim()
+        require(body.isNotEmpty()) { "There is no completed answer to save." }
+        savedAiResponses[body]?.let { return@withLock it }
+        val date = java.text.DateFormat.getDateTimeInstance(java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT).format(java.util.Date())
+        addEntry("Notes", "Ask Suric response — $date", body).also { savedAiResponses[body] = it }
+    }
     suspend fun importSharedText(text: String) {
         val cleaned = text.trim()
         if (cleaned.isNotEmpty()) {
@@ -186,6 +195,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
 
     fun updateDraft(value: String) { _conversation.value = _conversation.value.copy(draft = value) }
     fun send(text: String = _conversation.value.draft, image: Uri? = null) {
+        if (_auth.value !is AuthState.SignedIn || tokens == null) {
+            _conversation.value = _conversation.value.copy(error = "Connect ChatGPT to request a new AI response. Your local sections and saved information remain available.")
+            return
+        }
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
         val displayText = cleaned.ifEmpty { "What is in this picture?" }
@@ -210,7 +223,11 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
                 if (e is ApiException && e.statusCode == 401) {
                     _conversation.value = ConversationReducer.failed(_conversation.value, "Your ChatGPT sign-in expired. Reconnect, then retry your question.")
                     transitionAuth(AuthStateMachine.Event.Expired)
-                } else _conversation.value = ConversationReducer.failed(_conversation.value, e.message ?: "The request failed. Try again.")
+                } else {
+                    val message = if ((e is ApiException && e.statusCode == 0) || (e is java.io.IOException && e !is ApiException)) "An internet connection is required for a new Ask Suric response. Your local information is still available offline."
+                    else e.message ?: "The request failed. Try again."
+                    _conversation.value = ConversationReducer.failed(_conversation.value, message)
+                }
             }
         }
     }

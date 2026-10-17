@@ -20,4 +20,11 @@ class ConversationReducerTest {
         assertEquals("offline", failed.error)
         assertEquals("question", failed.messages.single().text)
     }
+    @Test fun onlyConfirmedCompletionMarksAssistantAnswerSaveable() {
+        val streamed = ConversationReducer.appendDelta(ConversationState(), "answer")
+        assertFalse(streamed.messages.single().completed)
+        val complete = ConversationReducer.completed(streamed)
+        assertTrue(complete.messages.single().completed)
+        assertFalse(ConversationReducer.failed(streamed, "offline").messages.single().completed)
+    }
 }

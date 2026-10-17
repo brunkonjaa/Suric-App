@@ -10,27 +10,31 @@ From a Java 17 + Android SDK 36 environment with network access for Gradle depen
 ./gradlew assembleDebug
 ```
 
-Unit tests cover authentication transitions and expiry policy, mocked Responses streaming/model parsing and service errors, conversation state updates and local-entry encoding/validation. CI builds a debug APK and uploads it as a 30-day GitHub Actions artifact without ChatGPT credentials.
+Unit tests cover authentication transitions and expiry policy, mocked Responses streaming/model parsing and service errors, conversation state updates and local-entry encoding/validation. New tests check Starter Library size/IDs/categories/destinations, offline case-insensitive search and copy formatting, plus Home visibility defaults, filtering order, all-hidden handling and obsolete IDs. CI builds a debug APK and uploads it as a 30-day GitHub Actions artifact without ChatGPT credentials.
 
 ## Device acceptance
 
 Use a physical Android 13+ device. No real-device check should be inferred from a mock test or successful build.
 
-1. Install the debug APK and connect through **Continue with ChatGPT**.
-2. Cancel the browser consent screen and verify the app remains signed out with a clear state.
-3. Complete consent; verify the browser returns to Suric and the status is connected.
-4. Ask: “What are the three most important things to consider when growing rosemary outdoors in Kilkenny, Ireland?” Confirm the answer is a live response shown inside Suric.
-5. Ask a follow-up and verify the earlier turns remain in the request context.
-6. Attach a real photo using Android Photo Picker and ask a question about it. Verify the live response describes the selected photo.
-7. Add and edit a Shopping Assistant option with an HTTPS link, check date and details. Confirm insecure links are rejected, the saved retailer link opens only after tapping it, compare action includes only saved options, and current price/availability are described as unverified. Delete and undo an option, then restart and confirm persistence.
-8. Add a bill with amount/date, grant calendar access only when prompted, choose one upcoming event, and verify it is saved locally.
-9. Share plain text from the device's Notes app to Suric and verify it appears in Notes. Confirm it is not sent to ChatGPT until an explicit Ask action.
-10. Switch light/dark appearance, rotate the device, try larger system text, and verify section labels remain one line and all primary controls stay reachable.
-11. Use the drawer from Home, an area and the conversation. Verify Back closes the drawer/sheet before leaving its screen.
-12. Disconnect, relaunch, and verify authentication is removed and the app requests sign-in again.
+1. Install the debug APK with internet disabled and no ChatGPT connection. Open Home, browse/search the Starter Library, copy a template, create/edit a local note, restart offline and verify the note remains.
+2. Hide several Home cards, restart, verify grid reflow, confirm hidden areas remain in the drawer, hide every card, and restore defaults. Confirm existing notes remain unchanged.
+3. Re-enable internet and connect through **Continue with ChatGPT**. Cancel consent once and verify local sections remain available; then complete consent and check the connected state.
+4. Ask: “What are the three most important things to consider when growing rosemary outdoors in Kilkenny, Ireland?” Confirm a live response, tap **Save to Notes**, disconnect and verify that response can be edited offline.
+5. Ask a follow-up and verify earlier turns remain in request context; attach a photo through Android Photo Picker and verify a genuine visual response.
+6. Add and edit a Shopping Assistant option with an HTTPS link, check date and details. Confirm insecure links are rejected, links open only after tapping, comparisons include only chosen options and current price/availability are described as unverified. Delete and undo an option, then restart and confirm persistence.
+7. Add a bill, grant calendar access only when prompted, choose one upcoming event and verify it is saved locally.
+8. Share plain text from another app to Suric and verify it appears in Notes. Confirm it is not sent to ChatGPT until an explicit Ask action.
+9. Switch light/dark appearance, rotate, try larger system text and verify controls stay reachable. Use the drawer from Home, an area, Starter Library and the conversation; check Back behavior.
+10. Disconnect, relaunch offline, and verify authentication is removed while local information remains available.
 
-## Current environment evidence
+## Baseline and current environment evidence
 
-On 17 October 2026, the current local source passed `testDebugUnitTest`, `lintDebug`, and `assembleDebug` with Java 17 and Android SDK Platform 36. The debug APK was produced at `app/build/outputs/apk/debug/app-debug.apk` (19,692,265 bytes; SHA-256 `2386C336148BF1AA0C7460E95CBE720C0E5AD8862F023061EE4DC4D584E06108`). The APK is a local debug artifact and is not a release build.
+Before this enhancement, the audited `main` baseline had passed `testDebugUnitTest`, `lintDebug`, and `assembleDebug` on 17 October 2026. Its documented debug APK was 19,692,265 bytes; that artifact does not verify this feature branch.
 
-No Android phone or emulator is connected (`adb devices -l` returned no devices). Suric's screen behavior, ChatGPT sign-in, live AI response, photo request, restart recovery, calendar flow, and error handling remain **NOT VERIFIED on-device**. GitHub Actions and CodeQL results are revision-specific; consult the pull request checks for the current branch head. Passing CI does not establish phone behavior.
+For this enhancement, the requested Gradle checks were attempted but could not start. Java 17.0.20 is installed, but this environment has no Android SDK (`ANDROID_HOME`/`ANDROID_SDK_ROOT` unset and no `sdkmanager` or `adb` found). The wrapper is correctly configured for Gradle 8.13, but the Gradle cache contains only an empty `.part` file and lock file; `./gradlew` cannot reach `services.gradle.org` because network access is unavailable. The combined `./gradlew testDebugUnitTest lintDebug assembleDebug` invocation and `./gradlew lintRelease assembleRelease` both stop while bootstrapping Gradle, before any task executes. Thus unit tests, Android lint, debug build, and release checks are **BLOCKED / NOT RUN**, not passing or failing product checks. No APK from this branch is available to report. `git diff --check` passes.
+
+At this inspection, the feature branch is local and has not been published to GitHub; no remote branch run or pull-request CI result is available for these uncommitted changes. The base commit is `315241bbddf802b03630288ec773b6d13289c9fb`; the feature implementation remains uncommitted pending build and runtime verification.
+
+The source diff does not modify `PersonalEntryStore`, its encrypted payload format or Keystore alias, `TokenVault`, the manifest, or the application ID (`ie.suric.suricapp`). Static integration inspection found all nine Home IDs match both the visibility preference IDs and existing personal-entry sections; all 28 parsed starter IDs are unique; and all referenced drawable resources resolve. These checks do not replace Kotlin compilation or automated tests. Upgrade preservation of data on an installed app has **NOT BEEN DEVICE-VERIFIED**.
+
+No Android phone or emulator can be queried because `adb` is not installed. Suric's screen behavior, ChatGPT sign-in, live AI response, photo request, restart recovery, calendar flow, offline recovery, and error handling remain **NOT VERIFIED on-device**. GitHub Actions and CodeQL results are revision-specific; consult the pull request checks for the current branch head. Passing CI does not establish phone behavior.
