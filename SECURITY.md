@@ -14,6 +14,10 @@
 - Calendar access is requested only when the user taps the Bills calendar control. Only selected upcoming event details are saved in Suric.
 - Other apps' note text is accepted only from an explicit Android share intent or user entry. Suric does not inspect other apps' private files.
 - Saved records are not sent to ChatGPT on app open. A user must explicitly choose the area action that includes saved note context. Conversation prompts and selected images are sent to the authenticated OpenAI service to answer the request.
+- ChatGPT authentication is optional for the application. Local records, bundled reference content, Home visibility and appearance remain accessible when signed out or offline. Disconnect still clears tokens and transient conversation state only.
+- Starter Library content is compiled into the APK and read-only. Copying content creates a distinct encrypted personal record only after an explicit user action; no personal content is uploaded or seeded automatically.
+- Home-card visibility is stored as a small local preference set of canonical section IDs, separately from the token vault and encrypted personal-entry payload.
+- An assistant response becomes a durable personal record only after the user taps **Save to Notes** on a completed response. Other conversation turns are not silently persisted.
 - Android Photo Picker is used; no broad photo or storage permission is declared.
 
 ## Public-source hygiene

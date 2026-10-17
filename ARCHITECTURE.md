@@ -7,13 +7,15 @@ Suric is a single-activity Android application with Compose screens and a screen
 | Component | Responsibility |
 | --- | --- |
 | `MainActivity` | Sets up Compose, saves the light/dark preference and creates the ViewModel. |
-| `SuricScreens.kt` | Signed-out connection screen, drawer, home, area details, forms and conversation. |
+| `SuricScreens.kt` | Drawer, Home, area details, Settings, Starter Library browsing/copy, forms and optional conversation. |
 | `SuricTheme.kt` | Warm light and dark Material 3 colour schemes. |
 | `ConnectionViewModel` | Authentication state, token refresh, selected local entries and Responses conversation state. |
 | `OpenAiOAuth` | Browser-based ChatGPT authorization, PKCE/state checks, token exchange, refresh and ID-token validation. |
 | `TokenVault` | Encrypted persistence of OAuth credentials with Android Keystore-backed encryption. |
 | `ChatApi` | Lists eligible models and streams Responses API output; sends an optional selected image. |
 | `PersonalEntryStore` | AES-GCM encrypted, app-private local notes and list entries. |
+| `StarterLibrary` | Immutable reference catalogue compiled into the APK; no network or personal-storage dependency. |
+| `SectionVisibilityStore` | Device-local preferences of stable existing section IDs, independent of OAuth and personal records. |
 | `CalendarEvents` | Reads a bounded upcoming calendar window after the user grants permission. |
 
 ## Data flow
@@ -23,6 +25,16 @@ Suric is a single-activity Android application with Compose screens and a screen
 3. For a question, the ViewModel refreshes an expiring token when permitted, resolves an available model and streams the genuine service response into conversation state.
 4. Calendar entries and notes are read locally. A note enters an AI request only after the user taps the section's explicit Ask Suric action. A photo is selected through Android Photo Picker and attached to that request.
 5. Disconnect deletes local OAuth tokens and their Keystore key, plus the in-memory conversation. It retains only the issued client ID (not a secret) so later sign-in can reuse the OpenAI client registration; the user can revoke the grant in ChatGPT Settings.
+
+## Local-first operation
+
+Home and all personal sections load without ChatGPT authentication. Auth state controls only AI actions. The personal-entry format, AES-GCM encryption, Keystore key alias and `PersonalEntryStore` are unchanged. Successful writes commit through the existing store before the UI reports success. Disconnect clears credentials and transient in-memory conversation state only; it does not touch personal records, appearance or Home visibility preferences.
+
+Starter items are immutable Kotlin data bundled in the APK. Stable IDs, categories, type, structured blocks, image resource keys, revision and review date are separate from personal entries. **Copy to my space** creates a new ordinary entry in its intended existing section. Later catalogue revisions cannot modify that copy. There is no first-run seeding or network catalogue call.
+
+Home visibility uses the nine existing section IDs. Missing preference data means all existing sections are visible; unknown IDs are ignored. The drawer always lists all sections. Filtering the existing lazy grid naturally reflows visible cards; an all-hidden state links to Settings. Appearance remains in the existing preferences file and is controlled from Settings.
+
+Assistant messages become saveable only after the Responses stream confirms completion. The explicit **Save to Notes** action writes the selected answer as a new encrypted Notes entry; unsaved conversation state remains transient and follows the existing lifecycle.
 
 ## Local model
 

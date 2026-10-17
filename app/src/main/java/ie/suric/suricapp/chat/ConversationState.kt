@@ -19,6 +19,10 @@ object ConversationReducer {
         } else messages += ChatMessage("assistant", delta)
         return state.copy(messages = messages)
     }
-    fun completed(state: ConversationState): ConversationState = state.copy(isLoading = false)
+    fun completed(state: ConversationState): ConversationState {
+        val messages = state.messages.toMutableList()
+        if (messages.lastOrNull()?.role == "assistant") messages[messages.lastIndex] = messages.last().copy(completed = true)
+        return state.copy(messages = messages, isLoading = false, error = null)
+    }
     fun failed(state: ConversationState, message: String): ConversationState = state.copy(isLoading = false, error = message)
 }
