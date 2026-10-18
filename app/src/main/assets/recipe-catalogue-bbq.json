@@ -415,7 +415,11 @@
         "smoked"
       ],
       "imageAssets": [
-        "recipe_brisket_01_prep"
+        "recipe_brisket_01_prep",
+        "recipe_brisket_02_sliced",
+        "recipe_brisket_03_seasoned",
+        "recipe_brisket_04_smoking",
+        "recipe_brisket_05_carving"
       ],
       "revision": 1
     },

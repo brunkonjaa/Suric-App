@@ -2,7 +2,7 @@
 
 Updated 18 October 2026 on `feat/suric-android-app`.
 
-This ledger tracks the complete application expansion brief in the supplied request. Counts are from the checked-in bundled assets. The request forbids tests, lint, builds, emulators and GitHub Actions at this stage.
+This ledger tracks the complete application expansion brief in the supplied request. Counts are from the checked-in bundled assets. The current handoff requested local unit tests, lint, debug APK assembly, a GitHub push and green pull-request checks; no emulator/device checks were requested.
 
 ## Completed in source
 
@@ -35,15 +35,16 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - The BBQ Around the World collection contains 100 entries, reusing suitable canonical grill recipes and adding regional barbecue recipes with measured ingredients, complete methods and food-safety notes.
 - The Fish & Seafood Around the World collection contains 100 entries, reusing suitable canonical seafood recipes and adding globally varied seafood dishes with measured ingredients, complete methods and seafood-handling notes. Ten new grilled seafood recipes are shared by both collections through canonical IDs.
 - AI-generated photorealistic BBQ and Fish & Seafood collection images are bundled and shown above their recipe lists. These are collection covers, not individual images for each recipe.
-- Recipe detail screens now support an offline horizontal gallery of optional image assets. Texas smoked beef brisket has the first recipe-specific preparation image; collection covers do not count toward recipe image coverage.
-- Recipe images are packaged as static lossy WebP in `drawable-nodpi`. The recipe gallery targets a 960-pixel long edge and quality 76; the brisket sample is 960 x 720 and 105,222 bytes. The wider collection covers remain 1280 pixels.
+- Recipe detail screens now support an offline horizontal gallery of optional image assets. Texas smoked beef brisket now has five distinct recipe-specific images covering seasoning, smoking, carving and serving; collection covers do not count toward recipe image coverage.
+- Music, offline article and recipe detail screens now explicitly opt in to the experimental Material 3 top-app-bar API required by the current Compose Material dependency.
+- Recipe images are packaged as static lossy WebP in `drawable-nodpi`. The recipe gallery targets a 960-pixel long edge and quality 76; the five brisket images are 960 x 720 and total 576,204 bytes. The wider collection covers remain 1280 pixels.
 - Recipe details can add each measured ingredient as a separate checkable entry to the encrypted local Shopping section. Repeating the action skips ingredients already added for that recipe.
 - Ask Suric restores encrypted local message history and draft after process recreation, surfaces read failures without overwriting saved chat, shares text history through Android Sharesheet, and offers a confirmed local deletion action. Shared history excludes image files and attachment URIs.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
 - Music can select and play local audio, retain queue references and position, and open online providers through Android's app chooser. Playback stops when leaving the Music screen.
 - The 24 traditional cuisine collections are complete at 30 entries each, and BBQ Around the World and Fish & Seafood Around the World are complete at 100 entries each. Five new guides add garden disease/watering, safe wall drilling, household chemical safety and phone reuse/recycling coverage; the inventory documents 35 guides and current collection counts.
 
-These are source-level findings; this stage did not execute or independently verify the application.
+The content and feature descriptions above are source-level findings unless the verification section below records a fresh check.
 
 ## Content totals
 
@@ -52,8 +53,8 @@ These are source-level findings; this stage did not execute or independently ver
 - All 24 requested traditional cuisine collections are complete at **30 / 30** each.
 - BBQ Around the World: **100 / 100**.
 - Fish & Seafood Around the World: **100 / 100**.
-- BBQ and Fish & Seafood have generated offline collection-cover images; individual recipe images and offline library article photographs are not bundled.
-- Recipe image target: five distinct images for each of 891 unique canonical recipes (4,455 total). One recipe-specific image is currently assigned to Texas smoked beef brisket; 4,454 images remain to reach the target.
+- BBQ and Fish & Seafood have generated offline collection-cover images; individual recipe images are bundled for one canonical recipe, while offline library article photographs are not bundled.
+- Recipe image target: five distinct images for each of 891 unique canonical recipes (4,455 total). Five recipe-specific images are assigned to Texas smoked beef brisket; 4,450 images remain to reach the target.
 
 ## Partially implemented
 
@@ -66,7 +67,7 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Not implemented
 
-- The 4,454 remaining recipe images needed to reach five distinct images for each of 891 canonical recipes, plus offline library article photography; current BBQ and seafood collection covers are separate from recipe images.
+- The 4,450 remaining recipe images needed to reach five distinct images for each of 891 canonical recipes, plus offline library article photography; current BBQ and seafood collection covers are separate from recipe images.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Image attachments still depend on Android retaining the selected URI permission; chat export is text-only and does not package image attachments.
@@ -75,7 +76,9 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Verification and repository state
 
-- Tests, lint, builds, emulator/device checks and GitHub Actions were not run, as instructed.
+- Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 using cached Gradle 8.13, JDK 17 and the installed Android SDK. No emulator/device checks were run.
+- The pre-existing uncommitted `gradle/wrapper/gradle-wrapper.properties` edit selects Gradle 9.7.1, which is incompatible with this project's Android Gradle Plugin 8.13. The passing local check used cached Gradle 8.13, matching the committed wrapper value; the user edit remains untouched and excluded from commits.
+- GitHub Actions had not yet been run for this update at the time of this ledger entry.
 - The selected checkout is the GitHub-linked `Suric-App-github` clone on `feat/suric-android-app`. The branch contains earlier local commits as well as the implementation slices recorded here; consult Git status for the current ahead count.
 - `gradle/wrapper/gradle-wrapper.properties` had a pre-existing uncommitted edit and was left untouched.
 - All 920 requested recipe collection entries are now present. This does not complete the broader application expansion described in the supplied brief.

@@ -992,6 +992,7 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun MusicSectionScreen(vm: ConnectionViewModel, onMenu: () -> Unit) {
     val context = LocalContext.current
@@ -1201,6 +1202,7 @@ private fun MusicSectionScreen(vm: ConnectionViewModel, onMenu: () -> Unit) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun OfflineArticleDetail(article: OfflineArticle, isFavourite: Boolean, onFavourite: (Boolean) -> Unit, onBack: () -> Unit, onShare: () -> Unit, onCopy: () -> Unit) {
     Scaffold(
@@ -1242,6 +1244,7 @@ private fun OfflineArticleDetail(article: OfflineArticle, isFavourite: Boolean, 
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun OfflineRecipeDetail(
     recipe: OfflineRecipe,
