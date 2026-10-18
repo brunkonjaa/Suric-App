@@ -15,7 +15,7 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - “Ask Suric” opens the conversation; a section's saved notes are included only after you tap “Ask Suric about these notes”.
 - Android's system photo picker attaches an image to a question.
 - Suric opens directly in local mode. ChatGPT sign-in is optional and requested only when the user chooses an AI action.
-- A bundled offline Starter Library provides 28 guides, recipes, checklists and blank templates. Reference content is separate from encrypted personal records; a copy is made only after tapping **Copy to my space**.
+- A bundled offline Starter Library provides 38 guides, recipes, checklists and blank templates, including an Android and PS1–PS5 Retro & Android reference collection. Source links open only when tapped. Reference content is separate from encrypted personal records; a copy is made only after tapping **Copy to my space**.
 - Settings save Home-card visibility separately from personal records and ChatGPT credentials. Hidden sections remain in the drawer; all cards can be hidden and restored.
 - A completed Ask Suric response can be explicitly saved to encrypted Notes.
 

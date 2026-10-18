@@ -10,7 +10,7 @@ From a Java 17 + Android SDK 36 environment with network access for Gradle depen
 ./gradlew assembleDebug
 ```
 
-Unit tests cover authentication transitions and expiry policy, mocked Responses streaming/model parsing and service errors, conversation state updates and local-entry encoding/validation. New tests check Starter Library size/IDs/categories/destinations, offline case-insensitive search and copy formatting, plus Home visibility defaults, filtering order, all-hidden handling and obsolete IDs. CI builds a debug APK and uploads it as a 30-day GitHub Actions artifact without ChatGPT credentials.
+Unit tests cover authentication transitions and expiry policy, mocked Responses streaming/model parsing and service errors, conversation state updates and local-entry encoding/validation. Starter Library tests check size/IDs/categories/destinations, offline case-insensitive search and copy formatting, plus the Android/API 1–37 map, PS1–PS5 guide coverage, HTTPS source links, Retro & Android search and source-preserving copies. Home visibility tests check defaults, filtering order, all-hidden handling and obsolete IDs. CI builds a debug APK and uploads it as a 30-day GitHub Actions artifact without ChatGPT credentials.
 
 ## Device acceptance
 
