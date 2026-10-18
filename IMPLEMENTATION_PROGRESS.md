@@ -15,19 +15,20 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - The Italy cuisine collection adds 30 structured, regionally labelled home recipes in a supplemental catalogue registered by the same versioned manifest.
 - The Germany cuisine collection adds 30 structured regional and everyday recipes in a supplemental catalogue; all directions and ingredients are bundled offline.
 - The Spain cuisine collection adds 30 regionally labelled recipes in a supplemental catalogue, including complete methods and practical storage and safety notes.
+- The Mexico cuisine collection adds 30 recipes across regional home cooking and everyday dishes in its own supplemental catalogue.
 - Recipe details can add each measured ingredient as a separate checkable entry to the encrypted local Shopping section. Repeating the action skips ingredients already added for that recipe.
 - Ask Suric restores encrypted local message history and draft after process recreation, surfaces read failures without overwriting saved chat, shares text history through Android Sharesheet, and offers a confirmed local deletion action. Shared history excludes image files and attachment URIs.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
 - Music can select and play local audio, retain queue references and position, and open online providers through Android's app chooser. Playback stops when leaving the Music screen.
-- The 30 Irish, 30 Argentinian, 30 French, 30 German, 30 Italian, 30 Spanish and 30 United States of America recipe collections are complete. Five new guides add garden disease/watering, safe wall drilling, household chemical safety and phone reuse/recycling coverage; the inventory documents 35 guides and current collection counts.
+- The 30 Irish, 30 Argentinian, 30 French, 30 German, 30 Italian, 30 Mexican, 30 Spanish and 30 United States of America recipe collections are complete. Five new guides add garden disease/watering, safe wall drilling, household chemical safety and phone reuse/recycling coverage; the inventory documents 35 guides and current collection counts.
 
 These are source-level findings; this stage did not execute or independently verify the application.
 
 ## Content totals
 
 - Complete bundled offline articles: **35** across Garden (7), Cooking (11), Cleaning (4), DIY & Home (4), Pottery (3), Retro & Android (4), Bills (1), and Shopping (1). Music and Notes have no bundled guides.
-- Canonical recipe records: **264**. Collection entries assigned: **210 / 920**.
-- Traditional cuisine collections: Ireland **30 / 30**; Argentina **30 / 30**; France **30 / 30**; Germany **30 / 30**; Italy **30 / 30**; Spain **30 / 30**; United States of America **30 / 30**; each of the remaining 17 requested cuisine groups **0 / 30**.
+- Canonical recipe records: **294**. Collection entries assigned: **240 / 920**.
+- Traditional cuisine collections: Ireland **30 / 30**; Argentina **30 / 30**; France **30 / 30**; Germany **30 / 30**; Italy **30 / 30**; Mexico **30 / 30**; Spain **30 / 30**; United States of America **30 / 30**; each of the remaining 16 requested cuisine groups **0 / 30**.
 - BBQ Around the World: **0 / 100**.
 - Fish & Seafood Around the World: **0 / 100**.
 - No recipe photos or offline library photographs are bundled with the text assets.
@@ -35,7 +36,7 @@ These are source-level findings; this stage did not execute or independently ver
 ## Partially implemented
 
 - Offline global search is local and filters articles and recipes across all categories. Results are loaded from bundled assets in memory; there is no indexed database for larger content volumes.
-- Cooking has detailed structured recipe records, alphabetical collection sorting, origin labels, recipe sharing, personal copies and a local ingredient-to-Shopping handoff. The remaining 510 traditional cuisine entries, plus all 200 BBQ and seafood memberships, are not supplied.
+- Cooking has detailed structured recipe records, alphabetical collection sorting, origin labels, recipe sharing, personal copies and a local ingredient-to-Shopping handoff. The remaining 480 traditional cuisine entries, plus all 200 BBQ and seafood memberships, are not supplied.
 - Garden, Pottery, DIY & Home, Cleaning, and Retro & Android have a small number of bundled guides, far short of the requested comprehensive coverage. Personal Garden records are plain saved entries rather than a dedicated plant journal with photo records and calendars.
 - Local music playback works only while its screen remains composed; there is no background playback service or notification control. NewPipe is not embedded or bundled; provider links rely on installed applications and network access.
 - Family transfer supports text exports and same-installation article IDs. There is no portable attachment bundle, HTTPS App Link domain, or verified cross-installation/deep-link back-stack restoration.
@@ -43,7 +44,7 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Not implemented
 
-- The remaining 17 traditional cuisine collections, all 100 BBQ entries and all 100 Fish & Seafood entries; and recipe image coverage where suitable offline assets are available.
+- The remaining 16 traditional cuisine collections, all 100 BBQ entries and all 100 Fish & Seafood entries; and recipe image coverage where suitable offline assets are available.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Image attachments still depend on Android retaining the selected URI permission; chat export is text-only and does not package image attachments.
