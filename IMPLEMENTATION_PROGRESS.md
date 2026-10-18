@@ -38,9 +38,12 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - The BBQ Around the World collection contains 100 entries, reusing suitable canonical grill recipes and adding regional barbecue recipes with measured ingredients, complete methods and food-safety notes.
 - The Fish & Seafood Around the World collection contains 100 entries, reusing suitable canonical seafood recipes and adding globally varied seafood dishes with measured ingredients, complete methods and seafood-handling notes. Ten new grilled seafood recipes are shared by both collections through canonical IDs.
 - AI-generated photorealistic BBQ and Fish & Seafood collection images are bundled and shown above their recipe lists. These are collection covers, not individual images for each recipe.
-- Recipe detail screens now support an offline horizontal gallery of optional image assets. Texas smoked beef brisket now has five distinct recipe-specific images covering seasoning, smoking, carving and serving; collection covers do not count toward recipe image coverage.
+- Recipe cards show each available offline thumbnail in the list, and tapping a card image opens a zoomable full-screen preview. Recipe detail screens retain an offline horizontal gallery; its images open the same preview. The local reading index accepts Unicode letters in recipe IDs so Croatian names open correctly. All 66 supplied Argentina photos are attached across Argentina recipes, and all 30 photos from the Croatia folder are attached across Croatian recipes. The supplied Argentina guiso carrero photo is an additional gallery image alongside its existing Commons image. Together with five Texas brisket images, the app now bundles 102 recipe image files across 97 of 891 canonical recipes; collection covers remain separate.
 - Music, offline article and recipe detail screens now explicitly opt in to the experimental Material 3 top-app-bar API required by the current Compose Material dependency.
-- Recipe images are packaged as static lossy WebP in `drawable-nodpi`. The recipe gallery targets a 960-pixel long edge and quality 76; the five brisket images are 960 x 720 and total 576,204 bytes. The wider collection covers remain 1280 pixels.
+- Recipe images are packaged as static lossy WebP in `drawable-nodpi`, with a hard maximum of 50,000 bytes per image. All 102 current recipe images are at or below the cap, use embedded sRGB and preserve their aspect ratios; quality is 50–87 and long edges are at most 1280 px.
+- `COOKING_DISH_IMAGE_INDEX.md` lists all 891 unique canonical recipes once, with stable IDs, origins, collection memberships, image search queries, serving-scene direction and explicit missing/attached status. `tools/build_recipe_image_index.py` regenerates it from the registered catalogue files. The target is one matching photograph per canonical recipe (891 total); unrelated photographs must remain missing.
+- Recipe image specifications call for static lossy WebP, embedded sRGB, aspect-preserving dimensions up to 1280 px, no animation, offline files and per-image source, creator, licence and attribution metadata. Every image has a hard 50,000-byte limit; use quality up to 87, reduce to quality 50, then resize as needed. `tools/optimize_recipe_images.py` records final quality, dimensions and bytes. A licensed-web-image downloader and duplicate-detection utility are not implemented.
+- The 102 current recipe images total 4,771,014 bytes (46,774 bytes average); the largest is 49,996 bytes. The Argentina folder contributed 66 photos, and the Croatia folder contributed 30; every imported image was recompressed under the same cap. Source rights for the Argentina local images were not independently checked. The brisket files originated as legacy quality-76, 960 x 720 RGB WebP without embedded ICC profiles; they have been re-encoded to embed sRGB and meet the cap. The existing guiso carrero image remains sourced from Wikimedia Commons under CC BY-SA 3.0.
 - Recipe details can add each measured ingredient as a separate checkable entry to the encrypted local Shopping section. Repeating the action skips ingredients already added for that recipe.
 - Ask Suric restores encrypted local message history and draft after process recreation, surfaces read failures without overwriting saved chat, shares text history through Android Sharesheet, and offers a confirmed local deletion action. Shared history excludes image files and attachment URIs.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
@@ -57,7 +60,8 @@ The content and feature descriptions above are source-level findings unless the 
 - BBQ Around the World: **100 / 100**.
 - Fish & Seafood Around the World: **100 / 100**.
 - BBQ and Fish & Seafood have generated offline collection-cover images; individual recipe images are bundled for one canonical recipe, while offline library article photographs are not bundled.
-- Recipe image target: five distinct images for each of 891 unique canonical recipes (4,455 total). Five recipe-specific images are assigned to Texas smoked beef brisket; 4,450 images remain to reach the target.
+- Recipe image target: one matching photograph for each of 891 unique canonical recipes. Argentina has 66 folder photos across 66 recipes; Croatia has 30 folder photos attached across 30 recipes. Five legacy brisket images and one additional guiso carrero image bring the total to 102 image files across 97 recipes. The remaining 794 recipes have no accepted image.
+- A licensed web-image search/downloader and image-preparation utility are not implemented yet. New-source license checks, automatic resizing and duplicate detection remain required before images are accepted.
 
 ## Partially implemented
 
@@ -70,7 +74,7 @@ The content and feature descriptions above are source-level findings unless the 
 
 ## Not implemented
 
-- The 4,450 remaining recipe images needed to reach five distinct images for each of 891 canonical recipes, plus offline library article photography; current BBQ and seafood collection covers are separate from recipe images.
+- The 859 remaining matching recipe photographs needed to cover all 891 canonical recipes, plus offline library article photography. The dish index and per-image metadata schema are in place; the BBQ and seafood collection covers remain separate from recipe images.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Image attachments still depend on Android retaining the selected URI permission; chat export is text-only and does not package image attachments.
@@ -78,6 +82,9 @@ The content and feature descriptions above are source-level findings unless the 
 - Direct family sharing of personal content as a portable bundle with attachments and complete incoming navigation restoration.
 
 ## Verification and repository state
+
+- On 18 October 2026, all 66 Argentina folder photos and 30 Croatia folder photos were bundled as WebP under 50,000 bytes each. Final `assembleDebug` passed with cached Gradle 8.13, JDK 17 and the installed SDK. The updated debug APK installed with `adb install -r` on the Samsung SM-A127F, preserving app data. On-device checks showed 891 recipes, visible list thumbnails, a working full-screen image preview, a Croatian recipe detail/photo opening successfully, and two guiso carrero photos. No unit tests or lint were run for this image/UI update.
+- The initial 30-photo Croatian batch was converted, bundled and linked in the catalogue on 18 October 2026. Its first handoff preceded build and phone verification; the later image/UI verification is recorded below.
 
 - Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 using cached Gradle 8.13, JDK 17 and the installed Android SDK. On the connected Samsung SM-A127F, the installed debug APK opened Cooking and displayed **891 recipes** in “All recipes”; no emulator was used.
 - The pre-existing uncommitted `gradle/wrapper/gradle-wrapper.properties` edit selects Gradle 9.7.1, which is incompatible with this project's Android Gradle Plugin 8.13. The passing local check used cached Gradle 8.13, matching the committed wrapper value; the user edit remains untouched and excluded from commits.

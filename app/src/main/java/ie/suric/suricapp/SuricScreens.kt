@@ -70,6 +70,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -1062,12 +1063,26 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                     Text(emptyMessage, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
                 items(searchedRecipes, key = { "recipe:${it.id}" }) { recipe ->
+                    val recipeThumbnail = remember(recipe.id, recipe.imageAssetNames) {
+                        recipe.imageAssetNames.firstOrNull()?.let { name ->
+                            context.resources.getIdentifier(name, "drawable", context.packageName).takeIf { it != 0 }
+                        }
+                    }
                     OutlinedCard(onClick = { selectedRecipeId = recipe.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
-                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-                            Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
-                            Text(listOfNotNull(recipe.country, recipe.region).joinToString(" • "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
-                            Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            Text("${recipe.prepMinutes} min prep • ${recipe.cookMinutes} min cook • Serves ${recipe.servings}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Row(Modifier.fillMaxWidth().padding(12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                            recipeThumbnail?.let { resourceId ->
+                                ExpandableRecipeImage(
+                                    resourceId = resourceId,
+                                    description = "${recipe.name} dish photo",
+                                    modifier = Modifier.size(96.dp)
+                                )
+                            }
+                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                                Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                                Text(listOfNotNull(recipe.country, recipe.region).joinToString(" \u2022 "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                                Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3, overflow = TextOverflow.Ellipsis)
+                                Text("${recipe.prepMinutes} min prep \u2022 ${recipe.cookMinutes} min cook \u2022 Serves ${recipe.servings}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                            }
                         }
                     }
                 }
@@ -1575,11 +1590,10 @@ private fun OfflineRecipeDetail(
                 Text("Recipe photos (${recipeImageResources.size})", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                 Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     recipeImageResources.forEachIndexed { index, resourceId ->
-                        Image(
-                            painter = painterResource(resourceId),
-                            contentDescription = "${recipe.name}, photo ${index + 1} of ${recipeImageResources.size}",
-                            contentScale = ContentScale.Crop,
-                            modifier = Modifier.width(280.dp).height(190.dp).clip(RoundedCornerShape(18.dp))
+                        ExpandableRecipeImage(
+                            resourceId = resourceId,
+                            description = "${recipe.name}, photo ${index + 1} of ${recipeImageResources.size}",
+                            modifier = Modifier.width(280.dp).height(190.dp)
                         )
                     }
                 }
@@ -1963,6 +1977,43 @@ private fun PhotoAttachment(uri: String, description: String, modifier: Modifier
     Box(modifier.clip(RoundedCornerShape(14.dp)).background(MaterialTheme.colorScheme.surfaceVariant).clickable(onClick = onClick), contentAlignment = Alignment.Center) {
         bitmap?.let { Image(it.asImageBitmap(), contentDescription = description, contentScale = contentScale, modifier = Modifier.fillMaxSize()) }
             ?: Text("Photo unavailable", Modifier.padding(6.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
+@Composable
+private fun ExpandableRecipeImage(resourceId: Int, description: String, modifier: Modifier = Modifier) {
+    var showPreview by remember(resourceId) { mutableStateOf(false) }
+    Image(
+        painter = painterResource(resourceId),
+        contentDescription = "$description. Tap to enlarge.",
+        contentScale = ContentScale.Crop,
+        modifier = modifier
+            .clip(RoundedCornerShape(14.dp))
+            .clickable { showPreview = true }
+    )
+    if (showPreview) {
+        RecipeImagePreviewDialog(resourceId, description) { showPreview = false }
+    }
+}
+
+@Composable
+private fun RecipeImagePreviewDialog(resourceId: Int, description: String, onDismiss: () -> Unit) {
+    var scale by remember(resourceId) { mutableStateOf(1f) }
+    val zoomState = rememberTransformableState { zoomChange, _, _ -> scale = (scale * zoomChange).coerceIn(1f, 5f) }
+    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Box(Modifier.fillMaxSize().background(Color.Black).clickable(onClick = onDismiss), contentAlignment = Alignment.Center) {
+            Image(
+                painter = painterResource(resourceId),
+                contentDescription = description,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.fillMaxWidth().fillMaxHeight(.88f)
+                    .graphicsLayer(scaleX = scale, scaleY = scale)
+                    .transformable(zoomState)
+            )
+            IconButton(onClick = onDismiss, modifier = Modifier.align(Alignment.TopEnd).padding(12.dp).size(48.dp)) {
+                Icon(Icons.Default.Close, contentDescription = "Close photo preview", tint = Color.White)
+            }
+        }
     }
 }
 

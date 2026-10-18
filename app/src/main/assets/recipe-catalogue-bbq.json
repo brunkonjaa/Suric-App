@@ -805,7 +805,7 @@
         "argentine",
         "matambre"
       ],
-      "revision": 1
+      "revision": 1,"imageAssets":["recipe_bbq_argentine_matambre_arrollado_on_the_grill"]
     },
     {
       "id": "bbq-argentine-chicken-with-chimichurri",
@@ -843,7 +843,7 @@
         "argentine",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,"imageAssets":["recipe_bbq_argentine_chicken_with_chimichurri"]
     },
     {
       "id": "bbq-argentine-beef-short-ribs-with-salt",
@@ -879,7 +879,7 @@
         "argentine",
         "beef"
       ],
-      "revision": 1
+      "revision": 1,"imageAssets":["recipe_bbq_argentine_beef_short_ribs_with_salt"]
     },
     {
       "id": "bbq-argentine-grilled-sweetbreads",
@@ -916,7 +916,7 @@
         "argentine",
         "grilled"
       ],
-      "revision": 1
+      "revision": 1,"imageAssets":["recipe_bbq_argentine_grilled_sweetbreads"]
     },
     {
       "id": "bbq-brazilian-picanha-with-coarse-salt",
