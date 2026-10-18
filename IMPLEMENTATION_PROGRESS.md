@@ -9,6 +9,7 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - Android Back handling closes the drawer and returns from a section, article or recipe to its containing screen.
 - Ask Suric photo selection, thumbnail display, message attachment display, zoom preview and request attachment are implemented. Message history and draft are encrypted on-device and restored after process recreation; image URI access is persisted where Android grants it. Navigation route and selected section are saveable.
 - Offline article assets and a canonical JSON recipe catalogue are loaded without a network connection. Stable recipe IDs allow multiple collections to reuse one recipe record. A dedicated global-search screen searches all offline guides and recipes by title, section, origin, body, ingredients and tags, with category filters.
+- A separate 38-item offline Starter Library supplies guides, recipes, checklists and templates, with search, category filters, source links and copy-to-personal-space actions. Local sections remain available when ChatGPT is disconnected; Home card visibility and appearance settings are stored locally.
 - This implementation stage adds persistent, device-local favourites and a twenty-item recently viewed index for bundled articles and recipes. Section filters show all, saved or recent content. This index does not modify bundled records or encrypted personal entries.
 - The United States of America cuisine collection adds 30 original, structured regional home-cooking recipes in a separate versioned asset. Each entry includes measured ingredients, numbered steps, timings, servings, difficulty, accompaniments, substitutions, storage and safety notes.
 - The France cuisine collection adds 30 original, structured recipes across French regions in a separate versioned asset. A versioned asset manifest now registers supplemental catalogue files so more cuisines can be added without changing loader code.
@@ -76,9 +77,9 @@ The content and feature descriptions above are source-level findings unless the 
 
 ## Verification and repository state
 
-- Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 using cached Gradle 8.13, JDK 17 and the installed Android SDK. No emulator/device checks were run.
+- Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 after integrating `origin/main` at `a26c13e`, using cached Gradle 8.13, JDK 17 and the installed Android SDK. The debug APK assembly completed. No emulator/device checks were run.
 - The pre-existing uncommitted `gradle/wrapper/gradle-wrapper.properties` edit selects Gradle 9.7.1, which is incompatible with this project's Android Gradle Plugin 8.13. The passing local check used cached Gradle 8.13, matching the committed wrapper value; the user edit remains untouched and excluded from commits.
-- GitHub Actions had not yet been run for this update at the time of this ledger entry.
+- Pull request #14 is the review and GitHub Actions status location for this implementation.
 - The selected checkout is the GitHub-linked `Suric-App-github` clone on `feat/suric-android-app`. The branch contains earlier local commits as well as the implementation slices recorded here; consult Git status for the current ahead count.
 - `gradle/wrapper/gradle-wrapper.properties` had a pre-existing uncommitted edit and was left untouched.
 - All 920 requested recipe collection entries are now present. This does not complete the broader application expansion described in the supplied brief.

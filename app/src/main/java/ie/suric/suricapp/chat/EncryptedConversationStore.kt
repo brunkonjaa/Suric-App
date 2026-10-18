@@ -32,7 +32,7 @@ class EncryptedConversationStore(context: Context) {
             val item = array.getJSONObject(index)
             val role = item.getString("role")
             require(role == "user" || role == "assistant") { "The saved conversation contains an invalid message. It has not been changed." }
-            ChatMessage(role, item.getString("text"), (item.opt("imageUri") as? String)?.takeIf(String::isNotBlank))
+            ChatMessage(role, item.getString("text"), item.optBoolean("completed"), (item.opt("imageUri") as? String)?.takeIf(String::isNotBlank))
         }
         return SavedConversation(messages, root.optString("draft"))
     }
@@ -42,7 +42,7 @@ class EncryptedConversationStore(context: Context) {
         require(messages.all { it.role == "user" || it.role == "assistant" })
         val encoded = JSONObject().put("version", VERSION).put("draft", draft).put("messages", JSONArray().apply {
             messages.forEach { message ->
-                put(JSONObject().put("role", message.role).put("text", message.text).put("imageUri", message.imageUri ?: JSONObject.NULL))
+                put(JSONObject().put("role", message.role).put("text", message.text).put("completed", message.completed).put("imageUri", message.imageUri ?: JSONObject.NULL))
             }
         }).toString().toByteArray(Charsets.UTF_8)
         val cipher = Cipher.getInstance("AES/GCM/NoPadding")

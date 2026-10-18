@@ -18,6 +18,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.items as rowItems
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -139,6 +140,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     val scope = rememberCoroutineScope()
     var route by rememberSaveable { mutableStateOf("home") }
     var selectedSection by rememberSaveable { mutableStateOf<String?>(null) }
+    var selectedStarterId by rememberSaveable { mutableStateOf<String?>(null) }
     var pendingArticleId by rememberSaveable { mutableStateOf<String?>(null) }
     var pendingRecipeId by rememberSaveable { mutableStateOf<String?>(null) }
     var showIncomingShare by rememberSaveable { mutableStateOf(false) }
@@ -147,8 +149,8 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     var deepLinkHandled by rememberSaveable { mutableStateOf(false) }
     var deepLinkSection by rememberSaveable { mutableStateOf<String?>(null) }
     var deepLinkMessage by rememberSaveable { mutableStateOf<String?>(null) }
-    LaunchedEffect(auth, deepLinkArticleId) {
-        if (auth is AuthState.SignedIn && !deepLinkHandled && !deepLinkArticleId.isNullOrBlank()) {
+    LaunchedEffect(deepLinkArticleId) {
+        if (!deepLinkHandled && !deepLinkArticleId.isNullOrBlank()) {
             val article = runCatching { withContext(Dispatchers.IO) { OfflineLibrary.load(appContext).firstOrNull { it.id == deepLinkArticleId } } }.getOrNull()
             if (article != null) {
                 selectedSection = article.section
@@ -158,21 +160,20 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
             deepLinkHandled = true
         }
     }
-    LaunchedEffect(auth, sharedText) {
-        if (auth is AuthState.SignedIn && !sharedText.isNullOrBlank()) showIncomingShare = true
+    LaunchedEffect(sharedText) {
+        if (!sharedText.isNullOrBlank()) showIncomingShare = true
     }
 
-    if (auth !is AuthState.SignedIn) {
-        ConnectionScreen(auth, vm)
-        return
-    }
     val drawerIsVisible = drawerState.currentValue == DrawerValue.Open || drawerState.targetValue == DrawerValue.Open
     BackHandler(enabled = drawerIsVisible) {
         scope.launch { drawerState.close() }
     }
-    BackHandler(enabled = !drawerIsVisible && (selectedSection != null || route != "home")) {
-        selectedSection = null
-        route = "home"
+    BackHandler(enabled = !drawerIsVisible && (selectedStarterId != null || selectedSection != null || route != "home")) {
+        when {
+            selectedStarterId != null -> selectedStarterId = null
+            selectedSection != null -> selectedSection = null
+            else -> route = "home"
+        }
     }
     if (showIncomingShare && !sharedText.isNullOrBlank()) {
         val decoded = remember(sharedText) { runCatching { SharedEntryCodec.decodeOrNull(sharedText) } }
@@ -224,7 +225,23 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Home", maxLines = 1) },
                             selected = selectedSection == null && route == "home",
-                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } },
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
+                        )
+                    }
+                    item {
+                        NavigationDrawerItem(
+                            label = { Text("Starter Library", maxLines = 1) },
+                            selected = route == "library",
+                            onClick = { selectedSection = null; selectedStarterId = null; route = "library"; scope.launch { drawerState.close() } },
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
+                        )
+                    }
+                    item {
+                        NavigationDrawerItem(
+                            label = { Text("Settings", maxLines = 1) },
+                            selected = route == "settings",
+                            onClick = { selectedSection = null; selectedStarterId = null; route = "settings"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -253,12 +270,14 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
                         )
                     }
-                    item { HorizontalDivider(Modifier.padding(top = 8.dp)) }
-                    item {
-                        TextButton(onClick = { vm.disconnect(); selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
-                            Icon(Icons.Default.Logout, contentDescription = null)
-                            Spacer(Modifier.width(8.dp))
-                            Text("Disconnect ChatGPT")
+                    if (auth is AuthState.SignedIn) {
+                        item { HorizontalDivider(Modifier.padding(top = 8.dp)) }
+                        item {
+                            TextButton(onClick = { vm.disconnect(); selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
+                                Icon(Icons.Default.Logout, contentDescription = null)
+                                Spacer(Modifier.width(8.dp))
+                                Text("Disconnect ChatGPT")
+                            }
                         }
                     }
                 }
@@ -281,9 +300,26 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                     route = "home"
                 }
             )
-            route == "assistant" -> ConversationScreen(
-                email = (auth as? AuthState.SignedIn)?.email,
-                vm = vm,
+            route == "assistant" -> ConversationScreen(auth = auth, vm = vm, onMenu = { scope.launch { drawerState.open() } }, onSignIn = vm::signIn)
+            route == "library" || selectedStarterId != null -> StarterLibraryScreen(
+                selectedId = selectedStarterId,
+                onSelect = { selectedStarterId = it },
+                onBack = { if (selectedStarterId != null) selectedStarterId = null else { route = "home"; selectedSection = null } },
+                onMenu = { scope.launch { drawerState.open() } },
+                onCopy = { item -> vm.addEntry(item.destination, item.title, item.asPersonalText()) }
+            )
+            route == "settings" -> SettingsScreen(
+                darkTheme = darkTheme,
+                visibleSections = visibleSections,
+                onThemeChange = onThemeChange,
+                onVisibilityChange = { updated ->
+                    withContext(Dispatchers.IO) { visibilityStore.saveVisibleSections(updated) }
+                    visibleSections = SectionVisibility.sanitize(updated)
+                },
+                onRestoreDefaults = {
+                    withContext(Dispatchers.IO) { visibilityStore.restoreDefaults() }
+                    visibleSections = SectionVisibility.sectionIds.toSet()
+                },
                 onMenu = { scope.launch { drawerState.open() } }
             )
             selectedSection != null -> PersonalSectionScreen(
@@ -300,7 +336,10 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 connected = auth is AuthState.SignedIn,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { route = "assistant" },
-                onSection = { pendingArticleId = null; pendingRecipeId = null; selectedSection = it }
+                onSection = { pendingArticleId = null; pendingRecipeId = null; selectedSection = it },
+                visibleSections = visibleSections,
+                onLibrary = { route = "library" },
+                onSettings = { route = "settings" }
             )
         }
     }
@@ -521,7 +560,196 @@ private fun ConnectionPill(connected: Boolean) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PersonalSectionScreen(section: String, initialArticleId: String?, initialRecipeId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
+private fun SettingsScreen(
+    darkTheme: Boolean,
+    visibleSections: Set<String>,
+    onThemeChange: (Boolean) -> Unit,
+    onVisibilityChange: suspend (Set<String>) -> Unit,
+    onRestoreDefaults: suspend () -> Unit,
+    onMenu: () -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val snackbar = remember { SnackbarHostState() }
+    val operationMutex = remember { Mutex() }
+    var saving by remember { mutableStateOf(false) }
+    Scaffold(
+        topBar = { CenterAlignedTopAppBar(title = { Text("Settings", maxLines = 1, fontWeight = FontWeight.SemiBold) }, navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, "Open sections") } }) },
+        snackbarHost = { SnackbarHost(snackbar) }
+    ) { padding ->
+        LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 10.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            item { Text("Appearance", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) }
+            item {
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().heightIn(min = 72.dp).padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Column(Modifier.weight(1f)) { Text("Dark appearance", style = MaterialTheme.typography.bodyLarge); Text("Saved on this device", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        Switch(checked = darkTheme, onCheckedChange = onThemeChange, modifier = Modifier.semantics { contentDescription = "Toggle dark appearance" })
+                    }
+                }
+            }
+            item {
+                Row(Modifier.fillMaxWidth().padding(top = 12.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                    Column(Modifier.weight(1f)) { Text("Home sections", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold); Text("Choose which cards appear. Hidden sections and records stay available in the drawer.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                    TextButton(onClick = {
+                        if (!operationMutex.tryLock()) return@TextButton
+                        saving = true
+                        scope.launch { try { runCatching { onRestoreDefaults() }.onFailure { snackbar.showSnackbar(it.message ?: "Could not restore defaults.") } } finally { saving = false; operationMutex.unlock() } }
+                    }, enabled = !saving, modifier = Modifier.heightIn(min = 48.dp)) { Text("Restore defaults", maxLines = 1) }
+                }
+            }
+            items(personalAreas, key = { it.name }) { area ->
+                val checked = area.name in visibleSections
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().heightIn(min = 64.dp).padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Column(Modifier.weight(1f).padding(vertical = 8.dp)) { Text(area.displayName, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium); Text("Home card visibility", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        Switch(checked = checked, enabled = !saving, onCheckedChange = { show ->
+                            if (!operationMutex.tryLock()) return@Switch
+                            val updated = if (show) visibleSections + area.name else visibleSections - area.name
+                            saving = true
+                            scope.launch { try { runCatching { onVisibilityChange(updated) }.onFailure { snackbar.showSnackbar(it.message ?: "Could not save this setting.") } } finally { saving = false; operationMutex.unlock() } }
+                        }, modifier = Modifier.semantics { contentDescription = "Show ${area.displayName} Home card" })
+                    }
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun StarterLibraryScreen(
+    selectedId: String?,
+    onSelect: (String) -> Unit,
+    onBack: () -> Unit,
+    onMenu: () -> Unit,
+    onCopy: suspend (StarterItem) -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val snackbar = remember { SnackbarHostState() }
+    val copyMutex = remember { Mutex() }
+    val uriHandler = LocalUriHandler.current
+    var query by rememberSaveable { mutableStateOf("") }
+    var category by rememberSaveable { mutableStateOf<String?>(null) }
+    var copying by rememberSaveable { mutableStateOf(false) }
+    val selected = selectedId?.let { StarterLibrary.byId(it) }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text(if (selected == null) "Starter Library" else selected.title, maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = if (selected == null) onMenu else onBack, modifier = Modifier.size(48.dp)) { if (selected == null) Icon(Icons.Default.Menu, "Open sections") else Icon(Icons.Default.Close, "Back to library") } }
+            )
+        },
+        snackbarHost = { SnackbarHost(snackbar) }
+    ) { padding ->
+        if (selected != null) {
+            LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 10.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                selected.imageKey?.let { key -> item { StarterBanner(key, selected.category) } }
+                item {
+                    Text(selected.category.uppercase(), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold, letterSpacing = 1.sp)
+                    Text(selected.title, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
+                    Text(selected.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${selected.type.name.lowercase().replaceFirstChar { it.uppercase() }} · revision ${selected.revision}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                items(selected.blocks, key = { selected.id + it.heading }) { block ->
+                    Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                            Text(block.heading, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Spacer(Modifier.height(6.dp))
+                            block.lines.forEachIndexed { index, line ->
+                                val marker = when {
+                                    selected.type == StarterType.RECIPE && block.heading == "Method" -> "${index + 1}.  "
+                                    selected.type == StarterType.CHECKLIST -> "☐  "
+                                    else -> "•  "
+                                }
+                                Text(marker + line, Modifier.padding(vertical = 3.dp), style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+                            }
+                        }
+                    }
+                }
+                if (selected.sources.isNotEmpty() || selected.reviewed != null) item {
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        selected.reviewed?.let { Text("Content reviewed: $it", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        selected.sources.forEach { (label, url) ->
+                            TextButton(onClick = { runCatching { uriHandler.openUri(url) }.onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open that source.") } } }, contentPadding = PaddingValues(horizontal = 0.dp), modifier = Modifier.heightIn(min = 48.dp)) {
+                                Text("Open source: $label", style = MaterialTheme.typography.bodySmall, maxLines = 2)
+                            }
+                        }
+                    }
+                }
+                item {
+                    Button(onClick = {
+                        if (!copyMutex.tryLock()) return@Button
+                        copying = true
+                        scope.launch {
+                            try {
+                                runCatching { onCopy(selected) }
+                                    .onSuccess { snackbar.showSnackbar("Copied to ${selected.destination}. You can edit your copy there.") }
+                                    .onFailure { snackbar.showSnackbar(it.message ?: "Could not save the personal copy.") }
+                            } finally { copying = false; copyMutex.unlock() }
+                        }
+                    }, enabled = !copying, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                        if (copying) CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp, color = MaterialTheme.colorScheme.onPrimary) else Text("Copy to my space")
+                    }
+                }
+            }
+        } else {
+            val results = StarterLibrary.search(query, category)
+            LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                item { Text("Useful guides, recipes, checklists and blank templates. Everything here works offline.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                item {
+                    OutlinedTextField(value = query, onValueChange = { query = it }, modifier = Modifier.fillMaxWidth(), singleLine = true, shape = RoundedCornerShape(16.dp), placeholder = { Text("Search the library") }, leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) }, trailingIcon = { if (query.isNotEmpty()) IconButton(onClick = { query = "" }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, "Clear search") } })
+                }
+                item {
+                    LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 2.dp)) {
+                        item { FilterChip(selected = category == null, onClick = { category = null }, label = { Text("All") }) }
+                        rowItems(StarterLibrary.categories, key = { it }) { option -> FilterChip(selected = category == option, onClick = { category = if (category == option) null else option }, label = { Text(option, maxLines = 1) }) }
+                    }
+                }
+                item { Text("${results.size} items", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                if (results.isEmpty()) item {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) { Column(Modifier.fillMaxWidth().padding(20.dp), horizontalAlignment = Alignment.CenterHorizontally) { Text("No matching items", style = MaterialTheme.typography.titleMedium); Text("Try another word or category.", color = MaterialTheme.colorScheme.onSurfaceVariant) } }
+                }
+                items(results, key = { it.id }) { item ->
+                    Card(Modifier.fillMaxWidth().clickable { onSelect(item.id) }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                            item.imageKey?.let { key -> Image(painterResource(starterImage(key)), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp))) }
+                            Column(Modifier.weight(1f).padding(start = if (item.imageKey == null) 0.dp else 12.dp)) {
+                                Text(item.category, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                                Text(item.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                                Text(item.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                                Text(item.type.name.lowercase().replaceFirstChar { it.uppercase() }, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun StarterBanner(imageKey: String, title: String) {
+    Box(Modifier.fillMaxWidth().height(128.dp).clip(RoundedCornerShape(22.dp))) {
+        Image(painterResource(starterImage(imageKey)), contentDescription = "$title reference image", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
+        Box(Modifier.fillMaxSize().background(Brush.horizontalGradient(listOf(Color(0x99000000), Color.Transparent))))
+        Text(title, Modifier.align(Alignment.BottomStart).padding(16.dp), style = MaterialTheme.typography.titleLarge, color = Color.White, fontWeight = FontWeight.SemiBold)
+    }
+}
+
+private fun starterImage(key: String): Int = when (key) {
+    "suric_garden" -> R.drawable.suric_garden
+    "suric_pottery" -> R.drawable.suric_pottery
+    "suric_shopping" -> R.drawable.suric_shopping
+    "suric_bills" -> R.drawable.suric_bills
+    "suric_diy" -> R.drawable.suric_diy
+    "suric_cleaning" -> R.drawable.suric_cleaning
+    "suric_cooking" -> R.drawable.suric_cooking
+    "suric_retro" -> R.drawable.suric_retro
+    else -> R.drawable.suric_home
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun PersonalSectionScreen(section: String, initialArticleId: String?, initialRecipeId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onStarterSelect: (String) -> Unit, onAssistant: (String) -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
@@ -719,6 +947,27 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             item { SectionHero(area) }
             item {
                 Text(area.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (section == "Retro & Android") {
+                val referenceItems = StarterLibrary.items.filter { it.category == "Retro & Android" }
+                item {
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Text("Ready-to-use reference cards", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("Offline guides for Android and PS1–PS5. Open a card for its guide and project links.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+                items(referenceItems, key = { it.id }) { reference ->
+                    Card(Modifier.fillMaxWidth().clickable { onStarterSelect(reference.id) }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)) {
+                        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Image(painterResource(R.drawable.suric_retro), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp)))
+                            Column(Modifier.weight(1f).padding(start = 12.dp)) {
+                                Text(reference.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                                Text(reference.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                                Text("Open guide and links", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                            }
+                        }
+                    }
+                }
             }
             if (section == "Cooking") item {
                 OutlinedTextField(
@@ -1570,13 +1819,23 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                             )
                         }
                     }
-                    IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") }
+                    if (connected) IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") }
                 }
             )
         },
         bottomBar = {
             Surface(tonalElevation = 2.dp, color = MaterialTheme.colorScheme.surface) {
-                Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)) {
+                if (!connected) {
+                    Column(Modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 18.dp, vertical = 14.dp)) {
+                        Text("Connect ChatGPT only when you want an AI response. Your notes, library and settings stay available without it.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(Modifier.height(10.dp))
+                        Button(onClick = onSignIn, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), enabled = auth != AuthState.SigningIn) {
+                            if (auth == AuthState.SigningIn) Text("Waiting for sign-in…") else Text("Continue with ChatGPT")
+                        }
+                        if (auth == AuthState.SigningIn) TextButton(onClick = vm::cancelSignIn, modifier = Modifier.align(Alignment.CenterHorizontally).heightIn(min = 48.dp)) { Text("Cancel sign-in") }
+                        (auth as? AuthState.Failed)?.let { Text(it.message, Modifier.padding(top = 8.dp), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+                    }
+                } else Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)) {
                     selectedImage?.let { uri ->
                         Row(Modifier.fillMaxWidth().padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
                             PhotoAttachment(uri.toString(), "Selected photo", Modifier.size(72.dp), onClick = { previewImage = uri.toString() })
@@ -1610,7 +1869,7 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                     Text("Ask about your home, plans or projects.", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
-            itemsIndexed(state.messages, key = { index, _ -> index }) { _, message ->
+            itemsIndexed(state.messages, key = { index, _ -> index }) { index, message ->
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = if (message.role == "user") Arrangement.End else Arrangement.Start) {
                 Surface(
                     color = if (message.role == "user") MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface,
@@ -1622,6 +1881,25 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                             PhotoAttachment(uri, "Photo attached to this message", Modifier.size(168.dp), onClick = { previewImage = uri })
                         }
                         Text(message.text, style = MaterialTheme.typography.bodyLarge, color = if (message.role == "user") MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface)
+                        if (message.role == "assistant" && message.completed) {
+                            TextButton(
+                                onClick = {
+                                    if (savingIndex >= 0 || index in savedIndices) return@TextButton
+                                    savingIndex = index
+                                    scope.launch {
+                                        runCatching { vm.saveAssistantResponse(message.text) }
+                                            .onSuccess { savedIndices = savedIndices + index; snackbar.showSnackbar("Saved to Notes on this device.") }
+                                            .onFailure { snackbar.showSnackbar(it.message ?: "Could not save this answer.") }
+                                        savingIndex = -1
+                                    }
+                                },
+                                enabled = savingIndex < 0 && index !in savedIndices,
+                                modifier = Modifier.heightIn(min = 48.dp),
+                                contentPadding = PaddingValues(horizontal = 4.dp)
+                            ) {
+                                Text(when { index in savedIndices -> "Saved to Notes"; savingIndex == index -> "Saving…"; else -> "Save to Notes" }, maxLines = 1)
+                            }
+                        }
                     }
                 }
                 }

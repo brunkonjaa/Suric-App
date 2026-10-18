@@ -2,6 +2,8 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
+The separate, code-authored Starter Library contains 38 immutable guides, recipes, checklists and templates. It has its own IDs and does not increase the 35 article or 891 canonical-recipe counts.
+
 The 28 bundled JSON files total **1,826,155 bytes**. Two AI-generated photorealistic WebP collection images add **471,028 bytes** for BBQ and Fish & Seafood. Five recipe-specific brisket WebP images add **576,204 bytes**. All seven images total **1,047,232 bytes**. These are source-file sizes, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
@@ -131,4 +133,4 @@ The four new brisket images below were created as original photorealistic output
 | `recipe_brisket_04_smoking.webp` | `bbq-texas-smoked-beef-brisket` | OpenAI built-in image generation for Suric; brisket smoking in an oak-fired offset pit; output `exec-444cd23e-e46b-4945-8ecf-642d321831ab.png` | OpenAI Terms of Use ownership assignment, to the extent permitted by law; no separate CC license | Not required by the terms; generated with OpenAI for Suric. |
 | `recipe_brisket_05_carving.webp` | `bbq-texas-smoked-beef-brisket` | OpenAI built-in image generation for Suric; rested brisket being carved across the grain; output `exec-4d9d6db2-c20d-44c9-87b0-003f695fbf31.png` | OpenAI Terms of Use ownership assignment, to the extent permitted by law; no separate CC license | Not required by the terms; generated with OpenAI for Suric. |
 
-Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 using cached Gradle 8.13, JDK 17 and the installed Android SDK. The debug APK assembly completed. No emulator/device checks were run. The uncommitted wrapper-properties edit selects incompatible Gradle 9.7.1; these checks used Gradle 8.13, the committed wrapper version, and that user edit remains excluded from commits. GitHub Actions had not yet been run for this update at the time of this inventory entry.
+Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 after integrating `origin/main` at `a26c13e`, using cached Gradle 8.13, JDK 17 and the installed Android SDK. The debug APK assembly completed. No emulator/device checks were run. The uncommitted wrapper-properties edit selects incompatible Gradle 9.7.1; these checks used Gradle 8.13, the committed wrapper version, and that user edit remains excluded from commits. The latest GitHub Actions status for pull request #14 is available on the pull request.

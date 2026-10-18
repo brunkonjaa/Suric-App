@@ -198,6 +198,13 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         withContext(Dispatchers.IO) { localEntries.restore(entry); _personalEntries.value = localEntries.allEntries() }
         _localDataError.value = null
     }
+    suspend fun saveAssistantResponse(text: String): PersonalEntry = aiSaveMutex.withLock {
+        val body = text.trim()
+        require(body.isNotEmpty()) { "There is no completed answer to save." }
+        savedAiResponses[body]?.let { return@withLock it }
+        val date = java.text.DateFormat.getDateTimeInstance(java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT).format(java.util.Date())
+        addEntry("Notes", "Ask Suric response — $date", body).also { savedAiResponses[body] = it }
+    }
     suspend fun importSharedText(text: String): String {
         val cleaned = text.trim()
         require(cleaned.isNotEmpty()) { "The shared content is empty." }
@@ -268,7 +275,9 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
                     scheduleConversationSave()
                     transitionAuth(AuthStateMachine.Event.Expired)
                 } else {
-                    _conversation.value = ConversationReducer.failed(_conversation.value, e.message ?: "The request failed. Try again.")
+                    val message = if ((e is ApiException && e.statusCode == 0) || (e is java.io.IOException && e !is ApiException)) "An internet connection is required for a new Ask Suric response. Your local information is still available offline."
+                    else e.message ?: "The request failed. Try again."
+                    _conversation.value = ConversationReducer.failed(_conversation.value, message)
                     scheduleConversationSave()
                 }
             }
