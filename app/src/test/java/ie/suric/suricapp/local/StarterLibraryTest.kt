@@ -53,7 +53,7 @@ class StarterLibraryTest {
 
     @Test fun retroGuidesCanBeSearchedAndCopiedWithTheirSources() {
         val ps5 = StarterLibrary.search("PS5", "Retro & Android").first { it.id == "retro.ps5-homebrew" }
-        assertTrue(ps5.summary.contains("firmware", ignoreCase = true))
+        assertTrue(ps5.blocks.flatMap { it.lines }.any { it.contains("firmware", ignoreCase = true) })
         assertTrue(ps5.asPersonalText().contains("https://github.com/etaHEN/etaHEN"))
         assertTrue(StarterLibrary.search("Android 17", "Retro & Android").any { it.id == "retro.android-version-map" })
     }
