@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The 28 bundled JSON files total **1,826,155 bytes**. Two AI-generated photorealistic WebP collection images add **471,028 bytes** for BBQ and Fish & Seafood. These are source-file sizes, not the final APK's compressed or installed asset size; individual recipe and offline article photographs are not included.
+The 28 bundled JSON files total **1,826,155 bytes**. Two AI-generated photorealistic WebP collection images add **471,028 bytes** for BBQ and Fish & Seafood; one recipe-specific WebP image adds **187,480 bytes**. These are source-file sizes, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
@@ -115,6 +115,6 @@ Chat history can be shared as plain text through Android Sharesheet and deleted 
 
 All 24 traditional cuisine quotas and both 100-entry BBQ and Fish & Seafood quotas are complete: 920 of 920 requested collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 
-The BBQ and Fish & Seafood collection lists display generated, bundled cover images when those collections are selected. The photorealistic images depict representative dishes for each collection; each recipe does not yet have its own image.
+The BBQ and Fish & Seafood collection lists display generated, bundled cover images when those collections are selected. The photorealistic images depict representative dishes for each collection; they do not count as recipe images. The recipe detail screen supports a horizontal gallery using offline image assets. One image is currently assigned to Texas smoked beef brisket. The requested target is five images for each of 891 unique canonical recipes (4,455 total); 4,454 more recipe images remain. The existing 920 collection memberships refer to those 891 unique recipe records.
 
 No tests, lint, builds, emulator checks or GitHub Actions were run for this change, as requested.

@@ -25,7 +25,8 @@ data class OfflineRecipe(
     val safety: String,
     val tags: List<String>,
     val revision: Int,
-    val articleId: String?
+    val articleId: String?,
+    val imageAssetNames: List<String> = emptyList()
 ) {
     val searchableText: String get() = "$name ${englishName.orEmpty()} $country ${region.orEmpty()} $description ${ingredients.joinToString(" ")} ${tags.joinToString(" ")}"
 }
@@ -80,7 +81,8 @@ object OfflineRecipeCatalogue {
                     sides = item.getString("sides"), substitutions = item.getString("substitutions"),
                     storage = item.getString("storage"), safety = item.getString("safety"),
                     tags = item.getJSONArray("tags").let { values -> (0 until values.length()).map(values::getString) },
-                    revision = item.getInt("revision"), articleId = articleId
+                    revision = item.getInt("revision"), articleId = articleId,
+                    imageAssetNames = item.optJSONArray("imageAssets")?.let { values -> (0 until values.length()).map(values::getString) }.orEmpty()
                 )
             }
         } }

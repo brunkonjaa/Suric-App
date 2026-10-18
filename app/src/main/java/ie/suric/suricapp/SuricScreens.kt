@@ -27,6 +27,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Send
@@ -1252,6 +1253,12 @@ private fun OfflineRecipeDetail(
     onCopy: () -> Unit,
     onShare: () -> Unit
 ) {
+    val context = LocalContext.current
+    val recipeImageResources = remember(recipe.id, recipe.imageAssetNames) {
+        recipe.imageAssetNames.mapNotNull { name ->
+            context.resources.getIdentifier(name, "drawable", context.packageName).takeIf { it != 0 }
+        }
+    }
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
@@ -1273,6 +1280,20 @@ private fun OfflineRecipeDetail(
             Text(recipe.description, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(8.dp))
             Text("Prep ${recipe.prepMinutes} min • Cook ${recipe.cookMinutes} min • Serves ${recipe.servings} • ${recipe.difficulty}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (recipeImageResources.isNotEmpty()) {
+                Spacer(Modifier.height(20.dp))
+                Text("Recipe photos (${recipeImageResources.size})", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    recipeImageResources.forEachIndexed { index, resourceId ->
+                        Image(
+                            painter = painterResource(resourceId),
+                            contentDescription = "${recipe.name}, photo ${index + 1} of ${recipeImageResources.size}",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.width(280.dp).height(190.dp).clip(RoundedCornerShape(18.dp))
+                        )
+                    }
+                }
+            }
             Spacer(Modifier.height(20.dp))
             Text("Ingredients", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
             recipe.ingredients.forEach { ingredient ->
