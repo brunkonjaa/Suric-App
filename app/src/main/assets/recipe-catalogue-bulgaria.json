@@ -1,0 +1,1192 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "bg-banitsa",
+                        "name":  "Banitsa",
+                        "englishName":  null,
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Flaky filo pie with a savoury filling of eggs and Bulgarian white brined cheese.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g filo pastry",
+                                            "300 g sirene or feta",
+                                            "4 eggs",
+                                            "200 g yogurt",
+                                            "80 ml oil",
+                                            "1 tsp baking soda"
+                                        ],
+                        "instructions":  [
+                                             "Crumble cheese and mix with eggs, yogurt and baking soda",
+                                             "Brush a baking dish with oil",
+                                             " layer half the pastry sheets, brushing lightly",
+                                             "Spread filling, cover with remaining sheets and tuck edges",
+                                             "Bake at 190 C until puffed and deep golden",
+                                             " rest 10 minutes."
+                                         ],
+                        "sides":  "Serve warm for breakfast with yogurt.",
+                        "substitutions":  "Use spinach with cheese for zelnik variation.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat in oven.",
+                        "safety":  "Keep dairy filling chilled and cook egg mixture fully.",
+                        "tags":  [
+                                     "pastry",
+                                     "cheese",
+                                     "breakfast"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-patatnik",
+                        "name":  "bg-patatnik",
+                        "englishName":  "Rhodopes potato and cheese pie",
+                        "country":  "Bulgaria",
+                        "region":  "Rhodopes",
+                        "description":  "Grated potatoes baked with onion and herbs into a crisp-edged regional pie.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g potatoes, grated",
+                                            "1 onion",
+                                            "150 g sirene cheese",
+                                            "2 eggs",
+                                            "2 tbsp mint",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Squeeze excess liquid from grated potatoes",
+                                             "Mix with onion, crumbled cheese, eggs, mint, pepper and salt",
+                                             "Press into an oiled skillet or baking dish",
+                                             "Bake at 190 C until underside and top are golden and potatoes cooked, about 35 to 40 minutes",
+                                             " rest before slicing."
+                                         ],
+                        "sides":  "Serve with yogurt.",
+                        "substitutions":  "Use feta and parsley if sirene or mint is unavailable.",
+                        "storage":  "Refrigerate within 2 hours up to 2 days; reheat in oven.",
+                        "safety":  "Cook potato and egg mixture fully.",
+                        "tags":  [
+                                     "Rhodopes",
+                                     "potato",
+                                     "cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-bob-chorba",
+                        "name":  "Bob chorba",
+                        "englishName":  "Bulgarian bean soup",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "White beans simmered with vegetables, mint and paprika into a warming soup.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  90,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g dried white beans, soaked",
+                                            "1 onion",
+                                            "1 carrot",
+                                            "1 pepper",
+                                            "1 tbsp tomato paste",
+                                            "1 tsp paprika",
+                                            "1 tsp dried mint",
+                                            "1.5 litres water"
+                                        ],
+                        "instructions":  [
+                                             "Drain soaked beans and cover with fresh water",
+                                             " simmer until beginning to soften",
+                                             "Add diced onion, carrot and pepper",
+                                             " cook until beans are tender",
+                                             "Stir tomato paste and paprika with a little broth",
+                                             " add to pot and simmer 15 minutes",
+                                             " finish with mint and salt."
+                                         ],
+                        "sides":  "Serve with bread and chopped parsley.",
+                        "substitutions":  "Use canned beans and reduce simmering time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until bubbling.",
+                        "safety":  "Boil dried beans thoroughly; soak refrigerated when warm.",
+                        "tags":  [
+                                     "soup",
+                                     "beans",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-lyutenitsa-eggs",
+                        "name":  "Eggs with pepper relish",
+                        "englishName":  null,
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Fried eggs served over warm lyutenitsa with crumbled sirene cheese.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  10,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 eggs",
+                                            "200 g lyutenitsa",
+                                            "60 g sirene cheese",
+                                            "1 tbsp oil",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Warm lyutenitsa in a skillet over low heat",
+                                             "Make small wells and add eggs",
+                                             " cover until whites set",
+                                             "Crumble cheese over top and add parsley",
+                                             " serve from pan."
+                                         ],
+                        "sides":  "Serve with bread for breakfast.",
+                        "substitutions":  "Use feta or omit cheese.",
+                        "storage":  "Best served fresh.",
+                        "safety":  "Cook eggs until whites are set; keep relish refrigerated before use.",
+                        "tags":  [
+                                     "breakfast",
+                                     "eggs",
+                                     "pepper"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-gyuvech",
+                        "name":  "Gyuvech",
+                        "englishName":  "Bulgarian baked vegetable stew",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "A clay-pot style casserole of peppers, tomatoes, aubergine and potatoes.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 aubergine",
+                                            "2 potatoes",
+                                            "2 peppers",
+                                            "2 tomatoes",
+                                            "1 onion",
+                                            "2 tbsp oil",
+                                            "1 tsp paprika",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cut vegetables into similar-sized pieces",
+                                             " salt aubergine 15 minutes then pat dry",
+                                             "Layer onion, potatoes, peppers, aubergine and tomatoes in an ovenproof dish",
+                                             " season with paprika and oil",
+                                             "Cover and bake at 180 C until vegetables are tender, about 50 minutes",
+                                             " uncover to reduce excess liquid",
+                                             " garnish."
+                                         ],
+                        "sides":  "Serve with bread and yogurt.",
+                        "substitutions":  "Add cooked beans or sausage for a heartier version.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until hot.",
+                        "safety":  "Cook vegetables fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "casserole",
+                                     "vegetables",
+                                     "meat-free"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kachamak",
+                        "name":  "Kachamak",
+                        "englishName":  "Cornmeal porridge with cheese",
+                        "country":  "Bulgaria",
+                        "region":  "Northwestern Bulgaria",
+                        "description":  "Thick cornmeal cooked in salted water and finished with butter and sirene.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g cornmeal",
+                                            "900 ml water",
+                                            "1 tsp salt",
+                                            "40 g butter",
+                                            "120 g sirene cheese"
+                                        ],
+                        "instructions":  [
+                                             "Bring salted water to a boil",
+                                             "Whisk cornmeal in gradually, stirring to prevent lumps",
+                                             "Cook over low heat, stirring often, until smooth and thick",
+                                             "Stir in butter and crumble cheese over top",
+                                             " serve hot."
+                                         ],
+                        "sides":  "Serve with yogurt or fried onions.",
+                        "substitutions":  "Use feta or omit dairy.",
+                        "storage":  "Best fresh; refrigerate leftovers and reheat with water.",
+                        "safety":  "Stir carefully to avoid hot splashes.",
+                        "tags":  [
+                                     "cornmeal",
+                                     "porridge",
+                                     "cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kapama",
+                        "name":  "Kapama",
+                        "englishName":  "Bansko layered meat and sauerkraut",
+                        "country":  "Bulgaria",
+                        "region":  "Bansko",
+                        "description":  "A slow oven casserole layered with pork, chicken, sausage, rice and sour cabbage.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  180,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g pork shoulder",
+                                            "300 g chicken thighs",
+                                            "200 g smoked sausage",
+                                            "500 g sauerkraut",
+                                            "100 g rice",
+                                            "1 onion",
+                                            "1 tsp paprika",
+                                            "500 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Rinse sauerkraut lightly if very sour",
+                                             "Layer sauerkraut, onion, meat pieces, sausage and rinsed rice in a covered casserole",
+                                             "Sprinkle paprika and add stock",
+                                             " cover tightly",
+                                             "Bake at 160 C until meats are tender and rice cooked, about 2.5 to 3 hours",
+                                             " stir carefully before serving."
+                                         ],
+                        "sides":  "Serve hot with bread.",
+                        "substitutions":  "Use one meat type and add beans for a simpler casserole.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat thoroughly.",
+                        "safety":  "Cook poultry and pork fully; cool leftovers quickly.",
+                        "tags":  [
+                                     "Bansko",
+                                     "meat",
+                                     "cabbage"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-katmi",
+                        "name":  "Katmi",
+                        "englishName":  "Bulgarian griddle pancakes",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Thin yeasted batter pancakes cooked on a hot griddle and served with cheese or jam.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g flour",
+                                            "1 egg",
+                                            "300 ml milk",
+                                            "7 g yeast",
+                                            "1 tsp sugar",
+                                            "pinch salt"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour, egg, milk, yeast, sugar and salt into a smooth batter",
+                                             " cover and rise 40 minutes",
+                                             "Heat a lightly oiled griddle",
+                                             " ladle a thin round of batter and spread gently",
+                                             "Cook until bubbles form and underside is golden",
+                                             " flip and cook the other side",
+                                             " repeat."
+                                         ],
+                        "sides":  "Serve with sirene, honey or jam.",
+                        "substitutions":  "Use kefir for a tangier batter.",
+                        "storage":  "Best fresh; refrigerate leftovers up to 2 days.",
+                        "safety":  "Cook egg batter through.",
+                        "tags":  [
+                                     "pancake",
+                                     "breakfast",
+                                     "griddle"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kavarma",
+                        "name":  "Kavarma",
+                        "englishName":  "Pork and vegetable casserole",
+                        "country":  "Bulgaria",
+                        "region":  "Thrace",
+                        "description":  "Pork, onions, peppers and tomatoes braised slowly in a covered casserole.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  90,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g pork shoulder, cubed",
+                                            "2 onions",
+                                            "2 peppers",
+                                            "2 tomatoes",
+                                            "150 ml stock",
+                                            "1 tsp paprika",
+                                            "1 bay leaf",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown pork in oil in batches",
+                                             " add onions and cook until soft",
+                                             "Stir in peppers, tomatoes, paprika and bay",
+                                             " pour in stock",
+                                             "Cover and braise at 170 C until pork is tender, about 75 minutes",
+                                             " uncover briefly to thicken sauce."
+                                         ],
+                        "sides":  "Serve with bread or rice.",
+                        "substitutions":  "Use chicken thighs and shorten the braise.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook pork thoroughly and cool leftovers quickly.",
+                        "tags":  [
+                                     "Thrace",
+                                     "pork",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kebapche",
+                        "name":  "Kebapche",
+                        "englishName":  "Grilled minced meat rolls",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Peppery minced meat shaped into short rolls and grilled until browned.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "600 g minced beef",
+                                            "200 g minced pork",
+                                            "1 tsp salt",
+                                            "1 tsp black pepper",
+                                            "1 tsp cumin",
+                                            "1/2 tsp baking soda",
+                                            "50 ml cold water"
+                                        ],
+                        "instructions":  [
+                                             "Mix meats, salt, pepper, cumin, baking soda and water",
+                                             " knead until tacky",
+                                             "Cover and chill at least 2 hours",
+                                             "Shape into short even rolls",
+                                             "Grill or pan-grill over medium-high heat, turning until browned and cooked through."
+                                         ],
+                        "sides":  "Serve with lyutenitsa, bread and shopska salad.",
+                        "substitutions":  "Use all beef if preferred.",
+                        "storage":  "Refrigerate raw mixture up to 24 hours; cooked rolls keep 2 days chilled.",
+                        "safety":  "Cook minced meat fully through and keep raw utensils separate.",
+                        "tags":  [
+                                     "grilled",
+                                     "meat",
+                                     "everyday"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kiselo-mlyako",
+                        "name":  "Kiselo mlyako",
+                        "englishName":  "Bulgarian yogurt bowl with honey",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Thick tangy yogurt served with honey and walnuts as a simple breakfast or snack.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  0,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g Bulgarian-style plain yogurt",
+                                            "2 tbsp honey",
+                                            "30 g walnuts",
+                                            "1 tsp rose jam, optional"
+                                        ],
+                        "instructions":  [
+                                             "Spoon cold yogurt into bowls",
+                                             "Drizzle with honey and add chopped walnuts",
+                                             "Add a small spoon of rose jam if desired and serve."
+                                         ],
+                        "sides":  "Add seasonal fruit or oats.",
+                        "substitutions":  "Use any unsweetened thick yogurt.",
+                        "storage":  "Keep refrigerated and serve immediately.",
+                        "safety":  "Keep dairy chilled and avoid cross-contact with nuts.",
+                        "tags":  [
+                                     "yogurt",
+                                     "breakfast",
+                                     "no-cook"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kozunak",
+                        "name":  "Kozunak",
+                        "englishName":  "Bulgarian sweet braided bread",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Soft enriched yeast bread with citrus zest and raisins, often braided for holidays.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  150,
+                        "servings":  8,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "500 g flour",
+                                            "7 g yeast",
+                                            "200 ml warm milk",
+                                            "2 eggs",
+                                            "100 g sugar",
+                                            "80 g butter",
+                                            "zest of 1 lemon",
+                                            "80 g raisins"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, milk, eggs and sugar into dough",
+                                             " knead in softened butter gradually",
+                                             "Knead until elastic, cover and rise until doubled",
+                                             "Fold in raisins and lemon zest",
+                                             " divide and braid",
+                                             " let rise again",
+                                             "Brush with egg and bake at 175 C until deep golden and cooked, 35 to 40 minutes."
+                                         ],
+                        "sides":  "Serve sliced with coffee or jam.",
+                        "substitutions":  "Use orange zest and dried cranberries.",
+                        "storage":  "Store covered at room temperature for 2 days; freeze slices.",
+                        "safety":  "Bake through the centre and cool before slicing.",
+                        "tags":  [
+                                     "bread",
+                                     "yeast",
+                                     "sweet"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kyufte",
+                        "name":  "Kyufte",
+                        "englishName":  "Bulgarian meat patties",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Flat seasoned meat patties with onion, parsley and cumin, grilled or pan-fried.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g minced pork and beef",
+                                            "1 small onion, grated",
+                                            "1 tsp cumin",
+                                            "1 tsp paprika",
+                                            "2 tbsp parsley",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Mix mince with onion, spices, parsley, salt and pepper",
+                                             " rest chilled 30 minutes",
+                                             "Shape into 8 flat patties",
+                                             "Grill or pan-fry in a little oil, turning once, until browned and cooked through."
+                                         ],
+                        "sides":  "Serve with potato salad and pickles.",
+                        "substitutions":  "Use turkey mince, adding a spoon of yogurt for moisture.",
+                        "storage":  "Refrigerate cooked patties up to 2 days; reheat until hot.",
+                        "safety":  "Cook patties through to the centre.",
+                        "tags":  [
+                                     "meat",
+                                     "patties",
+                                     "grill"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-lyutenitsa",
+                        "name":  "Lyutenitsa",
+                        "englishName":  "Roasted pepper and tomato relish",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Slow-cooked roasted peppers and tomatoes blended into a sweet savoury relish.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  60,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 kg red peppers",
+                                            "700 g ripe tomatoes",
+                                            "1 carrot",
+                                            "2 garlic cloves",
+                                            "2 tbsp oil",
+                                            "1 tsp sugar",
+                                            "1 tbsp vinegar",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Roast peppers under a grill until blistered",
+                                             " cover, cool and peel",
+                                             "Roast tomatoes and carrot until soft",
+                                             " peel tomatoes and chop vegetables",
+                                             "Cook pepper, tomato, carrot and garlic in a wide pot until thick, stirring often",
+                                             "Stir in oil, sugar, vinegar and salt",
+                                             " cool and refrigerate."
+                                         ],
+                        "sides":  "Serve with bread, cheese or grilled meat.",
+                        "substitutions":  "Use jarred roasted peppers and simmer shorter.",
+                        "storage":  "Keep refrigerated up to 1 week; for shelf storage use tested canning guidance.",
+                        "safety":  "This refrigerator relish is not a validated canning recipe; keep chilled.",
+                        "tags":  [
+                                     "relish",
+                                     "pepper",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-mekitsi",
+                        "name":  "Mekitsi",
+                        "englishName":  "Fried breakfast dough",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Soft yogurt dough fried in small rounds and served sweet or savoury.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g flour",
+                                            "200 g yogurt",
+                                            "1 egg",
+                                            "7 g yeast",
+                                            "1 tsp sugar",
+                                            "1/2 tsp salt",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yogurt, egg, yeast, sugar and salt into a soft dough",
+                                             " cover and rise until doubled",
+                                             "Divide into small balls and flatten into rounds",
+                                             "Fry in medium-hot oil, turning once, until golden and cooked through",
+                                             " drain on a rack."
+                                         ],
+                        "sides":  "Serve with jam, honey or sirene.",
+                        "substitutions":  "Use kefir in place of yogurt.",
+                        "storage":  "Best fresh; store leftovers covered and use within a day.",
+                        "safety":  "Keep oil monitored and cook dough through the centre.",
+                        "tags":  [
+                                     "breakfast",
+                                     "fried dough",
+                                     "bread"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-milinki",
+                        "name":  "Milinki",
+                        "englishName":  "Bulgarian cheese bread rolls",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Soft yeast rolls brushed with butter and topped with salty cheese crumbs.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  90,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g flour",
+                                            "7 g yeast",
+                                            "250 ml warm milk",
+                                            "1 egg",
+                                            "60 g butter",
+                                            "1 tsp sugar",
+                                            "150 g sirene cheese"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, milk, egg, sugar and salt",
+                                             " knead until smooth and rise until doubled",
+                                             "Divide into small balls and arrange closely in a buttered pan",
+                                             " rise 30 minutes",
+                                             "Brush with melted butter and crumble cheese over",
+                                             "Bake at 190 C until golden and cooked through, about 25 minutes."
+                                         ],
+                        "sides":  "Serve warm for breakfast.",
+                        "substitutions":  "Use feta or a brined sheep cheese.",
+                        "storage":  "Store covered up to 2 days; reheat gently.",
+                        "safety":  "Cool before storing and keep dairy bread refrigerated if warm.",
+                        "tags":  [
+                                     "bread",
+                                     "cheese",
+                                     "yeast"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-mish-mash",
+                        "name":  "Mish-mash",
+                        "englishName":  "Pepper tomato and egg skillet",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "A quick summer skillet of peppers, tomatoes, eggs and crumbled sirene cheese.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "3 peppers, sliced",
+                                            "3 tomatoes, chopped",
+                                            "1 onion",
+                                            "4 eggs",
+                                            "100 g sirene cheese",
+                                            "2 tbsp oil",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion and peppers in oil until soft",
+                                             "Add tomatoes and simmer until saucy",
+                                             "Beat eggs lightly and pour into pan",
+                                             " stir gently until just set",
+                                             "Crumble cheese over top and finish with parsley."
+                                         ],
+                        "sides":  "Serve with bread as a light meal.",
+                        "substitutions":  "Use feta or omit cheese.",
+                        "storage":  "Best served immediately; refrigerate leftovers for no more than 1 day.",
+                        "safety":  "Cook eggs until set and keep leftovers chilled.",
+                        "tags":  [
+                                     "egg",
+                                     "pepper",
+                                     "quick meal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-musaka",
+                        "name":  "Musaka",
+                        "englishName":  "Bulgarian potato moussaka",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Potatoes baked with minced meat and tomato, finished with a yogurt and egg topping.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  60,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "800 g potatoes, diced",
+                                            "400 g minced beef",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "1 tsp paprika",
+                                            "200 g yogurt",
+                                            "2 eggs",
+                                            "1 tbsp flour"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion and mince in a pan until browned",
+                                             " add tomatoes and paprika and simmer 10 minutes",
+                                             "Layer diced potatoes and meat sauce in a baking dish",
+                                             " add 200 ml water",
+                                             "Bake at 190 C until potatoes are tender, about 40 minutes",
+                                             "Whisk yogurt, eggs and flour",
+                                             " spread over top and bake until set and golden."
+                                         ],
+                        "sides":  "Serve warm with salad.",
+                        "substitutions":  "Use minced pork or lentils.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until steaming.",
+                        "safety":  "Cook meat fully and set egg topping before serving.",
+                        "tags":  [
+                                     "potato",
+                                     "mince",
+                                     "bake"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-oshav",
+                        "name":  "Oshav",
+                        "englishName":  "Dried fruit compote",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Dried apples, pears and plums simmered with cinnamon into a gently sweet drink and dessert.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g mixed dried apples, pears and prunes",
+                                            "1.5 litres water",
+                                            "1 cinnamon stick",
+                                            "2 tbsp honey",
+                                            "lemon peel"
+                                        ],
+                        "instructions":  [
+                                             "Rinse dried fruit",
+                                             "Place fruit, water, cinnamon and lemon peel in a pot",
+                                             " simmer gently until fruit softens, 25 to 30 minutes",
+                                             "Cool slightly, sweeten with honey and serve warm or chilled."
+                                         ],
+                        "sides":  "Serve as a drink with fruit spooned into bowls.",
+                        "substitutions":  "Use raisins or dried apricots in the fruit mix.",
+                        "storage":  "Refrigerate covered and use within 3 days.",
+                        "safety":  "Cool promptly and keep chilled.",
+                        "tags":  [
+                                     "fruit",
+                                     "drink",
+                                     "compote"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-palneni-chushki",
+                        "name":  "Palneni chushki",
+                        "englishName":  "Stuffed peppers with rice and mince",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Bell peppers filled with rice, minced meat and herbs, baked in tomato sauce.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 bell peppers",
+                                            "300 g minced pork",
+                                            "100 g rice",
+                                            "1 onion",
+                                            "400 g passata",
+                                            "1 tsp paprika",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion until soft",
+                                             " stir in mince and cook until browned",
+                                             " add rinsed rice, paprika and parsley",
+                                             "Trim pepper tops and remove seeds",
+                                             " fill loosely with mixture",
+                                             "Stand in a baking dish and pour passata around them",
+                                             " cover with foil and bake at 190 C until filling is cooked and peppers tender."
+                                         ],
+                        "sides":  "Serve with yogurt and bread.",
+                        "substitutions":  "Use lentils and cooked rice for a meat-free filling.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook minced meat and rice completely; avoid overfilling peppers.",
+                        "tags":  [
+                                     "stuffed pepper",
+                                     "rice",
+                                     "meat"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-fish-soup",
+                        "name":  "Ribena chorba",
+                        "englishName":  "Black Sea fish soup",
+                        "country":  "Bulgaria",
+                        "region":  "Black Sea coast",
+                        "description":  "A light fish soup with tomatoes, peppers and herbs, finished with lemon.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g firm white fish",
+                                            "1.2 litres fish stock",
+                                            "1 onion",
+                                            "1 pepper",
+                                            "2 tomatoes",
+                                            "1 potato",
+                                            "1 bay leaf",
+                                            "parsley",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion and pepper in a little oil until soft",
+                                             "Add tomatoes, diced potato, bay and stock",
+                                             " simmer until potato is almost tender",
+                                             "Add fish chunks and poach gently until opaque and flaking",
+                                             "Remove bay",
+                                             " finish with parsley and lemon."
+                                         ],
+                        "sides":  "Serve with bread.",
+                        "substitutions":  "Use freshwater fish or mixed white fish.",
+                        "storage":  "Refrigerate promptly and use within 1 day; reheat gently.",
+                        "safety":  "Keep fish chilled and cook until opaque.",
+                        "tags":  [
+                                     "Black Sea",
+                                     "fish",
+                                     "soup"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-patato-salad",
+                        "name":  "Salata s kartofi",
+                        "englishName":  "Bulgarian potato salad",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Boiled potatoes tossed warm with onion, parsley, oil and vinegar.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g waxy potatoes",
+                                            "1 small onion",
+                                            "3 tbsp sunflower oil",
+                                            "1 tbsp vinegar",
+                                            "2 tbsp parsley",
+                                            "Salt and pepper"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes whole until just tender",
+                                             " drain, cool slightly and peel",
+                                             "Slice while warm and place in a bowl",
+                                             "Add finely sliced onion, oil, vinegar, parsley, salt and pepper",
+                                             " toss gently and serve."
+                                         ],
+                        "sides":  "Serve with grilled kebapche or fish.",
+                        "substitutions":  "Add chopped pickles or spring onion.",
+                        "storage":  "Refrigerate promptly and use within 2 days.",
+                        "safety":  "Chill leftovers quickly and keep covered.",
+                        "tags":  [
+                                     "potato",
+                                     "salad",
+                                     "side"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-sarmi",
+                        "name":  "Sarmi",
+                        "englishName":  "Cabbage rolls with rice and pork",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Sour cabbage leaves wrapped around rice and minced pork, simmered gently in broth.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  90,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "12 sour cabbage leaves",
+                                            "400 g minced pork",
+                                            "100 g rice",
+                                            "1 onion",
+                                            "1 tsp paprika",
+                                            "700 ml stock",
+                                            "1 tbsp tomato paste"
+                                        ],
+                        "instructions":  [
+                                             "Mix pork, rinsed rice, diced onion, paprika, salt and pepper",
+                                             "Place filling on cabbage leaves, fold sides and roll tightly",
+                                             "Arrange rolls seam-down in a pot",
+                                             " mix stock and tomato paste and pour over",
+                                             " simmer covered until rice and pork are cooked, about 75 minutes."
+                                         ],
+                        "sides":  "Serve with yogurt or sour cream.",
+                        "substitutions":  "Use fresh blanched cabbage with a little lemon juice.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook pork and rice filling fully through.",
+                        "tags":  [
+                                     "cabbage",
+                                     "rolls",
+                                     "rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-shkembe",
+                        "name":  "Shkembe chorba",
+                        "englishName":  "Bulgarian tripe soup",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Slow-simmered tripe soup finished with paprika oil, garlic and vinegar.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  150,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g cleaned beef tripe",
+                                            "1.5 litres water",
+                                            "300 ml milk",
+                                            "30 g butter",
+                                            "1 tsp paprika",
+                                            "3 garlic cloves",
+                                            "vinegar"
+                                        ],
+                        "instructions":  [
+                                             "Simmer cleaned tripe in water until very tender, 2 to 2.5 hours",
+                                             " remove and slice thinly",
+                                             "Return tripe to broth",
+                                             " stir in milk and warm gently without boiling",
+                                             "Melt butter, bloom paprika briefly and drizzle over soup",
+                                             "Serve with crushed garlic mixed with vinegar."
+                                         ],
+                        "sides":  "Serve hot with bread and chilli flakes.",
+                        "substitutions":  "Use well-cleaned pre-cooked tripe and shorten simmer.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Use only food-grade cleaned tripe; keep soup chilled and reheat thoroughly.",
+                        "tags":  [
+                                     "soup",
+                                     "tripe",
+                                     "garlic"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-shopska-salata",
+                        "name":  "Shopska salata",
+                        "englishName":  "Shopska salad",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Chopped tomato, cucumber, pepper and onion finished with grated white brined cheese.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "3 tomatoes",
+                                            "1 cucumber",
+                                            "1 red pepper",
+                                            "1/2 onion",
+                                            "150 g sirene cheese",
+                                            "2 tbsp sunflower oil",
+                                            "1 tbsp vinegar",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Dice tomato, cucumber and pepper into similar pieces",
+                                             "Slice onion thinly and mix with vegetables",
+                                             "Dress lightly with oil, vinegar and salt",
+                                             "Grate cheese generously over top and finish with parsley."
+                                         ],
+                        "sides":  "Serve chilled alongside grilled dishes.",
+                        "substitutions":  "Use feta if sirene is unavailable.",
+                        "storage":  "Best freshly prepared; refrigerate only briefly.",
+                        "safety":  "Wash vegetables well and keep salad chilled.",
+                        "tags":  [
+                                     "salad",
+                                     "vegetables",
+                                     "cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-sirene-po-shopski",
+                        "name":  "Sirene po shopski",
+                        "englishName":  "Baked cheese with tomato and pepper",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Sirene cheese baked in a small dish with tomato, pepper and egg.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g sirene cheese",
+                                            "1 tomato, sliced",
+                                            "1 pepper, sliced",
+                                            "1 egg",
+                                            "1 tsp butter",
+                                            "paprika"
+                                        ],
+                        "instructions":  [
+                                             "Butter a small ovenproof dish",
+                                             " add cheese, tomato and pepper",
+                                             "Sprinkle paprika and bake at 190 C until tomato softens and cheese warms",
+                                             "Crack egg on top and bake until white is set",
+                                             " serve in dish."
+                                         ],
+                        "sides":  "Serve with crusty bread.",
+                        "substitutions":  "Use feta or another brined cheese.",
+                        "storage":  "Best served immediately.",
+                        "safety":  "Bake egg until white is set; dish will be very hot.",
+                        "tags":  [
+                                     "cheese",
+                                     "baked",
+                                     "quick"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-tarator-cucumber",
+                        "name":  "Snezhanka",
+                        "englishName":  "Cucumber yogurt salad",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Thick yogurt, cucumber, dill and garlic served as a cool side salad.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g thick yogurt",
+                                            "1 cucumber",
+                                            "1 garlic clove",
+                                            "2 tbsp dill",
+                                            "1 tbsp oil",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Grate cucumber and squeeze out excess liquid",
+                                             "Stir cucumber with yogurt, crushed garlic, dill and salt",
+                                             "Drizzle with oil and chill briefly before serving."
+                                         ],
+                        "sides":  "Serve beside grilled dishes or bread.",
+                        "substitutions":  "Add crushed walnuts if desired.",
+                        "storage":  "Refrigerate and use within 24 hours.",
+                        "safety":  "Keep yogurt cold and use clean utensils.",
+                        "tags":  [
+                                     "salad",
+                                     "cucumber",
+                                     "yogurt"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-tarator",
+                        "name":  "Tarator",
+                        "englishName":  "Cold cucumber and yogurt soup",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Chilled yogurt soup with cucumber, garlic, dill and walnuts for hot weather.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g plain yogurt",
+                                            "1 cucumber",
+                                            "1 garlic clove",
+                                            "250 ml cold water",
+                                            "2 tbsp chopped dill",
+                                            "30 g walnuts",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Whisk yogurt with cold water until smooth",
+                                             "Dice cucumber finely and stir it in",
+                                             "Crush garlic with salt and mix with dill and oil",
+                                             "Fold into yogurt, chill 30 minutes and top with chopped walnuts."
+                                         ],
+                        "sides":  "Serve cold with bread.",
+                        "substitutions":  "Use kefir for a thinner soup.",
+                        "storage":  "Keep refrigerated and use within 24 hours.",
+                        "safety":  "Keep dairy cold and use clean utensils.",
+                        "tags":  [
+                                     "soup",
+                                     "cucumber",
+                                     "yogurt"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-tikvenik",
+                        "name":  "Tikvenik",
+                        "englishName":  "Pumpkin filo pastry",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Sweet spiral filo pastry filled with pumpkin, walnuts, cinnamon and sugar.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g filo sheets",
+                                            "500 g grated pumpkin",
+                                            "100 g sugar",
+                                            "60 g walnuts",
+                                            "1 tsp cinnamon",
+                                            "80 ml oil"
+                                        ],
+                        "instructions":  [
+                                             "Cook grated pumpkin in a pan until it softens and moisture evaporates",
+                                             " cool",
+                                             "Mix with sugar, walnuts and cinnamon",
+                                             "Brush filo lightly with oil",
+                                             " spread filling along edge and roll",
+                                             " coil into a greased dish",
+                                             "Bake at 190 C until crisp and golden",
+                                             " cool before slicing."
+                                         ],
+                        "sides":  "Dust with icing sugar and serve with tea.",
+                        "substitutions":  "Use grated apple mixed with pumpkin.",
+                        "storage":  "Store covered at room temperature for 2 days.",
+                        "safety":  "Cool filling before handling filo; check nut allergies.",
+                        "tags":  [
+                                     "pumpkin",
+                                     "pastry",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "bg-kiselo-zelie",
+                        "name":  "Zelnik s kiselo zele",
+                        "englishName":  "Bulgarian sauerkraut stew",
+                        "country":  "Bulgaria",
+                        "region":  "Nationwide",
+                        "description":  "Sour cabbage simmered with beans and paprika for a simple winter meal.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g sauerkraut, chopped",
+                                            "300 g cooked white beans",
+                                            "1 onion",
+                                            "1 tsp paprika",
+                                            "1 bay leaf",
+                                            "700 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil until soft",
+                                             "Add paprika and stir briefly",
+                                             " add sauerkraut, bay and stock",
+                                             " simmer until cabbage is tender, about 35 minutes",
+                                             "Fold in beans and warm through",
+                                             " season to taste."
+                                         ],
+                        "sides":  "Serve with bread or polenta.",
+                        "substitutions":  "Use fresh cabbage with a splash of vinegar.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook beans thoroughly and chill leftovers promptly.",
+                        "tags":  [
+                                     "cabbage",
+                                     "beans",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:bulgaria",
+                            "title":  "Bulgarian recipes",
+                            "recipeIds":  [
+                                              "bg-banitsa",
+                                              "bg-patatnik",
+                                              "bg-bob-chorba",
+                                              "bg-lyutenitsa-eggs",
+                                              "bg-gyuvech",
+                                              "bg-kachamak",
+                                              "bg-kapama",
+                                              "bg-katmi",
+                                              "bg-kavarma",
+                                              "bg-kebapche",
+                                              "bg-kiselo-mlyako",
+                                              "bg-kozunak",
+                                              "bg-kyufte",
+                                              "bg-lyutenitsa",
+                                              "bg-mekitsi",
+                                              "bg-milinki",
+                                              "bg-mish-mash",
+                                              "bg-musaka",
+                                              "bg-oshav",
+                                              "bg-palneni-chushki",
+                                              "bg-fish-soup",
+                                              "bg-patato-salad",
+                                              "bg-sarmi",
+                                              "bg-shkembe",
+                                              "bg-shopska-salata",
+                                              "bg-sirene-po-shopski",
+                                              "bg-tarator-cucumber",
+                                              "bg-tarator",
+                                              "bg-tikvenik",
+                                              "bg-kiselo-zelie"
+                                          ]
+                        }
+                    ]
+}

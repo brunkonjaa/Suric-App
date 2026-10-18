@@ -1,0 +1,1198 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "br-vatapa",
+                        "name":  "Bahian bread and shrimp stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Bahia",
+                        "description":  "A thick coconut and peanut sauce with shrimp, bread and palm oil.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g peeled shrimp",
+                                            "150 g stale bread",
+                                            "250 ml coconut milk",
+                                            "30 g ground peanuts",
+                                            "1 onion",
+                                            "1 tomato",
+                                            "1 tbsp dende oil",
+                                            "lime"
+                                        ],
+                        "instructions":  [
+                                             "Soak bread in coconut milk until soft",
+                                             " blend smooth",
+                                             "Cook onion and tomato in dendê oil until soft",
+                                             "Add bread mixture and peanuts",
+                                             " simmer, stirring, until thick",
+                                             "Add shrimp and cook until opaque",
+                                             " season with lime and salt."
+                                         ],
+                        "sides":  "Serve with rice or use as acaraje filling.",
+                        "substitutions":  "Use cashews instead of peanuts, noting allergen change.",
+                        "storage":  "Refrigerate promptly and use within 1 day.",
+                        "safety":  "Keep shrimp chilled and cook until opaque; check nut allergies.",
+                        "tags":  [
+                                     "Bahia",
+                                     "shrimp",
+                                     "peanut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-moqueca-baiana",
+                        "name":  "Bahian fish and coconut stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Bahia",
+                        "description":  "Fish gently simmered with tomato, peppers, coconut milk and palm oil.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g firm white fish, chunks",
+                                            "1 onion",
+                                            "1 red pepper",
+                                            "2 tomatoes",
+                                            "200 ml coconut milk",
+                                            "1 tbsp dende oil",
+                                            "1 lime",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Season fish with lime and salt",
+                                             "Cook onion, pepper and tomatoes in dendê oil until softened",
+                                             "Add coconut milk and simmer 5 minutes",
+                                             "Nestle fish into sauce and simmer gently until opaque and flakes",
+                                             " finish with cilantro."
+                                         ],
+                        "sides":  "Serve with rice and farofa.",
+                        "substitutions":  "Use neutral oil and paprika if dendê is unavailable.",
+                        "storage":  "Refrigerate within 2 hours and use within 1 day.",
+                        "safety":  "Keep raw fish chilled and cook just until opaque.",
+                        "tags":  [
+                                     "Bahia",
+                                     "fish",
+                                     "coconut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-feijao-tropeiro",
+                        "name":  "Beans with cassava flour and greens",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Minas Gerais",
+                        "description":  "Beans tossed with toasted cassava flour, eggs, greens and optional bacon.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g cooked pinto beans, drained",
+                                            "100 g manioc flour",
+                                            "100 g bacon, diced",
+                                            "2 eggs",
+                                            "1 onion",
+                                            "150 g collard greens, sliced",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Fry bacon until crisp",
+                                             " add onion and soften",
+                                             "Add greens and cook until wilted",
+                                             " push aside",
+                                             " scramble eggs in pan",
+                                             "Fold in beans and warm through",
+                                             "Sprinkle manioc flour gradually, tossing until crumbly",
+                                             " season."
+                                         ],
+                        "sides":  "Serve with rice and orange slices.",
+                        "substitutions":  "Omit bacon and add mushrooms.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cook eggs fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "Minas Gerais",
+                                     "beans",
+                                     "greens"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-carne-panela",
+                        "name":  "Beef and cassava stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Northeast Brazil",
+                        "description":  "Beef braised with cassava until the root softens into the rich broth.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  100,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g stewing beef, cubed",
+                                            "500 g cassava, peeled",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "2 garlic cloves",
+                                            "1 litre stock",
+                                            "1 tsp cumin",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in oil in batches",
+                                             " add onion and garlic",
+                                             "Stir in tomato, cumin and stock",
+                                             " cover and simmer until beef is nearly tender, about 60 minutes",
+                                             "Add cassava and cook until both beef and cassava are soft",
+                                             " season and add hot water if broth thickens too much."
+                                         ],
+                        "sides":  "Serve with rice and chopped cilantro.",
+                        "substitutions":  "Use potatoes if cassava is unavailable.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Remove the fibrous cassava core and cook cassava fully.",
+                        "tags":  [
+                                     "stew",
+                                     "beef",
+                                     "cassava"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-vaca-atolada",
+                        "name":  "Beef ribs with cassava",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Minas Gerais",
+                        "description":  "Beef ribs braised until tender with cassava that thickens the cooking broth.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  150,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 kg beef short ribs",
+                                            "700 g cassava, peeled",
+                                            "1 onion",
+                                            "3 garlic cloves",
+                                            "1 tomato",
+                                            "1 litre stock",
+                                            "1 bay leaf",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown ribs in oil on all sides",
+                                             " add onion, garlic and tomato",
+                                             "Add stock and bay",
+                                             " cover and braise gently until ribs nearly tender, about 90 minutes",
+                                             "Add cassava and continue simmering until both are soft and broth thickens",
+                                             " season and serve."
+                                         ],
+                        "sides":  "Serve with rice and greens.",
+                        "substitutions":  "Use beef chuck and reduce cooking time.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat thoroughly.",
+                        "safety":  "Cook ribs until tender; remove cassava fibres before serving.",
+                        "tags":  [
+                                     "Minas Gerais",
+                                     "beef",
+                                     "cassava"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-feijoada",
+                        "name":  "Black bean and pork stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Rio de Janeiro",
+                        "description":  "Slow-cooked black beans with pork and sausage, served with rice and greens.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  180,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g dried black beans, soaked",
+                                            "300 g pork shoulder",
+                                            "200 g smoked sausage",
+                                            "150 g bacon",
+                                            "1 onion",
+                                            "4 garlic cloves",
+                                            "2 bay leaves",
+                                            "2 litres water"
+                                        ],
+                        "instructions":  [
+                                             "Drain beans",
+                                             " simmer with pork and bay in fresh water until beginning to soften",
+                                             "Brown bacon and sausage",
+                                             " add onion and garlic and cook until tender",
+                                             "Add meat mixture to beans and cook gently until beans are creamy and pork is tender",
+                                             " season and remove bay",
+                                             " serve with rice and greens."
+                                         ],
+                        "sides":  "Serve with rice, farofa, orange slices and sauteed collard greens.",
+                        "substitutions":  "Use smoked tofu and mushrooms for a meat-free bean stew.",
+                        "storage":  "Refrigerate promptly up to 4 days; reheat until boiling and steaming.",
+                        "safety":  "Soak beans refrigerated when warm; boil beans thoroughly and cook pork through.",
+                        "tags":  [
+                                     "Rio",
+                                     "beans",
+                                     "pork"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-acaraje",
+                        "name":  "Black-eyed pea fritters",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Bahia",
+                        "description":  "Split pea fritters fried in palm oil, traditionally split and filled with vatapa and salad.",
+                        "prepMinutes":  45,
+                        "cookMinutes":  20,
+                        "servings":  6,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "300 g dried black-eyed peas, soaked",
+                                            "1 onion",
+                                            "1 tsp salt",
+                                            "dende or neutral oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Drain soaked peas and rub away most skins",
+                                             " rinse well",
+                                             "Grind peas with onion and salt to a thick fluffy paste",
+                                             "Beat mixture until aerated",
+                                             " form oval spoonfuls and fry carefully in hot oil, turning until cooked and deep golden",
+                                             "Drain and split for filling."
+                                         ],
+                        "sides":  "Fill with vatapa, tomato salad and chilli sauce.",
+                        "substitutions":  "Use neutral oil if dendê is unavailable, noting the flavour changes.",
+                        "storage":  "Best fresh; refrigerate batter no more than 1 day.",
+                        "safety":  "Use a stable deep pan; keep water away from hot oil and cook fritters through.",
+                        "tags":  [
+                                     "Bahia",
+                                     "street food",
+                                     "black-eyed peas"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-picadinho",
+                        "name":  "Brazilian beef and tomato stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Sao Paulo",
+                        "description":  "Small beef cubes simmered with tomato, carrots and potatoes for a weekday meal.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "600 g beef, diced",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "2 tomatoes",
+                                            "2 carrots",
+                                            "2 potatoes",
+                                            "500 ml stock",
+                                            "1 tbsp oil",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in oil in batches",
+                                             " add onion and garlic",
+                                             "Add tomatoes and stock, cover and simmer 30 minutes",
+                                             "Add carrots and potatoes and cook until tender",
+                                             " season and finish with parsley."
+                                         ],
+                        "sides":  "Serve with rice, beans and farofa.",
+                        "substitutions":  "Use chicken thighs, adjusting cooking time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until hot throughout.",
+                        "safety":  "Cook beef until tender and keep leftovers chilled.",
+                        "tags":  [
+                                     "Sao Paulo",
+                                     "beef",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-pudim-leite",
+                        "name":  "Brazilian condensed milk flan",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "Silky baked custard with a clear caramel sauce, chilled before unmoulding.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  60,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 can condensed milk",
+                                            "2 cans whole milk",
+                                            "3 eggs",
+                                            "180 g sugar",
+                                            "60 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Melt sugar with water in a saucepan until amber",
+                                             " pour carefully into a ring mould",
+                                             "Blend condensed milk, milk and eggs briefly",
+                                             " strain into mould",
+                                             "Cover with foil and bake in a water bath at 160 C until just set, 50 to 60 minutes",
+                                             "Chill fully before unmoulding."
+                                         ],
+                        "sides":  "Serve cold with caramel.",
+                        "substitutions":  "Use plant-based condensed milk for a dairy-free variation.",
+                        "storage":  "Keep covered and refrigerated up to 3 days.",
+                        "safety":  "Bake custard until set; cool quickly and keep chilled.",
+                        "tags":  [
+                                     "dessert",
+                                     "custard",
+                                     "caramel"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-caldo-verde-brazilian",
+                        "name":  "Cassava and kale soup",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Southeast Brazil",
+                        "description":  "A home-style soup of mashed cassava, greens and smoked sausage.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "600 g cassava, peeled",
+                                            "1 litre stock",
+                                            "200 g kale, thinly sliced",
+                                            "150 g smoked sausage, sliced",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Simmer cassava in stock until very soft",
+                                             " remove woody fibres",
+                                             "Mash or blend with some broth",
+                                             "Cook onion, garlic and sausage in oil until fragrant",
+                                             "Add cassava puree and enough stock for a thick soup",
+                                             " simmer 10 minutes",
+                                             "Fold in kale and cook until tender."
+                                         ],
+                        "sides":  "Serve with crusty bread.",
+                        "substitutions":  "Use beans or smoked tofu instead of sausage.",
+                        "storage":  "Refrigerate promptly for up to 3 days; reheat until steaming.",
+                        "safety":  "Cook sausage thoroughly and stir soup while reheating.",
+                        "tags":  [
+                                     "cassava",
+                                     "soup",
+                                     "kale"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-tapioca-crepes",
+                        "name":  "Cassava starch crepes",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Northeast Brazil",
+                        "description":  "A naturally gluten-free crepe made by sprinkling hydrated tapioca starch onto a hot pan.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  10,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g hydrated tapioca starch",
+                                            "200 g grated cheese or coconut",
+                                            "pinch salt"
+                                        ],
+                        "instructions":  [
+                                             "Heat a non-stick pan over medium heat",
+                                             "Sieve starch into an even thin layer",
+                                             " cook until it binds into a flexible disc",
+                                             "Add cheese or coconut to one half",
+                                             " fold and cook briefly until filling warms",
+                                             "Serve immediately."
+                                         ],
+                        "sides":  "Fill with cheese, coconut or banana.",
+                        "substitutions":  "Use ready-hydrated tapioca starch from a shop.",
+                        "storage":  "Best fresh; do not store assembled crepes.",
+                        "safety":  "Keep dairy fillings chilled until cooking.",
+                        "tags":  [
+                                     "Northeast",
+                                     "tapioca",
+                                     "gluten-free"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-pao-de-queijo",
+                        "name":  "Cheese bread rolls",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Minas Gerais",
+                        "description":  "Chewy baked rolls made with tapioca starch and cheese.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  12,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g sour tapioca starch",
+                                            "100 ml milk",
+                                            "60 ml oil",
+                                            "1 egg",
+                                            "120 g grated Minas cheese or Parmesan",
+                                            "1/2 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Heat milk and oil until steaming",
+                                             " pour over starch and stir",
+                                             " cool 10 minutes",
+                                             "Beat in egg, cheese and salt until a sticky dough forms",
+                                             "Roll into small balls with oiled hands",
+                                             "Bake at 200 C for 20 to 25 minutes until puffed and golden."
+                                         ],
+                        "sides":  "Serve warm with coffee.",
+                        "substitutions":  "Use a mix of mozzarella and Parmesan.",
+                        "storage":  "Freeze shaped uncooked balls; bake from frozen adding a few minutes.",
+                        "safety":  "Cool before serving; cheese filling stays hot.",
+                        "tags":  [
+                                     "Minas Gerais",
+                                     "cheese",
+                                     "bread"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-galinhada",
+                        "name":  "Chicken and rice",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Goias",
+                        "description":  "One-pot chicken and rice coloured with annatto and finished with herbs.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "600 g chicken thighs",
+                                            "250 g rice",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "1 tomato",
+                                            "750 ml stock",
+                                            "1 tsp annatto",
+                                            "2 tbsp oil",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Season chicken",
+                                             " brown in oil on all sides and set aside",
+                                             "Cook onion, garlic and tomato until soft",
+                                             " stir in rice and annatto",
+                                             "Return chicken and add stock",
+                                             " cover and simmer low until rice is tender and chicken cooked",
+                                             " rest 5 minutes",
+                                             " finish with parsley."
+                                         ],
+                        "sides":  "Serve with salad and hot sauce.",
+                        "substitutions":  "Use boneless thighs and reduce cooking time slightly.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cook chicken through; cool rice quickly and refrigerate within 1 hour.",
+                        "tags":  [
+                                     "Goias",
+                                     "chicken",
+                                     "rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-frango-quiabo",
+                        "name":  "Chicken with okra",
+                        "englishName":  "Frango com quiabo",
+                        "country":  "Brazil",
+                        "region":  "Minas Gerais",
+                        "description":  "Chicken braised with okra, garlic and herbs, served with rice and angu.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "300 g okra, sliced",
+                                            "1 onion, diced",
+                                            "3 garlic cloves",
+                                            "2 tomatoes, chopped",
+                                            "500 ml stock",
+                                            "1 tbsp oil",
+                                            "1 tsp paprika",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Pat chicken dry, season and brown in oil on all sides; set aside.",
+                                             "Cook onion, garlic and tomatoes until soft; stir in paprika and stock; return chicken and simmer covered until nearly cooked.",
+                                             "Saute okra separately until its surface moisture reduces, then fold into pot and simmer until chicken is fully cooked and okra tender; finish with parsley."
+                                         ],
+                        "sides":  "Serve with rice, beans or soft cornmeal angu.",
+                        "substitutions":  "Use green beans if okra is unavailable, noting the texture differs.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming hot.",
+                        "safety":  "Cook chicken fully; keep raw poultry separate from vegetables and utensils.",
+                        "tags":  [
+                                     "Minas Gerais",
+                                     "chicken",
+                                     "okra"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-brigadeiro",
+                        "name":  "Chocolate condensed milk truffles",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "Soft chocolate sweets rolled into small balls and coated with chocolate sprinkles.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  20,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 can sweetened condensed milk, 395 g",
+                                            "2 tbsp cocoa powder",
+                                            "1 tbsp butter",
+                                            "chocolate sprinkles"
+                                        ],
+                        "instructions":  [
+                                             "Mix condensed milk, cocoa and butter in a heavy pan",
+                                             "Cook on low, stirring constantly, until thick and the mixture pulls from pan, 15 to 20 minutes",
+                                             "Cool completely",
+                                             " butter hands lightly and roll small balls",
+                                             " coat in sprinkles."
+                                         ],
+                        "sides":  "Serve in small paper cases.",
+                        "substitutions":  "Use dark cocoa for a less sweet flavour.",
+                        "storage":  "Keep covered and refrigerated up to 5 days.",
+                        "safety":  "Cool mixture before handling; keep dairy sweets chilled.",
+                        "tags":  [
+                                     "sweet",
+                                     "chocolate",
+                                     "party"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-quindim",
+                        "name":  "Coconut and egg yolk custard",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Bahia",
+                        "description":  "Bright yellow baked coconut custards with a glossy sugar base.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "8 egg yolks",
+                                            "150 g sugar",
+                                            "100 g fine coconut",
+                                            "30 g butter",
+                                            "1 tbsp water"
+                                        ],
+                        "instructions":  [
+                                             "Grease small moulds well and dust with sugar",
+                                             "Whisk yolks, sugar, coconut, butter and water gently without foaming",
+                                             "Spoon into moulds",
+                                             " set in a hot water bath and bake at 170 C until tops are golden and centres just set",
+                                             "Cool, chill and unmould carefully."
+                                         ],
+                        "sides":  "Serve chilled with coffee.",
+                        "substitutions":  "Use pasteurised yolks if preferred.",
+                        "storage":  "Refrigerate and use within 2 days.",
+                        "safety":  "Keep custards chilled and bake until set.",
+                        "tags":  [
+                                     "Bahia",
+                                     "coconut",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-cocada",
+                        "name":  "Coconut sweet",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Northeast Brazil",
+                        "description":  "Chewy coconut and sugar sweets cooked together until thick and lightly caramelised.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  12,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g grated coconut",
+                                            "250 g sugar",
+                                            "100 ml water",
+                                            "1 tbsp butter",
+                                            "pinch salt"
+                                        ],
+                        "instructions":  [
+                                             "Dissolve sugar in water in a heavy pan",
+                                             " add coconut, butter and salt",
+                                             "Cook over medium-low heat, stirring often, until thick and pulling from pan",
+                                             "Drop spoonfuls onto parchment and cool until firm."
+                                         ],
+                        "sides":  "Serve with coffee.",
+                        "substitutions":  "Use brown sugar for a deeper caramel flavour.",
+                        "storage":  "Store airtight at room temperature for 3 days.",
+                        "safety":  "Take care with hot caramel mixture.",
+                        "tags":  [
+                                     "Northeast",
+                                     "coconut",
+                                     "sweet"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-bolo-de-fuba",
+                        "name":  "Cornmeal cake",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Southeast Brazil",
+                        "description":  "A simple tender cornmeal cake often served with coffee.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  8,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g fine cornmeal",
+                                            "150 g plain flour",
+                                            "180 g sugar",
+                                            "2 eggs",
+                                            "250 ml milk",
+                                            "100 ml oil",
+                                            "1 tbsp baking powder",
+                                            "pinch salt"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 180 C and grease a loaf tin",
+                                             "Whisk eggs, sugar, milk and oil",
+                                             "Fold in cornmeal, flour, salt and baking powder",
+                                             "Pour into tin and bake 35 to 40 minutes until golden and a skewer comes out clean."
+                                         ],
+                        "sides":  "Serve with coffee or guava paste.",
+                        "substitutions":  "Add fennel seeds if desired.",
+                        "storage":  "Store covered at room temperature for 2 days.",
+                        "safety":  "Bake until centre is set; cool before slicing.",
+                        "tags":  [
+                                     "cake",
+                                     "cornmeal",
+                                     "coffee"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-canjiquinha",
+                        "name":  "Cracked corn with pork ribs",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Minas Gerais",
+                        "description":  "Yellow cracked corn simmered until creamy with pork ribs and herbs.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  100,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g canjiquinha or coarse cracked corn",
+                                            "500 g pork ribs",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "1.2 litres stock",
+                                            "1 tomato",
+                                            "1 bay leaf"
+                                        ],
+                        "instructions":  [
+                                             "Rinse cracked corn and soak 30 minutes if coarse",
+                                             "Brown ribs in a heavy pot",
+                                             " add onion and garlic and soften",
+                                             "Add tomato, corn, bay and stock",
+                                             " cover and simmer gently until corn is soft and ribs tender, about 75 minutes",
+                                             " add water if needed and season."
+                                         ],
+                        "sides":  "Serve with chopped parsley and greens.",
+                        "substitutions":  "Use smoked pork shoulder pieces if ribs are unavailable.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat with water until steaming.",
+                        "safety":  "Cook pork until tender and hot throughout.",
+                        "tags":  [
+                                     "Minas Gerais",
+                                     "corn",
+                                     "pork"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-pastel",
+                        "name":  "Crisp Brazilian market pastries",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "Thin pastry parcels filled with cheese or seasoned meat and fried until blistered.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  20,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "1 tbsp oil",
+                                            "150 ml water",
+                                            "1 tbsp vinegar",
+                                            "1/2 tsp salt",
+                                            "200 g mozzarella or cooked minced beef",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, oil, water, vinegar and salt into a firm dough",
+                                             " knead and rest 20 minutes",
+                                             "Roll very thin",
+                                             " cut rectangles and add a small amount of filling",
+                                             " dampen edges, fold and seal firmly",
+                                             "Fry in hot oil in batches until blistered and golden",
+                                             " drain on rack."
+                                         ],
+                        "sides":  "Serve with vinaigrette salsa.",
+                        "substitutions":  "Use ready-made pastry sheets if available.",
+                        "storage":  "Best fresh; refrigerate cooked leftovers up to 1 day.",
+                        "safety":  "Cook meat filling fully before stuffing; handle hot oil carefully.",
+                        "tags":  [
+                                     "street food",
+                                     "pastry",
+                                     "fried"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-moqueca-capixaba",
+                        "name":  "Espírito Santo fish stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Espirito Santo",
+                        "description":  "A lighter fish stew with tomato, onion, cilantro and annatto, without coconut milk.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g firm white fish",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 red pepper",
+                                            "1 tsp annatto",
+                                            "2 tbsp olive oil",
+                                            "1 lime",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Season fish with lime and salt",
+                                             "Layer onion, tomato and pepper in a heavy pan with oil and annatto",
+                                             "Place fish on top and cover",
+                                             " simmer gently until vegetables soften and fish is opaque, about 15 minutes",
+                                             " add little water only if needed",
+                                             " finish with cilantro."
+                                         ],
+                        "sides":  "Serve with rice and pirão.",
+                        "substitutions":  "Use another firm white fish; keep sauce light rather than adding coconut.",
+                        "storage":  "Refrigerate promptly and use within 1 day.",
+                        "safety":  "Keep fish cold and cook until opaque and flaking.",
+                        "tags":  [
+                                     "Espirito Santo",
+                                     "fish",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-queijo-coalho",
+                        "name":  "Grilled coalho cheese",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Northeast Brazil",
+                        "description":  "Firm salty cheese grilled until golden outside and soft within.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  8,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g queijo coalho, cut into thick sticks",
+                                            "1 tsp oregano",
+                                            "lime wedges"
+                                        ],
+                        "instructions":  [
+                                             "Heat a grill pan or barbecue to medium-high",
+                                             "Grill cheese sticks, turning carefully, until marked and golden on all sides",
+                                             "Sprinkle with oregano and serve with lime."
+                                         ],
+                        "sides":  "Serve as a snack or with rice and beans.",
+                        "substitutions":  "Use halloumi if coalho cheese is unavailable.",
+                        "storage":  "Best hot; do not store cooked cheese for long.",
+                        "safety":  "Use clean tongs for cooked cheese.",
+                        "tags":  [
+                                     "Northeast",
+                                     "cheese",
+                                     "grilled"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-bolinho-chuva",
+                        "name":  "Rain cakes",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Southeast Brazil",
+                        "description":  "Small spoon-dropped cinnamon-sugar fritters made from a quick egg batter.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g plain flour",
+                                            "1 egg",
+                                            "180 ml milk",
+                                            "60 g sugar",
+                                            "1 tsp baking powder",
+                                            "oil for frying",
+                                            "cinnamon sugar"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour, egg, milk and sugar into a thick batter",
+                                             " fold in baking powder",
+                                             "Heat oil to 170 C",
+                                             " drop small spoonfuls carefully into oil and fry, turning, until golden and cooked in centre",
+                                             "Drain and roll in cinnamon sugar."
+                                         ],
+                        "sides":  "Serve warm with coffee.",
+                        "substitutions":  "Use plant milk if needed.",
+                        "storage":  "Best fresh; do not store fried cakes for long.",
+                        "safety":  "Keep hot oil attended and cook batter through the middle.",
+                        "tags":  [
+                                     "dessert",
+                                     "fried",
+                                     "snack"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-baiao-de-dois",
+                        "name":  "Rice and beans with cheese",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Northeast Brazil",
+                        "description":  "Rice and beans cooked with onion, herbs and cubes of melting coalho cheese.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g rice",
+                                            "300 g cooked black-eyed peas",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "750 ml stock",
+                                            "150 g queijo coalho",
+                                            "2 tbsp chopped cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion and garlic in oil",
+                                             "Stir in rice and stock",
+                                             " cover and cook gently until rice is nearly tender",
+                                             "Fold in peas and simmer until rice is cooked and liquid absorbed",
+                                             "Add cheese cubes and cilantro, cover 3 minutes to soften."
+                                         ],
+                        "sides":  "Serve with farofa and greens.",
+                        "substitutions":  "Use firm halloumi in place of coalho cheese.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Keep cooked rice chilled promptly and reheat thoroughly.",
+                        "tags":  [
+                                     "Northeast",
+                                     "rice",
+                                     "beans"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-arroz-feijao",
+                        "name":  "Rice and black beans",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "Everyday rice and beans cooked separately and served together as a familiar Brazilian meal.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g long-grain rice",
+                                            "400 g cooked black beans with broth",
+                                            "1 onion, diced",
+                                            "3 garlic cloves",
+                                            "2 tbsp oil",
+                                            "700 ml water",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Cook half the garlic in a little oil",
+                                             " stir in rinsed rice until glossy",
+                                             "Add water and salt, cover and simmer low until tender",
+                                             "In another pan soften onion and remaining garlic",
+                                             " add cooked beans and broth, simmer 15 minutes and season",
+                                             "Serve rice and beans together."
+                                         ],
+                        "sides":  "Add sauteed greens, egg or grilled meat.",
+                        "substitutions":  "Use pinto beans if black beans are unavailable.",
+                        "storage":  "Refrigerate within 2 hours; use beans within 4 days and rice within 1 day.",
+                        "safety":  "Cool rice quickly; reheat each component once until steaming.",
+                        "tags":  [
+                                     "rice",
+                                     "beans",
+                                     "everyday"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-virado-a-paulista",
+                        "name":  "Sao Paulo beans with cassava flour",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Sao Paulo",
+                        "description":  "Mashed beans thickened with cassava flour and served with rice, greens and egg.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g cooked carioca beans with broth",
+                                            "100 g manioc flour",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "2 eggs",
+                                            "150 g collard greens",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion and garlic in oil until soft",
+                                             "Add beans and mash roughly",
+                                             " stir in manioc flour gradually until thick",
+                                             "Saute greens separately",
+                                             " fry eggs and serve alongside beans, rice and greens."
+                                         ],
+                        "sides":  "Add banana or sausage as a side.",
+                        "substitutions":  "Use black beans or omit egg for vegan version.",
+                        "storage":  "Refrigerate beans promptly up to 3 days.",
+                        "safety":  "Cook eggs fully; reheat beans until steaming.",
+                        "tags":  [
+                                     "Sao Paulo",
+                                     "beans",
+                                     "manioc"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-cuscuz-paulista",
+                        "name":  "Sao Paulo savoury corn couscous",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Sao Paulo",
+                        "description":  "Seasoned cornmeal steamed with vegetables, olives and optional sardines.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g flaked cornmeal",
+                                            "1 onion",
+                                            "1 red pepper",
+                                            "2 tomatoes",
+                                            "500 ml stock",
+                                            "100 g peas",
+                                            "100 g corn",
+                                            "1 can sardines, optional",
+                                            "olives",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion and pepper in oil until soft",
+                                             " add chopped tomatoes, peas, corn and stock",
+                                             " simmer 10 minutes",
+                                             "Slowly stir in flaked cornmeal until thick and pulling from the pan",
+                                             "Fold in sardines and parsley if using",
+                                             "Press into an oiled ring mould with sliced tomato and olives",
+                                             " steam 20 minutes",
+                                             " cool slightly and unmould."
+                                         ],
+                        "sides":  "Serve warm or at room temperature with salad.",
+                        "substitutions":  "Use hearts of palm instead of sardines.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days.",
+                        "safety":  "Keep fish filling chilled before cooking and chill leftovers promptly.",
+                        "tags":  [
+                                     "Sao Paulo",
+                                     "cornmeal",
+                                     "savoury"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-bobo-camarao",
+                        "name":  "Shrimp and cassava stew",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Bahia",
+                        "description":  "Creamy shrimp stew thickened with cassava and flavoured with coconut and palm oil.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g peeled shrimp",
+                                            "500 g cassava, peeled and cubed",
+                                            "200 ml coconut milk",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 red pepper",
+                                            "1 tbsp dende oil",
+                                            "lime",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Boil cassava in salted water until very soft",
+                                             " remove any fibrous core and mash with some cooking liquid",
+                                             "Cook onion, pepper and tomato in oil until soft",
+                                             " add coconut milk and cassava puree",
+                                             " simmer until creamy",
+                                             "Add shrimp and cook gently until opaque",
+                                             " finish with lime and cilantro."
+                                         ],
+                        "sides":  "Serve with white rice.",
+                        "substitutions":  "Use neutral oil and a little paprika instead of dendê.",
+                        "storage":  "Refrigerate within 2 hours and use within 1 day.",
+                        "safety":  "Keep raw shrimp cold; cook only until opaque and avoid cross-contamination.",
+                        "tags":  [
+                                     "Bahia",
+                                     "shrimp",
+                                     "coconut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-canjica",
+                        "name":  "Sweet hominy pudding",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "White corn hominy simmered with milk, coconut and cinnamon for a warm dessert.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  90,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g dried white hominy, soaked overnight",
+                                            "1 litre milk",
+                                            "200 ml coconut milk",
+                                            "100 g sugar",
+                                            "1 cinnamon stick",
+                                            "3 cloves",
+                                            "50 g grated coconut"
+                                        ],
+                        "instructions":  [
+                                             "Drain hominy and simmer in fresh water until tender, 60 to 90 minutes",
+                                             "Drain most water",
+                                             "Add milk, coconut milk, sugar, cinnamon, cloves and coconut",
+                                             " simmer gently 20 minutes until creamy",
+                                             " remove spices and serve warm or chilled."
+                                         ],
+                        "sides":  "Dust with cinnamon.",
+                        "substitutions":  "Use canned hominy and shorten cooking time.",
+                        "storage":  "Refrigerate promptly and use within 3 days.",
+                        "safety":  "Keep milk mixture at a gentle simmer and chill leftovers promptly.",
+                        "tags":  [
+                                     "corn",
+                                     "dessert",
+                                     "hominy"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "br-farofa",
+                        "name":  "Toasted cassava flour",
+                        "englishName":  null,
+                        "country":  "Brazil",
+                        "region":  "Nationwide",
+                        "description":  "Cassava flour toasted in butter with onion for a crumbly savoury accompaniment.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  12,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g coarse manioc flour",
+                                            "1 onion, finely diced",
+                                            "50 g butter",
+                                            "2 tbsp chopped parsley",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Melt butter in a wide pan and cook onion until soft",
+                                             "Add manioc flour and stir continuously over medium-low heat until toasted and fragrant",
+                                             "Season, fold in parsley and serve warm."
+                                         ],
+                        "sides":  "Serve beside beans, grilled meat or stews.",
+                        "substitutions":  "Use olive oil for a dairy-free version; add egg or bacon if wanted.",
+                        "storage":  "Keep dry and covered; use within 2 days.",
+                        "safety":  "Stir constantly to prevent scorching.",
+                        "tags":  [
+                                     "side dish",
+                                     "cassava",
+                                     "toasted"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:brazil",
+                            "title":  "Brazilian recipes",
+                            "recipeIds":  [
+                                              "br-vatapa",
+                                              "br-moqueca-baiana",
+                                              "br-feijao-tropeiro",
+                                              "br-carne-panela",
+                                              "br-vaca-atolada",
+                                              "br-feijoada",
+                                              "br-acaraje",
+                                              "br-picadinho",
+                                              "br-pudim-leite",
+                                              "br-caldo-verde-brazilian",
+                                              "br-tapioca-crepes",
+                                              "br-pao-de-queijo",
+                                              "br-galinhada",
+                                              "br-frango-quiabo",
+                                              "br-brigadeiro",
+                                              "br-quindim",
+                                              "br-cocada",
+                                              "br-bolo-de-fuba",
+                                              "br-canjiquinha",
+                                              "br-pastel",
+                                              "br-moqueca-capixaba",
+                                              "br-queijo-coalho",
+                                              "br-bolinho-chuva",
+                                              "br-baiao-de-dois",
+                                              "br-arroz-feijao",
+                                              "br-virado-a-paulista",
+                                              "br-cuscuz-paulista",
+                                              "br-bobo-camarao",
+                                              "br-canjica",
+                                              "br-farofa"
+                                          ]
+                        }
+                    ]
+}

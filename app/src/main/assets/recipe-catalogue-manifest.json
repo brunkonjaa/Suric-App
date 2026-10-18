@@ -1,0 +1,29 @@
+{
+    "version":  1,
+    "catalogues":  [
+                       "recipe-catalogue-american.json",
+                       "recipe-catalogue-france.json",
+                       "recipe-catalogue-italy.json",
+                       "recipe-catalogue-germany.json",
+                       "recipe-catalogue-spain.json",
+                       "recipe-catalogue-mexico.json",
+                       "recipe-catalogue-brazil.json",
+                       "recipe-catalogue-bosnia-herzegovina.json",
+                       "recipe-catalogue-bulgaria.json",
+                       "recipe-catalogue-greece.json",
+                       "recipe-catalogue-hungary.json",
+                       "recipe-catalogue-india.json",
+                       "recipe-catalogue-japan.json",
+                       "recipe-catalogue-africa.json",
+                       "recipe-catalogue-china.json",
+                       "recipe-catalogue-croatia.json",
+                       "recipe-catalogue-macedonia.json",
+                       "recipe-catalogue-morocco.json",
+                       "recipe-catalogue-nigeria.json",
+                       "recipe-catalogue-persian.json",
+                       "recipe-catalogue-romania.json",
+                       "recipe-catalogue-serbia.json",
+                       "recipe-catalogue-bbq.json",
+                       "recipe-catalogue-seafood.json"
+                   ]
+}

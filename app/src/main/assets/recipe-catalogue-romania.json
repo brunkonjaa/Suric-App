@@ -1,0 +1,1115 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "romania-sarmale-cabbage-rolls",
+      "name": "Sarmale cabbage rolls",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide festive",
+      "description": "A Suric home-cooking adaptation of Sarmale cabbage rolls, using accessible ingredients and a practical method inspired by Nationwide festive.",
+      "prepMinutes": 40,
+      "cookMinutes": 150,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "12 pickled cabbage leaves",
+        "300 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "400 g tomatoes",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with mămăligă and sour cream.",
+      "substitutions": "Use lentils, rice and mushrooms for fasting-style rolls.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide festive",
+        "stew",
+        "sarmale",
+        "cabbage"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-mamaliga-cornmeal-porridge",
+      "name": "Mămăligă cornmeal porridge",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Mămăligă cornmeal porridge, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g coarse cornmeal",
+        "900 ml water",
+        "1 tsp salt",
+        "30 g butter"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve with cheese, sour cream or stews.",
+      "substitutions": "Use olive oil instead of butter.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "porridge",
+        "mămăligă",
+        "cornmeal"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-mici-grilled-minced-meat-rolls",
+      "name": "Mici grilled minced meat rolls",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Bucharest-inspired",
+      "description": "A Suric home-cooking adaptation of Mici grilled minced meat rolls, using accessible ingredients and a practical method inspired by Bucharest-inspired.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tsp baking soda",
+        "100 ml stock",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve with mustard, bread and pickles.",
+      "substitutions": "Use minced lamb; cook completely through.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Bucharest-inspired",
+        "grill",
+        "mici",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ciorba-de-perisoare-meatball-sour-soup",
+      "name": "Ciorbă de perișoare meatball sour soup",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Moldavia",
+      "description": "A Suric home-cooking adaptation of Ciorbă de perișoare meatball sour soup, using accessible ingredients and a practical method inspired by Moldavia.",
+      "prepMinutes": 30,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g minced pork",
+        "80 g rice",
+        "1 carrot",
+        "1 onion",
+        "1 celery stalk",
+        "1.2 litres stock",
+        "2 tbsp lemon juice"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with sour cream and parsley.",
+      "substitutions": "Use turkey mince and vegetable stock.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Moldavia",
+        "soup",
+        "ciorbă",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ciorba-de-fasole-bean-soup",
+      "name": "Ciorbă de fasole bean soup",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Ciorbă de fasole bean soup, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g white beans, soaked",
+        "1 carrot",
+        "1 onion",
+        "1 celery stalk",
+        "1 tsp paprika",
+        "1.2 litres stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with bread and chopped parsley.",
+      "substitutions": "Use canned beans to reduce simmering time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "soup",
+        "ciorbă",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ciorba-radauteana-chicken-soup",
+      "name": "Ciorbă rădăuțeană chicken soup",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Bucovina",
+      "description": "A Suric home-cooking adaptation of Ciorbă rădăuțeană chicken soup, using accessible ingredients and a practical method inspired by Bucovina.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g chicken breast",
+        "1 carrot",
+        "1 onion",
+        "2 garlic cloves",
+        "150 g sour cream",
+        "1.2 litres stock",
+        "1 tbsp vinegar"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve hot with bread and parsley.",
+      "substitutions": "Use turkey breast and lactose-free cream.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Bucovina",
+        "soup",
+        "ciorbă",
+        "rădăuțeană"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ciorba-de-burta-style-tripe-soup",
+      "name": "Ciorbă de burtă style tripe soup",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Ciorbă de burtă style tripe soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g cleaned beef tripe",
+        "1 carrot",
+        "1 onion",
+        "150 g sour cream",
+        "2 egg yolks",
+        "1.5 litres stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with vinegar and chilli.",
+      "substitutions": "Use sliced mushrooms for a vegetarian adaptation.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "soup",
+        "ciorbă",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-tochitura-pork-stew-with-polenta",
+      "name": "Tochitură pork stew with polenta",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Moldavia",
+      "description": "A Suric home-cooking adaptation of Tochitură pork stew with polenta, using accessible ingredients and a practical method inspired by Moldavia.",
+      "prepMinutes": 20,
+      "cookMinutes": 80,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g pork shoulder",
+        "1 onion",
+        "2 garlic cloves",
+        "150 ml tomato passata",
+        "1 tsp paprika",
+        "300 ml water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with mămăligă and a fried egg.",
+      "substitutions": "Use mushrooms and white beans instead of pork.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Moldavia",
+        "stew",
+        "tochitură",
+        "pork"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-transylvanian-chicken-paprikash",
+      "name": "Transylvanian chicken paprikash",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Transylvanian chicken paprikash, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "1 onion",
+        "1 red pepper",
+        "1 tbsp paprika",
+        "200 g sour cream",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with dumplings or polenta.",
+      "substitutions": "Use mushrooms instead of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "stew",
+        "transylvanian",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ostropel-chicken-with-garlic-tomato-sauce",
+      "name": "Ostropel chicken with garlic tomato sauce",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Wallachia",
+      "description": "A Suric home-cooking adaptation of Ostropel chicken with garlic tomato sauce, using accessible ingredients and a practical method inspired by Wallachia.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "400 g tomatoes",
+        "4 garlic cloves",
+        "1 onion",
+        "2 tbsp oil",
+        "150 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with polenta and parsley.",
+      "substitutions": "Use chickpeas in place of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Wallachia",
+        "stew",
+        "ostropel",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ardei-umpluti-stuffed-peppers",
+      "name": "Ardei umpluți stuffed peppers",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Ardei umpluți stuffed peppers, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 65,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 bell peppers",
+        "300 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "400 g tomatoes",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with sour cream and bread.",
+      "substitutions": "Use cooked lentils and rice for a meat-free filling.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "bake",
+        "ardei",
+        "umpluți"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-salata-de-vinete-roasted-aubergine-spread",
+      "name": "Salată de vinete roasted aubergine spread",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Salată de vinete roasted aubergine spread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 aubergines",
+        "1 small onion",
+        "3 tbsp oil",
+        "1 tbsp lemon juice",
+        "1 tomato",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare the ingredients and spread them in a single layer on a lined tray.",
+        "Add the listed oil and seasonings and toss to coat; keep pieces of similar size together.",
+        "Roast until tender and lightly browned, turning once. Check any meat or fish is thoroughly cooked."
+      ],
+      "sides": "Serve cool with bread and sliced tomato.",
+      "substitutions": "Use olive oil and omit onion if preferred.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "roast",
+        "salată",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-zacusca-vegetable-spread",
+      "name": "Zacuscă vegetable spread",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide autumn",
+      "description": "A Suric home-cooking adaptation of Zacuscă vegetable spread, using accessible ingredients and a practical method inspired by Nationwide autumn.",
+      "prepMinutes": 30,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "3 red peppers",
+        "2 aubergines",
+        "2 onions",
+        "400 g tomatoes",
+        "2 tbsp oil",
+        "1 bay leaf"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare the ingredients and spread them in a single layer on a lined tray.",
+        "Add the listed oil and seasonings and toss to coat; keep pieces of similar size together.",
+        "Roast until tender and lightly browned, turning once. Check any meat or fish is thoroughly cooked."
+      ],
+      "sides": "Serve on bread or beside beans.",
+      "substitutions": "Use jarred roasted peppers to save time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide autumn",
+        "roast",
+        "zacuscă",
+        "vegetable"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-fasole-batuta-whipped-bean-spread",
+      "name": "Fasole bătută whipped bean spread",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Wallachia",
+      "description": "A Suric home-cooking adaptation of Fasole bătută whipped bean spread, using accessible ingredients and a practical method inspired by Wallachia.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g cooked white beans",
+        "1 onion",
+        "3 garlic cloves",
+        "3 tbsp oil",
+        "1 tsp paprika",
+        "1 tbsp lemon juice"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with bread and pickled vegetables.",
+      "substitutions": "Use butter beans or cannellini beans.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Wallachia",
+        "stew",
+        "fasole",
+        "bătută"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-bulz-baked-polenta-with-cheese",
+      "name": "Bulz baked polenta with cheese",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Carpathian shepherd style",
+      "description": "A Suric home-cooking adaptation of Bulz baked polenta with cheese, using accessible ingredients and a practical method inspired by Carpathian shepherd style.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g cornmeal",
+        "800 ml water",
+        "150 g brined sheep cheese",
+        "100 g sour cream",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with salad or fried egg.",
+      "substitutions": "Use feta-style cheese and plant sour cream.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Carpathian shepherd style",
+        "bake",
+        "bulz",
+        "baked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-transylvanian-cabbage-and-pork-stew",
+      "name": "Transylvanian cabbage and pork stew",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Transylvanian cabbage and pork stew, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g pork shoulder",
+        "500 g cabbage",
+        "1 onion",
+        "1 tsp paprika",
+        "250 ml stock",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with polenta and sour cream.",
+      "substitutions": "Use smoked tofu and beans in place of pork.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "stew",
+        "transylvanian",
+        "cabbage"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-pastrav-prajit-with-garlic-polenta",
+      "name": "Păstrăv prăjit with garlic polenta",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Carpathians",
+      "description": "A Suric home-cooking adaptation of Păstrăv prăjit with garlic polenta, using accessible ingredients and a practical method inspired by Carpathians.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 trout fillets",
+        "100 g cornmeal",
+        "500 ml water",
+        "3 garlic cloves",
+        "1 lemon",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare and evenly portion the ingredients. Heat a lightly oiled pan over medium heat.",
+        "Cook in batches, turning or stirring as needed until golden and thoroughly cooked.",
+        "Finish with the listed seasoning and serve promptly."
+      ],
+      "sides": "Serve with polenta and lemon.",
+      "substitutions": "Use another firm white fish.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Romania",
+        "Carpathians",
+        "pan",
+        "păstrăv",
+        "prăjit"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-danube-fish-stew",
+      "name": "Danube fish stew",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Danube Delta",
+      "description": "A Suric home-cooking adaptation of Danube fish stew, using accessible ingredients and a practical method inspired by Danube Delta.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g firm freshwater fish",
+        "1 onion",
+        "2 tomatoes",
+        "1 red pepper",
+        "1 litre fish stock",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with bread and polenta.",
+      "substitutions": "Use vegetable stock and firm tofu.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Romania",
+        "Danube Delta",
+        "soup",
+        "danube",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-placinta-with-cheese-and-dill",
+      "name": "Plăcintă with cheese and dill",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Moldavia",
+      "description": "A Suric home-cooking adaptation of Plăcintă with cheese and dill, using accessible ingredients and a practical method inspired by Moldavia.",
+      "prepMinutes": 35,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g flour",
+        "180 ml water",
+        "250 g cottage cheese",
+        "1 egg",
+        "2 tbsp dill",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt.",
+      "substitutions": "Use feta-style cheese and parsley.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Moldavia",
+        "bake",
+        "plăcintă",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-placinta-with-apples",
+      "name": "Plăcintă with apples",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Plăcintă with apples, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 35,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g flour",
+        "3 apples",
+        "80 g sugar",
+        "1 tsp cinnamon",
+        "100 ml oil",
+        "120 ml water"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve dusted with icing sugar.",
+      "substitutions": "Use pears or quince.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "bake",
+        "plăcintă",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-cozonac-walnut-sweet-bread",
+      "name": "Cozonac walnut sweet bread",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide festive",
+      "description": "A Suric home-cooking adaptation of Cozonac walnut sweet bread, using accessible ingredients and a practical method inspired by Nationwide festive.",
+      "prepMinutes": 45,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g flour",
+        "7 g dry yeast",
+        "2 eggs",
+        "200 ml milk",
+        "120 g walnuts",
+        "100 g sugar"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Cool before slicing; serve with tea.",
+      "substitutions": "Use oat milk and an egg replacer suitable for enriched dough.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Nationwide festive",
+        "bake",
+        "cozonac",
+        "walnut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-papanasi-fried-cheese-doughnuts",
+      "name": "Papanasi fried cheese doughnuts",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Papanasi fried cheese doughnuts, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g cottage cheese",
+        "1 egg",
+        "150 g flour",
+        "1 tsp baking powder",
+        "2 tbsp sugar",
+        "300 ml frying oil"
+      ],
+      "instructions": [
+        "Prepare the mixture and shape into even portions. Heat a shallow layer of oil in a heavy pan over medium heat.",
+        "Cook in batches, turning as needed, until evenly golden and cooked through. Avoid crowding the pan.",
+        "Drain on a rack or paper and serve warm. Keep children away from hot oil."
+      ],
+      "sides": "Serve with sour cream and sour cherry jam.",
+      "substitutions": "Use well-drained ricotta and adjust flour as needed.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "fry",
+        "papanasi",
+        "fried"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-romanian-plum-dumplings",
+      "name": "Romanian plum dumplings",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Romanian plum dumplings, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g potatoes",
+        "150 g flour",
+        "1 egg",
+        "8 plums",
+        "50 g breadcrumbs",
+        "2 tbsp sugar"
+      ],
+      "instructions": [
+        "Prepare the ingredients and bring a large pot of water to a boil.",
+        "Add the ingredients in the order listed, then simmer until tender; follow packet directions for dried or packaged ingredients.",
+        "Drain if needed, season to taste and serve or chill promptly."
+      ],
+      "sides": "Roll in toasted breadcrumbs and serve warm.",
+      "substitutions": "Use nectarines or apricots in season.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "boil",
+        "romanian",
+        "plum"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-salata-orientala-potato-and-egg-salad",
+      "name": "Salată orientală potato and egg salad",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Salată orientală potato and egg salad, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g potatoes",
+        "3 eggs",
+        "1 red onion",
+        "80 g black olives",
+        "2 tbsp vinegar",
+        "3 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the ingredients and bring a large pot of water to a boil.",
+        "Add the ingredients in the order listed, then simmer until tender; follow packet directions for dried or packaged ingredients.",
+        "Drain if needed, season to taste and serve or chill promptly."
+      ],
+      "sides": "Serve cool with bread and pickles.",
+      "substitutions": "Omit eggs and add cooked green beans.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "boil",
+        "salată",
+        "orientală"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-cartofi-taranesti-country-potatoes",
+      "name": "Cartofi țărănești country potatoes",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Cartofi țărănești country potatoes, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g potatoes",
+        "1 onion",
+        "1 tsp paprika",
+        "2 tbsp oil",
+        "1 tbsp parsley",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare the ingredients and spread them in a single layer on a lined tray.",
+        "Add the listed oil and seasonings and toss to coat; keep pieces of similar size together.",
+        "Roast until tender and lightly browned, turning once. Check any meat or fish is thoroughly cooked."
+      ],
+      "sides": "Serve with stews or grilled vegetables.",
+      "substitutions": "Use smoked paprika for a meat-free smoky note.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "roast",
+        "cartofi",
+        "țărănești"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-mushroom-stew-with-polenta",
+      "name": "Mushroom stew with polenta",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Mushroom stew with polenta, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g mushrooms",
+        "1 onion",
+        "2 garlic cloves",
+        "150 ml sour cream",
+        "1 tbsp parsley",
+        "250 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve over mămăligă.",
+      "substitutions": "Use oat cream for a dairy-free bowl.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "stew",
+        "mushroom",
+        "stew"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-ciorba-de-legume-vegetable-sour-soup",
+      "name": "Ciorbă de legume vegetable sour soup",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Ciorbă de legume vegetable sour soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 carrot",
+        "1 potato",
+        "1 onion",
+        "1 red pepper",
+        "100 g green beans",
+        "1.2 litres vegetable stock",
+        "2 tbsp vinegar"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with parsley and bread.",
+      "substitutions": "Add cooked beans for a more filling soup.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "soup",
+        "ciorbă",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-salam-de-biscuiti-biscuit-and-cocoa-roll",
+      "name": "Salam de biscuiți biscuit and cocoa roll",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Salam de biscuiți biscuit and cocoa roll, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g plain biscuits",
+        "100 g butter",
+        "80 g sugar",
+        "2 tbsp cocoa",
+        "100 ml milk",
+        "60 g raisins"
+      ],
+      "instructions": [
+        "Heat the oven to 180 C if baking, or prepare a heavy pan if using the hob. Measure the ingredients.",
+        "Mix wet ingredients, then fold in dry ingredients until just combined; shape or portion evenly.",
+        "Cook until set and golden. Cool briefly before adding the listed topping or serving."
+      ],
+      "sides": "Chill until firm and slice cold.",
+      "substitutions": "Use plant butter and milk; check biscuit ingredients.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Nationwide",
+        "sweet",
+        "salam",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-mucenici-baked-honey-pastries",
+      "name": "Mucenici baked honey pastries",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Moldavia",
+      "description": "A Suric home-cooking adaptation of Mucenici baked honey pastries, using accessible ingredients and a practical method inspired by Moldavia.",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g flour",
+        "7 g dry yeast",
+        "150 ml warm water",
+        "2 tbsp honey",
+        "50 g walnuts",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Brush with honey syrup and sprinkle with walnuts.",
+      "substitutions": "Use maple syrup instead of honey.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Romania",
+        "Moldavia",
+        "bake",
+        "mucenici",
+        "baked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "romania-romanian-sour-cherry-semolina-cake",
+      "name": "Romanian sour cherry semolina cake",
+      "englishName": null,
+      "country": "Romania",
+      "region": "Transylvania",
+      "description": "A Suric home-cooking adaptation of Romanian sour cherry semolina cake, using accessible ingredients and a practical method inspired by Transylvania.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "180 g semolina",
+        "2 eggs",
+        "150 g yogurt",
+        "100 g sugar",
+        "200 g sour cherries",
+        "1 tsp baking powder"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve cooled with yogurt.",
+      "substitutions": "Use plums or apricots in place of cherries.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Romania",
+        "Transylvania",
+        "bake",
+        "romanian",
+        "sour"
+      ],
+      "revision": 1
+    }
+  ]
+}

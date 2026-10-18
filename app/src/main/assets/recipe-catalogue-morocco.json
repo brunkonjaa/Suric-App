@@ -1,0 +1,1116 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "morocco-chicken-and-preserved-lemon-tagine",
+      "name": "Chicken and preserved lemon tagine",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Fez-inspired",
+      "description": "A Suric home-cooking adaptation of Chicken and preserved lemon tagine, using accessible ingredients and a practical method inspired by Fez-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "1 preserved lemon",
+        "1 onion",
+        "100 g green olives",
+        "1 tsp ginger",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare 600 g chicken thighs, 1 preserved lemon. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 300 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with couscous or bread.",
+      "substitutions": "Use fresh lemon zest and juice if preserved lemon is unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Fez-inspired",
+        "stew",
+        "chicken",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-lamb-and-prune-tagine",
+      "name": "Lamb and prune tagine",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Fez",
+      "description": "A Suric home-cooking adaptation of Lamb and prune tagine, using accessible ingredients and a practical method inspired by Fez.",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g lamb shoulder",
+        "150 g prunes",
+        "1 onion",
+        "1 tsp cinnamon",
+        "1 tsp ginger",
+        "400 ml stock"
+      ],
+      "instructions": [
+        "Prepare 600 g lamb shoulder, 150 g prunes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 400 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with couscous and toasted almonds.",
+      "substitutions": "Use chickpeas and pumpkin for a vegetarian tagine.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Fez",
+        "stew",
+        "lamb",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-vegetable-couscous",
+      "name": "Vegetable couscous",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Vegetable couscous, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g couscous",
+        "1 carrot",
+        "1 courgette",
+        "200 g pumpkin",
+        "1 can chickpeas",
+        "500 ml vegetable stock"
+      ],
+      "instructions": [
+        "Prepare 250 g couscous, 1 carrot and place in a heatproof dish or steamer basket.",
+        "Bring water to a steady simmer, cover and steam; add 500 ml vegetable stock as directed by the ingredient list.",
+        "Check that the centre is fully cooked and serve hot."
+      ],
+      "sides": "Top with harissa to taste.",
+      "substitutions": "Use seasonal root vegetables.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "steam",
+        "vegetable",
+        "couscous"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-seven-vegetable-couscous",
+      "name": "Seven vegetable couscous",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Seven vegetable couscous, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g couscous",
+        "1 carrot",
+        "1 turnip",
+        "1 courgette",
+        "200 g pumpkin",
+        "1 can chickpeas",
+        "1 tomato"
+      ],
+      "instructions": [
+        "Prepare 250 g couscous, 1 carrot and place in a heatproof dish or steamer basket.",
+        "Bring water to a steady simmer, cover and steam; add 1 tomato as directed by the ingredient list.",
+        "Check that the centre is fully cooked and serve hot."
+      ],
+      "sides": "Serve with broth and harissa.",
+      "substitutions": "Swap vegetables for seasonal equivalents.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "steam",
+        "seven",
+        "vegetable"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-harira-inspired-tomato-and-lentil-soup",
+      "name": "Harira-inspired tomato and lentil soup",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Harira-inspired tomato and lentil soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g brown lentils",
+        "1 can chickpeas",
+        "400 g tomatoes",
+        "1 onion",
+        "1 celery stalk",
+        "1 litre stock"
+      ],
+      "instructions": [
+        "Prepare 150 g brown lentils, 1 can chickpeas. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 litre stock, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with lemon and bread.",
+      "substitutions": "Use vegetable stock and omit meat-based additions.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "soup",
+        "harira-inspired",
+        "tomato"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-bissara-fava-bean-soup",
+      "name": "Bissara fava bean soup",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Northern Morocco",
+      "description": "A Suric home-cooking adaptation of Bissara fava bean soup, using accessible ingredients and a practical method inspired by Northern Morocco.",
+      "prepMinutes": 15,
+      "cookMinutes": 80,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g dried split fava beans",
+        "1.2 litres water",
+        "2 garlic cloves",
+        "1 tsp cumin",
+        "3 tbsp olive oil",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Prepare 300 g dried split fava beans, 1.2 litres water. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 tsp paprika, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with bread and olive oil.",
+      "substitutions": "Use dried split peas if fava beans are unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Northern Morocco",
+        "soup",
+        "bissara",
+        "fava"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-msemen-layered-griddle-flatbread",
+      "name": "Msemen layered griddle flatbread",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Msemen layered griddle flatbread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 45,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g flour",
+        "150 g fine semolina",
+        "250 ml water",
+        "3 tbsp oil",
+        "2 tbsp butter",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Mix or prepare 300 g flour, 150 g fine semolina; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 1 tsp salt and serve while warm."
+      ],
+      "sides": "Serve with honey or soft cheese.",
+      "substitutions": "Use all-purpose flour and dust lightly with semolina.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "pan",
+        "msemen",
+        "layered"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-batbout-stovetop-bread",
+      "name": "Batbout stovetop bread",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Batbout stovetop bread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "350 g flour",
+        "100 g fine semolina",
+        "220 ml warm water",
+        "7 g dry yeast",
+        "1 tsp sugar",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Mix or prepare 350 g flour, 100 g fine semolina; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 1 tsp salt and serve while warm."
+      ],
+      "sides": "Split and fill with salad, eggs or cooked meat.",
+      "substitutions": "Use bread flour and allow extra proofing time if needed.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "pan",
+        "batbout",
+        "stovetop"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-khobz-moroccan-round-bread",
+      "name": "Khobz Moroccan round bread",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Khobz Moroccan round bread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g flour",
+        "100 g fine semolina",
+        "300 ml warm water",
+        "7 g dry yeast",
+        "1 tsp salt",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 400 g flour, 100 g fine semolina and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tbsp oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with soup, tagine or olives.",
+      "substitutions": "Use wholemeal flour for part of the flour and add water gradually.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "bake",
+        "khobz",
+        "moroccan"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-zaalouk-aubergine-and-tomato-salad",
+      "name": "Zaalouk aubergine and tomato salad",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Zaalouk aubergine and tomato salad, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 aubergines",
+        "3 tomatoes",
+        "2 garlic cloves",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "2 tbsp olive oil"
+      ],
+      "instructions": [
+        "Prepare 2 aubergines, 3 tomatoes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 2 tbsp olive oil; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve warm or cool with bread.",
+      "substitutions": "Use roasted jarred aubergine, draining excess liquid.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "stew",
+        "zaalouk",
+        "aubergine"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-taktouka-pepper-and-tomato-salad",
+      "name": "Taktouka pepper and tomato salad",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Taktouka pepper and tomato salad, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "3 green peppers",
+        "4 tomatoes",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tsp cumin",
+        "2 tbsp olive oil"
+      ],
+      "instructions": [
+        "Prepare 3 green peppers, 4 tomatoes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 2 tbsp olive oil; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve at room temperature with bread.",
+      "substitutions": "Use roasted peppers from a jar.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "stew",
+        "taktouka",
+        "pepper"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-carrot-salad-with-cumin-and-lemon",
+      "name": "Carrot salad with cumin and lemon",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Carrot salad with cumin and lemon, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g carrots",
+        "1 garlic clove",
+        "1 tsp cumin",
+        "2 tbsp lemon juice",
+        "2 tbsp olive oil",
+        "2 tbsp coriander"
+      ],
+      "instructions": [
+        "Prepare 500 g carrots, 1 garlic clove and place in a saucepan with enough water to cover.",
+        "Bring to a boil, then simmer until tender; drain carefully if needed.",
+        "Toss with 2 tbsp coriander and the listed seasoning, then cool or serve as directed."
+      ],
+      "sides": "Serve cool with bread and olives.",
+      "substitutions": "Use parsley instead of coriander.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "boil",
+        "carrot",
+        "salad"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-lamb-kefta-with-cumin-and-herbs",
+      "name": "Lamb kefta with cumin and herbs",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Marrakesh-inspired",
+      "description": "A Suric home-cooking adaptation of Lamb kefta with cumin and herbs, using accessible ingredients and a practical method inspired by Marrakesh-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced lamb",
+        "1 onion",
+        "2 tbsp parsley",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Combine 500 g minced lamb, 1 onion with the listed seasoning and shape or portion evenly.",
+        "Grill or cook in a hot ridged pan, turning as needed until browned and cooked through.",
+        "Rest briefly, then serve with 1 tbsp oil and the suggested sides."
+      ],
+      "sides": "Serve with flatbread, tomato and yogurt.",
+      "substitutions": "Use minced beef or plant-based mince.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Marrakesh-inspired",
+        "grill",
+        "lamb",
+        "kefta"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-beef-kefta-and-tomato-tagine",
+      "name": "Beef kefta and tomato tagine",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Marrakesh",
+      "description": "A Suric home-cooking adaptation of Beef kefta and tomato tagine, using accessible ingredients and a practical method inspired by Marrakesh.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g minced beef",
+        "400 g tomatoes",
+        "1 onion",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "4 eggs"
+      ],
+      "instructions": [
+        "Prepare 400 g minced beef, 400 g tomatoes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 4 eggs; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with crusty bread.",
+      "substitutions": "Use cooked lentil balls instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Morocco",
+        "Marrakesh",
+        "stew",
+        "beef",
+        "kefta"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-chicken-and-chickpea-tagine",
+      "name": "Chicken and chickpea tagine",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Chicken and chickpea tagine, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g chicken thighs",
+        "1 can chickpeas",
+        "1 onion",
+        "1 tsp turmeric",
+        "1 tsp ginger",
+        "400 ml stock"
+      ],
+      "instructions": [
+        "Prepare 500 g chicken thighs, 1 can chickpeas. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 400 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with couscous and herbs.",
+      "substitutions": "Use cauliflower florets and extra chickpeas.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "stew",
+        "chicken",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-pumpkin-and-chickpea-tagine",
+      "name": "Pumpkin and chickpea tagine",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Atlas-inspired",
+      "description": "A Suric home-cooking adaptation of Pumpkin and chickpea tagine, using accessible ingredients and a practical method inspired by Atlas-inspired.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g pumpkin",
+        "1 can chickpeas",
+        "1 onion",
+        "1 tsp cumin",
+        "1 tsp cinnamon",
+        "400 ml vegetable stock"
+      ],
+      "instructions": [
+        "Prepare 500 g pumpkin, 1 can chickpeas. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 400 ml vegetable stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with couscous and toasted seeds.",
+      "substitutions": "Use sweet potato or butternut squash.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Atlas-inspired",
+        "stew",
+        "pumpkin",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-fish-chermoula-tray-bake",
+      "name": "Moroccan fish chermoula tray bake",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Atlantic coast",
+      "description": "A Suric home-cooking adaptation of Moroccan fish chermoula tray bake, using accessible ingredients and a practical method inspired by Atlantic coast.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g firm white fish",
+        "2 tbsp coriander",
+        "2 tbsp parsley",
+        "2 garlic cloves",
+        "1 lemon",
+        "1 tsp cumin"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 600 g firm white fish, 2 tbsp coriander and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp cumin.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with potatoes or couscous.",
+      "substitutions": "Use salmon or another firm fish.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Morocco",
+        "Atlantic coast",
+        "bake",
+        "moroccan",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-sardines-with-chermoula",
+      "name": "Sardines with chermoula",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Atlantic coast",
+      "description": "A Suric home-cooking adaptation of Sardines with chermoula, using accessible ingredients and a practical method inspired by Atlantic coast.",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g cleaned sardines",
+        "2 tbsp parsley",
+        "2 tbsp coriander",
+        "2 garlic cloves",
+        "1 lemon",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 600 g cleaned sardines, 2 tbsp parsley and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp paprika.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with salad and bread.",
+      "substitutions": "Use mackerel fillets and adjust cooking time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Morocco",
+        "Atlantic coast",
+        "bake",
+        "sardines",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-lentil-stew-with-spinach",
+      "name": "Moroccan lentil stew with spinach",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moroccan lentil stew with spinach, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g brown lentils",
+        "150 g spinach",
+        "1 onion",
+        "400 g tomatoes",
+        "1 tsp cumin",
+        "900 ml stock"
+      ],
+      "instructions": [
+        "Prepare 200 g brown lentils, 150 g spinach. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 900 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with bread and lemon.",
+      "substitutions": "Use chickpeas instead of lentils.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "stew",
+        "moroccan",
+        "lentil"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-rfissa-inspired-chicken-and-lentils",
+      "name": "Rfissa-inspired chicken and lentils",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Rabat-inspired",
+      "description": "A Suric home-cooking adaptation of Rfissa-inspired chicken and lentils, using accessible ingredients and a practical method inspired by Rabat-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 65,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g chicken thighs",
+        "150 g lentils",
+        "1 onion",
+        "1 tsp fenugreek",
+        "1 tsp ginger",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare 500 g chicken thighs, 150 g lentils. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 700 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve over torn flatbread or msemen.",
+      "substitutions": "Use chickpeas and mushrooms instead of chicken.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Rabat-inspired",
+        "stew",
+        "rfissa-inspired",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-pastilla-inspired-chicken-filo-pie",
+      "name": "Pastilla-inspired chicken filo pie",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Fez",
+      "description": "A Suric home-cooking adaptation of Pastilla-inspired chicken filo pie, using accessible ingredients and a practical method inspired by Fez.",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "350 g cooked chicken",
+        "6 filo sheets",
+        "1 onion",
+        "2 eggs",
+        "50 g almonds",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 350 g cooked chicken, 6 filo sheets and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp cinnamon.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Dust lightly with cinnamon and serve with salad.",
+      "substitutions": "Use cooked mushrooms and chickpeas in the filling.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Morocco",
+        "Fez",
+        "bake",
+        "pastilla-inspired",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-spiced-roasted-cauliflower",
+      "name": "Moroccan spiced roasted cauliflower",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moroccan spiced roasted cauliflower, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 cauliflower",
+        "2 tbsp olive oil",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "1 lemon",
+        "2 tbsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare 1 cauliflower, 2 tbsp olive oil and arrange in a shallow roasting dish.",
+        "Add the remaining seasonings and 2 tbsp parsley; toss or stir so the ingredients are coated.",
+        "Roast, turning once, until tender and lightly browned; check any meat or fish is fully cooked."
+      ],
+      "sides": "Serve with couscous or yogurt.",
+      "substitutions": "Use broccoli or carrots.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "roast",
+        "moroccan",
+        "spiced"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-lamb-and-apricot-couscous",
+      "name": "Lamb and apricot couscous",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Marrakesh-inspired",
+      "description": "A Suric home-cooking adaptation of Lamb and apricot couscous, using accessible ingredients and a practical method inspired by Marrakesh-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g couscous",
+        "350 g lamb shoulder",
+        "100 g dried apricots",
+        "1 onion",
+        "1 tsp cinnamon",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare 250 g couscous, 350 g lamb shoulder. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 500 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with toasted almonds and herbs.",
+      "substitutions": "Use chickpeas and pumpkin instead of lamb.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Morocco",
+        "Marrakesh-inspired",
+        "stew",
+        "lamb",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-orange-and-olive-salad",
+      "name": "Moroccan orange and olive salad",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Marrakesh",
+      "description": "A Suric home-cooking adaptation of Moroccan orange and olive salad, using accessible ingredients and a practical method inspired by Marrakesh.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "3 oranges",
+        "80 g black olives",
+        "1 small red onion",
+        "1 tsp cumin",
+        "1 tbsp olive oil",
+        "2 tbsp mint"
+      ],
+      "instructions": [
+        "Wash and prepare 3 oranges, 80 g black olives; cut vegetables into even bite-sized pieces.",
+        "Whisk the oil, acid and seasoning together, including 2 tbsp mint where appropriate.",
+        "Toss gently just before serving and keep chilled until needed."
+      ],
+      "sides": "Serve chilled alongside a warm tagine.",
+      "substitutions": "Use green olives and parsley.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Marrakesh",
+        "salad",
+        "moroccan",
+        "orange"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-beetroot-salad-with-cumin",
+      "name": "Beetroot salad with cumin",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Beetroot salad with cumin, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g beetroot",
+        "1 tbsp lemon juice",
+        "1 tsp cumin",
+        "2 tbsp olive oil",
+        "2 tbsp parsley",
+        "1 garlic clove"
+      ],
+      "instructions": [
+        "Prepare 500 g beetroot, 1 tbsp lemon juice and place in a saucepan with enough water to cover.",
+        "Bring to a boil, then simmer until tender; drain carefully if needed.",
+        "Toss with 1 garlic clove and the listed seasoning, then cool or serve as directed."
+      ],
+      "sides": "Serve cool with bread and cheese.",
+      "substitutions": "Use pre-cooked beetroot and omit the boiling step.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "boil",
+        "beetroot",
+        "salad"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-spiced-potatoes",
+      "name": "Moroccan spiced potatoes",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moroccan spiced potatoes, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g potatoes",
+        "2 tbsp olive oil",
+        "1 tsp paprika",
+        "1 tsp cumin",
+        "2 garlic cloves",
+        "2 tbsp coriander"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare 700 g potatoes, 2 tbsp olive oil and arrange in a shallow roasting dish.",
+        "Add the remaining seasonings and 2 tbsp coriander; toss or stir so the ingredients are coated.",
+        "Roast, turning once, until tender and lightly browned; check any meat or fish is fully cooked."
+      ],
+      "sides": "Serve with grilled vegetables or eggs.",
+      "substitutions": "Use sweet potato and shorten the roasting time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "roast",
+        "moroccan",
+        "spiced"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-sellou-inspired-toasted-almond-and-sesame-bites",
+      "name": "Sellou-inspired toasted almond and sesame bites",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide festive sweet",
+      "description": "A Suric home-cooking adaptation of Sellou-inspired toasted almond and sesame bites, using accessible ingredients and a practical method inspired by Nationwide festive sweet.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "120 g flour",
+        "100 g almonds",
+        "60 g sesame seeds",
+        "60 g honey",
+        "50 g butter",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 120 g flour, 100 g almonds and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp cinnamon.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve in small portions with mint tea.",
+      "substitutions": "Use ground sunflower seeds in place of sesame.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide festive sweet",
+        "bake",
+        "sellou-inspired",
+        "toasted"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-chebakia-inspired-sesame-pastries",
+      "name": "Chebakia-inspired sesame pastries",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide festive sweet",
+      "description": "A Suric home-cooking adaptation of Chebakia-inspired sesame pastries, using accessible ingredients and a practical method inspired by Nationwide festive sweet.",
+      "prepMinutes": 45,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g flour",
+        "60 g sesame seeds",
+        "1 egg",
+        "40 g butter",
+        "100 g honey",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Prepare 250 g flour, 60 g sesame seeds and mix the batter or filling until evenly combined.",
+        "Heat oil in a deep, heavy pan to about 170 C; fry small batches, turning until evenly golden and cooked through.",
+        "Drain on a rack or paper and finish with 1 tsp cinnamon. Keep children away from hot oil."
+      ],
+      "sides": "Serve in small portions with tea or soup.",
+      "substitutions": "Bake at 190 C until golden for a lighter adaptation.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Morocco",
+        "Nationwide festive sweet",
+        "fry",
+        "chebakia-inspired",
+        "sesame"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-almond-and-orange-blossom-briouats",
+      "name": "Almond and orange blossom briouats",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Almond and orange blossom briouats, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 filo sheets",
+        "150 g ground almonds",
+        "40 g sugar",
+        "1 tsp cinnamon",
+        "1 tbsp orange blossom water",
+        "30 g butter"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 8 filo sheets, 150 g ground almonds and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 30 g butter.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve cool with mint tea.",
+      "substitutions": "Use ground walnuts and orange zest.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "bake",
+        "almond",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "morocco-moroccan-date-and-walnut-semolina-cake",
+      "name": "Moroccan date and walnut semolina cake",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moroccan date and walnut semolina cake, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "180 g fine semolina",
+        "120 g dates",
+        "60 g walnuts",
+        "2 eggs",
+        "100 g yogurt",
+        "1 tsp baking powder"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 180 g fine semolina, 120 g dates and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp baking powder.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with tea or plain yogurt.",
+      "substitutions": "Use raisins instead of dates.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Morocco",
+        "Nationwide",
+        "bake",
+        "moroccan",
+        "date"
+      ],
+      "revision": 1
+    }
+  ]
+}

@@ -1,8 +1,13 @@
 package ie.suric.suricapp
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
+import android.media.MediaPlayer
 import android.net.Uri
+import android.provider.OpenableColumns
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
@@ -14,13 +19,17 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.items as rowItems
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items as gridItems
+import androidx.compose.foundation.gestures.rememberTransformableState
+import androidx.compose.foundation.gestures.transformable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Send
@@ -31,7 +40,16 @@ import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Logout
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Pause
+import androidx.compose.material.icons.filled.SkipNext
+import androidx.compose.material.icons.filled.SkipPrevious
 import androidx.compose.material3.*
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.*
@@ -43,6 +61,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
@@ -54,8 +74,9 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.core.content.ContextCompat
-import androidx.activity.compose.BackHandler
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.material3.SheetValue
@@ -63,6 +84,14 @@ import ie.suric.suricapp.auth.AuthState
 import ie.suric.suricapp.local.CalendarEvents
 import ie.suric.suricapp.local.LocalCalendarEvent
 import ie.suric.suricapp.local.PersonalEntry
+import ie.suric.suricapp.local.PersonalEntryStore
+import ie.suric.suricapp.local.OfflineArticle
+import ie.suric.suricapp.local.OfflineLibrary
+import ie.suric.suricapp.local.OfflineRecipe
+import ie.suric.suricapp.local.OfflineRecipeCatalogue
+import ie.suric.suricapp.local.OfflineReadingState
+import ie.suric.suricapp.local.RecipeCatalogue
+import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
 import ie.suric.suricapp.local.SectionVisibility
 import ie.suric.suricapp.local.SectionVisibilityStore
@@ -70,6 +99,7 @@ import ie.suric.suricapp.local.StarterItem
 import ie.suric.suricapp.local.StarterLibrary
 import ie.suric.suricapp.local.StarterType
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.sync.Mutex
@@ -94,12 +124,14 @@ private val personalAreas = listOf(
     PersonalArea("Cooking", "Meals, recipes and kitchen notes", "Help me cook with ingredients I already have and give clear, practical steps.", R.drawable.suric_cooking),
     PersonalArea("Cleaning", "Simple routines and household tasks", "Help me break cleaning into manageable steps and keep plans realistic.", R.drawable.suric_cleaning),
     PersonalArea("Retro & Android", "Consoles, phones and setup notes", "Help me with retro consoles and Android devices. Keep exact device and firmware details in mind.", R.drawable.suric_retro),
+    PersonalArea("Music", "Play audio files you choose from this device", "Help me organise local music and listening notes.", R.drawable.suric_retro),
     PersonalArea("Notes", "A private place for useful details", "Use my selected personal notes only as context for the question I ask.", R.drawable.suric_home)
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, onThemeChange: (Boolean) -> Unit) {
+internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, deepLinkArticleId: String?, onThemeChange: (Boolean) -> Unit) {
+    val appContext = LocalContext.current
     val auth by vm.auth.collectAsState()
     val context = LocalContext.current
     val visibilityStore = remember(context) { SectionVisibilityStore(context) }
@@ -109,23 +141,77 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     var route by rememberSaveable { mutableStateOf("home") }
     var selectedSection by rememberSaveable { mutableStateOf<String?>(null) }
     var selectedStarterId by rememberSaveable { mutableStateOf<String?>(null) }
-    var importedSharedText by rememberSaveable { mutableStateOf(false) }
-    LaunchedEffect(sharedText) {
-        if (!sharedText.isNullOrBlank() && !importedSharedText) {
-            runCatching { vm.importSharedText(sharedText) }.onSuccess {
-                selectedSection = "Notes"
+    var pendingArticleId by rememberSaveable { mutableStateOf<String?>(null) }
+    var pendingRecipeId by rememberSaveable { mutableStateOf<String?>(null) }
+    var showIncomingShare by rememberSaveable { mutableStateOf(false) }
+    var incomingShareError by rememberSaveable { mutableStateOf<String?>(null) }
+    var savingIncomingShare by rememberSaveable { mutableStateOf(false) }
+    var deepLinkHandled by rememberSaveable { mutableStateOf(false) }
+    var deepLinkSection by rememberSaveable { mutableStateOf<String?>(null) }
+    var deepLinkMessage by rememberSaveable { mutableStateOf<String?>(null) }
+    LaunchedEffect(deepLinkArticleId) {
+        if (!deepLinkHandled && !deepLinkArticleId.isNullOrBlank()) {
+            val article = runCatching { withContext(Dispatchers.IO) { OfflineLibrary.load(appContext).firstOrNull { it.id == deepLinkArticleId } } }.getOrNull()
+            if (article != null) {
+                selectedSection = article.section
+                deepLinkSection = article.section
                 route = "home"
-                importedSharedText = true
-            }
+            } else deepLinkMessage = "This article is not included in this version of Suric's offline library."
+            deepLinkHandled = true
         }
     }
+    LaunchedEffect(sharedText) {
+        if (!sharedText.isNullOrBlank()) showIncomingShare = true
+    }
 
-    BackHandler(enabled = drawerState.currentValue == DrawerValue.Closed && (selectedStarterId != null || selectedSection != null || route != "home")) {
+    val drawerIsVisible = drawerState.currentValue == DrawerValue.Open || drawerState.targetValue == DrawerValue.Open
+    BackHandler(enabled = drawerIsVisible) {
+        scope.launch { drawerState.close() }
+    }
+    BackHandler(enabled = !drawerIsVisible && (selectedStarterId != null || selectedSection != null || route != "home")) {
         when {
             selectedStarterId != null -> selectedStarterId = null
             selectedSection != null -> selectedSection = null
             else -> route = "home"
         }
+    }
+    if (showIncomingShare && !sharedText.isNullOrBlank()) {
+        val decoded = remember(sharedText) { runCatching { SharedEntryCodec.decodeOrNull(sharedText) } }
+        val copy = decoded.getOrNull()
+        AlertDialog(
+            onDismissRequest = { if (!savingIncomingShare) showIncomingShare = false },
+            title = { Text(if (copy != null) "Review shared copy" else "Review shared text") },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(if (copy != null) "This will save a separate local copy in ${copy.section}." else "This text will be saved as a private note on this device.")
+                    copy?.let { Text(it.title, fontWeight = FontWeight.SemiBold) }
+                    Text(copy?.body ?: sharedText.take(1200), maxLines = 10, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("Review it before saving. Nothing is added until you choose Save.", style = MaterialTheme.typography.bodySmall)
+                    decoded.exceptionOrNull()?.let { Text(it.message ?: "This shared copy could not be read.", color = MaterialTheme.colorScheme.error) }
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    enabled = !savingIncomingShare && decoded.isSuccess,
+                    onClick = {
+                        savingIncomingShare = true
+                        scope.launch {
+                            runCatching { vm.importSharedText(sharedText) }
+                                .onSuccess { section -> selectedSection = section; route = "home"; showIncomingShare = false }
+                                .onFailure { incomingShareError = it.message ?: "Couldn’t save the shared copy." }
+                            savingIncomingShare = false
+                        }
+                    }
+                ) { Text(if (savingIncomingShare) "Saving…" else "Save copy") }
+            },
+            dismissButton = { TextButton(onClick = { showIncomingShare = false }, enabled = !savingIncomingShare) { Text("Cancel") } }
+        )
+    }
+    incomingShareError?.let { message ->
+        AlertDialog(onDismissRequest = { incomingShareError = null }, title = { Text("Couldn’t save") }, text = { Text(message) }, confirmButton = { TextButton(onClick = { incomingShareError = null }) { Text("OK") } })
+    }
+    deepLinkMessage?.let { message ->
+        AlertDialog(onDismissRequest = { deepLinkMessage = null }, title = { Text("Article unavailable") }, text = { Text(message) }, confirmButton = { TextButton(onClick = { deepLinkMessage = null }) { Text("OK") } })
     }
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -139,7 +225,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Home", maxLines = 1) },
                             selected = selectedSection == null && route == "home",
-                            onClick = { selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -163,7 +249,15 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Ask Suric", maxLines = 1) },
                             selected = route == "assistant",
-                            onClick = { selectedSection = null; route = "assistant"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; route = "assistant"; scope.launch { drawerState.close() } },
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
+                        )
+                    }
+                    item {
+                        NavigationDrawerItem(
+                            label = { Text("Search offline library", maxLines = 1) },
+                            selected = route == "search",
+                            onClick = { selectedSection = null; route = "search"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -172,16 +266,18 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text(area.displayName, maxLines = 1) },
                             selected = selectedSection == area.name,
-                            onClick = { selectedSection = area.name; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = area.name; route = "home"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
                         )
                     }
-                    item { HorizontalDivider(Modifier.padding(top = 8.dp)) }
-                    item {
-                        TextButton(onClick = { vm.disconnect(); selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
-                            Icon(Icons.Default.Logout, contentDescription = null)
-                            Spacer(Modifier.width(8.dp))
-                            Text("Disconnect ChatGPT")
+                    if (auth is AuthState.SignedIn) {
+                        item { HorizontalDivider(Modifier.padding(top = 8.dp)) }
+                        item {
+                            TextButton(onClick = { vm.disconnect(); selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
+                                Icon(Icons.Default.Logout, contentDescription = null)
+                                Spacer(Modifier.width(8.dp))
+                                Text("Disconnect ChatGPT")
+                            }
                         }
                     }
                 }
@@ -189,6 +285,21 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
         }
     ) {
         when {
+            route == "search" -> GlobalSearchScreen(
+                onMenu = { scope.launch { drawerState.open() } },
+                onOpenArticle = { article ->
+                    pendingArticleId = article.id
+                    pendingRecipeId = null
+                    selectedSection = article.section
+                    route = "home"
+                },
+                onOpenRecipe = { recipe ->
+                    pendingRecipeId = recipe.id
+                    pendingArticleId = null
+                    selectedSection = "Cooking"
+                    route = "home"
+                }
+            )
             route == "assistant" -> ConversationScreen(auth = auth, vm = vm, onMenu = { scope.launch { drawerState.open() } }, onSignIn = vm::signIn)
             route == "library" || selectedStarterId != null -> StarterLibraryScreen(
                 selectedId = selectedStarterId,
@@ -213,6 +324,9 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
             )
             selectedSection != null -> PersonalSectionScreen(
                 section = selectedSection!!,
+                initialArticleId = pendingArticleId
+                    ?: deepLinkArticleId.takeIf { selectedSection == deepLinkSection },
+                initialRecipeId = pendingRecipeId.takeIf { selectedSection == "Cooking" },
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
                 onStarterSelect = { selectedStarterId = it },
@@ -222,7 +336,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 connected = auth is AuthState.SignedIn,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { route = "assistant" },
-                onSection = { selectedSection = it },
+                onSection = { pendingArticleId = null; pendingRecipeId = null; selectedSection = it },
                 visibleSections = visibleSections,
                 onLibrary = { route = "library" },
                 onSettings = { route = "settings" }
@@ -291,6 +405,116 @@ private fun SuricHome(connected: Boolean, onMenu: () -> Unit, onAssistant: () ->
                 gridItems(visibleAreas, key = { it.name }) { area -> AreaTile(area, onClick = { onSection(area.name) }) }
             }
             Text(if (connected) "ChatGPT connected" else "Local mode · Ask Suric is optional", Modifier.align(Alignment.CenterHorizontally).padding(bottom = 6.dp), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.labelSmall)
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun GlobalSearchScreen(
+    onMenu: () -> Unit,
+    onOpenArticle: (OfflineArticle) -> Unit,
+    onOpenRecipe: (OfflineRecipe) -> Unit
+) {
+    val context = LocalContext.current
+    var articles by remember { mutableStateOf<List<OfflineArticle>>(emptyList()) }
+    var catalogue by remember { mutableStateOf<RecipeCatalogue?>(null) }
+    var loading by remember { mutableStateOf(true) }
+    var loadError by remember { mutableStateOf<String?>(null) }
+    var query by rememberSaveable { mutableStateOf("") }
+    var category by rememberSaveable { mutableStateOf("All") }
+
+    LaunchedEffect(Unit) {
+        runCatching {
+            withContext(Dispatchers.IO) {
+                val loadedArticles = OfflineLibrary.load(context)
+                loadedArticles to OfflineRecipeCatalogue.load(context, loadedArticles)
+            }
+        }.onSuccess { (loadedArticles, loadedCatalogue) ->
+            articles = loadedArticles
+            catalogue = loadedCatalogue
+            loadError = null
+        }.onFailure {
+            loadError = "Offline library could not be opened. Your saved items are unchanged."
+        }
+        loading = false
+    }
+
+    val categories = remember(articles) { listOf("All", "Recipes") + articles.map(OfflineArticle::section).distinct().sorted() }
+    val term = query.trim()
+    val matchingArticles = articles.asSequence()
+        .filter { category == "All" || it.section == category }
+        .filter { term.isNotBlank() && it.searchableText.contains(term, ignoreCase = true) }
+        .sortedWith(compareBy<OfflineArticle>({ it.section.lowercase() }, { it.title.lowercase() }))
+        .toList()
+    val matchingRecipes = catalogue?.recipes.orEmpty().asSequence()
+        .filter { category == "All" || category == "Recipes" || category == "Cooking" }
+        .filter { term.isNotBlank() && it.searchableText.contains(term, ignoreCase = true) }
+        .let { results -> catalogue?.sortedRecipes(results.toList()).orEmpty() }
+
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("Search offline library", maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } }
+            )
+        }
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier.fillMaxSize().padding(padding),
+            contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 24.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            item {
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = { query = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    placeholder = { Text("Search every guide and recipe") },
+                    singleLine = true,
+                    shape = RoundedCornerShape(16.dp)
+                )
+            }
+            item {
+                Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    categories.forEach { value ->
+                        FilterChip(selected = category == value, onClick = { category = value }, label = { Text(value, maxLines = 1) })
+                    }
+                }
+            }
+            if (loadError != null) item { Text(loadError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
+            if (loading) item { LinearProgressIndicator(Modifier.fillMaxWidth()) }
+            if (!loading && loadError == null && term.isBlank()) item {
+                Text("Search titles, topics, ingredients, origins and tags across the bundled library. Personal notes stay private.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (term.isNotBlank() && category != "Recipes" && matchingArticles.isNotEmpty()) item {
+                Text("Guides", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            }
+            items(matchingArticles, key = { "global-article:${it.id}" }) { article ->
+                OutlinedCard(onClick = { onOpenArticle(article) }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(article.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Text(article.section, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(article.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            if (term.isNotBlank() && category in setOf("All", "Recipes", "Cooking") && matchingRecipes.isNotEmpty()) item {
+                Text("Recipes", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            }
+            items(matchingRecipes, key = { "global-recipe:${it.id}" }) { recipe ->
+                OutlinedCard(onClick = { onOpenRecipe(recipe) }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Text(listOfNotNull(recipe.country, recipe.region).joinToString(" · "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            if (term.isNotBlank() && !loading && matchingArticles.isEmpty() && matchingRecipes.isEmpty() && loadError == null) item {
+                Text("No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
         }
     }
 }
@@ -525,10 +749,14 @@ private fun starterImage(key: String): Int = when (key) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMenu: () -> Unit, onStarterSelect: (String) -> Unit, onAssistant: (String) -> Unit) {
+private fun PersonalSectionScreen(section: String, initialArticleId: String?, initialRecipeId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onStarterSelect: (String) -> Unit, onAssistant: (String) -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
+    val readingState = remember(context) { OfflineReadingState(context) }
+    var favouriteIds by remember { mutableStateOf(readingState.favourites()) }
+    var recentIds by remember { mutableStateOf(readingState.recentlyViewed()) }
+    var readingFilter by rememberSaveable(section) { mutableStateOf("all") }
     val area = personalAreas.first { it.name == section }
     val allSavedEntries by vm.personalEntries.collectAsState()
     val savedEntries = allSavedEntries.filter { it.section == section }
@@ -536,12 +764,145 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
     var editingId by rememberSaveable(section) { mutableStateOf<String?>(null) }
     val editing = savedEntries.firstOrNull { it.id == editingId }
     var showEditor by rememberSaveable(section) { mutableStateOf(false) }
+    var shareEntryId by rememberSaveable(section) { mutableStateOf<String?>(null) }
     var calendarEvents by remember { mutableStateOf<List<LocalCalendarEvent>>(emptyList()) }
     var calendarMessage by remember { mutableStateOf<String?>(null) }
     var calendarLoading by remember { mutableStateOf(false) }
     var addingCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
     var savedCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
     val snackbar = remember { SnackbarHostState() }
+    val sectionListState = rememberLazyListState()
+    var offlineArticles by remember(section) { mutableStateOf<List<OfflineArticle>>(emptyList()) }
+    var recipeCatalogue by remember(section) { mutableStateOf<RecipeCatalogue?>(null) }
+    var selectedRecipeId by rememberSaveable(section) { mutableStateOf<String?>(null) }
+    var selectedRecipeCollectionId by rememberSaveable(section) { mutableStateOf("cuisine:ireland") }
+    var recipeCollectionMenuExpanded by remember { mutableStateOf(false) }
+    var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
+    var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
+    var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
+    val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
+    val selectedRecipe = recipeCatalogue?.recipes?.firstOrNull { it.id == selectedRecipeId }
+
+    LaunchedEffect(initialArticleId) {
+        if (!initialArticleId.isNullOrBlank()) selectedArticleId = initialArticleId
+    }
+    LaunchedEffect(initialRecipeId, recipeCatalogue) {
+        if (!initialRecipeId.isNullOrBlank() && recipeCatalogue?.recipes?.any { it.id == initialRecipeId } == true) {
+            selectedRecipeId = initialRecipeId
+        }
+    }
+
+    LaunchedEffect(selectedArticleId, selectedRecipeId) {
+        val openedId = selectedArticleId?.let { "article:$it" } ?: selectedRecipeId?.let { "recipe:$it" }
+        if (openedId != null) {
+            readingState.markViewed(openedId)
+            recentIds = readingState.recentlyViewed()
+        }
+    }
+
+    fun setFavourite(id: String, saved: Boolean) {
+        readingState.setFavourite(id, saved)
+        favouriteIds = readingState.favourites()
+    }
+
+    if (section == "Music") {
+        MusicSectionScreen(vm = vm, onMenu = onMenu)
+        return
+    }
+
+    LaunchedEffect(section) {
+        runCatching {
+            withContext(Dispatchers.IO) {
+                val articles = OfflineLibrary.load(context)
+                articles to if (section == "Cooking") OfflineRecipeCatalogue.load(context, articles) else null
+            }
+        }
+            .onSuccess { (articles, recipes) ->
+                offlineArticles = articles
+                recipeCatalogue = recipes
+                if (recipes?.collections?.none { it.id == selectedRecipeCollectionId } != false) {
+                    selectedRecipeCollectionId = recipes?.collections?.firstOrNull { it.id == "cuisine:ireland" }?.id
+                        ?: recipes?.collections?.firstOrNull()?.id.orEmpty()
+                }
+                offlineLibraryError = null
+            }
+            .onFailure { offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged." }
+    }
+    BackHandler(enabled = selectedArticle != null || selectedRecipe != null) {
+        if (selectedRecipe != null) selectedRecipeId = null else selectedArticleId = null
+    }
+    if (selectedRecipe != null) {
+        OfflineRecipeDetail(
+            recipe = selectedRecipe!!,
+            isFavourite = "recipe:${selectedRecipe!!.id}" in favouriteIds,
+            onFavourite = { saved -> setFavourite("recipe:${selectedRecipe!!.id}", saved) },
+            onBack = { selectedRecipeId = null },
+            onAddIngredients = {
+                scope.launch {
+                    runCatching { vm.addShoppingIngredients(selectedRecipe!!.name, selectedRecipe!!.ingredients) }
+                        .onSuccess { additions ->
+                            val message = if (additions.isEmpty()) "Those ingredients are already in Shopping." else "Added ${additions.size} ingredients to Shopping."
+                            snackbar.showSnackbar(message)
+                        }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t add the ingredients to Shopping.") }
+                }
+            },
+            onAsk = { onAssistant("Help me cook this recipe and adapt it to what I have. Do not invent ingredients or change the dish's origin.\n\n${selectedRecipe!!.name} (${selectedRecipe!!.country})\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\n${selectedRecipe!!.instructions.joinToString("\n")}") },
+            onCopy = {
+                scope.launch {
+                    val recipeBody = buildString {
+                        appendLine("Origin: ${selectedRecipe!!.country}${selectedRecipe!!.region?.let { " • $it" }.orEmpty()}")
+                        appendLine("Prep: ${selectedRecipe!!.prepMinutes} min | Cook: ${selectedRecipe!!.cookMinutes} min | Serves: ${selectedRecipe!!.servings}")
+                        appendLine("\nINGREDIENTS")
+                        selectedRecipe!!.ingredients.forEach { appendLine("• $it") }
+                        appendLine("\nMETHOD")
+                        selectedRecipe!!.instructions.forEachIndexed { index, step -> appendLine("${index + 1}. $step") }
+                        appendLine("\nServe with: ${selectedRecipe!!.sides}")
+                        appendLine("\nSubstitutions: ${selectedRecipe!!.substitutions}")
+                        appendLine("\nStorage: ${selectedRecipe!!.storage}")
+                    }
+                    runCatching { vm.addEntry("Cooking", selectedRecipe!!.name, recipeBody.trim()) }
+                        .onSuccess { snackbar.showSnackbar("Saved an independent recipe copy in Cooking.") }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t save a recipe copy.") }
+                }
+            },
+            onShare = {
+                val text = "${selectedRecipe!!.name} — ${selectedRecipe!!.country}\n${selectedRecipe!!.description}\n\nIngredients:\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\nMethod:\n${selectedRecipe!!.instructions.mapIndexed { index, step -> "${index + 1}. $step" }.joinToString("\n")}\n\nServe with: ${selectedRecipe!!.sides}"
+                val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, text)
+                }
+                runCatching { context.startActivity(Intent.createChooser(sendIntent, "Share recipe")) }
+                    .onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open the Android share sheet.") } }
+            }
+        )
+        return
+    }
+    if (selectedArticle != null) {
+        OfflineArticleDetail(
+            article = selectedArticle!!,
+            isFavourite = "article:${selectedArticle!!.id}" in favouriteIds,
+            onFavourite = { saved -> setFavourite("article:${selectedArticle!!.id}", saved) },
+            onBack = { selectedArticleId = null },
+            onShare = {
+                val link = Uri.Builder().scheme("suric").authority("library").appendPath(selectedArticle!!.id).build()
+                val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, "${selectedArticle!!.title}\n${selectedArticle!!.summary}\n$link")
+                }
+                runCatching { context.startActivity(Intent.createChooser(sendIntent, "Share library article")) }
+                    .onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open the Android share sheet.") } }
+            },
+            onCopy = {
+                scope.launch {
+                    runCatching { vm.addEntry(selectedArticle!!.section, selectedArticle!!.title, selectedArticle!!.body) }
+                        .onSuccess { snackbar.showSnackbar("Saved an independent copy in ${selectedArticle!!.section}.") }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t save a copy.") }
+                }
+            }
+        )
+        return
+    }
 
     fun loadCalendar() {
         scope.launch {
@@ -570,6 +931,7 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
         containerColor = MaterialTheme.colorScheme.background
     ) { padding ->
         LazyColumn(
+            state = sectionListState,
             modifier = Modifier.fillMaxSize().padding(padding),
             contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 96.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -603,6 +965,93 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
                                 Text(reference.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
                                 Text("Open guide and links", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
                             }
+                        }
+                    }
+                }
+            }
+            if (section == "Cooking") item {
+                OutlinedTextField(
+                    value = libraryQuery,
+                    onValueChange = { libraryQuery = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    placeholder = { Text("Search recipes, ingredients and guides") },
+                    singleLine = true,
+                    shape = RoundedCornerShape(16.dp)
+                )
+            }
+            if (section == "Cooking") item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf("all" to "All", "favourites" to "Favourites", "recent" to "Recently viewed").forEach { (value, label) ->
+                        FilterChip(selected = readingFilter == value, onClick = { readingFilter = value }, label = { Text(label, maxLines = 1) })
+                    }
+                }
+            }
+            if (section == "Cooking") {
+                val activeRecipeCollection = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
+                    ?: recipeCatalogue?.collections?.firstOrNull()
+                val recipeCollectionArtwork = when (activeRecipeCollection?.id) {
+                    "cuisine:bbq" -> R.drawable.recipe_bbq_collection
+                    "cuisine:seafood" -> R.drawable.recipe_seafood_collection
+                    else -> null
+                }
+                val featuredRecipes = activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
+                val searchedRecipes = (if (libraryQuery.isBlank() && readingFilter == "all") featuredRecipes else recipeCatalogue?.let { catalogue ->
+                    catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
+                }.orEmpty()).filter { recipe ->
+                    when (readingFilter) {
+                        "favourites" -> "recipe:${recipe.id}" in favouriteIds
+                        "recent" -> "recipe:${recipe.id}" in recentIds
+                        else -> true
+                    }
+                }.let { recipes -> if (readingFilter == "recent") recipes.sortedBy { recentIds.indexOf("recipe:${it.id}").let { index -> if (index < 0) Int.MAX_VALUE else index } } else recipes }
+                item {
+                    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                            Box {
+                                OutlinedButton(onClick = { recipeCollectionMenuExpanded = true }, enabled = recipeCatalogue?.collections?.isNotEmpty() == true) {
+                                    Text(if (libraryQuery.isBlank()) activeRecipeCollection?.title ?: "Recipe collections" else "Recipe search results", maxLines = 1)
+                                }
+                                DropdownMenu(expanded = recipeCollectionMenuExpanded, onDismissRequest = { recipeCollectionMenuExpanded = false }) {
+                                    recipeCatalogue?.collections?.forEach { collection ->
+                                        DropdownMenuItem(
+                                            text = { Text(collection.title) },
+                                            onClick = { selectedRecipeCollectionId = collection.id; libraryQuery = ""; recipeCollectionMenuExpanded = false }
+                                        )
+                                    }
+                                }
+                            }
+                            Text("${searchedRecipes.size} recipes", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Text("Offline recipes with ingredients, timings and country of origin.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+                if (activeRecipeCollection == null && offlineLibraryError == null) item {
+                    Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                }
+                if (recipeCollectionArtwork != null && libraryQuery.isBlank()) item {
+                    Image(
+                        painter = painterResource(recipeCollectionArtwork),
+                        contentDescription = "${activeRecipeCollection?.title} collection image showing representative dishes",
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier.fillMaxWidth().height(184.dp).clip(RoundedCornerShape(20.dp))
+                    )
+                }
+                if (searchedRecipes.isEmpty() && (libraryQuery.isNotBlank() || readingFilter != "all")) item {
+                    val emptyMessage = when (readingFilter) {
+                        "favourites" -> "No favourite recipes in this collection."
+                        "recent" -> "No recently viewed recipes in this collection."
+                        else -> "No bundled recipes match that search."
+                    }
+                    Text(emptyMessage, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                items(searchedRecipes, key = { "recipe:${it.id}" }) { recipe ->
+                    OutlinedCard(onClick = { selectedRecipeId = recipe.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                            Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Text(listOfNotNull(recipe.country, recipe.region).joinToString(" • "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                            Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text("${recipe.prepMinutes} min prep • ${recipe.cookMinutes} min cook • Serves ${recipe.servings}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                     }
                 }
@@ -659,6 +1108,74 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
                 }
             }
             item {
+                if (section == "Cooking") {
+                    Row(Modifier.fillMaxWidth().padding(top = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Text("Offline cooking guides", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("${offlineArticles.count { it.section == section }} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                } else {
+                    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                            Text("Offline library", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Text("${offlineArticles.size} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Text("Bundled reading opens without internet. Search checks every section.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        OutlinedTextField(
+                            value = libraryQuery,
+                            onValueChange = { libraryQuery = it },
+                            modifier = Modifier.fillMaxWidth(),
+                            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                            placeholder = { Text("Search offline guides and recipes") },
+                            singleLine = true,
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                    }
+                }
+            }
+            if (section != "Cooking") item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf("all" to "All", "favourites" to "Favourites", "recent" to "Recently viewed").forEach { (value, label) ->
+                        FilterChip(selected = readingFilter == value, onClick = { readingFilter = value }, label = { Text(label, maxLines = 1) })
+                    }
+                }
+            }
+            if (offlineLibraryError != null) item {
+                Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+            }
+            val recipeArticleIds = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
+                ?.recipeIds?.toSet()?.let { collectionIds -> recipeCatalogue?.recipes?.filter { it.id in collectionIds }?.mapNotNull { it.articleId }?.toSet() }
+                .orEmpty()
+            val matchingArticles = offlineArticles.filter { article ->
+                if (section == "Cooking" && article.id in recipeArticleIds) return@filter false
+                if (libraryQuery.isBlank()) article.section == section
+                else article.searchableText.contains(libraryQuery.trim(), ignoreCase = true)
+            }.filter { article ->
+                when (readingFilter) {
+                    "favourites" -> "article:${article.id}" in favouriteIds
+                    "recent" -> "article:${article.id}" in recentIds
+                    else -> true
+                }
+            }.let { articles -> if (readingFilter == "recent") articles.sortedBy { recentIds.indexOf("article:${it.id}").let { index -> if (index < 0) Int.MAX_VALUE else index } } else articles }
+            if (matchingArticles.isEmpty() && offlineLibraryError == null) item {
+                val emptyMessage = when {
+                    readingFilter == "favourites" -> "No favourite guides in this section."
+                    readingFilter == "recent" -> "No recently viewed guides in this section."
+                    libraryQuery.isBlank() -> "No bundled articles in this section yet."
+                    else -> "No offline content matches that search."
+                }
+                Text(emptyMessage, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            items(matchingArticles, key = { "offline:${it.id}" }) { article ->
+                OutlinedCard(onClick = { selectedArticleId = article.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(article.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        if (libraryQuery.isNotBlank()) Text(article.section, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(article.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text("Offline • revision ${article.revision}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            item {
                 Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                     Text(if (section == "Shopping") "Saved options" else "Saved here", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                     Text("${savedEntries.size}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -668,9 +1185,11 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
             items(savedEntries, key = { it.id }) { entry ->
                 EntryCard(
                     entry = entry,
-                    showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills"),
+                    showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills") ||
+                        (section == "Shopping" && entry.body.startsWith("Added from recipe: ")),
                     onToggle = { changed -> scope.launch { runCatching { vm.updateEntry(changed) }.onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t update this item.") } } },
                     onEdit = { editingId = entry.id; showEditor = true },
+                    onShare = { shareEntryId = entry.id },
                     onOpenSource = { url -> scope.launch { runCatching { uriHandler.openUri(url) }.onFailure { snackbar.showSnackbar("Couldn’t open that link.") } } },
                     onDelete = {
                         scope.launch {
@@ -699,18 +1218,388 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
             }
         }
     }
+    savedEntries.firstOrNull { it.id == shareEntryId }?.let { entry ->
+        AlertDialog(
+            onDismissRequest = { shareEntryId = null },
+            title = { Text("Share a readable copy?") },
+            text = { Text("The selected app and recipient can read this copy. Suric will include only “${entry.title}” and its contents; it will not include your other notes or sign-in details.") },
+            confirmButton = {
+                TextButton(onClick = {
+                    shareEntryId = null
+                    runCatching {
+                        val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                            type = "text/plain"
+                            putExtra(Intent.EXTRA_TEXT, SharedEntryCodec.encode(entry))
+                        }
+                        context.startActivity(Intent.createChooser(sendIntent, "Share a copy"))
+                    }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Couldn’t open the Android share sheet.") } }
+                }) { Text("Choose app") }
+            },
+            dismissButton = { TextButton(onClick = { shareEntryId = null }) { Text("Cancel") } }
+        )
+    }
     if (showEditor && (editingId == null || editing != null)) {
         EntryEditorSheet(
             section = section,
             area = area,
             initial = editing,
             onDismiss = { showEditor = false },
-            onSave = { title, details, sourceUrl, sourceCheckedAt ->
-                if (editing == null) vm.addEntry(section, title, details, sourceUrl, sourceCheckedAt)
-                else vm.updateEntry(editing!!.copy(title = title, body = details, sourceUrl = sourceUrl, sourceCheckedAt = sourceCheckedAt))
+            onSave = { targetSection, title, details, sourceUrl, sourceCheckedAt ->
+                if (editing == null) vm.addEntry(targetSection, title, details, sourceUrl, sourceCheckedAt)
+                else vm.updateEntry(editing!!.copy(
+                    section = targetSection,
+                    title = title,
+                    body = details,
+                    sourceUrl = sourceUrl.takeIf { targetSection == "Shopping" },
+                    sourceCheckedAt = sourceCheckedAt.takeIf { targetSection == "Shopping" }
+                ))
                 showEditor = false
             }
         )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun MusicSectionScreen(vm: ConnectionViewModel, onMenu: () -> Unit) {
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val allEntries by vm.personalEntries.collectAsState()
+    val tracks = allEntries.filter { it.section == "Music" && it.body.startsWith("suric-audio-v1:") }
+    val otherEntries = allEntries.filter { it.section == "Music" && !it.body.startsWith("suric-audio-v1:") }
+    val musicArea = personalAreas.first { it.name == "Music" }
+    var editingEntryId by rememberSaveable { mutableStateOf<String?>(null) }
+    val editingEntry = otherEntries.firstOrNull { it.id == editingEntryId }
+    val preferences = remember { context.getSharedPreferences("suric_music", android.content.Context.MODE_PRIVATE) }
+    var currentId by rememberSaveable { mutableStateOf(preferences.getString("last_track", null)) }
+    var isPlaying by remember { mutableStateOf(false) }
+    var isPrepared by remember { mutableStateOf(false) }
+    var duration by remember { mutableIntStateOf(0) }
+    var position by remember { mutableIntStateOf(preferences.getInt("last_position", 0)) }
+    var message by remember { mutableStateOf<String?>(null) }
+    var player by remember { mutableStateOf<MediaPlayer?>(null) }
+    val selectedTrack = tracks.firstOrNull { it.id == currentId }
+    val selectedAudio = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris ->
+        scope.launch {
+            uris.forEach { uri ->
+                runCatching { context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION) }
+                val name = runCatching {
+                    context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { cursor ->
+                        if (cursor.moveToFirst()) cursor.getString(0) else null
+                    }
+                }.getOrNull()?.substringBeforeLast('.')?.takeIf(String::isNotBlank) ?: "Local audio"
+                runCatching { vm.addEntry("Music", name, "suric-audio-v1:$uri") }
+                    .onFailure { message = it.message ?: "Couldn’t add this audio file." }
+            }
+        }
+    }
+    fun playTrack(entry: PersonalEntry) {
+        val uri = Uri.parse(entry.body.removePrefix("suric-audio-v1:"))
+        if (entry.id == currentId && isPrepared && player != null) {
+            player?.start()
+            isPlaying = true
+            return
+        }
+        runCatching {
+            player?.release()
+            isPlaying = false
+            isPrepared = false
+            val next = MediaPlayer()
+            next.setAudioAttributes(android.media.AudioAttributes.Builder()
+                .setContentType(android.media.AudioAttributes.CONTENT_TYPE_MUSIC)
+                .setUsage(android.media.AudioAttributes.USAGE_MEDIA).build())
+            next.setDataSource(context, uri)
+            next.setOnPreparedListener { ready ->
+                player = ready
+                duration = ready.duration.coerceAtLeast(0)
+                val saved = if (entry.id == preferences.getString("last_track", null)) preferences.getInt("last_position", 0) else 0
+                if (saved in 1 until ready.duration) ready.seekTo(saved)
+                position = saved.coerceIn(0, ready.duration.coerceAtLeast(0))
+                isPrepared = true
+                ready.start()
+                isPlaying = true
+                currentId = entry.id
+                preferences.edit().putString("last_track", entry.id).apply()
+                message = null
+            }
+            next.setOnCompletionListener { completed ->
+                position = 0
+                isPlaying = false
+                preferences.edit().putInt("last_position", 0).apply()
+                if (tracks.isNotEmpty()) {
+                    val nextTrack = tracks.getOrNull((tracks.indexOfFirst { it.id == entry.id } + 1) % tracks.size)
+                    if (nextTrack != null && nextTrack.id != entry.id) playTrack(nextTrack)
+                }
+            }
+            next.setOnErrorListener { _, _, _ ->
+                isPrepared = false
+                isPlaying = false
+                message = "This audio file could not be played. Re-select it if access has expired."
+                true
+            }
+            player = next
+            currentId = entry.id
+            next.prepareAsync()
+        }.onFailure { message = it.message ?: "This file could not be opened. Re-select it if its permission has expired." }
+    }
+    LaunchedEffect(isPlaying) {
+        while (isPlaying) {
+            player?.let { active ->
+                position = active.currentPosition.coerceAtLeast(0)
+                preferences.edit().putInt("last_position", position).apply()
+            }
+            delay(750)
+        }
+    }
+    DisposableEffect(Unit) {
+        onDispose {
+            player?.let { active ->
+                runCatching { preferences.edit().putInt("last_position", active.currentPosition.coerceAtLeast(0)).apply() }
+                active.release()
+            }
+        }
+    }
+    fun openExternal(url: String, title: String) {
+        runCatching {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            context.startActivity(Intent.createChooser(intent, title))
+        }.onFailure { message = "No app could open that destination." }
+    }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("Music", maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(18.dp, 12.dp, 18.dp, 28.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxWidth().padding(18.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text("Listen to local audio", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("Choose audio files with Android’s document picker. Suric stores their references and plays them on this screen; playback pauses when you leave Music.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Button(onClick = { selectedAudio.launch(arrayOf("audio/*")) }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Choose audio files") }
+                    }
+                }
+            }
+            item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.fillMaxWidth().padding(18.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text("Online music", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        Text("These open another app or an online page. Internet access and the external service are required.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        OutlinedButton(onClick = { openExternal("https://www.youtube.com/", "Open with NewPipe or another app") }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Open with NewPipe or another app") }
+                        OutlinedButton(onClick = { openExternal("https://www.naxi.rs/radio", "Open Naxi Radio") }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Open Naxi Radio") }
+                        TextButton(onClick = { openExternal("https://github.com/TeamNewPipe/NewPipe/releases", "Open NewPipe official releases") }, modifier = Modifier.heightIn(min = 48.dp)) { Text("NewPipe official releases") }
+                    }
+                }
+            }
+            message?.let { item { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) } }
+            item { Text("Your local queue (${tracks.size})", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) }
+            if (tracks.isEmpty()) item { EmptyState("Music") }
+            items(tracks, key = { it.id }) { track ->
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = if (track.id == currentId) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f).padding(vertical = 8.dp)) {
+                            Text(track.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, maxLines = 1)
+                            Text(if (track.id == currentId && isPlaying) "Playing" else "On this device", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        IconButton(onClick = { playTrack(track) }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.PlayArrow, contentDescription = "Play ${track.title}") }
+                        IconButton(onClick = { scope.launch { vm.deleteEntry(track.id) } }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove ${track.title} from queue") }
+                    }
+                }
+            }
+            if (otherEntries.isNotEmpty()) item { Text("Other items saved in Music", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold) }
+            items(otherEntries, key = { "music-entry:${it.id}" }) { entry ->
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text(entry.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Text(entry.body, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                        }
+                        IconButton(onClick = { editingEntryId = entry.id }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Edit, contentDescription = "Edit ${entry.title}") }
+                    }
+                }
+            }
+            if (selectedTrack != null) item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Text(selectedTrack.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Slider(value = position.toFloat().coerceIn(0f, duration.coerceAtLeast(1).toFloat()), valueRange = 0f..duration.coerceAtLeast(1).toFloat(), onValueChange = { position = it.toInt() }, onValueChangeFinished = { runCatching { player?.seekTo(position) }.onFailure { message = "Couldn’t seek in this audio file." } })
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                            Text("${position / 60000}:${(position / 1000 % 60).toString().padStart(2, '0')}", style = MaterialTheme.typography.labelSmall)
+                            Row {
+                                IconButton(onClick = {
+                                    val index = tracks.indexOfFirst { it.id == currentId }
+                                    tracks.getOrNull((index - 1).coerceAtLeast(0))?.let(::playTrack)
+                                }) { Icon(Icons.Default.SkipPrevious, contentDescription = "Previous track") }
+                                IconButton(onClick = {
+                                    if (isPlaying) { player?.pause(); isPlaying = false } else if (isPrepared) { player?.start(); isPlaying = true } else selectedTrack.let(::playTrack)
+                                }) { Icon(if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow, contentDescription = if (isPlaying) "Pause" else "Play") }
+                                IconButton(onClick = {
+                                    val index = tracks.indexOfFirst { it.id == currentId }
+                                    tracks.getOrNull((index + 1).mod(tracks.size.coerceAtLeast(1)))?.let(::playTrack)
+                                }) { Icon(Icons.Default.SkipNext, contentDescription = "Next track") }
+                            }
+                            Text("${duration / 60000}:${(duration / 1000 % 60).toString().padStart(2, '0')}", style = MaterialTheme.typography.labelSmall)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (editingEntry != null) {
+        EntryEditorSheet(
+            section = "Music",
+            area = musicArea,
+            initial = editingEntry,
+            onDismiss = { editingEntryId = null },
+            onSave = { targetSection, title, body, sourceUrl, checkedAt ->
+                vm.updateEntry(editingEntry!!.copy(
+                    section = targetSection,
+                    title = title,
+                    body = body,
+                    sourceUrl = sourceUrl.takeIf { targetSection == "Shopping" },
+                    sourceCheckedAt = checkedAt.takeIf { targetSection == "Shopping" }
+                ))
+                editingEntryId = null
+            }
+        )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun OfflineArticleDetail(article: OfflineArticle, isFavourite: Boolean, onFavourite: (Boolean) -> Unit, onBack: () -> Unit, onShare: () -> Unit, onCopy: () -> Unit) {
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text(article.section, maxLines = 1) },
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to library") } },
+                actions = { IconButton(onClick = { onFavourite(!isFavourite) }, modifier = Modifier.size(48.dp)) { Icon(if (isFavourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = if (isFavourite) "Remove from favourites" else "Add to favourites", tint = if (isFavourite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant) } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(bottom = 24.dp)) {
+            Text(article.title, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.SemiBold)
+            Spacer(Modifier.height(8.dp))
+            Text(article.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(8.dp))
+            Text("Bundled offline • ${article.section} • revision ${article.revision}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+            Spacer(Modifier.height(18.dp))
+            article.body.split("\n\n").forEach { paragraph ->
+                val heading = paragraph.takeIf { it.length <= 46 && it == it.uppercase() && it.any(Char::isLetter) }
+                if (heading != null) {
+                    Text(heading, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.Bold)
+                } else {
+                    Text(paragraph, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+                }
+                Spacer(Modifier.height(12.dp))
+            }
+            Button(onClick = onCopy, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Text("Copy to My Space")
+            }
+            OutlinedButton(onClick = onShare, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Icon(Icons.Default.Share, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text("Share article link")
+            }
+            Text("The copy is saved separately from this bundled article and stays on this device.", Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun OfflineRecipeDetail(
+    recipe: OfflineRecipe,
+    isFavourite: Boolean,
+    onFavourite: (Boolean) -> Unit,
+    onBack: () -> Unit,
+    onAddIngredients: () -> Unit,
+    onAsk: () -> Unit,
+    onCopy: () -> Unit,
+    onShare: () -> Unit
+) {
+    val context = LocalContext.current
+    val recipeImageResources = remember(recipe.id, recipe.imageAssetNames) {
+        recipe.imageAssetNames.mapNotNull { name ->
+            context.resources.getIdentifier(name, "drawable", context.packageName).takeIf { it != 0 }
+        }
+    }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("${recipe.country} recipe", maxLines = 1) },
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to recipes") } },
+                actions = { IconButton(onClick = { onFavourite(!isFavourite) }, modifier = Modifier.size(48.dp)) { Icon(if (isFavourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = if (isFavourite) "Remove from favourites" else "Add to favourites", tint = if (isFavourite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant) } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(bottom = 24.dp)) {
+            Text(recipe.name, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.SemiBold)
+            recipe.englishName?.takeIf { !it.equals(recipe.name, ignoreCase = true) }?.let {
+                Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            Spacer(Modifier.height(8.dp))
+            Text(listOfNotNull(recipe.country, recipe.region).joinToString(" • "), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            Spacer(Modifier.height(8.dp))
+            Text(recipe.description, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(8.dp))
+            Text("Prep ${recipe.prepMinutes} min • Cook ${recipe.cookMinutes} min • Serves ${recipe.servings} • ${recipe.difficulty}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (recipeImageResources.isNotEmpty()) {
+                Spacer(Modifier.height(20.dp))
+                Text("Recipe photos (${recipeImageResources.size})", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    recipeImageResources.forEachIndexed { index, resourceId ->
+                        Image(
+                            painter = painterResource(resourceId),
+                            contentDescription = "${recipe.name}, photo ${index + 1} of ${recipeImageResources.size}",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.width(280.dp).height(190.dp).clip(RoundedCornerShape(18.dp))
+                        )
+                    }
+                }
+            }
+            Spacer(Modifier.height(20.dp))
+            Text("Ingredients", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            recipe.ingredients.forEach { ingredient ->
+                Text("• $ingredient", Modifier.padding(top = 7.dp), style = MaterialTheme.typography.bodyLarge)
+            }
+            Spacer(Modifier.height(20.dp))
+            Text("Method", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            recipe.instructions.forEachIndexed { index, step ->
+                Row(Modifier.fillMaxWidth().padding(top = 10.dp), horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.Top) {
+                    Text("${index + 1}.", style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.primary)
+                    Text(step, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                }
+            }
+            RecipeDetailNote("Serve with", recipe.sides)
+            RecipeDetailNote("Substitutions", recipe.substitutions)
+            RecipeDetailNote("Storage", recipe.storage)
+            RecipeDetailNote("Food safety", recipe.safety)
+            Text("Offline • revision ${recipe.revision} • ${recipe.tags.joinToString(" · ")}", Modifier.padding(top = 16.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(14.dp))
+            Button(onClick = onAsk, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Ask Suric about this recipe") }
+            OutlinedButton(onClick = onAddIngredients, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Add ingredients to Shopping") }
+            OutlinedButton(onClick = onCopy, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Copy to My Space") }
+            OutlinedButton(onClick = onShare, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Icon(Icons.Default.Share, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text("Share recipe")
+            }
+        }
+    }
+}
+
+@Composable
+private fun RecipeDetailNote(title: String, body: String) {
+    Column(Modifier.fillMaxWidth().padding(top = 16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+        Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+        Text(body, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
@@ -735,7 +1624,7 @@ private fun EmptyState(section: String) {
 }
 
 @Composable
-private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (PersonalEntry) -> Unit, onEdit: () -> Unit, onOpenSource: (String) -> Unit, onDelete: () -> Unit) {
+private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (PersonalEntry) -> Unit, onEdit: () -> Unit, onShare: () -> Unit, onOpenSource: (String) -> Unit, onDelete: () -> Unit) {
     Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)) {
         Row(Modifier.fillMaxWidth().padding(start = 12.dp, end = 6.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
             if (showCheck) Checkbox(checked = entry.completed, onCheckedChange = { onToggle(entry.copy(completed = it)) }, modifier = Modifier.semantics { contentDescription = if (entry.completed) "Mark ${entry.title} not done" else "Mark ${entry.title} done" })
@@ -749,6 +1638,7 @@ private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (Perso
                     }
                 }
             }
+            IconButton(onClick = onShare, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Share, contentDescription = "Share a copy of ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
             IconButton(onClick = onEdit, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Edit, contentDescription = "Edit ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
             IconButton(onClick = onDelete, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.DeleteOutline, contentDescription = "Delete ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
         }
@@ -770,7 +1660,9 @@ private fun CalendarEventCard(event: LocalCalendarEvent, adding: Boolean, saved:
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun EntryEditorSheet(section: String, area: PersonalArea, initial: PersonalEntry?, onDismiss: () -> Unit, onSave: suspend (String, String, String?, String?) -> Unit) {
+private fun EntryEditorSheet(section: String, area: PersonalArea, initial: PersonalEntry?, onDismiss: () -> Unit, onSave: suspend (String, String, String, String?, String?) -> Unit) {
+    var targetSection by rememberSaveable(initial?.id) { mutableStateOf(initial?.section ?: section) }
+    var sectionMenuExpanded by remember { mutableStateOf(false) }
     var title by rememberSaveable(initial?.id) { mutableStateOf(initial?.title.orEmpty()) }
     var sourceUrl by rememberSaveable(initial?.id) { mutableStateOf(initial?.sourceUrl.orEmpty()) }
     var sourceCheckedAt by rememberSaveable(initial?.id) { mutableStateOf(initial?.sourceCheckedAt.orEmpty()) }
@@ -786,7 +1678,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
     var saving by remember { mutableStateOf(false) }
     var showDiscardConfirmation by rememberSaveable(initial?.id) { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
-    val dirty = title != initial?.title.orEmpty() || details != initialDetails ||
+    val dirty = targetSection != (initial?.section ?: section) || title != initial?.title.orEmpty() || details != initialDetails ||
         (section == "Shopping" && (sourceUrl != initial?.sourceUrl.orEmpty() || sourceCheckedAt != initial?.sourceCheckedAt.orEmpty())) ||
         (section == "Bills" && (amount != billMeta.substringAfter("Amount: ", "").substringBefore(" • Due: ").trim() || dueDate != billMeta.substringAfter("Due: ", "").trim()))
     val latestDirty by rememberUpdatedState(dirty)
@@ -800,6 +1692,23 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
             Spacer(Modifier.height(6.dp))
             Text(if (section == "Shopping") "Save details you checked yourself. Suric does not verify retailer pages." else area.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(18.dp))
+            ExposedDropdownMenuBox(expanded = sectionMenuExpanded, onExpandedChange = { sectionMenuExpanded = it }) {
+                OutlinedTextField(
+                    value = targetSection,
+                    onValueChange = {},
+                    readOnly = true,
+                    label = { Text("Save in section") },
+                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = sectionMenuExpanded) },
+                    modifier = Modifier.fillMaxWidth().menuAnchor(),
+                    shape = RoundedCornerShape(16.dp)
+                )
+                ExposedDropdownMenu(expanded = sectionMenuExpanded, onDismissRequest = { sectionMenuExpanded = false }) {
+                    PersonalEntryStore.SECTIONS.sorted().forEach { destination ->
+                        DropdownMenuItem(text = { Text(destination) }, onClick = { targetSection = destination; sectionMenuExpanded = false })
+                    }
+                }
+            }
+            Spacer(Modifier.height(10.dp))
             OutlinedTextField(value = title, onValueChange = { title = it; error = null }, modifier = Modifier.fillMaxWidth(), label = { Text(if (section == "Shopping") "Product or option" else if (section == "Bills") "Bill or reminder" else "Title") }, singleLine = true, keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences), shape = RoundedCornerShape(16.dp))
             if (section == "Shopping") {
                 Spacer(Modifier.height(10.dp))
@@ -823,7 +1732,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
                     onClick = {
                         if (title.isBlank()) { error = "Add a short title first."; return@Button }
                         if (saving) return@Button
-                        val cleanedUrl = if (section == "Shopping") runCatching { ShoppingResearchRules.cleanSourceUrl(sourceUrl) }.getOrElse { error = it.message ?: "Check the retailer link."; return@Button } else null
+                        val cleanedUrl = if (targetSection == "Shopping") runCatching { ShoppingResearchRules.cleanSourceUrl(sourceUrl) }.getOrElse { error = it.message ?: "Check the retailer link."; return@Button } else null
                         saving = true
                         val savedDetails = if (section == "Bills") buildString {
                             val meta = listOf(amount.trim().takeIf { it.isNotEmpty() }?.let { "Amount: $it" }, dueDate.trim().takeIf { it.isNotEmpty() }?.let { "Due: $it" }).filterNotNull().joinToString(" • ")
@@ -831,7 +1740,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
                             if (details.isNotBlank()) { if (isNotEmpty()) append("\n"); append(details.trim()) }
                         } else details.trim()
                         scope.launch {
-                            runCatching { onSave(title.trim(), savedDetails, cleanedUrl, sourceCheckedAt.trim().takeIf { section == "Shopping" && it.isNotEmpty() }) }
+                            runCatching { onSave(targetSection, title.trim(), savedDetails, cleanedUrl, sourceCheckedAt.trim().takeIf { targetSection == "Shopping" && it.isNotEmpty() }) }
                                 .onFailure { error = it.message ?: "Couldn’t save this item. Your existing notes are unchanged." }
                             saving = false
                         }
@@ -864,13 +1773,54 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
     var savingIndex by remember { mutableIntStateOf(-1) }
     var savedIndices by remember { mutableStateOf(setOf<Int>()) }
     var selectedImage by rememberSaveable { mutableStateOf<Uri?>(null) }
-    val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { selectedImage = it }
+    var previewImage by rememberSaveable { mutableStateOf<String?>(null) }
+    var confirmClearHistory by rememberSaveable { mutableStateOf(false) }
+    var conversationActionsExpanded by remember { mutableStateOf(false) }
+    val context = LocalContext.current
+    BackHandler(enabled = previewImage != null) { previewImage = null }
+    val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
+        if (uri != null) {
+            vm.keepImageAccess(uri)
+            selectedImage = uri
+        }
+    }
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
                 title = { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Ask Suric", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, maxLines = 1); Text(email ?: "Optional AI assistance", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1) } },
                 navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
-                actions = { if (connected) IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") } }
+                actions = {
+                    Box {
+                        IconButton(onClick = { conversationActionsExpanded = true }, modifier = Modifier.size(48.dp)) {
+                            Icon(Icons.Default.MoreVert, contentDescription = "Chat history actions")
+                        }
+                        DropdownMenu(expanded = conversationActionsExpanded, onDismissRequest = { conversationActionsExpanded = false }) {
+                            DropdownMenuItem(
+                                text = { Text("Share chat text") },
+                                leadingIcon = { Icon(Icons.Default.Share, contentDescription = null) },
+                                enabled = state.messages.isNotEmpty(),
+                                onClick = {
+                                    conversationActionsExpanded = false
+                                    val transcript = state.messages.joinToString("\n\n") { message ->
+                                        val speaker = if (message.role == "user") "You" else "Suric"
+                                        "$speaker:\n${message.text}"
+                                    }
+                                    val intent = Intent(Intent.ACTION_SEND).apply {
+                                        type = "text/plain"
+                                        putExtra(Intent.EXTRA_TEXT, transcript)
+                                    }
+                                    context.startActivity(Intent.createChooser(intent, "Share chat history"))
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("Delete chat history") },
+                                leadingIcon = { Icon(Icons.Default.DeleteOutline, contentDescription = null) },
+                                onClick = { conversationActionsExpanded = false; confirmClearHistory = true }
+                            )
+                        }
+                    }
+                    if (connected) IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") }
+                }
             )
         },
         bottomBar = {
@@ -886,10 +1836,17 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                         (auth as? AuthState.Failed)?.let { Text(it.message, Modifier.padding(top = 8.dp), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
                     }
                 } else Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)) {
-                    selectedImage?.let { Row(Modifier.fillMaxWidth().padding(bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Text("Photo ready to send", Modifier.weight(1f), style = MaterialTheme.typography.labelMedium)
-                        IconButton(onClick = { selectedImage = null }, modifier = Modifier.size(44.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove photo") }
-                    } }
+                    selectedImage?.let { uri ->
+                        Row(Modifier.fillMaxWidth().padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                            PhotoAttachment(uri.toString(), "Selected photo", Modifier.size(72.dp), onClick = { previewImage = uri.toString() })
+                            Spacer(Modifier.width(12.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text("Photo ready to send", style = MaterialTheme.typography.labelLarge)
+                                Text("Only sent when you tap Send", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                            IconButton(onClick = { selectedImage = null }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove photo") }
+                        }
+                    }
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                         IconButton(onClick = { picker.launch(androidx.activity.result.PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.AddPhotoAlternate, "Attach a photo") }
                         OutlinedTextField(value = state.draft, onValueChange = vm::updateDraft, modifier = Modifier.weight(1f), placeholder = { Text("Ask a question", maxLines = 1) }, maxLines = 4, shape = RoundedCornerShape(20.dp))
@@ -902,6 +1859,9 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
         snackbarHost = { SnackbarHost(snackbar) }
     ) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), contentPadding = PaddingValues(vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            state.historyNotice?.let { notice -> item {
+                Text(notice, modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
+            } }
             if (state.messages.isEmpty()) item {
                 Column(Modifier.fillMaxWidth().padding(top = 52.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("What’s on your mind?", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
@@ -909,23 +1869,21 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                     Text("Ask about your home, plans or projects.", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
-            if (!connected && state.messages.isEmpty()) item {
-                Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
-                    Text("Ask Suric is optional. Your personal areas work locally and remain available offline.", Modifier.padding(18.dp), color = MaterialTheme.colorScheme.onPrimaryContainer, style = MaterialTheme.typography.bodyLarge)
-                }
-            }
             itemsIndexed(state.messages, key = { index, _ -> index }) { index, message ->
-                Column(Modifier.fillMaxWidth(), horizontalAlignment = if (message.role == "user") Alignment.End else Alignment.Start) {
-                    Surface(
-                        color = if (message.role == "user") MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface,
-                        shape = RoundedCornerShape(topStart = 22.dp, topEnd = 22.dp, bottomEnd = if (message.role == "user") 7.dp else 22.dp, bottomStart = if (message.role == "user") 22.dp else 7.dp),
-                        modifier = Modifier.fillMaxWidth(if (message.role == "user") .90f else 1f)
-                    ) {
-                        Column(Modifier.padding(16.dp)) {
-                            Text(message.text, style = MaterialTheme.typography.bodyLarge, color = if (message.role == "user") MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface)
-                            if (message.role == "assistant" && message.completed) {
-                                Spacer(Modifier.height(8.dp))
-                                TextButton(onClick = {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = if (message.role == "user") Arrangement.End else Arrangement.Start) {
+                Surface(
+                    color = if (message.role == "user") MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface,
+                    shape = RoundedCornerShape(topStart = 22.dp, topEnd = 22.dp, bottomEnd = if (message.role == "user") 7.dp else 22.dp, bottomStart = if (message.role == "user") 22.dp else 7.dp),
+                    modifier = Modifier.fillMaxWidth(if (message.role == "user") .90f else 1f)
+                ) {
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        message.imageUri?.let { uri ->
+                            PhotoAttachment(uri, "Photo attached to this message", Modifier.size(168.dp), onClick = { previewImage = uri })
+                        }
+                        Text(message.text, style = MaterialTheme.typography.bodyLarge, color = if (message.role == "user") MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface)
+                        if (message.role == "assistant" && message.completed) {
+                            TextButton(
+                                onClick = {
                                     if (savingIndex >= 0 || index in savedIndices) return@TextButton
                                     savingIndex = index
                                     scope.launch {
@@ -934,17 +1892,76 @@ private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu:
                                             .onFailure { snackbar.showSnackbar(it.message ?: "Could not save this answer.") }
                                         savingIndex = -1
                                     }
-                                }, enabled = savingIndex < 0 && index !in savedIndices, modifier = Modifier.heightIn(min = 48.dp), contentPadding = PaddingValues(horizontal = 4.dp)) {
-                                    Text(when { index in savedIndices -> "Saved to Notes"; savingIndex == index -> "Saving…"; else -> "Save to Notes" }, maxLines = 1)
-                                }
+                                },
+                                enabled = savingIndex < 0 && index !in savedIndices,
+                                modifier = Modifier.heightIn(min = 48.dp),
+                                contentPadding = PaddingValues(horizontal = 4.dp)
+                            ) {
+                                Text(when { index in savedIndices -> "Saved to Notes"; savingIndex == index -> "Saving…"; else -> "Save to Notes" }, maxLines = 1)
                             }
                         }
+                    }
                 }
                 }
             }
             if (state.isLoading) item { Row(Modifier.padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) { CircularProgressIndicator(Modifier.size(20.dp), strokeWidth = 2.dp); Spacer(Modifier.width(10.dp)); Text("Suric is thinking…", color = MaterialTheme.colorScheme.onSurfaceVariant) } }
             state.modelLabel?.let { label -> item { Text("Model: $label", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }
             state.error?.let { item { Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer), shape = RoundedCornerShape(18.dp)) { Column(Modifier.padding(16.dp)) { Text(it, color = MaterialTheme.colorScheme.onErrorContainer); if (connected) TextButton(onClick = vm::retry, modifier = Modifier.heightIn(min = 48.dp)) { Text("Try again") } else TextButton(onClick = onSignIn, modifier = Modifier.heightIn(min = 48.dp)) { Text("Connect ChatGPT") } } } } }
+        }
+    }
+    previewImage?.let { uri -> PhotoPreviewDialog(uri, onDismiss = { previewImage = null }) }
+    if (confirmClearHistory) {
+        AlertDialog(
+            onDismissRequest = { confirmClearHistory = false },
+            title = { Text("Delete chat history?") },
+            text = { Text("This permanently removes the saved messages and draft from this device. It does not delete your personal notes.") },
+            confirmButton = {
+                TextButton(onClick = { confirmClearHistory = false; vm.clearConversation() }) { Text("Delete history") }
+            },
+            dismissButton = { TextButton(onClick = { confirmClearHistory = false }) { Text("Keep history") } }
+        )
+    }
+}
+
+@Composable
+private fun PhotoAttachment(uri: String, description: String, modifier: Modifier = Modifier, contentScale: ContentScale = ContentScale.Crop, onClick: () -> Unit) {
+    val context = LocalContext.current
+    var bitmap by remember(uri) { mutableStateOf<android.graphics.Bitmap?>(null) }
+    LaunchedEffect(uri) {
+        bitmap = withContext(Dispatchers.IO) {
+            runCatching {
+                val imageUri = Uri.parse(uri)
+                val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                context.contentResolver.openInputStream(imageUri)?.use { BitmapFactory.decodeStream(it, null, bounds) }
+                val sample = generateSequence(1) { it * 2 }.takeWhile { it <= 64 }
+                    .lastOrNull { bounds.outWidth / it >= 720 || bounds.outHeight / it >= 720 } ?: 1
+                val options = BitmapFactory.Options().apply { inSampleSize = sample }
+                context.contentResolver.openInputStream(imageUri)?.use { BitmapFactory.decodeStream(it, null, options) }
+            }.getOrNull()
+        }
+    }
+    Box(modifier.clip(RoundedCornerShape(14.dp)).background(MaterialTheme.colorScheme.surfaceVariant).clickable(onClick = onClick), contentAlignment = Alignment.Center) {
+        bitmap?.let { Image(it.asImageBitmap(), contentDescription = description, contentScale = contentScale, modifier = Modifier.fillMaxSize()) }
+            ?: Text("Photo unavailable", Modifier.padding(6.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
+@Composable
+private fun PhotoPreviewDialog(uri: String, onDismiss: () -> Unit) {
+    var scale by remember(uri) { mutableStateOf(1f) }
+    val zoomState = rememberTransformableState { zoomChange, _, _ -> scale = (scale * zoomChange).coerceIn(1f, 5f) }
+    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Box(Modifier.fillMaxSize().background(Color.Black).clickable(onClick = onDismiss), contentAlignment = Alignment.Center) {
+            PhotoAttachment(
+                uri = uri,
+                description = "Photo preview",
+                modifier = Modifier.fillMaxWidth().fillMaxHeight(.88f).graphicsLayer(scaleX = scale, scaleY = scale).transformable(zoomState),
+                contentScale = ContentScale.Fit,
+                onClick = {}
+            )
+            IconButton(onClick = onDismiss, modifier = Modifier.align(Alignment.TopEnd).padding(12.dp).size(48.dp)) {
+                Icon(Icons.Default.Close, contentDescription = "Close photo preview", tint = Color.White)
+            }
         }
     }
 }

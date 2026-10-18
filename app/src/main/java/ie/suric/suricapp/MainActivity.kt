@@ -20,9 +20,11 @@ import ie.suric.suricapp.auth.*
 import ie.suric.suricapp.chat.*
 import ie.suric.suricapp.local.PersonalEntry
 import ie.suric.suricapp.local.PersonalEntryStore
+import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.security.TokenVault
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -53,7 +55,11 @@ class MainActivity : ComponentActivity() {
                 }
                 val vm: ConnectionViewModel = viewModel(factory = ConnectionViewModel.Factory(application))
                 val sharedText = remember { intent?.takeIf { it.action == Intent.ACTION_SEND }?.getCharSequenceExtra(Intent.EXTRA_TEXT)?.toString() }
-                SuricApp(vm, darkTheme, sharedText, onThemeChange = { enabled ->
+                val deepLinkArticleId = remember {
+                    intent?.data?.takeIf { it.scheme == "suric" && it.host == "library" }
+                        ?.lastPathSegment?.takeIf { it.matches(Regex("[a-z0-9-]{1,100}")) }
+                }
+                SuricApp(vm, darkTheme, sharedText, deepLinkArticleId, onThemeChange = { enabled ->
                     darkTheme = enabled
                     preferences.edit().putBoolean("dark_theme", enabled).apply()
                 })
@@ -70,13 +76,16 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     val auth = _auth.asStateFlow()
     private val _conversation = MutableStateFlow(ConversationState())
     val conversation = _conversation.asStateFlow()
+    private val conversationStore = EncryptedConversationStore(app)
+    private val conversationPersistenceMutex = Mutex()
+    private var conversationSaveJob: Job? = null
+    private var conversationReadFailed = false
     private var tokenLoadError: String? = null
     private var tokens: Tokens? = runCatching { vault.load() }.getOrElse {
         tokenLoadError = "The saved ChatGPT connection could not be read. Reconnect to continue."
         null
     }
     private var model: String? = null
-    private var retryImageUri: Uri? = null
     private var chatJob: Job? = null
     private var prepareJob: Job? = null
     private var credentialClearJob: Job? = null
@@ -97,6 +106,12 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     }
 
     init {
+        runCatching { conversationStore.load() }
+            .onSuccess { saved -> saved?.let { _conversation.value = ConversationState(messages = it.messages, draft = it.draft) } }
+            .onFailure {
+                conversationReadFailed = true
+                _conversation.value = ConversationState(historyNotice = "Saved chat history could not be read and has not been overwritten.")
+            }
         if (tokenLoadError != null) _auth.value = AuthState.Failed(tokenLoadError!!)
         else if (tokens != null) _auth.value = AuthState.SignedIn(tokens?.email)
         viewModelScope.launch { reloadEntries() }
@@ -141,14 +156,16 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         signInJob = null
         tokens = null
         model = null
-        retryImageUri = null
         chatJob?.cancel()
         chatJob = null
         prepareJob?.cancel()
         prepareJob = null
         api.cancelActiveRequest()
         transitionAuth(AuthStateMachine.Event.Disconnect)
-        _conversation.value = ConversationState()
+        if (_conversation.value.isLoading) {
+            _conversation.value = _conversation.value.copy(isLoading = false, error = "The request stopped when you disconnected ChatGPT.")
+            scheduleConversationSave()
+        }
         credentialClearError = null
         credentialClearJob = viewModelScope.launch(Dispatchers.IO) {
             runCatching { credentialMutex.withLock { vault.clear() } }
@@ -163,6 +180,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     }
     suspend fun addEntry(section: String, title: String, body: String, sourceUrl: String? = null, sourceCheckedAt: String? = null): PersonalEntry = localEntriesMutex.withLock {
         withContext(Dispatchers.IO) { localEntries.add(section, title, body, sourceUrl, sourceCheckedAt).also { _personalEntries.value = localEntries.allEntries() } }
+            .also { _localDataError.value = null }
+    }
+    suspend fun addShoppingIngredients(recipeTitle: String, ingredients: List<String>) = localEntriesMutex.withLock {
+        withContext(Dispatchers.IO) { localEntries.addShoppingIngredients(recipeTitle, ingredients).also { _personalEntries.value = localEntries.allEntries() } }
             .also { _localDataError.value = null }
     }
     suspend fun deleteEntry(id: String) = localEntriesMutex.withLock {
@@ -184,16 +205,44 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         val date = java.text.DateFormat.getDateTimeInstance(java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT).format(java.util.Date())
         addEntry("Notes", "Ask Suric response — $date", body).also { savedAiResponses[body] = it }
     }
-    suspend fun importSharedText(text: String) {
+    suspend fun importSharedText(text: String): String {
         val cleaned = text.trim()
-        if (cleaned.isNotEmpty()) {
-            runCatching { addEntry("Notes", "Shared note", cleaned) }
-                .onFailure { _localDataError.value = it.message ?: "Couldn’t import this shared note." }
-                .getOrThrow()
+        require(cleaned.isNotEmpty()) { "The shared content is empty." }
+        val sharedCopy = SharedEntryCodec.decodeOrNull(cleaned)
+        val section = sharedCopy?.section ?: "Notes"
+        val title = sharedCopy?.title?.ifBlank { "Shared copy" } ?: "Shared note"
+        val body = sharedCopy?.body ?: cleaned
+        runCatching { addEntry(section, title, body) }
+            .onFailure { _localDataError.value = it.message ?: "Couldn’t import this shared note." }
+            .getOrThrow()
+        return section
+    }
+
+    fun updateDraft(value: String) {
+        _conversation.value = _conversation.value.copy(draft = value)
+        scheduleConversationSave()
+    }
+
+    fun clearConversation() {
+        chatJob?.cancel()
+        chatJob = null
+        conversationSaveJob?.cancel()
+        conversationSaveJob = viewModelScope.launch {
+            runCatching {
+                conversationPersistenceMutex.withLock {
+                    withContext(Dispatchers.IO) { conversationStore.clear() }
+                }
+            }.onSuccess {
+                conversationReadFailed = false
+                _conversation.value = ConversationState()
+            }.onFailure {
+                _conversation.value = _conversation.value.copy(
+                    historyNotice = "Chat history could not be deleted from this device."
+                )
+            }
         }
     }
 
-    fun updateDraft(value: String) { _conversation.value = _conversation.value.copy(draft = value) }
     fun send(text: String = _conversation.value.draft, image: Uri? = null) {
         if (_auth.value !is AuthState.SignedIn || tokens == null) {
             _conversation.value = _conversation.value.copy(error = "Connect ChatGPT to request a new AI response. Your local sections and saved information remain available.")
@@ -202,9 +251,9 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
         val displayText = cleaned.ifEmpty { "What is in this picture?" }
-        retryImageUri = image
         val before = _conversation.value
-        _conversation.value = ConversationReducer.appendUser(before, displayText)
+        _conversation.value = ConversationReducer.appendUser(before, displayText, image?.toString())
+        scheduleConversationSave()
         chatJob = viewModelScope.launch {
             try {
                 val active = validAccessToken()
@@ -214,19 +263,22 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
                 withContext(Dispatchers.IO) {
                     api.stream(active, selectedModel, history, dataUrl) { delta ->
                         _conversation.value = ConversationReducer.appendDelta(_conversation.value, delta)
+                        scheduleConversationSave()
                     }
                 }
                 _conversation.value = ConversationReducer.completed(_conversation.value)
-                retryImageUri = null
+                scheduleConversationSave()
             } catch (e: Exception) {
                 if (chatJob?.isActive != true) return@launch
                 if (e is ApiException && e.statusCode == 401) {
                     _conversation.value = ConversationReducer.failed(_conversation.value, "Your ChatGPT sign-in expired. Reconnect, then retry your question.")
+                    scheduleConversationSave()
                     transitionAuth(AuthStateMachine.Event.Expired)
                 } else {
                     val message = if ((e is ApiException && e.statusCode == 0) || (e is java.io.IOException && e !is ApiException)) "An internet connection is required for a new Ask Suric response. Your local information is still available offline."
                     else e.message ?: "The request failed. Try again."
                     _conversation.value = ConversationReducer.failed(_conversation.value, message)
+                    scheduleConversationSave()
                 }
             }
         }
@@ -238,7 +290,8 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         while (messages.lastOrNull()?.role == "assistant") messages.removeAt(messages.lastIndex)
         if (messages.lastOrNull()?.role == "user") messages.removeAt(messages.lastIndex)
         _conversation.value = _conversation.value.copy(messages = messages, isLoading = false)
-        send(lastUser.text, retryImageUri)
+        scheduleConversationSave()
+        send(lastUser.text, lastUser.imageUri?.let { Uri.parse(it) })
     }
 
     private suspend fun validAccessToken(): String {
@@ -260,6 +313,26 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     private suspend fun loadModel(access: String): String = withContext(Dispatchers.IO) {
         api.listModels(access).firstOrNull()?.also { model = it.slug; _conversation.value = _conversation.value.copy(modelLabel = it.displayName) }
             ?.slug ?: error("No models are currently available for this ChatGPT account.")
+    }
+
+    private fun scheduleConversationSave() {
+        if (conversationReadFailed) return
+        conversationSaveJob?.cancel()
+        conversationSaveJob = viewModelScope.launch {
+            delay(300)
+            runCatching {
+                conversationPersistenceMutex.withLock {
+                    val latest = _conversation.value
+                    withContext(Dispatchers.IO) { conversationStore.save(latest.messages, latest.draft) }
+                }
+            }.onSuccess {
+                if (_conversation.value.historyNotice?.startsWith("Chat history could not be saved") == true) {
+                    _conversation.value = _conversation.value.copy(historyNotice = null)
+                }
+            }.onFailure {
+                _conversation.value = _conversation.value.copy(historyNotice = "Chat history could not be saved securely on this device.")
+            }
+        }
     }
 
     private fun prepareAssistant() {
@@ -286,6 +359,12 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
             out.toByteArray()
         } ?: error("Unable to read the selected image.")
         return "data:$mime;base64," + Base64.getEncoder().encodeToString(bytes)
+    }
+
+    fun keepImageAccess(uri: Uri) {
+        runCatching {
+            app.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
     }
 
     class Factory(private val app: android.app.Application) : ViewModelProvider.Factory {

@@ -1,0 +1,1127 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "af-jollof",
+                        "name":  "Jollof rice",
+                        "englishName":  "Tomato and pepper rice",
+                        "country":  "Nigeria",
+                        "region":  "West Africa",
+                        "description":  "Tomato and pepper rice is a regionally inspired home-cooking adaptation from Nigeria.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g long grain rice",
+                                            "1 onion",
+                                            "3 tomatoes",
+                                            "1 red pepper",
+                                            "2 tbsp tomato paste",
+                                            "500 ml stock",
+                                            "1 tsp thyme",
+                                            "1 tsp curry powder"
+                                        ],
+                        "instructions":  [
+                                             "Blend tomatoes and pepper",
+                                             "Soften onion in oil, stir in tomato paste and cook briefly",
+                                             "Add blended pepper, thyme and curry powder; simmer until reduced",
+                                             "Stir in rinsed rice and stock, cover and cook on low until rice is tender."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "tomato",
+                                     "Nigeria"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-moinmoin",
+                        "name":  "Moin moin",
+                        "englishName":  "Steamed bean pudding",
+                        "country":  "Nigeria",
+                        "region":  "West Africa",
+                        "description":  "Steamed bean pudding is a regionally inspired home-cooking adaptation from Nigeria.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g peeled black eyed peas",
+                                            "1 red pepper",
+                                            "1 onion",
+                                            "2 tbsp oil",
+                                            "300 ml water",
+                                            "2 boiled eggs"
+                                        ],
+                        "instructions":  [
+                                             "Soak and rinse beans, then blend with pepper, onion, oil and water until smooth",
+                                             "Season and pour into greased heatproof cups",
+                                             "Add a piece of boiled egg to each cup if desired",
+                                             "Steam covered until firm and cooked through."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "steamed",
+                                     "Nigeria"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-egusi",
+                        "name":  "Egusi soup",
+                        "englishName":  "Melon seed and greens stew",
+                        "country":  "Nigeria",
+                        "region":  "West Africa",
+                        "description":  "Melon seed and greens stew is a regionally inspired home-cooking adaptation from Nigeria.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g ground egusi",
+                                            "400 g beef",
+                                            "1 onion",
+                                            "400 g spinach",
+                                            "1 tbsp palm oil",
+                                            "700 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef and simmer in stock until tender",
+                                             "Stir egusi with a little water into a thick paste",
+                                             "Heat palm oil, soften onion and cook egusi until fragrant",
+                                             "Add beef and stock, simmer, then fold in spinach until wilted."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "melon seed",
+                                     "greens",
+                                     "Nigeria"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-suya",
+                        "name":  "Suya",
+                        "englishName":  "West African spiced grilled beef",
+                        "country":  "Nigeria",
+                        "region":  "West Africa",
+                        "description":  "West African spiced grilled beef is a regionally inspired home-cooking adaptation from Nigeria.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g beef sirloin",
+                                            "2 tbsp ground peanuts",
+                                            "1 tsp paprika",
+                                            "1 tsp ginger",
+                                            "1 tsp cayenne",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Slice beef thinly across the grain",
+                                             "Mix ground peanuts with paprika, ginger, cayenne and salt",
+                                             "Coat beef lightly with oil and spice mixture",
+                                             "Thread on skewers and grill, turning, until browned and cooked through."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beef",
+                                     "grilled",
+                                     "Nigeria"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-groundnut",
+                        "name":  "Nkate nkwan",
+                        "englishName":  "Ghanaian groundnut soup",
+                        "country":  "Ghana",
+                        "region":  "West Africa",
+                        "description":  "Ghanaian groundnut soup is a regionally inspired home-cooking adaptation from Ghana.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g chicken thighs",
+                                            "150 g smooth peanut butter",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tsp ginger",
+                                            "1 L stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown chicken and set aside",
+                                             "Simmer onion, tomatoes and ginger in stock until soft",
+                                             "Whisk peanut butter with warm broth until smooth and stir into pot",
+                                             "Return chicken and simmer gently until fully cooked and soup thickens."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "peanut",
+                                     "chicken",
+                                     "Ghana"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-waakye",
+                        "name":  "Waakye",
+                        "englishName":  "Rice and bean one pot",
+                        "country":  "Ghana",
+                        "region":  "West Africa",
+                        "description":  "Rice and bean one pot is a regionally inspired home-cooking adaptation from Ghana.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g rice",
+                                            "150 g black eyed peas",
+                                            "1 tsp dried sorghum leaves optional",
+                                            "700 ml water",
+                                            "1 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Soak beans, drain and simmer in fresh water until nearly tender",
+                                             "Add rice, salt and additional water if needed",
+                                             "Simmer covered until rice and beans are soft and liquid absorbed",
+                                             "Fluff and serve with vegetables or stew."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "beans",
+                                     "Ghana"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-thieboudienne",
+                        "name":  "Ceebu jën",
+                        "englishName":  "Senegalese fish and rice",
+                        "country":  "Senegal",
+                        "region":  "West Africa",
+                        "description":  "Senegalese fish and rice is a regionally inspired home-cooking adaptation from Senegal.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g firm fish",
+                                            "300 g rice",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 carrot",
+                                            "1 eggplant",
+                                            "1 L stock",
+                                            "2 tbsp tomato paste"
+                                        ],
+                        "instructions":  [
+                                             "Season fish and brown lightly; set aside",
+                                             "Cook onion, tomatoes and tomato paste in oil",
+                                             "Add stock and vegetables and simmer until nearly tender",
+                                             "Add rice and fish; cover and cook until rice is done and fish flakes opaque."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "fish",
+                                     "rice",
+                                     "Senegal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-yassa",
+                        "name":  "Poulet yassa",
+                        "englishName":  "Lemon onion chicken",
+                        "country":  "Senegal",
+                        "region":  "West Africa",
+                        "description":  "Lemon onion chicken is a regionally inspired home-cooking adaptation from Senegal.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "3 onions",
+                                            "2 lemons",
+                                            "2 tbsp mustard",
+                                            "2 tbsp oil",
+                                            "300 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Marinate chicken with lemon, mustard and sliced onions",
+                                             "Brown chicken and set aside",
+                                             "Cook onions until soft and golden, add marinade and stock",
+                                             "Return chicken and simmer until fully cooked and sauce reduced."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chicken",
+                                     "lemon",
+                                     "Senegal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-domoda",
+                        "name":  "Domoda",
+                        "englishName":  "Gambian peanut tomato stew",
+                        "country":  "Gambia",
+                        "region":  "West Africa",
+                        "description":  "Gambian peanut tomato stew is a regionally inspired home-cooking adaptation from Gambia.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g beef",
+                                            "150 g peanut butter",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 sweet potato",
+                                            "700 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef with onion",
+                                             "Add tomatoes and stock and simmer until beef is nearly tender",
+                                             "Whisk peanut butter with warm broth, stir into pot and add diced sweet potato",
+                                             "Simmer until beef and potato are fully cooked and sauce thickens."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "peanut",
+                                     "stew",
+                                     "Gambia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-akara",
+                        "name":  "Akara",
+                        "englishName":  "Black eyed pea fritters",
+                        "country":  "Nigeria",
+                        "region":  "West Africa",
+                        "description":  "Black eyed pea fritters is a regionally inspired home-cooking adaptation from Nigeria.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g peeled black eyed peas",
+                                            "1 onion",
+                                            "1 red pepper",
+                                            "1 tsp salt",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Soak beans and rub skins off, then rinse",
+                                             "Blend beans with a little water into a thick batter",
+                                             "Fold in finely chopped onion and pepper",
+                                             "Fry small spoonfuls in hot oil, turning until cooked through and golden."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "snack",
+                                     "Nigeria"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-ugali",
+                        "name":  "Ugali",
+                        "englishName":  "Kenyan maize meal staple",
+                        "country":  "Kenya",
+                        "region":  "East Africa",
+                        "description":  "Kenyan maize meal staple is a regionally inspired home-cooking adaptation from Kenya.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g maize meal",
+                                            "750 ml water",
+                                            "1/2 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Bring salted water to a boil",
+                                             "Gradually whisk in maize meal to avoid lumps",
+                                             "Stir firmly over low heat until thick and pulling from the sides",
+                                             "Shape into a mound and serve warm with stew or greens."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "maize",
+                                     "staple",
+                                     "Kenya"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-sukuma",
+                        "name":  "Sukuma wiki",
+                        "englishName":  "Collard greens with tomato",
+                        "country":  "Kenya",
+                        "region":  "East Africa",
+                        "description":  "Collard greens with tomato is a regionally inspired home-cooking adaptation from Kenya.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g collard greens",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tbsp oil",
+                                            "1/2 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Wash and thinly slice greens",
+                                             "Soften onion in oil and add chopped tomatoes",
+                                             "Cook until tomatoes soften into a sauce",
+                                             "Add greens and salt; cover and cook until tender but still green."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "greens",
+                                     "vegetarian",
+                                     "Kenya"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-nyama-choma",
+                        "name":  "Nyama choma",
+                        "englishName":  "Kenyan grilled goat",
+                        "country":  "Kenya",
+                        "region":  "East Africa",
+                        "description":  "Kenyan grilled goat is a regionally inspired home-cooking adaptation from Kenya.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "800 g goat shoulder pieces",
+                                            "1 tbsp oil",
+                                            "1 tsp salt",
+                                            "1 tsp black pepper",
+                                            "1 lemon"
+                                        ],
+                        "instructions":  [
+                                             "Pat goat dry and season with oil, salt and pepper",
+                                             "Grill over medium coals, turning often, until browned",
+                                             "Move to indirect heat and cook until fully tender and safely done",
+                                             "Rest and serve with lemon."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "goat",
+                                     "grilled",
+                                     "Kenya"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-pilau",
+                        "name":  "Pilau ya nyama",
+                        "englishName":  "East African spiced rice",
+                        "country":  "Tanzania",
+                        "region":  "East Africa",
+                        "description":  "East African spiced rice is a regionally inspired home-cooking adaptation from Tanzania.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g beef",
+                                            "300 g basmati rice",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tsp cumin",
+                                            "1 tsp cardamom",
+                                            "600 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef and set aside",
+                                             "Toast cumin and cardamom, then cook onion and tomatoes until soft",
+                                             "Return beef with stock and simmer until nearly tender",
+                                             "Add rinsed rice, cover and cook until rice is tender and liquid absorbed."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "beef",
+                                     "Tanzania"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-injera",
+                        "name":  "Injera",
+                        "englishName":  "Ethiopian teff flatbread",
+                        "country":  "Ethiopia",
+                        "region":  "East Africa",
+                        "description":  "Ethiopian teff flatbread is a regionally inspired home-cooking adaptation from Ethiopia.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g teff flour",
+                                            "500 ml water",
+                                            "1/4 tsp yeast",
+                                            "1/2 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Mix teff flour, water and yeast into a thin batter",
+                                             "Cover and ferment at room temperature until bubbly and tangy",
+                                             "Stir in salt and enough water for a pourable consistency",
+                                             "Pour onto a hot covered skillet and cook until surface holes form and top sets."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "teff",
+                                     "fermented",
+                                     "Ethiopia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-misir",
+                        "name":  "Misir wot",
+                        "englishName":  "Ethiopian red lentil stew",
+                        "country":  "Ethiopia",
+                        "region":  "East Africa",
+                        "description":  "Ethiopian red lentil stew is a regionally inspired home-cooking adaptation from Ethiopia.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g red lentils",
+                                            "1 onion",
+                                            "2 tbsp oil",
+                                            "1 tbsp berbere",
+                                            "2 tomatoes",
+                                            "600 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Rinse lentils",
+                                             "Cook onion slowly in oil until soft",
+                                             "Stir in berbere and tomatoes and cook until thick",
+                                             "Add lentils and water; simmer, stirring, until lentils are tender and stew is thick."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "lentils",
+                                     "stew",
+                                     "Ethiopia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-doro-wot",
+                        "name":  "Doro wot",
+                        "englishName":  "Ethiopian spiced chicken stew",
+                        "country":  "Ethiopia",
+                        "region":  "East Africa",
+                        "description":  "Ethiopian spiced chicken stew is a regionally inspired home-cooking adaptation from Ethiopia.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  70,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "3 onions",
+                                            "2 tbsp berbere",
+                                            "1 tbsp ginger",
+                                            "400 ml stock",
+                                            "4 boiled eggs",
+                                            "1 lemon"
+                                        ],
+                        "instructions":  [
+                                             "Rub chicken with lemon and set aside",
+                                             "Cook onions slowly until deeply softened, then add berbere and ginger",
+                                             "Add stock and chicken; cover and simmer until chicken is cooked through",
+                                             "Add peeled boiled eggs and warm in sauce."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chicken",
+                                     "stew",
+                                     "Ethiopia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-shiro",
+                        "name":  "Shiro wat",
+                        "englishName":  "Chickpea flour stew",
+                        "country":  "Ethiopia",
+                        "region":  "East Africa",
+                        "description":  "Chickpea flour stew is a regionally inspired home-cooking adaptation from Ethiopia.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g chickpea flour",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tbsp oil",
+                                            "1 tsp berbere",
+                                            "700 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion in oil and add tomatoes and berbere",
+                                             "Whisk chickpea flour with cool water until smooth",
+                                             "Pour into pot gradually while stirring",
+                                             "Simmer gently until thick, smooth and fully cooked."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chickpea",
+                                     "stew",
+                                     "Ethiopia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-bariis",
+                        "name":  "Bariis iskukaris",
+                        "englishName":  "Somali spiced rice",
+                        "country":  "Somalia",
+                        "region":  "East Africa",
+                        "description":  "Somali spiced rice is a regionally inspired home-cooking adaptation from Somalia.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g basmati rice",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tsp cumin",
+                                            "1 cinnamon stick",
+                                            "500 ml stock",
+                                            "2 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice and drain",
+                                             "Toast cumin and cinnamon in oil, add onion and cook until soft",
+                                             "Add tomatoes and stock and bring to a simmer",
+                                             "Stir in rice, cover and cook on low until tender; rest before fluffing."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "spiced",
+                                     "Somalia"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-rolex",
+                        "name":  "Ugandan rolex",
+                        "englishName":  "Egg and vegetable chapati roll",
+                        "country":  "Uganda",
+                        "region":  "East Africa",
+                        "description":  "Egg and vegetable chapati roll is a regionally inspired home-cooking adaptation from Uganda.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 chapatis",
+                                            "4 eggs",
+                                            "1 tomato",
+                                            "1 onion",
+                                            "1 green pepper",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Beat eggs with chopped tomato, onion and pepper",
+                                             "Heat oil in a skillet and cook egg mixture into a thin omelette",
+                                             "Warm chapatis",
+                                             "Place omelette on chapati, roll tightly and serve hot."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "egg",
+                                     "street food",
+                                     "Uganda"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-isombe",
+                        "name":  "Isombe",
+                        "englishName":  "Cassava leaf and peanut stew",
+                        "country":  "Rwanda",
+                        "region":  "East Africa",
+                        "description":  "Cassava leaf and peanut stew is a regionally inspired home-cooking adaptation from Rwanda.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g chopped cassava leaves",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "100 g peanut butter",
+                                            "500 ml water",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Cook cassava leaves in water until very soft, adding water as needed",
+                                             "Soften onion in oil and add tomatoes",
+                                             "Whisk peanut butter with warm water and stir into leaves",
+                                             "Add tomato mixture and simmer until fully cooked and thick."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "cassava",
+                                     "peanut",
+                                     "Rwanda"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-ndole",
+                        "name":  "Ndolé",
+                        "englishName":  "Bitterleaf and peanut stew",
+                        "country":  "Cameroon",
+                        "region":  "Central Africa",
+                        "description":  "Bitterleaf and peanut stew is a regionally inspired home-cooking adaptation from Cameroon.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g beef",
+                                            "300 g washed bitterleaf or spinach",
+                                            "150 g peanuts",
+                                            "1 onion",
+                                            "1 tbsp oil",
+                                            "500 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Simmer beef in stock until tender",
+                                             "Grind peanuts to a coarse paste",
+                                             "Soften onion in oil, add peanuts and a little stock and cook gently",
+                                             "Fold in bitterleaf and beef; simmer until greens are tender and sauce cohesive."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "peanut",
+                                     "greens",
+                                     "Cameroon"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-eru",
+                        "name":  "Eru",
+                        "englishName":  "Cameroonian leafy greens stew",
+                        "country":  "Cameroon",
+                        "region":  "Central Africa",
+                        "description":  "Cameroonian leafy greens stew is a regionally inspired home-cooking adaptation from Cameroon.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g waterleaf or spinach",
+                                            "200 g shredded eru or kale",
+                                            "200 g smoked fish",
+                                            "150 g beef",
+                                            "2 tbsp palm oil",
+                                            "500 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Wash and slice greens",
+                                             "Simmer beef until tender and add smoked fish",
+                                             "Add tougher greens and cook until softened, then add waterleaf or spinach",
+                                             "Stir in palm oil and simmer until the greens are tender and liquid reduced."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "greens",
+                                     "fish",
+                                     "Cameroon"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-moambe",
+                        "name":  "Poulet moambé",
+                        "englishName":  "Chicken in palm nut sauce",
+                        "country":  "Republic of the Congo",
+                        "region":  "Central Africa",
+                        "description":  "Chicken in palm nut sauce is a regionally inspired home-cooking adaptation from Republic of the Congo.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "300 g palm nut puree",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "500 ml stock",
+                                            "1 garlic clove"
+                                        ],
+                        "instructions":  [
+                                             "Brown chicken and set aside",
+                                             "Cook onion, tomato and garlic until soft",
+                                             "Add palm nut puree and stock and stir smooth",
+                                             "Return chicken and simmer until cooked through and sauce thickens."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chicken",
+                                     "palm",
+                                     "Congo"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-koshari",
+                        "name":  "Koshari",
+                        "englishName":  "Egyptian lentil rice and pasta",
+                        "country":  "Egypt",
+                        "region":  "North Africa",
+                        "description":  "Egyptian lentil rice and pasta is a regionally inspired home-cooking adaptation from Egypt.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g rice",
+                                            "150 g brown lentils",
+                                            "150 g macaroni",
+                                            "1 onion",
+                                            "400 g tomatoes",
+                                            "2 garlic cloves",
+                                            "1 tsp cumin"
+                                        ],
+                        "instructions":  [
+                                             "Cook rice, lentils and macaroni separately until tender",
+                                             "Simmer tomatoes with garlic, cumin and vinegar into a sauce",
+                                             "Fry sliced onion until crisp",
+                                             "Layer grains and pasta, spoon over tomato sauce and top with onions."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "lentils",
+                                     "Egypt"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-ful",
+                        "name":  "Ful medames",
+                        "englishName":  "Egyptian slow cooked fava beans",
+                        "country":  "Egypt",
+                        "region":  "North Africa",
+                        "description":  "Egyptian slow cooked fava beans is a regionally inspired home-cooking adaptation from Egypt.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 cans fava beans",
+                                            "2 garlic cloves",
+                                            "2 tbsp lemon juice",
+                                            "2 tbsp olive oil",
+                                            "1 tsp cumin",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Warm beans with a little liquid until soft",
+                                             "Mash some beans with garlic, cumin and lemon",
+                                             "Stir back together with olive oil and warm gently",
+                                             "Garnish with parsley and serve with bread."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "breakfast",
+                                     "Egypt"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-tagine",
+                        "name":  "Chicken tagine",
+                        "englishName":  "Moroccan chicken with olives and lemon",
+                        "country":  "Morocco",
+                        "region":  "North Africa",
+                        "description":  "Moroccan chicken with olives and lemon is a regionally inspired home-cooking adaptation from Morocco.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "1 onion",
+                                            "1 preserved lemon",
+                                            "100 g green olives",
+                                            "1 tsp ginger",
+                                            "1 tsp cumin",
+                                            "300 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown chicken and set aside",
+                                             "Soften onion with ginger and cumin",
+                                             "Return chicken with stock and simmer covered until nearly tender",
+                                             "Add sliced preserved lemon and olives; cook until chicken is fully done and sauce reduced."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chicken",
+                                     "olives",
+                                     "Morocco"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-couscous",
+                        "name":  "Couscous tfaya",
+                        "englishName":  "Moroccan couscous with onions and raisins",
+                        "country":  "Morocco",
+                        "region":  "North Africa",
+                        "description":  "Moroccan couscous with onions and raisins is a regionally inspired home-cooking adaptation from Morocco.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g couscous",
+                                            "2 onions",
+                                            "80 g raisins",
+                                            "1 tsp cinnamon",
+                                            "1 tbsp honey",
+                                            "400 g chickpeas",
+                                            "400 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Cook sliced onions slowly with cinnamon, raisins and honey until soft and jammy",
+                                             "Warm chickpeas in stock with a pinch of cumin",
+                                             "Prepare couscous with hot stock according to packet directions and fluff",
+                                             "Serve topped with chickpeas and onion-raisin mixture."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "couscous",
+                                     "chickpea",
+                                     "Morocco"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-bobotie",
+                        "name":  "Bobotie",
+                        "englishName":  "Cape Malay baked spiced mince",
+                        "country":  "South Africa",
+                        "region":  "Southern Africa",
+                        "description":  "Cape Malay baked spiced mince is a regionally inspired home-cooking adaptation from South Africa.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g minced beef",
+                                            "1 onion",
+                                            "2 tbsp curry powder",
+                                            "2 tbsp chutney",
+                                            "50 g raisins",
+                                            "2 eggs",
+                                            "250 ml milk",
+                                            "2 bread slices"
+                                        ],
+                        "instructions":  [
+                                             "Soak bread in milk and squeeze lightly",
+                                             "Brown beef with onion and curry powder; stir in chutney, raisins and bread",
+                                             "Spread in a baking dish",
+                                             "Whisk eggs with remaining milk, pour over and bake at 180 C until custard is set and mince fully cooked."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beef",
+                                     "bake",
+                                     "South Africa"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "af-chakalaka",
+                        "name":  "Chakalaka",
+                        "englishName":  "South African spicy vegetable relish",
+                        "country":  "South Africa",
+                        "region":  "Southern Africa",
+                        "description":  "South African spicy vegetable relish is a regionally inspired home-cooking adaptation from South Africa.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 onion",
+                                            "1 bell pepper",
+                                            "2 carrots",
+                                            "3 tomatoes",
+                                            "1 can baked beans",
+                                            "1 tsp curry powder",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion and bell pepper in oil",
+                                             "Add grated carrots, tomatoes and curry powder",
+                                             "Simmer until vegetables soften",
+                                             "Stir in baked beans and cook until thick; serve warm or chilled with maize porridge."
+                                         ],
+                        "sides":  "Serve with a suitable local staple, vegetables or relish as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "vegetables",
+                                     "South Africa"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:africa",
+                            "title":  "African regional recipes",
+                            "recipeIds":  [
+                                              "af-jollof",
+                                              "af-moinmoin",
+                                              "af-egusi",
+                                              "af-suya",
+                                              "af-groundnut",
+                                              "af-waakye",
+                                              "af-thieboudienne",
+                                              "af-yassa",
+                                              "af-domoda",
+                                              "af-akara",
+                                              "af-ugali",
+                                              "af-sukuma",
+                                              "af-nyama-choma",
+                                              "af-pilau",
+                                              "af-injera",
+                                              "af-misir",
+                                              "af-doro-wot",
+                                              "af-shiro",
+                                              "af-bariis",
+                                              "af-rolex",
+                                              "af-isombe",
+                                              "af-ndole",
+                                              "af-eru",
+                                              "af-moambe",
+                                              "af-koshari",
+                                              "af-ful",
+                                              "af-tagine",
+                                              "af-couscous",
+                                              "af-bobotie",
+                                              "af-chakalaka"
+                                          ]
+                        }
+                    ]
+}

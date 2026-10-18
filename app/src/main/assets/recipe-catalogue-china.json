@@ -1,0 +1,1104 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "china-beijing-zhajiangmian",
+      "name": "Beijing zhajiangmian",
+      "englishName": null,
+      "country": "China",
+      "region": "Beijing",
+      "description": "A Suric home-cooking adaptation of Beijing zhajiangmian, using accessible ingredients and a practical method inspired by Beijing.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g wheat noodles",
+        "200 g minced pork",
+        "3 tbsp fermented soybean paste",
+        "1 cucumber",
+        "1 carrot",
+        "2 spring onions"
+      ],
+      "instructions": [
+        "Prepare 300 g wheat noodles, 200 g minced pork and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 2 spring onions.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Toss with cucumber matchsticks and a light soup.",
+      "substitutions": "Use minced mushrooms in place of pork.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Beijing",
+        "stir",
+        "beijing",
+        "zhajiangmian"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-tomato-and-egg-stir-fry",
+      "name": "Tomato and egg stir-fry",
+      "englishName": null,
+      "country": "China",
+      "region": "Nationwide home cooking",
+      "description": "A Suric home-cooking adaptation of Tomato and egg stir-fry, using accessible ingredients and a practical method inspired by Nationwide home cooking.",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 eggs",
+        "3 ripe tomatoes",
+        "2 spring onions",
+        "1 tsp sugar",
+        "1 tbsp light soy sauce"
+      ],
+      "instructions": [
+        "Prepare 4 eggs, 3 ripe tomatoes and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 1 tbsp light soy sauce.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve over steamed rice.",
+      "substitutions": "Use firm tofu in place of eggs for a different version.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Nationwide home cooking",
+        "stir",
+        "tomato",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-sichuan-mapo-tofu",
+      "name": "Sichuan mapo tofu",
+      "englishName": null,
+      "country": "China",
+      "region": "Sichuan",
+      "description": "A Suric home-cooking adaptation of Sichuan mapo tofu, using accessible ingredients and a practical method inspired by Sichuan.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g soft tofu",
+        "150 g minced pork",
+        "1 tbsp doubanjiang",
+        "1 tsp Sichuan pepper",
+        "2 garlic cloves",
+        "150 ml stock"
+      ],
+      "instructions": [
+        "Prepare 500 g soft tofu, 150 g minced pork. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 150 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with plain rice and greens.",
+      "substitutions": "Use minced mushrooms and vegetable stock.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Sichuan",
+        "stew",
+        "sichuan",
+        "mapo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-yangzhou-fried-rice",
+      "name": "Yangzhou fried rice",
+      "englishName": null,
+      "country": "China",
+      "region": "Jiangsu",
+      "description": "A Suric home-cooking adaptation of Yangzhou fried rice, using accessible ingredients and a practical method inspired by Jiangsu.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g cold cooked rice",
+        "2 eggs",
+        "100 g cooked prawns",
+        "60 g peas",
+        "1 carrot",
+        "2 spring onions"
+      ],
+      "instructions": [
+        "Prepare 400 g cold cooked rice, 2 eggs and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 2 spring onions.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve with cucumber salad.",
+      "substitutions": "Replace prawns with diced cooked chicken or extra vegetables.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Jiangsu",
+        "stir",
+        "yangzhou",
+        "fried"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-cantonese-steamed-egg-custard",
+      "name": "Cantonese steamed egg custard",
+      "englishName": null,
+      "country": "China",
+      "region": "Guangdong",
+      "description": "A Suric home-cooking adaptation of Cantonese steamed egg custard, using accessible ingredients and a practical method inspired by Guangdong.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 eggs",
+        "300 ml warm water",
+        "1 tsp light soy sauce",
+        "1 tsp sesame oil",
+        "1 spring onion"
+      ],
+      "instructions": [
+        "Prepare 4 eggs, 300 ml warm water and place in a heatproof dish or steamer basket.",
+        "Bring water to a steady simmer, cover and steam; add 1 spring onion as directed by the ingredient list.",
+        "Check that the centre is fully cooked and serve hot."
+      ],
+      "sides": "Serve with rice and stir-fried greens.",
+      "substitutions": "Use vegetable stock instead of water.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Guangdong",
+        "steam",
+        "cantonese",
+        "steamed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-cantonese-steamed-chicken-with-ginger",
+      "name": "Cantonese steamed chicken with ginger",
+      "englishName": null,
+      "country": "China",
+      "region": "Guangdong",
+      "description": "A Suric home-cooking adaptation of Cantonese steamed chicken with ginger, using accessible ingredients and a practical method inspired by Guangdong.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g boneless chicken thighs",
+        "2 tbsp ginger",
+        "2 spring onions",
+        "1 tbsp light soy sauce",
+        "1 tsp sesame oil"
+      ],
+      "instructions": [
+        "Prepare 600 g boneless chicken thighs, 2 tbsp ginger and place in a heatproof dish or steamer basket.",
+        "Bring water to a steady simmer, cover and steam; add 1 tsp sesame oil as directed by the ingredient list.",
+        "Check that the centre is fully cooked and serve hot."
+      ],
+      "sides": "Serve with rice and steamed greens.",
+      "substitutions": "Use firm white fish and shorten steaming time until cooked through.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Guangdong",
+        "steam",
+        "cantonese",
+        "steamed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-hunan-pepper-beef",
+      "name": "Hunan pepper beef",
+      "englishName": null,
+      "country": "China",
+      "region": "Hunan",
+      "description": "A Suric home-cooking adaptation of Hunan pepper beef, using accessible ingredients and a practical method inspired by Hunan.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g beef strips",
+        "2 green peppers",
+        "1 red pepper",
+        "2 garlic cloves",
+        "1 tbsp soy sauce",
+        "1 tsp black vinegar"
+      ],
+      "instructions": [
+        "Prepare 400 g beef strips, 2 green peppers and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 1 tsp black vinegar.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve with rice.",
+      "substitutions": "Use firm tofu or mushrooms instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Hunan",
+        "stir",
+        "hunan",
+        "pepper"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-dongpo-style-braised-pork",
+      "name": "Dongpo-style braised pork",
+      "englishName": null,
+      "country": "China",
+      "region": "Zhejiang",
+      "description": "A Suric home-cooking adaptation of Dongpo-style braised pork, using accessible ingredients and a practical method inspired by Zhejiang.",
+      "prepMinutes": 15,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g pork shoulder",
+        "2 tbsp soy sauce",
+        "1 tbsp dark soy sauce",
+        "2 tbsp Shaoxing wine",
+        "2 tsp sugar",
+        "3 slices ginger"
+      ],
+      "instructions": [
+        "Prepare 700 g pork shoulder, 2 tbsp soy sauce. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 3 slices ginger; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with rice and blanched greens.",
+      "substitutions": "Use pork belly and trim excess fat before cooking.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Zhejiang",
+        "stew",
+        "dongpo-style",
+        "braised"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-shanghai-scallion-oil-noodles",
+      "name": "Shanghai scallion oil noodles",
+      "englishName": null,
+      "country": "China",
+      "region": "Shanghai",
+      "description": "A Suric home-cooking adaptation of Shanghai scallion oil noodles, using accessible ingredients and a practical method inspired by Shanghai.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g wheat noodles",
+        "5 spring onions",
+        "3 tbsp neutral oil",
+        "2 tbsp soy sauce",
+        "1 tsp sugar"
+      ],
+      "instructions": [
+        "Prepare 300 g wheat noodles, 5 spring onions and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 1 tsp sugar.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve with sliced cucumber.",
+      "substitutions": "Use tamari for a wheat-free sauce, and rice noodles if needed.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Shanghai",
+        "stir",
+        "shanghai",
+        "scallion"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-suan-cai-fish-soup",
+      "name": "Suan cai fish soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Sichuan",
+      "description": "A Suric home-cooking adaptation of Suan cai fish soup, using accessible ingredients and a practical method inspired by Sichuan.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g white fish fillets",
+        "200 g pickled mustard greens",
+        "1 litre stock",
+        "2 slices ginger",
+        "1 spring onion"
+      ],
+      "instructions": [
+        "Prepare 400 g white fish fillets, 200 g pickled mustard greens. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 spring onion, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with rice.",
+      "substitutions": "Use firm tofu and vegetable stock for a vegetarian soup.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "China",
+        "Sichuan",
+        "soup",
+        "suan",
+        "cai"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-fujian-peanut-noodles",
+      "name": "Fujian peanut noodles",
+      "englishName": null,
+      "country": "China",
+      "region": "Fujian",
+      "description": "A Suric home-cooking adaptation of Fujian peanut noodles, using accessible ingredients and a practical method inspired by Fujian.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g wheat noodles",
+        "3 tbsp smooth peanut butter",
+        "2 tbsp soy sauce",
+        "1 tbsp rice vinegar",
+        "1 cucumber",
+        "2 spring onions"
+      ],
+      "instructions": [
+        "Prepare 300 g wheat noodles, 3 tbsp smooth peanut butter; cook the noodles according to the packet directions and drain.",
+        "Mix the sauce or toppings in a bowl and warm the cooked ingredients in a pan if needed.",
+        "Toss the noodles with the sauce and 2 spring onions; serve straight away."
+      ],
+      "sides": "Serve with blanched greens.",
+      "substitutions": "Use tahini if peanut-free; check the label for cross-contact.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Fujian",
+        "noodle",
+        "fujian",
+        "peanut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-wonton-soup",
+      "name": "Wonton soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Guangdong",
+      "description": "A Suric home-cooking adaptation of Wonton soup, using accessible ingredients and a practical method inspired by Guangdong.",
+      "prepMinutes": 35,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "24 wonton wrappers",
+        "250 g minced pork",
+        "1 tbsp ginger",
+        "1 spring onion",
+        "1.2 litres chicken stock",
+        "1 tsp soy sauce"
+      ],
+      "instructions": [
+        "Prepare 24 wonton wrappers, 250 g minced pork. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 tsp soy sauce, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with leafy greens.",
+      "substitutions": "Use minced prawns or crumbled tofu as filling.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Guangdong",
+        "soup",
+        "wonton",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-scallion-pancakes",
+      "name": "Scallion pancakes",
+      "englishName": null,
+      "country": "China",
+      "region": "Northern China",
+      "description": "A Suric home-cooking adaptation of Scallion pancakes, using accessible ingredients and a practical method inspired by Northern China.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g plain flour",
+        "180 ml warm water",
+        "5 spring onions",
+        "2 tbsp neutral oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Mix or prepare 300 g plain flour, 180 ml warm water; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 1 tsp salt and serve while warm."
+      ],
+      "sides": "Serve with a soy and vinegar dip.",
+      "substitutions": "Use gluten-free flour blend only if suitable for kneading.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Northern China",
+        "pan",
+        "scallion",
+        "pancakes"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-jianbing-inspired-breakfast-pancakes",
+      "name": "Jianbing-inspired breakfast pancakes",
+      "englishName": null,
+      "country": "China",
+      "region": "Northern China",
+      "description": "A Suric home-cooking adaptation of Jianbing-inspired breakfast pancakes, using accessible ingredients and a practical method inspired by Northern China.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "120 g plain flour",
+        "2 eggs",
+        "180 ml water",
+        "2 spring onions",
+        "1 tbsp sesame seeds",
+        "2 tbsp hoisin sauce"
+      ],
+      "instructions": [
+        "Mix or prepare 120 g plain flour, 2 eggs; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 2 tbsp hoisin sauce and serve while warm."
+      ],
+      "sides": "Serve folded warm with cucumber sticks.",
+      "substitutions": "Use a thin gluten-free batter and gluten-free sauce.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Northern China",
+        "pan",
+        "jianbing-inspired",
+        "breakfast"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-congee-with-shiitake-and-ginger",
+      "name": "Congee with shiitake and ginger",
+      "englishName": null,
+      "country": "China",
+      "region": "Southern China",
+      "description": "A Suric home-cooking adaptation of Congee with shiitake and ginger, using accessible ingredients and a practical method inspired by Southern China.",
+      "prepMinutes": 10,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "180 g jasmine rice",
+        "1.5 litres water or stock",
+        "120 g shiitake mushrooms",
+        "1 tbsp ginger",
+        "2 spring onions"
+      ],
+      "instructions": [
+        "Rinse or prepare 180 g jasmine rice, 1.5 litres water or stock and add to a heavy saucepan with the listed liquid.",
+        "Bring to a gentle boil, then lower the heat and stir regularly to prevent sticking.",
+        "Cook until soft and creamy; finish with 2 spring onions and serve warm."
+      ],
+      "sides": "Top with spring onion and a little soy sauce.",
+      "substitutions": "Use vegetable stock and add tofu.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Southern China",
+        "porridge",
+        "congee",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-tea-eggs",
+      "name": "Tea eggs",
+      "englishName": null,
+      "country": "China",
+      "region": "Eastern China",
+      "description": "A Suric home-cooking adaptation of Tea eggs, using accessible ingredients and a practical method inspired by Eastern China.",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 eggs",
+        "2 tbsp black tea leaves",
+        "2 tbsp soy sauce",
+        "1 star anise",
+        "1 small cinnamon stick"
+      ],
+      "instructions": [
+        "Prepare 6 eggs, 2 tbsp black tea leaves and place in a saucepan with enough water to cover.",
+        "Bring to a boil, then simmer until tender; drain carefully if needed.",
+        "Toss with 1 small cinnamon stick and the listed seasoning, then cool or serve as directed."
+      ],
+      "sides": "Serve chilled or warm with rice.",
+      "substitutions": "Use tamari instead of soy sauce.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Eastern China",
+        "boil",
+        "tea",
+        "eggs"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-five-spice-braised-chicken",
+      "name": "Five-spice braised chicken",
+      "englishName": null,
+      "country": "China",
+      "region": "Eastern China",
+      "description": "A Suric home-cooking adaptation of Five-spice braised chicken, using accessible ingredients and a practical method inspired by Eastern China.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "2 tbsp soy sauce",
+        "1 tsp five-spice",
+        "300 ml stock",
+        "1 tbsp brown sugar",
+        "2 garlic cloves"
+      ],
+      "instructions": [
+        "Prepare 600 g chicken thighs, 2 tbsp soy sauce. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 2 garlic cloves; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with rice and greens.",
+      "substitutions": "Use firm tofu, adding it for the last 15 minutes.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Eastern China",
+        "stew",
+        "five-spice",
+        "braised"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-hot-and-sour-vegetable-soup",
+      "name": "Hot and sour vegetable soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Sichuan-inspired",
+      "description": "A Suric home-cooking adaptation of Hot and sour vegetable soup, using accessible ingredients and a practical method inspired by Sichuan-inspired.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 litre vegetable stock",
+        "150 g firm tofu",
+        "100 g shiitake mushrooms",
+        "2 tbsp rice vinegar",
+        "1 tbsp soy sauce",
+        "1 tsp white pepper"
+      ],
+      "instructions": [
+        "Prepare 1 litre vegetable stock, 150 g firm tofu. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 tsp white pepper, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve hot with rice.",
+      "substitutions": "Use chicken stock and add cooked shredded chicken.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Sichuan-inspired",
+        "soup",
+        "hot",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-cucumber-smashed-with-garlic",
+      "name": "Cucumber smashed with garlic",
+      "englishName": null,
+      "country": "China",
+      "region": "Nationwide home cooking",
+      "description": "A Suric home-cooking adaptation of Cucumber smashed with garlic, using accessible ingredients and a practical method inspired by Nationwide home cooking.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cucumbers",
+        "2 garlic cloves",
+        "1 tbsp rice vinegar",
+        "1 tsp sesame oil",
+        "1 tsp soy sauce",
+        "1 tsp sesame seeds"
+      ],
+      "instructions": [
+        "Wash and prepare 2 cucumbers, 2 garlic cloves; cut vegetables into even bite-sized pieces.",
+        "Whisk the oil, acid and seasoning together, including 1 tsp sesame seeds where appropriate.",
+        "Toss gently just before serving and keep chilled until needed."
+      ],
+      "sides": "Serve chilled with rice and a warm main dish.",
+      "substitutions": "Use tamari and omit sesame if needed.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Nationwide home cooking",
+        "salad",
+        "cucumber",
+        "smashed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-scallion-and-egg-drop-soup",
+      "name": "Scallion and egg drop soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Northern China",
+      "description": "A Suric home-cooking adaptation of Scallion and egg drop soup, using accessible ingredients and a practical method inspired by Northern China.",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 litre chicken or vegetable stock",
+        "2 eggs",
+        "2 spring onions",
+        "1 tsp cornstarch",
+        "1 tsp soy sauce"
+      ],
+      "instructions": [
+        "Prepare 1 litre chicken or vegetable stock, 2 eggs. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 tsp soy sauce, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with noodles or rice.",
+      "substitutions": "Use a little potato starch instead of cornstarch.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "China",
+        "Northern China",
+        "soup",
+        "scallion",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-tea-smoked-style-baked-tofu",
+      "name": "Tea-smoked style baked tofu",
+      "englishName": null,
+      "country": "China",
+      "region": "Sichuan-inspired",
+      "description": "A Suric home-cooking adaptation of Tea-smoked style baked tofu, using accessible ingredients and a practical method inspired by Sichuan-inspired.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g firm tofu",
+        "1 tbsp soy sauce",
+        "1 tsp black tea",
+        "1 tsp brown sugar",
+        "1 tsp sesame oil",
+        "1 spring onion"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 400 g firm tofu, 1 tbsp soy sauce and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 spring onion.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with rice and steamed greens.",
+      "substitutions": "Use tamari; omit tea and roast with extra ginger.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Sichuan-inspired",
+        "bake",
+        "tea-smoked",
+        "style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-cabbage-and-glass-noodle-stir-fry",
+      "name": "Cabbage and glass noodle stir-fry",
+      "englishName": null,
+      "country": "China",
+      "region": "Northeast China",
+      "description": "A Suric home-cooking adaptation of Cabbage and glass noodle stir-fry, using accessible ingredients and a practical method inspired by Northeast China.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g glass noodles",
+        "300 g cabbage",
+        "1 carrot",
+        "2 garlic cloves",
+        "1 tbsp soy sauce",
+        "1 tsp sesame oil"
+      ],
+      "instructions": [
+        "Prepare 250 g glass noodles, 300 g cabbage and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 1 tsp sesame oil.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve as a meal with tofu or egg.",
+      "substitutions": "Use rice vermicelli if glass noodles are unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Northeast China",
+        "stir",
+        "cabbage",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-lanzhou-style-beef-noodle-soup",
+      "name": "Lanzhou-style beef noodle soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Gansu",
+      "description": "A Suric home-cooking adaptation of Lanzhou-style beef noodle soup, using accessible ingredients and a practical method inspired by Gansu.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g wheat noodles",
+        "300 g beef stewing pieces",
+        "1.5 litres stock",
+        "1 tsp cumin",
+        "1 tsp coriander",
+        "1 radish"
+      ],
+      "instructions": [
+        "Prepare 300 g wheat noodles, 300 g beef stewing pieces. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 radish, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Top with coriander and spring onion.",
+      "substitutions": "Use vegetable stock and braised mushrooms.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Gansu",
+        "soup",
+        "lanzhou-style",
+        "beef"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-xinjiang-cumin-lamb-and-peppers",
+      "name": "Xinjiang cumin lamb and peppers",
+      "englishName": null,
+      "country": "China",
+      "region": "Xinjiang",
+      "description": "A Suric home-cooking adaptation of Xinjiang cumin lamb and peppers, using accessible ingredients and a practical method inspired by Xinjiang.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g lamb strips",
+        "2 peppers",
+        "1 onion",
+        "2 tsp cumin",
+        "1 tsp chilli flakes",
+        "1 tbsp soy sauce"
+      ],
+      "instructions": [
+        "Prepare 400 g lamb strips, 2 peppers and keep the remaining ingredients ready beside the pan.",
+        "Heat a wide pan, cook the main ingredients until tender and add 1 tbsp soy sauce.",
+        "Stir until the sauce coats the ingredients and everything is thoroughly hot; taste and adjust seasoning."
+      ],
+      "sides": "Serve with flatbread or rice.",
+      "substitutions": "Use mushrooms or seitan in place of lamb.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Xinjiang",
+        "stir",
+        "xinjiang",
+        "cumin"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-lotus-root-and-peanut-soup",
+      "name": "Lotus root and peanut soup",
+      "englishName": null,
+      "country": "China",
+      "region": "Southern China",
+      "description": "A Suric home-cooking adaptation of Lotus root and peanut soup, using accessible ingredients and a practical method inspired by Southern China.",
+      "prepMinutes": 15,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g lotus root",
+        "120 g raw peanuts",
+        "1.5 litres water",
+        "2 slices ginger",
+        "1 carrot"
+      ],
+      "instructions": [
+        "Prepare 300 g lotus root, 120 g raw peanuts. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 carrot, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with rice and greens.",
+      "substitutions": "Use peeled chestnuts instead of peanuts.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Southern China",
+        "soup",
+        "lotus",
+        "root"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-steamed-pork-and-winter-melon",
+      "name": "Steamed pork and winter melon",
+      "englishName": null,
+      "country": "China",
+      "region": "Guangdong",
+      "description": "A Suric home-cooking adaptation of Steamed pork and winter melon, using accessible ingredients and a practical method inspired by Guangdong.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "350 g minced pork",
+        "400 g winter melon",
+        "1 tbsp soy sauce",
+        "1 tsp ginger",
+        "150 ml water",
+        "1 spring onion"
+      ],
+      "instructions": [
+        "Prepare 350 g minced pork, 400 g winter melon and place in a heatproof dish or steamer basket.",
+        "Bring water to a steady simmer, cover and steam; add 1 spring onion as directed by the ingredient list.",
+        "Check that the centre is fully cooked and serve hot."
+      ],
+      "sides": "Serve with steamed rice.",
+      "substitutions": "Use minced chicken or crumbled tofu.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Guangdong",
+        "steam",
+        "steamed",
+        "pork"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-pan-fried-dumplings-with-cabbage",
+      "name": "Pan-fried dumplings with cabbage",
+      "englishName": null,
+      "country": "China",
+      "region": "Northern China",
+      "description": "A Suric home-cooking adaptation of Pan-fried dumplings with cabbage, using accessible ingredients and a practical method inspired by Northern China.",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "24 dumpling wrappers",
+        "250 g minced pork",
+        "200 g cabbage",
+        "1 tbsp ginger",
+        "1 tbsp soy sauce",
+        "100 ml water"
+      ],
+      "instructions": [
+        "Mix or prepare 24 dumpling wrappers, 250 g minced pork; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 100 ml water and serve while warm."
+      ],
+      "sides": "Serve with vinegar and sliced cucumber.",
+      "substitutions": "Use chopped mushrooms and tofu for a vegetarian filling.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "China",
+        "Northern China",
+        "pan",
+        "pan-fried",
+        "dumplings"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-red-braised-aubergine",
+      "name": "Red-braised aubergine",
+      "englishName": null,
+      "country": "China",
+      "region": "Eastern China",
+      "description": "A Suric home-cooking adaptation of Red-braised aubergine, using accessible ingredients and a practical method inspired by Eastern China.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 aubergines",
+        "2 garlic cloves",
+        "1 tbsp soy sauce",
+        "1 tbsp black vinegar",
+        "1 tsp sugar",
+        "100 ml water"
+      ],
+      "instructions": [
+        "Prepare 2 aubergines, 2 garlic cloves. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 100 ml water; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with rice.",
+      "substitutions": "Use courgette with aubergine.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Eastern China",
+        "stew",
+        "red-braised",
+        "aubergine"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-eight-treasure-vegetable-rice",
+      "name": "Eight-treasure vegetable rice",
+      "englishName": null,
+      "country": "China",
+      "region": "Jiangnan-inspired",
+      "description": "A Suric home-cooking adaptation of Eight-treasure vegetable rice, using accessible ingredients and a practical method inspired by Jiangnan-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g rice",
+        "100 g shiitake mushrooms",
+        "80 g peas",
+        "1 carrot",
+        "100 g bamboo shoots",
+        "1 tbsp soy sauce"
+      ],
+      "instructions": [
+        "Prepare 300 g rice, 100 g shiitake mushrooms; rinse rice if the recipe includes it.",
+        "Cook the aromatics and main ingredients in a saucepan, then stir in the rice and liquid.",
+        "Cover and cook over low heat until the rice is tender and the liquid is absorbed; rest covered for 5 minutes."
+      ],
+      "sides": "Serve with a light soup.",
+      "substitutions": "Replace bamboo shoots with diced celery.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Jiangnan-inspired",
+        "rice",
+        "eight-treasure",
+        "vegetable"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "china-sesame-rice-balls",
+      "name": "Sesame rice balls",
+      "englishName": null,
+      "country": "China",
+      "region": "Nationwide festive sweet",
+      "description": "A Suric home-cooking adaptation of Sesame rice balls, using accessible ingredients and a practical method inspired by Nationwide festive sweet.",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "180 g glutinous rice flour",
+        "140 ml warm water",
+        "80 g sesame paste",
+        "2 tbsp sugar",
+        "3 tbsp sesame seeds"
+      ],
+      "instructions": [
+        "Heat the oven to 180 C when baking, or prepare a heavy pan if cooking on the hob. Measure 180 g glutinous rice flour, 140 ml warm water.",
+        "Mix the wet ingredients, then fold in the dry ingredients until just combined; shape or portion as needed.",
+        "Cook until set and golden; cool briefly and finish with 3 tbsp sesame seeds."
+      ],
+      "sides": "Serve warm with unsweetened tea.",
+      "substitutions": "Use sweetened red bean paste instead of sesame filling.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "China",
+        "Nationwide festive sweet",
+        "sweet",
+        "sesame",
+        "rice"
+      ],
+      "revision": 1
+    }
+  ]
+}

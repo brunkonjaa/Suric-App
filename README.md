@@ -1,6 +1,6 @@
 # Suric
 
-A private, personal Android companion for everyday household life: gardening, pottery, weekly shopping, bills, DIY, cooking, cleaning, retro consoles, Android devices and personal notes.
+A private, personal Android companion for everyday household life: gardening, pottery, weekly shopping, bills, DIY, cooking, cleaning, music, retro consoles, Android devices and personal notes.
 
 Suric is not a public service or a business product. It is a personal-use proof of concept. Personal entries are encrypted and stored on the device. The app reuses the ChatGPT sign-in and Responses connection proven in Ask Buster; there is no separately billed API key or custom server in this project. A new package install still needs its own real sign-in and request check before it can be called verified.
 
@@ -10,9 +10,12 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - Light and dark appearance, saved on this device.
 - Separate spaces with consistent add/edit bottom sheets, check-off controls where useful, and undo for deleted entries.
 - Shopping Assistant saves product options with retailer links and the date you checked them. You choose which saved options to share with Ask Suric; it does not fetch retailer pages or verify live prices or stock.
+- Each section includes bundled offline guides and recipes where available. Global offline search covers bundled guide content and recipes, with section filters. Cooking has canonical recipe data in a base asset plus supplemental assets registered by a versioned manifest, with 30-entry African regional, Irish, Argentinian, Bosnian, Brazilian, Bulgarian, French, German, Greek, Hungarian, Indian, Japanese, Italian, Mexican, Spanish and United States of America collections, detailed offline instructions, Ask Suric, share, encrypted personal copy, favourites, recently viewed filters and an ingredient handoff to Shopping. Guide and recipe reading state is kept on this device separately from personal records. The other requested cuisine and BBQ/seafood collection quotas are still being filled. Guides can be copied into encrypted personal notes without changing their bundled source.
+- Music can play audio files selected with Android's document picker, save the queue locally and open online music or Naxi Radio through Android's app chooser. Local playback stops when leaving the Music screen.
+- Personal entries can be shared as a user-selected, readable text copy. Bundled guides can be shared using a Suric URI when the receiving Suric installation contains the same article ID.
 - Bills can be entered locally or selectively saved from upcoming calendar events after calendar permission is granted.
 - Text notes can be shared from another Android app into Suric's Notes area.
-- “Ask Suric” opens the conversation; a section's saved notes are included only after you tap “Ask Suric about these notes”.
+- “Ask Suric” opens the conversation; message history and drafts are stored encrypted on this device. You can share a text transcript or delete the saved chat, and a section's saved notes are included only after you tap “Ask Suric about these notes”.
 - Android's system photo picker attaches an image to a question.
 - Suric opens directly in local mode. ChatGPT sign-in is optional and requested only when the user chooses an AI action.
 - A bundled offline Starter Library provides 38 guides, recipes, checklists and blank templates, including an Android and PS1–PS5 Retro & Android reference collection. Source links open only when tapped. Reference content is separate from encrypted personal records; a copy is made only after tapping **Copy to my space**.
@@ -52,8 +55,11 @@ Starter items and maintenance details are listed in [STARTER_LIBRARY.md](STARTER
 
 ## Project documents
 
-- [ARCHITECTURE.md](ARCHITECTURE.md) — app components and data flow.
-- [FEASIBILITY.md](FEASIBILITY.md) — integration evidence and verification limits.
-- [SECURITY.md](SECURITY.md) — credential and personal data handling.
-- [TESTING.md](TESTING.md) — automated and device test checklist.
-- [AGENTS.md](AGENTS.md) — scope and implementation rules.
+- [OFFLINE_CONTENT_INVENTORY.md](OFFLINE_CONTENT_INVENTORY.md) - current bundled content counts and gaps.
+
+
+- [ARCHITECTURE.md](ARCHITECTURE.md) - app components and data flow.
+- [FEASIBILITY.md](FEASIBILITY.md) - integration evidence and verification limits.
+- [SECURITY.md](SECURITY.md) - credential and personal data handling.
+- [TESTING.md](TESTING.md) - automated and device test checklist.
+- [AGENTS.md](AGENTS.md) - scope and implementation rules.

@@ -1,0 +1,1208 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "mex-guacamole",
+                        "name":  "Avocado and lime dip",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "A simple mashed avocado dip with lime, onion, chile and cilantro.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "3 ripe avocados",
+                                            "2 tbsp lime juice",
+                                            "2 tbsp diced white onion",
+                                            "1 small tomato, seeded and diced",
+                                            "1 tbsp chopped cilantro",
+                                            "1 jalapeno, minced",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Mash avocado with lime juice to a chunky texture",
+                                             "Fold in onion, tomato, cilantro and jalapeno",
+                                             "Season and serve promptly with tortillas or vegetables."
+                                         ],
+                        "sides":  "Serve with tacos, tostadas or grilled vegetables.",
+                        "substitutions":  "Omit chile or tomato as preferred.",
+                        "storage":  "Best fresh; cover closely and refrigerate for no more than 1 day.",
+                        "safety":  "Wash produce before preparation; keep chilled if not serving immediately.",
+                        "tags":  [
+                                     "avocado",
+                                     "dip",
+                                     "no-cook"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-pambazos",
+                        "name":  "Bread rolls dipped in guajillo salsa",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Mexico City",
+                        "description":  "Soft rolls filled with potato and chorizo, coated in chile sauce and griddled.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 soft rolls",
+                                            "300 g potatoes, diced",
+                                            "150 g chorizo",
+                                            "3 guajillo chiles, seeded",
+                                            "1/2 onion",
+                                            "1 garlic clove",
+                                            "150 ml hot water",
+                                            "lettuce",
+                                            "crema"
+                                        ],
+                        "instructions":  [
+                                             "Simmer potatoes until tender and drain",
+                                             " cook chorizo in pan, add potatoes and mash roughly",
+                                             "Soak guajillo chiles in hot water until soft",
+                                             " blend with onion, garlic and soaking water, then strain",
+                                             "Split rolls and fill with potato mixture",
+                                             " dip outsides briefly in salsa",
+                                             "Griddle in a little oil, turning until warm and lightly crisp",
+                                             " serve with lettuce and crema."
+                                         ],
+                        "sides":  "Serve hot as a substantial snack.",
+                        "substitutions":  "Use mushrooms and smoked paprika instead of chorizo.",
+                        "storage":  "Refrigerate filling and sauce separately up to 2 days.",
+                        "safety":  "Cook chorizo fully and keep filled rolls hot before serving.",
+                        "tags":  [
+                                     "Mexico City",
+                                     "bread",
+                                     "chile"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-nopales-salad",
+                        "name":  "Cactus paddle salad",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Central Mexico",
+                        "description":  "Tender cactus strips tossed with tomato, onion, cilantro and fresh cheese.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g cleaned nopal paddles, sliced",
+                                            "2 tomatoes, diced",
+                                            "1/4 onion, finely sliced",
+                                            "2 tbsp chopped cilantro",
+                                            "100 g queso fresco",
+                                            "1 lime",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Simmer nopales in lightly salted water until tender, 12 to 15 minutes",
+                                             " drain and rinse",
+                                             "Cool fully and drain well",
+                                             "Mix with tomato, onion, cilantro and lime",
+                                             " crumble cheese over top and season."
+                                         ],
+                        "sides":  "Serve with tostadas or grilled meat.",
+                        "substitutions":  "Use green beans if nopales are unavailable.",
+                        "storage":  "Keep refrigerated and use within 1 day.",
+                        "safety":  "Wash produce and keep salad chilled.",
+                        "tags":  [
+                                     "cactus",
+                                     "salad",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-quesadillas",
+                        "name":  "Cheese quesadillas",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Corn tortillas folded around melting cheese and cooked until crisp.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  10,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "8 corn tortillas",
+                                            "250 g Oaxaca or mozzarella cheese, shredded",
+                                            "1 tbsp oil",
+                                            "1/2 cup cooked mushrooms or squash blossoms, optional"
+                                        ],
+                        "instructions":  [
+                                             "Warm a tortilla on a dry pan until flexible",
+                                             "Add cheese and optional filling to one half",
+                                             " fold over",
+                                             "Cook over medium heat, turning once, until tortilla is golden and cheese melts",
+                                             " repeat",
+                                             "Slice and serve hot."
+                                         ],
+                        "sides":  "Serve with salsa and beans.",
+                        "substitutions":  "Use flour tortillas or add cooked beans.",
+                        "storage":  "Best fresh; refrigerate leftovers and reheat in a dry pan.",
+                        "safety":  "Use cooked fillings and heat until cheese melts fully.",
+                        "tags":  [
+                                     "tortilla",
+                                     "cheese",
+                                     "snack"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-corn-tamales",
+                        "name":  "Chicken and green chile tamales",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Michoacan",
+                        "description":  "Steamed masa parcels filled with chicken and tomatillo salsa.",
+                        "prepMinutes":  60,
+                        "cookMinutes":  60,
+                        "servings":  8,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "16 dried corn husks, soaked",
+                                            "500 g masa harina",
+                                            "300 ml warm stock",
+                                            "150 g lard or vegetable shortening",
+                                            "1 tsp baking powder",
+                                            "300 g cooked shredded chicken",
+                                            "250 g green salsa"
+                                        ],
+                        "instructions":  [
+                                             "Beat shortening until fluffy",
+                                             " mix masa harina, baking powder and salt",
+                                             " gradually beat in masa and stock until soft",
+                                             "Spread masa on each softened husk",
+                                             " add chicken and a spoon of salsa",
+                                             " fold sides and bottom",
+                                             "Stand tamales upright in a steamer over simmering water",
+                                             " cover and steam 50 to 60 minutes until masa separates from husk",
+                                             " rest 10 minutes."
+                                         ],
+                        "sides":  "Serve with extra salsa and beans.",
+                        "substitutions":  "Fill with beans and cheese for a meat-free option.",
+                        "storage":  "Refrigerate cooked tamales up to 3 days; reheat by steaming.",
+                        "safety":  "Keep filling chilled before assembly and cook tamales fully; beware steam.",
+                        "tags":  [
+                                     "Michoacan",
+                                     "tamales",
+                                     "corn"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-enchiladas-verdes",
+                        "name":  "Chicken enchiladas with green salsa",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Corn tortillas filled with chicken, covered in tomatillo salsa and baked with cheese.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "12 corn tortillas",
+                                            "400 g cooked shredded chicken",
+                                            "500 g green salsa",
+                                            "150 g grated cheese",
+                                            "100 ml crema",
+                                            "1/2 onion, sliced"
+                                        ],
+                        "instructions":  [
+                                             "Warm tortillas in a dry pan until pliable",
+                                             "Warm salsa in a saucepan",
+                                             "Fill tortillas with chicken, roll and place seam down in a baking dish",
+                                             "Cover with remaining salsa and cheese",
+                                             "Bake at 190 C for 15 minutes until bubbling",
+                                             " finish with crema and onion."
+                                         ],
+                        "sides":  "Serve with beans and rice.",
+                        "substitutions":  "Use cooked black beans instead of chicken.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until hot.",
+                        "safety":  "Use chicken cooked and stored safely; reheat enchiladas to steaming.",
+                        "tags":  [
+                                     "enchiladas",
+                                     "green salsa",
+                                     "chicken"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-chilaquiles",
+                        "name":  "Chilaquiles in red salsa",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Central Mexico",
+                        "description":  "Crisp tortilla pieces briefly simmered in salsa and finished with cheese and crema.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "12 corn tortillas, cut into triangles",
+                                            "300 ml red salsa",
+                                            "2 tbsp oil",
+                                            "100 g crumbled queso fresco",
+                                            "80 ml crema",
+                                            "1/4 onion, sliced",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Dry tortilla pieces briefly, then fry in batches until crisp",
+                                             " drain",
+                                             "Warm salsa in a wide pan until simmering",
+                                             "Add tortilla chips and toss briefly so edges soften while centres stay crisp",
+                                             "Top with cheese, crema, onion and cilantro and serve immediately."
+                                         ],
+                        "sides":  "Add fried eggs or shredded chicken for a fuller meal.",
+                        "substitutions":  "Bake tortilla triangles at 200 C until crisp instead of frying.",
+                        "storage":  "Best immediately; store salsa and chips separately.",
+                        "safety":  "Cook optional eggs and chicken fully; handle hot oil carefully.",
+                        "tags":  [
+                                     "breakfast",
+                                     "tortilla",
+                                     "salsa"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-tacos-al-pastor",
+                        "name":  "Chilli-marinated pork tacos",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Mexico City",
+                        "description":  "Thin pork cooked with achiote, guajillo chile and pineapple, served in small tortillas.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g thin pork shoulder slices",
+                                            "3 guajillo chiles",
+                                            "30 g achiote paste",
+                                            "100 ml orange juice",
+                                            "2 tbsp vinegar",
+                                            "1 tsp oregano",
+                                            "1 tsp cumin",
+                                            "150 g pineapple",
+                                            "small corn tortillas"
+                                        ],
+                        "instructions":  [
+                                             "Soak seeded chiles in hot water",
+                                             " blend with achiote, orange juice, vinegar and spices",
+                                             "Coat pork and marinate covered in refrigerator at least 2 hours",
+                                             "Heat grill or pan very hot",
+                                             " cook pork in batches until browned and cooked through",
+                                             "Rest and chop",
+                                             " grill pineapple pieces",
+                                             "Serve in warm tortillas with pineapple, onion and cilantro."
+                                         ],
+                        "sides":  "Serve with lime wedges and salsa.",
+                        "substitutions":  "Use chicken thighs and cook thoroughly.",
+                        "storage":  "Marinate refrigerated up to 12 hours; cooked pork lasts 3 days chilled.",
+                        "safety":  "Do not reuse marinade unless boiled; cook pork through.",
+                        "tags":  [
+                                     "Mexico City",
+                                     "pork",
+                                     "tacos"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-pollo-tinga",
+                        "name":  "Chipotle shredded chicken tostadas",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Puebla",
+                        "description":  "Shredded chicken simmered with tomato, onion and smoky chipotle.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g cooked chicken, shredded",
+                                            "1 onion, sliced",
+                                            "400 g tomatoes",
+                                            "2 chipotle chiles in adobo",
+                                            "1 tbsp oil",
+                                            "8 tostadas",
+                                            "lettuce",
+                                            "crema"
+                                        ],
+                        "instructions":  [
+                                             "Blend tomatoes with chipotle and a little adobo sauce",
+                                             "Cook onion in oil until soft",
+                                             " add tomato-chipotle puree and simmer 10 minutes",
+                                             "Stir in chicken and simmer until hot and saucy",
+                                             "Spoon onto tostadas and top with lettuce and crema."
+                                         ],
+                        "sides":  "Serve with avocado and lime.",
+                        "substitutions":  "Use fewer chipotles for a milder sauce.",
+                        "storage":  "Refrigerate chicken mixture up to 3 days; reheat until steaming.",
+                        "safety":  "Reheat cooked chicken once until steaming hot.",
+                        "tags":  [
+                                     "Puebla",
+                                     "chicken",
+                                     "tostada"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-atole",
+                        "name":  "Cinnamon corn atole",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "A warm thick drink made with masa, milk, cinnamon and piloncillo.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 litre milk or water",
+                                            "60 g masa harina",
+                                            "80 g piloncillo or dark sugar",
+                                            "1 cinnamon stick",
+                                            "1 tsp vanilla"
+                                        ],
+                        "instructions":  [
+                                             "Whisk masa harina with 200 ml cold milk until smooth.",
+                                             "Warm remaining milk with cinnamon and sugar until dissolved.",
+                                             "Whisk in masa mixture and simmer gently, stirring, until thick and smooth; add vanilla and remove cinnamon."
+                                         ],
+                        "sides":  "Serve hot with tamales or sweet bread.",
+                        "substitutions":  "Use plant milk and brown sugar.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat while stirring.",
+                        "safety":  "Keep hot drink away from children; stir before serving.",
+                        "tags":  [
+                                     "drink",
+                                     "corn",
+                                     "cinnamon"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-carne-asada",
+                        "name":  "Citrus-grilled beef tacos",
+                        "englishName":  "Carne asada",
+                        "country":  "Mexico",
+                        "region":  "Northern Mexico",
+                        "description":  "Thin beef marinated with citrus and grilled quickly over high heat.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  10,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g flank steak",
+                                            "2 tbsp lime juice",
+                                            "1 tbsp orange juice",
+                                            "2 garlic cloves, crushed",
+                                            "1 tsp cumin",
+                                            "1 tbsp oil",
+                                            "12 corn tortillas",
+                                            "onion and cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Mix citrus, garlic, cumin and oil; coat beef and marinate covered in refrigerator for 30 minutes.",
+                                             "Heat grill or pan until very hot; cook steak 3 to 5 minutes per side depending on thickness and desired doneness.",
+                                             "Rest 5 minutes, slice thinly across grain and serve in warm tortillas with onion and cilantro."
+                                         ],
+                        "sides":  "Serve with salsa and charred spring onions.",
+                        "substitutions":  "Use skirt steak or chicken thighs.",
+                        "storage":  "Refrigerate cooked beef promptly and use within 3 days.",
+                        "safety":  "Keep raw beef separate; use a thermometer for the preferred safe doneness.",
+                        "tags":  [
+                                     "Northern Mexico",
+                                     "beef",
+                                     "tacos"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-elote",
+                        "name":  "Elote street corn",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Grilled corn coated with lime, mayonnaise, chile and crumbly cheese.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 corn cobs, husks removed",
+                                            "3 tbsp mayonnaise",
+                                            "1 lime",
+                                            "60 g cotija or feta",
+                                            "1 tsp chilli powder",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Grill corn over medium heat, turning often, until kernels are lightly charred and tender.",
+                                             "Mix mayonnaise with lime zest and a little juice.",
+                                             "Brush corn with lime mayonnaise, roll in cheese and dust with chilli and salt."
+                                         ],
+                        "sides":  "Serve hot with lime wedges.",
+                        "substitutions":  "Use boiled corn and feta if cotija is unavailable.",
+                        "storage":  "Serve immediately; refrigerate leftovers and use within 1 day.",
+                        "safety":  "Use clean utensils for the mayonnaise and cheese.",
+                        "tags":  [
+                                     "corn",
+                                     "street food",
+                                     "snack"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-pico-de-gallo",
+                        "name":  "Fresh tomato salsa",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Chopped tomato, onion, cilantro, chile and lime for tacos and grilled food.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 ripe tomatoes, diced",
+                                            "1/2 white onion, diced",
+                                            "1 jalapeno, minced",
+                                            "2 tbsp cilantro",
+                                            "2 tbsp lime juice",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Dice tomatoes and onion evenly",
+                                             " remove chile seeds for less heat",
+                                             "Mix vegetables with cilantro and lime",
+                                             " season",
+                                             "Rest 10 minutes and drain excess liquid if desired."
+                                         ],
+                        "sides":  "Serve with tortilla chips, tacos or beans.",
+                        "substitutions":  "Use mild pepper or omit chile.",
+                        "storage":  "Refrigerate covered and use within 1 day.",
+                        "safety":  "Wash produce and keep salsa chilled.",
+                        "tags":  [
+                                     "salsa",
+                                     "tomato",
+                                     "no-cook"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-capirotada",
+                        "name":  "Mexican bread pudding",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Central Mexico",
+                        "description":  "Toasted bread layered with fruit, nuts and a piloncillo-spice syrup.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "6 bolillos or firm rolls, sliced",
+                                            "150 g piloncillo or dark sugar",
+                                            "500 ml water",
+                                            "1 cinnamon stick",
+                                            "2 cloves",
+                                            "80 g raisins",
+                                            "60 g peanuts",
+                                            "100 g grated mild cheese"
+                                        ],
+                        "instructions":  [
+                                             "Toast bread slices until dry and golden",
+                                             "Simmer sugar, water, cinnamon and cloves until syrupy",
+                                             "Remove spices",
+                                             "Layer bread, raisins, peanuts and cheese in a baking dish",
+                                             " pour syrup evenly over top",
+                                             "Bake at 180 C for 25 minutes until set and edges crisp."
+                                         ],
+                        "sides":  "Serve warm or at room temperature.",
+                        "substitutions":  "Use brown sugar and almonds instead of piloncillo and peanuts.",
+                        "storage":  "Refrigerate within 2 hours; use within 3 days and reheat thoroughly.",
+                        "safety":  "Check peanut allergy; cool and store promptly.",
+                        "tags":  [
+                                     "Central Mexico",
+                                     "bread pudding",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-arroz-rojo",
+                        "name":  "Mexican red rice",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Rice toasted with tomato, onion and garlic, then steamed until the grains are separate.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g long-grain rice",
+                                            "2 tomatoes",
+                                            "1/4 onion",
+                                            "1 garlic clove",
+                                            "500 ml warm stock",
+                                            "1 tbsp oil",
+                                            "100 g peas and carrot",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Blend tomatoes, onion and garlic until smooth",
+                                             "Rinse rice and drain",
+                                             " toast in oil over medium heat until lightly golden",
+                                             "Add tomato puree and stir 2 minutes",
+                                             " pour in stock and vegetables, cover and simmer low until rice is tender",
+                                             " rest covered 5 minutes."
+                                         ],
+                        "sides":  "Serve with beans, eggs or stewed meat.",
+                        "substitutions":  "Use frozen mixed vegetables or omit them.",
+                        "storage":  "Refrigerate promptly and use within 2 days; reheat once.",
+                        "safety":  "Cool rice quickly and refrigerate within 1 hour; reheat until steaming.",
+                        "tags":  [
+                                     "rice",
+                                     "tomato",
+                                     "side"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-molletes",
+                        "name":  "Molletes",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Mexico City",
+                        "description":  "Toasted bread rolls topped with refried beans and melted cheese.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  12,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 bolillo rolls, split",
+                                            "300 g refried beans",
+                                            "160 g grated cheese",
+                                            "150 g pico de gallo"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven grill to medium and arrange rolls cut-side up.",
+                                             "Spread beans over each half and top with cheese.",
+                                             "Grill until cheese melts and bread edges toast; top with pico de gallo."
+                                         ],
+                        "sides":  "Serve with salsa and sliced avocado.",
+                        "substitutions":  "Use sourdough rolls or black beans.",
+                        "storage":  "Best fresh; store bean topping refrigerated separately.",
+                        "safety":  "Use cooked beans and keep toppings chilled until serving.",
+                        "tags":  [
+                                     "Mexico City",
+                                     "bread",
+                                     "breakfast"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-tlayudas",
+                        "name":  "Oaxacan black bean tostadas",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Oaxaca",
+                        "description":  "Large crisp tortillas spread with beans and topped with cabbage, avocado and cheese.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 large corn tortillas",
+                                            "250 g refried black beans",
+                                            "150 g shredded cabbage",
+                                            "1 avocado",
+                                            "100 g quesillo or mozzarella",
+                                            "2 tomatoes",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Warm beans in saucepan until spreadable",
+                                             "Toast tortillas on a hot dry griddle until crisp but still foldable",
+                                             "Spread beans over each tortilla",
+                                             " add cabbage, sliced tomato, avocado and cheese",
+                                             "Warm briefly on griddle until cheese softens",
+                                             " serve."
+                                         ],
+                        "sides":  "Add grilled vegetables or cooked meat if desired.",
+                        "substitutions":  "Use small tostadas if large tortillas are unavailable.",
+                        "storage":  "Assemble just before eating; keep toppings chilled.",
+                        "safety":  "Keep fresh toppings refrigerated and separate until serving.",
+                        "tags":  [
+                                     "Oaxaca",
+                                     "beans",
+                                     "tostada"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-yucatan-pickled-onions",
+                        "name":  "Pickled red onions",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Yucatan",
+                        "description":  "Quick citrus-pickled onions served with cochinita pibil and tacos.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  0,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 red onions, thinly sliced",
+                                            "juice of 2 oranges",
+                                            "juice of 2 limes",
+                                            "1 tsp oregano",
+                                            "1/2 tsp salt",
+                                            "1 habanero, optional"
+                                        ],
+                        "instructions":  [
+                                             "Place sliced onions in a heatproof bowl",
+                                             "Pour over boiling water for 10 seconds, then drain",
+                                             "Add citrus juices, oregano, salt and optional sliced habanero",
+                                             " toss",
+                                             "Rest at least 30 minutes, tossing once, until bright pink and softened."
+                                         ],
+                        "sides":  "Serve with pork tacos, beans or grilled fish.",
+                        "substitutions":  "Use cider vinegar and lime if sour oranges are unavailable.",
+                        "storage":  "Refrigerate covered and use within 4 days.",
+                        "safety":  "Wash onions and keep refrigerated.",
+                        "tags":  [
+                                     "Yucatan",
+                                     "onion",
+                                     "pickle"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-frijoles-de-olla",
+                        "name":  "Pot-cooked pinto beans",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Slow-simmered beans with onion and herbs, a staple side that also fills tacos.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  120,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g dried pinto beans, picked over",
+                                            "1/2 onion",
+                                            "1 garlic clove",
+                                            "1 bay leaf",
+                                            "2 litres water",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Rinse beans and soak overnight if desired",
+                                             " drain",
+                                             "Put beans, onion, garlic, bay and fresh water in a heavy pot",
+                                             " bring to a boil",
+                                             "Lower to a gentle simmer, partly covered, until creamy and tender, 1.5 to 2 hours",
+                                             " add hot water as needed",
+                                             "Salt near the end and remove bay."
+                                         ],
+                        "sides":  "Serve in bowls with broth, or mash for refried beans.",
+                        "substitutions":  "Use black beans and adjust cooking time.",
+                        "storage":  "Refrigerate within 2 hours up to 4 days; reheat until boiling hot.",
+                        "safety":  "Soak refrigerated in warm conditions; boil beans thoroughly and never slow-cook raw kidney beans at low temperature.",
+                        "tags":  [
+                                     "beans",
+                                     "staple",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-mole-poblano",
+                        "name":  "Puebla chile and chocolate sauce",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Puebla",
+                        "description":  "A layered sauce of toasted chiles, seeds, spices and chocolate served over chicken.",
+                        "prepMinutes":  45,
+                        "cookMinutes":  90,
+                        "servings":  6,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "4 dried ancho chiles",
+                                            "2 pasilla chiles",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "30 g sesame seeds",
+                                            "30 g almonds",
+                                            "1 small tortilla",
+                                            "1 slice bread",
+                                            "1 tsp cinnamon",
+                                            "1/4 tsp cloves",
+                                            "30 g dark chocolate",
+                                            "500 ml chicken stock",
+                                            "6 cooked chicken portions"
+                                        ],
+                        "instructions":  [
+                                             "Toast chiles briefly in a dry pan",
+                                             " remove stems and seeds",
+                                             " soak in hot water 20 minutes",
+                                             "Toast sesame, almonds, tortilla, bread and spices separately until fragrant",
+                                             "Soften onion and tomatoes",
+                                             " blend with drained chiles, toasted ingredients and some stock until smooth",
+                                             "Fry puree in oil carefully",
+                                             " add stock and simmer 45 minutes, stirring",
+                                             " add chocolate to melt",
+                                             " spoon over hot chicken."
+                                         ],
+                        "sides":  "Serve with rice and sesame seeds.",
+                        "substitutions":  "Use fewer chiles for a milder sauce.",
+                        "storage":  "Refrigerate sauce separately up to 4 days; freeze in portions.",
+                        "safety":  "Keep sauce simmering gently and reheat until steaming; check nut allergies.",
+                        "tags":  [
+                                     "Puebla",
+                                     "sauce",
+                                     "chicken"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-huevos-rancheros",
+                        "name":  "Ranch-style eggs on tortillas",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Fried eggs served over warm corn tortillas with a cooked tomato-chile salsa.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 eggs",
+                                            "4 corn tortillas",
+                                            "3 tomatoes",
+                                            "1/4 onion",
+                                            "1 serrano chile",
+                                            "1 tbsp oil",
+                                            "100 g refried beans",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Char tomatoes, onion and chile in a dry pan",
+                                             " chop or blend coarsely",
+                                             "Simmer salsa with a little oil for 8 minutes and season",
+                                             "Warm tortillas and spread with beans",
+                                             "Fry eggs until whites are set and yolks to desired doneness",
+                                             " place on tortillas and spoon over salsa."
+                                         ],
+                        "sides":  "Serve with avocado and beans.",
+                        "substitutions":  "Use mild jalapeno or omit chile.",
+                        "storage":  "Serve immediately; keep ingredients separate if preparing ahead.",
+                        "safety":  "Cook eggs to safe doneness for vulnerable diners.",
+                        "tags":  [
+                                     "breakfast",
+                                     "eggs",
+                                     "tortilla"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-pozole-rojo",
+                        "name":  "Red hominy and pork soup",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Jalisco",
+                        "description":  "A celebratory hominy soup with tender pork in a mild red chile broth.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  150,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 kg pork shoulder",
+                                            "800 g canned hominy, rinsed",
+                                            "4 guajillo chiles",
+                                            "1 onion",
+                                            "3 garlic cloves",
+                                            "2 tsp oregano",
+                                            "2 litres water",
+                                            "radish and cabbage to garnish"
+                                        ],
+                        "instructions":  [
+                                             "Simmer pork with half the onion and garlic in water until tender, about 2 hours",
+                                             " remove pork and shred",
+                                             "Soak seeded guajillo chiles in hot water",
+                                             " blend with remaining garlic and a ladle of broth, then strain",
+                                             "Add chile puree and hominy to broth",
+                                             " simmer 30 minutes",
+                                             " return pork and heat through",
+                                             "Serve with shredded cabbage, radish, lime and oregano."
+                                         ],
+                        "sides":  "Serve with tostadas and lime.",
+                        "substitutions":  "Use chicken and reduce simmering time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat soup until boiling.",
+                        "safety":  "Cook pork until tender and fully hot; keep garnishes separate and chilled.",
+                        "tags":  [
+                                     "Jalisco",
+                                     "hominy",
+                                     "soup"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-frijoles-refritos",
+                        "name":  "Refried pinto beans",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Cooked pinto beans mashed and fried with onion until creamy.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g cooked pinto beans with a little broth",
+                                            "1/2 onion, diced",
+                                            "2 tbsp oil or lard",
+                                            "1/2 tsp cumin",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil over medium heat until soft.",
+                                             "Add beans and cumin; mash with a potato masher, adding broth until creamy.",
+                                             "Stir and fry gently 10 to 15 minutes until thick; season and serve."
+                                         ],
+                        "sides":  "Serve with tortillas, eggs or rice.",
+                        "substitutions":  "Use black beans or vegetable oil.",
+                        "storage":  "Refrigerate within 2 hours up to 4 days; reheat until steaming.",
+                        "safety":  "Reheat thoroughly and stir to heat evenly.",
+                        "tags":  [
+                                     "beans",
+                                     "side dish",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-calabacitas",
+                        "name":  "Squash with corn and tomato",
+                        "englishName":  "Calabacitas",
+                        "country":  "Mexico",
+                        "region":  "Central Mexico",
+                        "description":  "Tender courgette, corn, tomato and onion cooked together as a simple seasonal side.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 courgettes, diced",
+                                            "200 g corn kernels",
+                                            "2 tomatoes, diced",
+                                            "1/2 onion, diced",
+                                            "1 tbsp oil",
+                                            "100 g queso fresco",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil until soft.",
+                                             "Add tomatoes and simmer 5 minutes; stir in courgette and cover until nearly tender.",
+                                             "Add corn and cook 4 minutes more; season and finish with crumbled cheese."
+                                         ],
+                        "sides":  "Serve with beans, rice or warm tortillas.",
+                        "substitutions":  "Use pumpkin or green beans in season.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days.",
+                        "safety":  "Keep cheese chilled until serving.",
+                        "tags":  [
+                                     "squash",
+                                     "corn",
+                                     "vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-chiles-rellenos",
+                        "name":  "Stuffed poblano peppers",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Puebla",
+                        "description":  "Roasted poblano peppers filled with cheese, dipped in egg batter and fried.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 poblano peppers",
+                                            "200 g melting cheese",
+                                            "3 eggs, separated",
+                                            "60 g flour",
+                                            "400 g chopped tomatoes",
+                                            "1/2 onion",
+                                            "1 garlic clove",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Char peppers under a grill, turning until blistered",
+                                             " cover 10 minutes, peel carefully and slit to remove seeds",
+                                             "Fill each pepper with cheese and secure opening with a toothpick",
+                                             "Dip in flour, then coat in whipped egg whites folded with yolks",
+                                             " shallow-fry, turning, until golden and egg is cooked",
+                                             "Simmer tomato, onion and garlic into a quick sauce and serve beneath peppers."
+                                         ],
+                        "sides":  "Serve with rice and beans.",
+                        "substitutions":  "Use roasted peppers without batter for a lighter version.",
+                        "storage":  "Refrigerate leftovers within 2 hours and use within 2 days.",
+                        "safety":  "Cook egg coating fully and remove toothpicks before eating.",
+                        "tags":  [
+                                     "Puebla",
+                                     "poblano",
+                                     "stuffed"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-tamales-dulces",
+                        "name":  "Sweet corn tamales",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Nationwide",
+                        "description":  "Soft masa parcels sweetened with cinnamon and raisins, steamed in corn husks.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  60,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "16 corn husks, soaked",
+                                            "400 g masa harina",
+                                            "250 ml warm milk",
+                                            "100 g butter",
+                                            "100 g sugar",
+                                            "1 tsp baking powder",
+                                            "80 g raisins",
+                                            "1 tsp cinnamon"
+                                        ],
+                        "instructions":  [
+                                             "Beat butter and sugar until fluffy",
+                                             "Mix masa harina, baking powder and cinnamon",
+                                             " beat into butter with warm milk until soft",
+                                             "Fold in raisins",
+                                             " spread masa on soaked husks, fold and tie",
+                                             "Steam upright over water for 50 to 60 minutes until masa releases from husk",
+                                             " rest briefly."
+                                         ],
+                        "sides":  "Serve warm with hot chocolate.",
+                        "substitutions":  "Use coconut milk and dairy-free spread.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat by steaming.",
+                        "safety":  "Avoid burns from hot steamer; cook masa fully.",
+                        "tags":  [
+                                     "dessert",
+                                     "tamales",
+                                     "corn"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-gorditas",
+                        "name":  "Thick masa cakes with beans",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Central Mexico",
+                        "description":  "Pan-cooked masa cakes split and filled with beans, cheese or stew.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g masa harina",
+                                            "350 ml warm water",
+                                            "1/2 tsp salt",
+                                            "1 tbsp oil",
+                                            "250 g refried beans",
+                                            "100 g queso fresco",
+                                            "lettuce and salsa"
+                                        ],
+                        "instructions":  [
+                                             "Mix masa harina, salt and water into a soft dough",
+                                             " rest covered 10 minutes",
+                                             "Divide into 8 balls, press into thick rounds",
+                                             "Cook on a hot dry griddle 3 to 4 minutes each side until puffed and cooked",
+                                             "Cool slightly, split along edge and fill with beans, cheese and toppings."
+                                         ],
+                        "sides":  "Serve with salsa and shredded lettuce.",
+                        "substitutions":  "Fill with cooked potato, chicken or mushrooms.",
+                        "storage":  "Best fresh; keep cooked cakes covered and use same day.",
+                        "safety":  "Keep perishable fillings chilled until serving.",
+                        "tags":  [
+                                     "Central Mexico",
+                                     "masa",
+                                     "street food"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-tostadas-tuna",
+                        "name":  "Tostadas with tuna",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Coastal regions",
+                        "description":  "Crisp corn tostadas topped with lime-seasoned tuna, avocado and cabbage.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 cans tuna, drained",
+                                            "2 tbsp lime juice",
+                                            "1/4 onion, finely diced",
+                                            "1 tomato, diced",
+                                            "8 tostadas",
+                                            "1 avocado",
+                                            "shredded cabbage"
+                                        ],
+                        "instructions":  [
+                                             "Mix tuna with lime, onion, tomato and a pinch of salt.",
+                                             "Arrange cabbage over tostadas and spoon tuna mixture on top.",
+                                             "Add avocado slices and serve immediately."
+                                         ],
+                        "sides":  "Serve with salsa and lime.",
+                        "substitutions":  "Use cooked shredded chicken or mashed beans.",
+                        "storage":  "Keep tuna mixture covered and refrigerated; use within 1 day.",
+                        "safety":  "Use shelf-stable tuna and refrigerate mixture promptly after opening.",
+                        "tags":  [
+                                     "tuna",
+                                     "tostada",
+                                     "coastal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-cochinita-pibil",
+                        "name":  "Yucatan achiote pork",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Yucatan",
+                        "description":  "Slow-roasted pork marinated with achiote, citrus and warm spices.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  180,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1.2 kg pork shoulder, cubed",
+                                            "60 g achiote paste",
+                                            "120 ml orange juice",
+                                            "60 ml lime juice",
+                                            "1 tsp cumin",
+                                            "1 tsp oregano",
+                                            "2 garlic cloves",
+                                            "banana leaves optional"
+                                        ],
+                        "instructions":  [
+                                             "Blend achiote, citrus, cumin, oregano, garlic and salt",
+                                             " coat pork and marinate refrigerated at least 4 hours",
+                                             "Line covered casserole with banana leaf if available",
+                                             " add pork and marinade",
+                                             " cover tightly",
+                                             "Bake at 160 C for about 3 hours until pork pulls apart",
+                                             " shred in cooking juices."
+                                         ],
+                        "sides":  "Serve in warm tortillas with pickled red onion.",
+                        "substitutions":  "Use foil instead of banana leaf.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Marinate pork in the refrigerator and cook until tender and hot throughout.",
+                        "tags":  [
+                                     "Yucatan",
+                                     "pork",
+                                     "slow cooked"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "mex-sopa-de-lima",
+                        "name":  "Yucatan lime soup",
+                        "englishName":  null,
+                        "country":  "Mexico",
+                        "region":  "Yucatan",
+                        "description":  "Chicken broth with tomato, aromatic herbs and bright lime, served with crisp tortilla strips.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g chicken breast",
+                                            "1.2 litres stock",
+                                            "2 tomatoes, diced",
+                                            "1/2 onion",
+                                            "1 garlic clove",
+                                            "2 limes",
+                                            "1 tsp oregano",
+                                            "4 corn tortillas",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Simmer chicken in stock until cooked",
+                                             " remove and shred",
+                                             "Fry tortilla strips in a little oil until crisp",
+                                             " drain",
+                                             "Cook onion, tomato and garlic in pot until soft",
+                                             " add broth and oregano, simmer 15 minutes",
+                                             "Return chicken",
+                                             " add lime juice just before serving",
+                                             " garnish with tortilla strips."
+                                         ],
+                        "sides":  "Serve with extra lime and cilantro.",
+                        "substitutions":  "Use cooked turkey or vegetable broth with beans.",
+                        "storage":  "Refrigerate soup up to 2 days; store tortilla strips separately.",
+                        "safety":  "Cook chicken fully; refrigerate broth promptly.",
+                        "tags":  [
+                                     "Yucatan",
+                                     "lime",
+                                     "chicken"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:mexico",
+                            "title":  "Mexican recipes",
+                            "recipeIds":  [
+                                              "mex-guacamole",
+                                              "mex-pambazos",
+                                              "mex-nopales-salad",
+                                              "mex-quesadillas",
+                                              "mex-corn-tamales",
+                                              "mex-enchiladas-verdes",
+                                              "mex-chilaquiles",
+                                              "mex-tacos-al-pastor",
+                                              "mex-pollo-tinga",
+                                              "mex-atole",
+                                              "mex-carne-asada",
+                                              "mex-elote",
+                                              "mex-pico-de-gallo",
+                                              "mex-capirotada",
+                                              "mex-arroz-rojo",
+                                              "mex-molletes",
+                                              "mex-tlayudas",
+                                              "mex-yucatan-pickled-onions",
+                                              "mex-frijoles-de-olla",
+                                              "mex-mole-poblano",
+                                              "mex-huevos-rancheros",
+                                              "mex-pozole-rojo",
+                                              "mex-frijoles-refritos",
+                                              "mex-calabacitas",
+                                              "mex-chiles-rellenos",
+                                              "mex-tamales-dulces",
+                                              "mex-gorditas",
+                                              "mex-tostadas-tuna",
+                                              "mex-cochinita-pibil",
+                                              "mex-sopa-de-lima"
+                                          ]
+                        }
+                    ]
+}

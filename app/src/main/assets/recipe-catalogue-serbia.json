@@ -1,0 +1,1111 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "serbia-belgrade-style-cevapi",
+      "name": "Belgrade-style ćevapi",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Belgrade",
+      "description": "A Suric home-cooking adaptation of Belgrade-style ćevapi, using accessible ingredients and a practical method inspired by Belgrade.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "1 tbsp oil",
+        "4 flatbreads"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve in flatbread with chopped onion and ajvar.",
+      "substitutions": "Use lamb or a plant-based mince.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Belgrade",
+        "grill",
+        "belgrade-style",
+        "ćevapi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-leskovac-muckalica-pepper-and-meat-stew",
+      "name": "Leskovac mućkalica pepper and meat stew",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Leskovac mućkalica pepper and meat stew, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g pork",
+        "2 red peppers",
+        "2 tomatoes",
+        "1 onion",
+        "1 tsp paprika",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with bread and chopped parsley.",
+      "substitutions": "Use beans and mushrooms instead of pork.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "stew",
+        "leskovac",
+        "mućkalica"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-karaoreva-schnitzel-home-style",
+      "name": "Karađorđeva schnitzel home-style",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "description": "A Suric home-cooking adaptation of Karađorđeva schnitzel home-style, using accessible ingredients and a practical method inspired by Central Serbia.",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 pork cutlets",
+        "100 g kajmak or cream cheese",
+        "100 g flour",
+        "2 eggs",
+        "150 g breadcrumbs",
+        "300 ml oil"
+      ],
+      "instructions": [
+        "Prepare and evenly portion the ingredients. Heat a lightly oiled pan over medium heat.",
+        "Cook in batches, turning or stirring as needed until golden and thoroughly cooked.",
+        "Finish with the listed seasoning and serve promptly."
+      ],
+      "sides": "Serve with potatoes and lemon.",
+      "substitutions": "Use chicken cutlets; ensure the centre cooks through.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Central Serbia",
+        "pan",
+        "karađorđeva",
+        "schnitzel"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-prebranac-baked-beans",
+      "name": "Prebranac baked beans",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Prebranac baked beans, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g cooked white beans",
+        "3 onions",
+        "1 tsp paprika",
+        "2 tbsp oil",
+        "1 bay leaf",
+        "250 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with bread and pickled peppers.",
+      "substitutions": "Use butter beans or cannellini beans.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "bake",
+        "prebranac",
+        "baked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-vojvodina-chicken-paprikash",
+      "name": "Vojvodina chicken paprikash",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Vojvodina chicken paprikash, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "1 onion",
+        "1 red pepper",
+        "1 tbsp paprika",
+        "300 ml stock",
+        "150 g sour cream"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with homemade noodles or dumplings.",
+      "substitutions": "Use mushrooms instead of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "stew",
+        "vojvodina",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-gibanica-cheese-and-filo-pie",
+      "name": "Gibanica cheese and filo pie",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Gibanica cheese and filo pie, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "8 filo sheets",
+        "300 g cottage cheese",
+        "3 eggs",
+        "150 ml yogurt",
+        "50 ml oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt and salad.",
+      "substitutions": "Use feta-style cheese and plant yogurt.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "bake",
+        "gibanica",
+        "cheese"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-burek-with-cheese",
+      "name": "Burek with cheese",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Burek with cheese, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g filo pastry",
+        "250 g cottage cheese",
+        "100 g feta-style cheese",
+        "1 egg",
+        "100 ml yogurt",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with plain yogurt.",
+      "substitutions": "Use spinach and tofu filling for a dairy-free variation.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "bake",
+        "burek",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-burek-with-minced-meat",
+      "name": "Burek with minced meat",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Burek with minced meat, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g filo pastry",
+        "300 g minced beef",
+        "1 onion",
+        "1 tsp paprika",
+        "100 ml water",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with yogurt and tomato salad.",
+      "substitutions": "Use minced lamb or lentils.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "bake",
+        "burek",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-ajvar-roasted-pepper-spread",
+      "name": "Ajvar roasted pepper spread",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Ajvar roasted pepper spread, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 red peppers",
+        "1 aubergine",
+        "3 garlic cloves",
+        "2 tbsp oil",
+        "1 tbsp vinegar",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare the ingredients and spread them in a single layer on a lined tray.",
+        "Add the listed oil and seasonings and toss to coat; keep pieces of similar size together.",
+        "Roast until tender and lightly browned, turning once. Check any meat or fish is thoroughly cooked."
+      ],
+      "sides": "Serve with bread, cheese or grilled vegetables.",
+      "substitutions": "Use jarred roasted peppers, draining them well.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "roast",
+        "ajvar",
+        "roasted"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-urnebes-spicy-cheese-spread",
+      "name": "Urnebes spicy cheese spread",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Urnebes spicy cheese spread, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g white brined cheese",
+        "150 g roasted red pepper",
+        "1 tsp paprika",
+        "1 garlic clove",
+        "2 tbsp yogurt",
+        "1 tsp chilli"
+      ],
+      "instructions": [
+        "Wash and prepare the vegetables and herbs; cut them into even bite-sized pieces.",
+        "Whisk the listed oil, acid and seasonings together in a small bowl.",
+        "Toss gently just before serving. Keep chilled until needed."
+      ],
+      "sides": "Serve chilled with bread and raw vegetables.",
+      "substitutions": "Use a mild crumbly cheese and adjust chilli.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "salad",
+        "urnebes",
+        "spicy"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-karaore-beans-with-sausage",
+      "name": "Karađorđe beans with sausage",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "description": "A Suric home-cooking adaptation of Karađorđe beans with sausage, using accessible ingredients and a practical method inspired by Central Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g white beans",
+        "200 g smoked sausage",
+        "1 onion",
+        "1 carrot",
+        "1 tsp paprika",
+        "900 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with bread and pickles.",
+      "substitutions": "Use smoked paprika and mushrooms instead of sausage.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Central Serbia",
+        "stew",
+        "karađorđe",
+        "beans"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-sarma-cabbage-rolls",
+      "name": "Sarma cabbage rolls",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide festive",
+      "description": "A Suric home-cooking adaptation of Sarma cabbage rolls, using accessible ingredients and a practical method inspired by Nationwide festive.",
+      "prepMinutes": 40,
+      "cookMinutes": 150,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "12 sour cabbage leaves",
+        "300 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "1 tsp paprika",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with polenta or bread.",
+      "substitutions": "Fill with rice, lentils and mushrooms.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Nationwide festive",
+        "stew",
+        "sarma",
+        "cabbage"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-karaore-roast-pork-and-potatoes",
+      "name": "Karađorđe roast pork and potatoes",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "description": "A Suric home-cooking adaptation of Karađorđe roast pork and potatoes, using accessible ingredients and a practical method inspired by Central Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g pork shoulder",
+        "700 g potatoes",
+        "1 onion",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "200 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with cabbage salad.",
+      "substitutions": "Use chicken thighs and shorten cooking time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Central Serbia",
+        "bake",
+        "karađorđe",
+        "roast"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-kacamak-cornmeal-with-cheese",
+      "name": "Kačamak cornmeal with cheese",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Western Serbia",
+      "description": "A Suric home-cooking adaptation of Kačamak cornmeal with cheese, using accessible ingredients and a practical method inspired by Western Serbia.",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g cornmeal",
+        "900 ml water",
+        "120 g white cheese",
+        "100 g kajmak or sour cream",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve warm with yogurt or stewed greens.",
+      "substitutions": "Use feta-style cheese and plant yogurt.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Western Serbia",
+        "porridge",
+        "kačamak",
+        "cornmeal"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-karaore-style-roast-lamb",
+      "name": "Karađorđe-style roast lamb",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Western Serbia",
+      "description": "A Suric home-cooking adaptation of Karađorđe-style roast lamb, using accessible ingredients and a practical method inspired by Western Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "800 g lamb shoulder",
+        "700 g potatoes",
+        "3 garlic cloves",
+        "1 tsp rosemary",
+        "2 tbsp oil",
+        "150 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with fresh salad and flatbread.",
+      "substitutions": "Use pork shoulder or a large cauliflower for a vegetarian tray.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Western Serbia",
+        "bake",
+        "karađorđe-style",
+        "roast"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-vojvodina-goulash-with-paprika",
+      "name": "Vojvodina goulash with paprika",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Vojvodina goulash with paprika, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g beef chuck",
+        "2 onions",
+        "1 red pepper",
+        "1 tbsp paprika",
+        "400 ml stock",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with bread, noodles or polenta.",
+      "substitutions": "Use mushrooms and beans instead of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "stew",
+        "vojvodina",
+        "goulash"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-leskovac-grilled-stuffed-peppers",
+      "name": "Leskovac grilled stuffed peppers",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Leskovac grilled stuffed peppers, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 long peppers",
+        "250 g minced pork",
+        "100 g white cheese",
+        "1 egg",
+        "1 garlic clove",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve with ajvar and salad.",
+      "substitutions": "Use mushrooms and rice instead of pork.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "grill",
+        "leskovac",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-vojvodina-poppy-seed-strudel",
+      "name": "Vojvodina poppy seed strudel",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Vojvodina poppy seed strudel, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 45,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g flour",
+        "7 g dry yeast",
+        "180 ml warm milk",
+        "120 g ground poppy seed",
+        "80 g sugar",
+        "1 egg"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Cool before slicing and serve with tea.",
+      "substitutions": "Use oat milk and brush with oil instead of egg.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "bake",
+        "vojvodina",
+        "poppy"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-vanilice-walnut-jam-biscuits",
+      "name": "Vanilice walnut jam biscuits",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Vanilice walnut jam biscuits, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 30,
+      "cookMinutes": 14,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g flour",
+        "120 g butter",
+        "1 egg yolk",
+        "60 g ground walnuts",
+        "80 g plum jam",
+        "50 g icing sugar"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Sandwich with plum jam and dust with icing sugar.",
+      "substitutions": "Use ground almonds instead of walnuts.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "bake",
+        "vanilice",
+        "walnut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-knedle-plum-dumplings",
+      "name": "Knedle plum dumplings",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Knedle plum dumplings, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g potatoes",
+        "150 g flour",
+        "1 egg",
+        "8 plums",
+        "50 g breadcrumbs",
+        "2 tbsp sugar"
+      ],
+      "instructions": [
+        "Prepare the ingredients and bring a large pot of water to a boil.",
+        "Add the ingredients in the order listed, then simmer until tender; follow packet directions for dried or packaged ingredients.",
+        "Drain if needed, season to taste and serve or chill promptly."
+      ],
+      "sides": "Roll in toasted crumbs and serve warm.",
+      "substitutions": "Use apricots or small nectarines.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "boil",
+        "knedle",
+        "plum"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-svadbarski-kupus-wedding-cabbage-stew",
+      "name": "Svadbarski kupus wedding cabbage stew",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "description": "A Suric home-cooking adaptation of Svadbarski kupus wedding cabbage stew, using accessible ingredients and a practical method inspired by Central Serbia.",
+      "prepMinutes": 25,
+      "cookMinutes": 150,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g cabbage",
+        "400 g pork",
+        "1 onion",
+        "1 tsp paprika",
+        "2 bay leaves",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with bread and pickled peppers.",
+      "substitutions": "Use smoked tofu and beans instead of pork.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Serbia",
+        "Central Serbia",
+        "stew",
+        "svadbarski",
+        "kupus"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-sour-cherry-strudla",
+      "name": "Sour cherry štrudla",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Sour cherry štrudla, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 filo sheets",
+        "300 g sour cherries",
+        "60 g sugar",
+        "50 g breadcrumbs",
+        "40 g butter",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt or custard.",
+      "substitutions": "Use plums or apples instead of cherries.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "bake",
+        "sour",
+        "cherry"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-kajmak-style-fresh-cream-spread",
+      "name": "Kajmak-style fresh cream spread",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Western Serbia",
+      "description": "A Suric home-cooking adaptation of Kajmak-style fresh cream spread, using accessible ingredients and a practical method inspired by Western Serbia.",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g thick clotted cream",
+        "1 tsp salt",
+        "1 tbsp yogurt",
+        "1 tbsp chopped chives"
+      ],
+      "instructions": [
+        "Wash and prepare the vegetables and herbs; cut them into even bite-sized pieces.",
+        "Whisk the listed oil, acid and seasonings together in a small bowl.",
+        "Toss gently just before serving. Keep chilled until needed."
+      ],
+      "sides": "Serve with fresh bread, grilled vegetables or beans.",
+      "substitutions": "Use thick crème fraîche with a little feta.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Western Serbia",
+        "salad",
+        "kajmak-style",
+        "fresh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-paprika-and-tomato-relish",
+      "name": "Paprika and tomato relish",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Southern Serbia",
+      "description": "A Suric home-cooking adaptation of Paprika and tomato relish, using accessible ingredients and a practical method inspired by Southern Serbia.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 red peppers",
+        "3 tomatoes",
+        "1 onion",
+        "2 garlic cloves",
+        "2 tbsp oil",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve warm or cool with bread and cheese.",
+      "substitutions": "Use jarred roasted peppers for a quicker dish.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Southern Serbia",
+        "stew",
+        "paprika",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-riblja-corba-danube-fish-soup",
+      "name": "Riblja čorba Danube fish soup",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Vojvodina",
+      "description": "A Suric home-cooking adaptation of Riblja čorba Danube fish soup, using accessible ingredients and a practical method inspired by Vojvodina.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g firm freshwater fish",
+        "1 onion",
+        "2 tomatoes",
+        "1 tbsp paprika",
+        "1 litre fish stock",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with bread and lemon.",
+      "substitutions": "Use firm white fish and vegetable stock.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Serbia",
+        "Vojvodina",
+        "soup",
+        "riblja",
+        "čorba"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-roasted-peppers-with-garlic",
+      "name": "Roasted peppers with garlic",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Roasted peppers with garlic, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 red peppers",
+        "3 garlic cloves",
+        "2 tbsp vinegar",
+        "2 tbsp oil",
+        "1 tbsp parsley",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare the ingredients and spread them in a single layer on a lined tray.",
+        "Add the listed oil and seasonings and toss to coat; keep pieces of similar size together.",
+        "Roast until tender and lightly browned, turning once. Check any meat or fish is thoroughly cooked."
+      ],
+      "sides": "Serve chilled with bread or grilled food.",
+      "substitutions": "Use drained roasted peppers from a jar.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "roast",
+        "roasted",
+        "peppers"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-pogaca-round-celebration-bread",
+      "name": "Pogača round celebration bread",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Pogača round celebration bread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "450 g flour",
+        "7 g dry yeast",
+        "280 ml warm water",
+        "2 tbsp oil",
+        "1 tsp sugar",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve warm with ajvar and cheese.",
+      "substitutions": "Use bread flour and adjust water gradually.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "bake",
+        "pogača",
+        "round"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-proja-cornmeal-bread",
+      "name": "Proja cornmeal bread",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Proja cornmeal bread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g cornmeal",
+        "100 g flour",
+        "2 eggs",
+        "250 ml yogurt",
+        "80 ml oil",
+        "1 tsp baking powder"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with yogurt, cheese or bean stew.",
+      "substitutions": "Use plant yogurt and an egg replacer.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "bake",
+        "proja",
+        "cornmeal"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-slatko-plum-preserve",
+      "name": "Slatko plum preserve",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide seasonal",
+      "description": "A Suric home-cooking adaptation of Slatko plum preserve, using accessible ingredients and a practical method inspired by Nationwide seasonal.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g plums",
+        "300 g sugar",
+        "150 ml water",
+        "1 tbsp lemon juice",
+        "1 strip lemon peel"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Cool fully and serve by the spoonful with coffee or yogurt.",
+      "substitutions": "Use less sugar and refrigerate; do not store as shelf-stable preserve unless properly processed.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Serbia",
+        "Nationwide seasonal",
+        "stew",
+        "slatko",
+        "plum"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "serbia-serbian-apple-and-walnut-cake",
+      "name": "Serbian apple and walnut cake",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Serbian apple and walnut cake, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g flour",
+        "2 apples",
+        "80 g walnuts",
+        "2 eggs",
+        "120 g sugar",
+        "100 ml oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve cooled with coffee or tea.",
+      "substitutions": "Use hazelnuts instead of walnuts.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Serbia",
+        "Nationwide",
+        "bake",
+        "serbian",
+        "apple"
+      ],
+      "revision": 1
+    }
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "croatia-zagreb-style-cheese-štrukli",
+      "name": "Zagreb-style cheese štrukli",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Zagreb",
+      "description": "A Suric home-cooking adaptation of Zagreb-style cheese štrukli, using accessible ingredients and a practical method inspired by Zagreb.",
+      "prepMinutes": 45,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g flour",
+        "1 egg",
+        "150 ml water",
+        "250 g cottage cheese",
+        "100 g sour cream",
+        "30 g butter"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 250 g flour, 1 egg and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 30 g butter.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve warm with a green salad.",
+      "substitutions": "Use plain quark or well-drained ricotta.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Zagreb",
+        "bake",
+        "zagreb-style",
+        "cheese"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-zagorje-baked-štrukli",
+      "name": "Zagorje baked štrukli",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Hrvatsko Zagorje",
+      "description": "A Suric home-cooking adaptation of Zagorje baked štrukli, using accessible ingredients and a practical method inspired by Hrvatsko Zagorje.",
+      "prepMinutes": 45,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g flour",
+        "1 egg",
+        "150 ml water",
+        "250 g fresh cheese",
+        "150 ml sour cream",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 250 g flour, 1 egg and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tbsp oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve as a main with salad.",
+      "substitutions": "Use cottage cheese blended until smooth.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Hrvatsko Zagorje",
+        "bake",
+        "zagorje",
+        "baked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-fuži-with-tomato-and-basil",
+      "name": "Istrian fuži with tomato and basil",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian fuži with tomato and basil, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g fuži or pasta",
+        "400 g tomatoes",
+        "2 garlic cloves",
+        "1 onion",
+        "2 tbsp olive oil",
+        "10 basil leaves"
+      ],
+      "instructions": [
+        "Bring a large pot of water to a boil and prepare 300 g fuži or pasta, 400 g tomatoes.",
+        "Cook the pasta until just tender; meanwhile cook the sauce ingredients in a pan.",
+        "Drain, reserving a little cooking water. Toss the pasta with the sauce and 10 basil leaves; serve promptly."
+      ],
+      "sides": "Top with grated hard cheese.",
+      "substitutions": "Use any short pasta and parsley instead of basil.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "pasta",
+        "istrian",
+        "fuži"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-fuži-with-forest-mushrooms",
+      "name": "Istrian fuži with forest mushrooms",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian fuži with forest mushrooms, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g fuži",
+        "250 g mixed mushrooms",
+        "1 shallot",
+        "2 tbsp olive oil",
+        "100 ml cream",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Bring a large pot of water to a boil and prepare 300 g fuži, 250 g mixed mushrooms.",
+        "Cook the pasta until just tender; meanwhile cook the sauce ingredients in a pan.",
+        "Drain, reserving a little cooking water. Toss the pasta with the sauce and 1 tbsp parsley; serve promptly."
+      ],
+      "sides": "Serve with seasonal salad.",
+      "substitutions": "Use oat cream for a dairy-free sauce.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "pasta",
+        "istrian",
+        "fuži"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-maneštra-bean-soup",
+      "name": "Istrian maneštra bean soup",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian maneštra bean soup, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g dried beans, soaked",
+        "2 potatoes",
+        "1 carrot",
+        "1 onion",
+        "1 celery stalk",
+        "1 litre vegetable stock"
+      ],
+      "instructions": [
+        "Prepare 200 g dried beans, soaked, 2 potatoes. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 litre vegetable stock, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with crusty bread.",
+      "substitutions": "Use canned beans, reducing simmer time to 30 minutes.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "soup",
+        "istrian",
+        "maneštra"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-fritaja-with-asparagus",
+      "name": "Istrian fritaja with asparagus",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian fritaja with asparagus, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 eggs",
+        "200 g asparagus",
+        "2 spring onions",
+        "1 tbsp olive oil",
+        "30 g grated cheese"
+      ],
+      "instructions": [
+        "Mix or prepare 6 eggs, 200 g asparagus; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 30 g grated cheese and serve while warm."
+      ],
+      "sides": "Serve with bread and tomato salad.",
+      "substitutions": "Use wild asparagus only when safely identified; cultivated asparagus works well.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "pan",
+        "istrian",
+        "fritaja"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-pašticada-inspired-beef",
+      "name": "Dalmatian pašticada-inspired beef",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian pašticada-inspired beef, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 25,
+      "cookMinutes": 160,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g beef chuck",
+        "1 onion",
+        "1 carrot",
+        "150 ml red wine",
+        "2 tbsp tomato paste",
+        "2 prunes",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare 700 g beef chuck, 1 onion. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 300 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with gnocchi or soft polenta.",
+      "substitutions": "Use mushrooms and extra prunes for a meat-free braise.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "stew",
+        "dalmatian",
+        "pašticada-inspired"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-soparnik-style-chard-pie",
+      "name": "Dalmatian soparnik-style chard pie",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian soparnik-style chard pie, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 35,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g flour",
+        "150 ml water",
+        "350 g Swiss chard",
+        "1 onion",
+        "3 tbsp olive oil",
+        "2 garlic cloves"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g flour, 150 ml water and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 2 garlic cloves.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve warm or at room temperature.",
+      "substitutions": "Use spinach and add a little parsley.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "bake",
+        "dalmatian",
+        "soparnik-style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-blitva-and-potatoes",
+      "name": "Dalmatian blitva and potatoes",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian blitva and potatoes, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g Swiss chard",
+        "500 g potatoes",
+        "3 garlic cloves",
+        "3 tbsp olive oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Prepare 500 g Swiss chard, 500 g potatoes and place in a saucepan with enough water to cover.",
+        "Bring to a boil, then simmer until tender; drain carefully if needed.",
+        "Toss with 1 tsp salt and the listed seasoning, then cool or serve as directed."
+      ],
+      "sides": "Serve beside grilled fish or beans.",
+      "substitutions": "Use kale or spinach, adjusting the cooking time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "boil",
+        "dalmatian",
+        "blitva"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-style-black-risotto",
+      "name": "Dalmatian-style black risotto",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian-style black risotto, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g risotto rice",
+        "250 g cleaned cuttlefish",
+        "1 onion",
+        "100 ml white wine",
+        "800 ml fish stock",
+        "2 tbsp olive oil"
+      ],
+      "instructions": [
+        "Prepare 300 g risotto rice, 250 g cleaned cuttlefish; rinse rice if the recipe includes it.",
+        "Cook the aromatics and main ingredients in a saucepan, then stir in the rice and liquid.",
+        "Cover and cook over low heat until the rice is tender and the liquid is absorbed; rest covered for 5 minutes."
+      ],
+      "sides": "Serve with lemon and parsley.",
+      "substitutions": "Use squid in place of cuttlefish; use ink from a trusted food supplier.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "rice",
+        "dalmatian-style",
+        "black"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-tomato-and-rice-soup",
+      "name": "Dalmatian tomato and rice soup",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian tomato and rice soup, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 litre vegetable stock",
+        "4 ripe tomatoes",
+        "80 g rice",
+        "1 onion",
+        "2 tbsp olive oil",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Prepare 1 litre vegetable stock, 4 ripe tomatoes. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1 tbsp parsley, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with bread and a little grated cheese.",
+      "substitutions": "Use canned chopped tomatoes when fresh tomatoes are out of season.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "soup",
+        "dalmatian",
+        "tomato"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-peka-style-lamb-and-potatoes",
+      "name": "Peka-style lamb and potatoes",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatian hinterland",
+      "description": "A Suric home-cooking adaptation of Peka-style lamb and potatoes, using accessible ingredients and a practical method inspired by Dalmatian hinterland.",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g lamb shoulder",
+        "700 g potatoes",
+        "1 onion",
+        "2 carrots",
+        "3 tbsp olive oil",
+        "1 tsp rosemary"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 700 g lamb shoulder, 700 g potatoes and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp rosemary.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with cabbage salad.",
+      "substitutions": "Use chicken thighs and reduce roasting time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatian hinterland",
+        "bake",
+        "peka-style",
+        "lamb"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-peka-style-octopus-and-potatoes",
+      "name": "Peka-style octopus and potatoes",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Peka-style octopus and potatoes, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g cleaned octopus",
+        "600 g potatoes",
+        "1 onion",
+        "100 ml white wine",
+        "3 tbsp olive oil",
+        "1 tsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 600 g cleaned octopus, 600 g potatoes and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp parsley.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with lemon and seasonal greens.",
+      "substitutions": "Use firm white fish, adding it near the end of cooking.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "bake",
+        "peka-style",
+        "octopus"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-slavonian-kulen-style-sausage-stew",
+      "name": "Slavonian kulen-style sausage stew",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Slavonia",
+      "description": "A Suric home-cooking adaptation of Slavonian kulen-style sausage stew, using accessible ingredients and a practical method inspired by Slavonia.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g smoked paprika sausage",
+        "400 g potatoes",
+        "1 onion",
+        "1 red pepper",
+        "1 tsp sweet paprika",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare 300 g smoked paprika sausage, 400 g potatoes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 700 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with bread or noodles.",
+      "substitutions": "Use smoked paprika and white beans instead of sausage.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Slavonia",
+        "stew",
+        "slavonian",
+        "kulen-style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-slavonian-fish-paprika-stew",
+      "name": "Slavonian fish paprika stew",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Slavonia",
+      "description": "A Suric home-cooking adaptation of Slavonian fish paprika stew, using accessible ingredients and a practical method inspired by Slavonia.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g firm freshwater fish",
+        "1 onion",
+        "1 tbsp sweet paprika",
+        "1 red pepper",
+        "700 ml fish stock",
+        "1 tomato"
+      ],
+      "instructions": [
+        "Prepare 500 g firm freshwater fish, 1 onion. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 1 tomato; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with bread or wide noodles.",
+      "substitutions": "Use vegetable stock and firm tofu for a vegetarian version.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Slavonia",
+        "stew",
+        "slavonian",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-zagreb-breaded-veal-cutlets",
+      "name": "Zagreb breaded veal cutlets",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Zagreb",
+      "description": "A Suric home-cooking adaptation of Zagreb breaded veal cutlets, using accessible ingredients and a practical method inspired by Zagreb.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 veal cutlets",
+        "80 g flour",
+        "2 eggs",
+        "120 g breadcrumbs",
+        "100 g ham",
+        "100 g cheese"
+      ],
+      "instructions": [
+        "Mix or prepare 4 veal cutlets, 80 g flour; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 100 g cheese and serve while warm."
+      ],
+      "sides": "Serve with potatoes and salad.",
+      "substitutions": "Use chicken cutlets and check the centre is fully cooked.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Zagreb",
+        "pan",
+        "zagreb",
+        "breaded"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-zagreb-style-turkey-with-mlinci",
+      "name": "Zagreb-style turkey with mlinci",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Northern Croatia",
+      "description": "A Suric home-cooking adaptation of Zagreb-style turkey with mlinci, using accessible ingredients and a practical method inspired by Northern Croatia.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g turkey breast",
+        "250 g mlinci",
+        "300 ml stock",
+        "1 onion",
+        "1 tbsp oil",
+        "1 tsp marjoram"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 500 g turkey breast, 250 g mlinci and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp marjoram.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with roasted vegetables.",
+      "substitutions": "Use wide egg noodles if mlinci are unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Croatia",
+        "Northern Croatia",
+        "bake",
+        "zagreb-style",
+        "turkey"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-kvarner-shrimp-and-tomato-pasta",
+      "name": "Kvarner shrimp and tomato pasta",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Kvarner",
+      "description": "A Suric home-cooking adaptation of Kvarner shrimp and tomato pasta, using accessible ingredients and a practical method inspired by Kvarner.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g pasta",
+        "250 g peeled shrimp",
+        "300 g tomatoes",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Bring a large pot of water to a boil and prepare 300 g pasta, 250 g peeled shrimp.",
+        "Cook the pasta until just tender; meanwhile cook the sauce ingredients in a pan.",
+        "Drain, reserving a little cooking water. Toss the pasta with the sauce and 1 tbsp parsley; serve promptly."
+      ],
+      "sides": "Serve with lemon and salad.",
+      "substitutions": "Use cooked white beans and vegetable stock instead of shrimp.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Kvarner",
+        "pasta",
+        "kvarner",
+        "shrimp"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-pag-style-sheep-cheese-polenta",
+      "name": "Pag-style sheep cheese polenta",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatian islands",
+      "description": "A Suric home-cooking adaptation of Pag-style sheep cheese polenta, using accessible ingredients and a practical method inspired by Dalmatian islands.",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "180 g polenta",
+        "750 ml water",
+        "100 g sheep cheese",
+        "1 tbsp butter",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Rinse or prepare 180 g polenta, 750 ml water and add to a heavy saucepan with the listed liquid.",
+        "Bring to a gentle boil, then lower the heat and stir regularly to prevent sticking.",
+        "Cook until soft and creamy; finish with 1 tsp black pepper and serve warm."
+      ],
+      "sides": "Serve with roasted peppers or mushrooms.",
+      "substitutions": "Use a firm aged cow milk cheese.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Dalmatian islands",
+        "porridge",
+        "pag-style",
+        "sheep"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dubrovnik-rozata",
+      "name": "Dubrovnik rozata",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dubrovnik",
+      "description": "A Suric home-cooking adaptation of Dubrovnik rozata, using accessible ingredients and a practical method inspired by Dubrovnik.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 ml milk",
+        "4 eggs",
+        "100 g sugar",
+        "1 tsp vanilla",
+        "2 tbsp water",
+        "1 tbsp lemon zest"
+      ],
+      "instructions": [
+        "Heat the oven to 180 C when baking, or prepare a heavy pan if cooking on the hob. Measure 500 ml milk, 4 eggs.",
+        "Mix the wet ingredients, then fold in the dry ingredients until just combined; shape or portion as needed.",
+        "Cook until set and golden; cool briefly and finish with 1 tbsp lemon zest."
+      ],
+      "sides": "Serve chilled with fruit.",
+      "substitutions": "Use lactose-free milk; texture may be slightly different.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Dubrovnik",
+        "sweet",
+        "dubrovnik",
+        "rozata"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-dalmatian-fritule",
+      "name": "Dalmatian fritule",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "description": "A Suric home-cooking adaptation of Dalmatian fritule, using accessible ingredients and a practical method inspired by Dalmatia.",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g flour",
+        "1 egg",
+        "150 ml yogurt",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "40 g raisins"
+      ],
+      "instructions": [
+        "Mix or prepare 250 g flour, 1 egg; shape or portion evenly where needed.",
+        "Heat a lightly oiled pan over medium heat and cook in batches, turning until golden and cooked through.",
+        "Finish with 40 g raisins and serve while warm."
+      ],
+      "sides": "Dust with icing sugar and serve warm.",
+      "substitutions": "Use dried cranberries instead of raisins.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Dalmatia",
+        "pan",
+        "dalmatian",
+        "fritule"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-croatian-walnut-povitica-style-roll",
+      "name": "Croatian walnut povitica-style roll",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Northern Croatia",
+      "description": "A Suric home-cooking adaptation of Croatian walnut povitica-style roll, using accessible ingredients and a practical method inspired by Northern Croatia.",
+      "prepMinutes": 40,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g flour",
+        "1 egg",
+        "150 ml milk",
+        "100 g ground walnuts",
+        "60 g sugar",
+        "30 g butter"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g flour, 1 egg and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 30 g butter.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve sliced with coffee or tea.",
+      "substitutions": "Use ground hazelnuts in place of walnuts.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Croatia",
+        "Northern Croatia",
+        "bake",
+        "croatian",
+        "walnut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-minestrone-with-corn",
+      "name": "Istrian minestrone with corn",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian minestrone with corn, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g dried beans, soaked",
+        "2 potatoes",
+        "1 carrot",
+        "1 onion",
+        "100 g sweetcorn",
+        "1.2 litres stock"
+      ],
+      "instructions": [
+        "Prepare 150 g dried beans, soaked, 2 potatoes. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1.2 litres stock, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with bread and olive oil.",
+      "substitutions": "Use canned beans and reduce simmer time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "soup",
+        "istrian",
+        "minestrone"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-croatian-stuffed-peppers",
+      "name": "Croatian stuffed peppers",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Continental Croatia",
+      "description": "A Suric home-cooking adaptation of Croatian stuffed peppers, using accessible ingredients and a practical method inspired by Continental Croatia.",
+      "prepMinutes": 25,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 bell peppers",
+        "250 g minced beef",
+        "100 g rice",
+        "1 onion",
+        "400 g tomatoes",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare 4 bell peppers, 250 g minced beef. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 500 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with mashed potatoes.",
+      "substitutions": "Use cooked lentils and mushrooms instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Croatia",
+        "Continental Croatia",
+        "stew",
+        "croatian",
+        "stuffed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-cabbage-rolls-with-rice",
+      "name": "Cabbage rolls with rice",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Continental Croatia",
+      "description": "A Suric home-cooking adaptation of Cabbage rolls with rice, using accessible ingredients and a practical method inspired by Continental Croatia.",
+      "prepMinutes": 35,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "8 cabbage leaves",
+        "250 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "400 g tomatoes",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare 8 cabbage leaves, 250 g minced pork. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 500 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with crusty bread.",
+      "substitutions": "Use cooked rice and lentils for a vegetarian filling.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Croatia",
+        "Continental Croatia",
+        "stew",
+        "cabbage",
+        "rolls"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-croatian-bean-and-barley-stew",
+      "name": "Croatian bean and barley stew",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Slavonia",
+      "description": "A Suric home-cooking adaptation of Croatian bean and barley stew, using accessible ingredients and a practical method inspired by Slavonia.",
+      "prepMinutes": 20,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g pearl barley",
+        "200 g white beans",
+        "1 carrot",
+        "1 onion",
+        "1 celery stalk",
+        "1.2 litres stock"
+      ],
+      "instructions": [
+        "Prepare 150 g pearl barley, 200 g white beans. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 1.2 litres stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with pickled vegetables.",
+      "substitutions": "Use canned beans, adding them for the final 20 minutes.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Slavonia",
+        "stew",
+        "croatian",
+        "bean"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-coastal-grilled-sardines-with-chard",
+      "name": "Coastal grilled sardines with chard",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatian coast",
+      "description": "A Suric home-cooking adaptation of Coastal grilled sardines with chard, using accessible ingredients and a practical method inspired by Dalmatian coast.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g cleaned sardines",
+        "500 g Swiss chard",
+        "400 g potatoes",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "2 garlic cloves"
+      ],
+      "instructions": [
+        "Combine 600 g cleaned sardines, 500 g Swiss chard with the listed seasoning and shape or portion evenly.",
+        "Grill or cook in a hot ridged pan, turning as needed until browned and cooked through.",
+        "Rest briefly, then serve with 2 garlic cloves and the suggested sides."
+      ],
+      "sides": "Serve with lemon and boiled potatoes.",
+      "substitutions": "Use whole cleaned mackerel portions.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Dalmatian coast",
+        "grill",
+        "coastal",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-baked-adriatic-hake-with-potatoes",
+      "name": "Baked Adriatic hake with potatoes",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Dalmatian coast",
+      "description": "A Suric home-cooking adaptation of Baked Adriatic hake with potatoes, using accessible ingredients and a practical method inspired by Dalmatian coast.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g hake fillets",
+        "500 g potatoes",
+        "1 onion",
+        "2 tomatoes",
+        "2 tbsp olive oil",
+        "100 ml water"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 600 g hake fillets, 500 g potatoes and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 100 ml water.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with parsley and salad.",
+      "substitutions": "Use cod or pollock fillets.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "Croatia",
+        "Dalmatian coast",
+        "bake",
+        "baked",
+        "adriatic"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-istrian-olive-oil-and-rosemary-focaccia",
+      "name": "Istrian olive oil and rosemary focaccia",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Istria",
+      "description": "A Suric home-cooking adaptation of Istrian olive oil and rosemary focaccia, using accessible ingredients and a practical method inspired by Istria.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "350 g bread flour",
+        "240 ml warm water",
+        "7 g dry yeast",
+        "3 tbsp olive oil",
+        "1 tsp rosemary",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 350 g bread flour, 240 ml warm water and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp salt.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with soup, olives or cheese.",
+      "substitutions": "Use a strong plain flour and allow extra proofing time if cool.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Istria",
+        "bake",
+        "istrian",
+        "olive"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "croatia-apple-strudel-with-cottage-cheese",
+      "name": "Apple strudel with cottage cheese",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Northern Croatia",
+      "description": "A Suric home-cooking adaptation of Apple strudel with cottage cheese, using accessible ingredients and a practical method inspired by Northern Croatia.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 sheets filo pastry",
+        "3 apples",
+        "150 g cottage cheese",
+        "50 g raisins",
+        "2 tbsp sugar",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 4 sheets filo pastry, 3 apples and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp cinnamon.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt or custard.",
+      "substitutions": "Use pears instead of apples.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "Croatia",
+        "Northern Croatia",
+        "bake",
+        "apple",
+        "strudel"
+      ],
+      "revision": 1
+    }
+  ]
+}

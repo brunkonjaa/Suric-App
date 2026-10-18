@@ -1,0 +1,1059 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "it-arancini",
+      "name": "Arancini",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Sicily",
+      "description": "Crisp rice balls filled with meat sauce, peas and mozzarella.",
+      "prepMinutes": 30,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "350 g Arborio rice",
+        "900 ml stock",
+        "1 onion",
+        "30 g butter",
+        "60 g Parmesan",
+        "150 g cooked meat sauce",
+        "60 g peas",
+        "100 g mozzarella",
+        "2 eggs",
+        "100 g flour",
+        "150 g breadcrumbs",
+        "oil for frying"
+      ],
+      "instructions": [
+        "Cook onion in butter; toast rice, add hot stock gradually and stir until tender. Mix in Parmesan; cool completely.^Wrap rice around meat sauce, peas and mozzarella to form balls. Chill 20 minutes.^Coat in flour, egg and breadcrumbs; fry in 170 C oil in batches until golden and hot in centre."
+      ],
+      "sides": "Serve with tomato sauce and a green salad.",
+      "substitutions": "Use chilled leftover risotto; keep balls small and let oil recover between batches.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Sicily",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-bucatini-amatriciana",
+      "name": "Bucatini all'amatriciana",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lazio, Amatrice",
+      "description": "Pasta with guanciale, tomato, chilli and Pecorino Romano.",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g bucatini",
+        "150 g guanciale, diced",
+        "400 g chopped tomatoes",
+        "50 g Pecorino Romano",
+        "pinch chilli",
+        "black pepper"
+      ],
+      "instructions": [
+        "Cook pasta until al dente; reserve pasta water.^Render guanciale slowly until golden. Add tomatoes and chilli and simmer 15 minutes.^Toss pasta with sauce and a splash of pasta water; finish with Pecorino and pepper."
+      ],
+      "sides": "Serve with extra Pecorino and a green salad.",
+      "substitutions": "Pancetta can replace guanciale but changes flavour; season lightly because cured pork and cheese are salty.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lazio, Amatrice",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-cacio-e-pepe",
+      "name": "Cacio e pepe",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Rome, Lazio",
+      "description": "Roman pasta coated with Pecorino Romano and black pepper.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g tonnarelli or spaghetti",
+        "160 g finely grated Pecorino",
+        "2 tsp black peppercorns"
+      ],
+      "instructions": [
+        "Toast and crush pepper. Cook pasta in modest salted water until al dente; reserve starchy water.^Mix cheese with a little warm pasta water off the heat to make a paste.^Toss pasta and pepper with cheese paste, adding water gradually until glossy."
+      ],
+      "sides": "Serve immediately with extra pepper.",
+      "substitutions": "Use finely grated Pecorino; add water off heat to prevent clumps. Parmesan is milder and a variation.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Rome, Lazio",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-carbonara",
+      "name": "Spaghetti alla carbonara",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Rome, Lazio",
+      "description": "Spaghetti finished with egg, Pecorino, pepper and crisp guanciale.",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g spaghetti",
+        "150 g guanciale",
+        "3 eggs and 1 yolk",
+        "80 g Pecorino Romano",
+        "black pepper"
+      ],
+      "instructions": [
+        "Cook pasta al dente; render guanciale slowly until crisp.^Whisk eggs, yolk, cheese and pepper. Reserve pasta water.^Toss hot pasta with guanciale off heat. Stir in egg mix and splashes of water until creamy; serve promptly."
+      ],
+      "sides": "Serve with extra Pecorino.",
+      "substitutions": "Pancetta replaces guanciale in a home variation. Keep pan off heat when adding eggs to avoid scrambling.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Rome, Lazio",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-caponata",
+      "name": "Caponata",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Sicily",
+      "description": "Sweet-sour aubergine with tomato, celery, olives and capers.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 aubergines, cubed",
+        "2 celery sticks",
+        "1 onion",
+        "400 g chopped tomatoes",
+        "80 g green olives",
+        "2 tbsp capers",
+        "2 tbsp red-wine vinegar",
+        "1 tsp sugar",
+        "olive oil"
+      ],
+      "instructions": [
+        "Salt aubergine 15 minutes, pat dry and brown in oil in batches.^Soften celery and onion; add tomatoes and simmer 10 minutes.^Return aubergine with olives, capers, vinegar and sugar. Simmer 15 minutes; cool before serving."
+      ],
+      "sides": "Serve at room temperature with bread or grilled vegetables.",
+      "substitutions": "Use black olives if needed; balance vinegar and sugar to taste.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Sicily",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-focaccia-genovese",
+      "name": "Focaccia genovese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Liguria, Genoa",
+      "description": "Soft olive-oil bread with a dimpled, lightly brined top.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g strong flour",
+        "7 g instant yeast",
+        "325 ml water",
+        "40 ml olive oil",
+        "10 g salt",
+        "coarse salt"
+      ],
+      "instructions": [
+        "Mix flour, yeast and water; knead 8 minutes, then knead in salt and half the oil.^Cover and rise until doubled. Press into an oiled tray and rest 20 minutes.^Dimple with oiled fingers, drizzle remaining oil and 30 ml water, add coarse salt; bake at 220 C conventional / 200 C fan for 20-25 minutes."
+      ],
+      "sides": "Serve with olives, cheese or soup.",
+      "substitutions": "Keep dough slightly sticky; do not add excess flour while pressing into the tray.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Liguria, Genoa",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-gnocchi-romana",
+      "name": "Gnocchi alla romana",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Rome, Lazio",
+      "description": "Baked semolina rounds with milk, butter and Parmesan.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 litre milk",
+        "250 g semolina",
+        "60 g butter",
+        "2 egg yolks",
+        "80 g Parmesan",
+        "nutmeg"
+      ],
+      "instructions": [
+        "Heat milk with half the butter and nutmeg. Whisk in semolina gradually; stir 8-10 minutes until very thick.^Off heat beat in yolks and half the Parmesan. Spread 1.5 cm thick on a wet tray; cool.^Cut rounds, overlap in buttered dish, dot with remaining butter and cheese; bake at 200 C / 180 C fan for 20 minutes."
+      ],
+      "sides": "Serve with salad or tomato sauce.",
+      "substitutions": "Cool fully before cutting so the rounds hold their shape.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Rome, Lazio",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-insalata-caprese",
+      "name": "Insalata caprese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Campania, Capri",
+      "description": "Ripe tomatoes, mozzarella, basil and olive oil.",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 ripe tomatoes",
+        "300 g fresh mozzarella",
+        "1 handful basil",
+        "2 tbsp olive oil",
+        "salt and pepper"
+      ],
+      "instructions": [
+        "Slice tomatoes and mozzarella evenly.^Arrange alternating slices with basil on a platter.^Season lightly, drizzle oil and rest 5 minutes before serving."
+      ],
+      "sides": "Serve with crusty bread as a light starter.",
+      "substitutions": "Use ripe tomatoes at room temperature; balsamic vinegar is a modern variation.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Campania, Capri",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-lasagne-bolognese",
+      "name": "Lasagne alla bolognese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Emilia-Romagna, Bologna",
+      "description": "Layered pasta with slow meat meat sauce, bechamel and Parmesan.",
+      "prepMinutes": 30,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "12 lasagne sheets",
+        "500 g beef mince",
+        "100 g pancetta",
+        "1 onion, carrot and celery",
+        "400 g passata",
+        "150 ml milk",
+        "500 ml bechamel",
+        "80 g Parmesan"
+      ],
+      "instructions": [
+        "Brown pancetta and mince; add finely diced vegetables and soften.^Stir in passata and milk; simmer gently 60 minutes until thick.^Layer meat sauce, bechamel, pasta and Parmesan. Bake at 190 C / 170 C fan for 35-40 minutes; rest 15 minutes."
+      ],
+      "sides": "Serve with a green salad.",
+      "substitutions": "Use fresh or dried pasta as directed; cover sheets fully with sauce so edges do not dry.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Emilia-Romagna, Bologna",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-minestrone",
+      "name": "Minestrone",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Across Italy, seasonal",
+      "description": "Vegetable, bean and small-pasta soup adapted to seasonal produce.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 onion, carrot and celery",
+        "1 courgette",
+        "1 potato",
+        "400 g cannellini beans",
+        "400 g tomatoes",
+        "1.2 litres stock",
+        "100 g small pasta",
+        "olive oil"
+      ],
+      "instructions": [
+        "Soften onion, carrot and celery in oil for 8 minutes.^Add courgette, potato, tomatoes and stock; simmer 20 minutes until tender.^Add beans and pasta; simmer to pasta directions, adding water if thick. Season and rest 5 minutes."
+      ],
+      "sides": "Serve with Parmesan and crusty bread.",
+      "substitutions": "Swap vegetables seasonally; cook pasta separately if storing leftovers.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Across Italy, seasonal",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-pizza-margherita",
+      "name": "Pizza margherita",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Naples, Campania",
+      "description": "Neapolitan-style pizza with tomato, mozzarella and basil.",
+      "prepMinutes": 30,
+      "cookMinutes": 9,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g strong flour",
+        "325 ml water",
+        "3 g yeast",
+        "10 g salt",
+        "200 g passata",
+        "250 g drained mozzarella",
+        "basil",
+        "olive oil"
+      ],
+      "instructions": [
+        "Mix flour, water and yeast; knead in salt. Cover and rise until doubled, 2-3 hours.^Divide into two balls and rest 30 minutes. Heat oven and baking steel or tray to at least 250 C.^Stretch dough by hand, add a thin layer of passata, mozzarella and basil. Bake 6-9 minutes until browned and bubbling."
+      ],
+      "sides": "Serve immediately with basil and olive oil.",
+      "substitutions": "Drain mozzarella well. Preheat the baking surface thoroughly; oven times vary.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Naples, Campania",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-orecchiette-rapa",
+      "name": "Orecchiette con cime di rapa",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Puglia",
+      "description": "Ear-shaped pasta with turnip greens, garlic and chilli.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g orecchiette",
+        "500 g turnip greens",
+        "2 garlic cloves",
+        "3 tbsp olive oil",
+        "2 anchovy fillets optional",
+        "chilli"
+      ],
+      "instructions": [
+        "Boil trimmed greens in salted water 5 minutes; lift out and reserve water.^Cook orecchiette in the same water until al dente.^Warm oil with garlic, chilli and optional anchovy. Add greens and pasta; toss with pasta water until coated."
+      ],
+      "sides": "Serve with toasted breadcrumbs or Pecorino.",
+      "substitutions": "Broccoli rabe or young kale can replace turnip greens; blanch tougher leaves longer.",
+      "storage": "Best served immediately. Refrigerate cooked leftovers within 2 hours and use within 1 day; reheat once until piping hot.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat food. Discard cracked clams or those that do not close before cooking, and discard clams that remain closed after steaming. Cook fish until opaque.",
+      "tags": [
+        "Puglia",
+        "Italian cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-osso-buco",
+      "name": "Ossobuco alla milanese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lombardy, Milan",
+      "description": "Veal shanks braised with wine, vegetables and tomato until tender.",
+      "prepMinutes": 20,
+      "cookMinutes": 130,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 veal shanks",
+        "2 tbsp flour",
+        "1 onion, carrot and celery",
+        "2 tbsp olive oil",
+        "150 ml white wine",
+        "300 ml stock",
+        "200 g tomatoes",
+        "bay leaf"
+      ],
+      "instructions": [
+        "Season shanks, dust with flour and brown both sides; set aside.^Soften diced vegetables. Add wine and reduce by half.^Return shanks with stock, tomatoes and bay. Cover and braise at 160 C / 140 C fan for about 2 hours until tender; turn once."
+      ],
+      "sides": "Serve with saffron risotto or soft polenta.",
+      "substitutions": "Beef shanks need longer braising; tie each shank with string to help it hold shape.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lombardy, Milan",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-panzanella",
+      "name": "Panzanella",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Tuscany",
+      "description": "Bread and tomato salad softened with vinegar, onion and olive oil.",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g day-old country bread",
+        "500 g ripe tomatoes",
+        "1 red onion",
+        "1 cucumber",
+        "3 tbsp olive oil",
+        "1 tbsp vinegar",
+        "basil"
+      ],
+      "instructions": [
+        "Tear bread; sprinkle with a little water if very hard and leave 10 minutes.^Chop tomatoes over a bowl to catch juices; soak sliced onion in cold water 10 minutes, then drain.^Combine bread, tomato, cucumber and onion. Dress with oil, vinegar and salt; rest 20 minutes and fold in basil."
+      ],
+      "sides": "Serve as lunch or alongside grilled vegetables.",
+      "substitutions": "Use stale sourdough; add dressing gradually so bread softens without becoming mushy.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Tuscany",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-pasta-norma",
+      "name": "Pasta alla Norma",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Sicily, Catania",
+      "description": "Tomato and aubergine pasta finished with salted ricotta.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g rigatoni",
+        "1 aubergine",
+        "400 g tomatoes",
+        "2 garlic cloves",
+        "3 tbsp olive oil",
+        "60 g ricotta salata",
+        "basil"
+      ],
+      "instructions": [
+        "Salt aubergine 15 minutes, pat dry and fry until golden.^Warm garlic in oil, add tomatoes and simmer 20 minutes until thick.^Cook pasta al dente. Toss with sauce and aubergine; finish with basil and grated ricotta salata."
+      ],
+      "sides": "Serve with extra ricotta salata and salad.",
+      "substitutions": "Pecorino can replace ricotta salata; salt aubergine only if bitter or watery.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Sicily, Catania",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-pasta-ceci",
+      "name": "Pasta e ceci",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lazio, home-style",
+      "description": "Chickpeas, rosemary and short pasta simmered into a thick soup.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 onion",
+        "2 garlic cloves",
+        "400 g chickpeas",
+        "400 g tomatoes",
+        "800 ml stock",
+        "200 g small pasta",
+        "rosemary",
+        "olive oil"
+      ],
+      "instructions": [
+        "Soften onion in oil; add garlic and rosemary.^Add chickpeas, tomatoes and stock. Simmer 15 minutes; mash some chickpeas to thicken.^Add pasta and simmer until tender, adding water if needed. Remove rosemary and season."
+      ],
+      "sides": "Serve with toasted bread and black pepper.",
+      "substitutions": "Use cooked dried chickpeas and some of their cooking liquid for a fuller flavour.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lazio, home-style",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-pasta-fagioli",
+      "name": "Pasta e fagioli",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Veneto, northern Italy",
+      "description": "Beans, vegetables and pasta cooked into a warming one-pot soup.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "100 g pancetta optional",
+        "1 onion, carrot and celery",
+        "400 g borlotti beans",
+        "1 litre stock",
+        "200 g ditalini",
+        "bay leaf",
+        "olive oil"
+      ],
+      "instructions": [
+        "Brown pancetta if using; soften diced vegetables in the same pot.^Add beans, stock and bay; mash a few beans against the pot to thicken.^Stir in pasta and simmer until tender, adding hot water if needed. Remove bay and season."
+      ],
+      "sides": "Serve with Parmesan and olive oil.",
+      "substitutions": "Use cannellini beans instead; cook pasta separately if keeping leftovers.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Veneto, northern Italy",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-pesto-genovese",
+      "name": "Pesto alla genovese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Liguria, Genoa",
+      "description": "Basil, pine nuts, garlic, cheese and olive oil crushed into a fresh sauce.",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "50 g basil leaves",
+        "30 g pine nuts",
+        "1 garlic clove",
+        "40 g Parmesan",
+        "20 g Pecorino",
+        "100 ml olive oil",
+        "salt"
+      ],
+      "instructions": [
+        "Toast pine nuts lightly and cool.^Pound garlic and salt, then add basil gradually and crush rather than puree.^Work in cheeses and pine nuts; stir in oil. Toss with hot pasta off heat, loosening with pasta water."
+      ],
+      "sides": "Serve with trofie or trenette and green beans.",
+      "substitutions": "Walnuts can replace pine nuts but change flavour; cover stored pesto with oil and refrigerate.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Liguria, Genoa",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-polenta-taragna",
+      "name": "Polenta taragna",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lombardy, Valtellina",
+      "description": "Buckwheat and maize polenta stirred with butter and mountain cheese.",
+      "prepMinutes": 5,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g coarse cornmeal",
+        "100 g buckwheat flour",
+        "1.5 litres water",
+        "60 g butter",
+        "180 g Fontina",
+        "salt"
+      ],
+      "instructions": [
+        "Bring salted water to a boil and whisk in both flours gradually.^Cook on low, stirring frequently 40-50 minutes until thick and grains are tender.^Beat in butter and diced cheese until melted; season and serve hot."
+      ],
+      "sides": "Serve with braised beef or sauteed mushrooms.",
+      "substitutions": "Use all cornmeal if buckwheat flour is unavailable; Fontina substitutes for local mountain cheese.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lombardy, Valtellina",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-risotto-milanese",
+      "name": "Risotto alla Milanese",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lombardy, Milan",
+      "description": "Creamy saffron risotto cooked gradually with stock, butter and Parmesan.",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "320 g Arborio rice",
+        "1 litre hot stock",
+        "1 onion",
+        "40 g butter",
+        "100 ml white wine",
+        "pinch saffron",
+        "50 g Parmesan"
+      ],
+      "instructions": [
+        "Soak saffron in 2 tbsp warm stock; keep remaining stock hot.^Soften onion in half the butter. Add rice and toast until edges are translucent.^Add wine; stir until absorbed. Add stock ladle by ladle, stirring, until al dente. Stir in saffron, remaining butter and Parmesan off heat; rest 2 minutes."
+      ],
+      "sides": "Serve with osso buco or as a first course.",
+      "substitutions": "Carnaroli gives a firmer grain; vegetable stock makes a vegetarian version.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lombardy, Milan",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-saltimbocca",
+      "name": "Saltimbocca alla romana",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Lazio, Rome",
+      "description": "Veal with sage and prosciutto quickly cooked in a wine pan sauce.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 thin veal escalopes",
+        "4 prosciutto slices",
+        "4 sage leaves",
+        "1 tbsp flour",
+        "20 g butter",
+        "100 ml white wine"
+      ],
+      "instructions": [
+        "Lay sage and prosciutto on each veal slice and secure with a toothpick.^Lightly flour the underside. Melt butter and cook prosciutto-side down briefly, then turn and cook through.^Add wine and simmer 2 minutes, scraping the pan; remove toothpicks and serve with sauce."
+      ],
+      "sides": "Serve with sauteed spinach or peas.",
+      "substitutions": "Thin chicken can replace veal; cook thoroughly. Season lightly because prosciutto is salty.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Lazio, Rome",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-sarde-beccafico",
+      "name": "Sarde a beccafico",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Sicily, Palermo",
+      "description": "Sardines rolled around breadcrumbs, raisins, pine nuts and herbs.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "12 sardine fillets",
+        "100 g breadcrumbs",
+        "30 g raisins",
+        "25 g pine nuts",
+        "2 tbsp olive oil",
+        "orange zest",
+        "parsley",
+        "lemon"
+      ],
+      "instructions": [
+        "Toast breadcrumbs until golden; stir in raisins, pine nuts, zest and parsley.^Fill sardines and roll them, placing rolls close together in an oiled dish.^Drizzle oil and bake at 200 C / 180 C fan for 12-15 minutes until fish is opaque; serve with lemon."
+      ],
+      "sides": "Serve with orange slices and green salad.",
+      "substitutions": "Use cleaned mackerel fillets if sardines are unavailable; keep fish chilled and check for bones.",
+      "storage": "Best served immediately. Refrigerate cooked leftovers within 2 hours and use within 1 day; reheat once until piping hot.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat food. Discard cracked clams or those that do not close before cooking, and discard clams that remain closed after steaming. Cook fish until opaque.",
+      "tags": [
+        "Sicily, Palermo",
+        "Italian cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-granita-limone",
+      "name": "Granita al limone",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Sicily",
+      "description": "Lemon and sugar dessert scraped into delicate ice crystals.",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 ml lemon juice",
+        "500 ml water",
+        "180 g sugar",
+        "lemon zest"
+      ],
+      "instructions": [
+        "Warm water and sugar just until dissolved; cool completely.^Stir in lemon juice and zest. Pour into a shallow tray and freeze 45 minutes.^Scrape frozen edges into centre with a fork; repeat every 30-40 minutes for 3-4 hours until fluffy crystals form."
+      ],
+      "sides": "Serve in chilled glasses, often with brioche.",
+      "substitutions": "Adjust sugar to taste; fresh lemons give the clearest flavour.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Sicily",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-sugo-pomodoro",
+      "name": "Sugo al pomodoro",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Across Italy, simple tomato sauce",
+      "description": "Tomato sauce gently cooked with olive oil, garlic and basil.",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g tomatoes or passata",
+        "2 tbsp olive oil",
+        "2 garlic cloves",
+        "6 basil leaves",
+        "salt"
+      ],
+      "instructions": [
+        "Warm oil and garlic gently until fragrant, not browned.^Add tomatoes and salt; simmer uncovered 25-35 minutes, stirring occasionally.^Crush tomatoes, remove garlic, stir in basil and season."
+      ],
+      "sides": "Toss with pasta and Parmesan or use as pizza sauce.",
+      "substitutions": "Canned whole tomatoes work well outside tomato season; passata makes a smooth sauce.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Across Italy, simple tomato sauce",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-tiramisu",
+      "name": "Tiramisu",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Veneto, Treviso style",
+      "description": "Coffee-soaked savoiardi layered with mascarpone cream and cocoa.",
+      "prepMinutes": 30,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g savoiardi",
+        "300 ml cooled espresso",
+        "4 eggs, separated",
+        "100 g sugar",
+        "500 g mascarpone",
+        "2 tbsp cocoa"
+      ],
+      "instructions": [
+        "Whisk yolks and sugar until pale; fold in mascarpone.^Whisk whites to soft peaks in a clean bowl and fold gently into cream.^Dip biscuits briefly in espresso, layer with cream, cover and chill at or below 5 C for 6 hours. Dust with cocoa before serving."
+      ],
+      "sides": "Serve chilled with espresso.",
+      "substitutions": "Use pasteurised eggs; alternatively fold 250 ml whipped cream into mascarpone for an egg-free variation.",
+      "storage": "Keep covered at or below 5 C and use within 24 hours; do not leave at room temperature for more than 2 hours.",
+      "safety": "Use pasteurised eggs, especially for people at higher risk from foodborne illness. Keep chilled throughout preparation and serving.",
+      "tags": [
+        "Veneto, Treviso style",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-torta-nonna",
+      "name": "Torta della nonna",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Tuscany, home-style",
+      "description": "Pastry tart filled with lemon custard and topped with pine nuts.",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g flour",
+        "125 g cold butter",
+        "100 g sugar",
+        "1 egg",
+        "500 ml milk",
+        "4 yolks",
+        "50 g cornflour",
+        "lemon zest",
+        "30 g pine nuts"
+      ],
+      "instructions": [
+        "Rub butter into flour and sugar; mix in egg, form pastry and chill 30 minutes.^Whisk yolks, cornflour and sugar; gradually whisk in warm milk and zest. Cook, stirring, until thick; cool fully.^Line tin with half the pastry, add custard and pastry lid, scatter pine nuts and bake at 180 C / 160 C fan for 40 minutes."
+      ],
+      "sides": "Cool and dust with icing sugar.",
+      "substitutions": "Use almonds if pine nuts are unavailable; chill custard fully before filling.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Tuscany, home-style",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-ribollita",
+      "name": "Ribollita",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Tuscany, Florence",
+      "description": "Tuscan bean, kale and stale-bread soup cooked until thick.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 onion, carrot and celery",
+        "2 tbsp olive oil",
+        "400 g cannellini beans",
+        "400 g tomatoes",
+        "1 litre stock",
+        "250 g kale",
+        "250 g stale bread"
+      ],
+      "instructions": [
+        "Soften diced onion, carrot and celery in oil for 8 minutes.^Add tomatoes, stock and half the beans; simmer 20 minutes. Mash remaining beans and add.^Add chopped kale; simmer until tender. Layer torn bread into pot, ladle soup over and simmer 5 minutes until thick."
+      ],
+      "sides": "Finish with olive oil and black pepper.",
+      "substitutions": "Savoy cabbage can replace cavolo nero; add bread gradually to control thickness.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Tuscany, Florence",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-spaghetti-vongole",
+      "name": "Spaghetti alle vongole",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Campania, Naples",
+      "description": "Spaghetti with clams, garlic, parsley and clam liquor.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g spaghetti",
+        "1 kg live clams",
+        "3 garlic cloves",
+        "3 tbsp olive oil",
+        "100 ml white wine",
+        "parsley",
+        "optional chilli"
+      ],
+      "instructions": [
+        "Rinse clams in cold water; discard cracked ones and open ones that do not close when tapped.^Cook spaghetti just short of al dente. Warm oil, garlic and optional chilli in a large lidded pan.^Add clams and wine, cover and steam 4-6 minutes until shells open; discard unopened clams. Toss with pasta and strained liquor; add parsley."
+      ],
+      "sides": "Serve immediately with parsley and lemon.",
+      "substitutions": "Small live cockles can replace clams; do not use precooked shellfish in this steaming method.",
+      "storage": "Best served immediately. Refrigerate cooked leftovers within 2 hours and use within 1 day; reheat once until piping hot.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat food. Discard cracked clams or those that do not close before cooking, and discard clams that remain closed after steaming. Cook fish until opaque.",
+      "tags": [
+        "Campania, Naples",
+        "Italian cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-frittata-cipolle",
+      "name": "Frittata di cipolle",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Campania, home-style",
+      "description": "Slowly softened onions bound in a simple Italian omelette.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 eggs",
+        "3 onions",
+        "2 tbsp olive oil",
+        "40 g Parmesan",
+        "salt and pepper"
+      ],
+      "instructions": [
+        "Cook sliced onions in oil over low heat for about 20 minutes until soft and sweet.^Whisk eggs with Parmesan, salt and pepper; fold in cooled onions.^Pour into an oiled oven-safe pan and cook low until edges set. Finish under grill until top is fully set."
+      ],
+      "sides": "Serve warm or cold with salad and bread.",
+      "substitutions": "Use Pecorino for a sharper taste; cook eggs fully, especially for vulnerable diners.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Campania, home-style",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "it-melanzane-parmigiana",
+      "name": "Parmigiana di melanzane",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Southern Italy, regional versions",
+      "description": "Layered aubergine, tomato and cheese baked until tender and bubbling.",
+      "prepMinutes": 30,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 aubergines",
+        "500 g passata",
+        "1 onion",
+        "200 g mozzarella, drained",
+        "80 g Parmesan",
+        "basil",
+        "olive oil"
+      ],
+      "instructions": [
+        "Slice aubergine, salt lightly 20 minutes and pat dry; roast at 220 C / 200 C fan until tender, turning once.^Cook onion in oil until soft; add passata and simmer 20 minutes, then add basil.^Layer sauce, aubergine, mozzarella and Parmesan. Bake at 190 C / 170 C fan for 30-35 minutes; rest 15 minutes."
+      ],
+      "sides": "Serve with a green salad and bread.",
+      "substitutions": "Grill aubergine slices instead of roasting; drain mozzarella well to prevent a watery bake.",
+      "storage": "Cool promptly and refrigerate covered within 2 hours. Use within 3 days or freeze for up to 2 months; reheat once until steaming hot.",
+      "safety": "Keep raw meat separate from ready-to-eat food. Cook meat and eggs thoroughly; chill leftovers within 2 hours and reheat until steaming hot.",
+      "tags": [
+        "Southern Italy, regional versions",
+        "Italian cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    }
+  ],
+  "collections": [
+    {
+      "id": "cuisine:italy",
+      "title": "Italian recipes",
+      "recipeIds": [
+        "it-arancini",
+        "it-bucatini-amatriciana",
+        "it-cacio-e-pepe",
+        "it-carbonara",
+        "it-caponata",
+        "it-focaccia-genovese",
+        "it-gnocchi-romana",
+        "it-insalata-caprese",
+        "it-lasagne-bolognese",
+        "it-minestrone",
+        "it-pizza-margherita",
+        "it-orecchiette-rapa",
+        "it-osso-buco",
+        "it-panzanella",
+        "it-pasta-norma",
+        "it-pasta-ceci",
+        "it-pasta-fagioli",
+        "it-pesto-genovese",
+        "it-polenta-taragna",
+        "it-risotto-milanese",
+        "it-saltimbocca",
+        "it-sarde-beccafico",
+        "it-granita-limone",
+        "it-sugo-pomodoro",
+        "it-tiramisu",
+        "it-torta-nonna",
+        "it-ribollita",
+        "it-spaghetti-vongole",
+        "it-frittata-cipolle",
+        "it-melanzane-parmigiana"
+      ]
+    }
+  ]
+}

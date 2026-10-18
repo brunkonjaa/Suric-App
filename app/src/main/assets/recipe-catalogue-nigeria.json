@@ -1,0 +1,1109 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "nigeria-jollof-rice",
+      "name": "Jollof rice",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Jollof rice, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g long-grain rice",
+        "3 tomatoes",
+        "1 red pepper",
+        "1 onion",
+        "2 tbsp tomato paste",
+        "500 ml stock",
+        "1 tsp thyme"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with fried plantain and greens.",
+      "substitutions": "Use vegetable stock and omit meat sides.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "rice",
+        "jollof",
+        "rice"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-egusi-soup-with-spinach",
+      "name": "Egusi soup with spinach",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Southwest",
+      "description": "A Suric home-cooking adaptation of Egusi soup with spinach, using accessible ingredients and a practical method inspired by Southwest.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "120 g ground egusi",
+        "250 g beef",
+        "150 g spinach",
+        "1 onion",
+        "2 tbsp palm oil",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with eba or pounded yam.",
+      "substitutions": "Use mushrooms and vegetable stock in place of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Southwest",
+        "soup",
+        "egusi",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-efo-riro-leafy-vegetable-stew",
+      "name": "Efo riro leafy vegetable stew",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Yoruba, Southwest",
+      "description": "A Suric home-cooking adaptation of Efo riro leafy vegetable stew, using accessible ingredients and a practical method inspired by Yoruba, Southwest.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g spinach",
+        "2 tomatoes",
+        "1 red pepper",
+        "1 onion",
+        "150 g smoked fish",
+        "2 tbsp palm oil"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with rice or a swallow such as eba.",
+      "substitutions": "Use cooked mushrooms instead of fish.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Yoruba, Southwest",
+        "stew",
+        "efo",
+        "riro"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-afang-soup-with-greens",
+      "name": "Afang soup with greens",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Cross River, South-South",
+      "description": "A Suric home-cooking adaptation of Afang soup with greens, using accessible ingredients and a practical method inspired by Cross River, South-South.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g waterleaf or spinach",
+        "100 g ground afang leaves",
+        "150 g beef",
+        "100 g smoked fish",
+        "1 onion",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with fufu or garri.",
+      "substitutions": "Use extra spinach and mushrooms for a meat-free pot.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Cross River, South-South",
+        "soup",
+        "afang",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-edikang-ikong-vegetable-soup",
+      "name": "Edikang ikong vegetable soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Cross River, South-South",
+      "description": "A Suric home-cooking adaptation of Edikang ikong vegetable soup, using accessible ingredients and a practical method inspired by Cross River, South-South.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g pumpkin leaves or spinach",
+        "150 g waterleaf",
+        "200 g beef",
+        "100 g smoked fish",
+        "1 onion",
+        "2 tbsp palm oil"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with fufu or pounded yam.",
+      "substitutions": "Use mushrooms and vegetable stock.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Cross River, South-South",
+        "soup",
+        "edikang",
+        "ikong"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-oha-soup-with-cocoyam-thickener",
+      "name": "Oha soup with cocoyam thickener",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Igbo, Southeast",
+      "description": "A Suric home-cooking adaptation of Oha soup with cocoyam thickener, using accessible ingredients and a practical method inspired by Igbo, Southeast.",
+      "prepMinutes": 25,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "100 g oha leaves",
+        "150 g cocoyam",
+        "200 g beef",
+        "1 tbsp ground ogiri",
+        "1 onion",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with fufu.",
+      "substitutions": "Use cooked sweet potato to thicken if cocoyam is unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Igbo, Southeast",
+        "soup",
+        "oha",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-nsala-style-white-soup",
+      "name": "Nsala-style white soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Igbo, Southeast",
+      "description": "A Suric home-cooking adaptation of Nsala-style white soup, using accessible ingredients and a practical method inspired by Igbo, Southeast.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g chicken",
+        "150 g cocoyam",
+        "1 tsp ground uziza",
+        "1 tsp crayfish",
+        "1 onion",
+        "1 litre stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve hot with pounded yam.",
+      "substitutions": "Use firm fish instead of chicken and shorten cooking time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Igbo, Southeast",
+        "soup",
+        "nsala-style",
+        "white"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-banga-palm-nut-soup",
+      "name": "Banga palm-nut soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Delta, South-South",
+      "description": "A Suric home-cooking adaptation of Banga palm-nut soup, using accessible ingredients and a practical method inspired by Delta, South-South.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g palm-nut concentrate",
+        "300 g beef",
+        "1 onion",
+        "1 tsp dried beletete",
+        "1 tsp crayfish",
+        "700 ml water"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with starch or fufu.",
+      "substitutions": "Use mushrooms and vegetable stock.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Delta, South-South",
+        "soup",
+        "banga",
+        "palm-nut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-ogbono-soup-with-okra",
+      "name": "Ogbono soup with okra",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Ogbono soup with okra, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "100 g ground ogbono",
+        "150 g okra",
+        "200 g beef",
+        "1 onion",
+        "2 tbsp palm oil",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with eba or fufu.",
+      "substitutions": "Use mushrooms or beans instead of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "soup",
+        "ogbono",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-okra-soup-with-prawns",
+      "name": "Okra soup with prawns",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Southwest",
+      "description": "A Suric home-cooking adaptation of Okra soup with prawns, using accessible ingredients and a practical method inspired by Southwest.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g sliced okra",
+        "200 g prawns",
+        "1 tomato",
+        "1 onion",
+        "1 tbsp palm oil",
+        "600 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with eba or amala.",
+      "substitutions": "Replace prawns with mushrooms.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Southwest",
+        "soup",
+        "okra",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-suya-spiced-beef-skewers",
+      "name": "Suya-spiced beef skewers",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Northern Nigeria",
+      "description": "A Suric home-cooking adaptation of Suya-spiced beef skewers, using accessible ingredients and a practical method inspired by Northern Nigeria.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g beef strips",
+        "2 tbsp ground peanuts",
+        "1 tsp paprika",
+        "1 tsp ginger",
+        "1 tsp cayenne",
+        "1 onion"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve with sliced tomato, onion and flatbread.",
+      "substitutions": "Use chicken strips or firm tofu; check peanut allergy.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Northern Nigeria",
+        "grill",
+        "suya-spiced",
+        "beef"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-miyan-taushe-pumpkin-soup",
+      "name": "Miyan taushe pumpkin soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Hausa, North",
+      "description": "A Suric home-cooking adaptation of Miyan taushe pumpkin soup, using accessible ingredients and a practical method inspired by Hausa, North.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g pumpkin",
+        "200 g beef",
+        "1 tbsp ground peanuts",
+        "1 tomato",
+        "1 onion",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with tuwo or rice.",
+      "substitutions": "Use beans and vegetable stock instead of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Hausa, North",
+        "soup",
+        "miyan",
+        "taushe"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-tuwo-masara-cornmeal-swallow",
+      "name": "Tuwo masara cornmeal swallow",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Northern Nigeria",
+      "description": "A Suric home-cooking adaptation of Tuwo masara cornmeal swallow, using accessible ingredients and a practical method inspired by Northern Nigeria.",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g fine maize meal",
+        "900 ml water",
+        "1 pinch salt"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve warm with miyan taushe or another soup.",
+      "substitutions": "Use millet flour, adding water gradually.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Northern Nigeria",
+        "porridge",
+        "tuwo",
+        "masara"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-tuwo-shinkafa-rice-swallow",
+      "name": "Tuwo shinkafa rice swallow",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Northern Nigeria",
+      "description": "A Suric home-cooking adaptation of Tuwo shinkafa rice swallow, using accessible ingredients and a practical method inspired by Northern Nigeria.",
+      "prepMinutes": 5,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g short-grain rice",
+        "700 ml water",
+        "1 pinch salt"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve with miyan kuka or a vegetable soup.",
+      "substitutions": "Use any starchy short-grain rice.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Northern Nigeria",
+        "porridge",
+        "tuwo",
+        "shinkafa"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-miyan-kuka-baobab-leaf-soup",
+      "name": "Miyan kuka baobab leaf soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Hausa, North",
+      "description": "A Suric home-cooking adaptation of Miyan kuka baobab leaf soup, using accessible ingredients and a practical method inspired by Hausa, North.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 tbsp ground baobab leaf powder",
+        "200 g beef",
+        "1 tsp ground crayfish",
+        "1 onion",
+        "1 tbsp palm oil",
+        "700 ml stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve with tuwo shinkafa.",
+      "substitutions": "Use spinach with a little lemon if baobab leaf is unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Hausa, North",
+        "soup",
+        "miyan",
+        "kuka"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-akara-black-eyed-pea-fritters",
+      "name": "Akara black-eyed pea fritters",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Southwest",
+      "description": "A Suric home-cooking adaptation of Akara black-eyed pea fritters, using accessible ingredients and a practical method inspired by Southwest.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g peeled black-eyed peas",
+        "1 small onion",
+        "1 red pepper",
+        "1 tsp salt",
+        "500 ml frying oil"
+      ],
+      "instructions": [
+        "Prepare the mixture and shape into even portions. Heat a shallow layer of oil in a heavy pan over medium heat.",
+        "Cook in batches, turning as needed, until evenly golden and cooked through. Avoid crowding the pan.",
+        "Drain on a rack or paper and serve warm. Keep children away from hot oil."
+      ],
+      "sides": "Serve with pap or bread.",
+      "substitutions": "Bake spoonfuls brushed with oil at 210 C for a lighter version.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Southwest",
+        "fry",
+        "akara",
+        "black-eyed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-moi-moi-steamed-bean-pudding",
+      "name": "Moi moi steamed bean pudding",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moi moi steamed bean pudding, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g peeled black-eyed peas",
+        "1 red pepper",
+        "1 onion",
+        "2 tbsp oil",
+        "300 ml water",
+        "2 eggs"
+      ],
+      "instructions": [
+        "Prepare the mixture and divide it among greased heatproof cups or a heatproof dish.",
+        "Set the dish over gently simmering water, cover and steam until the centre is firm; add hot water to the pot as needed.",
+        "Carefully remove from the steamer and serve warm. Keep hands clear of escaping steam."
+      ],
+      "sides": "Serve with jollof rice or pap.",
+      "substitutions": "Omit eggs and use vegetable stock for a plant-based version.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "steam",
+        "moi",
+        "moi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-beans-and-plantain-porridge",
+      "name": "Beans and plantain porridge",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Beans and plantain porridge, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g brown beans",
+        "1 ripe plantain",
+        "1 onion",
+        "1 tomato",
+        "1 tbsp palm oil",
+        "1 litre water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve warm with sliced avocado.",
+      "substitutions": "Use black-eyed peas and neutral oil.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "stew",
+        "beans",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-beans-and-corn-porridge",
+      "name": "Beans and corn porridge",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Southeast",
+      "description": "A Suric home-cooking adaptation of Beans and corn porridge, using accessible ingredients and a practical method inspired by Southeast.",
+      "prepMinutes": 15,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g brown beans",
+        "150 g sweetcorn",
+        "1 onion",
+        "1 tomato",
+        "1 tbsp palm oil",
+        "1 litre water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with ripe plantain.",
+      "substitutions": "Use canned beans, adding them during the final 20 minutes.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Southeast",
+        "stew",
+        "beans",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-nigerian-fried-rice-with-vegetables",
+      "name": "Nigerian fried rice with vegetables",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Nigerian fried rice with vegetables, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g cooked cold rice",
+        "150 g diced chicken",
+        "1 carrot",
+        "80 g peas",
+        "1 green pepper",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein; keep the measured sauce ingredients together.",
+        "Heat a wide pan over high heat. Cook the protein first if present, then add the vegetables and aromatics.",
+        "Add the sauce and stir until everything is hot and thoroughly cooked; serve immediately."
+      ],
+      "sides": "Serve with plantain and salad.",
+      "substitutions": "Use cooked chickpeas instead of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "stir",
+        "nigerian",
+        "fried"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-ofada-style-rice-and-ayamase-sauce",
+      "name": "Ofada-style rice and ayamase sauce",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Ogun, Southwest",
+      "description": "A Suric home-cooking adaptation of Ofada-style rice and ayamase sauce, using accessible ingredients and a practical method inspired by Ogun, Southwest.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g local rice",
+        "4 green peppers",
+        "1 onion",
+        "200 g beef",
+        "2 tbsp palm oil",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve rice topped with the pepper sauce.",
+      "substitutions": "Use beans or mushrooms in place of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Ogun, Southwest",
+        "stew",
+        "ofada-style",
+        "rice"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-pepper-soup-with-fish",
+      "name": "Pepper soup with fish",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Niger Delta",
+      "description": "A Suric home-cooking adaptation of Pepper soup with fish, using accessible ingredients and a practical method inspired by Niger Delta.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g firm fish",
+        "1 onion",
+        "1 tsp ground uziza",
+        "1 tsp ginger",
+        "1 litre water",
+        "1 lime"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve hot with yam or bread.",
+      "substitutions": "Use chicken and simmer until fully cooked.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep fish and seafood chilled and separate from ready-to-eat foods. Cook until opaque and steaming; refrigerate leftovers promptly.",
+      "tags": [
+        "Nigeria",
+        "Niger Delta",
+        "soup",
+        "pepper",
+        "soup"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-goat-meat-pepper-soup",
+      "name": "Goat meat pepper soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Goat meat pepper soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g goat meat",
+        "1 onion",
+        "1 tsp ground calabash nutmeg",
+        "1 tsp uziza",
+        "1 litre water",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve hot with boiled yam.",
+      "substitutions": "Use beef stewing pieces and adjust simmer time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "soup",
+        "goat",
+        "meat"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-yam-porridge-with-greens",
+      "name": "Yam porridge with greens",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Yam porridge with greens, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g yam",
+        "1 tomato",
+        "1 onion",
+        "1 tbsp palm oil",
+        "100 g spinach",
+        "700 ml water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve as a one-pot meal.",
+      "substitutions": "Use sweet potato and neutral oil.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "stew",
+        "yam",
+        "porridge"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-boiled-yam-with-garden-egg-sauce",
+      "name": "Boiled yam with garden egg sauce",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Boiled yam with garden egg sauce, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g white yam",
+        "4 garden eggs or aubergines",
+        "1 tomato",
+        "1 onion",
+        "1 tbsp palm oil",
+        "1 red pepper"
+      ],
+      "instructions": [
+        "Prepare the ingredients and bring a large pot of water to a boil.",
+        "Add the ingredients in the order listed, then simmer until tender; follow packet directions for dried or packaged ingredients.",
+        "Drain if needed, season to taste and serve or chill promptly."
+      ],
+      "sides": "Serve yam with the warm vegetable sauce.",
+      "substitutions": "Use aubergine if garden eggs are unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "boil",
+        "boiled",
+        "yam"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-ewa-agoyin-style-mashed-beans",
+      "name": "Ewa agoyin-style mashed beans",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Lagos, Southwest",
+      "description": "A Suric home-cooking adaptation of Ewa agoyin-style mashed beans, using accessible ingredients and a practical method inspired by Lagos, Southwest.",
+      "prepMinutes": 15,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g black-eyed peas",
+        "2 dried red peppers",
+        "1 onion",
+        "2 tbsp palm oil",
+        "1 tsp salt",
+        "700 ml water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with soft bread or fried plantain.",
+      "substitutions": "Use cowpeas or black beans.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Lagos, Southwest",
+        "stew",
+        "ewa",
+        "agoyin-style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-nigerian-chicken-stew",
+      "name": "Nigerian chicken stew",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Nigerian chicken stew, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g chicken thighs",
+        "4 tomatoes",
+        "1 red pepper",
+        "1 onion",
+        "2 tbsp oil",
+        "400 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with rice, yam or plantain.",
+      "substitutions": "Use beans or mushrooms for a meat-free stew.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "stew",
+        "nigerian",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-chin-chin-baked-snack",
+      "name": "Chin chin baked snack",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Chin chin baked snack, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g flour",
+        "1 egg",
+        "80 ml milk",
+        "60 g sugar",
+        "50 g butter",
+        "1 tsp nutmeg"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve cooled with tea.",
+      "substitutions": "Use plant milk and oil instead of dairy.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "bake",
+        "chin",
+        "chin"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-puff-puff-sweet-dough-balls",
+      "name": "Puff-puff sweet dough balls",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Puff-puff sweet dough balls, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g flour",
+        "7 g dry yeast",
+        "50 g sugar",
+        "250 ml warm water",
+        "1 tsp nutmeg",
+        "500 ml frying oil"
+      ],
+      "instructions": [
+        "Prepare the mixture and shape into even portions. Heat a shallow layer of oil in a heavy pan over medium heat.",
+        "Cook in batches, turning as needed, until evenly golden and cooked through. Avoid crowding the pan.",
+        "Drain on a rack or paper and serve warm. Keep children away from hot oil."
+      ],
+      "sides": "Dust with sugar and serve warm.",
+      "substitutions": "Bake small portions in a mini muffin tray at 190 C.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Nationwide",
+        "fry",
+        "puff-puff",
+        "sweet"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "nigeria-nigerian-coconut-rice",
+      "name": "Nigerian coconut rice",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Lagos-inspired",
+      "description": "A Suric home-cooking adaptation of Nigerian coconut rice, using accessible ingredients and a practical method inspired by Lagos-inspired.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g rice",
+        "250 ml coconut milk",
+        "250 ml stock",
+        "1 onion",
+        "1 tomato",
+        "1 tsp thyme"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with grilled vegetables or chicken.",
+      "substitutions": "Use all stock and add a little grated coconut.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Nigeria",
+        "Lagos-inspired",
+        "rice",
+        "nigerian",
+        "coconut"
+      ],
+      "revision": 1
+    }
+  ]
+}

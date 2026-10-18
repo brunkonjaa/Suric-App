@@ -1,0 +1,1210 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "ba-baklava",
+                        "name":  "Baklava",
+                        "englishName":  "Walnut filo pastry",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Thin pastry layered with walnuts and finished with lemon syrup.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  45,
+                        "servings":  12,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g phyllo",
+                                            "250 g chopped walnuts",
+                                            "150 g butter, melted",
+                                            "250 g sugar",
+                                            "250 ml water",
+                                            "1 tbsp lemon juice"
+                                        ],
+                        "instructions":  [
+                                             "Layer half the phyllo in a buttered tray, brushing each sheet lightly with butter",
+                                             " spread walnuts and cover with remaining sheets, buttering each",
+                                             "Cut into diamonds before baking",
+                                             " bake at 180 C until deep golden, about 40 minutes",
+                                             "Boil sugar and water 8 minutes, add lemon and cool",
+                                             " pour cool syrup over hot pastry",
+                                             " rest several hours."
+                                         ],
+                        "sides":  "Serve in small pieces with coffee.",
+                        "substitutions":  "Use pistachios or almonds.",
+                        "storage":  "Store covered in a cool dry place for 4 days.",
+                        "safety":  "Check walnut allergies; cool syrup before pouring.",
+                        "tags":  [
+                                     "dessert",
+                                     "walnut",
+                                     "pastry"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-bamija",
+                        "name":  "Bamija",
+                        "englishName":  "Okra and beef stew",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Herzegovina",
+                        "description":  "Tender beef and okra simmered with tomato, onion and lemon.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  75,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g stewing beef",
+                                            "300 g okra",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "600 ml stock",
+                                            "1 tbsp oil",
+                                            "1 tbsp lemon juice"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in oil",
+                                             " add onion and cook until soft",
+                                             "Add tomatoes and stock",
+                                             " cover and simmer until beef is nearly tender",
+                                             "Add okra and lemon juice",
+                                             " simmer gently until okra is tender and broth lightly thickened",
+                                             " season."
+                                         ],
+                        "sides":  "Serve with rice or bread.",
+                        "substitutions":  "Use frozen okra and add directly to stew.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook beef thoroughly and chill leftovers promptly.",
+                        "tags":  [
+                                     "okra",
+                                     "beef",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-sis-cevapi",
+                        "name":  "Banjalucki cevapi",
+                        "englishName":  "Banja Luka pressed cevapi",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Banja Luka",
+                        "description":  "Beef and lamb mince shaped as linked grill portions and served in flatbread.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g minced beef",
+                                            "200 g minced lamb",
+                                            "1 tsp salt",
+                                            "1/2 tsp baking soda",
+                                            "50 ml cold water",
+                                            "1 onion"
+                                        ],
+                        "instructions":  [
+                                             "Mix meats with salt, baking soda and water",
+                                             " knead until tacky",
+                                             " chill at least 2 hours",
+                                             "Press into flat connected portions or form short sausages",
+                                             "Grill over medium-high heat, turning until browned and fully cooked",
+                                             " separate portions and serve."
+                                         ],
+                        "sides":  "Serve with somun, chopped onion and yogurt.",
+                        "substitutions":  "Use all beef if lamb is not wanted.",
+                        "storage":  "Refrigerate raw mixture up to 24 hours; cooked leftovers up to 2 days.",
+                        "safety":  "Cook mince thoroughly and use separate raw-meat utensils.",
+                        "tags":  [
+                                     "Banja Luka",
+                                     "grilled",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-begova-corba",
+                        "name":  "Begova corba",
+                        "englishName":  "Bey\u0027s chicken and okra soup",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Sarajevo",
+                        "description":  "A rich chicken soup thickened with okra, root vegetables and a light flour roux.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g chicken thighs",
+                                            "1 carrot",
+                                            "100 g celeriac",
+                                            "1 onion",
+                                            "100 g okra",
+                                            "1.2 litres stock",
+                                            "1 tbsp butter",
+                                            "1 tbsp flour",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Simmer chicken with carrot, celeriac and onion in stock until cooked",
+                                             " remove chicken and strain broth",
+                                             "Dice vegetables and chicken",
+                                             " return to broth and add okra",
+                                             "Melt butter, stir in flour for one minute, whisk in broth and simmer until lightly thickened",
+                                             " season and finish with parsley."
+                                         ],
+                        "sides":  "Serve hot with bread and lemon.",
+                        "substitutions":  "Use turkey and frozen okra if needed.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cook chicken through and keep soup chilled.",
+                        "tags":  [
+                                     "Sarajevo",
+                                     "soup",
+                                     "chicken"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-bosanska-kafa",
+                        "name":  "Bosanska kafa",
+                        "englishName":  "Bosnian coffee",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Finely ground coffee brewed in a small pot and poured with its foam into a small cup.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  8,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 ml water",
+                                            "2 tbsp very finely ground coffee",
+                                            "Turkish delight, optional"
+                                        ],
+                        "instructions":  [
+                                             "Bring water to a boil in a small pot",
+                                             " remove from heat and stir in coffee",
+                                             "Return briefly to low heat until foam rises, without boiling over",
+                                             "Rest 1 minute for grounds to settle",
+                                             "Pour slowly into small cups, sharing foam evenly."
+                                         ],
+                        "sides":  "Serve with sugar cubes or lokum.",
+                        "substitutions":  "Adjust coffee amount to taste.",
+                        "storage":  "Brew fresh for each serving.",
+                        "safety":  "Serve hot carefully; keep pot handle turned away from edge.",
+                        "tags":  [
+                                     "coffee",
+                                     "drink",
+                                     "traditional"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-bosanski-lonac",
+                        "name":  "Bosanski lonac",
+                        "englishName":  "Bosnian layered meat and vegetable stew",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Slow-cooked layers of beef, cabbage and seasonal vegetables in their own broth.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  150,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g stewing beef",
+                                            "300 g cabbage",
+                                            "2 potatoes",
+                                            "2 carrots",
+                                            "2 tomatoes",
+                                            "1 onion",
+                                            "1 pepper",
+                                            "500 ml stock",
+                                            "1 bay leaf"
+                                        ],
+                        "instructions":  [
+                                             "Cut vegetables into large pieces and beef into cubes",
+                                             "Layer beef and vegetables in a heavy pot, seasoning lightly between layers",
+                                             "Add bay and stock",
+                                             " cover tightly and cook very gently until beef and vegetables are tender, about 2 hours",
+                                             " stir carefully before serving."
+                                         ],
+                        "sides":  "Serve with bread and pickled vegetables.",
+                        "substitutions":  "Use lamb or add green beans in season.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until bubbling.",
+                        "safety":  "Cook beef thoroughly and cool leftovers quickly.",
+                        "tags":  [
+                                     "stew",
+                                     "beef",
+                                     "vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-burek",
+                        "name":  "Burek",
+                        "englishName":  "Beef-filled phyllo spiral",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Thin pastry layered with a gently seasoned beef and onion filling, baked until crisp.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g phyllo sheets",
+                                            "500 g minced beef",
+                                            "2 onions, finely diced",
+                                            "2 tbsp oil",
+                                            "100 ml oil or melted butter",
+                                            "100 ml water",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil until soft",
+                                             " add beef and cook until browned and liquid evaporates",
+                                             " season and cool",
+                                             "Brush pastry sheets lightly with oil",
+                                             " layer several sheets and spread a thin line of filling along one edge",
+                                             "Roll into a long coil and arrange in a greased round pan",
+                                             "Repeat to fill pan",
+                                             " drizzle with water and oil",
+                                             "Bake at 190 C until golden and crisp."
+                                         ],
+                        "sides":  "Serve with plain yogurt.",
+                        "substitutions":  "Use minced lamb or a spinach filling for a different pita style.",
+                        "storage":  "Refrigerate within 2 hours up to 2 days; reheat in oven.",
+                        "safety":  "Cook minced beef fully and keep raw pastry surfaces clean.",
+                        "tags":  [
+                                     "pastry",
+                                     "beef",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-bosanski-cupavci",
+                        "name":  "Cupavci",
+                        "englishName":  "Chocolate coconut sponge cubes",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Sponge cake cubes dipped in chocolate sauce and rolled in coconut.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  30,
+                        "servings":  10,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "3 eggs",
+                                            "180 g sugar",
+                                            "200 g flour",
+                                            "1 tsp baking powder",
+                                            "120 ml milk",
+                                            "80 g butter",
+                                            "150 g chocolate",
+                                            "200 g desiccated coconut"
+                                        ],
+                        "instructions":  [
+                                             "Beat eggs and sugar until pale",
+                                             " fold in flour and baking powder",
+                                             "Bake in a lined 20 cm tin at 180 C until set",
+                                             " cool and cut into cubes",
+                                             "Warm milk, butter and chocolate until smooth",
+                                             "Dip cubes quickly in sauce and roll in coconut",
+                                             " set on rack."
+                                         ],
+                        "sides":  "Serve with coffee.",
+                        "substitutions":  "Use dark or milk chocolate to taste.",
+                        "storage":  "Keep covered up to 3 days; refrigerate in warm conditions.",
+                        "safety":  "Cool cake fully before dipping; keep dairy sauce refrigerated if storing.",
+                        "tags":  [
+                                     "dessert",
+                                     "chocolate",
+                                     "coconut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-hurmasice",
+                        "name":  "Hurmasice",
+                        "englishName":  "Syrup-soaked butter biscuits",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Soft baked biscuits soaked in lemon syrup, a common home sweet for coffee.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  25,
+                        "servings":  8,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "100 g butter",
+                                            "1 egg",
+                                            "80 g sugar",
+                                            "1 tsp baking powder",
+                                            "250 g sugar for syrup",
+                                            "250 ml water",
+                                            "1 tbsp lemon juice"
+                                        ],
+                        "instructions":  [
+                                             "Boil syrup sugar and water 8 minutes",
+                                             " add lemon juice and cool",
+                                             "Cream butter and sugar",
+                                             " beat in egg",
+                                             " mix in flour and baking powder to make soft dough",
+                                             "Shape small ovals and score tops",
+                                             " bake at 180 C until pale golden",
+                                             "Pour cool syrup over hot biscuits and leave to absorb."
+                                         ],
+                        "sides":  "Serve at room temperature with coffee.",
+                        "substitutions":  "Use orange peel in syrup.",
+                        "storage":  "Store covered in a cool place for 3 days.",
+                        "safety":  "Cool syrup before pouring and store sweets covered.",
+                        "tags":  [
+                                     "dessert",
+                                     "syrup",
+                                     "biscuits"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-janjetina-ispod-saca",
+                        "name":  "Janjetina ispod saca",
+                        "englishName":  "Slow-roasted lamb and potatoes",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Herzegovina",
+                        "description":  "Lamb and potatoes roasted together under a covered pot until tender and browned.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  150,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1.2 kg lamb shoulder pieces",
+                                            "800 g potatoes",
+                                            "2 onions",
+                                            "4 garlic cloves",
+                                            "2 tbsp oil",
+                                            "rosemary",
+                                            "250 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 170 C",
+                                             " season lamb with salt, pepper and rosemary",
+                                             "Brown lamb briefly in a heavy casserole",
+                                             "Add potatoes, onions, garlic and stock",
+                                             " cover tightly and roast until lamb is tender, about 2 hours",
+                                             "Uncover for final 20 minutes to brown",
+                                             " rest before serving."
+                                         ],
+                        "sides":  "Serve with salad and flatbread.",
+                        "substitutions":  "Use beef chuck and extend braising time.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until hot.",
+                        "safety":  "Cook lamb until tender and keep raw meat separate.",
+                        "tags":  [
+                                     "Herzegovina",
+                                     "lamb",
+                                     "roast"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-japrak",
+                        "name":  "Japrak",
+                        "englishName":  "Stuffed vine leaves",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Herzegovina",
+                        "description":  "Vine leaves wrapped around a savoury rice and minced meat filling and simmered with lemon.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "30 preserved vine leaves",
+                                            "250 g minced beef",
+                                            "100 g rice",
+                                            "1 onion, grated",
+                                            "2 tbsp chopped parsley",
+                                            "1 lemon",
+                                            "500 ml stock"
+                                        ],
+                        "instructions":  [
+                                             "Rinse preserved leaves",
+                                             " mix beef, rinsed rice, onion, parsley, pepper and salt",
+                                             "Place a small spoon of filling on each leaf",
+                                             " fold sides and roll tightly",
+                                             "Arrange rolls seam-down in a pot",
+                                             " cover with stock and lemon slices",
+                                             " weigh down with a plate",
+                                             " simmer gently until rice and meat are cooked, about 50 minutes."
+                                         ],
+                        "sides":  "Serve with yogurt or sour cream.",
+                        "substitutions":  "Use lamb mince or make rice-only rolls.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat gently.",
+                        "safety":  "Cook rice and minced meat filling fully.",
+                        "tags":  [
+                                     "Herzegovina",
+                                     "vine leaves",
+                                     "stuffed"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-sogan-sarma",
+                        "name":  "Japrak od poriluka",
+                        "englishName":  "Leek rolls with minced meat",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Central Bosnia",
+                        "description":  "Leek leaves wrapped around a seasoned beef and rice filling and braised in stock.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "3 large leeks",
+                                            "300 g minced beef",
+                                            "80 g rice",
+                                            "1 onion",
+                                            "500 ml stock",
+                                            "1 tbsp tomato paste",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Separate leek leaves and blanch briefly until flexible",
+                                             " mix beef with rinsed rice, onion, parsley and seasoning",
+                                             "Place filling on leek leaves, fold sides and roll",
+                                             "Arrange tightly in pot",
+                                             " mix stock with tomato paste and pour over",
+                                             " simmer covered until rice and meat are cooked, about 40 minutes."
+                                         ],
+                        "sides":  "Serve with yogurt.",
+                        "substitutions":  "Use cabbage leaves if leeks are too small.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cook minced beef and rice completely.",
+                        "tags":  [
+                                     "rolls",
+                                     "leek",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-klepe",
+                        "name":  "Klepe",
+                        "englishName":  "Bosnian meat dumplings",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Small pasta parcels filled with seasoned meat, boiled and topped with garlicky yogurt.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "1 egg",
+                                            "120 ml water",
+                                            "250 g minced beef",
+                                            "1 small onion, grated",
+                                            "200 g plain yogurt",
+                                            "1 garlic clove"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, egg, water and salt into a firm dough",
+                                             " knead and rest covered 20 minutes",
+                                             "Mix beef with onion and pepper",
+                                             "Roll dough thin and cut squares",
+                                             " add a little filling, fold and seal edges",
+                                             "Boil dumplings gently until they float and pasta is tender",
+                                             " mix yogurt with crushed garlic and spoon over."
+                                         ],
+                        "sides":  "Finish with melted butter and paprika.",
+                        "substitutions":  "Use lamb or finely chopped mushrooms.",
+                        "storage":  "Serve immediately; refrigerate cooked dumplings up to 2 days.",
+                        "safety":  "Cook beef filling fully; keep yogurt chilled until serving.",
+                        "tags":  [
+                                     "dumplings",
+                                     "beef",
+                                     "yogurt"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-klepe-potato",
+                        "name":  "Klepe sa krompirom",
+                        "englishName":  "Potato-filled dumplings",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Soft pasta dumplings filled with seasoned potato and served with butter and yogurt.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "1 egg",
+                                            "120 ml water",
+                                            "300 g potatoes, boiled and mashed",
+                                            "1 onion, diced",
+                                            "30 g butter",
+                                            "200 g yogurt"
+                                        ],
+                        "instructions":  [
+                                             "Make firm pasta dough with flour, egg, water and salt",
+                                             " rest covered 20 minutes",
+                                             "Cook onion in butter until golden",
+                                             " mix into mashed potato with pepper",
+                                             "Roll dough thin, cut squares and add potato filling",
+                                             " seal into parcels",
+                                             "Boil gently until pasta is tender and dumplings float",
+                                             " serve with yogurt."
+                                         ],
+                        "sides":  "Sprinkle with paprika or browned butter.",
+                        "substitutions":  "Use cheese mixed into the potato.",
+                        "storage":  "Best fresh; refrigerate cooked dumplings up to 2 days.",
+                        "safety":  "Cook dough fully and keep yogurt chilled until serving.",
+                        "tags":  [
+                                     "dumplings",
+                                     "potato",
+                                     "pasta"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-krompirusa",
+                        "name":  "Krompirusa",
+                        "englishName":  "Potato pita",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Thin pastry spiralled around grated potato, onion and pepper filling.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g phyllo or yufka sheets",
+                                            "700 g potatoes, grated",
+                                            "1 onion, grated",
+                                            "80 ml oil",
+                                            "100 ml water",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Squeeze excess liquid from grated potato",
+                                             " mix with onion, salt and pepper",
+                                             "Brush pastry lightly with oil",
+                                             " spread potato filling in a narrow line and roll",
+                                             "Coil rolls into an oiled pan",
+                                             " mix water and remaining oil, drizzle over top",
+                                             "Bake at 190 C until crisp and golden, about 35 to 40 minutes."
+                                         ],
+                        "sides":  "Serve hot with yogurt.",
+                        "substitutions":  "Use ready-made yufka for easier handling.",
+                        "storage":  "Best fresh; refrigerate leftovers up to 2 days and reheat in oven.",
+                        "safety":  "Keep raw potato filling clean and cook pastry through.",
+                        "tags":  [
+                                     "pie",
+                                     "potato",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-pilav",
+                        "name":  "Pilav",
+                        "englishName":  "Bosnian rice pilaf",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Rice simmered with onion and stock until fluffy, often served with meat or vegetables.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g long-grain rice",
+                                            "1 onion, finely diced",
+                                            "40 g butter",
+                                            "600 ml stock",
+                                            "1 bay leaf",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice until water runs mostly clear",
+                                             "Cook onion in butter until soft",
+                                             "Stir rice through butter until grains look glossy",
+                                             " add hot stock and bay",
+                                             " cover and simmer low until liquid is absorbed",
+                                             " rest 5 minutes",
+                                             " fluff with fork and add parsley."
+                                         ],
+                        "sides":  "Serve with roast chicken, stews or yogurt.",
+                        "substitutions":  "Use vegetable stock and olive oil.",
+                        "storage":  "Refrigerate quickly and use within 1 day; reheat once.",
+                        "safety":  "Cool cooked rice quickly and refrigerate within 1 hour.",
+                        "tags":  [
+                                     "rice",
+                                     "side",
+                                     "pilaf"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-sogan-pita",
+                        "name":  "Pita sa lukom",
+                        "englishName":  "Onion-filled pastry",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Baked filo pie filled with soft onions, yogurt and egg for a savoury meal.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g phyllo sheets",
+                                            "4 onions, thinly sliced",
+                                            "2 eggs",
+                                            "200 ml yogurt",
+                                            "80 ml oil",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Cook onions slowly in oil until soft and sweet",
+                                             " cool slightly",
+                                             "Whisk eggs, yogurt and pepper",
+                                             " stir through onions",
+                                             "Layer pastry sheets in oiled dish, brushing lightly",
+                                             " add filling and cover with remaining sheets",
+                                             "Cut into portions and bake at 190 C until golden and set."
+                                         ],
+                        "sides":  "Serve with salad or yogurt.",
+                        "substitutions":  "Add spinach or leeks to the filling.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat in oven.",
+                        "safety":  "Cook egg filling fully and keep dairy chilled before baking.",
+                        "tags":  [
+                                     "onion",
+                                     "pastry",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-proja",
+                        "name":  "Proja",
+                        "englishName":  "Cornbread with cheese",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "A simple baked cornmeal bread with yogurt and salty cheese.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  30,
+                        "servings":  6,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g cornmeal",
+                                            "150 g plain flour",
+                                            "2 eggs",
+                                            "250 ml yogurt",
+                                            "80 ml oil",
+                                            "150 g crumbled white cheese",
+                                            "1 tbsp baking powder"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 190 C and grease a small baking tin",
+                                             "Whisk eggs, yogurt and oil",
+                                             " fold in cornmeal, flour and baking powder",
+                                             "Fold in cheese and pour into tin",
+                                             "Bake 25 to 30 minutes until set and golden",
+                                             " cool slightly before slicing."
+                                         ],
+                        "sides":  "Serve with soup, yogurt or cured meat.",
+                        "substitutions":  "Use feta for the white cheese.",
+                        "storage":  "Store covered at room temperature for 1 day or refrigerate for 3 days.",
+                        "safety":  "Bake until centre is set; refrigerate if keeping longer.",
+                        "tags":  [
+                                     "cornbread",
+                                     "cheese",
+                                     "side"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-punjena-paprika",
+                        "name":  "Punjena paprika",
+                        "englishName":  "Stuffed peppers",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Bell peppers filled with minced meat and rice, gently cooked in tomato sauce.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  55,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 bell peppers",
+                                            "350 g minced beef",
+                                            "100 g rice",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "500 ml stock",
+                                            "1 tsp paprika"
+                                        ],
+                        "instructions":  [
+                                             "Mix beef with rinsed rice, diced onion, paprika, salt and pepper",
+                                             "Trim pepper tops and remove seeds",
+                                             " fill loosely",
+                                             "Stand peppers in a pot",
+                                             " add tomatoes and stock, cover and simmer gently until filling is cooked and peppers tender",
+                                             " remove peppers and reduce sauce slightly."
+                                         ],
+                        "sides":  "Serve with mashed potato or bread.",
+                        "substitutions":  "Use lentils and cooked rice for a meat-free filling.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook minced meat and rice fully; do not overfill peppers.",
+                        "tags":  [
+                                     "stuffed peppers",
+                                     "beef",
+                                     "rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-pura",
+                        "name":  "Pura",
+                        "englishName":  "Soft cornmeal porridge",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Cornmeal stirred into salted water until smooth and served with dairy or stew.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g fine cornmeal",
+                                            "900 ml water",
+                                            "1 tsp salt",
+                                            "30 g butter",
+                                            "150 g sour cream"
+                                        ],
+                        "instructions":  [
+                                             "Bring salted water to a boil",
+                                             "Whisk cornmeal in slowly to prevent lumps",
+                                             "Lower heat and stir often until thick and cooked, 20 to 25 minutes",
+                                             "Stir in butter and serve with sour cream."
+                                         ],
+                        "sides":  "Serve alongside stews or cheese.",
+                        "substitutions":  "Use milk for a creamier porridge.",
+                        "storage":  "Best fresh; refrigerate leftovers and reheat with water.",
+                        "safety":  "Stir carefully to avoid hot splashes.",
+                        "tags":  [
+                                     "cornmeal",
+                                     "porridge",
+                                     "side"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-lokum",
+                        "name":  "Rahat lokum",
+                        "englishName":  "Soft flour Turkish delight",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Small fragrant cubes of starch-thickened sugar syrup dusted with icing sugar.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  20,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g sugar",
+                                            "300 ml water",
+                                            "80 g cornflour",
+                                            "1 tbsp lemon juice",
+                                            "1 tsp rose water",
+                                            "icing sugar"
+                                        ],
+                        "instructions":  [
+                                             "Boil sugar, half the water and lemon juice until syrup reaches soft-ball stage",
+                                             "Mix cornflour with remaining cold water",
+                                             " whisk into syrup gradually",
+                                             "Cook over low heat, stirring constantly, until very thick and translucent",
+                                             "Stir in rose water, pour into a lined tin and leave overnight",
+                                             " cut and dust with icing sugar."
+                                         ],
+                        "sides":  "Serve with Bosnian coffee.",
+                        "substitutions":  "Use orange blossom water instead of rose.",
+                        "storage":  "Store airtight in a cool dry place for several days.",
+                        "safety":  "Hot sugar syrup causes severe burns; keep children away.",
+                        "tags":  [
+                                     "sweet",
+                                     "rose",
+                                     "coffee"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-cevapi",
+                        "name":  "Sarajevski cevapi",
+                        "englishName":  "Grilled minced beef sausages",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Sarajevo",
+                        "description":  "Small simply seasoned beef sausages grilled and served with flatbread and chopped onion.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g minced beef",
+                                            "1 tsp salt",
+                                            "1/2 tsp baking soda",
+                                            "2 tbsp cold sparkling water",
+                                            "1 small onion, grated"
+                                        ],
+                        "instructions":  [
+                                             "Mix beef with salt, baking soda, sparkling water and grated onion",
+                                             " knead until tacky",
+                                             "Cover and refrigerate at least 2 hours",
+                                             "Shape into short finger-sized sausages",
+                                             "Grill or pan-grill, turning until browned and cooked through."
+                                         ],
+                        "sides":  "Serve in somun with chopped onion and yogurt.",
+                        "substitutions":  "Use a beef and lamb blend; keep seasoning restrained.",
+                        "storage":  "Refrigerate raw mix up to 24 hours; cooked leftovers use within 2 days.",
+                        "safety":  "Cook minced meat through the centre; avoid reusing raw-meat plates.",
+                        "tags":  [
+                                     "Sarajevo",
+                                     "grilled",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-sarma",
+                        "name":  "Sarma",
+                        "englishName":  "Cabbage rolls with meat and rice",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Minced meat and rice rolled in sour cabbage leaves and slowly braised.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  100,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "12 sour cabbage leaves",
+                                            "400 g minced beef",
+                                            "100 g rice",
+                                            "1 onion, diced",
+                                            "150 g smoked beef or turkey",
+                                            "700 ml stock",
+                                            "1 tbsp paprika"
+                                        ],
+                        "instructions":  [
+                                             "Rinse cabbage leaves if very salty",
+                                             " mix beef, rinsed rice, onion, paprika and pepper",
+                                             "Place filling on each leaf and roll tightly, folding in sides",
+                                             "Layer rolls with smoked beef in a heavy pot",
+                                             " add stock to cover",
+                                             " simmer partly covered until rice and meat are cooked and cabbage tender, about 90 minutes."
+                                         ],
+                        "sides":  "Serve with bread and yogurt.",
+                        "substitutions":  "Use fresh blanched cabbage with lemon if sour leaves are unavailable.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until hot throughout.",
+                        "safety":  "Cook filling fully and refrigerate leftovers quickly.",
+                        "tags":  [
+                                     "cabbage",
+                                     "rolls",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-satara",
+                        "name":  "Satara",
+                        "englishName":  "Summer vegetable stew",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Herzegovina",
+                        "description":  "Slow-cooked peppers, tomatoes and onions, sometimes enriched with eggs.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "3 peppers, sliced",
+                                            "2 tomatoes, chopped",
+                                            "1 onion",
+                                            "2 tbsp oil",
+                                            "2 eggs, optional",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil until soft",
+                                             "Add peppers and cook covered 10 minutes until beginning to soften",
+                                             "Stir in tomatoes and simmer uncovered until thick and tender",
+                                             "If using eggs, make wells and cover until whites set",
+                                             " finish with parsley."
+                                         ],
+                        "sides":  "Serve with flatbread or polenta.",
+                        "substitutions":  "Omit eggs for a vegan side dish.",
+                        "storage":  "Refrigerate vegetables up to 3 days; reheat thoroughly.",
+                        "safety":  "Cook eggs until whites are fully set.",
+                        "tags":  [
+                                     "Herzegovina",
+                                     "peppers",
+                                     "vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-kajmak-pita",
+                        "name":  "Sirnica",
+                        "englishName":  "Cheese and cream pita",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Layered pastry filled with a tangy mixture of fresh cheese and cream.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g phyllo sheets",
+                                            "300 g fresh farmer cheese",
+                                            "150 g sour cream",
+                                            "2 eggs",
+                                            "80 ml oil",
+                                            "100 ml sparkling water"
+                                        ],
+                        "instructions":  [
+                                             "Whisk cheese, cream and eggs until combined",
+                                             "Grease baking dish",
+                                             " layer half the pastry, brushing lightly with oil",
+                                             "Spread filling evenly and cover with remaining pastry",
+                                             "Cut into portions",
+                                             " pour sparkling water and remaining oil over top",
+                                             "Bake at 190 C until puffed and golden."
+                                         ],
+                        "sides":  "Serve warm with yogurt.",
+                        "substitutions":  "Use ricotta drained well and plain yogurt.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until hot.",
+                        "safety":  "Keep dairy filling refrigerated before baking and cook egg mixture through.",
+                        "tags":  [
+                                     "cheese",
+                                     "pastry",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-sogan-dolma",
+                        "name":  "Sogan dolma",
+                        "englishName":  "Stuffed onions",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Sarajevo",
+                        "description":  "Soft onion layers filled with seasoned minced meat and rice, braised in tomato broth.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "8 large onions",
+                                            "300 g minced beef",
+                                            "80 g rice",
+                                            "1 tbsp tomato paste",
+                                            "1 tbsp chopped parsley",
+                                            "500 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Peel onions and boil 10 minutes until layers loosen",
+                                             " cool slightly and separate large outer layers",
+                                             "Mix beef, rinsed rice, parsley, salt and pepper",
+                                             "Fill onion layers and roll into parcels",
+                                             "Arrange snugly in a casserole",
+                                             " whisk tomato paste into stock and pour over",
+                                             "Cover and simmer gently until rice and meat cook, about 45 minutes."
+                                         ],
+                        "sides":  "Serve with sour cream or yogurt.",
+                        "substitutions":  "Use lamb mince; keep parcels small for even cooking.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cook minced meat and rice completely through.",
+                        "tags":  [
+                                     "Sarajevo",
+                                     "stuffed onion",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-tarhana",
+                        "name":  "Tarhana",
+                        "englishName":  "Sour milk and vegetable soup",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Central Bosnia",
+                        "description":  "A tangy soup of tarhana dough cooked with stock and finished with yogurt.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "100 g dried tarhana",
+                                            "1 litre stock",
+                                            "1 tbsp butter",
+                                            "1 tbsp tomato paste",
+                                            "100 g plain yogurt",
+                                            "mint"
+                                        ],
+                        "instructions":  [
+                                             "Warm butter and stir in tomato paste",
+                                             "Add stock gradually, then whisk in dried tarhana",
+                                             " simmer gently, stirring until softened and soup thickens",
+                                             "Temper yogurt with a ladle of hot soup and stir back in off heat",
+                                             " finish with mint."
+                                         ],
+                        "sides":  "Serve with bread.",
+                        "substitutions":  "Use kefir or sour cream in place of yogurt.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat gently.",
+                        "safety":  "Temper dairy and avoid leaving soup warm for extended periods.",
+                        "tags":  [
+                                     "soup",
+                                     "fermented",
+                                     "dairy"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-tufahije",
+                        "name":  "Tufahije",
+                        "englishName":  "Walnut-stuffed baked apples",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Apples poached until tender, filled with walnuts and served with whipped cream.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 firm apples",
+                                            "80 g ground walnuts",
+                                            "50 g sugar",
+                                            "500 ml water",
+                                            "1 tbsp lemon juice",
+                                            "200 ml whipping cream"
+                                        ],
+                        "instructions":  [
+                                             "Core apples without piercing bases",
+                                             "Poach gently in water with sugar and lemon until tender but intact",
+                                             "Lift out and cool",
+                                             " reduce poaching syrup slightly",
+                                             "Fill centres with walnuts and a little syrup",
+                                             "Serve chilled or at room temperature with whipped cream."
+                                         ],
+                        "sides":  "Top with extra walnuts.",
+                        "substitutions":  "Use almonds or hazelnuts.",
+                        "storage":  "Refrigerate apples covered up to 2 days; add cream at serving.",
+                        "safety":  "Keep cream chilled and use clean utensils.",
+                        "tags":  [
+                                     "dessert",
+                                     "apple",
+                                     "walnut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-ustipci",
+                        "name":  "Ustipci",
+                        "englishName":  "Fried yeast dough bites",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Small savoury yeast dough pieces fried until golden, eaten with cheese or jam.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "350 g plain flour",
+                                            "7 g yeast",
+                                            "220 ml warm water",
+                                            "1 tsp salt",
+                                            "1 tsp sugar",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, sugar, salt and warm water into a soft dough",
+                                             " cover and rise until doubled",
+                                             "Wet hands and pinch off small pieces",
+                                             "Heat shallow oil to about 175 C",
+                                             " fry in batches, turning until golden and cooked through",
+                                             " drain on a rack."
+                                         ],
+                        "sides":  "Serve with kajmak, cheese, honey or jam.",
+                        "substitutions":  "Use half wholemeal flour for a heartier dough.",
+                        "storage":  "Best fresh; store leftovers covered and use within a day.",
+                        "safety":  "Use care with hot oil and fry dough through the centre.",
+                        "tags":  [
+                                     "bread",
+                                     "fried",
+                                     "snack"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "ba-zeljanica",
+                        "name":  "Zeljanica",
+                        "englishName":  "Spinach and cheese pita",
+                        "country":  "Bosnia and Herzegovina",
+                        "region":  "Nationwide",
+                        "description":  "Phyllo pie filled with spinach, fresh cheese and egg, baked until crisp.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g phyllo sheets",
+                                            "300 g spinach, wilted and squeezed",
+                                            "250 g fresh cheese",
+                                            "2 eggs",
+                                            "100 ml yogurt",
+                                            "80 ml oil"
+                                        ],
+                        "instructions":  [
+                                             "Chop spinach and mix with cheese, eggs, yogurt and salt",
+                                             "Brush pastry lightly with oil and layer half into a baking dish",
+                                             "Spread filling and cover with remaining sheets",
+                                             "Cut into portions and drizzle with remaining oil",
+                                             "Bake at 190 C until crisp and filling set."
+                                         ],
+                        "sides":  "Serve with plain yogurt.",
+                        "substitutions":  "Use chard or nettles instead of spinach.",
+                        "storage":  "Refrigerate within 2 hours up to 2 days; reheat until hot.",
+                        "safety":  "Cook egg filling fully and keep dairy chilled before baking.",
+                        "tags":  [
+                                     "spinach",
+                                     "cheese",
+                                     "pastry"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:bosnia-herzegovina",
+                            "title":  "Bosnian recipes",
+                            "recipeIds":  [
+                                              "ba-baklava",
+                                              "ba-bamija",
+                                              "ba-sis-cevapi",
+                                              "ba-begova-corba",
+                                              "ba-bosanska-kafa",
+                                              "ba-bosanski-lonac",
+                                              "ba-burek",
+                                              "ba-bosanski-cupavci",
+                                              "ba-hurmasice",
+                                              "ba-janjetina-ispod-saca",
+                                              "ba-japrak",
+                                              "ba-sogan-sarma",
+                                              "ba-klepe",
+                                              "ba-klepe-potato",
+                                              "ba-krompirusa",
+                                              "ba-pilav",
+                                              "ba-sogan-pita",
+                                              "ba-proja",
+                                              "ba-punjena-paprika",
+                                              "ba-pura",
+                                              "ba-lokum",
+                                              "ba-cevapi",
+                                              "ba-sarma",
+                                              "ba-satara",
+                                              "ba-kajmak-pita",
+                                              "ba-sogan-dolma",
+                                              "ba-tarhana",
+                                              "ba-tufahije",
+                                              "ba-ustipci",
+                                              "ba-zeljanica"
+                                          ]
+                        }
+                    ]
+}
