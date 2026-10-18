@@ -2,7 +2,7 @@
 
 The Starter Library is immutable reference material compiled into the APK. It is available without connectivity and is not inserted into personal records on installation. A user must select **Copy to my space** to create a separate, editable entry in the existing encrypted personal-entry store.
 
-All items currently use content revision `1` and show `17 October 2026` as the review date. Library content is held in `StarterLibrary.kt`; IDs are stable across releases. Catalogue changes must preserve existing IDs where meaning is unchanged, increment the revision for edited content, and must never rewrite personal copies.
+All existing items use content revision `1` and show `17 October 2026` as the review date. The Retro & Android items use revision `1` and show `18 October 2026`. Library content is held in `StarterLibrary.kt`; IDs are stable across releases. Catalogue changes must preserve existing IDs where meaning is unchanged, increment the revision for edited content, and must never rewrite personal copies.
 
 ## Inventory
 
@@ -15,7 +15,8 @@ All items currently use content revision `1` and show `17 October 2026` as the r
 | Pottery | `pottery.project`, `pottery.glaze-test`, `pottery.kiln-log` | 3 |
 | Shopping | `shopping.research`, `shopping.comparison` | 2 |
 | Bills | `bills.monthly`, `bills.irregular` | 2 |
-| **Total** |  | **28** |
+| Retro & Android | `retro.start-here`, `retro.android-version-map`, `retro.android-root-roms`, `retro.ps1-homebrew`, `retro.ps2-homebrew`, `retro.ps3-homebrew`, `retro.ps4-homebrew`, `retro.ps5-homebrew`, `retro.homebrew-catalogues`, `retro.modded-warfare` | 10 |
+| **Total** |  | **38** |
 
 ## Source and safety notes
 
@@ -27,7 +28,10 @@ All items currently use content revision `1` and show `17 October 2026` as the r
 - Pottery templates record project, glaze and kiln details. They do not prescribe firing temperatures; follow the clay, glaze and kiln manufacturer's instructions and the studio's approved firing process.
 - Shopping items are blank user research templates. They do not claim live prices, stock or retailer verification and continue to use the existing HTTPS validation when saved in the Shopping section.
 - Bill templates are blank and do not request calendar permission when opened.
+- Retro & Android cards cover Android versions/API levels 1–37, device-first Android root/custom-ROM research, PS1–PS5 homebrew starting points, homebrew catalogues and Modded Warfare. Firmware support changes; cards direct users to upstream project release notes rather than claiming a universal jailbreak. Their links were reviewed on 18 October 2026.
+- Android modification guidance links the Android Open Source Project bootloader documentation, LineageOS device-specific installation pages and Magisk's upstream project. Console cards link to the relevant project repositories or their own documentation. The PS1 card calls out FreePSXBoot's full-memory-card overwrite warning.
+- The PKG-Zone reference is identified as a homebrew catalogue, not a source for commercial game downloads. The cards direct users to homebrew and software they are authorised to use.
 
 ## Offline imagery
 
-Where available, the library reuses Suric's existing optimized WebP section photographs. No image is downloaded at runtime, no new image dependency is required, and the detail view remains usable if no image key is assigned.
+Where available, the library reuses Suric's existing optimized WebP section photographs. Retro & Android cards use the existing `suric_retro` image. No image is downloaded at runtime, no new image dependency is required, and the detail view remains usable if no image key is assigned.

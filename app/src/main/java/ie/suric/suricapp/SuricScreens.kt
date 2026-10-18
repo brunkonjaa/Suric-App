@@ -139,7 +139,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Home", maxLines = 1) },
                             selected = selectedSection == null && route == "home",
-                            onClick = { selectedSection = null; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -190,10 +190,10 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     ) {
         when {
             route == "assistant" -> ConversationScreen(auth = auth, vm = vm, onMenu = { scope.launch { drawerState.open() } }, onSignIn = vm::signIn)
-            route == "library" -> StarterLibraryScreen(
+            route == "library" || selectedStarterId != null -> StarterLibraryScreen(
                 selectedId = selectedStarterId,
                 onSelect = { selectedStarterId = it },
-                onBack = { if (selectedStarterId != null) selectedStarterId = null else route = "home" },
+                onBack = { if (selectedStarterId != null) selectedStarterId = null else { route = "home"; selectedSection = null } },
                 onMenu = { scope.launch { drawerState.open() } },
                 onCopy = { item -> vm.addEntry(item.destination, item.title, item.asPersonalText()) }
             )
@@ -215,6 +215,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 section = selectedSection!!,
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
+                onStarterSelect = { selectedStarterId = it },
                 onAssistant = { context -> selectedSection = null; route = "assistant"; vm.send(context) }
             )
             else -> SuricHome(
@@ -401,6 +402,7 @@ private fun StarterLibraryScreen(
     val scope = rememberCoroutineScope()
     val snackbar = remember { SnackbarHostState() }
     val copyMutex = remember { Mutex() }
+    val uriHandler = LocalUriHandler.current
     var query by rememberSaveable { mutableStateOf("") }
     var category by rememberSaveable { mutableStateOf<String?>(null) }
     var copying by rememberSaveable { mutableStateOf(false) }
@@ -442,7 +444,11 @@ private fun StarterLibraryScreen(
                 if (selected.sources.isNotEmpty() || selected.reviewed != null) item {
                     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                         selected.reviewed?.let { Text("Content reviewed: $it", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-                        selected.sources.forEach { (label, url) -> Text("Source: $label — $url", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        selected.sources.forEach { (label, url) ->
+                            TextButton(onClick = { runCatching { uriHandler.openUri(url) }.onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open that source.") } } }, contentPadding = PaddingValues(horizontal = 0.dp), modifier = Modifier.heightIn(min = 48.dp)) {
+                                Text("Open source: $label", style = MaterialTheme.typography.bodySmall, maxLines = 2)
+                            }
+                        }
                     }
                 }
                 item {
@@ -513,12 +519,13 @@ private fun starterImage(key: String): Int = when (key) {
     "suric_diy" -> R.drawable.suric_diy
     "suric_cleaning" -> R.drawable.suric_cleaning
     "suric_cooking" -> R.drawable.suric_cooking
+    "suric_retro" -> R.drawable.suric_retro
     else -> R.drawable.suric_home
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
+private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMenu: () -> Unit, onStarterSelect: (String) -> Unit, onAssistant: (String) -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
@@ -578,6 +585,27 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
             item { SectionHero(area) }
             item {
                 Text(area.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (section == "Retro & Android") {
+                val referenceItems = StarterLibrary.items.filter { it.category == "Retro & Android" }
+                item {
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Text("Ready-to-use reference cards", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("Offline guides for Android and PS1–PS5. Open a card for its guide and project links.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+                items(referenceItems, key = { it.id }) { reference ->
+                    Card(Modifier.fillMaxWidth().clickable { onStarterSelect(reference.id) }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)) {
+                        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Image(painterResource(R.drawable.suric_retro), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp)))
+                            Column(Modifier.weight(1f).padding(start = 12.dp)) {
+                                Text(reference.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                                Text(reference.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                                Text("Open guide and links", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                            }
+                        }
+                    }
+                }
             }
             if (section == "Shopping") item {
                 Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
