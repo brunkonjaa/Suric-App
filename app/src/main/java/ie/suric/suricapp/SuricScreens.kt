@@ -395,6 +395,7 @@ private fun DrawerHeader() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun MyDayScreen(vm: ConnectionViewModel, onMenu: () -> Unit, onOpenSection: (String) -> Unit) {
     val entries by vm.personalEntries.collectAsState()
@@ -512,6 +513,7 @@ private fun MyDayEntryCard(entry: PersonalEntry, today: String, onComplete: (Per
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun PersonalSearchScreen(vm: ConnectionViewModel, onMenu: () -> Unit, onOpenSection: (String) -> Unit) {
     val entries by vm.personalEntries.collectAsState()
