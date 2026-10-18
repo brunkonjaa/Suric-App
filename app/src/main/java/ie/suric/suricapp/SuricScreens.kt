@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 31983)
-Total output lines: 1599
-
 package ie.suric.suricapp
 
 import android.graphics.Bitmap
@@ -574,7 +571,595 @@ private fun SuricHome(connected: Boolean, onMenu: () -> Unit, onAssistant: () ->
         topBar = {
             CenterAlignedTopAppBar(
                 title = { Text("Suric", fontWeight = FontWeight.Bold) },
-     …11983 tokens truncated…tore(context).delete(entry.photoName) }
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
+                actions = { ConnectionPill(connected = connected) }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        Column(Modifier.fillMaxSize().padding(padding)) {
+            HomeHero(onAssistant)
+            FilledTonalButton(onClick = onMyDay, modifier = Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 4.dp).heightIn(min = 48.dp), shape = RoundedCornerShape(16.dp)) { Text("Open My Day") }
+            Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 10.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                OutlinedButton(onClick = onLibrary, modifier = Modifier.weight(1f).heightIn(min = 48.dp), shape = RoundedCornerShape(16.dp)) { Text("My Library", maxLines = 1) }
+                TextButton(onClick = onSettings, modifier = Modifier.heightIn(min = 48.dp)) { Text("Settings", maxLines = 1) }
+            }
+            Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp, top = 20.dp, bottom = 10.dp), verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.SpaceBetween) {
+                Column(Modifier.weight(1f)) {
+                    Text("Your spaces", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
+                    Text("Choose what you need right now.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                Text("${visibleAreas.size} shown", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (visibleAreas.isEmpty()) {
+                Card(Modifier.fillMaxWidth().weight(1f).padding(horizontal = 18.dp, vertical = 6.dp), shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxSize().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+                        Text("No Home cards are showing", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Spacer(Modifier.height(6.dp))
+                        Text("Your sections and saved information are still here. Turn cards back on in Settings.", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(Modifier.height(12.dp))
+                        Button(onClick = onSettings, modifier = Modifier.heightIn(min = 48.dp)) { Text("Open Settings") }
+                    }
+                }
+            } else LazyVerticalGrid(
+                columns = GridCells.Fixed(2),
+                modifier = Modifier.weight(1f).fillMaxWidth(),
+                contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 4.dp, bottom = 24.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                gridItems(visibleAreas, key = { it.name }) { area -> AreaTile(area, onClick = { onSection(area.name) }) }
+            }
+            Text(if (connected) "ChatGPT connected" else "Local mode · Ask Suric is optional", Modifier.align(Alignment.CenterHorizontally).padding(bottom = 6.dp), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.labelSmall)
+        }
+    }
+}
+
+@Composable
+private fun HomeHero(onAssistant: () -> Unit) {
+    Box(
+        Modifier.fillMaxWidth().padding(horizontal = 18.dp).height(184.dp)
+            .clip(RoundedCornerShape(26.dp)).clickable(onClick = onAssistant)
+    ) {
+        Image(painterResource(R.drawable.suric_home), contentDescription = "A sunny garden patio with rosemary and a basket", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
+        Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Transparent, Color(0xE6000000)))))
+        Column(Modifier.align(Alignment.BottomStart).padding(start = 20.dp, end = 20.dp, bottom = 18.dp)) {
+            Text("A little help for everyday life", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, color = Color.White, maxLines = 1)
+            Spacer(Modifier.height(5.dp))
+            Text("Ask Suric", style = MaterialTheme.typography.labelLarge, color = Color.White)
+        }
+    }
+}
+
+@Composable
+private fun AreaTile(area: PersonalArea, onClick: () -> Unit) {
+    val shape = RoundedCornerShape(22.dp)
+    Box(
+        Modifier.fillMaxWidth().height(142.dp).shadow(5.dp, shape, ambientColor = Color(0x18000000), spotColor = Color(0x24000000))
+            .clip(shape).clickable(onClick = onClick)
+    ) {
+        Image(painterResource(area.image), contentDescription = "${area.displayName} section", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
+        Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Transparent, Color(0xD9000000)))))
+        Text(area.displayName, Modifier.align(Alignment.BottomStart).padding(start = 14.dp, end = 12.dp, bottom = 13.dp), maxLines = 1,
+            style = MaterialTheme.typography.titleMedium, color = Color.White, fontWeight = FontWeight.SemiBold)
+    }
+}
+
+@Composable
+private fun ConnectionPill(connected: Boolean) {
+    Row(Modifier.padding(end = 16.dp).clip(CircleShape).background(MaterialTheme.colorScheme.primaryContainer).padding(horizontal = 11.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+        Box(Modifier.size(8.dp).clip(CircleShape).background(MaterialTheme.colorScheme.primary))
+        Spacer(Modifier.width(7.dp))
+        Text(if (connected) "Connected" else "AI optional", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onPrimaryContainer, maxLines = 1)
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun SettingsScreen(
+    darkTheme: Boolean,
+    visibleSections: Set<String>,
+    sectionOrder: List<String>,
+    onThemeChange: (Boolean) -> Unit,
+    onVisibilityChange: suspend (Set<String>) -> Unit,
+    onOrderChange: suspend (List<String>) -> Unit,
+    onRestoreDefaults: suspend () -> Unit,
+    onMenu: () -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val snackbar = remember { SnackbarHostState() }
+    val operationMutex = remember { Mutex() }
+    var saving by remember { mutableStateOf(false) }
+    Scaffold(
+        topBar = { CenterAlignedTopAppBar(title = { Text("Settings", maxLines = 1, fontWeight = FontWeight.SemiBold) }, navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, "Open sections") } }) },
+        snackbarHost = { SnackbarHost(snackbar) }
+    ) { padding ->
+        LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 10.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            item { Text("Appearance", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) }
+            item {
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().heightIn(min = 72.dp).padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Column(Modifier.weight(1f)) { Text("Dark appearance", style = MaterialTheme.typography.bodyLarge); Text("Saved on this device", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        Switch(checked = darkTheme, onCheckedChange = onThemeChange, modifier = Modifier.semantics { contentDescription = "Toggle dark appearance" })
+                    }
+                }
+            }
+            item {
+                Row(Modifier.fillMaxWidth().padding(top = 12.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                    Column(Modifier.weight(1f)) { Text("Home sections", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold); Text("Choose which cards appear and arrange their order. Hidden sections and records stay available in the drawer.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        TextButton(onClick = {
+                        if (!operationMutex.tryLock()) return@TextButton
+                        saving = true
+                        scope.launch { try { runCatching { onRestoreDefaults() }.onFailure { snackbar.showSnackbar(it.message ?: "Could not restore defaults.") } } finally { saving = false; operationMutex.unlock() } }
+                    }, enabled = !saving, modifier = Modifier.heightIn(min = 48.dp)) { Text("Restore defaults", maxLines = 1) }
+                }
+            }
+            items(sectionOrder.mapNotNull { id -> personalAreas.firstOrNull { it.name == id } }, key = { it.name }) { area ->
+                val checked = area.name in visibleSections
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    val position = sectionOrder.indexOf(area.name)
+                    Row(Modifier.fillMaxWidth().heightIn(min = 64.dp).padding(horizontal = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Column(Modifier.weight(1f).padding(vertical = 8.dp)) { Text(area.displayName, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium); Text("Home card visibility", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        IconButton(onClick = {
+                            if (saving || position <= 0 || !operationMutex.tryLock()) return@IconButton
+                            val updated = sectionOrder.toMutableList().apply { add(position - 1, removeAt(position)) }
+                            saving = true
+                            scope.launch { try { runCatching { onOrderChange(updated) }.onFailure { snackbar.showSnackbar(it.message ?: "Could not save this order.") } } finally { saving = false; operationMutex.unlock() } }
+                        }, enabled = !saving && position > 0, modifier = Modifier.size(48.dp).semantics { contentDescription = "Move ${area.displayName} up" }) { Icon(Icons.Default.ArrowUpward, contentDescription = null) }
+                        IconButton(onClick = {
+                            if (saving || position < 0 || position >= sectionOrder.lastIndex || !operationMutex.tryLock()) return@IconButton
+                            val updated = sectionOrder.toMutableList().apply { add(position + 1, removeAt(position)) }
+                            saving = true
+                            scope.launch { try { runCatching { onOrderChange(updated) }.onFailure { snackbar.showSnackbar(it.message ?: "Could not save this order.") } } finally { saving = false; operationMutex.unlock() } }
+                        }, enabled = !saving && position in 0 until sectionOrder.lastIndex, modifier = Modifier.size(48.dp).semantics { contentDescription = "Move ${area.displayName} down" }) { Icon(Icons.Default.ArrowDownward, contentDescription = null) }
+                        Switch(checked = checked, enabled = !saving, onCheckedChange = { show ->
+                            if (!operationMutex.tryLock()) return@Switch
+                            val updated = if (show) visibleSections + area.name else visibleSections - area.name
+                            saving = true
+                            scope.launch { try { runCatching { onVisibilityChange(updated) }.onFailure { snackbar.showSnackbar(it.message ?: "Could not save this setting.") } } finally { saving = false; operationMutex.unlock() } }
+                        }, modifier = Modifier.semantics { contentDescription = "Show ${area.displayName} Home card" })
+                    }
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun StarterLibraryScreen(
+    selectedId: String?,
+    libraryState: PersonalLibraryState,
+    libraryError: String?,
+    onSelect: (String) -> Unit,
+    onBack: () -> Unit,
+    onMenu: () -> Unit,
+    onCopy: suspend (StarterItem) -> Unit,
+    onToggleFavourite: (String) -> Unit,
+    onOpenExternal: (ExternalLibraryResource) -> Unit,
+    onCreateProject: suspend (StarterItem) -> Unit,
+    onCreateTask: suspend (StarterItem) -> Unit,
+    onAskAbout: (StarterItem) -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val snackbar = remember { SnackbarHostState() }
+    val copyMutex = remember { Mutex() }
+    val guideActionMutex = remember { Mutex() }
+    val uriHandler = LocalUriHandler.current
+    var query by rememberSaveable { mutableStateOf("") }
+    var category by rememberSaveable { mutableStateOf<String?>(null) }
+    var collection by rememberSaveable { mutableStateOf("All") }
+    var copying by rememberSaveable { mutableStateOf(false) }
+    val selected = selectedId?.let { StarterLibrary.byId(it) }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text(if (selected == null) "My Library" else selected.title, maxLines = if (selected == null) 1 else 2, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = if (selected == null) onMenu else onBack, modifier = Modifier.size(48.dp)) { if (selected == null) Icon(Icons.Default.Menu, "Open sections") else Icon(Icons.Default.Close, "Back to library") } },
+                actions = {
+                    selected?.let { article ->
+                        IconButton(onClick = { runCatching { onToggleFavourite(article.id) }.onFailure { error -> scope.launch { snackbar.showSnackbar(error.message ?: "Could not save this item.") } } }, modifier = Modifier.size(48.dp).semantics { contentDescription = if (article.id in libraryState.favourites) "Remove ${article.title} from favourites" else "Save ${article.title} to favourites" }) {
+                            Icon(if (article.id in libraryState.favourites) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = null, tint = if (article.id in libraryState.favourites) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                    }
+                }
+            )
+        },
+        snackbarHost = { SnackbarHost(snackbar) }
+    ) { padding ->
+        if (selected != null) {
+            LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 10.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                libraryError?.let { message -> item { LibraryEmptyState("My Library could not be updated", message) } }
+                selected.imageKey?.let { key -> item { StarterBanner(key, selected.category) } }
+                item {
+                    Text(selected.category.uppercase(), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold, letterSpacing = 1.sp)
+                    Text(selected.title, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
+                    Text(selected.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${selected.type.name.lowercase().replaceFirstChar { it.uppercase() }} · revision ${selected.revision}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                items(selected.blocks, key = { selected.id + it.heading }) { block ->
+                    Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                            Text(block.heading, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Spacer(Modifier.height(6.dp))
+                            block.lines.forEachIndexed { index, line ->
+                                val marker = when {
+                                    selected.type == StarterType.RECIPE && block.heading == "Method" -> "${index + 1}.  "
+                                    selected.type == StarterType.CHECKLIST -> "☐  "
+                                    else -> "•  "
+                                }
+                                Text(marker + line, Modifier.padding(vertical = 3.dp), style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+                            }
+                        }
+                    }
+                }
+                val relatedItems = selected.relatedIds.mapNotNull(StarterLibrary::byId)
+                if (relatedItems.isNotEmpty()) {
+                    item { Text("Related guides", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold) }
+                    items(relatedItems, key = { "related-${selected.id}-${it.id}" }) { related ->
+                        Card(
+                            modifier = Modifier.fillMaxWidth().clickable { onSelect(related.id) },
+                            shape = RoundedCornerShape(18.dp),
+                            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+                        ) {
+                            Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                                Text(related.category, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                                Text(related.title, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.SemiBold)
+                                Text(related.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                            }
+                        }
+                    }
+                }
+                if (selected.sources.isNotEmpty() || selected.reviewed != null) item {
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        selected.reviewed?.let { Text("Content reviewed: $it", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        selected.sources.forEach { (label, url) ->
+                            TextButton(onClick = {
+                                val clean = PersonalLibraryStore.cleanHttpsUrl(url)
+                                if (clean == null) scope.launch { snackbar.showSnackbar("This source link is invalid.") }
+                                else runCatching { uriHandler.openUri(clean) }.onFailure { scope.launch { snackbar.showSnackbar("Could not open this source link.") } }
+                            }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp), contentPadding = PaddingValues(horizontal = 8.dp)) {
+                                Text("Open source: $label", modifier = Modifier.weight(1f), maxLines = 2)
+                                Icon(Icons.Default.OpenInNew, contentDescription = null)
+                            }
+                        }
+                    }
+                }
+                item {
+                    Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                        Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Text("Use this guide", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                            Text("Create a linked project or task in your personal spaces, or ask Suric about the guide when you choose.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                OutlinedButton(onClick = {
+                                    if (!guideActionMutex.tryLock()) return@OutlinedButton
+                                    scope.launch { try { runCatching { onCreateProject(selected) }.onSuccess { snackbar.showSnackbar("Project created in My Projects.") }.onFailure { snackbar.showSnackbar(it.message ?: "Could not create the project.") } } finally { guideActionMutex.unlock() } }
+                                }, modifier = Modifier.weight(1f).heightIn(min = 48.dp)) { Text("Start project", maxLines = 1) }
+                                OutlinedButton(onClick = {
+                                    if (!guideActionMutex.tryLock()) return@OutlinedButton
+                                    scope.launch { try { runCatching { onCreateTask(selected) }.onSuccess { snackbar.showSnackbar("Task added to My Day.") }.onFailure { snackbar.showSnackbar(it.message ?: "Could not create the task.") } } finally { guideActionMutex.unlock() } }
+                                }, modifier = Modifier.weight(1f).heightIn(min = 48.dp)) { Text("Add task", maxLines = 1) }
+                            }
+                            TextButton(onClick = { onAskAbout(selected) }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) { Text("Ask Suric about this guide") }
+                        }
+                    }
+                }
+                item {
+                    Button(onClick = {
+                        if (!copyMutex.tryLock()) return@Button
+                        copying = true
+                        scope.launch {
+                            try {
+                                runCatching { onCopy(selected) }
+                                    .onSuccess { snackbar.showSnackbar("Copied to ${selected.destination}. You can edit your copy there.") }
+                                    .onFailure { snackbar.showSnackbar(it.message ?: "Could not save the personal copy.") }
+                            } finally { copying = false; copyMutex.unlock() }
+                        }
+                    }, enabled = !copying, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                        if (copying) CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp, color = MaterialTheme.colorScheme.onPrimary) else Text("Copy to my space")
+                    }
+                }
+            }
+        } else {
+            val matchingItems = StarterLibrary.search(query, category)
+            val results = if (collection == "Saved") matchingItems.filter { it.id in libraryState.favourites }
+                .sortedByDescending { libraryState.favouriteSavedAt[it.id] ?: 0L } else matchingItems
+            val matchingExternal = libraryState.externalResources.filter { resource ->
+                (collection != "Saved" || resource.id in libraryState.favourites) &&
+                    (query.isBlank() || resource.title.contains(query.trim(), true) || resource.url.contains(query.trim(), true))
+            }.sortedByDescending { if (collection == "Saved") libraryState.favouriteSavedAt[it.id] ?: 0L else it.addedAtEpochMillis }
+            LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                libraryError?.let { message -> item { LibraryEmptyState("Saved library data needs attention", message) } }
+                item { Text("Offline guides and recipes, plus web links you choose to save.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                item {
+                    OutlinedTextField(value = query, onValueChange = { query = it }, modifier = Modifier.fillMaxWidth(), singleLine = true, shape = RoundedCornerShape(16.dp), placeholder = { Text("Search the library") }, leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) }, trailingIcon = { if (query.isNotEmpty()) IconButton(onClick = { query = "" }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, "Clear search") } })
+                }
+                item {
+                    LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 2.dp)) {
+                        listOf("All", "Saved · newest", "Recently viewed").forEach { option ->
+                            val target = if (option.startsWith("Saved")) "Saved" else option
+                            item { FilterChip(selected = collection == target, onClick = { collection = target }, label = { Text(option, maxLines = 1) }) }
+                        }
+                    }
+                }
+                item {
+                    LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 2.dp)) {
+                        item { FilterChip(selected = category == null, onClick = { category = null }, label = { Text("All") }) }
+                        rowItems(StarterLibrary.categories, key = { it }) { option -> FilterChip(selected = category == option, onClick = { category = if (category == option) null else option }, label = { Text(option, maxLines = 1) }) }
+                    }
+                }
+                if (collection == "Recently viewed") {
+                    val recentItems = libraryState.recentlyViewedIds.mapNotNull(StarterLibrary::byId)
+                    val recentExternal = libraryState.recentlyViewedIds.mapNotNull { id -> libraryState.externalResources.firstOrNull { it.id == id } }
+                    item { Text("Recently viewed", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold) }
+                    items(recentItems, key = { "recent-${it.id}" }) { article ->
+                        LibraryArticleCard(article, article.id in libraryState.favourites, onClick = { onSelect(article.id) }, onFavourite = { runCatching { onToggleFavourite(article.id) }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Could not update favourites.") } } })
+                    }
+                    items(recentExternal, key = { "recent-${it.id}" }) { resource ->
+                        ExternalResourceCard(resource, resource.id in libraryState.favourites, onClick = {
+                            onOpenExternal(resource)
+                            runCatching { uriHandler.openUri(resource.url) }.onFailure { scope.launch { snackbar.showSnackbar("Could not open this link.") } }
+                        }, onFavourite = { runCatching { onToggleFavourite(resource.id) }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Could not update favourites.") } } })
+                    }
+                    if (recentItems.isEmpty() && recentExternal.isEmpty()) item { LibraryEmptyState("Nothing viewed yet", "Open a guide or saved link and it will appear here.") }
+                } else {
+                    item { Text("${results.size + matchingExternal.size} items", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                    if (results.isEmpty() && matchingExternal.isEmpty()) item {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) { Column(Modifier.fillMaxWidth().padding(20.dp), horizontalAlignment = Alignment.CenterHorizontally) { Text("No matching items", style = MaterialTheme.typography.titleMedium); Text("Try another word or category.", color = MaterialTheme.colorScheme.onSurfaceVariant) } }
+                    }
+                    items(results, key = { it.id }) { article ->
+                        LibraryArticleCard(article, article.id in libraryState.favourites, onClick = { onSelect(article.id) }, onFavourite = { runCatching { onToggleFavourite(article.id) }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Could not update favourites.") } } })
+                    }
+                    items(matchingExternal, key = { it.id }) { resource ->
+                        ExternalResourceCard(resource, resource.id in libraryState.favourites, onClick = {
+                            onOpenExternal(resource)
+                            runCatching { uriHandler.openUri(resource.url) }.onFailure { scope.launch { snackbar.showSnackbar("Could not open this link.") } }
+                        }, onFavourite = { runCatching { onToggleFavourite(resource.id) }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Could not update favourites.") } } })
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun LibraryArticleCard(item: StarterItem, favourite: Boolean, onClick: () -> Unit, onFavourite: () -> Unit) {
+    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+        Row(Modifier.fillMaxWidth().heightIn(min = 96.dp).padding(start = 14.dp, end = 4.dp, top = 10.dp, bottom = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+            Row(Modifier.weight(1f).clickable(onClick = onClick).padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+                item.imageKey?.let { key -> Image(painterResource(starterImage(key)), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp))) }
+                Column(Modifier.weight(1f).padding(start = if (item.imageKey == null) 0.dp else 12.dp)) {
+                    Text(item.category, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                    Text(item.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                    Text(item.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                    Text(item.type.name.lowercase().replaceFirstChar { it.uppercase() } + " · offline", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
+            IconButton(onClick = onFavourite, modifier = Modifier.size(48.dp).semantics { contentDescription = if (favourite) "Remove ${item.title} from favourites" else "Save ${item.title} to favourites" }) {
+                Icon(if (favourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = null, tint = if (favourite) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+@Composable
+private fun ExternalResourceCard(resource: ExternalLibraryResource, favourite: Boolean, onClick: () -> Unit, onFavourite: () -> Unit) {
+    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+        Row(Modifier.fillMaxWidth().heightIn(min = 76.dp).padding(start = 14.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f).clickable(onClick = onClick).padding(vertical = 5.dp)) {
+                Text("Saved web resource · internet required", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                Text(resource.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                Text(resource.url, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2)
+            }
+            IconButton(onClick = onClick, modifier = Modifier.size(48.dp).semantics { contentDescription = "Open ${resource.title}" }) { Icon(Icons.Default.OpenInNew, contentDescription = null) }
+            IconButton(onClick = onFavourite, modifier = Modifier.size(48.dp).semantics { contentDescription = if (favourite) "Remove ${resource.title} from favourites" else "Save ${resource.title} to favourites" }) {
+                Icon(if (favourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = null, tint = if (favourite) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+@Composable
+private fun LibraryEmptyState(title: String, message: String) {
+    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+        Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+            Text(message, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
+}
+
+@Composable
+private fun StarterBanner(imageKey: String, title: String) {
+    Box(Modifier.fillMaxWidth().height(128.dp).clip(RoundedCornerShape(22.dp))) {
+        Image(painterResource(starterImage(imageKey)), contentDescription = "$title reference image", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
+        Box(Modifier.fillMaxSize().background(Brush.horizontalGradient(listOf(Color(0x99000000), Color.Transparent))))
+        Text(title, Modifier.align(Alignment.BottomStart).padding(16.dp), style = MaterialTheme.typography.titleLarge, color = Color.White, fontWeight = FontWeight.SemiBold)
+    }
+}
+
+private fun starterImage(key: String): Int = when (key) {
+    "suric_garden" -> R.drawable.suric_garden
+    "suric_pottery" -> R.drawable.suric_pottery
+    "suric_shopping" -> R.drawable.suric_shopping
+    "suric_bills" -> R.drawable.suric_bills
+    "suric_diy" -> R.drawable.suric_diy
+    "suric_cleaning" -> R.drawable.suric_cleaning
+    "suric_cooking" -> R.drawable.suric_cooking
+    "suric_retro" -> R.drawable.suric_retro
+    else -> R.drawable.suric_home
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
+    val context = LocalContext.current
+    val uriHandler = LocalUriHandler.current
+    val scope = rememberCoroutineScope()
+    val area = personalAreas.first { it.name == section }
+    val allSavedEntries by vm.personalEntries.collectAsState()
+    val savedEntries = allSavedEntries.filter { it.section == section }.let { records ->
+        if (section == "Cooking") records.sortedWith(compareBy<PersonalEntry> { if (it.recordType == "meal") 0 else 1 }.thenBy { it.dueDate ?: "9999-99-99" }.thenByDescending { it.updatedAtEpochMillis }) else records
+    }
+    val localDataError by vm.localDataError.collectAsState()
+    var editingId by rememberSaveable(section) { mutableStateOf<String?>(null) }
+    val editing = savedEntries.firstOrNull { it.id == editingId }
+    var showEditor by rememberSaveable(section) { mutableStateOf(false) }
+    var calendarEvents by remember { mutableStateOf<List<LocalCalendarEvent>>(emptyList()) }
+    var calendarMessage by remember { mutableStateOf<String?>(null) }
+    var calendarLoading by remember { mutableStateOf(false) }
+    var addingCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
+    var savedCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
+    val snackbar = remember { SnackbarHostState() }
+
+    fun loadCalendar() {
+        scope.launch {
+            calendarLoading = true
+            val result = runCatching { withContext(Dispatchers.IO) { CalendarEvents.upcoming(context.contentResolver) } }
+            result.onSuccess { calendarEvents = it; calendarMessage = if (it.isEmpty()) "No upcoming events in the next 90 days." else null }
+                .onFailure { calendarMessage = "Couldn’t read calendar events. Your saved items are unchanged." }
+            calendarLoading = false
+        }
+    }
+    val calendarPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        if (granted) loadCalendar() else calendarMessage = "Calendar access was declined. You can add a date yourself."
+    }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text(area.displayName, maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
+                actions = { IconButton(onClick = { onAssistant(area.prompt) }, modifier = Modifier.size(48.dp)) { Text("AI", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold) } }
+            )
+        },
+        floatingActionButton = {
+            ExtendedFloatingActionButton(onClick = { editingId = null; showEditor = true }, icon = { Icon(Icons.Default.Add, contentDescription = null) }, text = { Text(if (section == "Shopping") "Add research" else "Add") })
+        },
+        snackbarHost = { SnackbarHost(snackbar) },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier.fillMaxSize().padding(padding),
+            contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 96.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            if (localDataError != null) item {
+                Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer), shape = RoundedCornerShape(18.dp)) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                        Text(localDataError.orEmpty(), color = MaterialTheme.colorScheme.onErrorContainer, style = MaterialTheme.typography.bodyMedium)
+                        TextButton(onClick = { scope.launch { vm.reloadEntries() } }, modifier = Modifier.heightIn(min = 48.dp)) { Text("Try again") }
+                    }
+                }
+            }
+            item { SectionHero(area) }
+            item {
+                Text(area.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (section == "Cooking") item {
+                Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                        Text("Plan a meal", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        Text("Add a Cooking record, choose type Meal, and set its planned date. It will appear in My Day and can be shared through Android’s app chooser.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                    }
+                }
+            }
+            item {
+                PhoneIntegrationCard(
+                    section = section,
+                    savedEntries = savedEntries,
+                    onResult = { message -> scope.launch { snackbar.showSnackbar(message) } }
+                )
+            }
+            if (section == "Shopping") item {
+                Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                        Text("Use details you have checked", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        Spacer(Modifier.height(4.dp))
+                        Text("Save options with their links, details and the date you checked them. Tapping Compare sends these saved options to ChatGPT for analysis. Suric does not open retailer sites or verify live prices, stock or delivery. Check the retailer for current information.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                    }
+                }
+            }
+            if (section == "Bills") {
+                val unpaid = savedEntries.filterNot { it.completed }
+                val paid = savedEntries.count { it.completed || it.lastCompletedAtEpochMillis != null }
+                val overdue = unpaid.count { it.dueDate?.let { date -> date < LocalDate.now().toString() } == true }
+                item {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                            Text("Payment overview", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                            Text("${unpaid.size} unpaid · $paid marked paid${if (overdue > 0) " · $overdue overdue" else ""}", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                            Text("Amounts and payment status are entered by you; Suric has no bank connection.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        }
+                    }
+                }
+                item {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                            Text("Calendar dates", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Spacer(Modifier.height(4.dp))
+                            Text("Nothing is imported until you choose an event.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Spacer(Modifier.height(10.dp))
+                            Button(
+                                onClick = {
+                                    if (ContextCompat.checkSelfPermission(context, Manifest.permission.READ_CALENDAR) == PackageManager.PERMISSION_GRANTED) loadCalendar()
+                                    else calendarPermission.launch(Manifest.permission.READ_CALENDAR)
+                                }, enabled = !calendarLoading, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)
+                            ) {
+                                if (calendarLoading) CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp, color = MaterialTheme.colorScheme.onPrimary)
+                                else Text("Review upcoming dates", maxLines = 1)
+                            }
+                            calendarMessage?.let { Spacer(Modifier.height(8.dp)); Text(it, color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.bodySmall) }
+                        }
+                    }
+                }
+                if (calendarEvents.isNotEmpty()) item { Text("Choose a date to save", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold) }
+                items(calendarEvents) { event ->
+                    val eventKey = "${event.startsAtMillis}:${event.title}"
+                    val adding = eventKey in addingCalendarEvents
+                    val alreadySaved = eventKey in savedCalendarEvents
+                    CalendarEventCard(event, adding, alreadySaved) {
+                        if (adding || alreadySaved) return@CalendarEventCard
+                        addingCalendarEvents = addingCalendarEvents + eventKey
+                        val date = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(event.startsAtMillis))
+                        scope.launch {
+                            val eventDate = java.time.Instant.ofEpochMilli(event.startsAtMillis).atZone(java.time.ZoneId.systemDefault()).toLocalDate().toString()
+                            runCatching { vm.addEntry("Bills", event.title, "Calendar date: $date\n${event.notes.orEmpty()}".trim(), recordType = "task", dueDate = eventDate) }
+                                .onSuccess {
+                                    savedCalendarEvents = savedCalendarEvents + eventKey
+                                    calendarMessage = "Saved “${event.title}” on this device."
+                                }
+                                .onFailure { calendarMessage = it.message ?: "Couldn’t save that event." }
+                            addingCalendarEvents = addingCalendarEvents - eventKey
+                        }
+                    }
+                }
+            }
+            item {
+                Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                    Text(if (section == "Shopping") "Saved options" else "Saved here", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    Text("${savedEntries.size}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
+            if (savedEntries.isEmpty() && localDataError == null) item { EmptyState(section) }
+            items(savedEntries, key = { it.id }) { entry ->
+                EntryCard(
+                    entry = entry,
+                    showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills", "Tasks", "Projects"),
+                    onToggle = { changed -> scope.launch {
+                        val updated = completionUpdate(changed)
+                        runCatching { vm.updateEntry(updated) }.onSuccess { if (updated.dueDate != changed.dueDate) snackbar.showSnackbar("Next occurrence: ${updated.dueDate}") }
+                            .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t update this item.") }
+                    } },
+                    onEdit = { editingId = entry.id; showEditor = true },
+                    onOpenSource = { url -> scope.launch { runCatching { uriHandler.openUri(url) }.onFailure { snackbar.showSnackbar("Couldn’t open that link.") } } },
+                    onDelete = {
+                        scope.launch {
+                            runCatching { vm.deleteEntry(entry.id) }
+                                .onSuccess {
+                                    val result = snackbar.showSnackbar("Removed ${entry.title.ifBlank { "item" }}", actionLabel = "Undo", withDismissAction = true)
+                                    if (result == SnackbarResult.ActionPerformed) {
+                                        runCatching { vm.restoreEntry(entry) }.onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t restore this item.") }
+                                    } else withContext(Dispatchers.IO) { PhotoAttachmentStore(context).delete(entry.photoName) }
                                 }
                                 .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t delete this item.") }
                         }
