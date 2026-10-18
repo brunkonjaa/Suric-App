@@ -1,0 +1,1047 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "in-chole",
+                        "name":  "Chole",
+                        "englishName":  "Punjabi chickpea curry",
+                        "country":  "India",
+                        "region":  "Punjab",
+                        "description":  "Punjabi chickpea curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 cans chickpeas",
+                                            "2 onions",
+                                            "2 tomatoes",
+                                            "2 tbsp oil",
+                                            "1 tbsp chole masala",
+                                            "1 tsp ginger garlic",
+                                            "300 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion in oil, then add ginger garlic and tomatoes. Stir in chole masala and cook until fragrant. Add drained chickpeas and water; simmer until thick. Mash a few chickpeas to enrich gravy and finish with coriander."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chickpea",
+                                     "curry",
+                                     "Punjab"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-sarson-saag",
+                        "name":  "Sarson da saag",
+                        "englishName":  "Mustard greens and spinach",
+                        "country":  "India",
+                        "region":  "Punjab",
+                        "description":  "Mustard greens and spinach is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g mustard greens",
+                                            "250 g spinach",
+                                            "1 onion",
+                                            "2 garlic cloves",
+                                            "1 green chilli",
+                                            "2 tbsp cornmeal",
+                                            "1 tbsp ghee"
+                                        ],
+                        "instructions":  [
+                                             "Wash and chop greens. Simmer greens with garlic chilli and a splash of water until soft. Mash coarsely and stir in cornmeal to thicken. Fry onion in ghee and spoon over the greens."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "greens",
+                                     "vegetarian",
+                                     "Punjab"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-makki-roti",
+                        "name":  "Makki di roti",
+                        "englishName":  "Cornmeal flatbread",
+                        "country":  "India",
+                        "region":  "Punjab",
+                        "description":  "Cornmeal flatbread is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g maize flour",
+                                            "200 ml warm water",
+                                            "1 tsp salt",
+                                            "ghee"
+                                        ],
+                        "instructions":  [
+                                             "Mix maize flour salt and warm water into a soft dough. Divide into balls and pat into flat rounds between damp sheets. Cook on a hot griddle until browned on both sides. Brush lightly with ghee and serve hot."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bread",
+                                     "corn",
+                                     "Punjab"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-dal-makhani",
+                        "name":  "Dal makhani",
+                        "englishName":  "Slow cooked black lentils",
+                        "country":  "India",
+                        "region":  "Punjab",
+                        "description":  "Slow cooked black lentils is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  120,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g whole black lentils",
+                                            "50 g kidney beans",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tbsp ginger garlic",
+                                            "1 tsp garam masala",
+                                            "100 ml cream"
+                                        ],
+                        "instructions":  [
+                                             "Soak lentils and beans overnight then drain. Simmer in fresh water until fully tender. Cook onion tomatoes and ginger garlic into a thick masala. Combine lentils with masala and simmer slowly; finish with cream."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "lentils",
+                                     "curry",
+                                     "Punjab"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-rajma",
+                        "name":  "Rajma chawal",
+                        "englishName":  "Kidney bean curry with rice",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Kidney bean curry with rice is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  60,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 cans kidney beans",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tbsp ginger garlic",
+                                            "1 tsp cumin",
+                                            "1 tsp garam masala",
+                                            "250 g basmati rice"
+                                        ],
+                        "instructions":  [
+                                             "Cook rice separately until fluffy. Soften onion with cumin, add ginger garlic and tomatoes and cook down. Stir in drained beans and garam masala with water. Simmer until the gravy thickens and serve over rice."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "curry",
+                                     "rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-palak-paneer",
+                        "name":  "Palak paneer",
+                        "englishName":  "Spinach and paneer curry",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Spinach and paneer curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g spinach",
+                                            "250 g paneer",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "1 tbsp ginger garlic",
+                                            "1 tsp cumin",
+                                            "100 ml cream"
+                                        ],
+                        "instructions":  [
+                                             "Blanch spinach briefly and blend to a puree. Brown paneer cubes and set aside. Cook onion tomatoes ginger garlic and cumin into a masala. Add spinach puree and paneer; simmer gently and finish with cream."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "spinach",
+                                     "paneer",
+                                     "curry"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-aloo-paratha",
+                        "name":  "Aloo paratha",
+                        "englishName":  "Spiced potato stuffed flatbread",
+                        "country":  "India",
+                        "region":  "Punjab",
+                        "description":  "Spiced potato stuffed flatbread is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g whole wheat flour",
+                                            "3 potatoes",
+                                            "1 tsp cumin",
+                                            "1 green chilli",
+                                            "2 tbsp coriander",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Knead flour water and salt into a soft dough and rest. Boil potatoes mash with cumin chilli and coriander. Fill dough rounds with potato and roll gently. Cook on a hot griddle with a little oil until golden on both sides."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bread",
+                                     "potato",
+                                     "Punjab"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-butter-chicken",
+                        "name":  "Murgh makhani",
+                        "englishName":  "Butter chicken",
+                        "country":  "India",
+                        "region":  "Delhi",
+                        "description":  "Butter chicken is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g chicken thighs",
+                                            "150 g yogurt",
+                                            "1 tbsp ginger garlic",
+                                            "1 tsp paprika",
+                                            "400 g tomatoes",
+                                            "50 g butter",
+                                            "100 ml cream"
+                                        ],
+                        "instructions":  [
+                                             "Marinate chicken in yogurt ginger garlic and paprika. Roast or pan-sear until browned and cooked through. Simmer tomatoes with butter and blend smooth. Add chicken and cream; simmer gently until sauce coats the pieces."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chicken",
+                                     "curry",
+                                     "Delhi"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-hyderabadi-biryani",
+                        "name":  "Hyderabadi vegetable biryani",
+                        "englishName":  "Layered spiced rice",
+                        "country":  "India",
+                        "region":  "Hyderabad",
+                        "description":  "Layered spiced rice is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g basmati rice",
+                                            "400 g mixed vegetables",
+                                            "1 onion",
+                                            "150 g yogurt",
+                                            "1 tsp biryani masala",
+                                            "mint",
+                                            "cilantro"
+                                        ],
+                        "instructions":  [
+                                             "Rinse and parboil rice until just underdone; drain. Fry onion until golden and set some aside. Cook vegetables with yogurt and biryani masala until nearly tender. Layer vegetables and rice with herbs; cover tightly and steam on low until rice is done."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "vegetables",
+                                     "Hyderabad"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-korma",
+                        "name":  "Awadhi vegetable korma",
+                        "englishName":  "Creamy mild vegetable curry",
+                        "country":  "India",
+                        "region":  "Lucknow",
+                        "description":  "Creamy mild vegetable curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g mixed vegetables",
+                                            "1 onion",
+                                            "100 g yogurt",
+                                            "50 g cashews",
+                                            "1 tsp ginger garlic",
+                                            "1 tsp garam masala",
+                                            "150 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion and ginger garlic. Blend cashews with yogurt and a little water. Add vegetables and cook briefly. Stir in cashew yogurt mixture and garam masala; cover and simmer until vegetables are tender."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "vegetables",
+                                     "curry",
+                                     "Awadh"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-dal-tadka",
+                        "name":  "Dal tadka",
+                        "englishName":  "Yellow lentils with spiced tempering",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Yellow lentils with spiced tempering is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g red lentils",
+                                            "1 tomato",
+                                            "1 onion",
+                                            "1 tsp turmeric",
+                                            "1 tsp cumin",
+                                            "2 garlic cloves",
+                                            "1 tbsp ghee"
+                                        ],
+                        "instructions":  [
+                                             "Rinse lentils and simmer with turmeric until soft. Soften onion and tomato in a separate pan. Heat ghee, bloom cumin and garlic, then add to lentils. Adjust thickness and simmer briefly."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "lentils",
+                                     "vegetarian",
+                                     "North India"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-samosa",
+                        "name":  "Aloo samosa",
+                        "englishName":  "Spiced potato pastries",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Spiced potato pastries is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g flour",
+                                            "3 potatoes",
+                                            "100 g peas",
+                                            "1 tsp cumin",
+                                            "1 tsp coriander",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour oil salt and water into a firm dough; rest. Boil potatoes and mix with peas and spices. Fill dough cones and seal edges well. Fry at moderate heat until crisp and golden; drain."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "pastry",
+                                     "potato",
+                                     "snack"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-pakora",
+                        "name":  "Vegetable pakora",
+                        "englishName":  "Chickpea flour fritters",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Chickpea flour fritters is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g chickpea flour",
+                                            "1 onion",
+                                            "1 potato",
+                                            "1 spinach handful",
+                                            "1 tsp ajwain",
+                                            "water",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Slice vegetables thinly. Mix chickpea flour with ajwain salt and enough water for a thick coating. Fold vegetables through batter. Fry small spoonfuls until crisp and cooked through; drain well."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "snack",
+                                     "vegetables",
+                                     "fried"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-dosa",
+                        "name":  "Masala dosa",
+                        "englishName":  "Fermented rice and lentil crepe",
+                        "country":  "India",
+                        "region":  "Tamil Nadu",
+                        "description":  "Fermented rice and lentil crepe is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g dosa batter",
+                                            "3 potatoes",
+                                            "1 onion",
+                                            "1 tsp mustard seeds",
+                                            "8 curry leaves",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Prepare fermented rice lentil batter or use ready batter. Cook potatoes and mash with softened onion mustard seeds and curry leaves. Spread batter thinly on a hot lightly oiled griddle. Add potato filling, fold and cook until crisp."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "lentils",
+                                     "Tamil Nadu"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-idli",
+                        "name":  "Idli",
+                        "englishName":  "Steamed rice and lentil cakes",
+                        "country":  "India",
+                        "region":  "South India",
+                        "description":  "Steamed rice and lentil cakes is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g fermented idli batter",
+                                            "oil for moulds"
+                                        ],
+                        "instructions":  [
+                                             "Stir batter gently and pour into greased idli moulds. Steam over boiling water until set and a tester comes out clean. Rest briefly before removing from moulds. Serve warm with chutney and sambar."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "lentils",
+                                     "steamed"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-sambar",
+                        "name":  "Sambar",
+                        "englishName":  "South Indian lentil vegetable stew",
+                        "country":  "India",
+                        "region":  "Tamil Nadu",
+                        "description":  "South Indian lentil vegetable stew is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g toor dal",
+                                            "1 carrot",
+                                            "1 drumstick or green bean",
+                                            "1 tomato",
+                                            "1 tbsp sambar powder",
+                                            "30 g tamarind",
+                                            "1 tsp mustard seeds"
+                                        ],
+                        "instructions":  [
+                                             "Cook dal until soft and mash. Simmer vegetables with tamarind water until tender. Add sambar powder and cooked dal; simmer to combine. Temper mustard seeds in oil and stir through."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "lentils",
+                                     "vegetables",
+                                     "Tamil Nadu"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-rasam",
+                        "name":  "Tomato rasam",
+                        "englishName":  "Peppery tamarind broth",
+                        "country":  "India",
+                        "region":  "South India",
+                        "description":  "Peppery tamarind broth is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 tomatoes",
+                                            "30 g tamarind",
+                                            "1 tsp black pepper",
+                                            "1 tsp cumin",
+                                            "2 garlic cloves",
+                                            "1 tsp mustard seeds",
+                                            "1 L water"
+                                        ],
+                        "instructions":  [
+                                             "Soak tamarind and strain its water. Crush pepper cumin and garlic. Simmer tomatoes with tamarind water and plain water. Add spice mixture and simmer gently; temper mustard seeds in oil and add before serving."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "soup",
+                                     "tamarind",
+                                     "South India"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-lemon-rice",
+                        "name":  "Elumichai sadam",
+                        "englishName":  "South Indian lemon rice",
+                        "country":  "India",
+                        "region":  "Tamil Nadu",
+                        "description":  "South Indian lemon rice is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g cooked rice",
+                                            "2 tbsp lemon juice",
+                                            "1 tsp mustard seeds",
+                                            "50 g peanuts",
+                                            "8 curry leaves",
+                                            "1 tsp turmeric",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Use cooked rice that has cooled and separated grains. Heat oil, crackle mustard seeds and add peanuts curry leaves and turmeric. Add rice and warm through without mashing. Remove from heat and stir in lemon juice and salt."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "lemon",
+                                     "Tamil Nadu"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-avial",
+                        "name":  "Avial",
+                        "englishName":  "Kerala mixed vegetables with coconut",
+                        "country":  "India",
+                        "region":  "Kerala",
+                        "description":  "Kerala mixed vegetables with coconut is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g mixed vegetables",
+                                            "100 g grated coconut",
+                                            "150 g yogurt",
+                                            "1 tsp cumin",
+                                            "2 green chillies",
+                                            "1 tbsp coconut oil",
+                                            "curry leaves"
+                                        ],
+                        "instructions":  [
+                                             "Cut vegetables into similar lengths. Cook with a little water salt and turmeric until just tender. Grind coconut cumin and chillies coarsely; stir through. Turn off heat and fold in yogurt coconut oil and curry leaves."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "vegetables",
+                                     "coconut",
+                                     "Kerala"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-fish-curry",
+                        "name":  "Meen curry",
+                        "englishName":  "Kerala fish curry",
+                        "country":  "India",
+                        "region":  "Kerala",
+                        "description":  "Kerala fish curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g firm white fish",
+                                            "1 onion",
+                                            "2 tomatoes",
+                                            "200 ml coconut milk",
+                                            "30 g tamarind",
+                                            "1 tsp chilli powder",
+                                            "1 tsp turmeric"
+                                        ],
+                        "instructions":  [
+                                             "Season fish lightly with turmeric and keep chilled. Soften onion and tomatoes with chilli powder. Add tamarind water and simmer. Add coconut milk and fish; simmer gently until fish is opaque and flakes easily."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "fish",
+                                     "coconut",
+                                     "Kerala"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-appam",
+                        "name":  "Appam",
+                        "englishName":  "Lacy fermented rice pancakes",
+                        "country":  "India",
+                        "region":  "Kerala",
+                        "description":  "Lacy fermented rice pancakes is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g appam batter",
+                                            "100 ml coconut milk",
+                                            "1 tsp sugar",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Use fermented rice batter or prepare in advance. Stir in coconut milk sugar and salt to a pourable consistency. Pour into a small curved pan and swirl to coat the sides. Cover and cook until edges are crisp and center is set."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "coconut",
+                                     "Kerala"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-poha",
+                        "name":  "Kanda poha",
+                        "englishName":  "Flattened rice with onion and peanuts",
+                        "country":  "India",
+                        "region":  "Maharashtra",
+                        "description":  "Flattened rice with onion and peanuts is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g flattened rice",
+                                            "1 onion",
+                                            "50 g peanuts",
+                                            "1 tsp mustard seeds",
+                                            "8 curry leaves",
+                                            "1 tsp turmeric",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Rinse flattened rice briefly and drain until soft but not mushy. Toast peanuts and set aside. Temper mustard seeds and curry leaves; cook onion and turmeric until soft. Fold in rice and peanuts, warm through and finish with lemon."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "snack",
+                                     "Maharashtra"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-dhokla",
+                        "name":  "Khaman dhokla",
+                        "englishName":  "Steamed chickpea flour cake",
+                        "country":  "India",
+                        "region":  "Gujarat",
+                        "description":  "Steamed chickpea flour cake is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g chickpea flour",
+                                            "200 ml yogurt",
+                                            "1 tsp ginger",
+                                            "1 tsp fruit salt",
+                                            "1 tsp mustard seeds",
+                                            "8 curry leaves"
+                                        ],
+                        "instructions":  [
+                                             "Whisk chickpea flour yogurt water ginger and salt into a smooth batter. Fold in fruit salt immediately before steaming. Steam in a greased tray until springy and cooked through. Temper mustard seeds and curry leaves in oil and pour over cut pieces."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "chickpea",
+                                     "steamed",
+                                     "Gujarat"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-pav-bhaji",
+                        "name":  "Pav bhaji",
+                        "englishName":  "Mashed vegetable curry with rolls",
+                        "country":  "India",
+                        "region":  "Mumbai",
+                        "description":  "Mashed vegetable curry with rolls is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "3 potatoes",
+                                            "300 g cauliflower",
+                                            "150 g peas",
+                                            "2 tomatoes",
+                                            "1 onion",
+                                            "2 tbsp pav bhaji masala",
+                                            "4 bread rolls",
+                                            "butter"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes cauliflower and peas until soft; drain. Cook onion tomatoes and masala in butter. Add vegetables and mash into the sauce with a little cooking water. Toast rolls in butter and serve with bhaji and lemon."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "vegetables",
+                                     "street food",
+                                     "Mumbai"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-gujarati-kadhi",
+                        "name":  "Gujarati kadhi",
+                        "englishName":  "Yogurt and chickpea flour curry",
+                        "country":  "India",
+                        "region":  "Gujarat",
+                        "description":  "Yogurt and chickpea flour curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g plain yogurt",
+                                            "2 tbsp chickpea flour",
+                                            "500 ml water",
+                                            "1 tsp ginger",
+                                            "1 tsp mustard seeds",
+                                            "8 curry leaves",
+                                            "1 tsp sugar"
+                                        ],
+                        "instructions":  [
+                                             "Whisk yogurt chickpea flour water ginger sugar and salt until smooth. Simmer gently while stirring until lightly thickened. Temper mustard seeds and curry leaves in oil. Stir tempering into kadhi and simmer briefly without boiling hard."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "yogurt",
+                                     "curry",
+                                     "Gujarat"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-shorshe-machh",
+                        "name":  "Shorshe machh",
+                        "englishName":  "Bengali mustard fish curry",
+                        "country":  "India",
+                        "region":  "West Bengal",
+                        "description":  "Bengali mustard fish curry is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g white fish",
+                                            "3 tbsp mustard paste",
+                                            "1 tomato",
+                                            "1 green chilli",
+                                            "1 tsp turmeric",
+                                            "2 tbsp mustard oil"
+                                        ],
+                        "instructions":  [
+                                             "Season fish with turmeric and salt and keep chilled. Sear briefly in mustard oil and set aside. Warm mustard paste with tomato and a little water; do not let it catch. Return fish and simmer gently until opaque and flaky."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "fish",
+                                     "mustard",
+                                     "Bengal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-khichuri",
+                        "name":  "Bhoger khichuri",
+                        "englishName":  "Bengali rice and lentil porridge",
+                        "country":  "India",
+                        "region":  "West Bengal",
+                        "description":  "Bengali rice and lentil porridge is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g basmati rice",
+                                            "150 g moong dal",
+                                            "1 potato",
+                                            "1 cauliflower handful",
+                                            "1 tsp cumin",
+                                            "1 tsp turmeric",
+                                            "1 L water"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice and dal. Toast dal in a dry pan until fragrant, then rinse. Cook rice dal and vegetables with turmeric and water until soft and porridge-like. Temper cumin in ghee and stir through."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "lentils",
+                                     "Bengal"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-paneer-tikka",
+                        "name":  "Paneer tikka",
+                        "englishName":  "Spiced grilled paneer",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Spiced grilled paneer is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g paneer",
+                                            "150 g yogurt",
+                                            "1 tbsp ginger garlic",
+                                            "1 tsp garam masala",
+                                            "1 bell pepper",
+                                            "1 onion",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Mix yogurt ginger garlic spices and oil. Coat paneer and vegetable pieces and marinate briefly in the refrigerator. Thread onto skewers and roast at 220 C, turning once, until edges char lightly. Serve hot with lemon."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "paneer",
+                                     "grill",
+                                     "North India"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-masala-chai",
+                        "name":  "Masala chai",
+                        "englishName":  "Spiced milk tea",
+                        "country":  "India",
+                        "region":  "Nationwide",
+                        "description":  "Spiced milk tea is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  10,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 ml water",
+                                            "250 ml milk",
+                                            "2 tbsp black tea",
+                                            "4 cardamom pods",
+                                            "1 small cinnamon stick",
+                                            "2 cloves",
+                                            "2 tsp sugar"
+                                        ],
+                        "instructions":  [
+                                             "Crush cardamom and cinnamon lightly. Simmer spices in water for 5 minutes. Add tea and simmer briefly, then add milk and sugar. Bring back to a gentle simmer, strain and serve hot."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "tea",
+                                     "drink",
+                                     "spices"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "in-kheer",
+                        "name":  "Chawal ki kheer",
+                        "englishName":  "Indian rice pudding",
+                        "country":  "India",
+                        "region":  "North India",
+                        "description":  "Indian rice pudding is a regionally inspired Indian home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "80 g basmati rice",
+                                            "1 L milk",
+                                            "60 g sugar",
+                                            "4 cardamom pods",
+                                            "30 g almonds",
+                                            "30 g raisins"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice and soak briefly. Simmer milk and rice over low heat, stirring often, until rice is soft and mixture thickens. Add sugar and crushed cardamom. Cool and garnish with almonds and raisins; refrigerate leftovers promptly."
+                                         ],
+                        "sides":  "Serve with rice, flatbread, chutney or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust chilli and salt to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and fish chilled and separate from ready-to-eat foods; cook animal proteins fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "rice",
+                                     "dessert",
+                                     "milk"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:india",
+                            "title":  "Indian recipes",
+                            "recipeIds":  [
+                                              "in-chole",
+                                              "in-sarson-saag",
+                                              "in-makki-roti",
+                                              "in-dal-makhani",
+                                              "in-rajma",
+                                              "in-palak-paneer",
+                                              "in-aloo-paratha",
+                                              "in-butter-chicken",
+                                              "in-hyderabadi-biryani",
+                                              "in-korma",
+                                              "in-dal-tadka",
+                                              "in-samosa",
+                                              "in-pakora",
+                                              "in-dosa",
+                                              "in-idli",
+                                              "in-sambar",
+                                              "in-rasam",
+                                              "in-lemon-rice",
+                                              "in-avial",
+                                              "in-fish-curry",
+                                              "in-appam",
+                                              "in-poha",
+                                              "in-dhokla",
+                                              "in-pav-bhaji",
+                                              "in-gujarati-kadhi",
+                                              "in-shorshe-machh",
+                                              "in-khichuri",
+                                              "in-paneer-tikka",
+                                              "in-masala-chai",
+                                              "in-kheer"
+                                          ]
+                        }
+                    ]
+}
