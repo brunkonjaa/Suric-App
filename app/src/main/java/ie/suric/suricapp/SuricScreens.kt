@@ -827,7 +827,10 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                 }
                 offlineLibraryError = null
             }
-            .onFailure { offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged." }
+            .onFailure { error ->
+                android.util.Log.e("OfflineContent", "Failed to load bundled articles or recipes", error)
+                offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged."
+            }
     }
     BackHandler(enabled = selectedArticle != null || selectedRecipe != null) {
         if (selectedRecipe != null) selectedRecipeId = null else selectedArticleId = null

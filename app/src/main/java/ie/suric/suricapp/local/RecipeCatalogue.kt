@@ -1,9 +1,13 @@
 package ie.suric.suricapp.local
 
 import android.content.Context
+import org.json.JSONArray
 import org.json.JSONObject
 import java.text.Collator
 import java.util.Locale
+
+private fun JSONObject.optionalNonBlankString(name: String): String? =
+    (opt(name) as? String)?.takeIf(String::isNotBlank)
 
 /** Canonical offline recipes and their collection memberships. Collection rows point to recipe IDs. */
 data class OfflineRecipe(
@@ -66,13 +70,13 @@ object OfflineRecipeCatalogue {
         val recipes = roots.flatMap { root -> root.getJSONArray("recipes").let { items ->
             (0 until items.length()).map { index ->
                 val item = items.getJSONObject(index)
-                val articleId = item.optString("articleId").takeIf(String::isNotBlank)
+                val articleId = item.optionalNonBlankString("articleId")
                 val article = articleId?.let { id -> articles.firstOrNull { it.id == id } }
                     ?: if (articleId == null) null else error("Recipe ${item.optString("id")} refers to a missing article.")
                 OfflineRecipe(
                     id = item.getString("id"), name = item.getString("name"),
-                    englishName = item.optString("englishName").takeIf(String::isNotBlank),
-                    country = item.getString("country"), region = item.optString("region").takeIf(String::isNotBlank),
+                    englishName = item.optionalNonBlankString("englishName"),
+                    country = item.getString("country"), region = item.optionalNonBlankString("region"),
                     description = item.getString("description"), prepMinutes = item.getInt("prepMinutes"),
                     cookMinutes = item.getInt("cookMinutes"), servings = item.getInt("servings"),
                     difficulty = item.getString("difficulty"),
@@ -86,7 +90,7 @@ object OfflineRecipeCatalogue {
                 )
             }
         } }
-        val collections = roots.flatMap { root -> root.getJSONArray("collections").let { items ->
+        val collections = roots.flatMap { root -> (root.optJSONArray("collections") ?: JSONArray()).let { items ->
             (0 until items.length()).map { index ->
                 val item = items.getJSONObject(index)
                 RecipeCollection(item.getString("id"), item.getString("title"), item.getJSONArray("recipeIds").let { ids -> (0 until ids.length()).map(ids::getString) })
