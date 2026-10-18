@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The 28 bundled JSON files total **1,826,155 bytes**. Two AI-generated photorealistic WebP collection images add **471,028 bytes** for BBQ and Fish & Seafood; one recipe-specific WebP image adds **187,480 bytes**. These are source-file sizes, not the final APK's compressed or installed asset size.
+The 28 bundled JSON files total **1,826,155 bytes**. Two AI-generated photorealistic WebP collection images add **471,028 bytes** for BBQ and Fish & Seafood; the recipe-specific brisket WebP adds **105,222 bytes**. All three images total **576,250 bytes**. These are source-file sizes, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
@@ -116,5 +116,7 @@ Chat history can be shared as plain text through Android Sharesheet and deleted 
 All 24 traditional cuisine quotas and both 100-entry BBQ and Fish & Seafood quotas are complete: 920 of 920 requested collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 
 The BBQ and Fish & Seafood collection lists display generated, bundled cover images when those collections are selected. The photorealistic images depict representative dishes for each collection; they do not count as recipe images. The recipe detail screen supports a horizontal gallery using offline image assets. One image is currently assigned to Texas smoked beef brisket. The requested target is five images for each of 891 unique canonical recipes (4,455 total); 4,454 more recipe images remain. The existing 920 collection memberships refer to those 891 unique recipe records.
+
+Recipe images use static lossy WebP in `drawable-nodpi`, with a 960-pixel maximum long edge, YUV 4:2:0 pixel format and quality 76. The brisket sample is 960 x 720 at 105,222 bytes, which fits the 280 dp gallery card on common high-density phones without carrying a 1280-pixel source into every detail view. The BBQ and seafood collection covers use 1280-pixel WebP for their wider banner layout. Android supports lossy WebP from API 14, and this project declares minSdk 26 ([Android Developers: Create WebP images](https://developer.android.com/studio/write/convert-webp)). At the current brisket sample size, 4,455 recipe images would add approximately 469 MB before APK packaging; actual sizes will vary by image content.
 
 No tests, lint, builds, emulator checks or GitHub Actions were run for this change, as requested.
