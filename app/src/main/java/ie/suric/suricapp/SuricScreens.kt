@@ -383,6 +383,8 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     var offlineArticles by remember(section) { mutableStateOf<List<OfflineArticle>>(emptyList()) }
     var recipeCatalogue by remember(section) { mutableStateOf<RecipeCatalogue?>(null) }
     var selectedRecipeId by rememberSaveable(section) { mutableStateOf<String?>(null) }
+    var selectedRecipeCollectionId by rememberSaveable(section) { mutableStateOf("cuisine:ireland") }
+    var recipeCollectionMenuExpanded by remember { mutableStateOf(false) }
     var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
     var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
     var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
@@ -401,7 +403,15 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 articles to if (section == "Cooking") OfflineRecipeCatalogue.load(context, articles) else null
             }
         }
-            .onSuccess { (articles, recipes) -> offlineArticles = articles; recipeCatalogue = recipes; offlineLibraryError = null }
+            .onSuccess { (articles, recipes) ->
+                offlineArticles = articles
+                recipeCatalogue = recipes
+                if (recipes?.collections?.none { it.id == selectedRecipeCollectionId } != false) {
+                    selectedRecipeCollectionId = recipes?.collections?.firstOrNull { it.id == "cuisine:ireland" }?.id
+                        ?: recipes?.collections?.firstOrNull()?.id.orEmpty()
+                }
+                offlineLibraryError = null
+            }
             .onFailure { offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged." }
     }
     BackHandler(enabled = selectedArticle != null || selectedRecipe != null) {
@@ -522,21 +532,34 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 )
             }
             if (section == "Cooking") {
-                val irishCollection = recipeCatalogue?.collections?.firstOrNull { it.id == "cuisine:ireland" }
-                val featuredRecipes = irishCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
+                val activeRecipeCollection = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
+                    ?: recipeCatalogue?.collections?.firstOrNull()
+                val featuredRecipes = activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
                 val searchedRecipes = if (libraryQuery.isBlank()) featuredRecipes else recipeCatalogue?.let { catalogue ->
                     catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
                 }.orEmpty()
                 item {
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
-                            Text(if (libraryQuery.isBlank()) irishCollection?.title ?: "Traditional recipes" else "Recipe search results", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Box {
+                                OutlinedButton(onClick = { recipeCollectionMenuExpanded = true }, enabled = recipeCatalogue?.collections?.isNotEmpty() == true) {
+                                    Text(if (libraryQuery.isBlank()) activeRecipeCollection?.title ?: "Recipe collections" else "Recipe search results", maxLines = 1)
+                                }
+                                DropdownMenu(expanded = recipeCollectionMenuExpanded, onDismissRequest = { recipeCollectionMenuExpanded = false }) {
+                                    recipeCatalogue?.collections?.forEach { collection ->
+                                        DropdownMenuItem(
+                                            text = { Text(collection.title) },
+                                            onClick = { selectedRecipeCollectionId = collection.id; libraryQuery = ""; recipeCollectionMenuExpanded = false }
+                                        )
+                                    }
+                                }
+                            }
                             Text("${searchedRecipes.size} recipes", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                         Text("Offline recipes with ingredients, timings and country of origin.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                 }
-                if (irishCollection == null && offlineLibraryError == null) item {
+                if (activeRecipeCollection == null && offlineLibraryError == null) item {
                     Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
                 }
                 if (searchedRecipes.isEmpty() && libraryQuery.isNotBlank()) item {
@@ -632,7 +655,7 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
             if (offlineLibraryError != null) item {
                 Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             }
-            val recipeArticleIds = recipeCatalogue?.collections?.firstOrNull { it.id == "cuisine:ireland" }
+            val recipeArticleIds = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
                 ?.recipeIds?.toSet()?.let { collectionIds -> recipeCatalogue?.recipes?.filter { it.id in collectionIds }?.mapNotNull { it.articleId }?.toSet() }
                 .orEmpty()
             val matchingArticles = offlineArticles.filter { article ->

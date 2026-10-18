@@ -81,6 +81,10 @@ object OfflineRecipeCatalogue {
                 val item = items.getJSONObject(index)
                 RecipeCollection(item.getString("id"), item.getString("title"), item.getJSONArray("recipeIds").let { ids -> (0 until ids.length()).map(ids::getString) })
             }
+        }.sortedWith { left, right ->
+            val collator = Collator.getInstance(Locale.getDefault()).apply { strength = Collator.PRIMARY }
+            val byTitle = collator.compare(left.title, right.title)
+            if (byTitle != 0) byTitle else left.id.compareTo(right.id)
         }
         require(recipes.map(OfflineRecipe::id).distinct().size == recipes.size) { "Recipe catalogue contains duplicate IDs." }
         require(collections.map(RecipeCollection::id).distinct().size == collections.size) { "Recipe catalogue contains duplicate collection IDs." }

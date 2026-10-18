@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 30 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The three JSON source files total **116,211 bytes** (18,252 + 21,356 + 76,603 bytes). They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
+The three JSON source files total **205,282 bytes** (18,252 + 21,356 + 165,674 bytes). They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
@@ -20,16 +20,16 @@ The three JSON source files total **116,211 bytes** (18,252 + 21,356 + 76,603 by
 | Notes | 0 | Private user-created notes | None |
 | **Total** | **30** | **19 guides and 11 Cooking recipe records** | — |
 
-The 11 Cooking article records remain available. In addition, `recipe-catalogue.json` contains 52 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. Recipes are searched offline by title, origin, ingredients and tags. Recipe details show origin and offer Ask Suric, Android Sharesheet and an independent encrypted copy to Cooking.
+The 11 Cooking article records remain available. In addition, `recipe-catalogue.json` contains 114 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. Recipes are searched offline by title, origin, ingredients and tags. Recipe details show origin and offer Ask Suric, Android Sharesheet and an independent encrypted copy to Cooking. The collection picker currently contains Irish and Argentinian recipes.
 
 ## Cuisine and special-collection quotas
 
-The requested 920 collection-entry quota is not complete. The catalogue currently declares one cuisine collection with exactly 30 distinct Irish recipe entries. There are 52 canonical recipe records; 22 are not yet assigned to a requested collection. No BBQ or Fish & Seafood entries are assigned. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
+The requested 920 collection-entry quota is not complete. The catalogue currently declares two cuisine collections with exactly 30 distinct Irish and 30 distinct Argentinian recipe entries. There are 114 canonical recipe records; 54 are not yet assigned to a requested collection. No BBQ or Fish & Seafood entries are assigned. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
 
 | Requested cuisine group | Entries assigned |
 | --- | ---: |
 | African regional cuisines | 0 / 30 |
-| Argentinian | 0 / 30 |
+| Argentinian | 30 / 30 |
 | Bosnian | 0 / 30 |
 | Brazilian | 0 / 30 |
 | Bulgarian | 0 / 30 |
@@ -55,11 +55,11 @@ The requested 920 collection-entry quota is not complete. The catalogue currentl
 | BBQ Around the World | 0 / 100 |
 | Fish & Seafood Around the World | 0 / 100 |
 
-**Assigned collection total: 30 / 920.** The 22 unassigned canonical records do not count toward the requested quotas. BBQ and seafood need their own culturally appropriate collection assignments; the other 23 cuisine groups still need 30 entries apiece.
+**Assigned collection total: 60 / 920.** The 54 unassigned canonical records do not count toward the requested quotas. BBQ and seafood need their own culturally appropriate collection assignments; the other 22 cuisine groups still need 30 entries apiece.
 
 ## Recipe authorship and cultural references
 
-Recipe directions and quantities in `recipe-catalogue.json` are original Suric-authored adaptations, not copied publisher text. The Irish dish selections and regional descriptions were cross-checked against [Tourism Ireland's traditional food guide](https://www.ireland.com/en/magazine/food-and-drink/traditional-irish-food/), the [National Museum of Ireland's account of Samhain foods](https://source.museum.ie/en-IE/News/2023/Ghost-turnips%2C-pucas%2C-fortune-telling-and-evil-abd), and [Ireland's protected-food-name register](https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/pdopgitsg-protected-food-names/). The homemade floury roll is labelled Waterford-inspired and explicitly does not claim to reproduce the protected Waterford Blaa specification.
+Recipe directions and quantities in `recipe-catalogue.json` are original Suric-authored adaptations, not copied publisher text. Irish dish selections and regional descriptions were cross-checked against [Tourism Ireland's traditional food guide](https://www.ireland.com/en/magazine/food-and-drink/traditional-irish-food/) and the [National Museum of Ireland's account of Samhain foods](https://source.museum.ie/en-IE/News/2023/Ghost-turnips%2C-pucas%2C-fortune-telling-and-evil-abd). Argentinian regional dish selection was checked against [Argentina's official food-by-province guide](https://www.argentina.gob.ar/jefatura/turismo-y-ambiente/turismo/viaja-por-argentina/que-comer) and [Visit Argentina's Northwest food guide](https://www.argentina.travel/en/news/flavors-of-the-north-a-gastronomic-guide-to-explore-northern-argentina). The homemade floury roll is labelled Waterford-inspired and explicitly does not claim to reproduce the protected Waterford Blaa specification listed in [Ireland's protected-food-name register](https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/pdopgitsg-protected-food-names/).
 
 ## Storage and navigation
 
@@ -79,6 +79,6 @@ The assistant does not yet use typed function tools or perform app writes. Exist
 
 ## Unimplemented content depth
 
-Only the Irish 30-entry cuisine quota is complete. The remaining 23 cuisine groups, 100-entry BBQ collection and 100-entry Fish & Seafood collection have not been added, so the total remains 30 of 920 collection entries. Recipe favourites and ingredient handoff to shopping are not implemented. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
+Only the Irish and Argentinian 30-entry cuisine quotas are complete. The remaining 22 cuisine groups, 100-entry BBQ collection and 100-entry Fish & Seafood collection have not been added, so the total remains 60 of 920 collection entries. Recipe favourites and ingredient handoff to shopping are not implemented. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 
 No tests, lint, builds, emulator checks or GitHub Actions were run for this change, as requested.
