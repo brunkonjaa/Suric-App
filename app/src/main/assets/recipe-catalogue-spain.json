@@ -1,0 +1,1226 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "es-gazpacho",
+                        "name":  "Andalusian chilled tomato soup",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Andalusia",
+                        "description":  "A smooth cold summer soup of ripe tomatoes, cucumber, pepper, garlic and olive oil.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 kg ripe tomatoes",
+                                            "1/2 cucumber",
+                                            "1/2 red pepper",
+                                            "1 small garlic clove",
+                                            "30 ml olive oil",
+                                            "1 tbsp sherry vinegar",
+                                            "50 g stale bread",
+                                            "150 ml cold water",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Roughly chop tomatoes, cucumber and pepper",
+                                             " soak bread in a little water",
+                                             "Blend vegetables, bread and garlic until smooth",
+                                             "With blender running add oil, vinegar, water and salt",
+                                             "Strain if desired and chill at least 2 hours",
+                                             " adjust seasoning cold."
+                                         ],
+                        "sides":  "Serve with diced cucumber, pepper and bread.",
+                        "substitutions":  "Omit bread for a gluten-free version.",
+                        "storage":  "Keep covered and refrigerated; use within 2 days.",
+                        "safety":  "Wash vegetables well and keep soup chilled.",
+                        "tags":  [
+                                     "Andalusia",
+                                     "cold soup",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-fabada-asturiana",
+                        "name":  "Asturian bean stew",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Asturias",
+                        "description":  "Large white beans slowly cooked with smoked pork and paprika.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  150,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g dried fabes or butter beans, soaked overnight",
+                                            "1 chorizo",
+                                            "1 morcilla sausage",
+                                            "150 g smoked pork belly",
+                                            "1 bay leaf",
+                                            "1 tsp paprika",
+                                            "1 onion",
+                                            "water"
+                                        ],
+                        "instructions":  [
+                                             "Drain soaked beans and cover with fresh water in a heavy pot",
+                                             "Bring just to a simmer",
+                                             " add onion and bay, skim foam and cook very gently",
+                                             "Add chorizo, morcilla and pork after 45 minutes",
+                                             " keep barely simmering until beans are creamy and tender, adding cold water if needed",
+                                             "Season with paprika and rest 10 minutes before serving."
+                                         ],
+                        "sides":  "Serve with bread and a light salad.",
+                        "substitutions":  "Use canned large beans and simmer with meats for 30 minutes.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat gently.",
+                        "safety":  "Soak beans refrigerated if needed; cook meat products fully.",
+                        "tags":  [
+                                     "Asturias",
+                                     "beans",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-calamares-romana",
+                        "name":  "Battered squid rings",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Madrid",
+                        "description":  "Lightly battered squid rings fried until crisp and served with lemon.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g cleaned squid, rings",
+                                            "100 g plain flour",
+                                            "1 egg",
+                                            "120 ml cold sparkling water",
+                                            "1/2 tsp salt",
+                                            "oil for frying",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Pat squid very dry and season",
+                                             "Whisk flour, egg, cold sparkling water and salt into a loose batter",
+                                             "Heat oil to 180 C",
+                                             " dip squid rings and fry in small batches for 2 to 3 minutes until crisp and just cooked",
+                                             "Drain on a rack and serve immediately."
+                                         ],
+                        "sides":  "Serve with lemon wedges and salad.",
+                        "substitutions":  "Use chilled still water if sparkling water is unavailable.",
+                        "storage":  "Best fresh; do not store battered leftovers.",
+                        "safety":  "Keep squid chilled before frying; avoid overcrowding hot oil.",
+                        "tags":  [
+                                     "Madrid",
+                                     "squid",
+                                     "fried"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-huevos-rotos",
+                        "name":  "Broken eggs with potatoes",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Madrid",
+                        "description":  "Crisp potatoes topped with soft fried eggs that are broken just before eating.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g potatoes, cut into chunks",
+                                            "4 eggs",
+                                            "1 onion, sliced",
+                                            "3 tbsp olive oil",
+                                            "Salt",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Parboil potatoes 5 minutes, drain and steam dry",
+                                             "Fry potatoes in a wide pan with oil over medium heat, turning until golden and tender",
+                                             "Cook onion alongside until soft",
+                                             "Fry eggs separately until whites are set and yolks remain soft",
+                                             "Pile potatoes and onion onto a platter, top with eggs and break yolks at table."
+                                         ],
+                        "sides":  "Serve with salad or cured ham.",
+                        "substitutions":  "Use roasted potatoes for less oil.",
+                        "storage":  "Serve immediately; refrigerate leftovers and use within 1 day.",
+                        "safety":  "Cook eggs to a safe doneness for vulnerable diners.",
+                        "tags":  [
+                                     "Madrid",
+                                     "egg",
+                                     "potato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-trinxat",
+                        "name":  "Cabbage and potato mash",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Catalan Pyrenees",
+                        "description":  "Cabbage and potatoes mashed together and crisped with garlic and bacon.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g potatoes, peeled",
+                                            "400 g green cabbage, shredded",
+                                            "2 garlic cloves",
+                                            "100 g bacon, diced",
+                                            "2 tbsp olive oil",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes until tender",
+                                             " add cabbage for final 8 minutes",
+                                             " drain well",
+                                             "Fry bacon in oil until crisp",
+                                             " remove and reserve",
+                                             " add garlic and cook briefly",
+                                             "Mash potatoes and cabbage roughly",
+                                             " fold through garlic oil and bacon",
+                                             "Press mixture into pan and brown both sides like a thick cake."
+                                         ],
+                        "sides":  "Serve with fried egg or salad.",
+                        "substitutions":  "Omit bacon and use smoked paprika.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat in a pan.",
+                        "safety":  "Cook bacon thoroughly and chill leftovers quickly.",
+                        "tags":  [
+                                     "Catalonia",
+                                     "cabbage",
+                                     "potato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-sopa-de-ajo",
+                        "name":  "Castilian garlic soup",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Castile and Leon",
+                        "description":  "Bread and garlic soup flavoured with paprika, often finished with egg.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "6 garlic cloves, sliced",
+                                            "200 g stale bread, torn",
+                                            "1 tsp paprika",
+                                            "1.2 litres stock",
+                                            "2 tbsp olive oil",
+                                            "4 eggs",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Warm oil in a pot and gently cook garlic until pale gold",
+                                             "Stir in bread and paprika",
+                                             " toss until bread is coated",
+                                             "Pour in stock and simmer 15 minutes until bread softens",
+                                             " crack in eggs and poach gently until whites set",
+                                             " season."
+                                         ],
+                        "sides":  "Serve hot with extra paprika.",
+                        "substitutions":  "Use vegetable stock and omit eggs for a simple vegan soup.",
+                        "storage":  "Refrigerate promptly up to 2 days and reheat until steaming.",
+                        "safety":  "Cook eggs fully, especially for vulnerable diners.",
+                        "tags":  [
+                                     "Castile and Leon",
+                                     "soup",
+                                     "garlic"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-arroz-negro",
+                        "name":  "Catalan black rice",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Catalonia",
+                        "description":  "Rice cooked with squid, stock and squid ink for a savoury coastal dish.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g short-grain rice",
+                                            "300 g cleaned squid, sliced",
+                                            "1 onion, diced",
+                                            "1 red pepper, diced",
+                                            "2 garlic cloves",
+                                            "2 squid ink sachets",
+                                            "900 ml fish stock",
+                                            "2 tbsp olive oil",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Warm stock",
+                                             " brown squid briefly in oil and set aside",
+                                             "Cook onion and pepper until soft",
+                                             " add garlic, rice and ink, stirring to coat",
+                                             "Add hot stock and simmer without stirring 18 minutes",
+                                             " return squid for final 3 minutes",
+                                             " rest covered 5 minutes."
+                                         ],
+                        "sides":  "Serve with lemon and alioli.",
+                        "substitutions":  "Use cuttlefish and a little extra ink if needed.",
+                        "storage":  "Refrigerate within 2 hours and use within 1 day; reheat until steaming.",
+                        "safety":  "Use fresh squid from a reliable source and cook through.",
+                        "tags":  [
+                                     "Catalonia",
+                                     "rice",
+                                     "squid"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-crema-catalana",
+                        "name":  "Catalan burnt cream",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Catalonia",
+                        "description":  "Citrus-scented custard finished with a crisp layer of caramelised sugar.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 ml milk",
+                                            "4 egg yolks",
+                                            "80 g sugar",
+                                            "20 g cornflour",
+                                            "1 cinnamon stick",
+                                            "1 strip lemon peel",
+                                            "4 tsp sugar for topping"
+                                        ],
+                        "instructions":  [
+                                             "Warm milk with cinnamon and lemon peel",
+                                             " remove from heat and steep 10 minutes",
+                                             "Whisk yolks, sugar and cornflour",
+                                             " slowly whisk in warm milk",
+                                             "Strain into a clean pan and stir over low heat until thick",
+                                             " do not boil",
+                                             "Pour into dishes and chill at least 3 hours",
+                                             " sprinkle sugar and caramelise with a torch just before serving."
+                                         ],
+                        "sides":  "Serve with crisp biscuits.",
+                        "substitutions":  "Use orange peel instead of lemon.",
+                        "storage":  "Cover and refrigerate up to 2 days before caramelising.",
+                        "safety":  "Keep custard chilled; avoid serving if left warm for over 2 hours.",
+                        "tags":  [
+                                     "Catalonia",
+                                     "custard",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-churros",
+                        "name":  "Churros",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "Ridged fried dough sticks rolled in sugar and served with thick hot chocolate.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 ml water",
+                                            "30 g butter",
+                                            "1 tbsp sugar",
+                                            "150 g plain flour",
+                                            "Pinch salt",
+                                            "Oil for frying",
+                                            "Cinnamon sugar"
+                                        ],
+                        "instructions":  [
+                                             "Bring water, butter, sugar and salt to a boil. Remove from heat and stir in flour until a smooth dough forms.",
+                                             "Cool 10 minutes; spoon dough into a sturdy piping bag with a star nozzle.",
+                                             "Heat oil to 175 C. Pipe short lengths carefully into oil, snipping with scissors; fry in batches until golden and crisp.",
+                                             "Drain briefly and roll in cinnamon sugar; serve with hot chocolate."
+                                         ],
+                        "sides":  "Serve with thick hot chocolate for dipping.",
+                        "substitutions":  "Omit butter and use water-only dough for a simpler version.",
+                        "storage":  "Best fresh; do not keep cooked churros in a sealed container.",
+                        "safety":  "Use a deep stable pan and monitor hot oil; never pipe over the pan.",
+                        "tags":  [
+                                     "dessert",
+                                     "fried dough",
+                                     "chocolate"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-bacalao-vizcaina",
+                        "name":  "Cod in Biscayan pepper sauce",
+                        "englishName":  "Bacalao a la vizcaina",
+                        "country":  "Spain",
+                        "region":  "Basque Country",
+                        "description":  "Cod served with a slowly cooked red pepper, onion and tomato sauce.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 cod portions, 150 g each",
+                                            "2 red peppers, sliced",
+                                            "2 onions, sliced",
+                                            "2 garlic cloves",
+                                            "400 g chopped tomatoes",
+                                            "2 tbsp olive oil",
+                                            "1 tsp sweet paprika",
+                                            "Salt and pepper"
+                                        ],
+                        "instructions":  [
+                                             "If using salt cod, desalinate under refrigeration following supplier timing; pat dry.",
+                                             "Cook onion and peppers slowly in olive oil until very soft, about 20 minutes; add garlic and paprika.",
+                                             "Add tomatoes and simmer 10 minutes; blend if desired. Nestle cod into sauce, cover and cook gently until opaque and flakes easily."
+                                         ],
+                        "sides":  "Serve with boiled potatoes or bread.",
+                        "substitutions":  "Use fresh hake or pollock instead of cod.",
+                        "storage":  "Refrigerate within 2 hours and use within 1 day; reheat gently until steaming.",
+                        "safety":  "Keep fish chilled and cook until opaque and flakes easily.",
+                        "tags":  [
+                                     "Basque Country",
+                                     "cod",
+                                     "fish"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-bacalao-al-pil-pil",
+                        "name":  "Cod in garlic oil",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Basque Country",
+                        "description":  "Salt cod gently emulsified with olive oil, garlic and chilli into a glossy sauce.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 desalted cod portions, about 150 g each",
+                                            "150 ml olive oil",
+                                            "4 garlic cloves, sliced",
+                                            "1 dried chilli",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "If using salt cod, soak in the refrigerator as directed by supplier and change water",
+                                             "Pat fish dry",
+                                             " gently warm oil with garlic and chilli until garlic turns pale gold",
+                                             "Remove garlic",
+                                             " add cod skin-side down and cook gently, moving pan in circles",
+                                             "Turn once and continue until fish flakes",
+                                             "Rest fish and whisk pan juices into a glossy emulsion",
+                                             " serve with garlic."
+                                         ],
+                        "sides":  "Serve with boiled potatoes and bread.",
+                        "substitutions":  "Fresh cod may be used; season lightly.",
+                        "storage":  "Refrigerate cooked fish promptly and use within 1 day.",
+                        "safety":  "Cook fish until opaque and flakes easily; keep raw fish chilled.",
+                        "tags":  [
+                                     "Basque Country",
+                                     "cod",
+                                     "fish"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-salmorejo",
+                        "name":  "Cordoban thick tomato soup",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Andalusia",
+                        "description":  "A thick chilled blend of tomato, bread, garlic and olive oil, garnished with egg.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 kg ripe tomatoes",
+                                            "150 g stale white bread",
+                                            "1 garlic clove",
+                                            "100 ml olive oil",
+                                            "1 tbsp sherry vinegar",
+                                            "salt",
+                                            "2 boiled eggs",
+                                            "50 g diced cured ham, optional"
+                                        ],
+                        "instructions":  [
+                                             "Blend chopped tomatoes and garlic until smooth",
+                                             "Add bread and leave 5 minutes to soften",
+                                             " blend again",
+                                             "With blender running, pour oil slowly until thick and creamy",
+                                             " add vinegar and salt",
+                                             " chill well",
+                                             "Top with chopped egg and optional ham."
+                                         ],
+                        "sides":  "Serve with crusty bread.",
+                        "substitutions":  "Skip ham for a vegetarian bowl.",
+                        "storage":  "Keep chilled and use within 2 days.",
+                        "safety":  "Use pasteurised or fully cooked egg; keep soup refrigerated.",
+                        "tags":  [
+                                     "Andalusia",
+                                     "cold soup",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-tarta-santiago",
+                        "name":  "Galician almond cake",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Galicia",
+                        "description":  "A naturally flourless almond cake scented with lemon and cinnamon.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  8,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g ground almonds",
+                                            "200 g sugar",
+                                            "4 eggs",
+                                            "zest of 1 lemon",
+                                            "1/2 tsp cinnamon",
+                                            "icing sugar"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 175 C and line a 22 cm cake tin",
+                                             "Whisk eggs and sugar until pale",
+                                             "Fold in almonds, lemon zest and cinnamon without knocking out all air",
+                                             "Pour into tin and bake 30 to 35 minutes until golden and set",
+                                             " cool fully",
+                                             " dust with icing sugar."
+                                         ],
+                        "sides":  "Serve with coffee or fruit.",
+                        "substitutions":  "Use orange zest instead of lemon.",
+                        "storage":  "Store covered at room temperature for 2 days.",
+                        "safety":  "Bake until centre is set; cool before slicing.",
+                        "tags":  [
+                                     "Galicia",
+                                     "almond",
+                                     "cake"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-caldo-gallego",
+                        "name":  "Galician greens and bean soup",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Galicia",
+                        "description":  "A sustaining soup of white beans, greens and potatoes, sometimes with pork.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g cooked white beans",
+                                            "300 g potatoes, diced",
+                                            "200 g turnip greens or kale, chopped",
+                                            "1 onion, diced",
+                                            "1 litre stock",
+                                            "1 bay leaf",
+                                            "1 tbsp olive oil",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion in oil in a soup pot",
+                                             "Add potatoes, stock and bay",
+                                             " simmer 15 minutes",
+                                             "Add beans and greens",
+                                             " simmer 20 minutes until potatoes break easily and greens are tender",
+                                             " mash a few beans to thicken",
+                                             "Season, remove bay and serve."
+                                         ],
+                        "sides":  "Serve with crusty bread.",
+                        "substitutions":  "Use spinach for greens and smoked paprika instead of pork.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until steaming.",
+                        "safety":  "Reheat soup thoroughly and stir well.",
+                        "tags":  [
+                                     "Galicia",
+                                     "soup",
+                                     "beans"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-pulpo-gallega",
+                        "name":  "Galician octopus and potatoes",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Galicia",
+                        "description":  "Tender octopus sliced over potatoes with olive oil and smoked paprika.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 kg cleaned octopus, thawed if frozen",
+                                            "800 g potatoes",
+                                            "2 bay leaves",
+                                            "3 tbsp olive oil",
+                                            "1 tsp sweet paprika",
+                                            "1/2 tsp smoked paprika",
+                                            "coarse salt"
+                                        ],
+                        "instructions":  [
+                                             "Bring a large pot of water and bay to a boil",
+                                             " dip octopus in and out three times to curl tentacles",
+                                             "Simmer gently 35 to 45 minutes until a knife enters thickest part easily",
+                                             " rest in cooking water 10 minutes",
+                                             "Boil potatoes separately until tender",
+                                             " slice onto a platter",
+                                             "Slice octopus over potatoes, drizzle oil and season with paprika and salt."
+                                         ],
+                        "sides":  "Serve warm with bread.",
+                        "substitutions":  "Use cooked octopus and warm briefly according to pack.",
+                        "storage":  "Refrigerate leftovers within 2 hours and use within 1 day.",
+                        "safety":  "Keep seafood chilled and cook until tender and hot throughout.",
+                        "tags":  [
+                                     "Galicia",
+                                     "octopus",
+                                     "seafood"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-empanada-gallega",
+                        "name":  "Galician tuna pie",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Galicia",
+                        "description":  "A large savoury pie with soft peppers, onion and tuna in a yeast crust.",
+                        "prepMinutes":  45,
+                        "cookMinutes":  35,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g bread flour",
+                                            "7 g yeast",
+                                            "200 ml warm water",
+                                            "3 tbsp olive oil",
+                                            "1 tsp salt",
+                                            "2 onions, sliced",
+                                            "1 red pepper",
+                                            "200 g tuna, drained",
+                                            "2 tbsp tomato sauce",
+                                            "1 egg"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, water, 2 tbsp oil and salt",
+                                             " knead and rise until doubled",
+                                             "Cook onions and pepper slowly in remaining oil until soft",
+                                             " cool and mix with tuna and tomato",
+                                             "Divide dough, roll two sheets",
+                                             " spread filling on one, cover with other, seal edges and vent top",
+                                             " brush with beaten egg",
+                                             "Bake at 190 C for 30 to 35 minutes until golden."
+                                         ],
+                        "sides":  "Serve warm or at room temperature with salad.",
+                        "substitutions":  "Use cooked shredded chicken instead of tuna.",
+                        "storage":  "Refrigerate within 2 hours, use within 2 days and reheat until hot.",
+                        "safety":  "Keep fish filling chilled before baking and cook pie through.",
+                        "tags":  [
+                                     "Galicia",
+                                     "tuna",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-migas",
+                        "name":  "Garlic breadcrumbs with chorizo",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Aragon and central Spain",
+                        "description":  "Stale bread crumbs slowly toasted with garlic, paprika and optional sausage.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g stale rustic bread",
+                                            "100 ml water",
+                                            "3 tbsp olive oil",
+                                            "4 garlic cloves, sliced",
+                                            "100 g chorizo, diced",
+                                            "1 tsp paprika",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Crumble bread into small pieces and sprinkle lightly with water",
+                                             " cover 20 minutes",
+                                             "Warm oil in a wide pan",
+                                             " fry garlic and chorizo until fragrant, remove and reserve",
+                                             "Add crumbs to the pan and cook over low heat, stirring and turning until dry and golden",
+                                             "Return garlic and chorizo, add paprika and pepper and toss."
+                                         ],
+                        "sides":  "Serve with grapes or fried egg.",
+                        "substitutions":  "Use mushrooms instead of chorizo.",
+                        "storage":  "Best fresh; refrigerate leftovers and reheat in a pan.",
+                        "safety":  "Cook chorizo thoroughly and keep bread preparation clean.",
+                        "tags":  [
+                                     "Aragon",
+                                     "bread",
+                                     "leftovers"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-croquetas-jamon",
+                        "name":  "Ham croquettes",
+                        "englishName":  "Croquetas de jamon",
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "Small crisp crumbed croquettes with a thick ham and milk filling.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "60 g butter",
+                                            "70 g plain flour",
+                                            "500 ml milk, warm",
+                                            "100 g finely diced cooked ham",
+                                            "Pinch nutmeg",
+                                            "2 eggs, beaten",
+                                            "100 g breadcrumbs",
+                                            "Oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Melt butter, stir in flour and cook 2 minutes; gradually whisk in warm milk until very thick and smooth.",
+                                             "Stir in ham, nutmeg and pepper; cook, stirring, until mixture pulls from pan. Spread on a tray, cover and chill until firm.",
+                                             "Shape into small cylinders; coat in flour, egg and breadcrumbs. Chill 20 minutes.",
+                                             "Fry in 175 C oil in small batches until golden and hot inside; drain on a rack."
+                                         ],
+                        "sides":  "Serve as a tapa with lemon and salad.",
+                        "substitutions":  "Use cooked chicken or mushrooms instead of ham.",
+                        "storage":  "Chill filling up to 24 hours; freeze shaped uncooked croquettes; fry from thawed.",
+                        "safety":  "Keep filling refrigerated; cook croquettes fully and take care with hot oil.",
+                        "tags":  [
+                                     "tapas",
+                                     "ham",
+                                     "croquettes"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-cocido-madrileno",
+                        "name":  "Madrid chickpea and meat stew",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Madrid",
+                        "description":  "A slow-cooked chickpea stew with vegetables and meat, served in courses.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  150,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g dried chickpeas, soaked overnight",
+                                            "300 g beef shin",
+                                            "200 g chicken",
+                                            "1 chorizo",
+                                            "1 onion",
+                                            "2 carrots",
+                                            "2 potatoes",
+                                            "2 litres water",
+                                            "1 tsp paprika"
+                                        ],
+                        "instructions":  [
+                                             "Drain soaked chickpeas",
+                                             " put in a pot with beef, onion and water",
+                                             " simmer gently, skimming foam",
+                                             "Add chicken and chorizo after 60 minutes",
+                                             " cook until chickpeas and meats are tender, adding water if needed",
+                                             "Add carrots and potatoes for final 30 minutes",
+                                             "Season broth",
+                                             " serve it first, then chickpeas, vegetables and meat."
+                                         ],
+                        "sides":  "Serve with cabbage and bread.",
+                        "substitutions":  "Use canned chickpeas and shorten simmer; add them near the end.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat all components until steaming.",
+                        "safety":  "Soak chickpeas in the refrigerator in warm weather; cook meat fully.",
+                        "tags":  [
+                                     "Madrid",
+                                     "chickpeas",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-torrijas",
+                        "name":  "Milk-soaked cinnamon bread",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "Slices of bread soaked in sweetened milk, dipped in egg and lightly fried.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "8 thick slices day-old bread",
+                                            "500 ml milk",
+                                            "50 g sugar",
+                                            "1 cinnamon stick",
+                                            "2 eggs",
+                                            "oil for frying",
+                                            "extra cinnamon sugar"
+                                        ],
+                        "instructions":  [
+                                             "Warm milk with sugar and cinnamon",
+                                             " cool until lukewarm",
+                                             "Soak bread briefly on both sides without letting it fall apart",
+                                             "Dip in beaten egg",
+                                             "Fry in a shallow layer of oil over medium heat until golden on both sides",
+                                             " drain and coat in cinnamon sugar."
+                                         ],
+                        "sides":  "Serve warm or chilled.",
+                        "substitutions":  "Use orange zest in the milk.",
+                        "storage":  "Refrigerate leftovers within 2 hours and use within 2 days.",
+                        "safety":  "Cook egg coating through; handle hot oil carefully.",
+                        "tags":  [
+                                     "dessert",
+                                     "bread",
+                                     "Cinnamon"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-zarangollo",
+                        "name":  "Murcian courgette and egg scramble",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Murcia",
+                        "description":  "Soft courgette and onion cooked slowly, then folded with eggs.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 large courgettes, sliced",
+                                            "1 onion, thinly sliced",
+                                            "4 eggs",
+                                            "3 tbsp olive oil",
+                                            "salt and pepper"
+                                        ],
+                        "instructions":  [
+                                             "Warm oil in a wide pan",
+                                             " cook onion gently until translucent",
+                                             "Add courgette and cook slowly, stirring now and then, until very soft and most liquid evaporates",
+                                             "Beat eggs with salt and pepper",
+                                             " pour into pan and stir over low heat until softly set",
+                                             "Remove from heat while still moist."
+                                         ],
+                        "sides":  "Serve with bread as a tapa or light meal.",
+                        "substitutions":  "Add a diced potato for a more filling dish.",
+                        "storage":  "Serve promptly; refrigerate leftovers and use within 1 day.",
+                        "safety":  "Cook eggs to a safe doneness; keep warm dishes out of room temperature.",
+                        "tags":  [
+                                     "Murcia",
+                                     "courgette",
+                                     "egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-patatas-bravas",
+                        "name":  "Patatas bravas",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Madrid",
+                        "description":  "Crisp potato cubes served with a smoky, mildly spicy tomato sauce.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g potatoes, cubed",
+                                            "3 tbsp olive oil",
+                                            "1 small onion, diced",
+                                            "2 garlic cloves",
+                                            "400 g chopped tomatoes",
+                                            "1 tsp smoked paprika",
+                                            "1/4 tsp chilli flakes",
+                                            "1 tbsp vinegar",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 220 C. Toss potatoes with oil and salt; roast 30 to 35 minutes, turning once, until crisp and tender.",
+                                             "Cook onion in a little oil until soft; add garlic, paprika and chilli for 30 seconds. Stir in tomatoes and simmer 15 minutes.",
+                                             "Blend sauce smooth, add vinegar and season. Spoon over hot potatoes and serve."
+                                         ],
+                        "sides":  "Serve as a tapa with alioli.",
+                        "substitutions":  "Use sweet paprika only for a mild sauce.",
+                        "storage":  "Store sauce separately refrigerated up to 3 days; roast fresh potatoes for best texture.",
+                        "safety":  "Keep sauce chilled and reheat until hot.",
+                        "tags":  [
+                                     "Madrid",
+                                     "potato",
+                                     "tapas"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-arroz-a-la-cubana",
+                        "name":  "Rice with tomato and fried egg",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Canary Islands",
+                        "description":  "White rice served with tomato sauce, fried egg and often fried banana.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g long-grain rice",
+                                            "1 onion, finely diced",
+                                            "400 g passata",
+                                            "1 garlic clove",
+                                            "2 tbsp olive oil",
+                                            "4 eggs",
+                                            "2 ripe bananas, optional",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Cook rice in salted water until tender, drain and keep covered",
+                                             "Soften onion and garlic in oil",
+                                             " add passata and simmer 15 minutes, season",
+                                             "Fry eggs and banana slices separately",
+                                             " serve each over rice with tomato sauce."
+                                         ],
+                        "sides":  "Serve with a green salad.",
+                        "substitutions":  "Use a fried plantain instead of banana or omit it.",
+                        "storage":  "Refrigerate rice promptly and use within 24 hours; reheat once until steaming.",
+                        "safety":  "Cool rice quickly and refrigerate within 1 hour; reheat thoroughly.",
+                        "tags":  [
+                                     "Canary Islands",
+                                     "rice",
+                                     "egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-lentejas-estofadas",
+                        "name":  "Spanish lentil stew",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "Brown lentils simmered with vegetables, paprika and optional chorizo.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g brown lentils, rinsed",
+                                            "1 onion, diced",
+                                            "2 carrots, diced",
+                                            "1 potato, diced",
+                                            "1 tomato, grated",
+                                            "1 tsp paprika",
+                                            "1 bay leaf",
+                                            "1.2 litres stock",
+                                            "1 tbsp olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion and carrots in olive oil",
+                                             "Stir in tomato and paprika for one minute",
+                                             "Add lentils, potato, bay and stock",
+                                             " simmer gently 35 to 45 minutes until lentils tender",
+                                             " remove bay and season."
+                                         ],
+                        "sides":  "Serve with bread and salad.",
+                        "substitutions":  "Add sliced chorizo with stock or omit for vegetarian stew.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until steaming.",
+                        "safety":  "Maintain a simmer and stir to prevent lentils sticking.",
+                        "tags":  [
+                                     "Spain",
+                                     "lentils",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-albondigas",
+                        "name":  "Spanish meatballs",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Madrid",
+                        "description":  "Tender meatballs simmered in a tomato, onion and paprika sauce.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g minced beef and pork",
+                                            "1 egg",
+                                            "50 g breadcrumbs",
+                                            "1 garlic clove, minced",
+                                            "1 onion, diced",
+                                            "400 g chopped tomatoes",
+                                            "100 ml stock",
+                                            "1 tsp paprika",
+                                            "2 tbsp olive oil",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Mix mince, egg, breadcrumbs, half the garlic, parsley and seasoning",
+                                             " shape 16 balls",
+                                             "Brown meatballs in oil in batches",
+                                             " remove",
+                                             "Soften onion and remaining garlic, add paprika, tomatoes and stock",
+                                             " simmer 10 minutes",
+                                             "Return meatballs and simmer covered 15 minutes until cooked through."
+                                         ],
+                        "sides":  "Serve with rice or bread.",
+                        "substitutions":  "Use turkey mince and add a spoon of yogurt for moisture.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook minced meatballs through the centre.",
+                        "tags":  [
+                                     "Madrid",
+                                     "meatballs",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-ensaladilla-rusa",
+                        "name":  "Spanish potato and tuna salad",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "Potatoes, carrots, peas, tuna and mayonnaise served chilled as a tapa.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g potatoes, diced",
+                                            "2 carrots, diced",
+                                            "100 g peas",
+                                            "2 eggs",
+                                            "160 g tuna, drained",
+                                            "150 g mayonnaise",
+                                            "1 tbsp lemon juice",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes and carrots until just tender",
+                                             " add peas for final 3 minutes",
+                                             " drain and cool quickly",
+                                             "Boil eggs 10 minutes, cool, peel and chop",
+                                             "Mix vegetables, tuna, eggs, mayonnaise and lemon gently",
+                                             "Season and chill before serving."
+                                         ],
+                        "sides":  "Serve with bread or olives.",
+                        "substitutions":  "Use cooked beans instead of peas.",
+                        "storage":  "Keep refrigerated and use within 24 hours.",
+                        "safety":  "Use pasteurised mayonnaise; cool cooked vegetables rapidly and keep cold.",
+                        "tags":  [
+                                     "tapas",
+                                     "potato",
+                                     "tuna"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-tortilla-espanola",
+                        "name":  "Spanish potato omelette",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "A thick omelette of slowly softened potatoes and onion bound with egg.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g potatoes, thinly sliced",
+                                            "1 onion, thinly sliced",
+                                            "6 eggs",
+                                            "120 ml olive oil",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Warm oil in a non-stick pan",
+                                             " cook potatoes and onion gently, turning, until fully tender but not browned",
+                                             "Drain excess oil",
+                                             " beat eggs with salt and fold in potatoes",
+                                             "Return mixture to the pan and cook on low until edges set",
+                                             "Place a plate over pan, flip carefully, then slide tortilla back and cook until set to preferred doneness",
+                                             "Rest before slicing."
+                                         ],
+                        "sides":  "Serve warm or at room temperature with salad.",
+                        "substitutions":  "Omit onion if preferred.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days.",
+                        "safety":  "For vulnerable diners, cook egg mixture fully through rather than leaving it runny.",
+                        "tags":  [
+                                     "Spain",
+                                     "potato",
+                                     "egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-pisto",
+                        "name":  "Spanish vegetable stew with egg",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "La Mancha",
+                        "description":  "Slow-cooked peppers, courgette, onion and tomato served with a fried egg.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 onion, diced",
+                                            "1 red pepper",
+                                            "1 green pepper",
+                                            "1 courgette",
+                                            "400 g chopped tomatoes",
+                                            "3 tbsp olive oil",
+                                            "1 tsp sugar",
+                                            "4 eggs",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Dice vegetables evenly",
+                                             "Warm oil in a heavy pan and cook onion and peppers slowly until soft",
+                                             "Add courgette and cook 8 minutes",
+                                             " add tomatoes and sugar",
+                                             " simmer uncovered 25 minutes until thick",
+                                             "Season and serve topped with fried eggs."
+                                         ],
+                        "sides":  "Serve with bread or roast potatoes.",
+                        "substitutions":  "Use aubergine in place of some courgette.",
+                        "storage":  "Refrigerate vegetables up to 3 days; cook eggs fresh.",
+                        "safety":  "Cook eggs to safe doneness and chill vegetable leftovers promptly.",
+                        "tags":  [
+                                     "La Mancha",
+                                     "vegetables",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-pan-con-tomate",
+                        "name":  "Tomato rubbed bread",
+                        "englishName":  "Pa amb tomàquet",
+                        "country":  "Spain",
+                        "region":  "Catalonia",
+                        "description":  "Toasted bread rubbed with ripe tomato, garlic and olive oil.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  5,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 thick slices rustic bread",
+                                            "2 ripe tomatoes, halved",
+                                            "1 garlic clove, halved",
+                                            "2 tbsp olive oil",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Toast bread on both sides until crisp at the edges.",
+                                             "Rub the cut garlic lightly over each warm slice. Rub tomato flesh over bread so juice and pulp soak in.",
+                                             "Drizzle with olive oil and add a pinch of salt; serve immediately."
+                                         ],
+                        "sides":  "Serve with cheese, omelette or cured ham.",
+                        "substitutions":  "Use grated ripe tomato if tomatoes are difficult to rub.",
+                        "storage":  "Assemble just before serving; do not store topped bread.",
+                        "safety":  "Wash tomatoes before cutting.",
+                        "tags":  [
+                                     "Catalonia",
+                                     "bread",
+                                     "tapa"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "es-bizcocho-yogur",
+                        "name":  "Yogurt sponge cake",
+                        "englishName":  null,
+                        "country":  "Spain",
+                        "region":  "Nationwide",
+                        "description":  "A simple tender cake measured with a yogurt pot, flavoured with lemon.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  35,
+                        "servings":  8,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "1 small pot plain yogurt, about 125 g",
+                                            "3 eggs",
+                                            "2 yogurt pots sugar",
+                                            "3 yogurt pots flour",
+                                            "1/2 pot neutral oil",
+                                            "1 tsp baking powder",
+                                            "zest of 1 lemon"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 180 C and grease a 20 cm cake tin",
+                                             "Whisk yogurt, eggs, sugar, oil and lemon zest",
+                                             " fold in flour and baking powder",
+                                             "Pour into tin and bake 30 to 35 minutes until risen and a skewer comes out clean",
+                                             " cool before slicing."
+                                         ],
+                        "sides":  "Serve with fruit or coffee.",
+                        "substitutions":  "Use orange zest or dairy-free yogurt.",
+                        "storage":  "Store covered at room temperature for 2 days.",
+                        "safety":  "Bake until centre is fully set.",
+                        "tags":  [
+                                     "Spain",
+                                     "cake",
+                                     "lemon"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:spain",
+                            "title":  "Spanish recipes",
+                            "recipeIds":  [
+                                              "es-gazpacho",
+                                              "es-fabada-asturiana",
+                                              "es-calamares-romana",
+                                              "es-huevos-rotos",
+                                              "es-trinxat",
+                                              "es-sopa-de-ajo",
+                                              "es-arroz-negro",
+                                              "es-crema-catalana",
+                                              "es-churros",
+                                              "es-bacalao-vizcaina",
+                                              "es-bacalao-al-pil-pil",
+                                              "es-salmorejo",
+                                              "es-tarta-santiago",
+                                              "es-caldo-gallego",
+                                              "es-pulpo-gallega",
+                                              "es-empanada-gallega",
+                                              "es-migas",
+                                              "es-croquetas-jamon",
+                                              "es-cocido-madrileno",
+                                              "es-torrijas",
+                                              "es-zarangollo",
+                                              "es-patatas-bravas",
+                                              "es-arroz-a-la-cubana",
+                                              "es-lentejas-estofadas",
+                                              "es-albondigas",
+                                              "es-ensaladilla-rusa",
+                                              "es-tortilla-espanola",
+                                              "es-pisto",
+                                              "es-pan-con-tomate",
+                                              "es-bizcocho-yogur"
+                                          ]
+                        }
+                    ]
+}

@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The bundled JSON source files and recipe manifest total **446,131 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
+The bundled JSON source files and recipe manifest total **521,962 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
@@ -20,11 +20,11 @@ The bundled JSON source files and recipe manifest total **446,131 bytes**. They 
 | Notes | 0 | Private user-created notes | None |
 | **Total** | **35** | **24 guides and 11 Cooking recipe records** | - |
 
-The 11 Cooking article records remain available. Five recipe catalogue data assets contain 234 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. A version-1 manifest registers supplemental catalogues without changing the loader. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. A global offline-search screen filters all bundled guides and recipes by content and category. Recipe details offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking, a local favourite toggle and an encrypted Shopping handoff that creates separately checkable ingredient rows and skips exact repeat additions for the same recipe. The collection picker currently contains Irish, Argentinian, French, German, Italian and United States of America recipes. Offline articles and recipes also support a twenty-item recently viewed list.
+The 11 Cooking article records remain available. Six recipe catalogue data assets contain 264 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. A version-1 manifest registers supplemental catalogues without changing the loader. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. A global offline-search screen filters all bundled guides and recipes by content and category. Recipe details offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking, a local favourite toggle and an encrypted Shopping handoff that creates separately checkable ingredient rows and skips exact repeat additions for the same recipe. The collection picker currently contains Irish, Argentinian, French, German, Italian, Spanish and United States of America recipes. Offline articles and recipes also support a twenty-item recently viewed list.
 
 ## Cuisine and special-collection quotas
 
-The requested 920 collection-entry quota is not complete. The catalogue currently declares six cuisine collections with exactly 30 distinct Irish, Argentinian, French, German, Italian and United States of America recipe entries. There are 234 canonical recipe records; 54 are not yet assigned to a requested collection. No BBQ or Fish & Seafood entries are assigned. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
+The requested 920 collection-entry quota is not complete. The catalogue currently declares seven cuisine collections with exactly 30 distinct Irish, Argentinian, French, German, Italian, Spanish and United States of America recipe entries. There are 264 canonical recipe records; 54 are not yet assigned to a requested collection. No BBQ or Fish & Seafood entries are assigned. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
 
 | Requested cuisine group | Entries assigned |
 | --- | ---: |
@@ -50,12 +50,12 @@ The requested 920 collection-entry quota is not complete. The catalogue currentl
 | Persian | 0 / 30 |
 | Romanian | 0 / 30 |
 | Serbian | 0 / 30 |
-| Spanish | 0 / 30 |
+| Spanish | 30 / 30 |
 | United States of America | 30 / 30 |
 | BBQ Around the World | 0 / 100 |
 | Fish & Seafood Around the World | 0 / 100 |
 
-**Assigned collection total: 180 / 920.** The 54 unassigned canonical records do not count toward the requested quotas. BBQ and seafood need their own culturally appropriate collection assignments; the other 18 cuisine groups still need 30 entries apiece.
+**Assigned collection total: 210 / 920.** The 54 unassigned canonical records do not count toward the requested quotas. BBQ and seafood need their own culturally appropriate collection assignments; the other 17 cuisine groups still need 30 entries apiece.
 
 ## Recipe authorship and cultural references
 
@@ -65,6 +65,8 @@ Recipe directions and quantities in the catalogue JSON assets are original Suric
 
 German regional selection was guided by [Germany Travel's culinary guide](https://www.germany.travel/en/experience-enjoy/german-cuisine.html) and its [regional food overview](https://www.deutschland.de/en/topic/life/culinary-regions-germany). Recipes are Suric-authored home adaptations rather than transcriptions of publisher recipes.
 
+Spanish regional selection was guided by Spain.info's official overview of [traditional dishes](https://www.spain.info/en/discover-spain/dishes-traditional-cuisine-spain/) and its [regional cuisine guide](https://www.spain.info/es/consulta/cocinas-regionales-espana/). Recipes are Suric-authored home adaptations.
+
 French regional selections were cross-checked against [Explore France's regional gastronomy guide](https://www.france.fr/en/list/gastronomy-and-wine/), [its Alsatian cuisine guide](https://www.france.fr/en/article/alsatian-cuisine/) and [its Burgundy cuisine guide](https://www.france.fr/en/article/burgundy-cuisine/). The collection spans regional dishes and common home cooking; recipes are Suric-authored adaptations and do not claim one definitive version.
 
 Italian regional selections were cross-checked against [Italia.it's food and wine guide](https://www.italia.it/en/italy/things-to-do/food-and-wine), its overview of [Italian cuisine's regional heritage](https://www.italia.it/en/italy/things-to-do/italian-cuisine-unesco-heritage), and its [Lazio](https://www.italia.it/en/lazio/things-to-do/typical-food-and-dishes-in-lazio-italy) and [Sicily](https://www.italia.it/en/sicily/things-to-do/typical-sicilian-products-dishes) food guides. Recipes are Suric-authored home adaptations; seafood and raw-egg handling have recipe-specific safety notes.
@@ -73,7 +75,7 @@ The added potato/tomato blight and container-watering guides draw on [RHS blight
 
 ## Storage and navigation
 
-The app loads the two article JSON files, the base recipe catalogue, and the supplemental catalogues named in the version-1 manifest off the main thread. Each article has a stable ID, section, title, summary, revision, tags and full text. Recipes have separate canonical records and collection references. The global offline-search screen checks article text and recipe titles, origin, ingredients and tags and can filter by section or recipes. All six current cuisine collections open complete recipe details with measurements, directions, sides, substitutions, storage and food-safety notes. Back returns to the containing section. `suric://library/{id}` can open a matching bundled article in an installed Suric copy. Recipe-specific deep links and a verified HTTPS App Links domain are not configured.
+The app loads the two article JSON files, the base recipe catalogue, and the supplemental catalogues named in the version-1 manifest off the main thread. Each article has a stable ID, section, title, summary, revision, tags and full text. Recipes have separate canonical records and collection references. The global offline-search screen checks article text and recipe titles, origin, ingredients and tags and can filter by section or recipes. All seven current cuisine collections open complete recipe details with measurements, directions, sides, substitutions, storage and food-safety notes. Back returns to the containing section. `suric://library/{id}` can open a matching bundled article in an installed Suric copy. Recipe-specific deep links and a verified HTTPS App Links domain are not configured.
 
 **Copy to section** creates an independent encrypted personal entry. It does not alter the bundled article, and later edits/deletion affect only the personal copy. Personal entries can be moved among sections in their editor; the move retains the entry ID and encrypted store, and shopping-only retailer metadata is cleared when moved out of Shopping.
 
@@ -83,12 +85,12 @@ Outgoing private-entry sharing requires confirmation and uses Android Sharesheet
 
 Music can select local audio through Android's document picker, retain its granted URI, save a queue entry, play/pause, seek and remember the last position. This implementation has no playback service or notification controls, and playback stops when the Music screen leaves composition. Online choices open through Android's chooser. **Open Naxi Radio** uses Naxi's radio page; the online music chooser can offer apps that handle the YouTube URL. NewPipe is not bundled or embedded; its official upstream releases page is provided separately.
 
-Ask Suric's photo composer displays a thumbnail, the user message retains its URI for display/retry, and a zoomable preview opens over the conversation. The existing Responses request still sends the selected image only when Send is tapped. Message history and draft are saved in app-private AES-GCM encrypted preferences and restored after process recreation; the store surfaces read errors without replacing unreadable saved content. A confirmed Delete history action removes the saved messages and draft from this device. Image display after recreation depends on Android retaining access to the selected Photo Picker URI. Chat-history export is not implemented.
+Ask Suric's photo composer displays a thumbnail, the user message retains its URI for display/retry, and a zoomable preview opens over the conversation. The existing Responses request still sends the selected image only when Send is tapped. Message history and draft are saved in app-private AES-GCM encrypted preferences and restored after process recreation; the store surfaces read errors without replacing unreadable saved content. A confirmed Delete history action removes the saved messages and draft from this device. Image display after recreation depends on Android retaining access to the selected Photo Picker URI.
 
 Chat history can be shared as plain text through Android Sharesheet and deleted from this device after confirmation. Export excludes image files and their local URI references. The assistant does not yet use typed function tools or perform app writes. Existing manual Add/Edit actions remain local. No whole-store context is uploaded automatically; the existing selected-note actions remain user initiated.
 
 ## Unimplemented content depth
 
-The Irish, Argentinian, French, German, Italian and United States of America 30-entry cuisine quotas are complete. The remaining 18 cuisine groups, 100-entry BBQ collection and 100-entry Fish & Seafood collection have not been added, so the total is 180 of 920 collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
+The Irish, Argentinian, French, German, Italian, Spanish and United States of America 30-entry cuisine quotas are complete. The remaining 17 cuisine groups, 100-entry BBQ collection and 100-entry Fish & Seafood collection have not been added, so the total is 210 of 920 collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 
 No tests, lint, builds, emulator checks or GitHub Actions were run for this change, as requested.
