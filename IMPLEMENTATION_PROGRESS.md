@@ -2,7 +2,7 @@
 
 Updated 18 October 2026 on `feat/suric-android-app`.
 
-This ledger tracks the complete application expansion brief in the supplied request. Counts are from the checked-in bundled assets. The current handoff requested local unit tests, lint, debug APK assembly, a GitHub push and green pull-request checks; no emulator/device checks were requested.
+This ledger tracks the complete application expansion brief in the supplied request. Counts are from the checked-in bundled assets. The current update fixes the offline recipe loader, exposes all 891 recipes by default and verifies the result on the connected phone.
 
 ## Completed in source
 
@@ -10,6 +10,7 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - Ask Suric photo selection, thumbnail display, message attachment display, zoom preview and request attachment are implemented. Message history and draft are encrypted on-device and restored after process recreation; image URI access is persisted where Android grants it. Navigation route and selected section are saveable.
 - Offline article assets and a canonical JSON recipe catalogue are loaded without a network connection. Stable recipe IDs allow multiple collections to reuse one recipe record. A dedicated global-search screen searches all offline guides and recipes by title, section, origin, body, ingredients and tags, with category filters.
 - The Cooking section opens with an “All recipes” view for the complete 891-recipe canonical catalogue. The collection picker can narrow the list to each cuisine or special collection.
+- The recipe loader treats nullable article links and absent collection arrays in supplemental recipe-only catalogues as optional metadata, so those records no longer prevent the complete offline library from loading.
 - A separate 38-item offline Starter Library supplies guides, recipes, checklists and templates, with search, category filters, source links and copy-to-personal-space actions. Local sections remain available when ChatGPT is disconnected; Home card visibility and appearance settings are stored locally.
 - This implementation stage adds persistent, device-local favourites and a twenty-item recently viewed index for bundled articles and recipes. Section filters show all, saved or recent content. This index does not modify bundled records or encrypted personal entries.
 - The United States of America cuisine collection adds 30 original, structured regional home-cooking recipes in a separate versioned asset. Each entry includes measured ingredients, numbered steps, timings, servings, difficulty, accompaniments, substitutions, storage and safety notes.
@@ -78,9 +79,9 @@ The content and feature descriptions above are source-level findings unless the 
 
 ## Verification and repository state
 
-- Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 after integrating `origin/main` at `a26c13e`, using cached Gradle 8.13, JDK 17 and the installed Android SDK. The debug APK assembly completed. No emulator/device checks were run.
+- Local `testDebugUnitTest`, `lintDebug` and `assembleDebug` passed on 18 October 2026 using cached Gradle 8.13, JDK 17 and the installed Android SDK. On the connected Samsung SM-A127F, the installed debug APK opened Cooking and displayed **891 recipes** in “All recipes”; no emulator was used.
 - The pre-existing uncommitted `gradle/wrapper/gradle-wrapper.properties` edit selects Gradle 9.7.1, which is incompatible with this project's Android Gradle Plugin 8.13. The passing local check used cached Gradle 8.13, matching the committed wrapper value; the user edit remains untouched and excluded from commits.
-- Pull request #14 is the review and GitHub Actions status location for this implementation.
+- PR #15 made “All recipes” the Cooking default. The recipe-loader repair and on-device confirmation are recorded in the current update's pull request.
 - The selected checkout is the GitHub-linked `Suric-App-github` clone on `feat/suric-android-app`. The branch contains earlier local commits as well as the implementation slices recorded here; consult Git status for the current ahead count.
 - `gradle/wrapper/gradle-wrapper.properties` had a pre-existing uncommitted edit and was left untouched.
 - All 920 requested recipe collection entries are now present. This does not complete the broader application expansion described in the supplied brief.
