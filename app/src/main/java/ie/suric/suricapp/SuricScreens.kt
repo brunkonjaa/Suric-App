@@ -128,6 +128,8 @@ private val personalAreas = listOf(
     PersonalArea("Notes", "A private place for useful details", "Use my selected personal notes only as context for the question I ask.", R.drawable.suric_home)
 )
 
+private const val ALL_RECIPE_COLLECTIONS_ID = "all-recipes"
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, deepLinkArticleId: String?, onThemeChange: (Boolean) -> Unit) {
@@ -775,7 +777,7 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
     var offlineArticles by remember(section) { mutableStateOf<List<OfflineArticle>>(emptyList()) }
     var recipeCatalogue by remember(section) { mutableStateOf<RecipeCatalogue?>(null) }
     var selectedRecipeId by rememberSaveable(section) { mutableStateOf<String?>(null) }
-    var selectedRecipeCollectionId by rememberSaveable(section) { mutableStateOf("cuisine:ireland") }
+    var selectedRecipeCollectionId by rememberSaveable(section) { mutableStateOf(ALL_RECIPE_COLLECTIONS_ID) }
     var recipeCollectionMenuExpanded by remember { mutableStateOf(false) }
     var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
     var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
@@ -820,9 +822,8 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             .onSuccess { (articles, recipes) ->
                 offlineArticles = articles
                 recipeCatalogue = recipes
-                if (recipes?.collections?.none { it.id == selectedRecipeCollectionId } != false) {
-                    selectedRecipeCollectionId = recipes?.collections?.firstOrNull { it.id == "cuisine:ireland" }?.id
-                        ?: recipes?.collections?.firstOrNull()?.id.orEmpty()
+                if (selectedRecipeCollectionId != ALL_RECIPE_COLLECTIONS_ID && recipes?.collections?.none { it.id == selectedRecipeCollectionId } != false) {
+                    selectedRecipeCollectionId = ALL_RECIPE_COLLECTIONS_ID
                 }
                 offlineLibraryError = null
             }
@@ -989,13 +990,16 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             }
             if (section == "Cooking") {
                 val activeRecipeCollection = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
-                    ?: recipeCatalogue?.collections?.firstOrNull()
                 val recipeCollectionArtwork = when (activeRecipeCollection?.id) {
                     "cuisine:bbq" -> R.drawable.recipe_bbq_collection
                     "cuisine:seafood" -> R.drawable.recipe_seafood_collection
                     else -> null
                 }
-                val featuredRecipes = activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
+                val featuredRecipes = if (selectedRecipeCollectionId == ALL_RECIPE_COLLECTIONS_ID) {
+                    recipeCatalogue?.let { it.sortedRecipes(it.recipes) }.orEmpty()
+                } else {
+                    activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
+                }
                 val searchedRecipes = (if (libraryQuery.isBlank() && readingFilter == "all") featuredRecipes else recipeCatalogue?.let { catalogue ->
                     catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
                 }.orEmpty()).filter { recipe ->
@@ -1010,9 +1014,18 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
                             Box {
                                 OutlinedButton(onClick = { recipeCollectionMenuExpanded = true }, enabled = recipeCatalogue?.collections?.isNotEmpty() == true) {
-                                    Text(if (libraryQuery.isBlank()) activeRecipeCollection?.title ?: "Recipe collections" else "Recipe search results", maxLines = 1)
+                                    Text(
+                                        if (libraryQuery.isNotBlank()) "Recipe search results"
+                                        else if (selectedRecipeCollectionId == ALL_RECIPE_COLLECTIONS_ID) "All recipes"
+                                        else activeRecipeCollection?.title ?: "Recipe collections",
+                                        maxLines = 1
+                                    )
                                 }
                                 DropdownMenu(expanded = recipeCollectionMenuExpanded, onDismissRequest = { recipeCollectionMenuExpanded = false }) {
+                                    DropdownMenuItem(
+                                        text = { Text("All recipes (${recipeCatalogue?.recipes?.size ?: 0})") },
+                                        onClick = { selectedRecipeCollectionId = ALL_RECIPE_COLLECTIONS_ID; libraryQuery = ""; recipeCollectionMenuExpanded = false }
+                                    )
                                     recipeCatalogue?.collections?.forEach { collection ->
                                         DropdownMenuItem(
                                             text = { Text(collection.title) },
@@ -1026,7 +1039,7 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                         Text("Offline recipes with ingredients, timings and country of origin.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                 }
-                if (activeRecipeCollection == null && offlineLibraryError == null) item {
+                if (selectedRecipeCollectionId != ALL_RECIPE_COLLECTIONS_ID && activeRecipeCollection == null && offlineLibraryError == null) item {
                     Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
                 }
                 if (recipeCollectionArtwork != null && libraryQuery.isBlank()) item {
@@ -1142,9 +1155,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             if (offlineLibraryError != null) item {
                 Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             }
-            val recipeArticleIds = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
-                ?.recipeIds?.toSet()?.let { collectionIds -> recipeCatalogue?.recipes?.filter { it.id in collectionIds }?.mapNotNull { it.articleId }?.toSet() }
-                .orEmpty()
+            val recipeArticleIds = if (selectedRecipeCollectionId == ALL_RECIPE_COLLECTIONS_ID) {
+                recipeCatalogue?.recipes?.mapNotNull { it.articleId }?.toSet().orEmpty()
+            } else {
+                recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
+                    ?.recipeIds?.toSet()?.let { collectionIds -> recipeCatalogue?.recipes?.filter { it.id in collectionIds }?.mapNotNull { it.articleId }?.toSet() }
+                    .orEmpty()
+            }
             val matchingArticles = offlineArticles.filter { article ->
                 if (section == "Cooking" && article.id in recipeArticleIds) return@filter false
                 if (libraryQuery.isBlank()) article.section == section
