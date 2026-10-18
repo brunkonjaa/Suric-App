@@ -37,6 +37,7 @@ import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Logout
+import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
@@ -1496,6 +1497,8 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
     var selectedImage by rememberSaveable { mutableStateOf<Uri?>(null) }
     var previewImage by rememberSaveable { mutableStateOf<String?>(null) }
     var confirmClearHistory by rememberSaveable { mutableStateOf(false) }
+    var conversationActionsExpanded by remember { mutableStateOf(false) }
+    val context = LocalContext.current
     BackHandler(enabled = previewImage != null) { previewImage = null }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
         if (uri != null) {
@@ -1509,8 +1512,34 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
                 title = { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Ask Suric", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, maxLines = 1); Text(email ?: "Connected", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1) } },
                 navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
                 actions = {
-                    IconButton(onClick = { confirmClearHistory = true }, modifier = Modifier.size(48.dp)) {
-                        Icon(Icons.Default.DeleteOutline, contentDescription = "Delete chat history")
+                    Box {
+                        IconButton(onClick = { conversationActionsExpanded = true }, modifier = Modifier.size(48.dp)) {
+                            Icon(Icons.Default.MoreVert, contentDescription = "Chat history actions")
+                        }
+                        DropdownMenu(expanded = conversationActionsExpanded, onDismissRequest = { conversationActionsExpanded = false }) {
+                            DropdownMenuItem(
+                                text = { Text("Share chat text") },
+                                leadingIcon = { Icon(Icons.Default.Share, contentDescription = null) },
+                                enabled = state.messages.isNotEmpty(),
+                                onClick = {
+                                    conversationActionsExpanded = false
+                                    val transcript = state.messages.joinToString("\n\n") { message ->
+                                        val speaker = if (message.role == "user") "You" else "Suric"
+                                        "$speaker:\n${message.text}"
+                                    }
+                                    val intent = Intent(Intent.ACTION_SEND).apply {
+                                        type = "text/plain"
+                                        putExtra(Intent.EXTRA_TEXT, transcript)
+                                    }
+                                    context.startActivity(Intent.createChooser(intent, "Share chat history"))
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("Delete chat history") },
+                                leadingIcon = { Icon(Icons.Default.DeleteOutline, contentDescription = null) },
+                                onClick = { conversationActionsExpanded = false; confirmClearHistory = true }
+                            )
+                        }
                     }
                     IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") }
                 }

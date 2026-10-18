@@ -83,7 +83,7 @@ Music can select local audio through Android's document picker, retain its grant
 
 Ask Suric's photo composer displays a thumbnail, the user message retains its URI for display/retry, and a zoomable preview opens over the conversation. The existing Responses request still sends the selected image only when Send is tapped. Message history and draft are saved in app-private AES-GCM encrypted preferences and restored after process recreation; the store surfaces read errors without replacing unreadable saved content. A confirmed Delete history action removes the saved messages and draft from this device. Image display after recreation depends on Android retaining access to the selected Photo Picker URI. Chat-history export is not implemented.
 
-The assistant does not yet use typed function tools or perform app writes. Existing manual Add/Edit actions remain local. No whole-store context is uploaded automatically; the existing selected-note actions remain user initiated.
+Chat history can be shared as plain text through Android Sharesheet and deleted from this device after confirmation. Export excludes image files and their local URI references. The assistant does not yet use typed function tools or perform app writes. Existing manual Add/Edit actions remain local. No whole-store context is uploaded automatically; the existing selected-note actions remain user initiated.
 
 ## Unimplemented content depth
 
