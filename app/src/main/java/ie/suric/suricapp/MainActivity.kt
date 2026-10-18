@@ -180,6 +180,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         withContext(Dispatchers.IO) { localEntries.add(section, title, body, sourceUrl, sourceCheckedAt).also { _personalEntries.value = localEntries.allEntries() } }
             .also { _localDataError.value = null }
     }
+    suspend fun addShoppingIngredients(recipeTitle: String, ingredients: List<String>) = localEntriesMutex.withLock {
+        withContext(Dispatchers.IO) { localEntries.addShoppingIngredients(recipeTitle, ingredients).also { _personalEntries.value = localEntries.allEntries() } }
+            .also { _localDataError.value = null }
+    }
     suspend fun deleteEntry(id: String) = localEntriesMutex.withLock {
         withContext(Dispatchers.IO) { localEntries.delete(id); _personalEntries.value = localEntries.allEntries() }
         _localDataError.value = null

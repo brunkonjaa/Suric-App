@@ -49,6 +49,19 @@ class PersonalEntryStore(context: Context) {
     }
 
     @Synchronized
+    fun addShoppingIngredients(recipeTitle: String, ingredients: List<String>): List<PersonalEntry> {
+        require(recipeTitle.isNotBlank() && ingredients.isNotEmpty())
+        val body = "Added from recipe: ${recipeTitle.trim()}"
+        val existing = readAll()
+        val existingItems = existing.filter { it.section == "Shopping" && it.body == body }.map { it.title }.toSet()
+        val additions = ingredients.map(String::trim).filter(String::isNotEmpty).distinct()
+            .filterNot(existingItems::contains)
+            .map { ingredient -> PersonalEntry(UUID.randomUUID().toString(), "Shopping", ingredient, body, System.currentTimeMillis()) }
+        if (additions.isNotEmpty()) writeAll(existing + additions)
+        return additions
+    }
+
+    @Synchronized
     fun update(entry: PersonalEntry) {
         require(entry.section in SECTIONS)
         require(entry.section == "Shopping" || (entry.sourceUrl == null && entry.sourceCheckedAt == null))

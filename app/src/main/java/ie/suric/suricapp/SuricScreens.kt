@@ -591,9 +591,11 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             onBack = { selectedRecipeId = null },
             onAddIngredients = {
                 scope.launch {
-                    val body = selectedRecipe!!.ingredients.joinToString("\n") { "[ ] $it" }
-                    runCatching { vm.addEntry("Shopping", "Ingredients for ${selectedRecipe!!.name}", body) }
-                        .onSuccess { snackbar.showSnackbar("Added ${selectedRecipe!!.ingredients.size} ingredients to Shopping.") }
+                    runCatching { vm.addShoppingIngredients(selectedRecipe!!.name, selectedRecipe!!.ingredients) }
+                        .onSuccess { additions ->
+                            val message = if (additions.isEmpty()) "Those ingredients are already in Shopping." else "Added ${additions.size} ingredients to Shopping."
+                            snackbar.showSnackbar(message)
+                        }
                         .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t add the ingredients to Shopping.") }
                 }
             },
@@ -901,7 +903,8 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             items(savedEntries, key = { it.id }) { entry ->
                 EntryCard(
                     entry = entry,
-                    showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills"),
+                    showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills") ||
+                        (section == "Shopping" && entry.body.startsWith("Added from recipe: ")),
                     onToggle = { changed -> scope.launch { runCatching { vm.updateEntry(changed) }.onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t update this item.") } } },
                     onEdit = { editingId = entry.id; showEditor = true },
                     onShare = { shareEntryId = entry.id },
