@@ -599,8 +599,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 if (activeRecipeCollection == null && offlineLibraryError == null) item {
                     Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
                 }
-                if (searchedRecipes.isEmpty() && libraryQuery.isNotBlank()) item {
-                    Text("No bundled recipes match that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                if (searchedRecipes.isEmpty() && (libraryQuery.isNotBlank() || readingFilter != "all")) item {
+                    val emptyMessage = when (readingFilter) {
+                        "favourites" -> "No favourite recipes in this collection."
+                        "recent" -> "No recently viewed recipes in this collection."
+                        else -> "No bundled recipes match that search."
+                    }
+                    Text(emptyMessage, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
                 items(searchedRecipes, key = { "recipe:${it.id}" }) { recipe ->
                     OutlinedCard(onClick = { selectedRecipeId = recipe.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
@@ -714,7 +719,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 }
             }.let { articles -> if (readingFilter == "recent") articles.sortedBy { recentIds.indexOf("article:${it.id}").let { index -> if (index < 0) Int.MAX_VALUE else index } } else articles }
             if (matchingArticles.isEmpty() && offlineLibraryError == null) item {
-                Text(if (libraryQuery.isBlank()) "No bundled articles in this section yet." else "No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                val emptyMessage = when {
+                    readingFilter == "favourites" -> "No favourite guides in this section."
+                    readingFilter == "recent" -> "No recently viewed guides in this section."
+                    libraryQuery.isBlank() -> "No bundled articles in this section yet."
+                    else -> "No offline content matches that search."
+                }
+                Text(emptyMessage, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
             items(matchingArticles, key = { "offline:${it.id}" }) { article ->
                 OutlinedCard(onClick = { selectedArticleId = article.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {

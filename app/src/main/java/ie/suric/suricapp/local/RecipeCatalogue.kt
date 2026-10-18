@@ -52,9 +52,11 @@ data class RecipeCatalogue(val recipes: List<OfflineRecipe>, val collections: Li
 
 object OfflineRecipeCatalogue {
     fun load(context: Context, articles: List<OfflineArticle>): RecipeCatalogue {
-        val root = context.assets.open("recipe-catalogue.json").bufferedReader().use { JSONObject(it.readText()) }
-        require(root.optInt("version") == 1) { "This recipe catalogue version is not supported." }
-        val recipes = root.getJSONArray("recipes").let { items ->
+        val roots = listOf("recipe-catalogue.json", "recipe-catalogue-american.json").map { asset ->
+            context.assets.open(asset).bufferedReader().use { JSONObject(it.readText()) }
+        }
+        require(roots.all { it.optInt("version") == 1 }) { "This recipe catalogue version is not supported." }
+        val recipes = roots.flatMap { root -> root.getJSONArray("recipes").let { items ->
             (0 until items.length()).map { index ->
                 val item = items.getJSONObject(index)
                 val articleId = item.optString("articleId").takeIf(String::isNotBlank)
@@ -75,13 +77,13 @@ object OfflineRecipeCatalogue {
                     revision = item.getInt("revision"), articleId = articleId
                 )
             }
-        }
-        val collections = root.getJSONArray("collections").let { items ->
+        } }
+        val collections = roots.flatMap { root -> root.getJSONArray("collections").let { items ->
             (0 until items.length()).map { index ->
                 val item = items.getJSONObject(index)
                 RecipeCollection(item.getString("id"), item.getString("title"), item.getJSONArray("recipeIds").let { ids -> (0 until ids.length()).map(ids::getString) })
             }
-        }.sortedWith { left, right ->
+        } }.sortedWith { left, right ->
             val collator = Collator.getInstance(Locale.getDefault()).apply { strength = Collator.PRIMARY }
             val byTitle = collator.compare(left.title, right.title)
             if (byTitle != 0) byTitle else left.id.compareTo(right.id)
