@@ -34,6 +34,7 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - The Serbian cuisine collection adds 30 regional home-cooking adaptations across Vojvodina, central, western and southern Serbia.
 - The BBQ Around the World collection contains 100 entries, reusing suitable canonical grill recipes and adding regional barbecue recipes with measured ingredients, complete methods and food-safety notes.
 - The Fish & Seafood Around the World collection contains 100 entries, reusing suitable canonical seafood recipes and adding globally varied seafood dishes with measured ingredients, complete methods and seafood-handling notes. Ten new grilled seafood recipes are shared by both collections through canonical IDs.
+- AI-generated photorealistic BBQ and Fish & Seafood collection images are bundled and shown above their recipe lists. These are collection covers, not individual images for each recipe.
 - Recipe details can add each measured ingredient as a separate checkable entry to the encrypted local Shopping section. Repeating the action skips ingredients already added for that recipe.
 - Ask Suric restores encrypted local message history and draft after process recreation, surfaces read failures without overwriting saved chat, shares text history through Android Sharesheet, and offers a confirmed local deletion action. Shared history excludes image files and attachment URIs.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
@@ -49,7 +50,7 @@ These are source-level findings; this stage did not execute or independently ver
 - All 24 requested traditional cuisine collections are complete at **30 / 30** each.
 - BBQ Around the World: **100 / 100**.
 - Fish & Seafood Around the World: **100 / 100**.
-- No recipe photos or offline library photographs are bundled with the text assets.
+- BBQ and Fish & Seafood have generated offline collection-cover images; individual recipe images and offline library article photographs are not bundled.
 
 ## Partially implemented
 
@@ -62,7 +63,7 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Not implemented
 
-- Recipe image coverage where suitable offline assets are available.
+- Individual recipe images and offline library article photography; current BBQ and seafood images are collection covers only.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Image attachments still depend on Android retaining the selected URI permission; chat export is text-only and does not package image attachments.

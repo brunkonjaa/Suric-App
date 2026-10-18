@@ -722,6 +722,11 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
             if (section == "Cooking") {
                 val activeRecipeCollection = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
                     ?: recipeCatalogue?.collections?.firstOrNull()
+                val recipeCollectionArtwork = when (activeRecipeCollection?.id) {
+                    "cuisine:bbq" -> R.drawable.recipe_bbq_collection
+                    "cuisine:seafood" -> R.drawable.recipe_seafood_collection
+                    else -> null
+                }
                 val featuredRecipes = activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
                 val searchedRecipes = (if (libraryQuery.isBlank() && readingFilter == "all") featuredRecipes else recipeCatalogue?.let { catalogue ->
                     catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
@@ -755,6 +760,14 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                 }
                 if (activeRecipeCollection == null && offlineLibraryError == null) item {
                     Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                }
+                if (recipeCollectionArtwork != null && libraryQuery.isBlank()) item {
+                    Image(
+                        painter = painterResource(recipeCollectionArtwork),
+                        contentDescription = "${activeRecipeCollection?.title} collection image showing representative dishes",
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier.fillMaxWidth().height(184.dp).clip(RoundedCornerShape(20.dp))
+                    )
                 }
                 if (searchedRecipes.isEmpty() && (libraryQuery.isNotBlank() || readingFilter != "all")) item {
                     val emptyMessage = when (readingFilter) {
