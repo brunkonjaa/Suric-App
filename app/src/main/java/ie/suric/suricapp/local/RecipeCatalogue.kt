@@ -52,7 +52,13 @@ data class RecipeCatalogue(val recipes: List<OfflineRecipe>, val collections: Li
 
 object OfflineRecipeCatalogue {
     fun load(context: Context, articles: List<OfflineArticle>): RecipeCatalogue {
-        val roots = listOf("recipe-catalogue.json", "recipe-catalogue-american.json").map { asset ->
+        val manifest = context.assets.open("recipe-catalogue-manifest.json").bufferedReader().use { JSONObject(it.readText()) }
+        require(manifest.optInt("version") == 1) { "This recipe catalogue manifest version is not supported." }
+        val extensions = manifest.getJSONArray("catalogues").let { values -> (0 until values.length()).map(values::getString) }
+        require(extensions.distinct().size == extensions.size && extensions.all { it.matches(Regex("[a-z0-9-]{1,100}\\.json")) }) {
+            "Recipe catalogue manifest contains an invalid or duplicate asset name."
+        }
+        val roots = (listOf("recipe-catalogue.json") + extensions).map { asset ->
             context.assets.open(asset).bufferedReader().use { JSONObject(it.readText()) }
         }
         require(roots.all { it.optInt("version") == 1 }) { "This recipe catalogue version is not supported." }

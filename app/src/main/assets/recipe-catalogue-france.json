@@ -1,0 +1,1121 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "fr-aligot",
+      "name": "Aligot",
+      "englishName": null,
+      "country": "France",
+      "region": "Auvergne",
+      "description": "Stretchy potato pur?e beaten with fresh cheese, garlic and cream.",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 kg floury potatoes, peeled",
+        "250 g tome fra?che or young tomme, thinly sliced",
+        "150 ml warm milk",
+        "40 g butter",
+        "1 garlic clove, crushed",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Boil potatoes in salted water until very tender, 18?22 minutes. Drain and rice or mash smooth.",
+        "Return potatoes to low heat; beat in butter, garlic and warm milk gradually until creamy.",
+        "Add cheese by handfuls, stirring firmly in one direction until melted and stretchy. Season and serve hot."
+      ],
+      "sides": "Serve with grilled sausage, roast vegetables or a crisp green salad.",
+      "substitutions": "Young Cantal or tomme melts well; low-moisture mozzarella gives stretch but a milder flavour.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Auvergne",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-blanquette-de-veau",
+      "name": "Blanquette de veau",
+      "englishName": null,
+      "country": "France",
+      "region": "?le-de-France style",
+      "description": "Veal gently poached with aromatics and finished in a pale cream sauce.",
+      "prepMinutes": 25,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "750 g veal shoulder, 4 cm pieces",
+        "1 onion, halved",
+        "1 carrot, sliced",
+        "1 celery stalk, sliced",
+        "1 bay leaf and 4 thyme sprigs",
+        "200 g button mushrooms",
+        "25 g butter and 25 g flour",
+        "150 ml single cream and 1 tbsp lemon"
+      ],
+      "instructions": [
+        "Cover veal with cold water; bring just to a simmer and skim. Add onion, carrot, celery and herbs.",
+        "Part-cover and simmer gently until tender, 75?90 minutes; add mushrooms for final 15 minutes. Reserve 500 ml broth.",
+        "Make a roux with butter and flour; whisk in broth and simmer until lightly thickened. Stir in cream and lemon, return meat and mushrooms, heat without boiling."
+      ],
+      "sides": "Serve over rice or buttered noodles, with peas or green beans.",
+      "substitutions": "Use boneless chicken thighs instead of veal and simmer until cooked through; the broth will be lighter.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "?le-de-France style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-boeuf-bourguignon",
+      "name": "B?uf bourguignon",
+      "englishName": null,
+      "country": "France",
+      "region": "Burgundy",
+      "description": "A slow braise of beef, red wine, mushrooms and aromatic vegetables.",
+      "prepMinutes": 30,
+      "cookMinutes": 180,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg stewing beef, 4 cm cubes",
+        "150 g smoked lardons",
+        "1 onion, diced",
+        "2 carrots, thickly sliced",
+        "2 tbsp flour",
+        "500 ml dry red wine and 300 ml beef stock",
+        "2 garlic cloves, bay and thyme",
+        "200 g mushrooms"
+      ],
+      "instructions": [
+        "Pat beef dry. Brown lardons, then brown beef in batches in the same casserole; set aside.",
+        "Soften onion and carrots; return meat, stir through flour, then add wine and stock while scraping the base. Add garlic and herbs.",
+        "Cover and simmer very gently for 2? hours. Brown mushrooms separately, add for final 20 minutes and cook until beef is fork-tender."
+      ],
+      "sides": "Serve with mashed potatoes, buttered noodles or crusty bread.",
+      "substitutions": "Use beef chuck or shin. For an alcohol-free braise use extra stock with 1 tsp red-wine vinegar.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Burgundy",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-bouillabaisse",
+      "name": "Bouillabaisse",
+      "englishName": null,
+      "country": "France",
+      "region": "Marseille, Provence",
+      "description": "Tomato, fennel and saffron fish stew inspired by Marseille home cooking.",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g firm white fish, boneless chunks",
+        "1 onion and 1 small fennel bulb, sliced",
+        "2 tomatoes, chopped",
+        "2 tbsp olive oil and 2 garlic cloves",
+        "750 ml fish stock",
+        "Pinch saffron, strip orange zest and bay",
+        "Parsley, salt and pepper"
+      ],
+      "instructions": [
+        "Soften onion and fennel in oil for 8 minutes. Add garlic and tomatoes; cook until pulpy.",
+        "Add stock, saffron, orange zest and bay. Simmer 15 minutes; remove zest and bay.",
+        "Add fish by thickness and simmer gently 5?8 minutes until opaque and flaky. Season, add parsley and serve."
+      ],
+      "sides": "Serve with toasted bread and garlic rouille or a plain green salad.",
+      "substitutions": "Choose any sustainably sourced firm white fish. A little extra fennel can replace saffron aroma, though not its colour.",
+      "storage": "Cool promptly, refrigerate for up to 1 day and reheat once until piping hot.",
+      "safety": "Keep fish chilled until cooking. Cook until opaque and flaky; avoid cross-contamination from raw seafood.",
+      "tags": [
+        "Marseille, Provence",
+        "French cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-brandade-de-morue",
+      "name": "Brandade de morue",
+      "englishName": null,
+      "country": "France",
+      "region": "N?mes, Occitanie",
+      "description": "Salt cod worked with olive oil and potato into a warm, soft pur?e.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g desalted cod",
+        "400 g floury potatoes, cubed",
+        "100 ml warm milk",
+        "80 ml olive oil",
+        "1 garlic clove, grated",
+        "1 tbsp lemon juice and black pepper"
+      ],
+      "instructions": [
+        "If starting with salted cod, soak covered in the refrigerator 24?36 hours, changing water several times.",
+        "Boil potatoes until tender. Poach cod gently 8?10 minutes, drain and check carefully for bones.",
+        "Mash potatoes; flake in fish and beat in warm milk, olive oil and garlic. Season with lemon and pepper."
+      ],
+      "sides": "Serve with toast, steamed greens or a tomato salad.",
+      "substitutions": "Use another firm white fish if salt cod is unavailable; season carefully because it lacks the characteristic cured saltiness.",
+      "storage": "Refrigerate promptly for up to 1 day and reheat once until steaming hot.",
+      "safety": "Desalt fish in the refrigerator, changing water regularly; never soak at room temperature. Check carefully for bones and keep raw fish separate from ready-to-eat food.",
+      "tags": [
+        "N?mes, Occitanie",
+        "French cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-cassoulet",
+      "name": "Cassoulet",
+      "englishName": null,
+      "country": "France",
+      "region": "Languedoc, Castelnaudary style",
+      "description": "Slow-baked white beans with pork and sausage for a hearty casserole.",
+      "prepMinutes": 25,
+      "cookMinutes": 150,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g dried haricot beans, soaked overnight",
+        "300 g pork shoulder, diced",
+        "200 g smoked sausage, sliced",
+        "100 g lardons",
+        "1 onion and 2 carrots, diced",
+        "2 garlic cloves and bay",
+        "500 ml unsalted chicken stock"
+      ],
+      "instructions": [
+        "Boil soaked beans briskly for 10 minutes, drain, then simmer in fresh water until nearly tender, 35?50 minutes.",
+        "Brown pork, sausage and lardons in casserole. Soften onion and carrots; stir in garlic.",
+        "Add beans, bay and stock. Cover and bake at 160?C conventional / 140?C fan for 90 minutes, adding hot water if needed; uncover for the final 20 minutes."
+      ],
+      "sides": "Serve with crusty bread and a sharp green salad.",
+      "substitutions": "Use about three drained 400 g cans of white beans; reduce oven time to 45–60 minutes.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Languedoc, Castelnaudary style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-crepes",
+      "name": "Cr?pes",
+      "englishName": null,
+      "country": "France",
+      "region": "Brittany and across France",
+      "description": "Thin pan-cooked pancakes for a simple sweet breakfast or dessert.",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g plain flour",
+        "3 eggs",
+        "500 ml milk",
+        "25 g melted butter",
+        "1 tbsp sugar (optional)",
+        "Pinch salt"
+      ],
+      "instructions": [
+        "Whisk flour, salt and optional sugar. Beat in eggs, then gradually whisk in milk until smooth; stir in melted butter.",
+        "Rest batter for 20 minutes if possible. Heat lightly buttered 20 cm pan over medium heat.",
+        "Pour a small ladle and swirl thinly. Cook until edge lifts, flip and briefly cook the other side. Repeat."
+      ],
+      "sides": "Fill with lemon and sugar, jam, fresh fruit or a savoury filling.",
+      "substitutions": "For savoury crêpes omit sugar; replace up to half the flour with buckwheat for a nuttier taste.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Brittany and across France",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-galette-complete",
+      "name": "Galette compl?te",
+      "englishName": null,
+      "country": "France",
+      "region": "Brittany",
+      "description": "Buckwheat cr?pe folded around egg, ham and melting cheese.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g buckwheat flour",
+        "1 egg and 450 ml cold water",
+        "? tsp salt",
+        "4 eggs for filling",
+        "4 slices cooked ham",
+        "120 g grated Gruy?re",
+        "20 g butter"
+      ],
+      "instructions": [
+        "Whisk flour, salt, batter egg and water until smooth; rest 20 minutes.",
+        "Butter a wide pan, spread a thin layer of batter and cook until top looks dry; flip briefly.",
+        "Lower heat, add ham, cheese and an egg. Fold edges inward, cover until white sets and cheese melts."
+      ],
+      "sides": "Serve with a green salad and unsweetened cider or sparkling water.",
+      "substitutions": "Emmental or Comté can replace Gruyère. Use cooked turkey instead of ham if preferred.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Cook the filling egg until the white is completely set; use pasteurised eggs for vulnerable diners.",
+      "tags": [
+        "Brittany",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-choucroute-garnie",
+      "name": "Choucroute garnie",
+      "englishName": null,
+      "country": "France",
+      "region": "Alsace",
+      "description": "Fermented cabbage slowly cooked with apple, wine, smoked meats and potatoes.",
+      "prepMinutes": 20,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g sauerkraut, drained",
+        "1 onion and 1 apple, sliced",
+        "1 tbsp oil",
+        "250 ml dry white wine and 250 ml water",
+        "Bay leaf and 4 juniper berries",
+        "400 g smoked sausage",
+        "300 g cooked smoked pork",
+        "500 g small potatoes"
+      ],
+      "instructions": [
+        "Soften onion in oil, add apple and sauerkraut and toss.",
+        "Add wine, water, bay and juniper. Cover and simmer gently for 60 minutes. Boil potatoes separately until tender.",
+        "Add sausage and cooked pork for the final 20 minutes until piping hot. Serve with cabbage and potatoes; remove whole spices."
+      ],
+      "sides": "Serve with Dijon mustard and crusty bread.",
+      "substitutions": "Replace wine with unsalted stock or apple juice plus a splash of vinegar. Rinse sauerkraut for a milder result.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Alsace",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-clafoutis",
+      "name": "Clafoutis",
+      "englishName": null,
+      "country": "France",
+      "region": "Limousin",
+      "description": "Baked custard-like batter surrounds pitted cherries for an easy dessert.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g pitted cherries",
+        "3 eggs",
+        "100 g caster sugar",
+        "100 g plain flour",
+        "250 ml milk",
+        "1 tsp vanilla",
+        "20 g butter"
+      ],
+      "instructions": [
+        "Heat oven to 180?C conventional / 160?C fan. Butter a 23 cm dish and arrange pitted cherries.",
+        "Whisk eggs and sugar; beat in flour, then gradually whisk in milk and vanilla until smooth.",
+        "Pour over cherries and bake 35?40 minutes until puffed, golden and set in centre."
+      ],
+      "sides": "Serve warm or at room temperature with crème fraîche or plain yoghurt.",
+      "substitutions": "Use pitted plums or apricots instead of cherries and bake until the centre is set.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Limousin",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-coq-au-vin",
+      "name": "Coq au vin",
+      "englishName": null,
+      "country": "France",
+      "region": "Burgundy style",
+      "description": "Chicken braised slowly with red wine, mushrooms and onions.",
+      "prepMinutes": 25,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "8 bone-in chicken thighs",
+        "100 g lardons",
+        "1 onion and 2 carrots, diced",
+        "2 tbsp flour",
+        "400 ml dry red wine and 250 ml chicken stock",
+        "2 garlic cloves, bay and thyme",
+        "200 g mushrooms and 150 g pearl onions"
+      ],
+      "instructions": [
+        "Brown lardons, then chicken in batches; set aside. Soften onion and carrots in the casserole.",
+        "Stir in flour, then gradually wine and stock, scraping the base. Add garlic, herbs and lardons.",
+        "Return chicken, cover and simmer 60 minutes. Add browned mushrooms and onions; simmer uncovered 20 minutes until chicken is cooked through."
+      ],
+      "sides": "Serve with mash, buttered noodles or crusty bread.",
+      "substitutions": "For an alcohol-free version use chicken stock with 1 tbsp red-wine vinegar instead of wine.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Cook chicken to at least 75°C at the thickest part, away from bone. Keep raw poultry separate from other ingredients.",
+      "tags": [
+        "Burgundy style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-croque-monsieur",
+      "name": "Croque monsieur",
+      "englishName": null,
+      "country": "France",
+      "region": "Paris caf? style",
+      "description": "Toasted ham and cheese sandwich with a quick b?chamel browned on top.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 slices sturdy white bread",
+        "2 tsp Dijon mustard",
+        "2 slices cooked ham",
+        "100 g grated Gruy?re",
+        "20 g butter and 20 g flour",
+        "200 ml milk and pinch nutmeg"
+      ],
+      "instructions": [
+        "Heat grill to medium-high. Melt butter, stir in flour 1 minute, then whisk in milk until smooth and thick; season with nutmeg.",
+        "Spread mustard on bread, add ham and half the cheese, close sandwiches and place on tray.",
+        "Top with b?chamel and remaining cheese; grill 4?6 minutes until golden and hot throughout."
+      ],
+      "sides": "Serve with a dressed green salad or tomato soup.",
+      "substitutions": "Emmental or mature Swiss-style cheese melts well in place of Gruyère; omit mustard for a milder sandwich.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Paris caf? style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-gratin-dauphinois",
+      "name": "Gratin dauphinois",
+      "englishName": null,
+      "country": "France",
+      "region": "Dauphin?",
+      "description": "Thin potato slices bake slowly in seasoned cream until tender and golden.",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg waxy potatoes, peeled",
+        "400 ml whole milk",
+        "250 ml single cream",
+        "1 garlic clove",
+        "20 g butter",
+        "Nutmeg, salt and pepper"
+      ],
+      "instructions": [
+        "Heat oven to 170?C conventional / 150?C fan. Rub baking dish with cut garlic, then butter it.",
+        "Slice potatoes thinly and evenly; layer in dish, seasoning between layers.",
+        "Warm milk and cream until steaming, pour over potatoes and bake uncovered 70?80 minutes until tender and golden."
+      ],
+      "sides": "Serve with roast chicken and green vegetables.",
+      "substitutions": "Use semi-skimmed milk for a lighter result; add a little grated cheese on top as a variation.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Dauphin?",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-hachis-parmentier",
+      "name": "Hachis parmentier",
+      "englishName": null,
+      "country": "France",
+      "region": "France, home-style",
+      "description": "Seasoned minced beef under a layer of buttery mashed potato.",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g potatoes, peeled and cubed",
+        "30 g butter and 100 ml milk",
+        "1 tbsp oil",
+        "1 onion, diced",
+        "500 g lean beef mince",
+        "1 carrot, grated",
+        "150 ml beef stock and thyme",
+        "40 g grated cheese (optional)"
+      ],
+      "instructions": [
+        "Boil potatoes until tender, drain and mash with butter and warm milk.",
+        "Soften onion in oil; add beef and carrot and cook until browned throughout. Add stock and thyme; simmer until most liquid evaporates.",
+        "Spoon beef into dish, cover with mash and optional cheese. Bake at 200?C / 180?C fan for 20?25 minutes until golden."
+      ],
+      "sides": "Serve with green beans or a dressed salad.",
+      "substitutions": "Finely chop leftover cooked pot-au-feu beef instead of mince and moisten with stock.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "France, home-style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-quiche-lorraine",
+      "name": "Quiche Lorraine",
+      "englishName": null,
+      "country": "France",
+      "region": "Lorraine",
+      "description": "A savoury custard tart with smoked lardons in a crisp pastry shell.",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "230 g shortcrust pastry",
+        "150 g smoked lardons",
+        "3 eggs",
+        "200 ml single cream",
+        "100 ml milk",
+        "Nutmeg and black pepper"
+      ],
+      "instructions": [
+        "Heat oven to 190?C / 170?C fan. Line a 23 cm tin, prick pastry and chill 10 minutes. Blind bake 15 minutes; remove weights and bake 5 minutes more.",
+        "Cook lardons until lightly golden and drain. Whisk eggs, cream, milk, nutmeg and pepper.",
+        "Scatter lardons in pastry, pour in custard and bake 30?35 minutes until just set. Rest 10 minutes."
+      ],
+      "sides": "Serve warm or cold with a green salad.",
+      "substitutions": "Add 75 g Gruyère as a common variation; use milk in place of some cream for a lighter custard.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Lorraine",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-tarte-flambee",
+      "name": "Tarte flamb?e (flammekueche)",
+      "englishName": null,
+      "country": "France",
+      "region": "Alsace",
+      "description": "Thin flatbread topped with cr?me fra?che, onions and lardons, baked hot and fast.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g strong white flour",
+        "150 ml lukewarm water",
+        "1 tbsp olive oil and ? tsp salt",
+        "150 g cr?me fra?che",
+        "100 g fromage blanc or thick yoghurt",
+        "2 onions, thinly sliced",
+        "120 g smoked lardons",
+        "Pepper and nutmeg"
+      ],
+      "instructions": [
+        "Mix flour, water, oil and salt into smooth dough. Knead briefly, cover and rest 20 minutes.",
+        "Heat oven to 250?C / 230?C fan with a heavy tray inside. Mix cr?me fra?che and fromage blanc with pepper and nutmeg.",
+        "Roll dough very thin, spread with cream, add onion and lardons. Bake 10?14 minutes until crisp and toppings cooked."
+      ],
+      "sides": "Serve hot with a green salad.",
+      "substitutions": "Use sour cream loosened with a spoonful of plain yoghurt if fromage blanc is unavailable.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Alsace",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-tartiflette",
+      "name": "Tartiflette",
+      "englishName": null,
+      "country": "France",
+      "region": "Savoie, French Alps",
+      "description": "Potatoes, onions and lardons baked beneath melting Reblochon cheese.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 kg waxy potatoes",
+        "150 g smoked lardons",
+        "1 onion, sliced",
+        "100 ml white wine or stock",
+        "200 g Reblochon, halved horizontally",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Boil potatoes until just tender, 15?20 minutes; drain, cool slightly and slice.",
+        "Brown lardons, add onion and cook soft. Pour in wine or stock and simmer 2 minutes.",
+        "Layer potatoes and onion mixture in dish. Set Reblochon rind-side up on top and bake at 200?C / 180?C fan for 25?30 minutes."
+      ],
+      "sides": "Serve with green salad and cornichons to balance the rich cheese.",
+      "substitutions": "A ripe Camembert can replace Reblochon, though the flavour will differ.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Savoie, French Alps",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-pot-au-feu",
+      "name": "Pot-au-feu",
+      "englishName": null,
+      "country": "France",
+      "region": "France, classic family pot",
+      "description": "Beef and root vegetables slowly simmer into a simple restorative broth.",
+      "prepMinutes": 25,
+      "cookMinutes": 180,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg beef brisket or shin",
+        "2 carrots, 2 leeks and 2 turnips",
+        "1 onion, halved",
+        "2 celery sticks",
+        "Bay, peppercorns and 2 cloves",
+        "2.5 litres water and salt"
+      ],
+      "instructions": [
+        "Put beef in pot, cover with cold water and bring slowly to simmer; skim foam.",
+        "Add onion studded with cloves, bay and peppercorns. Part-cover and simmer gently for 2 hours.",
+        "Add carrots, leeks, turnips and celery; simmer 35?45 minutes until beef and vegetables are tender. Slice meat across grain and serve with broth."
+      ],
+      "sides": "Serve with mustard, horseradish, cornichons and crusty bread.",
+      "substitutions": "Beef shin, brisket or chuck all work; simmer until fork-tender because cut and size change cooking time.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "France, classic family pot",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-ratatouille",
+      "name": "Ratatouille",
+      "englishName": null,
+      "country": "France",
+      "region": "Provence, Nice style",
+      "description": "A slow-cooked mixture of aubergine, courgette, peppers and tomatoes with herbs.",
+      "prepMinutes": 25,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 aubergine, cubed",
+        "2 courgettes, cubed",
+        "1 red and 1 yellow pepper",
+        "1 onion and 3 tomatoes",
+        "3 tbsp olive oil",
+        "2 garlic cloves",
+        "Herbes de Provence and basil"
+      ],
+      "instructions": [
+        "Salt aubergine lightly for 15 minutes and pat dry. Brown in batches in half the oil; set aside.",
+        "Cook courgettes and peppers in remaining oil until coloured, then soften onion. Add garlic, tomatoes and herbs.",
+        "Return aubergine, cover and simmer gently 30?35 minutes, stirring occasionally. Season and fold in basil."
+      ],
+      "sides": "Serve with bread, rice or roast chicken; leftovers are good with eggs.",
+      "substitutions": "Use any mix of aubergine, courgette and peppers in similar quantities; add tomatoes to keep the stew moist.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Provence, Nice style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-salade-nicoise",
+      "name": "Salade ni?oise",
+      "englishName": null,
+      "country": "France",
+      "region": "Nice, Provence",
+      "description": "Composed salad of tuna, egg, potatoes and crisp vegetables.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g small potatoes",
+        "200 g green beans",
+        "4 eggs",
+        "2 little gem lettuces",
+        "200 g cherry tomatoes",
+        "160 g drained tinned tuna",
+        "Black olives and optional anchovies",
+        "2 tbsp olive oil, lemon and Dijon"
+      ],
+      "instructions": [
+        "Boil potatoes until tender. Add green beans for final 4 minutes; drain and cool. Boil eggs 8?9 minutes, cool and halve.",
+        "Whisk oil, lemon and mustard with salt and pepper. Arrange lettuce, potatoes, beans, tomatoes, tuna, eggs and olives.",
+        "Drizzle dressing and add anchovies if using. Serve promptly."
+      ],
+      "sides": "Serve with crusty bread.",
+      "substitutions": "Replace tuna with cooked salmon or chickpeas; omit anchovies for a milder salad.",
+      "storage": "Keep components chilled and assemble just before serving. Refrigerate leftovers promptly and use within 1 day.",
+      "safety": "Use fully cooked eggs. Keep tuna chilled after opening and do not leave the assembled salad at room temperature.",
+      "tags": [
+        "Nice, Provence",
+        "French cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-soupe-a-loignon",
+      "name": "Soupe ? l?oignon gratin?e",
+      "englishName": null,
+      "country": "France",
+      "region": "Paris bistro style",
+      "description": "Long-cooked onions and stock topped with toasted bread and melted cheese.",
+      "prepMinutes": 15,
+      "cookMinutes": 65,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "750 g onions, thinly sliced",
+        "30 g butter and 1 tbsp olive oil",
+        "1 tsp flour",
+        "1 litre beef or vegetable stock",
+        "Thyme and black pepper",
+        "4 baguette slices",
+        "100 g grated Gruy?re"
+      ],
+      "instructions": [
+        "Cook onions in butter and oil on low, stirring often, 35?45 minutes until deep golden.",
+        "Stir in flour for 1 minute. Gradually add stock and thyme; simmer 15 minutes and season.",
+        "Toast bread. Ladle soup into grill-safe bowls, top with toast and cheese, grill until bubbling and golden."
+      ],
+      "sides": "Serve with a green salad.",
+      "substitutions": "Use vegetable stock for a vegetarian version; choose cheese made with suitable rennet if needed.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Paris bistro style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-poulet-basquaise",
+      "name": "Poulet basquaise",
+      "englishName": null,
+      "country": "France",
+      "region": "French Basque Country",
+      "description": "Chicken simmers with peppers, tomatoes and gentle paprika-chilli seasoning.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 bone-in chicken thighs",
+        "1 tbsp olive oil",
+        "1 onion and 3 peppers, sliced",
+        "3 tomatoes, chopped",
+        "2 garlic cloves",
+        "150 ml chicken stock",
+        "Paprika, pinch chilli and parsley"
+      ],
+      "instructions": [
+        "Brown chicken in oil on both sides; remove. Cook onion and peppers in the pot for 8 minutes.",
+        "Add garlic and paprika, stir briefly, then add tomatoes and stock. Return chicken skin-side up.",
+        "Cover and simmer 35?40 minutes until cooked through. Uncover briefly to reduce sauce and finish with parsley."
+      ],
+      "sides": "Serve with rice, potatoes or crusty bread to catch the sauce.",
+      "substitutions": "Boneless thighs cook faster; check doneness before reducing the sauce. Omit chilli for a mild version.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Cook chicken to at least 75°C at the thickest part, away from bone. Keep raw poultry and its juices separate.",
+      "tags": [
+        "French Basque Country",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-pissaladiere",
+      "name": "Pissaladi?re",
+      "englishName": null,
+      "country": "France",
+      "region": "Nice, Provence",
+      "description": "Onion tart on a soft bread base, topped with anchovies and olives.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g strong white flour",
+        "7 g instant yeast and 180 ml warm water",
+        "1 tbsp olive oil and ? tsp salt",
+        "700 g onions, sliced",
+        "Thyme",
+        "12 anchovy fillets",
+        "12 pitted black olives"
+      ],
+      "instructions": [
+        "Mix flour, yeast, water, oil and salt into dough. Knead briefly, cover and rise until doubled, about 1 hour.",
+        "Cook onions with oil and thyme on low 25?30 minutes until very soft; cool. Heat oven to 220?C / 200?C fan.",
+        "Roll dough to an oval, spread with onions, arrange anchovies and olives, then bake 18?22 minutes until base is golden."
+      ],
+      "sides": "Serve warm or at room temperature with a green salad.",
+      "substitutions": "Use capers instead of anchovies for a vegetarian topping and add salt sparingly.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Nice, Provence",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-moules-marinieres",
+      "name": "Moules marini?res",
+      "englishName": null,
+      "country": "France",
+      "region": "Normandy and northern France",
+      "description": "Mussels steam in shallot, parsley and white-wine broth for a simple shared meal.",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1.5 kg live mussels",
+        "2 shallots, finely chopped",
+        "25 g butter",
+        "150 ml dry white wine and 100 ml water",
+        "2 tbsp chopped parsley",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Scrub mussels under running water and remove beards. Discard cracked ones and open mussels that do not close when tapped.",
+        "Soften shallots in butter 3 minutes. Add wine and water and bring to boil.",
+        "Add mussels, cover and steam 4?6 minutes, shaking pot once. Discard any that remain closed; add parsley and serve immediately."
+      ],
+      "sides": "Serve with chips, crusty bread or a green salad.",
+      "substitutions": "Use fish stock and lemon instead of wine. Do not substitute frozen mussels in the steaming method.",
+      "storage": "Best eaten immediately; do not keep cooked mussels for later.",
+      "safety": "Buy live mussels from a reputable supplier, keep chilled and cook the day of purchase. Discard cracked mussels and any that do not close before cooking; after steaming discard any that remain closed.",
+      "tags": [
+        "Normandy and northern France",
+        "French cuisine",
+        "home cooking",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-madeleines",
+      "name": "Madeleines",
+      "englishName": null,
+      "country": "France",
+      "region": "Lorraine, Commercy style",
+      "description": "Small shell-shaped sponge cakes scented with lemon; chilling the batter helps texture.",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "100 g butter, plus tin butter",
+        "2 eggs",
+        "100 g caster sugar",
+        "100 g plain flour",
+        "? tsp baking powder",
+        "Lemon zest and pinch salt"
+      ],
+      "instructions": [
+        "Melt butter and cool. Whisk eggs and sugar until pale and thick; fold in sifted flour, baking powder, salt and zest.",
+        "Fold in melted butter, cover and refrigerate batter at least 1 hour. Heat oven to 200?C / 180?C fan.",
+        "Butter and flour madeleine tin, fill each shell three-quarters and bake 9?12 minutes until risen and golden. Cool on rack."
+      ],
+      "sides": "Serve with tea, coffee or fresh fruit.",
+      "substitutions": "Use orange zest or a few drops of vanilla instead of lemon zest.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Lorraine, Commercy style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-tarte-tatin",
+      "name": "Tarte Tatin",
+      "englishName": null,
+      "country": "France",
+      "region": "Loire Valley, home-style",
+      "description": "Apples caramelise beneath pastry and are turned out for a glossy fruit topping.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 firm apples, peeled, cored and quartered",
+        "100 g caster sugar",
+        "60 g butter",
+        "1 sheet puff pastry",
+        "1 tbsp lemon juice and pinch salt"
+      ],
+      "instructions": [
+        "Heat oven to 200?C / 180?C fan. In oven-safe 22 cm pan melt sugar to amber; carefully whisk in butter and salt.",
+        "Arrange lemon-tossed apples tightly in caramel. Cook gently 8?10 minutes until beginning to soften.",
+        "Lay pastry over apples and tuck edges in. Bake 25?30 minutes until deeply golden. Rest 5 minutes, then carefully invert onto plate."
+      ],
+      "sides": "Serve warm with crème fraîche or vanilla ice cream.",
+      "substitutions": "Firm pears can replace apples; cook until beginning to soften before covering with pastry.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Loire Valley, home-style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-oeufs-en-meurette",
+      "name": "?ufs en meurette",
+      "englishName": null,
+      "country": "France",
+      "region": "Burgundy",
+      "description": "Poached eggs over toasted bread with a red-wine sauce, mushrooms and lardons.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 fresh eggs",
+        "100 g smoked lardons",
+        "1 onion, diced",
+        "150 g mushrooms",
+        "1 tbsp flour",
+        "300 ml red wine and 250 ml beef stock",
+        "Bay leaf and parsley",
+        "4 toasted bread slices"
+      ],
+      "instructions": [
+        "Brown lardons; add onion and mushrooms and cook soft. Stir in flour, then gradually whisk in wine and stock.",
+        "Add bay and simmer 20?25 minutes until lightly thickened; remove bay.",
+        "Poach eggs in gently simmering water for 3?4 minutes until whites set. Spoon sauce over toast, top with egg and parsley."
+      ],
+      "sides": "Serve over toasted bread with a green salad.",
+      "substitutions": "Use vegetable stock and omit lardons for a meat-free sauce; cook egg yolks fully if needed.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Use fresh or pasteurised eggs. Cook whites fully; avoid serving runny eggs to vulnerable people.",
+      "tags": [
+        "Burgundy",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-endives-au-jambon",
+      "name": "Endives au jambon",
+      "englishName": null,
+      "country": "France",
+      "region": "Northern France, home-style",
+      "description": "Endives wrapped in ham bake under a simple cheese sauce, balancing their gentle bitterness.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 endives",
+        "4 slices cooked ham",
+        "30 g butter and 30 g flour",
+        "500 ml milk",
+        "100 g grated Gruy?re",
+        "Nutmeg and pepper"
+      ],
+      "instructions": [
+        "Simmer endives in lightly salted water 15?20 minutes until tender. Drain well and gently squeeze out excess liquid.",
+        "Make b?chamel: melt butter, stir in flour, then gradually whisk in milk; simmer until thick and season.",
+        "Wrap endives in ham in baking dish, cover with sauce and cheese. Bake at 200?C / 180?C fan for 20?25 minutes until bubbling."
+      ],
+      "sides": "Serve with boiled potatoes or crusty bread.",
+      "substitutions": "Add a teaspoon of Dijon mustard to the sauce or replace Gruyère with Emmental.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Northern France, home-style",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-far-breton",
+      "name": "Far breton",
+      "englishName": null,
+      "country": "France",
+      "region": "Brittany",
+      "description": "Dense baked custard cake often made with prunes, sliced after cooling.",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "150 g pitted prunes",
+        "3 eggs",
+        "120 g caster sugar",
+        "120 g plain flour",
+        "500 ml milk",
+        "30 g melted butter",
+        "Vanilla and pinch salt"
+      ],
+      "instructions": [
+        "Heat oven to 180?C / 160?C fan. Butter a 23 cm dish and scatter prunes over base.",
+        "Whisk eggs and sugar; whisk in flour and salt, then gradually milk, butter and vanilla until smooth.",
+        "Pour over prunes and bake 45?55 minutes until puffed, golden and set in centre. Cool in dish before slicing."
+      ],
+      "sides": "Serve plain with tea or a spoon of yoghurt.",
+      "substitutions": "Use raisins or chopped dried apricots instead of prunes; reduce sugar slightly if fruit is sweet.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "Brittany",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "fr-piperade",
+      "name": "Piperade",
+      "englishName": null,
+      "country": "France",
+      "region": "French Basque Country",
+      "description": "Peppers, tomatoes and onion cook down with paprika and Espelette-style chilli.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 onion, sliced",
+        "2 red and 1 green pepper",
+        "3 tomatoes, chopped",
+        "2 tbsp olive oil",
+        "2 garlic cloves",
+        "Sweet paprika and pinch chilli",
+        "2 eggs (optional)"
+      ],
+      "instructions": [
+        "Cook onion and peppers in oil over medium-low heat for 12?15 minutes until soft.",
+        "Add garlic, paprika and chilli; stir briefly, then add tomatoes. Simmer uncovered 15?20 minutes until thick.",
+        "Season. For egg variation make wells, add eggs, cover and cook until whites are set; scatter parsley if available."
+      ],
+      "sides": "Serve with bread, rice or grilled chicken.",
+      "substitutions": "Use piment d’Espelette if available; sweet paprika with a pinch of chilli is a practical alternative.",
+      "storage": "Refrigerate leftovers in a covered container within 2 hours. Keep for up to 2 days for fish and shellfish dishes or up to 3 days for other dishes; reheat once until steaming hot.",
+      "safety": "Keep raw meat and seafood separate from ready-to-eat food. Cook poultry thoroughly and fish until opaque and flaky. Chill leftovers promptly; discard food left at room temperature for over 2 hours.",
+      "tags": [
+        "French Basque Country",
+        "French cuisine",
+        "home cooking"
+      ],
+      "revision": 1
+    }
+  ],
+  "collections": [
+    {
+      "id": "cuisine:france",
+      "title": "French recipes",
+      "recipeIds": [
+        "fr-aligot",
+        "fr-blanquette-de-veau",
+        "fr-boeuf-bourguignon",
+        "fr-bouillabaisse",
+        "fr-brandade-de-morue",
+        "fr-cassoulet",
+        "fr-crepes",
+        "fr-galette-complete",
+        "fr-choucroute-garnie",
+        "fr-clafoutis",
+        "fr-coq-au-vin",
+        "fr-croque-monsieur",
+        "fr-gratin-dauphinois",
+        "fr-hachis-parmentier",
+        "fr-quiche-lorraine",
+        "fr-tarte-flambee",
+        "fr-tartiflette",
+        "fr-pot-au-feu",
+        "fr-ratatouille",
+        "fr-salade-nicoise",
+        "fr-soupe-a-loignon",
+        "fr-poulet-basquaise",
+        "fr-pissaladiere",
+        "fr-moules-marinieres",
+        "fr-madeleines",
+        "fr-tarte-tatin",
+        "fr-oeufs-en-meurette",
+        "fr-endives-au-jambon",
+        "fr-far-breton",
+        "fr-piperade"
+      ]
+    }
+  ]
+}
