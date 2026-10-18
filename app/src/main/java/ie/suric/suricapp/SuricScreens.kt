@@ -1495,6 +1495,7 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
     val state by vm.conversation.collectAsState()
     var selectedImage by rememberSaveable { mutableStateOf<Uri?>(null) }
     var previewImage by rememberSaveable { mutableStateOf<String?>(null) }
+    var confirmClearHistory by rememberSaveable { mutableStateOf(false) }
     BackHandler(enabled = previewImage != null) { previewImage = null }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
         if (uri != null) {
@@ -1507,7 +1508,12 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
             CenterAlignedTopAppBar(
                 title = { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Ask Suric", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, maxLines = 1); Text(email ?: "Connected", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1) } },
                 navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
-                actions = { IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") } }
+                actions = {
+                    IconButton(onClick = { confirmClearHistory = true }, modifier = Modifier.size(48.dp)) {
+                        Icon(Icons.Default.DeleteOutline, contentDescription = "Delete chat history")
+                    }
+                    IconButton(onClick = vm::disconnect, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Logout, contentDescription = "Disconnect ChatGPT") }
+                }
             )
         },
         bottomBar = {
@@ -1567,6 +1573,17 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
         }
     }
     previewImage?.let { uri -> PhotoPreviewDialog(uri, onDismiss = { previewImage = null }) }
+    if (confirmClearHistory) {
+        AlertDialog(
+            onDismissRequest = { confirmClearHistory = false },
+            title = { Text("Delete chat history?") },
+            text = { Text("This permanently removes the saved messages and draft from this device. It does not delete your personal notes.") },
+            confirmButton = {
+                TextButton(onClick = { confirmClearHistory = false; vm.clearConversation() }) { Text("Delete history") }
+            },
+            dismissButton = { TextButton(onClick = { confirmClearHistory = false }) { Text("Keep history") } }
+        )
+    }
 }
 
 @Composable

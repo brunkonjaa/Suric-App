@@ -2,6 +2,7 @@
   "version": 1,
   "catalogues": [
     "recipe-catalogue-american.json",
-    "recipe-catalogue-france.json"
+    "recipe-catalogue-france.json",
+    "recipe-catalogue-italy.json"
   ]
 }

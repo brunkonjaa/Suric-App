@@ -10,7 +10,7 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - Light and dark appearance, saved on this device.
 - Separate spaces with consistent add/edit bottom sheets, check-off controls where useful, and undo for deleted entries.
 - Shopping Assistant saves product options with retailer links and the date you checked them. You choose which saved options to share with Ask Suric; it does not fetch retailer pages or verify live prices or stock.
-- Each section includes bundled offline guides and recipes where available. Global offline search covers bundled guide content and recipes, with section filters. Cooking has canonical recipe data in a base asset plus supplemental assets registered by a versioned manifest, with 30-entry Irish, Argentinian, French and United States of America collections, detailed offline instructions, Ask Suric, share, encrypted personal copy, favourites, recently viewed filters and an ingredient handoff to Shopping. Guide and recipe reading state is kept on this device separately from personal records. The other requested cuisine and BBQ/seafood collection quotas are still being filled. Guides can be copied into encrypted personal notes without changing their bundled source.
+- Each section includes bundled offline guides and recipes where available. Global offline search covers bundled guide content and recipes, with section filters. Cooking has canonical recipe data in a base asset plus supplemental assets registered by a versioned manifest, with 30-entry Irish, Argentinian, French, Italian and United States of America collections, detailed offline instructions, Ask Suric, share, encrypted personal copy, favourites, recently viewed filters and an ingredient handoff to Shopping. Guide and recipe reading state is kept on this device separately from personal records. The other requested cuisine and BBQ/seafood collection quotas are still being filled. Guides can be copied into encrypted personal notes without changing their bundled source.
 - Music can play audio files selected with Android's document picker, save the queue locally and open online music or Naxi Radio through Android's app chooser. Local playback stops when leaving the Music screen.
 - Personal entries can be shared as a user-selected, readable text copy. Bundled guides can be shared using a Suric URI when the receiving Suric installation contains the same article ID.
 - Bills can be entered locally or selectively saved from upcoming calendar events after calendar permission is granted.
@@ -51,10 +51,9 @@ A connected state means the sign-in flow completed. A genuine AI response must b
 
 - [OFFLINE_CONTENT_INVENTORY.md](OFFLINE_CONTENT_INVENTORY.md) - current bundled content counts and gaps.
 
-- [OFFLINE_CONTENT_INVENTORY.md](OFFLINE_CONTENT_INVENTORY.md) — current bundled content counts and gaps.
 
-- [ARCHITECTURE.md](ARCHITECTURE.md) — app components and data flow.
-- [FEASIBILITY.md](FEASIBILITY.md) — integration evidence and verification limits.
-- [SECURITY.md](SECURITY.md) — credential and personal data handling.
-- [TESTING.md](TESTING.md) — automated and device test checklist.
-- [AGENTS.md](AGENTS.md) — scope and implementation rules.
+- [ARCHITECTURE.md](ARCHITECTURE.md) - app components and data flow.
+- [FEASIBILITY.md](FEASIBILITY.md) - integration evidence and verification limits.
+- [SECURITY.md](SECURITY.md) - credential and personal data handling.
+- [TESTING.md](TESTING.md) - automated and device test checklist.
+- [AGENTS.md](AGENTS.md) - scope and implementation rules.

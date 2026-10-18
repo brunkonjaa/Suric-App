@@ -213,6 +213,27 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         _conversation.value = _conversation.value.copy(draft = value)
         scheduleConversationSave()
     }
+
+    fun clearConversation() {
+        chatJob?.cancel()
+        chatJob = null
+        conversationSaveJob?.cancel()
+        conversationSaveJob = viewModelScope.launch {
+            runCatching {
+                conversationPersistenceMutex.withLock {
+                    withContext(Dispatchers.IO) { conversationStore.clear() }
+                }
+            }.onSuccess {
+                conversationReadFailed = false
+                _conversation.value = ConversationState()
+            }.onFailure {
+                _conversation.value = _conversation.value.copy(
+                    historyNotice = "Chat history could not be deleted from this device."
+                )
+            }
+        }
+    }
+
     fun send(text: String = _conversation.value.draft, image: Uri? = null) {
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
