@@ -8,10 +8,11 @@ This ledger tracks the complete application expansion brief in the supplied requ
 
 - Android Back handling closes the drawer and returns from a section, article or recipe to its containing screen.
 - Ask Suric photo selection, thumbnail display, message attachment display, zoom preview and request attachment are implemented. Conversation state is in memory; it does not survive process death.
-- Offline article assets and a canonical JSON recipe catalogue are loaded without a network connection. Stable recipe IDs allow multiple collections to reuse one recipe record. Search is available within section screens; Cooking also searches recipe title, origin, ingredients and tags.
+- Offline article assets and a canonical JSON recipe catalogue are loaded without a network connection. Stable recipe IDs allow multiple collections to reuse one recipe record. A dedicated global-search screen searches all offline guides and recipes by title, section, origin, body, ingredients and tags, with category filters.
 - This implementation stage adds persistent, device-local favourites and a twenty-item recently viewed index for bundled articles and recipes. Section filters show all, saved or recent content. This index does not modify bundled records or encrypted personal entries.
 - The United States of America cuisine collection adds 30 original, structured regional home-cooking recipes in a separate versioned asset. Each entry includes measured ingredients, numbered steps, timings, servings, difficulty, accompaniments, substitutions, storage and safety notes.
 - The France cuisine collection adds 30 original, structured recipes across French regions in a separate versioned asset. A versioned asset manifest now registers supplemental catalogue files so more cuisines can be added without changing loader code.
+- Recipe details can add the measured ingredient list to the encrypted local Shopping section as a checkable shopping entry.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
 - Music can select and play local audio, retain queue references and position, and open online providers through Android's app chooser. Playback stops when leaving the Music screen.
 - The 30 Irish, 30 Argentinian, 30 French and 30 United States of America recipe collections are complete. The current inventory documents 30 offline guides and all current collection counts.
@@ -29,8 +30,8 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Partially implemented
 
-- Offline search is local and spans all article sections when entered from a section screen. There is no single application-wide search entry point, category index across the whole library, or indexed database for larger content volumes.
-- Cooking has detailed structured recipe records, alphabetical collection sorting, origin labels, recipe sharing and personal copies. The remaining 600 traditional cuisine entries, plus all 200 BBQ and seafood memberships, are not supplied. Recipe favourites exist; add-ingredients-to-shopping-list handoff is not implemented.
+- Offline global search is local and filters articles and recipes across all categories. Results are loaded from bundled assets in memory; there is no indexed database for larger content volumes.
+- Cooking has detailed structured recipe records, alphabetical collection sorting, origin labels, recipe sharing, personal copies and a local ingredient-to-Shopping handoff. The remaining 600 traditional cuisine entries, plus all 200 BBQ and seafood memberships, are not supplied.
 - Garden, Pottery, DIY & Home, Cleaning, and Retro & Android have a small number of bundled guides, far short of the requested comprehensive coverage. Personal Garden records are plain saved entries rather than a dedicated plant journal with photo records and calendars.
 - Local music playback works only while its screen remains composed; there is no background playback service or notification control. NewPipe is not embedded or bundled; provider links rely on installed applications and network access.
 - Family transfer supports text exports and same-installation article IDs. There is no portable attachment bundle, HTTPS App Link domain, or verified cross-installation/deep-link back-stack restoration.
@@ -38,7 +39,7 @@ These are source-level findings; this stage did not execute or independently ver
 
 ## Not implemented
 
-- The remaining 20 traditional cuisine collections, all 100 BBQ entries and all 100 Fish & Seafood entries; recipe-to-shopping-list handoff; and required recipe image coverage.
+- The remaining 20 traditional cuisine collections, all 100 BBQ entries and all 100 Fish & Seafood entries; and recipe image coverage where suitable offline assets are available.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Persistent conversation history and restored screen history after process death.

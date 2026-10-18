@@ -127,6 +127,8 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
     val scope = rememberCoroutineScope()
     var route by rememberSaveable { mutableStateOf("home") }
     var selectedSection by rememberSaveable { mutableStateOf<String?>(null) }
+    var pendingArticleId by rememberSaveable { mutableStateOf<String?>(null) }
+    var pendingRecipeId by rememberSaveable { mutableStateOf<String?>(null) }
     var showIncomingShare by rememberSaveable { mutableStateOf(false) }
     var incomingShareError by rememberSaveable { mutableStateOf<String?>(null) }
     var savingIncomingShare by rememberSaveable { mutableStateOf(false) }
@@ -210,7 +212,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Home", maxLines = 1) },
                             selected = selectedSection == null && route == "home",
-                            onClick = { selectedSection = null; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; route = "home"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -218,7 +220,15 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text("Ask Suric", maxLines = 1) },
                             selected = route == "assistant",
-                            onClick = { selectedSection = null; route = "assistant"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = null; route = "assistant"; scope.launch { drawerState.close() } },
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
+                        )
+                    }
+                    item {
+                        NavigationDrawerItem(
+                            label = { Text("Search offline library", maxLines = 1) },
+                            selected = route == "search",
+                            onClick = { selectedSection = null; route = "search"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 3.dp)
                         )
                     }
@@ -227,7 +237,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                         NavigationDrawerItem(
                             label = { Text(area.displayName, maxLines = 1) },
                             selected = selectedSection == area.name,
-                            onClick = { selectedSection = area.name; route = "home"; scope.launch { drawerState.close() } },
+                            onClick = { pendingArticleId = null; pendingRecipeId = null; selectedSection = area.name; route = "home"; scope.launch { drawerState.close() } },
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp)
                         )
                     }
@@ -253,6 +263,21 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
         }
     ) {
         when {
+            route == "search" -> GlobalSearchScreen(
+                onMenu = { scope.launch { drawerState.open() } },
+                onOpenArticle = { article ->
+                    pendingArticleId = article.id
+                    pendingRecipeId = null
+                    selectedSection = article.section
+                    route = "home"
+                },
+                onOpenRecipe = { recipe ->
+                    pendingRecipeId = recipe.id
+                    pendingArticleId = null
+                    selectedSection = "Cooking"
+                    route = "home"
+                }
+            )
             route == "assistant" -> ConversationScreen(
                 email = (auth as? AuthState.SignedIn)?.email,
                 vm = vm,
@@ -260,7 +285,9 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
             )
             selectedSection != null -> PersonalSectionScreen(
                 section = selectedSection!!,
-                initialArticleId = deepLinkArticleId.takeIf { selectedSection == deepLinkSection },
+                initialArticleId = pendingArticleId
+                    ?: deepLinkArticleId.takeIf { selectedSection == deepLinkSection },
+                initialRecipeId = pendingRecipeId.takeIf { selectedSection == "Cooking" },
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { context -> selectedSection = null; route = "assistant"; vm.send(context) }
@@ -269,7 +296,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 email = (auth as? AuthState.SignedIn)?.email,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { route = "assistant" },
-                onSection = { selectedSection = it }
+                onSection = { pendingArticleId = null; pendingRecipeId = null; selectedSection = it }
             )
         }
     }
@@ -323,6 +350,116 @@ private fun SuricHome(email: String?, onMenu: () -> Unit, onAssistant: () -> Uni
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun GlobalSearchScreen(
+    onMenu: () -> Unit,
+    onOpenArticle: (OfflineArticle) -> Unit,
+    onOpenRecipe: (OfflineRecipe) -> Unit
+) {
+    val context = LocalContext.current
+    var articles by remember { mutableStateOf<List<OfflineArticle>>(emptyList()) }
+    var catalogue by remember { mutableStateOf<RecipeCatalogue?>(null) }
+    var loading by remember { mutableStateOf(true) }
+    var loadError by remember { mutableStateOf<String?>(null) }
+    var query by rememberSaveable { mutableStateOf("") }
+    var category by rememberSaveable { mutableStateOf("All") }
+
+    LaunchedEffect(Unit) {
+        runCatching {
+            withContext(Dispatchers.IO) {
+                val loadedArticles = OfflineLibrary.load(context)
+                loadedArticles to OfflineRecipeCatalogue.load(context, loadedArticles)
+            }
+        }.onSuccess { (loadedArticles, loadedCatalogue) ->
+            articles = loadedArticles
+            catalogue = loadedCatalogue
+            loadError = null
+        }.onFailure {
+            loadError = "Offline library could not be opened. Your saved items are unchanged."
+        }
+        loading = false
+    }
+
+    val categories = remember(articles) { listOf("All", "Recipes") + articles.map(OfflineArticle::section).distinct().sorted() }
+    val term = query.trim()
+    val matchingArticles = articles.asSequence()
+        .filter { category == "All" || it.section == category }
+        .filter { term.isNotBlank() && it.searchableText.contains(term, ignoreCase = true) }
+        .sortedWith(compareBy<OfflineArticle>({ it.section.lowercase() }, { it.title.lowercase() }))
+        .toList()
+    val matchingRecipes = catalogue?.recipes.orEmpty().asSequence()
+        .filter { category == "All" || category == "Recipes" || category == "Cooking" }
+        .filter { term.isNotBlank() && it.searchableText.contains(term, ignoreCase = true) }
+        .let { results -> catalogue?.sortedRecipes(results.toList()).orEmpty() }
+
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("Search offline library", maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } }
+            )
+        }
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier.fillMaxSize().padding(padding),
+            contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 24.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            item {
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = { query = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    placeholder = { Text("Search every guide and recipe") },
+                    singleLine = true,
+                    shape = RoundedCornerShape(16.dp)
+                )
+            }
+            item {
+                Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    categories.forEach { value ->
+                        FilterChip(selected = category == value, onClick = { category = value }, label = { Text(value, maxLines = 1) })
+                    }
+                }
+            }
+            if (loadError != null) item { Text(loadError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
+            if (loading) item { LinearProgressIndicator(Modifier.fillMaxWidth()) }
+            if (!loading && loadError == null && term.isBlank()) item {
+                Text("Search titles, topics, ingredients, origins and tags across the bundled library. Personal notes stay private.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (term.isNotBlank() && category != "Recipes" && matchingArticles.isNotEmpty()) item {
+                Text("Guides", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            }
+            items(matchingArticles, key = { "global-article:${it.id}" }) { article ->
+                OutlinedCard(onClick = { onOpenArticle(article) }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(article.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Text(article.section, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(article.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            if (term.isNotBlank() && category in setOf("All", "Recipes", "Cooking") && matchingRecipes.isNotEmpty()) item {
+                Text("Recipes", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            }
+            items(matchingRecipes, key = { "global-recipe:${it.id}" }) { recipe ->
+                OutlinedCard(onClick = { onOpenRecipe(recipe) }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Text(listOfNotNull(recipe.country, recipe.region).joinToString(" · "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            if (term.isNotBlank() && !loading && matchingArticles.isEmpty() && matchingRecipes.isEmpty() && loadError == null) item {
+                Text("No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
 @Composable
 private fun HomeHero(onAssistant: () -> Unit) {
     Box(
@@ -364,7 +501,7 @@ private fun ConnectionPill() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
+private fun PersonalSectionScreen(section: String, initialArticleId: String?, initialRecipeId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
@@ -397,6 +534,15 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
     val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
     val selectedRecipe = recipeCatalogue?.recipes?.firstOrNull { it.id == selectedRecipeId }
+
+    LaunchedEffect(initialArticleId) {
+        if (!initialArticleId.isNullOrBlank()) selectedArticleId = initialArticleId
+    }
+    LaunchedEffect(initialRecipeId, recipeCatalogue) {
+        if (!initialRecipeId.isNullOrBlank() && recipeCatalogue?.recipes?.any { it.id == initialRecipeId } == true) {
+            selectedRecipeId = initialRecipeId
+        }
+    }
 
     LaunchedEffect(selectedArticleId, selectedRecipeId) {
         val openedId = selectedArticleId?.let { "article:$it" } ?: selectedRecipeId?.let { "recipe:$it" }
@@ -443,6 +589,14 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
             isFavourite = "recipe:${selectedRecipe!!.id}" in favouriteIds,
             onFavourite = { saved -> setFavourite("recipe:${selectedRecipe!!.id}", saved) },
             onBack = { selectedRecipeId = null },
+            onAddIngredients = {
+                scope.launch {
+                    val body = selectedRecipe!!.ingredients.joinToString("\n") { "[ ] $it" }
+                    runCatching { vm.addEntry("Shopping", "Ingredients for ${selectedRecipe!!.name}", body) }
+                        .onSuccess { snackbar.showSnackbar("Added ${selectedRecipe!!.ingredients.size} ingredients to Shopping.") }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t add the ingredients to Shopping.") }
+                }
+            },
             onAsk = { onAssistant("Help me cook this recipe and adapt it to what I have. Do not invent ingredients or change the dish's origin.\n\n${selectedRecipe!!.name} (${selectedRecipe!!.country})\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\n${selectedRecipe!!.instructions.joinToString("\n")}") },
             onCopy = {
                 scope.launch {
@@ -1076,6 +1230,7 @@ private fun OfflineRecipeDetail(
     isFavourite: Boolean,
     onFavourite: (Boolean) -> Unit,
     onBack: () -> Unit,
+    onAddIngredients: () -> Unit,
     onAsk: () -> Unit,
     onCopy: () -> Unit,
     onShare: () -> Unit
@@ -1121,6 +1276,7 @@ private fun OfflineRecipeDetail(
             Text("Offline • revision ${recipe.revision} • ${recipe.tags.joinToString(" · ")}", Modifier.padding(top = 16.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(14.dp))
             Button(onClick = onAsk, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Ask Suric about this recipe") }
+            OutlinedButton(onClick = onAddIngredients, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Add ingredients to Shopping") }
             OutlinedButton(onClick = onCopy, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Copy to My Space") }
             OutlinedButton(onClick = onShare, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
                 Icon(Icons.Default.Share, contentDescription = null)
