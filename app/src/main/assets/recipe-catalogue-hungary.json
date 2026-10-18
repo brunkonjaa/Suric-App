@@ -1,0 +1,1099 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "hu-gulyas",
+                        "name":  "Gulyásleves",
+                        "englishName":  "Hungarian goulash soup",
+                        "country":  "Hungary",
+                        "region":  "Great Plain",
+                        "description":  "Hungarian goulash soup is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g beef chuck",
+                                            "2 onions",
+                                            "2 tbsp sweet paprika",
+                                            "3 potatoes",
+                                            "2 carrots",
+                                            "1 parsnip",
+                                            "1.5 L beef stock"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in batches.",
+                                             "Soften chopped onion, remove pot from heat and stir in paprika.",
+                                             "Return beef with stock and simmer covered until almost tender.",
+                                             "Add diced potatoes, carrots and parsnip; cook until tender and season."
+                                         ],
+                        "sides":  "Crusty bread and pickled peppers",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "soup",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-porkolt",
+                        "name":  "Marhapörkölt",
+                        "englishName":  "Beef paprika stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Beef paprika stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g beef",
+                                            "1 onion",
+                                            "1 tbsp sweet paprika",
+                                            "300 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown or soften the main ingredient in oil as appropriate.",
+                                             "Add onion and paprika; stir briefly off heat to keep paprika from scorching.",
+                                             "Add stock and simmer gently until tender and the sauce thickens."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-csirkepaprikas",
+                        "name":  "Csirkepaprikás",
+                        "englishName":  "Chicken paprika stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Chicken paprika stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g chicken",
+                                            "1 onion",
+                                            "1 tbsp sweet paprika",
+                                            "300 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown or soften the main ingredient in oil as appropriate.",
+                                             "Add onion and paprika; stir briefly off heat to keep paprika from scorching.",
+                                             "Add stock and simmer gently until tender and the sauce thickens."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "chicken"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-halaszle",
+                        "name":  "Halászlé",
+                        "englishName":  "Fisherman\u0027s fish soup",
+                        "country":  "Hungary",
+                        "region":  "Danube",
+                        "description":  "Fisherman\u0027s fish soup is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g white fish",
+                                            "1 onion",
+                                            "1 tbsp sweet paprika",
+                                            "1.2 L stock",
+                                            "2 carrots"
+                                        ],
+                        "instructions":  [
+                                             "Soften chopped onion in a heavy pot.",
+                                             "Remove from heat and stir in paprika, then add the main ingredient and stock.",
+                                             "Simmer gently until the main ingredient and vegetables are fully cooked; season and serve."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "soup",
+                                     "white fish"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-toltott-kaposzta",
+                        "name":  "Töltött káposzta",
+                        "englishName":  "Stuffed cabbage rolls",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Stuffed cabbage rolls is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "12 cabbage leaves",
+                                            "500 g minced pork",
+                                            "100 g rice",
+                                            "1 onion",
+                                            "1 tsp paprika",
+                                            "500 g sauerkraut",
+                                            "500 ml stock",
+                                            "150 g sour cream"
+                                        ],
+                        "instructions":  [
+                                             "Blanch cabbage leaves until pliable.",
+                                             "Mix pork, rinsed rice, softened onion, paprika, salt and pepper.",
+                                             "Spoon filling into leaves, fold sides in and roll firmly.",
+                                             "Layer sauerkraut and rolls in a pot; add stock, cover and simmer until rice and pork are cooked through.",
+                                             "Serve with sour cream."
+                                         ],
+                        "sides":  "Rye bread and extra sour cream",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bake",
+                                     "cabbage and pork"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-lecso",
+                        "name":  "Lecsó",
+                        "englishName":  "Pepper and tomato stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Pepper and tomato stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g green pepper and tomato",
+                                            "1 onion",
+                                            "1 tbsp sweet paprika",
+                                            "300 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown or soften the main ingredient in oil as appropriate.",
+                                             "Add onion and paprika; stir briefly off heat to keep paprika from scorching.",
+                                             "Add stock and simmer gently until tender and the sauce thickens."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "green pepper and tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-rakott-krumpli",
+                        "name":  "Rakott krumpli",
+                        "englishName":  "Layered potato and egg bake",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Layered potato and egg bake is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "900 g potatoes",
+                                            "5 eggs",
+                                            "250 g smoked sausage",
+                                            "200 g sour cream",
+                                            "1 tbsp butter"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes until just tender and cook eggs hard; cool and slice both.",
+                                             "Slice sausage and butter a baking dish.",
+                                             "Layer potatoes, eggs and sausage with sour cream between layers.",
+                                             "Bake at 190 C until bubbling and golden."
+                                         ],
+                        "sides":  "Cucumber salad",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bake",
+                                     "potato and egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-hortobagyi",
+                        "name":  "Hortobágyi palacsinta",
+                        "englishName":  "Savory meat pancakes",
+                        "country":  "Hungary",
+                        "region":  "Great Plain",
+                        "description":  "Savory meat pancakes is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "8 thin pancakes",
+                                            "400 g minced pork",
+                                            "1 onion",
+                                            "1 tsp sweet paprika",
+                                            "150 ml stock",
+                                            "150 g sour cream",
+                                            "1 tbsp flour"
+                                        ],
+                        "instructions":  [
+                                             "Brown pork with softened onion; add paprika and stock and simmer until pork is cooked.",
+                                             "Drain filling and reserve sauce.",
+                                             "Fill pancakes with meat and fold securely.",
+                                             "Whisk sour cream and flour into reserved sauce, pour over pancakes and bake at 180 C for 15 minutes."
+                                         ],
+                        "sides":  "Green salad",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "pancake",
+                                     "pork"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-tokfozelek",
+                        "name":  "Tökfőzelék",
+                        "englishName":  "Summer squash stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Summer squash stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g grated summer squash",
+                                            "1 onion",
+                                            "200 ml stock",
+                                            "150 g sour cream",
+                                            "1 tbsp flour",
+                                            "1 tbsp oil",
+                                            "dill"
+                                        ],
+                        "instructions":  [
+                                             "Soften chopped onion in oil.",
+                                             "Add squash, stock and dill; simmer until tender.",
+                                             "Whisk flour and sour cream with a little hot cooking liquid.",
+                                             "Stir into squash and simmer gently until creamy."
+                                         ],
+                        "sides":  "Fried egg and bread",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "summer squash"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-borsofozelek",
+                        "name":  "Zöldborsó-főzelék",
+                        "englishName":  "Green pea stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Green pea stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g green peas",
+                                            "1 tbsp butter",
+                                            "1 tbsp flour",
+                                            "300 ml milk",
+                                            "1 tsp paprika",
+                                            "parsley",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Cook peas in a little salted water until tender.",
+                                             "Melt butter and stir in flour over low heat.",
+                                             "Whisk in milk and paprika until smooth.",
+                                             "Add sauce to peas and simmer until creamy; finish with parsley."
+                                         ],
+                        "sides":  "Fried egg or sausage",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "green peas"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-nokedli",
+                        "name":  "Tojásos nokedli",
+                        "englishName":  "Egg dumplings",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Egg dumplings is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g flour",
+                                            "3 eggs",
+                                            "150 ml water",
+                                            "4 eggs for finishing",
+                                            "1 tbsp oil",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, three eggs, water and salt into a sticky dough.",
+                                             "Push small portions through a spaetzle maker into boiling salted water.",
+                                             "Cook dumplings until they float, then drain.",
+                                             "Warm oil in a pan, add dumplings and stir in beaten eggs until softly set."
+                                         ],
+                        "sides":  "Lettuce salad with vinegar dressing",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dumpling",
+                                     "flour and egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-turos-csusza",
+                        "name":  "Túrós csusza",
+                        "englishName":  "Noodles with cottage cheese and bacon",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Noodles with cottage cheese and bacon is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "350 g egg noodles",
+                                            "150 g smoked bacon",
+                                            "200 g cottage cheese",
+                                            "150 g sour cream"
+                                        ],
+                        "instructions":  [
+                                             "Boil noodles in salted water until tender and drain.",
+                                             "Fry bacon until crisp, then toss noodles with the rendered fat and cheese.",
+                                             "Top with sour cream and bacon and serve hot."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "noodles",
+                                     "egg noodles"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-langos",
+                        "name":  "Lángos",
+                        "englishName":  "Fried flatbread",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Fried flatbread is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g flour",
+                                            "7 g dry yeast",
+                                            "300 ml warm water",
+                                            "1 tsp sugar",
+                                            "1 tsp salt",
+                                            "oil for frying",
+                                            "150 g sour cream",
+                                            "2 garlic cloves",
+                                            "100 g grated cheese"
+                                        ],
+                        "instructions":  [
+                                             "Mix yeast, sugar and warm water; stand until foamy.",
+                                             "Knead with flour and salt until elastic; cover and rise until doubled.",
+                                             "Divide into rounds and stretch each into a thin disc.",
+                                             "Fry one at a time in hot oil until golden on both sides; drain.",
+                                             "Rub with garlic and top with sour cream and cheese."
+                                         ],
+                        "sides":  "Serve hot",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bread",
+                                     "yeast dough"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-pogacsa",
+                        "name":  "Tepertős pogácsa",
+                        "englishName":  "Crackling biscuits",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Crackling biscuits is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "350 g flour",
+                                            "150 g butter",
+                                            "100 g finely chopped pork cracklings",
+                                            "1 egg",
+                                            "100 ml sour cream",
+                                            "7 g dry yeast",
+                                            "salt"
+                                        ],
+                        "instructions":  [
+                                             "Mix yeast into warm sour cream and leave briefly.",
+                                             "Rub flour and butter together; add cracklings, egg and yeast mixture and knead.",
+                                             "Rest covered, roll out and fold once; cut small rounds.",
+                                             "Bake at 200 C until puffed and golden."
+                                         ],
+                        "sides":  "Serve warm with soup",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bread",
+                                     "pork cracklings"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-korozott",
+                        "name":  "Körözött",
+                        "englishName":  "Paprika cheese spread",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Paprika cheese spread is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g cottage cheese",
+                                            "100 g cream cheese",
+                                            "1 tsp sweet paprika",
+                                            "1 tsp caraway",
+                                            "2 tbsp sour cream"
+                                        ],
+                        "instructions":  [
+                                             "Mash the main ingredient and cream cheese until spreadable.",
+                                             "Stir in paprika, caraway and sour cream; season to taste.",
+                                             "Chill briefly and serve cold with bread and sliced vegetables."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "spread",
+                                     "cottage cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-meggyleves",
+                        "name":  "Hideg meggyleves",
+                        "englishName":  "Chilled sour cherry soup",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Chilled sour cherry soup is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g pitted sour cherries",
+                                            "700 ml water",
+                                            "60 g sugar",
+                                            "1 cinnamon stick",
+                                            "2 cloves",
+                                            "100 ml sour cream",
+                                            "1 tsp flour optional"
+                                        ],
+                        "instructions":  [
+                                             "Simmer cherries, water, sugar, cinnamon and cloves until fruit is just tender.",
+                                             "Remove spices and cool the soup completely.",
+                                             "Whisk sour cream with a little cold broth until smooth.",
+                                             "Stir together and refrigerate until thoroughly chilled."
+                                         ],
+                        "sides":  "Serve cold as a light summer soup",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dessert",
+                                     "sour cherries"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-paprikaskrumpli",
+                        "name":  "Paprikás krumpli",
+                        "englishName":  "Potato paprika stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Potato paprika stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g potato and sausage",
+                                            "1 onion",
+                                            "1 tbsp sweet paprika",
+                                            "300 ml stock",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown or soften the main ingredient in oil as appropriate.",
+                                             "Add onion and paprika; stir briefly off heat to keep paprika from scorching.",
+                                             "Add stock and simmer gently until tender and the sauce thickens."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "potato and sausage"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-rakott-karfiol",
+                        "name":  "Rakott karfiol",
+                        "englishName":  "Layered cauliflower bake",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Layered cauliflower bake is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 cauliflower",
+                                            "300 g cooked rice",
+                                            "400 g minced pork",
+                                            "1 onion",
+                                            "200 g sour cream",
+                                            "1 tsp paprika",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Blanch cauliflower florets until just tender and drain.",
+                                             "Brown pork with onion and paprika until fully cooked.",
+                                             "Layer rice, pork and cauliflower in a baking dish with sour cream.",
+                                             "Bake at 190 C until hot throughout and lightly browned."
+                                         ],
+                        "sides":  "Pickled vegetables",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bake",
+                                     "cauliflower and rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-szekelykaposzta",
+                        "name":  "Székelykáposzta",
+                        "englishName":  "Pork and sauerkraut stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Pork and sauerkraut stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g pork shoulder",
+                                            "1 onion",
+                                            "1 tbsp paprika",
+                                            "500 g sauerkraut",
+                                            "500 ml stock",
+                                            "150 g sour cream",
+                                            "1 tbsp oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown pork cubes in oil and set aside.",
+                                             "Soften onion, remove pan from heat and stir in paprika.",
+                                             "Return pork, add sauerkraut and stock.",
+                                             "Cover and simmer until pork is tender; stir in sour cream before serving."
+                                         ],
+                        "sides":  "Rye bread",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "pork and sauerkraut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-gombapaprikas",
+                        "name":  "Gombapaprikás",
+                        "englishName":  "Mushroom paprika stew",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Mushroom paprika stew is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g mushrooms",
+                                            "1 onion",
+                                            "1 tbsp oil",
+                                            "1 tbsp paprika",
+                                            "200 ml stock",
+                                            "150 g sour cream",
+                                            "1 tbsp flour"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion in oil, remove pan from heat and stir in paprika.",
+                                             "Add mushrooms and stock; simmer until mushrooms are tender.",
+                                             "Whisk flour with sour cream and a little hot sauce.",
+                                             "Stir into the pan and warm gently without boiling."
+                                         ],
+                        "sides":  "Nokedli or rice",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "mushrooms"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-tojasleves",
+                        "name":  "Tojásleves",
+                        "englishName":  "Caraway egg soup",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Caraway egg soup is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1.2 L stock",
+                                            "1 tbsp oil",
+                                            "1 tbsp flour",
+                                            "1 tsp caraway",
+                                            "1 tsp paprika",
+                                            "3 eggs",
+                                            "1 tbsp vinegar"
+                                        ],
+                        "instructions":  [
+                                             "Toast caraway briefly in oil, then stir in flour.",
+                                             "Remove from heat and mix in paprika.",
+                                             "Whisk in stock and simmer until lightly thickened.",
+                                             "Drizzle in beaten eggs while stirring; season with vinegar."
+                                         ],
+                        "sides":  "Bread and parsley",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "soup",
+                                     "egg"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-babgulyas",
+                        "name":  "Babgulyás",
+                        "englishName":  "Bean and beef goulash soup",
+                        "country":  "Hungary",
+                        "region":  "Great Plain",
+                        "description":  "Bean and beef goulash soup is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g beef",
+                                            "250 g soaked white beans",
+                                            "1 onion",
+                                            "1 tbsp paprika",
+                                            "2 carrots",
+                                            "1.5 L stock",
+                                            "1 potato"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef with chopped onion.",
+                                             "Remove from heat and stir in paprika.",
+                                             "Add beans and stock; simmer until beans and beef are nearly tender.",
+                                             "Add diced carrots and potato; simmer until everything is tender."
+                                         ],
+                        "sides":  "Bread and pickled peppers",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "soup",
+                                     "beef and white beans"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-vadas",
+                        "name":  "Vadas marha",
+                        "englishName":  "Beef with tangy vegetable sauce",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Beef with tangy vegetable sauce is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g beef joint",
+                                            "2 carrots",
+                                            "1 parsnip",
+                                            "1 onion",
+                                            "700 ml stock",
+                                            "2 tbsp mustard",
+                                            "150 g sour cream"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef on all sides and set aside.",
+                                             "Cook sliced carrots, parsnip and onion until soft.",
+                                             "Return beef, add stock and simmer covered until tender.",
+                                             "Remove beef; blend vegetables with mustard and sour cream, then slice beef into sauce."
+                                         ],
+                        "sides":  "Nokedli or bread dumplings",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "stew",
+                                     "beef and root vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-almas-retes",
+                        "name":  "Almás rétes",
+                        "englishName":  "Hungarian apple strudel",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Apple strudel is a Hungarian home-style pastry adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "6 filo sheets",
+                                            "4 apples",
+                                            "50 g breadcrumbs",
+                                            "60 g sugar",
+                                            "1 tsp cinnamon",
+                                            "50 g butter"
+                                        ],
+                        "instructions":  [
+                                             "Grate apples and squeeze away excess juice.",
+                                             "Mix apples with sugar, cinnamon and toasted breadcrumbs.",
+                                             "Brush filo sheets with butter and layer; spread filling along one edge and roll carefully.",
+                                             "Bake at 190 C until crisp and golden."
+                                         ],
+                        "sides":  "Powdered sugar and sour cream",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep pastry chilled until use and cool baked strudel before storing.",
+                        "tags":  [
+                                     "apple",
+                                     "pastry",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-gundel",
+                        "name":  "Gundel-palacsinta",
+                        "englishName":  "Walnut chocolate pancakes",
+                        "country":  "Hungary",
+                        "region":  "Budapest",
+                        "description":  "Walnut chocolate pancakes is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "8 thin pancakes",
+                                            "150 g ground walnuts",
+                                            "80 ml cream",
+                                            "2 tbsp sugar",
+                                            "1 tsp vanilla",
+                                            "100 g dark chocolate",
+                                            "50 ml cream for sauce"
+                                        ],
+                        "instructions":  [
+                                             "Mix ground walnuts with cream, sugar and vanilla.",
+                                             "Fill pancakes with walnut mixture and fold into quarters.",
+                                             "Warm filled pancakes gently in a buttered pan.",
+                                             "Melt chocolate with cream and spoon over pancakes."
+                                         ],
+                        "sides":  "Fresh berries",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "pancake",
+                                     "walnut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-turogomboc",
+                        "name":  "Túrógombóc",
+                        "englishName":  "Cottage cheese dumplings",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Cottage cheese dumplings is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g cottage cheese",
+                                            "2 eggs",
+                                            "100 g semolina",
+                                            "80 g breadcrumbs",
+                                            "30 g butter"
+                                        ],
+                        "instructions":  [
+                                             "Mix the main ingredients into a soft dough and let it rest briefly.",
+                                             "Shape small dumplings and simmer in salted water until they float and are cooked through.",
+                                             "Toast breadcrumbs in butter and roll drained dumplings through them."
+                                         ],
+                        "sides":  "Serve with bread, seasonal vegetables or pickles as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dumpling",
+                                     "cottage cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-somloi",
+                        "name":  "Somlói galuska",
+                        "englishName":  "Sponge and custard dessert",
+                        "country":  "Hungary",
+                        "region":  "Budapest",
+                        "description":  "Sponge and custard dessert is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 plain sponge cake",
+                                            "300 ml vanilla custard",
+                                            "100 g walnuts",
+                                            "50 g raisins",
+                                            "100 ml chocolate sauce",
+                                            "150 ml cream",
+                                            "vanilla syrup"
+                                        ],
+                        "instructions":  [
+                                             "Cut sponge into cubes and moisten lightly with vanilla syrup.",
+                                             "Layer sponge with custard, walnuts and raisins.",
+                                             "Chill until flavours combine.",
+                                             "Serve scoops with chocolate sauce and whipped cream."
+                                         ],
+                        "sides":  "Extra toasted walnuts",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dessert",
+                                     "sponge and custard"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-dobos",
+                        "name":  "Dobos torta",
+                        "englishName":  "Caramel layered cake",
+                        "country":  "Hungary",
+                        "region":  "Budapest",
+                        "description":  "Caramel layered cake is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "6 thin sponge layers",
+                                            "200 g butter",
+                                            "150 g sugar",
+                                            "100 g dark chocolate",
+                                            "3 pasteurized eggs",
+                                            "100 g sugar for caramel"
+                                        ],
+                        "instructions":  [
+                                             "Bake thin sponge layers and cool completely.",
+                                             "Beat eggs and sugar over gentle heat until thick; cool and beat with butter and melted chocolate.",
+                                             "Layer cakes with chocolate cream and cover the sides.",
+                                             "Cook caramel sugar until amber, spread over one layer and mark wedges while warm."
+                                         ],
+                        "sides":  "Coffee or berries",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dessert",
+                                     "chocolate sponge"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-makos-guba",
+                        "name":  "Mákos guba",
+                        "englishName":  "Poppy seed bread pudding",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Poppy seed bread pudding is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g stale rolls",
+                                            "600 ml milk",
+                                            "2 tbsp honey",
+                                            "100 g ground poppy seeds",
+                                            "2 tbsp sugar",
+                                            "1 tsp vanilla"
+                                        ],
+                        "instructions":  [
+                                             "Slice rolls and arrange in a baking dish.",
+                                             "Warm milk with honey and vanilla, then pour over rolls.",
+                                             "Mix poppy seeds with sugar and scatter between layers.",
+                                             "Bake at 180 C until hot and lightly golden."
+                                         ],
+                        "sides":  "Vanilla custard",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "dessert",
+                                     "bread and poppy seed"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "hu-aranygaluska",
+                        "name":  "Aranygaluska",
+                        "englishName":  "Walnut pull-apart cake",
+                        "country":  "Hungary",
+                        "region":  "Nationwide",
+                        "description":  "Walnut pull-apart cake is a Hungarian home-style dish, adapted for a practical family kitchen.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g flour",
+                                            "7 g dry yeast",
+                                            "200 ml warm milk",
+                                            "80 g butter",
+                                            "100 g ground walnuts",
+                                            "80 g sugar",
+                                            "1 egg",
+                                            "1 tsp cinnamon"
+                                        ],
+                        "instructions":  [
+                                             "Activate yeast in warm milk with a little sugar.",
+                                             "Knead flour, egg and softened butter into a soft dough; let rise until doubled.",
+                                             "Shape small balls and dip in melted butter, cinnamon sugar and walnuts.",
+                                             "Layer in a pan and bake at 180 C until golden and cooked through."
+                                         ],
+                        "sides":  "Vanilla custard",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly in a covered container and use within 3 days; reheat until steaming.",
+                        "safety":  "Keep raw meat and eggs separate from ready-to-eat foods; cook meat fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "bread",
+                                     "yeast dough and walnuts"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:hungary",
+                            "title":  "Hungarian recipes",
+                            "recipeIds":  [
+                                              "hu-gulyas",
+                                              "hu-porkolt",
+                                              "hu-csirkepaprikas",
+                                              "hu-halaszle",
+                                              "hu-toltott-kaposzta",
+                                              "hu-lecso",
+                                              "hu-rakott-krumpli",
+                                              "hu-hortobagyi",
+                                              "hu-tokfozelek",
+                                              "hu-borsofozelek",
+                                              "hu-nokedli",
+                                              "hu-turos-csusza",
+                                              "hu-langos",
+                                              "hu-pogacsa",
+                                              "hu-korozott",
+                                              "hu-meggyleves",
+                                              "hu-paprikaskrumpli",
+                                              "hu-rakott-karfiol",
+                                              "hu-szekelykaposzta",
+                                              "hu-gombapaprikas",
+                                              "hu-tojasleves",
+                                              "hu-babgulyas",
+                                              "hu-vadas",
+                                              "hu-almas-retes",
+                                              "hu-gundel",
+                                              "hu-turogomboc",
+                                              "hu-somloi",
+                                              "hu-dobos",
+                                              "hu-makos-guba",
+                                              "hu-aranygaluska"
+                                          ]
+                        }
+                    ]
+}
