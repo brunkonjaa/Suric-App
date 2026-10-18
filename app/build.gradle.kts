@@ -1,6 +1,19 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
+}
+
+val releaseSigningPropertiesPath = providers.environmentVariable("SURIC_SIGNING_PROPERTIES").orNull
+val releaseSigningProperties = releaseSigningPropertiesPath?.let { path ->
+    val propertiesFile = file(path)
+    require(propertiesFile.isFile) {
+        "SURIC_SIGNING_PROPERTIES points to a missing file: $path"
+    }
+    Properties().apply {
+        propertiesFile.inputStream().use { load(it) }
+    }
 }
 
 android {
@@ -17,6 +30,23 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+    if (releaseSigningProperties != null) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(requireNotNull(releaseSigningProperties.getProperty("storeFile")))
+                storePassword = requireNotNull(releaseSigningProperties.getProperty("storePassword"))
+                keyAlias = requireNotNull(releaseSigningProperties.getProperty("keyAlias"))
+                keyPassword = requireNotNull(releaseSigningProperties.getProperty("keyPassword"))
+            }
+        }
+    }
+    buildTypes {
+        getByName("release") {
+            if (releaseSigningProperties != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+        }
     }
     buildFeatures { compose = true }
     testOptions { unitTests.isReturnDefaultValues = true }
