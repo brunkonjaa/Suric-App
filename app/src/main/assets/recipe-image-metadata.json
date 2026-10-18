@@ -5,7 +5,7 @@
     "compression": "lossy",
     "recommendedQuality": 87,
     "standardMaximumLongEdgePx": 1280,
-    "standardMinimumLongEdgePx": 960,
+    "standardMinimumLongEdgePx": null,
     "instructionalMaximumLongEdgePx": 1600,
     "thumbnailLongEdgePx": {
       "minimum": 320,
@@ -20,7 +20,11 @@
     "sharpening": "Mild only when beneficial",
     "averageSizeTargetBytes": 50000,
     "fullSetStorageBudgetBytes": 250000000,
-    "offlineAvailability": true
+    "offlineAvailability": true,
+    "qualityPolicy": "Use quality up to 87; reduce adaptively only as needed to meet the per-image byte cap.",
+    "maximumBytesPerImage": 50000,
+    "minimumQualityBeforeResizing": 50,
+    "minimumLongEdgePx": 320
   },
   "images": [
     {
@@ -36,11 +40,21 @@
       "licenseUrl": "https://openai.com/policies/terms-of-use/",
       "attribution": "Not required by the terms; provenance recorded here. Original prompt and output ID unavailable.",
       "promptOrDescription": "Original generated brisket preparation image; original prompt and output ID unavailable.",
-      "dimensionsPx": { "width": 960, "height": 720 },
-      "bytes": 105222,
-      "encodingQuality": 76,
-      "colorProfile": "RGB, no embedded ICC profile; current asset predates the sRGB profile requirement",
-      "metadataReview": "Legacy image; source provenance is incomplete."
+      "dimensionsPx": {
+        "width": 755,
+        "height": 566
+      },
+      "bytes": 49496,
+      "encodingQuality": 55,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "metadataReview": "Legacy image; source provenance is incomplete.",
+      "preCapBytes": 105222,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 720
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 55, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
     },
     {
       "recipeId": "bbq-texas-smoked-beef-brisket",
@@ -55,10 +69,20 @@
       "licenseUrl": "https://openai.com/policies/terms-of-use/",
       "attribution": "Not required by the terms; generated with OpenAI for Suric.",
       "promptOrDescription": "Cooked brisket slices with pepper bark and a visible smoke ring.",
-      "dimensionsPx": { "width": 960, "height": 720 },
-      "bytes": 145910,
-      "encodingQuality": 76,
-      "colorProfile": "RGB, no embedded ICC profile; current asset predates the sRGB profile requirement"
+      "dimensionsPx": {
+        "width": 572,
+        "height": 428
+      },
+      "bytes": 49442,
+      "encodingQuality": 61,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "preCapBytes": 145910,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 720
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 61, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
     },
     {
       "recipeId": "bbq-texas-smoked-beef-brisket",
@@ -73,10 +97,20 @@
       "licenseUrl": "https://openai.com/policies/terms-of-use/",
       "attribution": "Not required by the terms; generated with OpenAI for Suric.",
       "promptOrDescription": "Raw brisket seasoned with coarse salt and black pepper.",
-      "dimensionsPx": { "width": 960, "height": 720 },
-      "bytes": 103884,
-      "encodingQuality": 76,
-      "colorProfile": "RGB, no embedded ICC profile; current asset predates the sRGB profile requirement"
+      "dimensionsPx": {
+        "width": 681,
+        "height": 511
+      },
+      "bytes": 49972,
+      "encodingQuality": 63,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "preCapBytes": 103884,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 720
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 63, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
     },
     {
       "recipeId": "bbq-texas-smoked-beef-brisket",
@@ -91,10 +125,20 @@
       "licenseUrl": "https://openai.com/policies/terms-of-use/",
       "attribution": "Not required by the terms; generated with OpenAI for Suric.",
       "promptOrDescription": "Brisket smoking in an oak-fired offset pit.",
-      "dimensionsPx": { "width": 960, "height": 720 },
-      "bytes": 93898,
-      "encodingQuality": 76,
-      "colorProfile": "RGB, no embedded ICC profile; current asset predates the sRGB profile requirement"
+      "dimensionsPx": {
+        "width": 806,
+        "height": 605
+      },
+      "bytes": 49780,
+      "encodingQuality": 55,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "preCapBytes": 93898,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 720
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 55, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
     },
     {
       "recipeId": "bbq-texas-smoked-beef-brisket",
@@ -109,10 +153,3602 @@
       "licenseUrl": "https://openai.com/policies/terms-of-use/",
       "attribution": "Not required by the terms; generated with OpenAI for Suric.",
       "promptOrDescription": "Rested brisket being carved across the grain.",
-      "dimensionsPx": { "width": 960, "height": 720 },
-      "bytes": 127290,
+      "dimensionsPx": {
+        "width": 611,
+        "height": 458
+      },
+      "bytes": 49874,
+      "encodingQuality": 63,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "preCapBytes": 127290,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 720
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 63, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-guiso-carrero",
+      "assetName": "recipe_argentina_guiso_carrero",
+      "path": "res/drawable-nodpi/recipe_argentina_guiso_carrero.webp",
+      "purpose": "Finished Argentine beef and pasta stew served on a plate with table setting",
+      "source": "Wikimedia Commons file: Argentine Tirabuz?n pasta stew with meat sauce, bread, and table setting.jpg",
+      "creator": "Horacio Cambeiro",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentine_Tirabuz%C3%B3n_pasta_stew_with_meat_sauce,_bread,_and_table_setting.jpg",
+      "sourceOutputId": null,
+      "license": "Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Horacio Cambeiro, Wikimedia Commons, CC BY-SA 3.0. Adapted by resizing to 1280 ? 960 and re-encoding as lossy WebP; this derivative is distributed under CC BY-SA 3.0.",
+      "promptOrDescription": "Top-down photograph of Argentine guiso de fideos: local tirabuz?n pasta in minced beef, tomato, onion, garlic and paprika sauce, plated with bread and table setting; taken in Misiones, Argentina.",
+      "dimensionsPx": {
+        "width": 724,
+        "height": 543
+      },
+      "bytes": 49522,
+      "encodingQuality": 56,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "efee5e5abcadeefe6ea33b465aabfe1ebc1978d32f6efa86873ae9f43f0691d8",
+      "metadataReview": "Source page, exact dish description, creator and CC BY-SA 3.0 license verified. Image visually checked; resized and re-encoded derivative remains under CC BY-SA 3.0.",
+      "preCapBytes": 329562,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 960
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 56, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-zagreb-style-turkey-with-mlinci",
+      "assetName": "recipe_croatia_zagreb_style_turkey_with_mlinci",
+      "path": "res/drawable-nodpi/recipe_croatia_zagreb_style_turkey_with_mlinci.webp",
+      "purpose": "Croatian dish photograph for Zagreb-style turkey with mlinci",
+      "source": "Local user-provided image: images/- Zagreb-style turkey with mlinci.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file - Zagreb-style turkey with mlinci.webp; matched to canonical recipe croatia-zagreb-style-turkey-with-mlinci by its dish name.",
+      "dimensionsPx": {
+        "width": 647,
+        "height": 647
+      },
+      "bytes": 49046,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "9220e562106223a2a85ea98fd6fd0b1774e73e9d364a83e0ee2aca7897d7c18d",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 190320,
+      "sourceFileName": "- Zagreb-style turkey with mlinci.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 228160,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-blitva-and-potatoes",
+      "assetName": "recipe_croatia_dalmatian_blitva_and_potatoes",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_blitva_and_potatoes.webp",
+      "purpose": "Croatian dish photograph for Dalmatian blitva and potatoes",
+      "source": "Local user-provided image: images/blitva and potatoes.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file blitva and potatoes.jpg; matched to canonical recipe croatia-dalmatian-blitva-and-potatoes by its dish name.",
+      "dimensionsPx": {
+        "width": 612,
+        "height": 408
+      },
+      "bytes": 47288,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "2245a20fffbe6e61fa8a37a14a7ecfe9399d0d6a59d31f8cfec37cd41db1f08a",
+      "sourceDimensionsPx": {
+        "width": 612,
+        "height": 408
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 49808,
+      "sourceFileName": "blitva and potatoes.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 48542,
+      "preCapDimensionsPx": {
+        "width": 612,
+        "height": 408
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 87, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-tomato-and-rice-soup",
+      "assetName": "recipe_croatia_dalmatian_tomato_and_rice_soup",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_tomato_and_rice_soup.webp",
+      "purpose": "Croatian dish photograph for Dalmatian tomato and rice soup",
+      "source": "Local user-provided image: images/Dalmatian tomato and rice soup.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Dalmatian tomato and rice soup.jpg; matched to canonical recipe croatia-dalmatian-tomato-and-rice-soup by its dish name.",
+      "dimensionsPx": {
+        "width": 600,
+        "height": 900
+      },
+      "bytes": 49674,
       "encodingQuality": 76,
-      "colorProfile": "RGB, no embedded ICC profile; current asset predates the sRGB profile requirement"
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "ff4d4ccbe636c94b9605dcabe405a11439b2b69ee766e8e986e4cf13c0ff02cd",
+      "sourceDimensionsPx": {
+        "width": 600,
+        "height": 900
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 149171,
+      "sourceFileName": "Dalmatian tomato and rice soup.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 85918,
+      "preCapDimensionsPx": {
+        "width": 600,
+        "height": 900
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 76, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-style-black-risotto",
+      "assetName": "recipe_croatia_dalmatian_style_black_risotto",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_style_black_risotto.webp",
+      "purpose": "Croatian dish photograph for Dalmatian-style black risotto",
+      "source": "Local user-provided image: images/Dalmatian-style black risotto.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Dalmatian-style black risotto.jpg; matched to canonical recipe croatia-dalmatian-style-black-risotto by its dish name.",
+      "dimensionsPx": {
+        "width": 1000,
+        "height": 667
+      },
+      "bytes": 48422,
+      "encodingQuality": 77,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "c9aa30aaf051887dfd39d541edc1eb16514851c4d09b241a31d03ea9c465550a",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 667
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 604412,
+      "sourceFileName": "Dalmatian-style black risotto.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 77804,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 667
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 77, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-fritule",
+      "assetName": "recipe_croatia_dalmatian_fritule",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_fritule.webp",
+      "purpose": "Croatian dish photograph for Dalmatian fritule",
+      "source": "Local user-provided image: images/dalmatinske-fritule-s-jogurtom.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file dalmatinske-fritule-s-jogurtom.webp; matched to canonical recipe croatia-dalmatian-fritule by its dish name.",
+      "dimensionsPx": {
+        "width": 630,
+        "height": 630
+      },
+      "bytes": 49722,
+      "encodingQuality": 51,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "c4524f606d8de217c85fd65a2edb7de7aa007fb34948e160f265d53628774184",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 309338,
+      "sourceFileName": "dalmatinske-fritule-s-jogurtom.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 220252,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 51, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-baked-adriatic-hake-with-potatoes",
+      "assetName": "recipe_croatia_baked_adriatic_hake_with_potatoes",
+      "path": "res/drawable-nodpi/recipe_croatia_baked_adriatic_hake_with_potatoes.webp",
+      "purpose": "Croatian dish photograph for Baked Adriatic hake with potatoes",
+      "source": "Local user-provided image: images/delicious-baked-hake-fillet-roasted-potatoes-spinach-elegant-dining-399536986.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file delicious-baked-hake-fillet-roasted-potatoes-spinach-elegant-dining-399536986.webp; matched to canonical recipe croatia-baked-adriatic-hake-with-potatoes by its dish name.",
+      "dimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "bytes": 49462,
+      "encodingQuality": 84,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "02c94cd1bdbc86a96bc5ecdeab18d9e84831501656019e08f26ac22a3c6c501f",
+      "sourceDimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 42722,
+      "sourceFileName": "delicious-baked-hake-fillet-roasted-potatoes-spinach-elegant-dining-399536986.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 52706,
+      "preCapDimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 84, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dubrovnik-rozata",
+      "assetName": "recipe_croatia_dubrovnik_rozata",
+      "path": "res/drawable-nodpi/recipe_croatia_dubrovnik_rozata.webp",
+      "purpose": "Croatian dish photograph for Dubrovnik rozata",
+      "source": "Local user-provided image: images/Dubrovnik rozata.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Dubrovnik rozata.jpg; matched to canonical recipe croatia-dubrovnik-rozata by its dish name.",
+      "dimensionsPx": {
+        "width": 1024,
+        "height": 683
+      },
+      "bytes": 48606,
+      "encodingQuality": 80,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "145908bc0a4c926a544256c18c714df3d504753476a174b8fca3b7e7b0191738",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 683
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 86541,
+      "sourceFileName": "Dubrovnik rozata.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 73292,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 683
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 80, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-fritaja-with-asparagus",
+      "assetName": "recipe_croatia_istrian_fritaja_with_asparagus",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_fritaja_with_asparagus.webp",
+      "purpose": "Croatian dish photograph for Istrian fritaja with asparagus",
+      "source": "Local user-provided image: images/Istrian fritaja with asparagus.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian fritaja with asparagus.webp; matched to canonical recipe croatia-istrian-fritaja-with-asparagus by its dish name.",
+      "dimensionsPx": {
+        "width": 719,
+        "height": 479
+      },
+      "bytes": 49856,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "26b96b29718167b5fab3218a2391edaab788434d41a8099f36039468258594ee",
+      "sourceDimensionsPx": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 385022,
+      "sourceFileName": "Istrian fritaja with asparagus.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 244832,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 853
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-fuži-with-forest-mushrooms",
+      "assetName": "recipe_croatia_istrian_fuzi_with_forest_mushrooms",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_fuzi_with_forest_mushrooms.webp",
+      "purpose": "Croatian dish photograph for Istrian fuži with forest mushrooms",
+      "source": "Local user-provided image: images/Istrian fuži with forest mushrooms.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian fuži with forest mushrooms.jpg; matched to canonical recipe croatia-istrian-fuži-with-forest-mushrooms by its dish name.",
+      "dimensionsPx": {
+        "width": 1280,
+        "height": 854
+      },
+      "bytes": 48142,
+      "encodingQuality": 78,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "41f0d100c2442a2c3b910e7ca7e3f355934ed3b60c6afec1a835b47973e4270b",
+      "sourceDimensionsPx": {
+        "width": 1600,
+        "height": 1067
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 76614,
+      "sourceFileName": "Istrian fuži with forest mushrooms.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 76406,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 854
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 78, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-fuži-with-tomato-and-basil",
+      "assetName": "recipe_croatia_istrian_fuzi_with_tomato_and_basil",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_fuzi_with_tomato_and_basil.webp",
+      "purpose": "Croatian dish photograph for Istrian fuži with tomato and basil",
+      "source": "Local user-provided image: images/Istrian fuži with tomato and basil.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian fuži with tomato and basil.jpg; matched to canonical recipe croatia-istrian-fuži-with-tomato-and-basil by its dish name.",
+      "dimensionsPx": {
+        "width": 722,
+        "height": 719
+      },
+      "bytes": 49554,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "716fcdd30dc9c184e173e2ab1ad69c46671e07b57b18122e743187d5e399d705",
+      "sourceDimensionsPx": {
+        "width": 3421,
+        "height": 3410
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 2231238,
+      "sourceFileName": "Istrian fuži with tomato and basil.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 352294,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 1276
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-maneštra-bean-soup",
+      "assetName": "recipe_croatia_istrian_manestra_bean_soup",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_manestra_bean_soup.webp",
+      "purpose": "Croatian dish photograph for Istrian maneštra bean soup",
+      "source": "Local user-provided image: images/Istrian maneštra bean soup.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian maneštra bean soup.webp; matched to canonical recipe croatia-istrian-maneštra-bean-soup by its dish name.",
+      "dimensionsPx": {
+        "width": 804,
+        "height": 804
+      },
+      "bytes": 49796,
+      "encodingQuality": 57,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "a90e07be4efe79e96e099541b18832153239e3cfddbd2b06a703292e2cb9c495",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 145502,
+      "sourceFileName": "Istrian maneštra bean soup.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 142016,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 57, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-minestrone-with-corn",
+      "assetName": "recipe_croatia_istrian_minestrone_with_corn",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_minestrone_with_corn.webp",
+      "purpose": "Croatian dish photograph for Istrian minestrone with corn",
+      "source": "Local user-provided image: images/Istrian minestrone with corn.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian minestrone with corn.webp; matched to canonical recipe croatia-istrian-minestrone-with-corn by its dish name.",
+      "dimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "bytes": 49588,
+      "encodingQuality": 77,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "3bd10457462a5c02a30573485830449b85481ac6ba2311a70a9e5d54554fe72a",
+      "sourceDimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 73378,
+      "sourceFileName": "Istrian minestrone with corn.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 74940,
+      "preCapDimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 77, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-istrian-olive-oil-and-rosemary-focaccia",
+      "assetName": "recipe_croatia_istrian_olive_oil_and_rosemary_focaccia",
+      "path": "res/drawable-nodpi/recipe_croatia_istrian_olive_oil_and_rosemary_focaccia.webp",
+      "purpose": "Croatian dish photograph for Istrian olive oil and rosemary focaccia",
+      "source": "Local user-provided image: images/Istrian olive oil and rosemary focaccia.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Istrian olive oil and rosemary focaccia.webp; matched to canonical recipe croatia-istrian-olive-oil-and-rosemary-focaccia by its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "bytes": 49402,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "ff0641ceeeb462e03a0cb7da41122c02123caed83bde6a3e972831ba9a29050e",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 40236,
+      "sourceFileName": "Istrian olive oil and rosemary focaccia.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 49820,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 87, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-kvarner-shrimp-and-tomato-pasta",
+      "assetName": "recipe_croatia_kvarner_shrimp_and_tomato_pasta",
+      "path": "res/drawable-nodpi/recipe_croatia_kvarner_shrimp_and_tomato_pasta.webp",
+      "purpose": "Croatian dish photograph for Kvarner shrimp and tomato pasta",
+      "source": "Local user-provided image: images/Kvarner shrimp and tomato pasta.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Kvarner shrimp and tomato pasta.png; matched to canonical recipe croatia-kvarner-shrimp-and-tomato-pasta by its dish name.",
+      "dimensionsPx": {
+        "width": 627,
+        "height": 627
+      },
+      "bytes": 49212,
+      "encodingQuality": 56,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "2b769ad4952cdeec96a09cf4422efc8b56d10a9f00b35c1910c10b252571f7f6",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 639832,
+      "sourceFileName": "Kvarner shrimp and tomato pasta.png",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 304708,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 56, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-pag-style-sheep-cheese-polenta",
+      "assetName": "recipe_croatia_pag_style_sheep_cheese_polenta",
+      "path": "res/drawable-nodpi/recipe_croatia_pag_style_sheep_cheese_polenta.webp",
+      "purpose": "Croatian dish photograph for Pag-style sheep cheese polenta",
+      "source": "Local user-provided image: images/Pag-style sheep cheese polenta.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Pag-style sheep cheese polenta.webp; matched to canonical recipe croatia-pag-style-sheep-cheese-polenta by its dish name.",
+      "dimensionsPx": {
+        "width": 922,
+        "height": 922
+      },
+      "bytes": 49704,
+      "encodingQuality": 58,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "2be42530603f9a1188bccf1dd23902a40f6f14de9ee775f5b73c3ec9db62c2aa",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 77856,
+      "sourceFileName": "Pag-style sheep cheese polenta.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 100362,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 58, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-pašticada-inspired-beef",
+      "assetName": "recipe_croatia_dalmatian_pasticada_inspired_beef",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_pasticada_inspired_beef.webp",
+      "purpose": "Croatian dish photograph for Dalmatian pašticada-inspired beef",
+      "source": "Local user-provided image: images/pasticada.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file pasticada.webp; matched to canonical recipe croatia-dalmatian-pašticada-inspired-beef by its dish name.",
+      "dimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "bytes": 49730,
+      "encodingQuality": 62,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f782e56a243785609f96302e2a59bf7e8ea174368c959746741bcf5ff0ae3ed9",
+      "sourceDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 97928,
+      "sourceFileName": "pasticada.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 98342,
+      "preCapDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 62, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-peka-style-lamb-and-potatoes",
+      "assetName": "recipe_croatia_peka_style_lamb_and_potatoes",
+      "path": "res/drawable-nodpi/recipe_croatia_peka_style_lamb_and_potatoes.webp",
+      "purpose": "Croatian dish photograph for Peka-style lamb and potatoes",
+      "source": "Local user-provided image: images/Peka-style lamb and potatoes.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Peka-style lamb and potatoes.webp; matched to canonical recipe croatia-peka-style-lamb-and-potatoes by its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "bytes": 48226,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "6437ddf1fb88b96b8278a0e2c7e705b0dddfea20ed7bafd2015d52391441a687",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 40694,
+      "sourceFileName": "Peka-style lamb and potatoes.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 48876,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 87, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-peka-style-octopus-and-potatoes",
+      "assetName": "recipe_croatia_peka_style_octopus_and_potatoes",
+      "path": "res/drawable-nodpi/recipe_croatia_peka_style_octopus_and_potatoes.webp",
+      "purpose": "Croatian dish photograph for Peka-style octopus and potatoes",
+      "source": "Local user-provided image: images/Peka-style octopus and potatoes.jpeg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Peka-style octopus and potatoes.jpeg; matched to canonical recipe croatia-peka-style-octopus-and-potatoes by its dish name.",
+      "dimensionsPx": {
+        "width": 468,
+        "height": 450
+      },
+      "bytes": 48704,
+      "encodingQuality": 85,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "30655ad2ba1c8f9bcb8289846723db6752a1346136d3d121a5b5109c8450f29e",
+      "sourceDimensionsPx": {
+        "width": 468,
+        "height": 450
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 60914,
+      "sourceFileName": "Peka-style octopus and potatoes.jpeg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 52094,
+      "preCapDimensionsPx": {
+        "width": 468,
+        "height": 450
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 85, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-croatian-walnut-povitica-style-roll",
+      "assetName": "recipe_croatia_croatian_walnut_povitica_style_roll",
+      "path": "res/drawable-nodpi/recipe_croatia_croatian_walnut_povitica_style_roll.webp",
+      "purpose": "Croatian dish photograph for Croatian walnut povitica-style roll",
+      "source": "Local user-provided image: images/potica-loaf-pan-3-683x1024.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file potica-loaf-pan-3-683x1024.jpg; matched to canonical recipe croatia-croatian-walnut-povitica-style-roll by its dish name.",
+      "dimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "bytes": 49850,
+      "encodingQuality": 70,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "bcccfe37c3865d5ada2a77fb683511d21da2d70cfb6192d1a3854501a451c195",
+      "sourceDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 105560,
+      "sourceFileName": "potica-loaf-pan-3-683x1024.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 94048,
+      "preCapDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 70, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-croatian-bean-and-barley-stew",
+      "assetName": "recipe_croatia_croatian_bean_and_barley_stew",
+      "path": "res/drawable-nodpi/recipe_croatia_croatian_bean_and_barley_stew.webp",
+      "purpose": "Croatian dish photograph for Croatian bean and barley stew",
+      "source": "Local user-provided image: images/Ricet-Barley-Bean-Stew-1_-1024x1024.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Ricet-Barley-Bean-Stew-1_-1024x1024.webp; matched to canonical recipe croatia-croatian-bean-and-barley-stew by its dish name.",
+      "dimensionsPx": {
+        "width": 729,
+        "height": 729
+      },
+      "bytes": 49996,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "589b56ac802d701763209a0698159edb40052799af620ad123a61f38366b4aad",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 163254,
+      "sourceFileName": "Ricet-Barley-Bean-Stew-1_-1024x1024.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 162914,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 54, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-coastal-grilled-sardines-with-chard",
+      "assetName": "recipe_croatia_coastal_grilled_sardines_with_chard",
+      "path": "res/drawable-nodpi/recipe_croatia_coastal_grilled_sardines_with_chard.webp",
+      "purpose": "Croatian dish photograph for Coastal grilled sardines with chard",
+      "source": "Local user-provided image: images/sardines.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file sardines.jpg; matched to canonical recipe croatia-coastal-grilled-sardines-with-chard by its dish name.",
+      "dimensionsPx": {
+        "width": 479,
+        "height": 579
+      },
+      "bytes": 49482,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "fd74e2cbf19dd4777f488f32c6c261559db489092f57ff3ab79ba16e94c7aef1",
+      "sourceDimensionsPx": {
+        "width": 992,
+        "height": 1200
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 200683,
+      "sourceFileName": "sardines.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 285200,
+      "preCapDimensionsPx": {
+        "width": 992,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-cabbage-rolls-with-rice",
+      "assetName": "recipe_croatia_cabbage_rolls_with_rice",
+      "path": "res/drawable-nodpi/recipe_croatia_cabbage_rolls_with_rice.webp",
+      "purpose": "Croatian dish photograph for Cabbage rolls with rice",
+      "source": "Local user-provided image: images/Sarma-stuffed-cabbage-rolls.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Sarma-stuffed-cabbage-rolls.webp; matched to canonical recipe croatia-cabbage-rolls-with-rice by its dish name.",
+      "dimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "bytes": 49030,
+      "encodingQuality": 68,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "3280b83247c7acf6cf7551b7497388d797058f611480dc42eee119e2ee2b41b3",
+      "sourceDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 92902,
+      "sourceFileName": "Sarma-stuffed-cabbage-rolls.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 92152,
+      "preCapDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 68, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-slavonian-fish-paprika-stew",
+      "assetName": "recipe_croatia_slavonian_fish_paprika_stew",
+      "path": "res/drawable-nodpi/recipe_croatia_slavonian_fish_paprika_stew.webp",
+      "purpose": "Croatian dish photograph for Slavonian fish paprika stew",
+      "source": "Local user-provided image: images/Slavonian fish paprika stew.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Slavonian fish paprika stew.webp; matched to canonical recipe croatia-slavonian-fish-paprika-stew by its dish name.",
+      "dimensionsPx": {
+        "width": 775,
+        "height": 775
+      },
+      "bytes": 49824,
+      "encodingQuality": 61,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "b9e91964c3f29e4b72625492abbea7d27df80c994d726c6facc92ea73745884d",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 137820,
+      "sourceFileName": "Slavonian fish paprika stew.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 169952,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 61, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-slavonian-kulen-style-sausage-stew",
+      "assetName": "recipe_croatia_slavonian_kulen_style_sausage_stew",
+      "path": "res/drawable-nodpi/recipe_croatia_slavonian_kulen_style_sausage_stew.webp",
+      "purpose": "Croatian dish photograph for Slavonian kulen-style sausage stew",
+      "source": "Local user-provided image: images/Slavonian kulen-style sausage stew.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Slavonian kulen-style sausage stew.png; matched to canonical recipe croatia-slavonian-kulen-style-sausage-stew by its dish name.",
+      "dimensionsPx": {
+        "width": 640,
+        "height": 640
+      },
+      "bytes": 49524,
+      "encodingQuality": 51,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "9acc72fc10b40367e6bad18650627f8f0d1ae025b97a2be79996dfa09ec587d1",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 1678817,
+      "sourceFileName": "Slavonian kulen-style sausage stew.png",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 209568,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 51, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-dalmatian-soparnik-style-chard-pie",
+      "assetName": "recipe_croatia_dalmatian_soparnik_style_chard_pie",
+      "path": "res/drawable-nodpi/recipe_croatia_dalmatian_soparnik_style_chard_pie.webp",
+      "purpose": "Croatian dish photograph for Dalmatian soparnik-style chard pie",
+      "source": "Local user-provided image: images/Soparnik-–-Dalmatian-Chard-Filled-Pie-from-Poljica-1_-1024x1024.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Soparnik-–-Dalmatian-Chard-Filled-Pie-from-Poljica-1_-1024x1024.webp; matched to canonical recipe croatia-dalmatian-soparnik-style-chard-pie by its dish name.",
+      "dimensionsPx": {
+        "width": 670,
+        "height": 670
+      },
+      "bytes": 49538,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "6965288094e55e0889cc20a7cf93944e3396e0a9f117a768aa8b3c06db75c074",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 195726,
+      "sourceFileName": "Soparnik-–-Dalmatian-Chard-Filled-Pie-from-Poljica-1_-1024x1024.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 194186,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-apple-strudel-with-cottage-cheese",
+      "assetName": "recipe_croatia_apple_strudel_with_cottage_cheese",
+      "path": "res/drawable-nodpi/recipe_croatia_apple_strudel_with_cottage_cheese.webp",
+      "purpose": "Croatian dish photograph for Apple strudel with cottage cheese",
+      "source": "Local user-provided image: images/Strudel-Savijaca-Strudla-–-Rolled-Pastry-with-Apple-or-Cheese-Filling-2_.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Strudel-Savijaca-Strudla-–-Rolled-Pastry-with-Apple-or-Cheese-Filling-2_.webp; matched to canonical recipe croatia-apple-strudel-with-cottage-cheese by its dish name.",
+      "dimensionsPx": {
+        "width": 813,
+        "height": 813
+      },
+      "bytes": 49702,
+      "encodingQuality": 58,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "837ae3faa50499b34771d7ddff5fb943ab7ee265a0a654fb6d6c8edefc8a9b87",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 125508,
+      "sourceFileName": "Strudel-Savijaca-Strudla-–-Rolled-Pastry-with-Apple-or-Cheese-Filling-2_.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 156388,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 58, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-croatian-stuffed-peppers",
+      "assetName": "recipe_croatia_croatian_stuffed_peppers",
+      "path": "res/drawable-nodpi/recipe_croatia_croatian_stuffed_peppers.webp",
+      "purpose": "Croatian dish photograph for Croatian stuffed peppers",
+      "source": "Local user-provided image: images/stuffed peppers.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file stuffed peppers.webp; matched to canonical recipe croatia-croatian-stuffed-peppers by its dish name.",
+      "dimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "bytes": 49798,
+      "encodingQuality": 72,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "a1b637a2ec081935df27edf04bafce2d60c65d94dd63fd00a5722f4097dfe3a7",
+      "sourceDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 88900,
+      "sourceFileName": "stuffed peppers.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 88606,
+      "preCapDimensionsPx": {
+        "width": 768,
+        "height": 439
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 72, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-zagorje-baked-štrukli",
+      "assetName": "recipe_croatia_zagorje_baked_strukli",
+      "path": "res/drawable-nodpi/recipe_croatia_zagorje_baked_strukli.webp",
+      "purpose": "Croatian dish photograph for Zagorje baked štrukli",
+      "source": "Local user-provided image: images/Zagorje baked štrukli.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Zagorje baked štrukli.webp; matched to canonical recipe croatia-zagorje-baked-štrukli by its dish name.",
+      "dimensionsPx": {
+        "width": 886,
+        "height": 496
+      },
+      "bytes": 49622,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "5ad3174682ee97574344921bf911f7bbc1c7a4145dcf28ac1370640575118550",
+      "sourceDimensionsPx": {
+        "width": 1456,
+        "height": 816
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 209260,
+      "sourceFileName": "Zagorje baked štrukli.webp",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 171604,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 717
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 59, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-zagreb-breaded-veal-cutlets",
+      "assetName": "recipe_croatia_zagreb_breaded_veal_cutlets",
+      "path": "res/drawable-nodpi/recipe_croatia_zagreb_breaded_veal_cutlets.webp",
+      "purpose": "Croatian dish photograph for Zagreb breaded veal cutlets",
+      "source": "Local user-provided image: images/Zagreb breaded veal cutlets.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Zagreb breaded veal cutlets.jpg; matched to canonical recipe croatia-zagreb-breaded-veal-cutlets by its dish name.",
+      "dimensionsPx": {
+        "width": 610,
+        "height": 610
+      },
+      "bytes": 49794,
+      "encodingQuality": 52,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "df78ce51acdddb808b2f36a54de9f648ae8052d82ad2652da16a39d23333327a",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 177059,
+      "sourceFileName": "Zagreb breaded veal cutlets.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 304284,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 52, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "croatia-zagreb-style-cheese-štrukli",
+      "assetName": "recipe_croatia_zagreb_style_cheese_strukli",
+      "path": "res/drawable-nodpi/recipe_croatia_zagreb_style_cheese_strukli.webp",
+      "purpose": "Croatian dish photograph for Zagreb-style cheese štrukli",
+      "source": "Local user-provided image: images/Zagreb-style cheese štrukli.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Not checked; user directed personal unpublished use and said licensing review is unnecessary.",
+      "licenseUrl": null,
+      "attribution": "Not checked or required for this private unpublished use per user direction.",
+      "promptOrDescription": "Local source file Zagreb-style cheese štrukli.jpg; matched to canonical recipe croatia-zagreb-style-cheese-štrukli by its dish name.",
+      "dimensionsPx": {
+        "width": 1280,
+        "height": 800
+      },
+      "bytes": 49170,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "24d162014f08cd2c79b3da841f39bb3fe77b64dcf5fb85b54fae3df8896f73a3",
+      "sourceDimensionsPx": {
+        "width": 1400,
+        "height": 875
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 179700,
+      "sourceFileName": "Zagreb-style cheese štrukli.jpg",
+      "metadataReview": "Filename matched to the canonical Croatian dish. Converted to static WebP quality 87, sRGB, preserving proportions within 1280 px; no licence research performed per user direction.",
+      "preCapBytes": 120944,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 800
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP with quality 50, preserving aspect ratio; scaled only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-tucumanas",
+      "assetName": "recipe_argentina_empanadas_tucumanas",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_tucumanas.webp",
+      "purpose": "Local dish photograph matched to Tucumán beef and egg empanadas",
+      "source": "Local user-provided image: images/Argentina/- Tucumán beef and egg empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file - Tucumán beef and egg empanadas.webp; matched to canonical recipe argentina-empanadas-tucumanas using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 315
+      },
+      "bytes": 30646,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "41010d68790b13bb6dcf98e3aea20b1f08ffb48edcf4bad28f683fb9b7ae2a76",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 315
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 26176,
+      "sourceFileName": "- Tucumán beef and egg empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 26176,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 315
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-alfajores-maicena",
+      "assetName": "recipe_argentina_alfajores_maicena",
+      "path": "res/drawable-nodpi/recipe_argentina_alfajores_maicena.webp",
+      "purpose": "Local dish photograph matched to Cornstarch alfajores with dulce de leche",
+      "source": "Local user-provided image: images/Argentina/Alfajores de maicena — cornstarch alfajores with dulce de leche.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Alfajores de maicena — cornstarch alfajores with dulce de leche.webp; matched to canonical recipe argentina-alfajores-maicena using its dish name.",
+      "dimensionsPx": {
+        "width": 1198,
+        "height": 1198
+      },
+      "bytes": 48930,
+      "encodingQuality": 53,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "e99164d8ef62490d5b72986ee4d89347b0a674fcd9f548e0c8cfcca2799aeb04",
+      "sourceDimensionsPx": {
+        "width": 1198,
+        "height": 1198
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 85140,
+      "sourceFileName": "Alfajores de maicena — cornstarch alfajores with dulce de leche.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 85140,
+      "preCapDimensionsPx": {
+        "width": 1198,
+        "height": 1198
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 53, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-guiso-carrero",
+      "assetName": "recipe_argentina_guiso_carrero_local_folder",
+      "path": "res/drawable-nodpi/recipe_argentina_guiso_carrero_local_folder.webp",
+      "purpose": "Local dish photograph matched to Argentine beef and pasta pot",
+      "source": "Local user-provided image: images/Argentina/Argentine beef and pasta pot.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine beef and pasta pot.webp; matched to canonical recipe argentina-guiso-carrero using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "bytes": 28142,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "c9ffecdac400dc2e4a1511ebd7a12ba411d35bff092aa8f7e0269574d7270166",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 22524,
+      "sourceFileName": "Argentine beef and pasta pot.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 22524,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pastel-de-papa",
+      "assetName": "recipe_argentina_pastel_de_papa",
+      "path": "res/drawable-nodpi/recipe_argentina_pastel_de_papa.webp",
+      "purpose": "Local dish photograph matched to Argentine beef and potato pie",
+      "source": "Local user-provided image: images/Argentina/Argentine beef and potato pie.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine beef and potato pie.webp; matched to canonical recipe argentina-pastel-de-papa using its dish name.",
+      "dimensionsPx": {
+        "width": 679,
+        "height": 905
+      },
+      "bytes": 49628,
+      "encodingQuality": 53,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f46bce37f6eedcb6e7d7b65f4d2378aa57f7ce5d732260c223d58fff67dc7243",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1600
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 146574,
+      "sourceFileName": "Argentine beef and potato pie.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 146574,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 1280
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 53, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-puchero",
+      "assetName": "recipe_argentina_puchero",
+      "path": "res/drawable-nodpi/recipe_argentina_puchero.webp",
+      "purpose": "Local dish photograph matched to Argentine beef and vegetable broth",
+      "source": "Local user-provided image: images/Argentina/Argentine beef and vegetable broth.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine beef and vegetable broth.webp; matched to canonical recipe argentina-puchero using its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "bytes": 49790,
+      "encodingQuality": 75,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "86b54ed21fe6ba3fabecf50f994a271f8a99afb5df3ad15d2454728eb8d76cf5",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 51114,
+      "sourceFileName": "Argentine beef and vegetable broth.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 51114,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 75, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "bbq-argentine-beef-short-ribs-with-salt",
+      "assetName": "recipe_bbq_argentine_beef_short_ribs_with_salt",
+      "path": "res/drawable-nodpi/recipe_bbq_argentine_beef_short_ribs_with_salt.webp",
+      "purpose": "Local dish photograph matched to Argentine beef short ribs with salt",
+      "source": "Local user-provided image: images/Argentina/Argentine beef short ribs with salt.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine beef short ribs with salt.jpg; matched to canonical recipe bbq-argentine-beef-short-ribs-with-salt using its dish name.",
+      "dimensionsPx": {
+        "width": 698,
+        "height": 465
+      },
+      "bytes": 49632,
+      "encodingQuality": 61,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "c91fed93cd3884bcaeac08703bf564318a1e85a3f0fad555c1f5427342707eb1",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 667
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 393331,
+      "sourceFileName": "Argentine beef short ribs with salt.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 393331,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 667
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 61, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-carbonada-criolla",
+      "assetName": "recipe_argentina_carbonada_criolla",
+      "path": "res/drawable-nodpi/recipe_argentina_carbonada_criolla.webp",
+      "purpose": "Local dish photograph matched to Argentine beef, squash and corn stew",
+      "source": "Local user-provided image: images/Argentina/Argentine beef, squash and corn stew.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine beef, squash and corn stew.jpg; matched to canonical recipe argentina-carbonada-criolla using its dish name.",
+      "dimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "bytes": 49674,
+      "encodingQuality": 56,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "fc6f644c082e580497e763b56ee9c7493ee872891032183b89bbb6738a1d2f84",
+      "sourceDimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 89502,
+      "sourceFileName": "Argentine beef, squash and corn stew.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 89502,
+      "preCapDimensionsPx": {
+        "width": 750,
+        "height": 500
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 56, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-budín-pan",
+      "assetName": "recipe_argentina_bud_n_pan",
+      "path": "res/drawable-nodpi/recipe_argentina_bud_n_pan.webp",
+      "purpose": "Local dish photograph matched to Argentine bread pudding",
+      "source": "Local user-provided image: images/Argentina/Argentine bread pudding.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine bread pudding.jpg; matched to canonical recipe argentina-budín-pan using its dish name.",
+      "dimensionsPx": {
+        "width": 1000,
+        "height": 560
+      },
+      "bytes": 49764,
+      "encodingQuality": 58,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8229c8c62ea90d79f03a8bcd6b13b34947c92e20a53567c40ef3abaf69abfae9",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 560
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 275183,
+      "sourceFileName": "Argentine bread pudding.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 275183,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 560
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 58, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-milanesa-carne",
+      "assetName": "recipe_argentina_milanesa_carne",
+      "path": "res/drawable-nodpi/recipe_argentina_milanesa_carne.webp",
+      "purpose": "Local dish photograph matched to Argentine breaded beef cutlets",
+      "source": "Local user-provided image: images/Argentina/Argentine breaded beef cutlets.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine breaded beef cutlets.webp; matched to canonical recipe argentina-milanesa-carne using its dish name.",
+      "dimensionsPx": {
+        "width": 768,
+        "height": 512
+      },
+      "bytes": 49910,
+      "encodingQuality": 68,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f1bd29c771291bbad727ba0027108c32fa59974058b1f3a6f269a4e09ba5d4c7",
+      "sourceDimensionsPx": {
+        "width": 768,
+        "height": 512
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 64340,
+      "sourceFileName": "Argentine breaded beef cutlets.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 64340,
+      "preCapDimensionsPx": {
+        "width": 768,
+        "height": 512
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 68, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-flan-mixto",
+      "assetName": "recipe_argentina_flan_mixto",
+      "path": "res/drawable-nodpi/recipe_argentina_flan_mixto.webp",
+      "purpose": "Local dish photograph matched to Argentine caramel flan with cream",
+      "source": "Local user-provided image: images/Argentina/Argentine caramel flan with cream.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine caramel flan with cream.jpg; matched to canonical recipe argentina-flan-mixto using its dish name.",
+      "dimensionsPx": {
+        "width": 1028,
+        "height": 686
+      },
+      "bytes": 49332,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "95f765372c1bf4dfefe455693e9d50c440a766a5f4cbc29bbdafd9c4c105fe47",
+      "sourceDimensionsPx": {
+        "width": 1300,
+        "height": 867
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 227405,
+      "sourceFileName": "Argentine caramel flan with cream.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 227405,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 854
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 59, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "bbq-argentine-chicken-with-chimichurri",
+      "assetName": "recipe_bbq_argentine_chicken_with_chimichurri",
+      "path": "res/drawable-nodpi/recipe_bbq_argentine_chicken_with_chimichurri.webp",
+      "purpose": "Local dish photograph matched to Argentine chicken with chimichurri",
+      "source": "Local user-provided image: images/Argentina/Argentine chicken with chimichurri.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine chicken with chimichurri.jpg; matched to canonical recipe bbq-argentine-chicken-with-chimichurri using its dish name.",
+      "dimensionsPx": {
+        "width": 706,
+        "height": 471
+      },
+      "bytes": 49880,
+      "encodingQuality": 61,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8518336a38ee45a391a2de5266db3c03375a4a0b177ce0fcda376724b50c80d1",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 800
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 108003,
+      "sourceFileName": "Argentine chicken with chimichurri.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 108003,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 800
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 61, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-locro",
+      "assetName": "recipe_argentina_locro",
+      "path": "res/drawable-nodpi/recipe_argentina_locro.webp",
+      "purpose": "Local dish photograph matched to Argentine corn and bean stew",
+      "source": "Local user-provided image: images/Argentina/Argentine corn and bean stew.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine corn and bean stew.jpg; matched to canonical recipe argentina-locro using its dish name.",
+      "dimensionsPx": {
+        "width": 793,
+        "height": 396
+      },
+      "bytes": 49854,
+      "encodingQuality": 51,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "e3ceb02beaaa4ae62dcf208acc765c282147070afdc6700d857acf1a25793d87",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 500
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 277700,
+      "sourceFileName": "Argentine corn and bean stew.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 277700,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 500
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 51, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tamales-humita",
+      "assetName": "recipe_argentina_tamales_humita",
+      "path": "res/drawable-nodpi/recipe_argentina_tamales_humita.webp",
+      "purpose": "Local dish photograph matched to Argentine corn and beef bake",
+      "source": "Local user-provided image: images/Argentina/Argentine corn and beef bake.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine corn and beef bake.webp; matched to canonical recipe argentina-tamales-humita using its dish name.",
+      "dimensionsPx": {
+        "width": 922,
+        "height": 674
+      },
+      "bytes": 49598,
+      "encodingQuality": 53,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "335c44e6877213a3584be7a0efe2cfead297fb8df90cdb0bc3525862fc9ca2dc",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 749
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 104126,
+      "sourceFileName": "Argentine corn and beef bake.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 104126,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 749
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 53, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-rabas",
+      "assetName": "recipe_argentina_rabas",
+      "path": "res/drawable-nodpi/recipe_argentina_rabas.webp",
+      "purpose": "Local dish photograph matched to Argentine fried calamari",
+      "source": "Local user-provided image: images/Argentina/Argentine fried calamari.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine fried calamari.png; matched to canonical recipe argentina-rabas using its dish name.",
+      "dimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "bytes": 49036,
+      "encodingQuality": 76,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "289d5ffe2b588759df1012443c5407e0b6afd64c6d190a89c691952de1ab645b",
+      "sourceDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 1104995,
+      "sourceFileName": "Argentine fried calamari.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 1104995,
+      "preCapDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 76, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-asado-parrilla",
+      "assetName": "recipe_argentina_asado_parrilla",
+      "path": "res/drawable-nodpi/recipe_argentina_asado_parrilla.webp",
+      "purpose": "Local dish photograph matched to Argentine grilled short ribs",
+      "source": "Local user-provided image: images/Argentina/Argentine grilled short ribs.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine grilled short ribs.png; matched to canonical recipe argentina-asado-parrilla using its dish name.",
+      "dimensionsPx": {
+        "width": 597,
+        "height": 597
+      },
+      "bytes": 49962,
+      "encodingQuality": 52,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "9590c0f67597d64ae0b696f869a0ce1aa434334536bdeb39c544da62b7141fdf",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 656006,
+      "sourceFileName": "Argentine grilled short ribs.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 656006,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 52, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "bbq-argentine-grilled-sweetbreads",
+      "assetName": "recipe_bbq_argentine_grilled_sweetbreads",
+      "path": "res/drawable-nodpi/recipe_bbq_argentine_grilled_sweetbreads.webp",
+      "purpose": "Local dish photograph matched to Argentine grilled sweetbreads",
+      "source": "Local user-provided image: images/Argentina/Argentine grilled sweetbreads.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine grilled sweetbreads.webp; matched to canonical recipe bbq-argentine-grilled-sweetbreads using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "bytes": 33872,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "225d304a4860ea7f1aede285b208d92d3e93d51da7111bf5f1838cd5a1539efa",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 28094,
+      "sourceFileName": "Argentine grilled sweetbreads.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 28094,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-guiso-lentejas",
+      "assetName": "recipe_argentina_guiso_lentejas",
+      "path": "res/drawable-nodpi/recipe_argentina_guiso_lentejas.webp",
+      "purpose": "Local dish photograph matched to Argentine lentil stew",
+      "source": "Local user-provided image: images/Argentina/Argentine lentil stew.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine lentil stew.jpg; matched to canonical recipe argentina-guiso-lentejas using its dish name.",
+      "dimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "bytes": 49002,
+      "encodingQuality": 76,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "d1a95ba8cf0e51fdbf43c1ffeabbddec726b042a17ac9cc51371e78fc1dc0caa",
+      "sourceDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 51278,
+      "sourceFileName": "Argentine lentil stew.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 51278,
+      "preCapDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 76, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "bbq-argentine-matambre-arrollado-on-the-grill",
+      "assetName": "recipe_bbq_argentine_matambre_arrollado_on_the_grill",
+      "path": "res/drawable-nodpi/recipe_bbq_argentine_matambre_arrollado_on_the_grill.webp",
+      "purpose": "Local dish photograph matched to Argentine matambre arrollado on the grill",
+      "source": "Local user-provided image: images/Argentina/Argentine matambre arrollado on the grill.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine matambre arrollado on the grill.webp; matched to canonical recipe bbq-argentine-matambre-arrollado-on-the-grill using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "bytes": 13054,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "0d5154d513dccb0b5c27888366b871c35603a08ab135ef6aa06c969177813dc5",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 10422,
+      "sourceFileName": "Argentine matambre arrollado on the grill.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 10422,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pizza-muzza",
+      "assetName": "recipe_argentina_pizza_muzza",
+      "path": "res/drawable-nodpi/recipe_argentina_pizza_muzza.webp",
+      "purpose": "Local dish photograph matched to Argentine mozzarella pizza",
+      "source": "Local user-provided image: images/Argentina/Argentine mozzarella pizza.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine mozzarella pizza.webp; matched to canonical recipe argentina-pizza-muzza using its dish name.",
+      "dimensionsPx": {
+        "width": 1080,
+        "height": 608
+      },
+      "bytes": 49788,
+      "encodingQuality": 63,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "33cf291d991e901c955cac6b94d92c56a96120830a47f04066c412c243726799",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 675
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 101698,
+      "sourceFileName": "Argentine mozzarella pizza.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 101698,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 675
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 63, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-fugazzeta",
+      "assetName": "recipe_argentina_fugazzeta",
+      "path": "res/drawable-nodpi/recipe_argentina_fugazzeta.webp",
+      "purpose": "Local dish photograph matched to Argentine onion and cheese pizza",
+      "source": "Local user-provided image: images/Argentina/Argentine onion and cheese pizza.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine onion and cheese pizza.jpg; matched to canonical recipe argentina-fugazzeta using its dish name.",
+      "dimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "bytes": 47202,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "0babdb5d5098c003d98cc552a888e4a722340863d6b364ffeafe3fd3c2b8fe89",
+      "sourceDimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 59319,
+      "sourceFileName": "Argentine onion and cheese pizza.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 59319,
+      "preCapDimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-ensalada-rusa",
+      "assetName": "recipe_argentina_ensalada_rusa",
+      "path": "res/drawable-nodpi/recipe_argentina_ensalada_rusa.webp",
+      "purpose": "Local dish photograph matched to Argentine potato and vegetable salad",
+      "source": "Local user-provided image: images/Argentina/Argentine potato and vegetable salad.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine potato and vegetable salad.webp; matched to canonical recipe argentina-ensalada-rusa using its dish name.",
+      "dimensionsPx": {
+        "width": 464,
+        "height": 684
+      },
+      "bytes": 49764,
+      "encodingQuality": 50,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "968a153878669e31d0c456e638aad81e4d8721704e2319de4c6ba09c358dd6c0",
+      "sourceDimensionsPx": {
+        "width": 1828,
+        "height": 2700
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 942648,
+      "sourceFileName": "Argentine potato and vegetable salad.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 942648,
+      "preCapDimensionsPx": {
+        "width": 867,
+        "height": 1280
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 50, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tortilla-papa",
+      "assetName": "recipe_argentina_tortilla_papa",
+      "path": "res/drawable-nodpi/recipe_argentina_tortilla_papa.webp",
+      "purpose": "Local dish photograph matched to Argentine potato omelette",
+      "source": "Local user-provided image: images/Argentina/Argentine potato omelette.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine potato omelette.jpg; matched to canonical recipe argentina-tortilla-papa using its dish name.",
+      "dimensionsPx": {
+        "width": 1152,
+        "height": 847
+      },
+      "bytes": 49870,
+      "encodingQuality": 51,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8d1c404630d856e005a96899d508cd83f23edb459b483c2abe4aa12be331f6d1",
+      "sourceDimensionsPx": {
+        "width": 1300,
+        "height": 956
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 164338,
+      "sourceFileName": "Argentine potato omelette.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 164338,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 941
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 51, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-arroz-con-leche",
+      "assetName": "recipe_argentina_arroz_con_leche",
+      "path": "res/drawable-nodpi/recipe_argentina_arroz_con_leche.webp",
+      "purpose": "Local dish photograph matched to Argentine rice pudding",
+      "source": "Local user-provided image: images/Argentina/Argentine rice pudding.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine rice pudding.jpg; matched to canonical recipe argentina-arroz-con-leche using its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 534
+      },
+      "bytes": 43374,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "422e32ea5505f7140c2a3d567b6f3829e74cc6e1cf9e0b3a78411a36827a5f3b",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 534
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 54623,
+      "sourceFileName": "Argentine rice pudding.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 54623,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 534
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-salad-tomate-onion",
+      "assetName": "recipe_argentina_salad_tomate_onion",
+      "path": "res/drawable-nodpi/recipe_argentina_salad_tomate_onion.webp",
+      "purpose": "Local dish photograph matched to Argentine tomato and onion salad",
+      "source": "Local user-provided image: images/Argentina/Argentine tomato and onion salad.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Argentine tomato and onion salad.webp; matched to canonical recipe argentina-salad-tomate-onion using its dish name.",
+      "dimensionsPx": {
+        "width": 730,
+        "height": 730
+      },
+      "bytes": 49654,
+      "encodingQuality": 58,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8844997329003aada289a16154355e29824348817aaf28148ee450dd4c3a0ba8",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 194592,
+      "sourceFileName": "Argentine tomato and onion salad.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 194592,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 58, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-milanesa-napolitana",
+      "assetName": "recipe_argentina_milanesa_napolitana",
+      "path": "res/drawable-nodpi/recipe_argentina_milanesa_napolitana.webp",
+      "purpose": "Local dish photograph matched to Beef cutlet with tomato and cheese",
+      "source": "Local user-provided image: images/Argentina/Beef cutlet with tomato and cheese.avif",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Beef cutlet with tomato and cheese.avif; matched to canonical recipe argentina-milanesa-napolitana using its dish name.",
+      "dimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "bytes": 31576,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "276af1dd7ef09b99755d73e8ba88a5f62157d280ef8c923cd437128cfc71d170",
+      "sourceDimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "sourceFormat": "AVIF",
+      "sourceBytes": 25797,
+      "sourceFileName": "Beef cutlet with tomato and cheese.avif",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 25797,
+      "preCapDimensionsPx": {
+        "width": 626,
+        "height": 417
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-carbonada-zapallo",
+      "assetName": "recipe_argentina_carbonada_zapallo",
+      "path": "res/drawable-nodpi/recipe_argentina_carbonada_zapallo.webp",
+      "purpose": "Local dish photograph matched to Beef stew baked in squash",
+      "source": "Local user-provided image: images/Argentina/Beef stew baked in squash.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Beef stew baked in squash.webp; matched to canonical recipe argentina-carbonada-zapallo using its dish name.",
+      "dimensionsPx": {
+        "width": 585,
+        "height": 780
+      },
+      "bytes": 49940,
+      "encodingQuality": 51,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8ff2d30c85d63f818ea7b655aeca12216bf17f9727f17059019dc84d7d416944",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1600
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 180758,
+      "sourceFileName": "Beef stew baked in squash.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 180758,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 1280
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 51, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-mate-cocido",
+      "assetName": "recipe_argentina_mate_cocido",
+      "path": "res/drawable-nodpi/recipe_argentina_mate_cocido.webp",
+      "purpose": "Local dish photograph matched to Boiled yerba mate infusion",
+      "source": "Local user-provided image: images/Argentina/Boiled yerba mate infusion.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Boiled yerba mate infusion.webp; matched to canonical recipe argentina-mate-cocido using its dish name.",
+      "dimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "bytes": 49432,
+      "encodingQuality": 71,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "4bcd520d351f283f8b5e0d36d940ec70ba33dd0e405e15661cfe4decb01de363",
+      "sourceDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 89294,
+      "sourceFileName": "Boiled yerba mate infusion.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 89294,
+      "preCapDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 71, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-verdura",
+      "assetName": "recipe_argentina_empanadas_verdura",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_verdura.webp",
+      "purpose": "Local dish photograph matched to Chard and cheese empanadas",
+      "source": "Local user-provided image: images/Argentina/Chard and cheese empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Chard and cheese empanadas.webp; matched to canonical recipe argentina-empanadas-verdura using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "bytes": 31878,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "50a9779a4724c0e9ff1e0f1728635c026696ec36c6cdcaf222c02d38a7b4d7a0",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 24880,
+      "sourceFileName": "Chard and cheese empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 24880,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pollo-al-disco",
+      "assetName": "recipe_argentina_pollo_al_disco",
+      "path": "res/drawable-nodpi/recipe_argentina_pollo_al_disco.webp",
+      "purpose": "Local dish photograph matched to Chicken and vegetable disc stew",
+      "source": "Local user-provided image: images/Argentina/Chicken and vegetable disc stew.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Chicken and vegetable disc stew.png; matched to canonical recipe argentina-pollo-al-disco using its dish name.",
+      "dimensionsPx": {
+        "width": 544,
+        "height": 544
+      },
+      "bytes": 49394,
+      "encodingQuality": 62,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "fcefaf432dbc643f1763aa2a7912391a2a190ee957d294fe559b558b07b43c75",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 461954,
+      "sourceFileName": "Chicken and vegetable disc stew.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 461954,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 62, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-faina",
+      "assetName": "recipe_argentina_faina",
+      "path": "res/drawable-nodpi/recipe_argentina_faina.webp",
+      "purpose": "Local dish photograph matched to Chickpea flatbread",
+      "source": "Local user-provided image: images/Argentina/Chickpea flatbread.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Chickpea flatbread.webp; matched to canonical recipe argentina-faina using its dish name.",
+      "dimensionsPx": {
+        "width": 641,
+        "height": 641
+      },
+      "bytes": 49510,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "b4bdfef310b46ba9b4dd438833acd0c76c6833c35d5496bd3fc5072f846a04f3",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 198500,
+      "sourceFileName": "Chickpea flatbread.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 198500,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 54, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-chocotorta",
+      "assetName": "recipe_argentina_chocotorta",
+      "path": "res/drawable-nodpi/recipe_argentina_chocotorta.webp",
+      "purpose": "Local dish photograph matched to Chocolate biscuit and dulce de leche cake",
+      "source": "Local user-provided image: images/Argentina/Chocolate biscuit and dulce de leche cake.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Chocolate biscuit and dulce de leche cake.webp; matched to canonical recipe argentina-chocotorta using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "bytes": 49068,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "016b9121710548bfd5eb78c67b11811421247075846d548b128ad3d1a67c43d7",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 40954,
+      "sourceFileName": "Chocolate biscuit and dulce de leche cake.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 40954,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tamal-humita-tarta",
+      "assetName": "recipe_argentina_tamal_humita_tarta",
+      "path": "res/drawable-nodpi/recipe_argentina_tamal_humita_tarta.webp",
+      "purpose": "Local dish photograph matched to Corn and cheese tart",
+      "source": "Local user-provided image: images/Argentina/Corn and cheese tart.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Corn and cheese tart.webp; matched to canonical recipe argentina-tamal-humita-tarta using its dish name.",
+      "dimensionsPx": {
+        "width": 824,
+        "height": 824
+      },
+      "bytes": 49924,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "319524b6b0d9f11c2ed49542188a55748ee2cf8688038c4e44fc8f6417c2a87e",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 98254,
+      "sourceFileName": "Corn and cheese tart.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 98254,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 54, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-humita-en-chala",
+      "assetName": "recipe_argentina_humita_en_chala",
+      "path": "res/drawable-nodpi/recipe_argentina_humita_en_chala.webp",
+      "purpose": "Local dish photograph matched to Corn parcels steamed in husks",
+      "source": "Local user-provided image: images/Argentina/Corn parcels steamed in husks.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Corn parcels steamed in husks.webp; matched to canonical recipe argentina-humita-en-chala using its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 533
+      },
+      "bytes": 43214,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "d795ef3539b202f146ebe8eb2370d172faca786d2d432e36428eae0019a75ead",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 533
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 34688,
+      "sourceFileName": "Corn parcels steamed in husks.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 34688,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 533
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-humita",
+      "assetName": "recipe_argentina_empanadas_humita",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_humita.webp",
+      "purpose": "Local dish photograph matched to Creamy corn empanadas",
+      "source": "Local user-provided image: images/Argentina/Creamy corn empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Creamy corn empanadas.webp; matched to canonical recipe argentina-empanadas-humita using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "bytes": 36240,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "48b1e261527c249c0cbd3eea0aea66f9cad8f1d1c0aa3c84562a70bf285b61d9",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 31150,
+      "sourceFileName": "Creamy corn empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 31150,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 474
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-dulce-de-leche-panqueques",
+      "assetName": "recipe_argentina_dulce_de_leche_panqueques",
+      "path": "res/drawable-nodpi/recipe_argentina_dulce_de_leche_panqueques.webp",
+      "purpose": "Local dish photograph matched to Dulce de leche filled pancakes",
+      "source": "Local user-provided image: images/Argentina/Dulce de leche filled pancakes.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Dulce de leche filled pancakes.webp; matched to canonical recipe argentina-dulce-de-leche-panqueques using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 270
+      },
+      "bytes": 23216,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "dd16e47b048b94d8f89122e4573fb8d6cfcd531ec580fc8719d1875a1621fa67",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 270
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 18008,
+      "sourceFileName": "Dulce de leche filled pancakes.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 18008,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 270
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-matambre-pizza",
+      "assetName": "recipe_argentina_matambre_pizza",
+      "path": "res/drawable-nodpi/recipe_argentina_matambre_pizza.webp",
+      "purpose": "Local dish photograph matched to Flank steak with tomato and cheese",
+      "source": "Local user-provided image: images/Argentina/Flank steak with tomato and cheese.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Flank steak with tomato and cheese.jpg; matched to canonical recipe argentina-matambre-pizza using its dish name.",
+      "dimensionsPx": {
+        "width": 501,
+        "height": 666
+      },
+      "bytes": 49836,
+      "encodingQuality": 62,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "da4dcfbf410b29468e47ec7fbae97bb6e83dba1a1a8da2569aa69c77e6b1f053",
+      "sourceDimensionsPx": {
+        "width": 928,
+        "height": 1232
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 282306,
+      "sourceFileName": "Flank steak with tomato and cheese.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 282306,
+      "preCapDimensionsPx": {
+        "width": 928,
+        "height": 1232
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 62, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-chipa-guazu",
+      "assetName": "recipe_argentina_chipa_guazu",
+      "path": "res/drawable-nodpi/recipe_argentina_chipa_guazu.webp",
+      "purpose": "Local dish photograph matched to Fresh corn and cheese bake",
+      "source": "Local user-provided image: images/Argentina/Fresh corn and cheese bake.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Fresh corn and cheese bake.png; matched to canonical recipe argentina-chipa-guazu using its dish name.",
+      "dimensionsPx": {
+        "width": 737,
+        "height": 922
+      },
+      "bytes": 49564,
+      "encodingQuality": 52,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "be159be12ab7dfbdc94e9c313331b96be33fd808157f59be8c3c6d0c7ba1614d",
+      "sourceDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 1147387,
+      "sourceFileName": "Fresh corn and cheese bake.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 1147387,
+      "preCapDimensionsPx": {
+        "width": 819,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 52, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tortas-fritas",
+      "assetName": "recipe_argentina_tortas_fritas",
+      "path": "res/drawable-nodpi/recipe_argentina_tortas_fritas.webp",
+      "purpose": "Local dish photograph matched to Fried Argentine dough cakes",
+      "source": "Local user-provided image: images/Argentina/Fried Argentine dough cakes.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Fried Argentine dough cakes.webp; matched to canonical recipe argentina-tortas-fritas using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "bytes": 20224,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "b15cdf28c2ebcc7e2a544b4f5770f11628fbf74c0aa44afb7461ed024b8a0f0c",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 15960,
+      "sourceFileName": "Fried Argentine dough cakes.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 15960,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pastelitos-criollos",
+      "assetName": "recipe_argentina_pastelitos_criollos",
+      "path": "res/drawable-nodpi/recipe_argentina_pastelitos_criollos.webp",
+      "purpose": "Local dish photograph matched to Fried quince or sweet potato pastries",
+      "source": "Local user-provided image: images/Argentina/Fried quince or sweet potato pastries.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Fried quince or sweet potato pastries.jpg; matched to canonical recipe argentina-pastelitos-criollos using its dish name.",
+      "dimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "bytes": 49636,
+      "encodingQuality": 68,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "e56deb1f60e23da8551f21991a50760158beae2b004e893453da1d095d2199cc",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 219217,
+      "sourceFileName": "Fried quince or sweet potato pastries.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 219217,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 68, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tortilla-parrillera",
+      "assetName": "recipe_argentina_tortilla_parrillera",
+      "path": "res/drawable-nodpi/recipe_argentina_tortilla_parrillera.webp",
+      "purpose": "Local dish photograph matched to Griddled Argentine flatbread",
+      "source": "Local user-provided image: images/Argentina/Griddled Argentine flatbread.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Griddled Argentine flatbread.webp; matched to canonical recipe argentina-tortilla-parrillera using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "bytes": 37256,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "3f93bee2b07cd411d4b4fc282a5d4323d8150d5fb1585db8b3d7e879e91276aa",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 31262,
+      "sourceFileName": "Griddled Argentine flatbread.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 31262,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 316
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-choripan",
+      "assetName": "recipe_argentina_choripan",
+      "path": "res/drawable-nodpi/recipe_argentina_choripan.webp",
+      "purpose": "Local dish photograph matched to Grilled chorizo sandwich",
+      "source": "Local user-provided image: images/Argentina/Grilled chorizo sandwich.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Grilled chorizo sandwich.jpg; matched to canonical recipe argentina-choripan using its dish name.",
+      "dimensionsPx": {
+        "width": 595,
+        "height": 595
+      },
+      "bytes": 49578,
+      "encodingQuality": 53,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "ec09975af00029c4a0250127741a4101f258d59a522ad76a45593c68b0e81833",
+      "sourceDimensionsPx": {
+        "width": 796,
+        "height": 796
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 152739,
+      "sourceFileName": "Grilled chorizo sandwich.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 152739,
+      "preCapDimensionsPx": {
+        "width": 796,
+        "height": 796
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 53, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-provoleta",
+      "assetName": "recipe_argentina_provoleta",
+      "path": "res/drawable-nodpi/recipe_argentina_provoleta.webp",
+      "purpose": "Local dish photograph matched to Grilled provolone",
+      "source": "Local user-provided image: images/Argentina/Grilled provolone.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Grilled provolone.jpg; matched to canonical recipe argentina-provoleta using its dish name.",
+      "dimensionsPx": {
+        "width": 869,
+        "height": 652
+      },
+      "bytes": 49416,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "595300c16b52f7fb46c7dc7e170c18b2160a56153d751d15bcaa0f3233772cc4",
+      "sourceDimensionsPx": {
+        "width": 1440,
+        "height": 1080
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 1143108,
+      "sourceFileName": "Grilled provolone.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 1143108,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 960
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 54, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-jamon-queso",
+      "assetName": "recipe_argentina_empanadas_jamon_queso",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_jamon_queso.webp",
+      "purpose": "Local dish photograph matched to Ham and cheese empanadas",
+      "source": "Local user-provided image: images/Argentina/Ham and cheese empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ham and cheese empanadas.webp; matched to canonical recipe argentina-empanadas-jamon-queso using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 265
+      },
+      "bytes": 23190,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "5a7fb0f75b86a2856a258033f4fdc3b7c3a249e20406eb26ed87fe699d6db5ce",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 265
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 19438,
+      "sourceFileName": "Ham and cheese empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 19438,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 265
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-sorrentinos",
+      "assetName": "recipe_argentina_sorrentinos",
+      "path": "res/drawable-nodpi/recipe_argentina_sorrentinos.webp",
+      "purpose": "Local dish photograph matched to Ham and cheese filled pasta",
+      "source": "Local user-provided image: images/Argentina/Ham and cheese filled pasta.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ham and cheese filled pasta.webp; matched to canonical recipe argentina-sorrentinos using its dish name.",
+      "dimensionsPx": {
+        "width": 824,
+        "height": 824
+      },
+      "bytes": 49570,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f7cdbeb5197eae223259e707ac3445624b7dc0b1798f20788565e72788f0ce7d",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 112246,
+      "sourceFileName": "Ham and cheese filled pasta.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 112246,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 54, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tarta-jamon-queso",
+      "assetName": "recipe_argentina_tarta_jamon_queso",
+      "path": "res/drawable-nodpi/recipe_argentina_tarta_jamon_queso.webp",
+      "purpose": "Local dish photograph matched to Ham and cheese savoury tart",
+      "source": "Local user-provided image: images/Argentina/Ham and cheese savoury tart.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ham and cheese savoury tart.webp; matched to canonical recipe argentina-tarta-jamon-queso using its dish name.",
+      "dimensionsPx": {
+        "width": 650,
+        "height": 650
+      },
+      "bytes": 49606,
+      "encodingQuality": 54,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "4fbc1221ce847e5943e496b88a25ca388cea1510fe225a0f37278bf88529ca60",
+      "sourceDimensionsPx": {
+        "width": 3149,
+        "height": 3149
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 1274616,
+      "sourceFileName": "Ham and cheese savoury tart.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 1274616,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 1280
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 54, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pebete-jamon-queso",
+      "assetName": "recipe_argentina_pebete_jamon_queso",
+      "path": "res/drawable-nodpi/recipe_argentina_pebete_jamon_queso.webp",
+      "purpose": "Local dish photograph matched to Ham and cheese soft roll",
+      "source": "Local user-provided image: images/Argentina/Ham and cheese soft roll.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ham and cheese soft roll.jpg; matched to canonical recipe argentina-pebete-jamon-queso using its dish name.",
+      "dimensionsPx": {
+        "width": 530,
+        "height": 530
+      },
+      "bytes": 44964,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "ccb9c52f6f190b741f78264a3e077281762dd85b9e39a1cb322dd4aa540da84a",
+      "sourceDimensionsPx": {
+        "width": 530,
+        "height": 530
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 52624,
+      "sourceFileName": "Ham and cheese soft roll.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 52624,
+      "preCapDimensionsPx": {
+        "width": 530,
+        "height": 530
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-revuelto-gramajo",
+      "assetName": "recipe_argentina_revuelto_gramajo",
+      "path": "res/drawable-nodpi/recipe_argentina_revuelto_gramajo.webp",
+      "purpose": "Local dish photograph matched to Ham, potato and egg scramble",
+      "source": "Local user-provided image: images/Argentina/Ham, potato and egg scramble.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ham, potato and egg scramble.webp; matched to canonical recipe argentina-revuelto-gramajo using its dish name.",
+      "dimensionsPx": {
+        "width": 764,
+        "height": 509
+      },
+      "bytes": 49276,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "24dcb3bf27ab5620528e799e46c639a12acda306258580e9f125601b599083c2",
+      "sourceDimensionsPx": {
+        "width": 1210,
+        "height": 806
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 109706,
+      "sourceFileName": "Ham, potato and egg scramble.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 109706,
+      "preCapDimensionsPx": {
+        "width": 1210,
+        "height": 806
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 59, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-carne-cuchillo",
+      "assetName": "recipe_argentina_empanadas_carne_cuchillo",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_carne_cuchillo.webp",
+      "purpose": "Local dish photograph matched to Hand-cut beef empanadas",
+      "source": "Local user-provided image: images/Argentina/Hand-cut beef empanadas.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Hand-cut beef empanadas.png; matched to canonical recipe argentina-empanadas-carne-cuchillo using its dish name.",
+      "dimensionsPx": {
+        "width": 493,
+        "height": 493
+      },
+      "bytes": 49954,
+      "encodingQuality": 63,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "eb0a0988035319237a854fe7eb3ff3da583d37d18767c1d82cf53413fd91fb2e",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 1947398,
+      "sourceFileName": "Hand-cut beef empanadas.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 1947398,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 63, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanada-riojana",
+      "assetName": "recipe_argentina_empanada_riojana",
+      "path": "res/drawable-nodpi/recipe_argentina_empanada_riojana.webp",
+      "purpose": "Local dish photograph matched to La Rioja-style beef empanadas",
+      "source": "Local user-provided image: images/Argentina/La Rioja-style beef empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file La Rioja-style beef empanadas.webp; matched to canonical recipe argentina-empanada-riojana using its dish name.",
+      "dimensionsPx": {
+        "width": 592,
+        "height": 592
+      },
+      "bytes": 49678,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8a3c03a741c5d6240eb3dd0f23a8c396bed61dd46415b50feb2345eded311dc9",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 157562,
+      "sourceFileName": "La Rioja-style beef empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 157562,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 59, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-humita-olla",
+      "assetName": "recipe_argentina_humita_olla",
+      "path": "res/drawable-nodpi/recipe_argentina_humita_olla.webp",
+      "purpose": "Local dish photograph matched to Northwestern Argentine corn stew",
+      "source": "Local user-provided image: images/Argentina/Northwestern Argentine corn stew.png",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Northwestern Argentine corn stew.png; matched to canonical recipe argentina-humita-olla using its dish name.",
+      "dimensionsPx": {
+        "width": 375,
+        "height": 375
+      },
+      "bytes": 42112,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "2908e6147aee64d151457b38c758a4b982edb22adfb1f11d585c16b03afb3d8c",
+      "sourceDimensionsPx": {
+        "width": 375,
+        "height": 375
+      },
+      "sourceFormat": "PNG",
+      "sourceBytes": 315780,
+      "sourceFileName": "Northwestern Argentine corn stew.png",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 315780,
+      "preCapDimensionsPx": {
+        "width": 375,
+        "height": 375
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-bife-chorizo",
+      "assetName": "recipe_argentina_bife_chorizo",
+      "path": "res/drawable-nodpi/recipe_argentina_bife_chorizo.webp",
+      "purpose": "Local dish photograph matched to Pan-seared Argentine sirloin",
+      "source": "Local user-provided image: images/Argentina/Pan-seared Argentine sirloin.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Pan-seared Argentine sirloin.webp; matched to canonical recipe argentina-bife-chorizo using its dish name.",
+      "dimensionsPx": {
+        "width": 691,
+        "height": 691
+      },
+      "bytes": 49666,
+      "encodingQuality": 62,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "4c8add124962f51202d7a464dd7aedc526e7d66eb4d560826f71d5fcb064229d",
+      "sourceDimensionsPx": {
+        "width": 768,
+        "height": 768
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 83328,
+      "sourceFileName": "Pan-seared Argentine sirloin.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 83328,
+      "preCapDimensionsPx": {
+        "width": 768,
+        "height": 768
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 62, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-polenta-tuco",
+      "assetName": "recipe_argentina_polenta_tuco",
+      "path": "res/drawable-nodpi/recipe_argentina_polenta_tuco.webp",
+      "purpose": "Local dish photograph matched to Polenta with tomato meat sauce",
+      "source": "Local user-provided image: images/Argentina/Polenta with tomato meat sauce.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Polenta with tomato meat sauce.webp; matched to canonical recipe argentina-polenta-tuco using its dish name.",
+      "dimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "bytes": 49648,
+      "encodingQuality": 73,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "8102f17cc14e39cf81277d0fbe3a69d76fc5051e5f9810bd3c82f7743690792c",
+      "sourceDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 64890,
+      "sourceFileName": "Polenta with tomato meat sauce.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 64890,
+      "preCapDimensionsPx": {
+        "width": 683,
+        "height": 1024
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 73, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-noquis-del-29",
+      "assetName": "recipe_argentina_noquis_del_29",
+      "path": "res/drawable-nodpi/recipe_argentina_noquis_del_29.webp",
+      "purpose": "Local dish photograph matched to Potato gnocchi for the 29th",
+      "source": "Local user-provided image: images/Argentina/Potato gnocchi for the 29th.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Potato gnocchi for the 29th.jpg; matched to canonical recipe argentina-noquis-del-29 using its dish name.",
+      "dimensionsPx": {
+        "width": 699,
+        "height": 765
+      },
+      "bytes": 49116,
+      "encodingQuality": 53,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "c136b21e8069431c629833871ea968b3424dad75a50b70d420886cf68d7543d1",
+      "sourceDimensionsPx": {
+        "width": 1024,
+        "height": 1120
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 172509,
+      "sourceFileName": "Potato gnocchi for the 29th.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 172509,
+      "preCapDimensionsPx": {
+        "width": 1024,
+        "height": 1120
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 53, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tarta-calabaza",
+      "assetName": "recipe_argentina_tarta_calabaza",
+      "path": "res/drawable-nodpi/recipe_argentina_tarta_calabaza.webp",
+      "purpose": "Local dish photograph matched to Pumpkin and cheese tart",
+      "source": "Local user-provided image: images/Argentina/Pumpkin and cheese tart.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Pumpkin and cheese tart.webp; matched to canonical recipe argentina-tarta-calabaza using its dish name.",
+      "dimensionsPx": {
+        "width": 764,
+        "height": 956
+      },
+      "bytes": 49134,
+      "encodingQuality": 57,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "08be615c6d9aeb8fb35610b5b28de1ac9a3c53a2a5d4523dc4568b923c5dcd6a",
+      "sourceDimensionsPx": {
+        "width": 960,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 130368,
+      "sourceFileName": "Pumpkin and cheese tart.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 130368,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 57, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-dulce-batata-pastafrola",
+      "assetName": "recipe_argentina_dulce_batata_pastafrola",
+      "path": "res/drawable-nodpi/recipe_argentina_dulce_batata_pastafrola.webp",
+      "purpose": "Local dish photograph matched to Quince tart",
+      "source": "Local user-provided image: images/Argentina/Quince tart.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Quince tart.jpg; matched to canonical recipe argentina-dulce-batata-pastafrola using its dish name.",
+      "dimensionsPx": {
+        "width": 918,
+        "height": 610
+      },
+      "bytes": 49442,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "4ee320560e2918c400e0aaf205c781a76cf427aa136572e1a8ad566a81389d34",
+      "sourceDimensionsPx": {
+        "width": 1200,
+        "height": 798
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 126801,
+      "sourceFileName": "Quince tart.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 126801,
+      "preCapDimensionsPx": {
+        "width": 1200,
+        "height": 798
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 59, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-ravioles-tuco",
+      "assetName": "recipe_argentina_ravioles_tuco",
+      "path": "res/drawable-nodpi/recipe_argentina_ravioles_tuco.webp",
+      "purpose": "Local dish photograph matched to Ravioli with Argentine tomato sauce",
+      "source": "Local user-provided image: images/Argentina/Ravioli with Argentine tomato sauce.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Ravioli with Argentine tomato sauce.webp; matched to canonical recipe argentina-ravioles-tuco using its dish name.",
+      "dimensionsPx": {
+        "width": 475,
+        "height": 631
+      },
+      "bytes": 49558,
+      "encodingQuality": 59,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "02a5d5cf6783a02e4ead590347495b35d6a3e530b7e0af8eb11621d0974e9766",
+      "sourceDimensionsPx": {
+        "width": 928,
+        "height": 1232
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 259714,
+      "sourceFileName": "Ravioli with Argentine tomato sauce.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 259714,
+      "preCapDimensionsPx": {
+        "width": 928,
+        "height": 1232
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 59, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pollo-horno-papas",
+      "assetName": "recipe_argentina_pollo_horno_papas",
+      "path": "res/drawable-nodpi/recipe_argentina_pollo_horno_papas.webp",
+      "purpose": "Local dish photograph matched to Roast chicken and potatoes",
+      "source": "Local user-provided image: images/Argentina/Roast chicken and potatoes.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Roast chicken and potatoes.webp; matched to canonical recipe argentina-pollo-horno-papas using its dish name.",
+      "dimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "bytes": 49776,
+      "encodingQuality": 52,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f30ce3e6b74b4f334e64dc3c0f25279fff2aef585fa45d27fa31e94672f82ec3",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 59700,
+      "sourceFileName": "Roast chicken and potatoes.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 59700,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 52, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-matambre-arrollado",
+      "assetName": "recipe_argentina_matambre_arrollado",
+      "path": "res/drawable-nodpi/recipe_argentina_matambre_arrollado.webp",
+      "purpose": "Local dish photograph matched to Rolled stuffed flank steak",
+      "source": "Local user-provided image: images/Argentina/Rolled stuffed flank steak.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Rolled stuffed flank steak.webp; matched to canonical recipe argentina-matambre-arrollado using its dish name.",
+      "dimensionsPx": {
+        "width": 426,
+        "height": 531
+      },
+      "bytes": 49932,
+      "encodingQuality": 63,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "3e9321539e91793f958d3e62b4df97269d1f70229e819babe3b2d528a6c18de7",
+      "sourceDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 69362,
+      "sourceFileName": "Rolled stuffed flank steak.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 69362,
+      "preCapDimensionsPx": {
+        "width": 474,
+        "height": 592
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 63, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-empanadas-saltenas",
+      "assetName": "recipe_argentina_empanadas_saltenas",
+      "path": "res/drawable-nodpi/recipe_argentina_empanadas_saltenas.webp",
+      "purpose": "Local dish photograph matched to Salta-style beef empanadas",
+      "source": "Local user-provided image: images/Argentina/Salta-style beef empanadas.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Salta-style beef empanadas.webp; matched to canonical recipe argentina-empanadas-saltenas using its dish name.",
+      "dimensionsPx": {
+        "width": 864,
+        "height": 1080
+      },
+      "bytes": 49904,
+      "encodingQuality": 61,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "314197b852b36e127e1cd17a0862bc7fb65db0837a2c7157cc89185b4988ff3f",
+      "sourceDimensionsPx": {
+        "width": 960,
+        "height": 1200
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 71834,
+      "sourceFileName": "Salta-style beef empanadas.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 71834,
+      "preCapDimensionsPx": {
+        "width": 960,
+        "height": 1200
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 61, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tamales-saltenos",
+      "assetName": "recipe_argentina_tamales_saltenos",
+      "path": "res/drawable-nodpi/recipe_argentina_tamales_saltenos.webp",
+      "purpose": "Local dish photograph matched to Salta-style corn-husk tamales",
+      "source": "Local user-provided image: images/Argentina/Salta-style corn-husk tamales.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Salta-style corn-husk tamales.webp; matched to canonical recipe argentina-tamales-saltenos using its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 449
+      },
+      "bytes": 49856,
+      "encodingQuality": 76,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "e0fbf2900cfff3b9fbd006f332f856104f4520b6493ea2e5ec06be076ff363b0",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 449
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 50704,
+      "sourceFileName": "Salta-style corn-husk tamales.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 50704,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 449
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 76, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tortilla-tamal",
+      "assetName": "recipe_argentina_tortilla_tamal",
+      "path": "res/drawable-nodpi/recipe_argentina_tortilla_tamal.webp",
+      "purpose": "Local dish photograph matched to Santiago del Estero griddle flatbread",
+      "source": "Local user-provided image: images/Argentina/Santiago del Estero griddle flatbread.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Santiago del Estero griddle flatbread.webp; matched to canonical recipe argentina-tortilla-tamal using its dish name.",
+      "dimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "bytes": 49762,
+      "encodingQuality": 81,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "a9dfa47bf670d7da2eb57194c8ece621f9917ed5a54f1a15346e3c20b31ba570",
+      "sourceDimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 46398,
+      "sourceFileName": "Santiago del Estero griddle flatbread.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 46398,
+      "preCapDimensionsPx": {
+        "width": 992,
+        "height": 556
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 81, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-bife-a-caballo",
+      "assetName": "recipe_argentina_bife_a_caballo",
+      "path": "res/drawable-nodpi/recipe_argentina_bife_a_caballo.webp",
+      "purpose": "Local dish photograph matched to Steak topped with fried eggs",
+      "source": "Local user-provided image: images/Argentina/Steak topped with fried eggs.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Steak topped with fried eggs.webp; matched to canonical recipe argentina-bife-a-caballo using its dish name.",
+      "dimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "bytes": 33292,
+      "encodingQuality": 87,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "f1776afc10e2839b471eaeff31f82e8c46bb32d0b209dfc6378b4c833db0f8a4",
+      "sourceDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 26082,
+      "sourceFileName": "Steak topped with fried eggs.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 26082,
+      "preCapDimensionsPx": {
+        "width": 800,
+        "height": 457
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 87, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-pastelitos-batata",
+      "assetName": "recipe_argentina_pastelitos_batata",
+      "path": "res/drawable-nodpi/recipe_argentina_pastelitos_batata.webp",
+      "purpose": "Local dish photograph matched to Sweet potato paste pastries",
+      "source": "Local user-provided image: images/Argentina/Sweet potato paste pastries.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Sweet potato paste pastries.jpg; matched to canonical recipe argentina-pastelitos-batata using its dish name.",
+      "dimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "bytes": 49886,
+      "encodingQuality": 57,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "e6ae6930026e1eaec850edb2af35b43b9df537c5922d001a6aebe124ae3925ef",
+      "sourceDimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 233658,
+      "sourceFileName": "Sweet potato paste pastries.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 233658,
+      "preCapDimensionsPx": {
+        "width": 1000,
+        "height": 669
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 57, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-tarta-verdura",
+      "assetName": "recipe_argentina_tarta_verdura",
+      "path": "res/drawable-nodpi/recipe_argentina_tarta_verdura.webp",
+      "purpose": "Local dish photograph matched to Swiss chard and egg tart",
+      "source": "Local user-provided image: images/Argentina/Swiss chard and egg tart.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Swiss chard and egg tart.jpg; matched to canonical recipe argentina-tarta-verdura using its dish name.",
+      "dimensionsPx": {
+        "width": 735,
+        "height": 552
+      },
+      "bytes": 49356,
+      "encodingQuality": 74,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "83da71822c4dcda77faf3f3834a9bc9ebb848f344f4552f207826bdb3630f585",
+      "sourceDimensionsPx": {
+        "width": 735,
+        "height": 552
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 76838,
+      "sourceFileName": "Swiss chard and egg tart.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 76838,
+      "preCapDimensionsPx": {
+        "width": 735,
+        "height": 552
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 74, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-locro-vegetariano",
+      "assetName": "recipe_argentina_locro_vegetariano",
+      "path": "res/drawable-nodpi/recipe_argentina_locro_vegetariano.webp",
+      "purpose": "Local dish photograph matched to Vegetarian corn and squash stew",
+      "source": "Local user-provided image: images/Argentina/Vegetarian corn and squash stew.webp",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Vegetarian corn and squash stew.webp; matched to canonical recipe argentina-locro-vegetariano using its dish name.",
+      "dimensionsPx": {
+        "width": 637,
+        "height": 900
+      },
+      "bytes": 49472,
+      "encodingQuality": 77,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "0bdff10531e7f83a83900f932ea2465af3357a0e8702bbdb97ac703d6487bb05",
+      "sourceDimensionsPx": {
+        "width": 637,
+        "height": 900
+      },
+      "sourceFormat": "WEBP",
+      "sourceBytes": 50408,
+      "sourceFileName": "Vegetarian corn and squash stew.webp",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 50408,
+      "preCapDimensionsPx": {
+        "width": 637,
+        "height": 900
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 77, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
+    },
+    {
+      "recipeId": "argentina-vitel-tone",
+      "assetName": "recipe_argentina_vitel_tone",
+      "path": "res/drawable-nodpi/recipe_argentina_vitel_tone.webp",
+      "purpose": "Local dish photograph matched to Cold veal with tuna-caper sauce",
+      "source": "Local user-provided image: images/Argentina/Vitel toné — cold veal with tuna-caper sauce.jpg",
+      "creator": "Unknown; supplied in the local image folder",
+      "sourceUrl": null,
+      "sourceOutputId": null,
+      "license": "Unknown; not independently verified.",
+      "licenseUrl": null,
+      "attribution": "Creator and attribution requirements not independently verified.",
+      "promptOrDescription": "Local source file Vitel toné — cold veal with tuna-caper sauce.jpg; matched to canonical recipe argentina-vitel-tone using its dish name.",
+      "dimensionsPx": {
+        "width": 1280,
+        "height": 698
+      },
+      "bytes": 49054,
+      "encodingQuality": 69,
+      "colorProfile": "Converted to and embedded as sRGB.",
+      "sha256": "709f1d27aeeedeb423fb75d1e1834425079d931f26a2325f348a6361466eb641",
+      "sourceDimensionsPx": {
+        "width": 3593,
+        "height": 1960
+      },
+      "sourceFormat": "JPEG",
+      "sourceBytes": 436302,
+      "sourceFileName": "Vitel toné — cold veal with tuna-caper sauce.jpg",
+      "metadataReview": "Filename matched to the canonical dish. Re-encoded as static WebP; source rights were not independently reviewed.",
+      "preCapBytes": 436302,
+      "preCapDimensionsPx": {
+        "width": 1280,
+        "height": 698
+      },
+      "byteCapBytes": 50000,
+      "compressionNote": "Re-encoded as static WebP at quality 69, preserving aspect ratio; resized only as needed to stay within 50000 bytes."
     }
   ]
 }

@@ -66,19 +66,19 @@ def main() -> None:
         '## Image sourcing rules',
         '',
         '- Each row provides a search query and visual direction for one recipe-specific finished-dish image. Search for the actual dish and origin; prefer a clear plate or table presentation. Include fire, grill or smoke only when that recipe is actually grilled or smoked.',
-        '- This index is a first-image discovery input. The project target remains five distinct recipe-specific images for each canonical recipe: **4,455 images**. An image counts only when bundled locally and attached to its canonical ID.',
-        '- Accept an image only after verifying a redistributable license (public domain, CC0, or a suitable Creative Commons license), creator, original source page and attribution terms. Record those fields per image in `app/src/main/assets/recipe-image-metadata.json`. Do not rely on a direct image URL or on “free to download” alone.',
+        '- The target is one matching recipe-specific photograph for each canonical recipe: **891 images**. Search by the dish name, country and region. Do not substitute a different dish; record recipes without an acceptable match as missing.',
+        '- Local files supplied in the user\'s `images` folder may be used for this private, unpublished app per user direction. Record each original filename and local source in `app/src/main/assets/recipe-image-metadata.json`.',
         '- Existing attachments are listed by Android drawable resource name. They are local WebP files; collection-cover assets do not appear in this column.',
-        '- Image standard: lossy WebP, quality 87, sRGB, preserved aspect ratio, normally 960–1280 px on the long edge (up to 1600 px for instructional scenes), with no animation and transparency only when needed. New images must be resized automatically and pass duplicate detection before acceptance.',
-        '- Aim for an average of 50 KB or less when the image remains clean and clear on a phone screen. Treat 250 MB as the rounded full-set storage budget; actual byte totals take precedence over estimates.',
+        '- Image standard: static lossy WebP in sRGB, preserving aspect ratio, with a maximum 1280 px long edge and a hard limit of 50,000 bytes per image. Use quality up to 87; reduce quality to 50 and resize only as needed to meet the byte cap. Transparency is only used when needed.',
+        '- Keep every recipe image bundled offline. Treat 250 MB as the rounded full-set storage budget; actual byte totals take precedence over estimates.',
         '',
-        f'Current recipe-image inventory: **{total_images} / 4,455** images attached across **{sum(bool(row[7]) for row in rows)} / {len(rows)}** recipes; **{len(rows) * 5 - total_images}** images remain to the five-per-recipe target. Per-image bytes and source, creator, license and attribution are recorded in `app/src/main/assets/recipe-image-metadata.json`.',
+        f'Current recipe-image inventory: **{total_images} bundled images** attached across **{sum(bool(row[7]) for row in rows)} / {len(rows)}** recipes; **{len(rows) - sum(bool(row[7]) for row in rows)} recipes** still have no matching image. Recipes without an accepted image are marked missing. Per-image bytes and source, creator, license and attribution are recorded in `app/src/main/assets/recipe-image-metadata.json`.',
         '',
-        '| Recipe ID | Dish | Origin | Collections | Image search query | Image direction | Attached images |',
+        '| Recipe ID | Dish | Origin | Collections | Image search query | Image direction | Image status / asset |',
         '| --- | --- | --- | --- | --- | --- | --- |',
     ]
     for _, dish, recipe_id, origin, collections, query, scene, image_ids in rows:
-        attached = ', '.join(f'`{image_id}`' for image_id in image_ids) if image_ids else '—'
+        attached = ', '.join(f'`{image_id}`' for image_id in image_ids) if image_ids else 'Missing — no matching image accepted yet'
         lines.append('| ' + ' | '.join(map(cell, [f'`{recipe_id}`', dish, origin, ', '.join(collections) or 'Unassigned', query, scene, attached])) + ' |')
     OUTPUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
     print(f'Wrote {OUTPUT.relative_to(ROOT)}: {len(rows)} recipes, {sum(len(v) for v in memberships.values())} collection placements, {total_images} attached image refs.')

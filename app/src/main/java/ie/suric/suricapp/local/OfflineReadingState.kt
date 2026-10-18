@@ -12,7 +12,7 @@ class OfflineReadingState(context: Context) {
     fun isFavourite(id: String): Boolean = id in favourites()
 
     fun setFavourite(id: String, saved: Boolean) {
-        require(id.matches(Regex("(?:article|recipe):[a-z0-9-]{1,120}"))) { "Invalid offline content ID." }
+        require(id.matches(Regex("(?:article|recipe):[\\p{L}\\p{N}-]{1,120}"))) { "Invalid offline content ID." }
         val updated = favourites().toMutableSet().apply {
             if (saved) add(id) else remove(id)
         }
@@ -30,7 +30,7 @@ class OfflineReadingState(context: Context) {
         preferences.edit().putString(KEY_RECENT, JSONArray(updated).toString()).apply()
     }
 
-    private fun isContentId(id: String): Boolean = id.matches(Regex("(?:article|recipe):[a-z0-9-]{1,120}"))
+    private fun isContentId(id: String): Boolean = id.matches(Regex("(?:article|recipe):[\\p{L}\\p{N}-]{1,120}"))
 
     private companion object {
         const val KEY_FAVOURITES = "favourites"

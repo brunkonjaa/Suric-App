@@ -36,7 +36,10 @@
         "zagreb-style",
         "cheese"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_zagreb_style_cheese_strukli"
+      ]
     },
     {
       "id": "croatia-zagorje-baked-štrukli",
@@ -73,7 +76,10 @@
         "zagorje",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_zagorje_baked_strukli"
+      ]
     },
     {
       "id": "croatia-istrian-fuži-with-tomato-and-basil",
@@ -110,7 +116,10 @@
         "istrian",
         "fuži"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_fuzi_with_tomato_and_basil"
+      ]
     },
     {
       "id": "croatia-istrian-fuži-with-forest-mushrooms",
@@ -147,7 +156,10 @@
         "istrian",
         "fuži"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_fuzi_with_forest_mushrooms"
+      ]
     },
     {
       "id": "croatia-istrian-maneštra-bean-soup",
@@ -184,7 +196,10 @@
         "istrian",
         "maneštra"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_manestra_bean_soup"
+      ]
     },
     {
       "id": "croatia-istrian-fritaja-with-asparagus",
@@ -220,7 +235,10 @@
         "istrian",
         "fritaja"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_fritaja_with_asparagus"
+      ]
     },
     {
       "id": "croatia-dalmatian-pašticada-inspired-beef",
@@ -258,7 +276,10 @@
         "dalmatian",
         "pašticada-inspired"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_pasticada_inspired_beef"
+      ]
     },
     {
       "id": "croatia-dalmatian-soparnik-style-chard-pie",
@@ -295,7 +316,10 @@
         "dalmatian",
         "soparnik-style"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_soparnik_style_chard_pie"
+      ]
     },
     {
       "id": "croatia-dalmatian-blitva-and-potatoes",
@@ -331,7 +355,10 @@
         "dalmatian",
         "blitva"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_blitva_and_potatoes"
+      ]
     },
     {
       "id": "croatia-dalmatian-style-black-risotto",
@@ -368,7 +395,10 @@
         "dalmatian-style",
         "black"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_style_black_risotto"
+      ]
     },
     {
       "id": "croatia-dalmatian-tomato-and-rice-soup",
@@ -405,7 +435,10 @@
         "dalmatian",
         "tomato"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_tomato_and_rice_soup"
+      ]
     },
     {
       "id": "croatia-peka-style-lamb-and-potatoes",
@@ -442,7 +475,10 @@
         "peka-style",
         "lamb"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_peka_style_lamb_and_potatoes"
+      ]
     },
     {
       "id": "croatia-peka-style-octopus-and-potatoes",
@@ -479,7 +515,10 @@
         "peka-style",
         "octopus"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_peka_style_octopus_and_potatoes"
+      ]
     },
     {
       "id": "croatia-slavonian-kulen-style-sausage-stew",
@@ -516,7 +555,10 @@
         "slavonian",
         "kulen-style"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_slavonian_kulen_style_sausage_stew"
+      ]
     },
     {
       "id": "croatia-slavonian-fish-paprika-stew",
@@ -553,7 +595,10 @@
         "slavonian",
         "fish"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_slavonian_fish_paprika_stew"
+      ]
     },
     {
       "id": "croatia-zagreb-breaded-veal-cutlets",
@@ -590,7 +635,10 @@
         "zagreb",
         "breaded"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_zagreb_breaded_veal_cutlets"
+      ]
     },
     {
       "id": "croatia-zagreb-style-turkey-with-mlinci",
@@ -627,7 +675,10 @@
         "zagreb-style",
         "turkey"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_zagreb_style_turkey_with_mlinci"
+      ]
     },
     {
       "id": "croatia-kvarner-shrimp-and-tomato-pasta",
@@ -664,7 +715,10 @@
         "kvarner",
         "shrimp"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_kvarner_shrimp_and_tomato_pasta"
+      ]
     },
     {
       "id": "croatia-pag-style-sheep-cheese-polenta",
@@ -700,7 +754,10 @@
         "pag-style",
         "sheep"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_pag_style_sheep_cheese_polenta"
+      ]
     },
     {
       "id": "croatia-dubrovnik-rozata",
@@ -737,7 +794,10 @@
         "dubrovnik",
         "rozata"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dubrovnik_rozata"
+      ]
     },
     {
       "id": "croatia-dalmatian-fritule",
@@ -774,7 +834,10 @@
         "dalmatian",
         "fritule"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_dalmatian_fritule"
+      ]
     },
     {
       "id": "croatia-croatian-walnut-povitica-style-roll",
@@ -811,7 +874,10 @@
         "croatian",
         "walnut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_croatian_walnut_povitica_style_roll"
+      ]
     },
     {
       "id": "croatia-istrian-minestrone-with-corn",
@@ -848,7 +914,10 @@
         "istrian",
         "minestrone"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_minestrone_with_corn"
+      ]
     },
     {
       "id": "croatia-croatian-stuffed-peppers",
@@ -885,7 +954,10 @@
         "croatian",
         "stuffed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_croatian_stuffed_peppers"
+      ]
     },
     {
       "id": "croatia-cabbage-rolls-with-rice",
@@ -922,7 +994,10 @@
         "cabbage",
         "rolls"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_cabbage_rolls_with_rice"
+      ]
     },
     {
       "id": "croatia-croatian-bean-and-barley-stew",
@@ -959,7 +1034,10 @@
         "croatian",
         "bean"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_croatian_bean_and_barley_stew"
+      ]
     },
     {
       "id": "croatia-coastal-grilled-sardines-with-chard",
@@ -996,7 +1074,10 @@
         "coastal",
         "grilled"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_coastal_grilled_sardines_with_chard"
+      ]
     },
     {
       "id": "croatia-baked-adriatic-hake-with-potatoes",
@@ -1033,7 +1114,10 @@
         "baked",
         "adriatic"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_baked_adriatic_hake_with_potatoes"
+      ]
     },
     {
       "id": "croatia-istrian-olive-oil-and-rosemary-focaccia",
@@ -1070,7 +1154,10 @@
         "istrian",
         "olive"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_istrian_olive_oil_and_rosemary_focaccia"
+      ]
     },
     {
       "id": "croatia-apple-strudel-with-cottage-cheese",
@@ -1107,7 +1194,10 @@
         "apple",
         "strudel"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": [
+        "recipe_croatia_apple_strudel_with_cottage_cheese"
+      ]
     }
   ]
 }
