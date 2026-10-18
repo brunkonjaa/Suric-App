@@ -1,13 +1,14 @@
 {
-  "version": 1,
-  "catalogues": [
-    "recipe-catalogue-american.json",
-    "recipe-catalogue-france.json",
-    "recipe-catalogue-italy.json",
-    "recipe-catalogue-germany.json",
-    "recipe-catalogue-spain.json",
-    "recipe-catalogue-mexico.json",
-    "recipe-catalogue-brazil.json",
-    "recipe-catalogue-bosnia-herzegovina.json"
-  ]
+    "version":  1,
+    "catalogues":  [
+                       "recipe-catalogue-american.json",
+                       "recipe-catalogue-france.json",
+                       "recipe-catalogue-italy.json",
+                       "recipe-catalogue-germany.json",
+                       "recipe-catalogue-spain.json",
+                       "recipe-catalogue-mexico.json",
+                       "recipe-catalogue-brazil.json",
+                       "recipe-catalogue-bosnia-herzegovina.json",
+                       "recipe-catalogue-bulgaria.json"
+                   ]
 }
