@@ -1,0 +1,1195 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "de-flammkuchen",
+                        "name":  "Alsatian onion and bacon flatbread",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Alsace",
+                        "description":  "A very thin crisp dough topped with creme fraiche, onion and bacon pieces.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g plain flour",
+                                            "125 ml water",
+                                            "2 tbsp oil",
+                                            "1/2 tsp salt",
+                                            "150 g creme fraiche",
+                                            "1 onion, very thinly sliced",
+                                            "100 g bacon lardons",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, water, oil and salt into a firm dough",
+                                             " knead briefly and rest 15 minutes",
+                                             "Heat oven and a heavy tray to 240 C. Roll dough very thin and place on baking paper",
+                                             "Spread creme fraiche almost to the edge, add onion and bacon and pepper. Slide onto hot tray and bake 10 to 14 minutes until crisp and browned."
+                                         ],
+                        "sides":  "Serve with green salad.",
+                        "substitutions":  "Use thick yogurt mixed with a spoon of cream; omit bacon and add mushrooms.",
+                        "storage":  "Best freshly baked; refrigerate toppings separately if preparing ahead.",
+                        "safety":  "Cook bacon topping thoroughly and avoid cross-contamination.",
+                        "tags":  [
+                                     "Alsace",
+                                     "flatbread",
+                                     "oven"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-apfelpfannkuchen",
+                        "name":  "Apple pancakes",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Thin pan pancakes with tart apple slices, browned at the edges and served warm.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g plain flour",
+                                            "2 eggs",
+                                            "300 ml milk",
+                                            "2 apples, cored and thinly sliced",
+                                            "1 tbsp sugar",
+                                            "1 tsp cinnamon",
+                                            "pinch salt",
+                                            "30 g butter"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour, eggs, milk, sugar, cinnamon and salt into a smooth pourable batter",
+                                             "Rest 10 minutes while you prepare the apples",
+                                             "Melt a little butter in a pan over medium heat. Pour in a thin layer of batter, arrange apple slices on top and cook until edges set. Flip carefully and cook through. Repeat."
+                                         ],
+                        "sides":  "Serve with cinnamon sugar or stewed fruit.",
+                        "substitutions":  "Use pears or omit fruit for plain pancakes.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days; reheat in a pan.",
+                        "safety":  "Cook egg batter through the centre.",
+                        "tags":  [
+                                     "apple",
+                                     "pancake",
+                                     "breakfast"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-bienenstich",
+                        "name":  "Bee sting cake",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Yeast cake with a crisp honey-almond topping and a cool cream filling.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  25,
+                        "servings":  10,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "7 g instant yeast",
+                                            "150 ml warm milk",
+                                            "50 g sugar",
+                                            "1 egg",
+                                            "50 g soft butter",
+                                            "1/2 tsp salt",
+                                            "80 g butter for topping",
+                                            "80 g honey",
+                                            "80 g flaked almonds",
+                                            "250 ml chilled whipping cream",
+                                            "1 tbsp icing sugar"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, milk, sugar, egg, butter and salt into a soft dough. Knead, cover and rise until doubled.",
+                                             "Press dough into a greased 23 cm tin. Warm topping butter and honey until combined, stir in almonds and spread over dough. Rest 20 minutes.",
+                                             "Bake at 180 C for 22 to 25 minutes until golden. Cool completely, then split horizontally with a serrated knife.",
+                                             "Whip chilled cream with icing sugar to soft peaks, spread over the base and replace the almond top. Chill before slicing."
+                                         ],
+                        "sides":  "Serve chilled with coffee.",
+                        "substitutions":  "Use vanilla pastry cream instead of whipped cream, ensuring it is fully chilled before assembly.",
+                        "storage":  "Refrigerate assembled cake and use within 2 days.",
+                        "safety":  "Keep cream chilled; do not leave the assembled cake at room temperature for more than 2 hours.",
+                        "tags":  [
+                                     "cake",
+                                     "almond",
+                                     "cream"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-rinderrouladen",
+                        "name":  "Beef rolls with mustard and pickle",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Central Germany",
+                        "description":  "Thin beef slices rolled around mustard, bacon, onion and pickle, then braised until tender.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  120,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 thin beef topside steaks, about 150 g each",
+                                            "2 tbsp mustard",
+                                            "4 bacon rashers",
+                                            "2 gherkins, quartered lengthwise",
+                                            "1 onion, sliced",
+                                            "1 tbsp oil",
+                                            "500 ml beef stock",
+                                            "1 carrot, chopped",
+                                            "1 tbsp flour"
+                                        ],
+                        "instructions":  [
+                                             "Lay beef flat, season and spread with mustard",
+                                             " add bacon, pickle and onion",
+                                             "Roll tightly and secure with kitchen string or toothpicks",
+                                             "Brown rolls in oil on all sides in a heavy pot. Add carrot and stock",
+                                             " cover and braise gently 90 to 110 minutes until tender",
+                                             "Remove rolls. Simmer liquid and thicken with a little flour slurry if desired."
+                                         ],
+                        "sides":  "Serve with red cabbage and potato dumplings.",
+                        "substitutions":  "Use turkey steaks for a lighter variation and reduce cooking time appropriately.",
+                        "storage":  "Cool in gravy, refrigerate up to 3 days; reheat covered until steaming.",
+                        "safety":  "Cook beef filling hot throughout; remove toothpicks before serving.",
+                        "tags":  [
+                                     "beef",
+                                     "braise",
+                                     "comfort food"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-berliner-pfannkuchen",
+                        "name":  "Berlin jam doughnuts",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Berlin",
+                        "description":  "Pillowy yeast doughnuts filled with jam and rolled in sugar.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  20,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g plain flour",
+                                            "7 g instant yeast",
+                                            "180 ml warm milk",
+                                            "50 g sugar",
+                                            "1 egg",
+                                            "50 g soft butter",
+                                            "1/2 tsp salt",
+                                            "150 g smooth jam",
+                                            "Oil for frying",
+                                            "Caster sugar for coating"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, warm milk, sugar, egg, butter and salt into a soft dough; knead until smooth. Cover and rise until doubled.",
+                                             "Divide into 8 balls, flatten slightly and place on a floured tray. Cover and prove until puffy, 30 to 45 minutes.",
+                                             "Heat oil in a deep pan to 170 C. Fry doughnuts in batches, turning once, until deep golden and cooked through. Drain and cool slightly.",
+                                             "Pipe jam into each doughnut and roll in sugar."
+                                         ],
+                        "sides":  "Serve warm with coffee or tea.",
+                        "substitutions":  "Use seedless raspberry, plum or apricot jam.",
+                        "storage":  "Best on the day made; store covered at room temperature and use within 24 hours.",
+                        "safety":  "Use a thermometer for hot oil; never leave it unattended and keep water away from the pan.",
+                        "tags":  [
+                                     "Berlin",
+                                     "yeast",
+                                     "doughnut"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-currywurst",
+                        "name":  "Berlin-style curry sausage",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Berlin",
+                        "description":  "Sliced sausage topped with a warm tomato curry sauce, a familiar Berlin snack.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 bratwurst sausages",
+                                            "1 tbsp oil",
+                                            "1 small onion, finely diced",
+                                            "400 g passata",
+                                            "2 tbsp tomato puree",
+                                            "1 tbsp mild curry powder",
+                                            "1 tsp paprika",
+                                            "1 tsp sugar",
+                                            "1 tbsp vinegar"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in oil over low heat until soft",
+                                             "Stir in tomato puree, curry powder and paprika for 30 seconds, then add passata, sugar and vinegar. Simmer 15 minutes and season",
+                                             "Grill or pan-cook sausages, turning until browned and cooked through. Slice and spoon sauce over them",
+                                             " dust with a little curry powder."
+                                         ],
+                        "sides":  "Serve with chips or a crusty roll.",
+                        "substitutions":  "Use vegetarian sausages and adjust cooking time to the pack.",
+                        "storage":  "Refrigerate sauce and sausage within 2 hours; use within 3 days and reheat until steaming.",
+                        "safety":  "Cook sausages through to the centre.",
+                        "tags":  [
+                                     "sausage",
+                                     "Berlin",
+                                     "street food"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-kaesespaetzle",
+                        "name":  "Cheese spaetzle",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Swabia",
+                        "description":  "Soft egg noodles layered with melted cheese and crisp fried onions.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g plain flour",
+                                            "4 eggs",
+                                            "150 ml water",
+                                            "1 tsp salt",
+                                            "200 g grated Emmental",
+                                            "100 g grated Bergkaese or mature cheddar",
+                                            "2 onions, thinly sliced",
+                                            "30 g butter"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, eggs, water and salt into a sticky elastic batter",
+                                             " beat until bubbles form",
+                                             "Fry onions slowly in butter until deep golden, about 15 minutes",
+                                             "Press batter through a spaetzle maker or large-holed colander into simmering salted water. When noodles float, lift out and layer in a warm dish with cheeses. Cover briefly to melt",
+                                             " top with onions."
+                                         ],
+                        "sides":  "Serve with green salad.",
+                        "substitutions":  "Use any good melting alpine-style cheese.",
+                        "storage":  "Refrigerate within 2 hours up to 2 days; reheat gently with a splash of water.",
+                        "safety":  "Keep egg batter chilled if held and cook noodles fully.",
+                        "tags":  [
+                                     "Swabia",
+                                     "noodles",
+                                     "cheese"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-kartoffelpuffer",
+                        "name":  "Crispy potato pancakes",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Grated potatoes and onion fried into thin crisp cakes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g floury potatoes, peeled",
+                                            "1 small onion",
+                                            "1 egg",
+                                            "2 tbsp flour",
+                                            "1/2 tsp salt",
+                                            "oil for shallow frying"
+                                        ],
+                        "instructions":  [
+                                             "Coarsely grate potatoes and onion",
+                                             " squeeze out liquid using a clean towel",
+                                             "Mix with egg, flour and salt",
+                                             "Heat a thin layer of oil in a pan. Spoon in small mounds, flatten and fry 3 to 4 minutes per side until crisp and cooked through. Drain on paper."
+                                         ],
+                        "sides":  "Serve with applesauce or sour cream.",
+                        "substitutions":  "Use potato starch instead of flour for a gluten-free option.",
+                        "storage":  "Best fresh; refrigerate leftovers and re-crisp in a hot oven.",
+                        "safety":  "Cook through and handle hot oil carefully.",
+                        "tags":  [
+                                     "potato",
+                                     "pancake",
+                                     "street food"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-frankfurter-gruene-sosse",
+                        "name":  "Frankfurt green herb sauce",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Hesse",
+                        "description":  "A cool herb sauce traditionally served with potatoes and eggs in spring.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g mixed soft herbs such as parsley, chives, chervil, sorrel, cress, borage and salad burnet",
+                                            "200 g sour cream",
+                                            "150 g quark or thick yogurt",
+                                            "2 boiled eggs",
+                                            "1 tsp mustard",
+                                            "1 tbsp lemon juice",
+                                            "Salt and pepper"
+                                        ],
+                        "instructions":  [
+                                             "Wash herbs well and dry thoroughly",
+                                             " chop finely",
+                                             "Mix sour cream, quark, mustard and lemon juice until smooth",
+                                             "Fold in herbs and finely chopped boiled eggs. Season and chill 20 minutes so flavours combine."
+                                         ],
+                        "sides":  "Serve cold with boiled potatoes and eggs.",
+                        "substitutions":  "Use a locally available mix of parsley, chives, dill and watercress.",
+                        "storage":  "Keep refrigerated and use within 24 hours.",
+                        "safety":  "Keep sauce chilled; use freshly cooked eggs and refrigerate promptly.",
+                        "tags":  [
+                                     "Hesse",
+                                     "herbs",
+                                     "sauce"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-zwiebelkuchen",
+                        "name":  "German onion tart",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Swabia and southwest",
+                        "description":  "A savoury yeast-crust tart filled with soft onions, bacon and a light egg mixture.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "250 g plain flour",
+                                            "7 g instant yeast",
+                                            "150 ml warm milk",
+                                            "30 g butter",
+                                            "1/2 tsp salt",
+                                            "600 g onions, thinly sliced",
+                                            "100 g bacon lardons",
+                                            "2 eggs",
+                                            "150 g sour cream",
+                                            "1 tsp caraway",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, warm milk, butter and salt into a soft dough",
+                                             " knead, cover and rise until doubled",
+                                             "Cook onions slowly in a pan until soft and translucent",
+                                             " cool slightly",
+                                             "Heat oven to 190 C. Press dough into a greased shallow tin and raise a small edge",
+                                             "Whisk eggs with sour cream, caraway and pepper",
+                                             " stir in onions and bacon, pour into crust and bake 35 to 40 minutes until set and golden."
+                                         ],
+                        "sides":  "Serve warm with a green salad.",
+                        "substitutions":  "Omit bacon and add chopped chives.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat until hot.",
+                        "safety":  "Cook bacon and egg filling thoroughly.",
+                        "tags":  [
+                                     "southwest",
+                                     "onion",
+                                     "tart"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-pfannkuchen",
+                        "name":  "German pancakes",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Thin versatile pancakes served with sweet or savoury fillings.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g plain flour",
+                                            "3 eggs",
+                                            "400 ml milk",
+                                            "pinch salt",
+                                            "1 tbsp sugar, optional",
+                                            "butter for pan"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour, eggs, milk and salt into a smooth batter",
+                                             "Rest 10 minutes",
+                                             "Warm a little butter in a non-stick pan. Add a thin layer of batter and swirl to coat",
+                                             "Cook until underside is golden, flip and cook the other side. Repeat with remaining batter."
+                                         ],
+                        "sides":  "Serve with jam, fruit or savoury cheese filling.",
+                        "substitutions":  "Use half wholemeal flour for a nuttier flavour.",
+                        "storage":  "Refrigerate leftovers up to 2 days and reheat in a pan.",
+                        "safety":  "Cook egg batter fully, especially thicker pancakes.",
+                        "tags":  [
+                                     "pancake",
+                                     "basic",
+                                     "family"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-sauerbraten",
+                        "name":  "German pot roast with tangy gravy",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Rhineland",
+                        "description":  "Beef marinated in vinegar, aromatics and spices, then slowly braised until tender.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  150,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1.2 kg beef roasting joint",
+                                            "500 ml red wine vinegar",
+                                            "500 ml water",
+                                            "1 onion, sliced",
+                                            "1 carrot, sliced",
+                                            "2 bay leaves",
+                                            "6 peppercorns",
+                                            "3 cloves",
+                                            "2 tbsp oil",
+                                            "300 ml beef stock",
+                                            "1 tbsp flour"
+                                        ],
+                        "instructions":  [
+                                             "Heat vinegar, water, onion, carrot and spices until steaming",
+                                             " cool completely",
+                                             "Put beef in a non-reactive covered dish, pour over cooled marinade and refrigerate 2 to 3 days, turning daily",
+                                             "Remove beef and pat dry",
+                                             " strain and reserve marinade",
+                                             "Brown beef in oil in a casserole",
+                                             " add vegetables, 250 ml marinade and stock. Cover and braise at 160 C for about 2 hours, turning once",
+                                             "Rest meat, strain and reduce gravy",
+                                             " thicken lightly if desired."
+                                         ],
+                        "sides":  "Serve with potato dumplings and red cabbage.",
+                        "substitutions":  "Use a splash of apple juice in place of some vinegar for a milder sauce.",
+                        "storage":  "Refrigerate meat in gravy up to 3 days; reheat until steaming.",
+                        "safety":  "Marinate only under refrigeration in a non-reactive covered container.",
+                        "tags":  [
+                                     "Rhineland",
+                                     "beef",
+                                     "braise"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-gruenkohl",
+                        "name":  "Kale with potatoes and sausage",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Northern Germany",
+                        "description":  "Slow-simmered kale with potatoes and smoked sausage for a hearty winter plate.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  75,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g kale, washed and chopped",
+                                            "1 onion, diced",
+                                            "1 tbsp oil",
+                                            "500 ml stock",
+                                            "600 g potatoes, peeled and halved",
+                                            "4 smoked sausages",
+                                            "1 tsp mustard",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Blanch kale in boiling water for 2 minutes, drain and chop",
+                                             "Soften onion in oil in a casserole. Add kale and stock, cover and simmer gently for 45 minutes",
+                                             "Add potatoes and sausages and cook until potatoes are tender and sausages are hot. Stir in mustard and pepper."
+                                         ],
+                        "sides":  "Serve with extra mustard.",
+                        "substitutions":  "Use smoked tofu or beans instead of sausage.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming hot.",
+                        "safety":  "Heat sausages fully and keep raw meat separate.",
+                        "tags":  [
+                                     "kale",
+                                     "winter",
+                                     "one-pot"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-leipziger-allerlei",
+                        "name":  "Leipzig mixed vegetables",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Saxony",
+                        "description":  "A spring vegetable dish of peas, carrots and asparagus with a light butter sauce.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g carrots, diced",
+                                            "200 g peas",
+                                            "200 g asparagus, cut in pieces",
+                                            "150 g cauliflower florets",
+                                            "30 g butter",
+                                            "1 tbsp flour",
+                                            "250 ml vegetable stock",
+                                            "2 tbsp cream",
+                                            "1 tbsp chopped parsley"
+                                        ],
+                        "instructions":  [
+                                             "Cook carrots, cauliflower and asparagus in lightly salted water until just tender, adding peas for the final 3 minutes",
+                                             "Melt butter in a saucepan and stir in flour for one minute",
+                                             "Whisk in stock and simmer until smooth and lightly thickened",
+                                             "Fold in drained vegetables and cream. Warm gently, season and finish with parsley."
+                                         ],
+                        "sides":  "Serve with boiled potatoes or roasted meat.",
+                        "substitutions":  "Use seasonal green beans or broccoli in place of asparagus.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days; reheat gently.",
+                        "safety":  "Do not leave cooked vegetables at room temperature.",
+                        "tags":  [
+                                     "Saxony",
+                                     "vegetables",
+                                     "spring"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-himmel-un-aed",
+                        "name":  "Mashed potato with apple and onion",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Rhineland",
+                        "description":  "A sweet-savoury pairing of mashed potatoes, apple sauce and browned onions.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "900 g floury potatoes, peeled and cubed",
+                                            "3 apples, peeled and sliced",
+                                            "1 tbsp lemon juice",
+                                            "30 g butter",
+                                            "2 onions, thinly sliced",
+                                            "2 tbsp oil",
+                                            "120 ml warm milk",
+                                            "Salt and pepper"
+                                        ],
+                        "instructions":  [
+                                             "Simmer potatoes in salted water until tender",
+                                             "Drain and mash with warm milk and half the butter",
+                                             "Cook apples with lemon juice and 2 tbsp water until soft, then mash roughly into a sauce",
+                                             "Slowly fry onions in oil until golden. Serve apple sauce beside potato mash and top with onions."
+                                         ],
+                        "sides":  "Serve with fried black pudding or vegetarian sausages.",
+                        "substitutions":  "Use pear with the apples for a sweeter sauce.",
+                        "storage":  "Refrigerate components promptly; use within 2 days and reheat until hot.",
+                        "safety":  "Cook sausages separately and through if serving them.",
+                        "tags":  [
+                                     "Rhineland",
+                                     "potato",
+                                     "apple"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-koenigsberger-klopse",
+                        "name":  "Meatballs in caper sauce",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "East Prussia tradition",
+                        "description":  "Tender veal or pork meatballs served in a light white sauce with capers.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g minced veal or pork",
+                                            "1 small onion, finely grated",
+                                            "1 egg",
+                                            "40 g breadcrumbs",
+                                            "500 ml low-salt stock",
+                                            "1 bay leaf",
+                                            "25 g butter",
+                                            "25 g flour",
+                                            "100 ml milk",
+                                            "2 tbsp capers",
+                                            "1 tbsp lemon juice"
+                                        ],
+                        "instructions":  [
+                                             "Mix mince, onion, egg, breadcrumbs and pepper. Shape 12 small balls",
+                                             "Bring stock and bay leaf to a gentle simmer. Add meatballs and poach 12 to 15 minutes until cooked through",
+                                             "Lift out meatballs. Melt butter, stir in flour for a minute, then whisk in strained cooking stock and milk",
+                                             " simmer until smooth",
+                                             "Add capers and lemon, return meatballs and warm gently."
+                                         ],
+                        "sides":  "Serve with boiled potatoes and beetroot.",
+                        "substitutions":  "Use turkey mince; choose gluten-free breadcrumbs and flour if needed.",
+                        "storage":  "Refrigerate within 2 hours up to 2 days; reheat gently until steaming.",
+                        "safety":  "Cook minced meatballs thoroughly; avoid tasting sauce before they are cooked.",
+                        "tags":  [
+                                     "meatballs",
+                                     "caper sauce",
+                                     "comfort food"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-labskaus",
+                        "name":  "North German potato and beef mash",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Hamburg and coast",
+                        "description":  "A sailor-style mash of potato and corned beef, served with beetroot and egg.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g potatoes, peeled and cubed",
+                                            "300 g cooked corned beef",
+                                            "1 onion, chopped",
+                                            "2 tbsp butter",
+                                            "100 ml warm milk",
+                                            "4 eggs",
+                                            "4 pickled gherkins",
+                                            "200 g cooked beetroot",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes in salted water until tender",
+                                             " drain and mash with warm milk and half the butter",
+                                             "Cook onion in remaining butter until soft. Add corned beef and heat through, breaking it into flakes",
+                                             "Fold beef and onion through the mash and season with pepper",
+                                             "Fry eggs and serve on top with beetroot and gherkins."
+                                         ],
+                        "sides":  "Serve with pickled herring if desired.",
+                        "substitutions":  "Use cooked leftover brisket, finely shredded.",
+                        "storage":  "Refrigerate mash promptly for up to 2 days; keep eggs and pickles separate.",
+                        "safety":  "Reheat mash until steaming; cook eggs to the preferred safe doneness.",
+                        "tags":  [
+                                     "Hamburg",
+                                     "potato",
+                                     "beef"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-bratkartoffeln",
+                        "name":  "Pan-fried potatoes",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Crisp-edged potatoes with onion, traditionally made from cooked potatoes.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "800 g waxy potatoes, cooked and chilled",
+                                            "1 onion, finely sliced",
+                                            "2 tbsp rapeseed oil",
+                                            "1 tbsp butter",
+                                            "1 tsp marjoram",
+                                            "Salt and black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Slice cooked potatoes into even rounds",
+                                             "Heat oil in a wide heavy pan. Add potatoes in one layer and leave undisturbed until the undersides brown",
+                                             "Turn in batches, add onion and butter, then fry gently until crisp and the onion is soft. Season with marjoram, salt and pepper."
+                                         ],
+                        "sides":  "Serve with fried eggs, salad or sausages.",
+                        "substitutions":  "Use leftover boiled potatoes; add chopped parsley instead of marjoram.",
+                        "storage":  "Use promptly cooked and chilled potatoes; refrigerate leftovers and use within 2 days.",
+                        "safety":  "Keep raw-meat utensils away from the finished potatoes.",
+                        "tags":  [
+                                     "potato",
+                                     "pan-fried",
+                                     "side dish"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-kartoffelkloesse",
+                        "name":  "Potato dumplings",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Thuringia",
+                        "description":  "Tender potato dumplings made from cooked potatoes and flour, suited to roast gravy.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "900 g floury potatoes",
+                                            "1 egg",
+                                            "120 g potato starch",
+                                            "1/2 tsp salt",
+                                            "pinch nutmeg",
+                                            "20 g butter"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes in their skins until tender, drain and peel while warm",
+                                             "Press through a ricer and cool until just warm",
+                                             "Mix with egg, starch, salt and nutmeg. Shape 8 dumplings with damp hands",
+                                             "Poach in gently simmering salted water for 15 to 18 minutes until they rise and feel firm. Lift out with a slotted spoon."
+                                         ],
+                        "sides":  "Serve with roast gravy and braised red cabbage.",
+                        "substitutions":  "Use extra starch if potatoes are very moist.",
+                        "storage":  "Best fresh; refrigerate leftovers and pan-fry next day.",
+                        "safety":  "Maintain a gentle simmer to prevent dumplings breaking apart.",
+                        "tags":  [
+                                     "Thuringia",
+                                     "potato",
+                                     "dumpling"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-rote-gruetze",
+                        "name":  "Red berry pudding",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Northern Germany",
+                        "description":  "A spoonable berry dessert thickened lightly with starch and served chilled.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g mixed red berries, fresh or frozen",
+                                            "80 g sugar",
+                                            "250 ml water",
+                                            "2 tbsp cornflour",
+                                            "2 tbsp cold water",
+                                            "1 tsp lemon juice"
+                                        ],
+                        "instructions":  [
+                                             "Put berries, sugar and water in a saucepan and bring to a simmer",
+                                             "Cook gently for 5 minutes until fruit softens but some berries hold shape",
+                                             "Mix cornflour with cold water and stir into berries. Simmer one minute until glossy and thick",
+                                             "Add lemon juice, cool and chill."
+                                         ],
+                        "sides":  "Serve with cold cream, custard or vanilla sauce.",
+                        "substitutions":  "Use any mix of raspberries, cherries, currants and strawberries.",
+                        "storage":  "Keep covered and refrigerated; use within 2 days.",
+                        "safety":  "Cool promptly and keep dairy accompaniments chilled.",
+                        "tags":  [
+                                     "berries",
+                                     "dessert",
+                                     "summer"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-eintopf",
+                        "name":  "Sausage and vegetable stew",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Northern Germany",
+                        "description":  "A flexible one-pot meal of potatoes, root vegetables and sausage in broth.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g potatoes, diced",
+                                            "2 carrots, sliced",
+                                            "1 leek, sliced and rinsed",
+                                            "1 onion, diced",
+                                            "150 g celeriac, diced",
+                                            "1 litre low-salt stock",
+                                            "250 g smoked sausage, sliced",
+                                            "1 tsp marjoram",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Soften onion in a large pot with a little oil",
+                                             "Add potatoes, carrots, leek, celeriac and stock. Simmer partly covered until vegetables are tender, 25 to 30 minutes",
+                                             "Stir in sausage and marjoram and simmer 8 minutes. Mash a few potato pieces into the broth to thicken",
+                                             " season."
+                                         ],
+                        "sides":  "Serve with rye bread and mustard.",
+                        "substitutions":  "Replace sausage with white beans for a meat-free pot.",
+                        "storage":  "Cool promptly, refrigerate up to 3 days, reheat to steaming hot.",
+                        "safety":  "Reheat once and ensure sausage is piping hot.",
+                        "tags":  [
+                                     "one-pot",
+                                     "stew",
+                                     "vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-griessbrei",
+                        "name":  "Semolina pudding",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "A quick warm milk pudding commonly eaten with fruit compote.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  12,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "750 ml milk",
+                                            "75 g fine wheat semolina",
+                                            "30 g sugar",
+                                            "1 tsp vanilla extract",
+                                            "pinch salt",
+                                            "20 g butter",
+                                            "1 egg yolk, optional"
+                                        ],
+                        "instructions":  [
+                                             "Warm milk, sugar, vanilla and salt in a saucepan until steaming but not boiling",
+                                             "Whisk semolina in gradually and stir over low heat for 5 to 8 minutes until thick and smooth",
+                                             "Remove from heat and stir in butter. If using yolk, temper it with a spoon of hot pudding first, then mix in off heat."
+                                         ],
+                        "sides":  "Serve with cherry compote, cinnamon sugar or applesauce.",
+                        "substitutions":  "Use oat milk and dairy-free spread; omit yolk.",
+                        "storage":  "Refrigerate promptly and use within 2 days; reheat gently with a splash of milk.",
+                        "safety":  "If adding egg yolk, stir in off heat and serve promptly.",
+                        "tags":  [
+                                     "pudding",
+                                     "semolina",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-sauerkraut",
+                        "name":  "Slow-cooked sauerkraut",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Sauerkraut gently simmered with apple, onion and juniper for a mellow side dish.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "500 g sauerkraut, drained lightly",
+                                            "1 onion, sliced",
+                                            "1 apple, grated",
+                                            "1 tbsp oil",
+                                            "150 ml water or stock",
+                                            "1 bay leaf",
+                                            "3 juniper berries, lightly crushed",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Rinse sauerkraut briefly if very sharp, then drain",
+                                             "Cook onion in oil until soft",
+                                             "Add apple, sauerkraut, water, bay and juniper. Cover and simmer gently 30 to 35 minutes, stirring once or twice",
+                                             "Remove bay and juniper berries, season with pepper."
+                                         ],
+                        "sides":  "Serve beside sausages, pork or potato dumplings.",
+                        "substitutions":  "Use pear instead of apple; omit juniper if unavailable.",
+                        "storage":  "Refrigerate promptly up to 4 days and reheat until hot.",
+                        "safety":  "Use clean utensils and refrigerate leftovers promptly.",
+                        "tags":  [
+                                     "cabbage",
+                                     "side dish",
+                                     "fermented"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-nuernberger-bratwurst",
+                        "name":  "Small Nuremberg sausages",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Franconia",
+                        "description":  "Small marjoram-seasoned sausages cooked quickly on a grill or in a pan.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  12,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "12 small bratwurst sausages",
+                                            "1 tsp oil",
+                                            "1 tsp dried marjoram",
+                                            "1 tsp mustard"
+                                        ],
+                        "instructions":  [
+                                             "Pat sausages dry and lightly brush with oil",
+                                             "Heat a grill pan over medium heat. Cook sausages, turning often until browned and cooked through, about 10 to 12 minutes",
+                                             "Sprinkle with marjoram and serve with mustard."
+                                         ],
+                        "sides":  "Serve with sauerkraut, potato salad or a crusty roll.",
+                        "substitutions":  "Use vegetarian mini sausages and follow pack directions.",
+                        "storage":  "Refrigerate leftovers within 2 hours and use within 2 days.",
+                        "safety":  "Cook sausages through the centre; keep raw sausage separate from ready-to-eat food.",
+                        "tags":  [
+                                     "Franconia",
+                                     "sausage",
+                                     "grill"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-erbsensuppe",
+                        "name":  "Split pea soup",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Nationwide",
+                        "description":  "Thick dried-pea soup with vegetables and smoky sausage, a filling cold-weather meal.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  90,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g dried green split peas, rinsed",
+                                            "1 onion, diced",
+                                            "2 carrots, diced",
+                                            "150 g celeriac, diced",
+                                            "1.5 litres water or stock",
+                                            "1 bay leaf",
+                                            "1 tsp marjoram",
+                                            "200 g smoked sausage, sliced",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Rinse peas and check for debris",
+                                             "Put peas, onion, carrots, celeriac, bay and stock in a pot. Bring to a boil, skim foam, then simmer partly covered until peas soften, 60 to 75 minutes",
+                                             "Stir regularly and add water if thick. Add sausage and marjoram for the last 10 minutes. Remove bay and season."
+                                         ],
+                        "sides":  "Serve with dark bread.",
+                        "substitutions":  "Omit sausage or use smoked tofu.",
+                        "storage":  "Refrigerate within 2 hours for up to 3 days; soup thickens as it cools.",
+                        "safety":  "Keep hot soup simmering gently and stir to prevent sticking.",
+                        "tags":  [
+                                     "peas",
+                                     "soup",
+                                     "winter"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-dampfnudeln",
+                        "name":  "Steamed yeast dumplings",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Bavaria and Palatinate",
+                        "description":  "Soft yeast dumplings steamed in a covered pan until fluffy with a lightly browned base.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  35,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g plain flour",
+                                            "7 g instant yeast",
+                                            "250 ml warm milk",
+                                            "50 g sugar",
+                                            "1 egg",
+                                            "50 g softened butter",
+                                            "1/2 tsp salt",
+                                            "150 ml milk for pan",
+                                            "25 g butter for pan"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, sugar, salt, egg, warm milk and softened butter into a soft dough",
+                                             "Knead until smooth, cover and rise until doubled. Divide into 8 balls and rest 15 minutes",
+                                             "Warm pan milk, butter and a pinch of salt in a lidded wide pan. Arrange dumplings, cover tightly and steam gently 20 to 25 minutes without lifting lid. Let bases lightly caramelise as liquid evaporates."
+                                         ],
+                        "sides":  "Serve with vanilla sauce, fruit compote or soup.",
+                        "substitutions":  "Use plant milk and oil for a dairy-free version.",
+                        "storage":  "Best fresh; refrigerate leftovers and steam or microwave until hot.",
+                        "safety":  "Check centres are cooked; avoid hot steam when lifting lid.",
+                        "tags":  [
+                                     "yeast",
+                                     "dumpling",
+                                     "sweet or savoury"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-spaetzle",
+                        "name":  "Swabian egg noodles",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Swabia",
+                        "description":  "Chewy hand-cut egg noodles served as a side or tossed with butter.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g plain flour",
+                                            "3 eggs",
+                                            "120 ml water",
+                                            "1 tsp salt",
+                                            "1 tbsp butter"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, eggs, water and salt into a sticky batter",
+                                             " beat until elastic",
+                                             "Bring a large pot of salted water to a simmer",
+                                             " scrape small ribbons of batter into the water using a board and knife, or use a spaetzle press",
+                                             "When noodles float, lift out with a slotted spoon and drain",
+                                             "Toss with butter and serve."
+                                         ],
+                        "sides":  "Serve with lentil stew, gravy or cheese.",
+                        "substitutions":  "Use a spaetzle maker if available; batter can be loosened with a little water.",
+                        "storage":  "Refrigerate cooked noodles for up to 2 days; reheat in butter.",
+                        "safety":  "Cook egg batter noodles fully and avoid splashing hot water.",
+                        "tags":  [
+                                     "Swabia",
+                                     "noodles",
+                                     "side dish"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-maultaschen",
+                        "name":  "Swabian filled pasta parcels",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Swabia",
+                        "description":  "Large pasta parcels filled with spinach, onion and minced meat or a meat-free mixture.",
+                        "prepMinutes":  45,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "300 g pasta flour",
+                                            "3 eggs",
+                                            "1 tbsp water",
+                                            "200 g spinach, wilted and squeezed",
+                                            "150 g minced pork",
+                                            "1 small onion, finely diced",
+                                            "2 tbsp breadcrumbs",
+                                            "1 tbsp chopped parsley",
+                                            "black pepper"
+                                        ],
+                        "instructions":  [
+                                             "Mix pasta flour, 2 eggs and water into a firm dough",
+                                             " knead, wrap and rest 30 minutes",
+                                             "Mix spinach, pork, onion, breadcrumbs, parsley, remaining egg and pepper",
+                                             "Divide filling into 8 portions",
+                                             "Roll dough thinly into sheets, place filling mounds with space between, fold and seal edges firmly. Cut into parcels",
+                                             "Simmer gently in salted water or stock for 10 to 12 minutes until pasta is tender and filling cooked."
+                                         ],
+                        "sides":  "Serve in clear broth or sliced and pan-fried with onions.",
+                        "substitutions":  "Omit meat and add ricotta or mushrooms.",
+                        "storage":  "Refrigerate cooked parcels within 2 hours and use within 2 days; reheat until hot.",
+                        "safety":  "Cook minced pork filling fully and seal parcels to prevent leakage.",
+                        "tags":  [
+                                     "Swabia",
+                                     "pasta",
+                                     "filled"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-thueringer-kloesse",
+                        "name":  "Thuringian potato dumplings",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Thuringia",
+                        "description":  "Soft dumplings combining raw grated potato with cooked potato and toasted bread cubes.",
+                        "prepMinutes":  40,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "1 kg floury potatoes",
+                                            "100 g white bread, cubed",
+                                            "30 g butter",
+                                            "1 tsp salt",
+                                            "2 tbsp potato starch"
+                                        ],
+                        "instructions":  [
+                                             "Boil half the potatoes until tender, peel and mash while warm",
+                                             "Finely grate remaining raw potatoes and squeeze very dry through a clean cloth",
+                                             "Mix raw potato with mash, salt and starch. Fry bread cubes in butter until golden",
+                                             "Shape dumplings around a few bread cubes",
+                                             "Poach gently in salted water 18 to 20 minutes until firm and floating."
+                                         ],
+                        "sides":  "Serve with roast gravy and red cabbage.",
+                        "substitutions":  "Starch amount may vary with potato moisture; add only enough to shape.",
+                        "storage":  "Best fresh; refrigerate leftovers and slice-fry next day.",
+                        "safety":  "Maintain gentle simmer; boiling hard can break dumplings.",
+                        "tags":  [
+                                     "Thuringia",
+                                     "potato",
+                                     "dumpling"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "de-kartoffelsalat",
+                        "name":  "Warm potato salad",
+                        "englishName":  null,
+                        "country":  "Germany",
+                        "region":  "Swabia",
+                        "description":  "Waxy potatoes dressed warm with a sharp onion and stock vinaigrette.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "900 g waxy potatoes",
+                                            "1 small onion, finely diced",
+                                            "200 ml low-salt vegetable stock",
+                                            "3 tbsp white wine vinegar",
+                                            "2 tbsp neutral oil",
+                                            "1 tsp mustard",
+                                            "1 tsp sugar",
+                                            "Salt and black pepper",
+                                            "2 tbsp chopped chives"
+                                        ],
+                        "instructions":  [
+                                             "Boil potatoes whole in their skins until just tender. Drain, cool enough to handle, peel and slice while warm.",
+                                             "Warm stock and onion in a small pan for 3 minutes. Whisk vinegar, oil, mustard and sugar together, then stir into the stock.",
+                                             "Pour dressing over warm potatoes and fold gently. Rest 15 minutes to absorb, season and add chives. Serve warm or at room temperature."
+                                         ],
+                        "sides":  "Serve with grilled sausages, schnitzel or a green salad.",
+                        "substitutions":  "Use apple cider vinegar and spring onion if needed.",
+                        "storage":  "Refrigerate within 2 hours and use within 2 days; serve cold or reheat gently.",
+                        "safety":  "Keep salad chilled if not serving soon; do not leave it out for extended periods.",
+                        "tags":  [
+                                     "Swabia",
+                                     "potato",
+                                     "salad"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:germany",
+                            "title":  "German recipes",
+                            "recipeIds":  [
+                                              "de-flammkuchen",
+                                              "de-apfelpfannkuchen",
+                                              "de-bienenstich",
+                                              "de-rinderrouladen",
+                                              "de-berliner-pfannkuchen",
+                                              "de-currywurst",
+                                              "de-kaesespaetzle",
+                                              "de-kartoffelpuffer",
+                                              "de-frankfurter-gruene-sosse",
+                                              "de-zwiebelkuchen",
+                                              "de-pfannkuchen",
+                                              "de-sauerbraten",
+                                              "de-gruenkohl",
+                                              "de-leipziger-allerlei",
+                                              "de-himmel-un-aed",
+                                              "de-koenigsberger-klopse",
+                                              "de-labskaus",
+                                              "de-bratkartoffeln",
+                                              "de-kartoffelkloesse",
+                                              "de-rote-gruetze",
+                                              "de-eintopf",
+                                              "de-griessbrei",
+                                              "de-sauerkraut",
+                                              "de-nuernberger-bratwurst",
+                                              "de-erbsensuppe",
+                                              "de-dampfnudeln",
+                                              "de-spaetzle",
+                                              "de-maultaschen",
+                                              "de-thueringer-kloesse",
+                                              "de-kartoffelsalat"
+                                          ]
+                        }
+                    ]
+}

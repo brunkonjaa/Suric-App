@@ -3,6 +3,7 @@
   "catalogues": [
     "recipe-catalogue-american.json",
     "recipe-catalogue-france.json",
-    "recipe-catalogue-italy.json"
+    "recipe-catalogue-italy.json",
+    "recipe-catalogue-germany.json"
   ]
 }
