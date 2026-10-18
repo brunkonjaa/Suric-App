@@ -14,6 +14,16 @@
                        "recipe-catalogue-hungary.json",
                        "recipe-catalogue-india.json",
                        "recipe-catalogue-japan.json",
-                       "recipe-catalogue-africa.json"
+                       "recipe-catalogue-africa.json",
+                       "recipe-catalogue-china.json",
+                       "recipe-catalogue-croatia.json",
+                       "recipe-catalogue-macedonia.json",
+                       "recipe-catalogue-morocco.json",
+                       "recipe-catalogue-nigeria.json",
+                       "recipe-catalogue-persian.json",
+                       "recipe-catalogue-romania.json",
+                       "recipe-catalogue-serbia.json",
+                       "recipe-catalogue-bbq.json",
+                       "recipe-catalogue-seafood.json"
                    ]
 }

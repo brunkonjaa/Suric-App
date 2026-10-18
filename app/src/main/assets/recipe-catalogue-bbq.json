@@ -1,0 +1,2767 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "bbq-australian-prawns-on-the-barbie",
+      "name": "Australian prawns on the barbie",
+      "englishName": null,
+      "country": "Australia",
+      "region": "Coastal barbecue",
+      "description": "Australian prawns on the barbie is a Coastal barbecue-style dish featuring large raw prawns, peeled and deveined, quick-grilled over medium-high heat, with 2 garlic cloves, 1 lemon. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 20,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g large raw prawns, peeled and deveined",
+        "2 garlic cloves",
+        "1 lemon",
+        "2 tbsp olive oil",
+        "1 tbsp parsley",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with lemon, bread and green salad.",
+      "substitutions": "Use scallops or firm fish cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Australia",
+        "Coastal barbecue",
+        "grill-seafood",
+        "australian",
+        "prawns"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-portuguese-piri-piri-prawns",
+      "name": "Portuguese piri-piri prawns",
+      "englishName": null,
+      "country": "Portugal",
+      "region": "Algarve",
+      "description": "Portuguese piri-piri prawns is a Algarve-style dish featuring large prawns, quick-grilled over medium-high heat, with 1 red chilli, 2 garlic cloves. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g large prawns",
+        "1 red chilli",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with crusty bread and salad.",
+      "substitutions": "Use peeled prawns and reduce cooking time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Portugal",
+        "Algarve",
+        "grill-seafood",
+        "portuguese",
+        "piri-piri"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-spanish-grilled-sardines-espetos",
+      "name": "Spanish grilled sardines espetos",
+      "englishName": null,
+      "country": "Spain",
+      "region": "Málaga, Andalusia",
+      "description": "Spanish grilled sardines espetos is a Málaga, Andalusia-style dish featuring whole sardines, cleaned, quick-grilled over medium-high heat, with 2 tsp coarse salt, 1 lemon. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g whole sardines, cleaned",
+        "2 tsp coarse salt",
+        "1 lemon",
+        "1 tbsp olive oil"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with lemon and tomato salad.",
+      "substitutions": "Use whole mackerel cut into thick steaks.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Spain",
+        "Málaga, Andalusia",
+        "grill-seafood",
+        "spanish",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-swedish-salmon-plank-grill",
+      "name": "Swedish salmon plank grill",
+      "englishName": null,
+      "country": "Sweden",
+      "region": "West coast",
+      "description": "Swedish salmon plank grill is a West coast-style dish featuring salmon side, skin on, seasoned and grilled in a basket, with 1 tbsp dill, 1 lemon. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g salmon side, skin on",
+        "1 tbsp dill",
+        "1 lemon",
+        "2 tbsp butter",
+        "1 tsp salt",
+        "1 cedar plank, soaked"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with new potatoes and cucumber salad.",
+      "substitutions": "Use a fish grill basket if no plank is available.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Sweden",
+        "West coast",
+        "grill-fish",
+        "swedish",
+        "salmon"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-cajun-blackened-shrimp-skewers",
+      "name": "Cajun blackened shrimp skewers",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Louisiana",
+      "description": "Cajun blackened shrimp skewers is a Louisiana-style dish featuring large shrimp, quick-grilled over medium-high heat, with 1 tbsp paprika, 1 tsp thyme. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 20,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g large shrimp",
+        "1 tbsp paprika",
+        "1 tsp thyme",
+        "1 tsp garlic powder",
+        "1 tsp cayenne",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with lemon and rice.",
+      "substitutions": "Use scallops or firm fish cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Louisiana",
+        "grill-seafood",
+        "cajun",
+        "blackened"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-grilled-scallops-with-lemon-butter",
+      "name": "Grilled scallops with lemon butter",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "New England",
+      "description": "Grilled scallops with lemon butter is a New England-style dish featuring large sea scallops, quick-grilled over medium-high heat, with 2 tbsp butter, 1 lemon. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 6,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g large sea scallops",
+        "2 tbsp butter",
+        "1 lemon",
+        "1 tbsp parsley",
+        "1 tsp black pepper",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with corn and toasted bread.",
+      "substitutions": "Use large peeled shrimp.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "New England",
+        "grill-seafood",
+        "grilled",
+        "scallops"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-cedar-plank-maple-trout",
+      "name": "Cedar-plank maple trout",
+      "englishName": null,
+      "country": "Canada",
+      "region": "British Columbia",
+      "description": "Cedar-plank maple trout is a British Columbia-style dish featuring trout fillets, about 600 g, seasoned and grilled in a basket, with 1 tbsp maple syrup, 1 tbsp Dijon mustard. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 trout fillets, about 600 g",
+        "1 tbsp maple syrup",
+        "1 tbsp Dijon mustard",
+        "1 lemon",
+        "1 cedar plank, soaked"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with roasted potatoes and greens.",
+      "substitutions": "Use salmon fillets.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Canada",
+        "British Columbia",
+        "grill-fish",
+        "cedar-plank",
+        "maple"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-korean-grilled-mackerel-with-gochujang",
+      "name": "Korean grilled mackerel with gochujang",
+      "englishName": null,
+      "country": "South Korea",
+      "region": "Busan",
+      "description": "Korean grilled mackerel with gochujang is a Busan-style dish featuring mackerel fillets, about 600 g, seasoned and grilled in a basket, with 1 tbsp gochujang, 1 tbsp soy sauce. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 mackerel fillets, about 600 g",
+        "1 tbsp gochujang",
+        "1 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tsp honey",
+        "1 tsp sesame seeds"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with rice and kimchi.",
+      "substitutions": "Use salmon portions.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Korea",
+        "Busan",
+        "grill-fish",
+        "korean",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-turkish-grilled-sea-bass-with-herbs",
+      "name": "Turkish grilled sea bass with herbs",
+      "englishName": null,
+      "country": "Turkey",
+      "region": "Aegean coast",
+      "description": "Turkish grilled sea bass with herbs is a Aegean coast-style dish featuring whole sea bass, about 700 g each, seasoned and grilled in a basket, with 1 lemon, 2 tbsp parsley. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 whole sea bass, about 700 g each",
+        "1 lemon",
+        "2 tbsp parsley",
+        "1 tbsp olive oil",
+        "1 tsp salt",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with sumac onion and flatbread.",
+      "substitutions": "Use whole bream of similar size.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Turkey",
+        "Aegean coast",
+        "grill-fish",
+        "turkish",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-spanish-grilled-octopus-with-paprika",
+      "name": "Spanish grilled octopus with paprika",
+      "englishName": null,
+      "country": "Spain",
+      "region": "Galicia",
+      "description": "Spanish grilled octopus with paprika is a Galicia-style dish featuring cooked octopus tentacles, quick-grilled over medium-high heat, with 500 g potatoes, 1 tsp smoked paprika. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g cooked octopus tentacles",
+        "500 g potatoes",
+        "1 tsp smoked paprika",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve over potatoes with parsley.",
+      "substitutions": "Use cooked squid tubes cut into thick rings.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Spain",
+        "Galicia",
+        "grill-seafood",
+        "spanish",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-texas-smoked-beef-brisket",
+      "name": "Texas smoked beef brisket",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Central Texas",
+      "description": "Texas smoked beef brisket is a Central Texas-style dish featuring beef brisket, slow-smoked over indirect oak heat, with 2 tbsp coarse salt, 2 tbsp black pepper. Tip: Keep the lid closed and hold a steady low pit temperature for an even smoke ring and tender slices.",
+      "prepMinutes": 25,
+      "cookMinutes": 540,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.8 kg beef brisket",
+        "2 tbsp coarse salt",
+        "2 tbsp black pepper",
+        "1 tbsp paprika",
+        "250 ml beef stock",
+        "2 handfuls oak chunks"
+      ],
+      "instructions": [
+        "Pat the brisket dry. Mix the salt, pepper and paprika and press the rub over every side; leave uncovered in the refrigerator for 4 hours or overnight.",
+        "Set a covered kettle grill for indirect cooking at 120-135 C. Put a drip pan below the cool side and add oak to the coals; keep the meat away from direct flame.",
+        "Smoke fat-side up, covered, until the bark is dark and the thickest part is probe-tender, about 90-95 C internally. Add fuel as needed to hold the grill temperature.",
+        "Wrap loosely, rest at least 30 minutes, then slice across the grain. Warm the stock for serving; never use leftover raw-meat marinade as sauce."
+      ],
+      "sides": "Slice across the grain; serve with pickles, onions and white bread.",
+      "substitutions": "Use a 1 kg brisket flat and reduce the cook time, checking tenderness.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Central Texas",
+        "smoke-beef",
+        "texas",
+        "smoked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-carolina-vinegar-pulled-pork",
+      "name": "Carolina vinegar pulled pork",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Eastern North Carolina",
+      "description": "Carolina vinegar pulled pork is a Eastern North Carolina-style dish featuring pork shoulder, smoked low and slow over indirect heat, with 2 tbsp brown sugar, 1 tbsp salt. Tip: Cook over indirect heat and rest before pulling so the juices settle.",
+      "prepMinutes": 20,
+      "cookMinutes": 480,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.8 kg pork shoulder",
+        "2 tbsp brown sugar",
+        "1 tbsp salt",
+        "1 tsp black pepper",
+        "180 ml cider vinegar",
+        "1 tsp chilli flakes",
+        "2 handfuls hickory chips"
+      ],
+      "instructions": [
+        "Pat the shoulder dry and rub with the sugar, salt and pepper. Refrigerate for at least 2 hours.",
+        "Arrange the grill for indirect heat at 120-135 C, place a drip pan below the meat and add hickory to the coals.",
+        "Cook covered until the shoulder is fork-tender, usually around 90-95 C internally; maintain steady heat and replenish coals as needed.",
+        "Rest 20 minutes, pull into strands and mix with the vinegar and chilli. Serve hot; refrigerate leftovers promptly."
+      ],
+      "sides": "Pile into rolls with vinegar slaw.",
+      "substitutions": "Use a 1 kg shoulder and shorten the cook, cooking to tenderness.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Eastern North Carolina",
+        "smoke-pork",
+        "carolina",
+        "vinegar"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-kansas-city-glazed-pork-ribs",
+      "name": "Kansas City glazed pork ribs",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Kansas City",
+      "description": "Kansas City glazed pork ribs is a Kansas City-style dish featuring pork spare ribs, smoked over indirect heat until tender, with 2 tbsp paprika, 1 tbsp brown sugar. Tip: Use a probe to check tenderness between the bones rather than judging by colour alone.",
+      "prepMinutes": 20,
+      "cookMinutes": 300,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.4 kg pork spare ribs",
+        "2 tbsp paprika",
+        "1 tbsp brown sugar",
+        "1 tsp garlic powder",
+        "200 ml tomato barbecue sauce",
+        "2 handfuls fruitwood chips"
+      ],
+      "instructions": [
+        "Remove the thin membrane from the bone side and coat the ribs with the listed dry spices. Refrigerate for at least 1 hour.",
+        "Prepare indirect grill heat at 120-135 C, add the listed wood and place a drip pan beneath the ribs. Keep the lid closed and avoid flames touching the meat.",
+        "Smoke until the meat has pulled back from the bones and a skewer passes through easily, about 90-95 C in the thickest meat.",
+        "Brush with sauce only for the final 20 minutes if the recipe includes it. Rest 10 minutes and cut between bones."
+      ],
+      "sides": "Serve with coleslaw and corn.",
+      "substitutions": "Use baby-back ribs and begin checking tenderness earlier.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Kansas City",
+        "smoke-ribs",
+        "kansas",
+        "city"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-memphis-dry-rub-pork-ribs",
+      "name": "Memphis dry-rub pork ribs",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Memphis, Tennessee",
+      "description": "Memphis dry-rub pork ribs is a Memphis, Tennessee-style dish featuring pork ribs, smoked over indirect heat until tender, with 1 tbsp paprika, 1 tbsp brown sugar. Tip: Use a probe to check tenderness between the bones rather than judging by colour alone.",
+      "prepMinutes": 20,
+      "cookMinutes": 300,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.4 kg pork ribs",
+        "1 tbsp paprika",
+        "1 tbsp brown sugar",
+        "1 tsp black pepper",
+        "1 tsp celery salt",
+        "1 tsp mustard powder",
+        "2 handfuls hickory chips"
+      ],
+      "instructions": [
+        "Remove the thin membrane from the bone side and coat the ribs with the listed dry spices. Refrigerate for at least 1 hour.",
+        "Prepare indirect grill heat at 120-135 C, add the listed wood and place a drip pan beneath the ribs. Keep the lid closed and avoid flames touching the meat.",
+        "Smoke until the meat has pulled back from the bones and a skewer passes through easily, about 90-95 C in the thickest meat.",
+        "Brush with sauce only for the final 20 minutes if the recipe includes it. Rest 10 minutes and cut between bones."
+      ],
+      "sides": "Serve dry with pickles and optional sauce on the side.",
+      "substitutions": "Use a rack of baby-back ribs.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Memphis, Tennessee",
+        "smoke-ribs",
+        "memphis",
+        "dry-rub"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-alabama-white-sauce-chicken",
+      "name": "Alabama white-sauce chicken",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Northern Alabama",
+      "description": "Alabama white-sauce chicken is a Northern Alabama-style dish featuring chicken pieces, marinated and grilled over steady heat, with 120 g mayonnaise, 2 tbsp cider vinegar. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg chicken pieces",
+        "120 g mayonnaise",
+        "2 tbsp cider vinegar",
+        "1 tsp horseradish",
+        "1 tsp black pepper",
+        "1 tsp salt",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Brush with extra white sauce after grilling; serve with slaw.",
+      "substitutions": "Use boneless chicken thighs and reduce grilling time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Northern Alabama",
+        "grill-poultry",
+        "alabama",
+        "white-sauce"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-santa-maria-tri-tip",
+      "name": "Santa Maria tri-tip",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Central Coast, California",
+      "description": "Santa Maria tri-tip is a Central Coast, California-style dish featuring beef tri-tip, seasoned and grilled over live heat, with 2 tsp salt, 2 tsp black pepper. Tip: Rest whole cuts after grilling and slice across the grain when appropriate.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg beef tri-tip",
+        "2 tsp salt",
+        "2 tsp black pepper",
+        "1 tsp garlic powder",
+        "1 tsp dried oregano",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the meat dry and season both sides with the listed salt, herbs and oil. Bring it out of the refrigerator while the grill heats, no longer than 30 minutes.",
+        "Heat a clean grill to high, about 230-260 C. Sear the meat, turning once; move to indirect heat if the exterior browns before the centre cooks.",
+        "Use a thermometer in the thickest part. For whole beef or lamb steaks cook to at least 63 C and rest 3 minutes; cook ground meat to 71 C.",
+        "Rest 5-10 minutes, slice across the grain if needed and serve with the stated accompaniments."
+      ],
+      "sides": "Slice thinly; serve with pinquito beans and salsa.",
+      "substitutions": "Use a sirloin cap or thick sirloin roast.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Central Coast, California",
+        "grill-steak",
+        "santa",
+        "maria"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-st-louis-sticky-pork-steaks",
+      "name": "St Louis sticky pork steaks",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "St Louis, Missouri",
+      "description": "St Louis sticky pork steaks is a St Louis, Missouri-style dish featuring pork shoulder steaks, marinated and grilled until browned, with 1 tsp paprika, 1 tsp black pepper. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg pork shoulder steaks",
+        "1 tsp paprika",
+        "1 tsp black pepper",
+        "150 ml tomato barbecue sauce",
+        "100 ml apple juice",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Serve with slaw and toasted rolls.",
+      "substitutions": "Use pork blade steaks of similar thickness.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "St Louis, Missouri",
+        "grill-pork",
+        "st",
+        "louis"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-chicago-style-grilled-rib-tips",
+      "name": "Chicago-style grilled rib tips",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Chicago, Illinois",
+      "description": "Chicago-style grilled rib tips is a Chicago, Illinois-style dish featuring pork rib tips, smoked over indirect heat until tender, with 1 tbsp paprika, 1 tsp garlic powder. Tip: Use a probe to check tenderness between the bones rather than judging by colour alone.",
+      "prepMinutes": 20,
+      "cookMinutes": 240,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg pork rib tips",
+        "1 tbsp paprika",
+        "1 tsp garlic powder",
+        "1 tsp black pepper",
+        "150 ml barbecue sauce",
+        "2 handfuls hickory chips"
+      ],
+      "instructions": [
+        "Remove the thin membrane from the bone side and coat the ribs with the listed dry spices. Refrigerate for at least 1 hour.",
+        "Prepare indirect grill heat at 120-135 C, add the listed wood and place a drip pan beneath the ribs. Keep the lid closed and avoid flames touching the meat.",
+        "Smoke until the meat has pulled back from the bones and a skewer passes through easily, about 90-95 C in the thickest meat.",
+        "Brush with sauce only for the final 20 minutes if the recipe includes it. Rest 10 minutes and cut between bones."
+      ],
+      "sides": "Serve with sliced white bread and pickles.",
+      "substitutions": "Use trimmed pork spare ribs cut into chunks.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Chicago, Illinois",
+        "smoke-ribs",
+        "chicago-style",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-hawaiian-huli-huli-chicken",
+      "name": "Hawaiian huli-huli chicken",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Hawaii",
+      "description": "Hawaiian huli-huli chicken is a Hawaii-style dish featuring chicken thighs, marinated and grilled over steady heat, with 80 ml pineapple juice, 60 ml soy sauce. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken thighs",
+        "80 ml pineapple juice",
+        "60 ml soy sauce",
+        "2 tbsp brown sugar",
+        "1 tbsp ginger",
+        "2 garlic cloves"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with rice and grilled pineapple.",
+      "substitutions": "Use tamari for a wheat-free marinade.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Hawaii",
+        "grill-poultry",
+        "hawaiian",
+        "huli-huli"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-louisiana-style-smoked-boudin-links",
+      "name": "Louisiana-style smoked boudin links",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Louisiana",
+      "description": "Louisiana-style smoked boudin links is a Louisiana-style dish featuring cooked boudin sausages, about 700 g, gently smoked over indirect heat, with 1 tsp cayenne, 1 tsp paprika. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "8 cooked boudin sausages, about 700 g",
+        "1 tsp cayenne",
+        "1 tsp paprika",
+        "1 tbsp oil",
+        "1 lemon",
+        "1 handful pecan wood chips"
+      ],
+      "instructions": [
+        "Set a covered grill for indirect heat at 120-135 C and add a small amount of the listed wood. Place a drip pan below the grate.",
+        "Arrange the links away from direct heat. Turn them once or twice while they smoke; avoid piercing the skins.",
+        "Cook until hot throughout and the centre reaches 71 C for pork or 74 C for poultry sausage, checking with a thermometer.",
+        "Rest 5 minutes and serve with the listed accompaniments. Keep uncooked sausage separate from cooked food."
+      ],
+      "sides": "Serve with mustard, crackers and pickles.",
+      "substitutions": "Use fully cooked Cajun-style sausage.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Louisiana",
+        "smoke-sausage",
+        "louisiana-style",
+        "smoked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-argentine-matambre-arrollado-on-the-grill",
+      "name": "Argentine matambre arrollado on the grill",
+      "englishName": null,
+      "country": "Argentina",
+      "region": "Buenos Aires Province",
+      "description": "Argentine matambre arrollado on the grill is a Buenos Aires Province-style dish featuring flank steak, butterflied, filled, rolled and grilled over indirect heat, with 2 carrots, 3 eggs, hard-boiled. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 30,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "900 g flank steak, butterflied",
+        "2 carrots",
+        "3 eggs, hard-boiled",
+        "100 g spinach",
+        "2 garlic cloves",
+        "1 tsp oregano",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Lay the butterflied steak flat and season both sides. Arrange the measured vegetables and cooked egg in a narrow line across the centre, leaving a border.",
+        "Roll tightly around the filling and tie at 3 cm intervals with kitchen twine. Brush the outside with oil and season. Heat a covered grill to 190 C for indirect cooking.",
+        "Brown the roll over direct heat, then move to the cooler zone and close the lid. Turn occasionally until the centre reaches 63 C; rest 3 minutes.",
+        "Remove the twine, slice across the roll and serve with chimichurri. Keep raw-meat tools separate from the cooked slices."
+      ],
+      "sides": "Slice across the roll; serve with chimichurri and salad.",
+      "substitutions": "Use thin skirt steak and secure it tightly with kitchen twine.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Argentina",
+        "Buenos Aires Province",
+        "grill-roll",
+        "argentine",
+        "matambre"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-argentine-chicken-with-chimichurri",
+      "name": "Argentine chicken with chimichurri",
+      "englishName": null,
+      "country": "Argentina",
+      "region": "Nationwide parrilla",
+      "description": "Argentine chicken with chimichurri is a Nationwide parrilla-style dish featuring bone-in chicken thighs, marinated and grilled over steady heat, with 2 tbsp parsley, 2 garlic cloves. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg bone-in chicken thighs",
+        "2 tbsp parsley",
+        "2 garlic cloves",
+        "2 tbsp red-wine vinegar",
+        "1 tsp oregano",
+        "3 tbsp olive oil"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with grilled vegetables and bread.",
+      "substitutions": "Use boneless thighs and reduce cooking time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Argentina",
+        "Nationwide parrilla",
+        "grill-poultry",
+        "argentine",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-argentine-beef-short-ribs-with-salt",
+      "name": "Argentine beef short ribs with salt",
+      "englishName": null,
+      "country": "Argentina",
+      "region": "Pampas",
+      "description": "Argentine beef short ribs with salt is a Pampas-style dish featuring beef short ribs, seasoned and grilled over live heat, with 2 tsp coarse salt, 1 tsp black pepper. Tip: Rest whole cuts after grilling and slice across the grain when appropriate.",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg beef short ribs",
+        "2 tsp coarse salt",
+        "1 tsp black pepper",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the meat dry and season both sides with the listed salt, herbs and oil. Bring it out of the refrigerator while the grill heats, no longer than 30 minutes.",
+        "Heat a clean grill to high, about 230-260 C. Sear the meat, turning once; move to indirect heat if the exterior browns before the centre cooks.",
+        "Use a thermometer in the thickest part. For whole beef or lamb steaks cook to at least 63 C and rest 3 minutes; cook ground meat to 71 C.",
+        "Rest 5-10 minutes, slice across the grain if needed and serve with the stated accompaniments."
+      ],
+      "sides": "Serve with salsa criolla and grilled peppers.",
+      "substitutions": "Use thick beef chuck ribs, allowing extra time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Argentina",
+        "Pampas",
+        "grill-steak",
+        "argentine",
+        "beef"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-argentine-grilled-sweetbreads",
+      "name": "Argentine grilled sweetbreads",
+      "englishName": null,
+      "country": "Argentina",
+      "region": "Parrilla tradition",
+      "description": "Argentine grilled sweetbreads is a Parrilla tradition-style dish featuring cleaned sweetbreads, seasoned and grilled over direct heat, with 1 lemon, 2 tsp salt. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g cleaned sweetbreads",
+        "1 lemon",
+        "2 tsp salt",
+        "1 tbsp oil",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Clean and trim the listed offal, then season with salt, oil and citrus. Thread evenly onto skewers if needed.",
+        "Heat a clean grill to medium-high, about 200 C. Cook over direct heat, turning frequently to brown evenly without charring.",
+        "Check the thickest pieces with a thermometer and cook fully; use a higher endpoint for ground or poultry products.",
+        "Rest briefly and serve with citrus and herbs. Do not reuse raw-meat plates or brushes."
+      ],
+      "sides": "Serve crisp with lemon and parsley.",
+      "substitutions": "Use thick chicken hearts; cook completely through.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Argentina",
+        "Parrilla tradition",
+        "grill-offal",
+        "argentine",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-brazilian-picanha-with-coarse-salt",
+      "name": "Brazilian picanha with coarse salt",
+      "englishName": null,
+      "country": "Brazil",
+      "region": "Southern churrasco",
+      "description": "Brazilian picanha with coarse salt is a Southern churrasco-style dish featuring picanha with fat cap, seasoned and grilled over live heat, with 2 tsp coarse salt, 1 tsp black pepper. Tip: Rest whole cuts after grilling and slice across the grain when appropriate.",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1.2 kg picanha with fat cap",
+        "2 tsp coarse salt",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Pat the meat dry and season both sides with the listed salt, herbs and oil. Bring it out of the refrigerator while the grill heats, no longer than 30 minutes.",
+        "Heat a clean grill to high, about 230-260 C. Sear the meat, turning once; move to indirect heat if the exterior browns before the centre cooks.",
+        "Use a thermometer in the thickest part. For whole beef or lamb steaks cook to at least 63 C and rest 3 minutes; cook ground meat to 71 C.",
+        "Rest 5-10 minutes, slice across the grain if needed and serve with the stated accompaniments."
+      ],
+      "sides": "Slice at the table; serve with farofa and vinaigrette.",
+      "substitutions": "Use a thick sirloin cap and keep its fat layer.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Brazil",
+        "Southern churrasco",
+        "grill-steak",
+        "brazilian",
+        "picanha"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-brazilian-linguica-churrasco",
+      "name": "Brazilian linguiça churrasco",
+      "englishName": null,
+      "country": "Brazil",
+      "region": "Southern Brazil",
+      "description": "Brazilian linguiça churrasco is a Southern Brazil-style dish featuring fresh pork linguiça, grilled slowly until browned, with 1 orange, 1 tsp oil. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g fresh pork linguiça",
+        "1 orange",
+        "1 tsp oil",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Heat the grill to medium, about 180-190 C. Oil the grate lightly and set a cool zone for thicker sausages.",
+        "Place fresh sausages over indirect heat first. Turn frequently so the casing browns without splitting or catching fire.",
+        "Finish briefly over direct heat for colour. Check the centre reaches 71 C for pork or 74 C for poultry using a thermometer.",
+        "Rest 3 minutes and serve with the listed bread, vegetables or sauce. Never pierce before cooking."
+      ],
+      "sides": "Serve with farofa, pão de alho and salsa.",
+      "substitutions": "Use fresh pork sausages with a coarse grind.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Brazil",
+        "Southern Brazil",
+        "grill-sausage",
+        "brazilian",
+        "linguiça"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-brazilian-garlic-bread-pao-de-alho",
+      "name": "Brazilian garlic bread pão de alho",
+      "englishName": null,
+      "country": "Brazil",
+      "region": "Churrasco accompaniment",
+      "description": "Brazilian garlic bread pão de alho is a Churrasco accompaniment-style dish featuring small crusty rolls, filled and warmed over indirect heat, with 100 g butter, 3 garlic cloves. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 small crusty rolls",
+        "100 g butter",
+        "3 garlic cloves",
+        "80 g grated cheese",
+        "2 tbsp parsley"
+      ],
+      "instructions": [
+        "Mix the butter or oil with the listed garlic, herbs and cheese. Split or score the bread without cutting all the way through.",
+        "Heat the grill to medium, about 180 C. Spread the mixture between or over the bread and wrap loosely in foil.",
+        "Warm over indirect heat until the centre is hot, then uncover for 1-2 minutes to crisp the edges.",
+        "Serve immediately while warm. Keep the bread away from flare-ups."
+      ],
+      "sides": "Serve hot alongside grilled meats.",
+      "substitutions": "Use a dairy-free spread and omit cheese.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Brazil",
+        "Churrasco accompaniment",
+        "grill-bread",
+        "brazilian",
+        "garlic"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-brazilian-chicken-hearts-espetinho",
+      "name": "Brazilian chicken hearts espetinho",
+      "englishName": null,
+      "country": "Brazil",
+      "region": "Rio Grande do Sul",
+      "description": "Brazilian chicken hearts espetinho is a Rio Grande do Sul-style dish featuring chicken hearts, marinated, threaded and grilled, with 2 garlic cloves, 1 tbsp lime juice. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g chicken hearts",
+        "2 garlic cloves",
+        "1 tbsp lime juice",
+        "1 tsp salt",
+        "1 tsp paprika",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with farofa and lime wedges.",
+      "substitutions": "Use boneless chicken thigh cubes; cook to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Brazil",
+        "Rio Grande do Sul",
+        "grill-skewer",
+        "brazilian",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-croatian-cevapi-with-flatbread",
+      "name": "Croatian ćevapi with flatbread",
+      "englishName": null,
+      "country": "Croatia",
+      "region": "Bosnia borderlands",
+      "description": "Croatian ćevapi with flatbread is a Bosnia borderlands-style dish featuring minced beef, grilled slowly until browned, with 200 g minced lamb, 2 garlic cloves. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "200 g minced lamb",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "1 tsp baking soda",
+        "60 ml cold water"
+      ],
+      "instructions": [
+        "Heat the grill to medium, about 180-190 C. Oil the grate lightly and set a cool zone for thicker sausages.",
+        "Place fresh sausages over indirect heat first. Turn frequently so the casing browns without splitting or catching fire.",
+        "Finish briefly over direct heat for colour. Check the centre reaches 71 C for pork or 74 C for poultry using a thermometer.",
+        "Rest 3 minutes and serve with the listed bread, vegetables or sauce. Never pierce before cooking."
+      ],
+      "sides": "Serve in flatbread with chopped onion and ajvar.",
+      "substitutions": "Use all beef; keep the mixture chilled before shaping.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Croatia",
+        "Bosnia borderlands",
+        "grill-sausage",
+        "croatian",
+        "ćevapi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-bosnian-pljeskavica-stuffed-with-cheese",
+      "name": "Bosnian pljeskavica stuffed with cheese",
+      "englishName": null,
+      "country": "Bosnia and Herzegovina",
+      "region": "Sarajevo",
+      "description": "Bosnian pljeskavica stuffed with cheese is a Sarajevo-style dish featuring minced beef, shaped, seasoned and grilled, with 100 g white brined cheese, 1 onion. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g minced beef",
+        "100 g white brined cheese",
+        "1 onion",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the meat gently with the listed seasoning and cold water. Shape into even patties and chill for 20 minutes so they hold together.",
+        "Heat the grill to medium-high, about 200 C, and oil the grate. Grill patties, turning once; keep cheese-filled patties over moderate heat.",
+        "Cook ground meat to 71 C in the centre. Use a clean thermometer and do not press the patties against the grate.",
+        "Rest 3 minutes and serve with the listed bread and garnishes."
+      ],
+      "sides": "Serve with somun, onion and ajvar.",
+      "substitutions": "Use minced lamb and a firm feta-style cheese.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Bosnia and Herzegovina",
+        "Sarajevo",
+        "grill-patty",
+        "bosnian",
+        "pljeskavica"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-serbian-pork-neck-raznjici",
+      "name": "Serbian pork neck ražnjići",
+      "englishName": null,
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "description": "Serbian pork neck ražnjići is a Central Serbia-style dish featuring pork neck, marinated, threaded and grilled, with 1 onion, 1 red pepper. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g pork neck",
+        "1 onion",
+        "1 red pepper",
+        "1 tbsp oil",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "1 tbsp vinegar"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with flatbread, kajmak and salad.",
+      "substitutions": "Use boneless chicken thighs, cooking to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Serbia",
+        "Central Serbia",
+        "grill-skewer",
+        "serbian",
+        "pork"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-greek-lamb-chops-with-oregano",
+      "name": "Greek lamb chops with oregano",
+      "englishName": null,
+      "country": "Greece",
+      "region": "Mainland Greece",
+      "description": "Greek lamb chops with oregano is a Mainland Greece-style dish featuring lamb chops, about 900 g, seasoned and grilled over live heat, with 2 tbsp lemon juice, 2 garlic cloves. Tip: Rest whole cuts after grilling and slice across the grain when appropriate.",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 lamb chops, about 900 g",
+        "2 tbsp lemon juice",
+        "2 garlic cloves",
+        "1 tsp oregano",
+        "2 tbsp olive oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Pat the meat dry and season both sides with the listed salt, herbs and oil. Bring it out of the refrigerator while the grill heats, no longer than 30 minutes.",
+        "Heat a clean grill to high, about 230-260 C. Sear the meat, turning once; move to indirect heat if the exterior browns before the centre cooks.",
+        "Use a thermometer in the thickest part. For whole beef or lamb steaks cook to at least 63 C and rest 3 minutes; cook ground meat to 71 C.",
+        "Rest 5-10 minutes, slice across the grain if needed and serve with the stated accompaniments."
+      ],
+      "sides": "Serve with lemon potatoes and salad.",
+      "substitutions": "Use thick pork chops, adjusting to safe temperature.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Greece",
+        "Mainland Greece",
+        "grill-steak",
+        "greek",
+        "lamb"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-turkish-adana-kebab",
+      "name": "Turkish Adana kebab",
+      "englishName": null,
+      "country": "Turkey",
+      "region": "Adana",
+      "description": "Turkish Adana kebab is a Adana-style dish featuring minced lamb, marinated, threaded and grilled, with 1 red pepper, finely grated, 1 tsp paprika. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g minced lamb",
+        "1 red pepper, finely grated",
+        "1 tsp paprika",
+        "1 tsp chilli flakes",
+        "1 tsp salt",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with lavash, grilled peppers and sumac onion.",
+      "substitutions": "Use minced beef with some added olive oil.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Turkey",
+        "Adana",
+        "grill-skewer",
+        "turkish",
+        "adana"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-turkish-lamb-sis-kebab",
+      "name": "Turkish lamb şiş kebab",
+      "englishName": null,
+      "country": "Turkey",
+      "region": "Anatolia",
+      "description": "Turkish lamb şiş kebab is a Anatolia-style dish featuring lamb leg cubes, marinated, threaded and grilled, with 100 g plain yogurt, 1 tbsp lemon juice. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g lamb leg cubes",
+        "100 g plain yogurt",
+        "1 tbsp lemon juice",
+        "2 garlic cloves",
+        "1 tsp cumin",
+        "1 red pepper"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with flatbread, parsley and grilled tomato.",
+      "substitutions": "Use beef sirloin cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Turkey",
+        "Anatolia",
+        "grill-skewer",
+        "turkish",
+        "lamb"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-lebanese-shish-tawook",
+      "name": "Lebanese shish tawook",
+      "englishName": null,
+      "country": "Lebanon",
+      "region": "Mount Lebanon",
+      "description": "Lebanese shish tawook is a Mount Lebanon-style dish featuring chicken breast cubes, marinated, threaded and grilled, with 100 g yogurt, 1 tbsp lemon juice. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g chicken breast cubes",
+        "100 g yogurt",
+        "1 tbsp lemon juice",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tbsp tomato paste"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with pita, toum and chopped salad.",
+      "substitutions": "Use chicken thighs for a juicier skewer.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Lebanon",
+        "Mount Lebanon",
+        "grill-skewer",
+        "lebanese",
+        "shish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-iranian-saffron-lamb-kebab",
+      "name": "Iranian saffron lamb kebab",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Caspian region",
+      "description": "Iranian saffron lamb kebab is a Caspian region-style dish featuring lamb leg cubes, marinated, threaded and grilled, with 1 onion, 1 tbsp lemon juice. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g lamb leg cubes",
+        "1 onion",
+        "1 tbsp lemon juice",
+        "1 tsp saffron steeped in 2 tbsp water",
+        "2 tbsp oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with grilled tomato, flatbread and herbs.",
+      "substitutions": "Use beef sirloin and marinate briefly.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Iran",
+        "Caspian region",
+        "grill-skewer",
+        "iranian",
+        "saffron"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-indian-tandoori-chicken-legs",
+      "name": "Indian tandoori chicken legs",
+      "englishName": null,
+      "country": "India",
+      "region": "Punjab",
+      "description": "Indian tandoori chicken legs is a Punjab-style dish featuring chicken legs, marinated in spiced yogurt and grilled at high heat, with 150 g yogurt, 1 tbsp lemon juice. Tip: Shake off excess yogurt marinade to prevent flare-ups while retaining a thin coating.",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken legs",
+        "150 g yogurt",
+        "1 tbsp lemon juice",
+        "1 tbsp tandoori masala",
+        "1 tsp paprika",
+        "2 garlic cloves"
+      ],
+      "instructions": [
+        "Score the chicken lightly. Mix yogurt with the listed spices, citrus and garlic; coat all surfaces and marinate covered in the refrigerator for at least 1 hour.",
+        "Heat a grill or oven to 220 C. Shake off excess marinade and arrange chicken over indirect heat or on a rack above a tray.",
+        "Cook, turning once and brushing with fresh marinade, until the thickest part reaches 74 C and the surface is charred in spots.",
+        "Rest 5 minutes and serve with the listed chutney and bread. Discard marinade that touched raw chicken."
+      ],
+      "sides": "Serve with naan, onion rings and mint chutney.",
+      "substitutions": "Use boneless thighs and shorten cooking time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "India",
+        "Punjab",
+        "tandoor-poultry",
+        "indian",
+        "tandoori"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-indian-seekh-kebab",
+      "name": "Indian seekh kebab",
+      "englishName": null,
+      "country": "India",
+      "region": "Lucknow",
+      "description": "Indian seekh kebab is a Lucknow-style dish featuring minced lamb, marinated, threaded and grilled, with 1 small onion, 2 tbsp coriander. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g minced lamb",
+        "1 small onion",
+        "2 tbsp coriander",
+        "1 tbsp ginger",
+        "1 tsp garam masala",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with naan, lemon and mint chutney.",
+      "substitutions": "Use minced chicken and cook to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "India",
+        "Lucknow",
+        "grill-skewer",
+        "indian",
+        "seekh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-indian-tandoori-cauliflower",
+      "name": "Indian tandoori cauliflower",
+      "englishName": null,
+      "country": "India",
+      "region": "Punjab, vegetarian",
+      "description": "Indian tandoori cauliflower is a Punjab, vegetarian-style dish featuring large cauliflower, marinated in spiced yogurt and grilled, with 150 g yogurt, 1 tbsp tandoori masala. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 large cauliflower",
+        "150 g yogurt",
+        "1 tbsp tandoori masala",
+        "1 tbsp lemon juice",
+        "1 tbsp oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Cut the vegetables or paneer into large even pieces. Mix yogurt and spices; coat the pieces and marinate 20 minutes, chilled.",
+        "Heat the grill or oven to 220 C. Thread pieces onto skewers or place on a lightly oiled tray.",
+        "Cook, turning once, until the edges char and the centre is hot and tender. Watch closely so paneer does not dry out.",
+        "Serve with chutney, lemon and flatbread."
+      ],
+      "sides": "Serve with mint chutney and flatbread.",
+      "substitutions": "Use thick unsweetened plant yogurt.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "India",
+        "Punjab, vegetarian",
+        "tandoor-veg",
+        "indian",
+        "tandoori"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-japanese-yakitori-negima-chicken",
+      "name": "Japanese yakitori negima chicken",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Tokyo izakaya",
+      "description": "Japanese yakitori negima chicken is a Tokyo izakaya-style dish featuring boneless chicken thighs, marinated, threaded and grilled, with 4 spring onions, 60 ml soy sauce. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g boneless chicken thighs",
+        "4 spring onions",
+        "60 ml soy sauce",
+        "2 tbsp mirin",
+        "1 tbsp sugar",
+        "1 tbsp sake"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with steamed rice and pickled cucumber.",
+      "substitutions": "Use tamari; cook chicken to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Japan",
+        "Tokyo izakaya",
+        "grill-skewer",
+        "japanese",
+        "yakitori"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-japanese-tsukune-chicken-meatball-skewers",
+      "name": "Japanese tsukune chicken meatball skewers",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Izakaya style",
+      "description": "Japanese tsukune chicken meatball skewers is a Izakaya style-style dish featuring minced chicken, marinated, threaded and grilled, with 1 egg, 2 tbsp panko. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced chicken",
+        "1 egg",
+        "2 tbsp panko",
+        "2 spring onions",
+        "60 ml soy sauce",
+        "1 tbsp sugar"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Brush with tare and serve with rice.",
+      "substitutions": "Use minced turkey, cooking to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Japan",
+        "Izakaya style",
+        "grill-skewer",
+        "japanese",
+        "tsukune"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-japanese-saba-shioyaki",
+      "name": "Japanese saba shioyaki",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Home-style grilling",
+      "description": "Japanese saba shioyaki is a Home-style grilling-style dish featuring mackerel fillets, about 600 g, seasoned and grilled in a basket, with 1 tsp salt, 1 lemon. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 mackerel fillets, about 600 g",
+        "1 tsp salt",
+        "1 lemon",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with grated daikon and rice.",
+      "substitutions": "Use salmon portions of similar thickness.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Japan",
+        "Home-style grilling",
+        "grill-fish",
+        "japanese",
+        "saba"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-korean-bulgogi-on-the-grill",
+      "name": "Korean bulgogi on the grill",
+      "englishName": null,
+      "country": "South Korea",
+      "region": "Seoul",
+      "description": "Korean bulgogi on the grill is a Seoul-style dish featuring thin-sliced beef, quick-seared over high heat, with 60 ml soy sauce, 1 pear, grated. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g thin-sliced beef",
+        "60 ml soy sauce",
+        "1 pear, grated",
+        "2 garlic cloves",
+        "1 tbsp sesame oil",
+        "2 spring onions"
+      ],
+      "instructions": [
+        "Separate thin slices and mix with the listed marinade. Chill covered for 20-40 minutes; reserve a clean portion of sauce for serving.",
+        "Heat a clean grill or grill pan to high, about 220 C. Cook the slices in small batches so they sear rather than steam.",
+        "Turn once and cook beef to at least 63 C for whole slices or 71 C if ground; cook pork fully.",
+        "Serve immediately in lettuce, flatbread or rice as indicated. Keep raw marinade away from cooked meat."
+      ],
+      "sides": "Serve with lettuce leaves, rice and ssamjang.",
+      "substitutions": "Use thin-sliced pork; cook thoroughly.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Korea",
+        "Seoul",
+        "grill-thin",
+        "korean",
+        "bulgogi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-korean-galbi-short-ribs",
+      "name": "Korean galbi short ribs",
+      "englishName": null,
+      "country": "South Korea",
+      "region": "Seoul",
+      "description": "Korean galbi short ribs is a Seoul-style dish featuring flanken-cut beef short ribs, grilled over indirect heat until tender, with 80 ml soy sauce, 2 tbsp brown sugar. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 14,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "900 g flanken-cut beef short ribs",
+        "80 ml soy sauce",
+        "2 tbsp brown sugar",
+        "1 pear, grated",
+        "2 garlic cloves",
+        "1 tbsp sesame oil"
+      ],
+      "instructions": [
+        "Coat the ribs with the listed seasoning and let stand while the grill heats. Set a covered grill for indirect medium-low heat around 150 C.",
+        "Cook the ribs bone-side down over the cool zone, lid closed, turning and brushing with clean sauce occasionally. Add a small amount of wood if a smoky flavour is desired.",
+        "Continue until tender and the thickest meat reaches at least 63 C; ribs are usually more tender at a higher temperature. Avoid flare-ups from dripping fat.",
+        "Rest 10 minutes, cut between bones and serve with the listed accompaniments."
+      ],
+      "sides": "Serve with rice, lettuce and kimchi.",
+      "substitutions": "Use pork ribs, cooking to 63 C plus rest.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Korea",
+        "Seoul",
+        "grill-ribs",
+        "korean",
+        "galbi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-korean-dak-galbi-chicken-skewers",
+      "name": "Korean dak-galbi chicken skewers",
+      "englishName": null,
+      "country": "South Korea",
+      "region": "Gangwon",
+      "description": "Korean dak-galbi chicken skewers is a Gangwon-style dish featuring chicken thigh cubes, marinated, threaded and grilled, with 1 tbsp gochujang, 1 tbsp soy sauce. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 16,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g chicken thigh cubes",
+        "1 tbsp gochujang",
+        "1 tbsp soy sauce",
+        "1 tbsp rice syrup",
+        "2 garlic cloves",
+        "1 tsp ginger"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with rice and sliced cabbage.",
+      "substitutions": "Use firm tofu and vegetables.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Korea",
+        "Gangwon",
+        "grill-skewer",
+        "korean",
+        "dak-galbi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-chinese-xinjiang-cumin-lamb-skewers",
+      "name": "Chinese Xinjiang cumin lamb skewers",
+      "englishName": null,
+      "country": "China",
+      "region": "Xinjiang",
+      "description": "Chinese Xinjiang cumin lamb skewers is a Xinjiang-style dish featuring lamb shoulder cubes, marinated, threaded and grilled, with 2 tsp cumin, 1 tsp chilli flakes. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g lamb shoulder cubes",
+        "2 tsp cumin",
+        "1 tsp chilli flakes",
+        "1 tsp salt",
+        "1 tbsp oil",
+        "1 onion"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with flatbread and cucumber salad.",
+      "substitutions": "Use beef sirloin cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "China",
+        "Xinjiang",
+        "grill-skewer",
+        "chinese",
+        "xinjiang"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-chinese-char-siu-pork-shoulder",
+      "name": "Chinese char siu pork shoulder",
+      "englishName": null,
+      "country": "China",
+      "region": "Cantonese home grill",
+      "description": "Chinese char siu pork shoulder is a Cantonese home grill-style dish featuring pork shoulder strips, marinated and grilled until browned, with 2 tbsp hoisin, 2 tbsp soy sauce. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "900 g pork shoulder strips",
+        "2 tbsp hoisin",
+        "2 tbsp soy sauce",
+        "1 tbsp honey",
+        "1 tsp five-spice",
+        "1 tbsp Shaoxing wine"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Slice with rice and steamed greens.",
+      "substitutions": "Use pork tenderloin and shorten the cook.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "China",
+        "Cantonese home grill",
+        "grill-pork",
+        "chinese",
+        "char"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-chinese-grilled-whole-scallions-with-sesame",
+      "name": "Chinese grilled whole scallions with sesame",
+      "englishName": null,
+      "country": "China",
+      "region": "Northern China",
+      "description": "Chinese grilled whole scallions with sesame is a Northern China-style dish featuring bunches spring onions, charred over direct heat, with 1 tbsp soy sauce, 1 tsp sesame oil. Tip: Keep vegetables in a single layer and move thick pieces to indirect heat if they char too quickly.",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "3 bunches spring onions",
+        "1 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tsp sesame seeds",
+        "1 tsp sugar"
+      ],
+      "instructions": [
+        "Cut the vegetables or cheese into even pieces and brush with the listed oil and seasoning. If using skewers, leave a little room between pieces.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate and cook vegetables over direct heat, turning as they soften.",
+        "Move thick pieces to indirect heat if they colour before becoming tender. Cook until browned and easily pierced; melt cheese without letting it fall through the grate.",
+        "Finish with the listed herbs, citrus or sauce and serve warm."
+      ],
+      "sides": "Serve with rice or alongside skewers.",
+      "substitutions": "Use thick leeks cut into short lengths.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "China",
+        "Northern China",
+        "grill-veg",
+        "chinese",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-taiwanese-grilled-pork-belly",
+      "name": "Taiwanese grilled pork belly",
+      "englishName": null,
+      "country": "Taiwan",
+      "region": "Night-market style",
+      "description": "Taiwanese grilled pork belly is a Night-market style-style dish featuring pork belly strips, marinated and grilled until browned, with 1 tbsp soy sauce, 1 tbsp rice wine. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g pork belly strips",
+        "1 tbsp soy sauce",
+        "1 tbsp rice wine",
+        "1 tsp five-spice",
+        "1 tsp sugar",
+        "1 tsp white pepper"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Serve with steamed buns, cucumber and herbs.",
+      "substitutions": "Use pork shoulder steaks with less fat.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Taiwan",
+        "Night-market style",
+        "grill-pork",
+        "taiwanese",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-south-african-boerewors-braai",
+      "name": "South African boerewors braai",
+      "englishName": null,
+      "country": "South Africa",
+      "region": "Nationwide braai",
+      "description": "South African boerewors braai is a Nationwide braai-style dish featuring boerewors coil, grilled slowly until browned, with 1 tsp oil, 1 tsp black pepper. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g boerewors coil",
+        "1 tsp oil",
+        "1 tsp black pepper",
+        "1 tomato",
+        "1 onion"
+      ],
+      "instructions": [
+        "Heat the grill to medium, about 180-190 C. Oil the grate lightly and set a cool zone for thicker sausages.",
+        "Place fresh sausages over indirect heat first. Turn frequently so the casing browns without splitting or catching fire.",
+        "Finish briefly over direct heat for colour. Check the centre reaches 71 C for pork or 74 C for poultry using a thermometer.",
+        "Rest 3 minutes and serve with the listed bread, vegetables or sauce. Never pierce before cooking."
+      ],
+      "sides": "Serve with pap, chakalaka and rolls.",
+      "substitutions": "Use a coarse fresh beef sausage.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "South Africa",
+        "Nationwide braai",
+        "grill-sausage",
+        "south",
+        "african"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-south-african-sosaties",
+      "name": "South African sosaties",
+      "englishName": null,
+      "country": "South Africa",
+      "region": "Cape Malay",
+      "description": "South African sosaties is a Cape Malay-style dish featuring lamb cubes, marinated, threaded and grilled, with 1 onion, 100 g dried apricots. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g lamb cubes",
+        "1 onion",
+        "100 g dried apricots",
+        "100 ml plain yogurt",
+        "1 tbsp curry powder",
+        "1 tbsp vinegar"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with yellow rice and chutney.",
+      "substitutions": "Use chicken thigh cubes; cook to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Africa",
+        "Cape Malay",
+        "grill-skewer",
+        "south",
+        "african"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-south-african-peri-peri-chicken",
+      "name": "South African peri-peri chicken",
+      "englishName": null,
+      "country": "South Africa",
+      "region": "Mozambique border region",
+      "description": "South African peri-peri chicken is a Mozambique border region-style dish featuring chicken thighs, marinated and grilled over steady heat, with 2 red chillies, 2 garlic cloves. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken thighs",
+        "2 red chillies",
+        "2 garlic cloves",
+        "2 tbsp lemon juice",
+        "1 tsp paprika",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with rolls, slaw and grilled lemon.",
+      "substitutions": "Use mild peppers for a less hot marinade.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Africa",
+        "Mozambique border region",
+        "grill-poultry",
+        "south",
+        "african"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-nigerian-grilled-suya-beef",
+      "name": "Nigerian grilled suya beef",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Northern Nigeria",
+      "description": "Nigerian grilled suya beef is a Northern Nigeria-style dish featuring beef sirloin strips, marinated, threaded and grilled, with 3 tbsp ground peanuts, 1 tsp paprika. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g beef sirloin strips",
+        "3 tbsp ground peanuts",
+        "1 tsp paprika",
+        "1 tsp ginger",
+        "1 tsp cayenne",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with tomato, onion and lime.",
+      "substitutions": "Use chicken strips; ensure peanut allergies are considered.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Nigeria",
+        "Northern Nigeria",
+        "grill-skewer",
+        "nigerian",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-nigerian-whole-grilled-tilapia",
+      "name": "Nigerian whole grilled tilapia",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Lagos street style",
+      "description": "Nigerian whole grilled tilapia is a Lagos street style-style dish featuring cleaned tilapia, about 700 g each, seasoned and grilled in a basket, with 2 tbsp palm oil, 1 tbsp ground crayfish. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cleaned tilapia, about 700 g each",
+        "2 tbsp palm oil",
+        "1 tbsp ground crayfish",
+        "1 tsp paprika",
+        "1 tsp chilli",
+        "1 lime"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with pepper sauce and sliced onions.",
+      "substitutions": "Use whole snapper of similar size.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Nigeria",
+        "Lagos street style",
+        "grill-fish",
+        "nigerian",
+        "whole"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-nigerian-grilled-goat-suya",
+      "name": "Nigerian grilled goat suya",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "North Central Nigeria",
+      "description": "Nigerian grilled goat suya is a North Central Nigeria-style dish featuring boneless goat, marinated, threaded and grilled, with 2 tbsp ground peanuts, 1 tsp ginger. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 22,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g boneless goat",
+        "2 tbsp ground peanuts",
+        "1 tsp ginger",
+        "1 tsp paprika",
+        "1 tsp cayenne",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with onion, tomato and flatbread.",
+      "substitutions": "Use lamb shoulder cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Nigeria",
+        "North Central Nigeria",
+        "grill-skewer",
+        "nigerian",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-mexican-pollo-al-carbon",
+      "name": "Mexican pollo al carbón",
+      "englishName": null,
+      "country": "Mexico",
+      "region": "Northern Mexico",
+      "description": "Mexican pollo al carbón is a Northern Mexico-style dish featuring chicken quarters, marinated and grilled over steady heat, with 100 ml orange juice, 2 tbsp lime juice. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken quarters",
+        "100 ml orange juice",
+        "2 tbsp lime juice",
+        "1 tbsp achiote paste",
+        "2 garlic cloves",
+        "1 tsp oregano"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with tortillas, salsa and charred onions.",
+      "substitutions": "Use boneless thighs and reduce grilling time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Mexico",
+        "Northern Mexico",
+        "grill-poultry",
+        "mexican",
+        "pollo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-mexican-fish-zarandeado",
+      "name": "Mexican fish zarandeado",
+      "englishName": null,
+      "country": "Mexico",
+      "region": "Nayarit",
+      "description": "Mexican fish zarandeado is a Nayarit-style dish featuring whole snapper, about 1 kg, butterflied, seasoned and grilled in a basket, with 2 tbsp lime juice, 1 tbsp mayonnaise. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 whole snapper, about 1 kg, butterflied",
+        "2 tbsp lime juice",
+        "1 tbsp mayonnaise",
+        "1 tbsp chilli paste",
+        "1 tsp soy sauce",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with tortillas, cabbage and lime.",
+      "substitutions": "Use two firm fish fillets in a grill basket.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Mexico",
+        "Nayarit",
+        "grill-fish",
+        "mexican",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-mexican-grilled-nopales-with-queso",
+      "name": "Mexican grilled nopales with queso",
+      "englishName": null,
+      "country": "Mexico",
+      "region": "Central Mexico",
+      "description": "Mexican grilled nopales with queso is a Central Mexico-style dish featuring cleaned cactus paddles, charred over direct heat, with 150 g queso fresco, 1 tbsp oil. Tip: Keep vegetables in a single layer and move thick pieces to indirect heat if they char too quickly.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 cleaned cactus paddles",
+        "150 g queso fresco",
+        "1 tbsp oil",
+        "1 lime",
+        "1 tsp oregano",
+        "1 tomato"
+      ],
+      "instructions": [
+        "Cut the vegetables or cheese into even pieces and brush with the listed oil and seasoning. If using skewers, leave a little room between pieces.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate and cook vegetables over direct heat, turning as they soften.",
+        "Move thick pieces to indirect heat if they colour before becoming tender. Cook until browned and easily pierced; melt cheese without letting it fall through the grate.",
+        "Finish with the listed herbs, citrus or sauce and serve warm."
+      ],
+      "sides": "Serve in warm tortillas with salsa.",
+      "substitutions": "Use thick courgette slices if nopales are unavailable.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Mexico",
+        "Central Mexico",
+        "grill-veg",
+        "mexican",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-mexican-al-pastor-style-pork-skewers",
+      "name": "Mexican al pastor-style pork skewers",
+      "englishName": null,
+      "country": "Mexico",
+      "region": "Mexico City trompo adaptation",
+      "description": "Mexican al pastor-style pork skewers is a Mexico City trompo adaptation-style dish featuring pork shoulder, thinly sliced, marinated, threaded and grilled, with 2 tbsp achiote paste, 2 guajillo chillies. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "700 g pork shoulder, thinly sliced",
+        "2 tbsp achiote paste",
+        "2 guajillo chillies",
+        "2 tbsp pineapple juice",
+        "1 tbsp vinegar",
+        "1 small pineapple"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve in tortillas with pineapple, onion and coriander.",
+      "substitutions": "Use boneless chicken thighs.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Mexico",
+        "Mexico City trompo adaptation",
+        "grill-skewer",
+        "mexican",
+        "al"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-thai-gai-yang-grilled-chicken",
+      "name": "Thai gai yang grilled chicken",
+      "englishName": null,
+      "country": "Thailand",
+      "region": "Isan",
+      "description": "Thai gai yang grilled chicken is a Isan-style dish featuring chicken thighs, marinated and grilled over steady heat, with 2 tbsp fish sauce, 2 garlic cloves. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken thighs",
+        "2 tbsp fish sauce",
+        "2 garlic cloves",
+        "1 tbsp coriander root",
+        "1 tbsp palm sugar",
+        "1 tsp white pepper"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with sticky rice and jaew dipping sauce.",
+      "substitutions": "Use tamari and a little salt instead of fish sauce.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Thailand",
+        "Isan",
+        "grill-poultry",
+        "thai",
+        "gai"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-thai-grilled-pork-neck-kor-moo-yang",
+      "name": "Thai grilled pork neck kor moo yang",
+      "englishName": null,
+      "country": "Thailand",
+      "region": "Isan",
+      "description": "Thai grilled pork neck kor moo yang is a Isan-style dish featuring pork neck, marinated and grilled until browned, with 1 tbsp fish sauce, 1 tbsp soy sauce. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g pork neck",
+        "1 tbsp fish sauce",
+        "1 tbsp soy sauce",
+        "1 tbsp lime juice",
+        "1 tsp toasted rice powder",
+        "1 tsp sugar"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Slice with sticky rice and spicy lime dip.",
+      "substitutions": "Use pork shoulder steaks.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Thailand",
+        "Isan",
+        "grill-pork",
+        "thai",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-indonesian-chicken-satay",
+      "name": "Indonesian chicken satay",
+      "englishName": null,
+      "country": "Indonesia",
+      "region": "Java",
+      "description": "Indonesian chicken satay is a Java-style dish featuring chicken thigh cubes, marinated, threaded and grilled, with 3 tbsp peanut butter, 1 tbsp soy sauce. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g chicken thigh cubes",
+        "3 tbsp peanut butter",
+        "1 tbsp soy sauce",
+        "1 tbsp lime juice",
+        "1 tsp coriander",
+        "1 tsp brown sugar"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with peanut sauce, cucumber and rice cakes.",
+      "substitutions": "Use sunflower seed butter for a peanut-free version.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Indonesia",
+        "Java",
+        "grill-skewer",
+        "indonesian",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-indonesian-ikan-bakar",
+      "name": "Indonesian ikan bakar",
+      "englishName": null,
+      "country": "Indonesia",
+      "region": "West Java",
+      "description": "Indonesian ikan bakar is a West Java-style dish featuring firm fish fillets, about 700 g, seasoned and grilled in a basket, with 2 tbsp kecap manis, 2 garlic cloves. Tip: A well-oiled basket makes delicate fish easier to turn without breaking.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 firm fish fillets, about 700 g",
+        "2 tbsp kecap manis",
+        "2 garlic cloves",
+        "1 tsp ginger",
+        "1 lime",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the fish dry, brush with oil and season or marinate briefly with the listed citrus and herbs. Oil a grill basket or grate.",
+        "Heat the grill to medium-high, about 200 C. Place thicker portions over the hotter zone and close the lid; turn once only when the fish releases easily.",
+        "Cook until the thickest part reaches 63 C, or the flesh is opaque and flakes readily. Shellfish should become firm and opaque; discard mussels or clams that do not open.",
+        "Transfer with a clean spatula and serve with the listed sides. Keep seafood cold until cooking."
+      ],
+      "sides": "Serve with sambal, rice and cucumber.",
+      "substitutions": "Use tamari plus a teaspoon of brown sugar.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Indonesia",
+        "West Java",
+        "grill-fish",
+        "indonesian",
+        "ikan"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-malaysian-satay-ayam",
+      "name": "Malaysian satay ayam",
+      "englishName": null,
+      "country": "Malaysia",
+      "region": "Nationwide",
+      "description": "Malaysian satay ayam is a Nationwide-style dish featuring chicken thigh cubes, marinated, threaded and grilled, with 2 tbsp peanut butter, 1 tbsp coconut milk. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g chicken thigh cubes",
+        "2 tbsp peanut butter",
+        "1 tbsp coconut milk",
+        "1 tsp turmeric",
+        "1 tsp coriander",
+        "1 lime"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with peanut sauce, cucumber and compressed rice.",
+      "substitutions": "Use sunflower butter and check spice-paste labels.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Malaysia",
+        "Nationwide",
+        "grill-skewer",
+        "malaysian",
+        "satay"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-filipino-chicken-inasal",
+      "name": "Filipino chicken inasal",
+      "englishName": null,
+      "country": "Philippines",
+      "region": "Bacolod, Negros",
+      "description": "Filipino chicken inasal is a Bacolod, Negros-style dish featuring chicken legs, marinated and grilled over steady heat, with 2 tbsp calamansi or lime juice, 1 tbsp vinegar. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken legs",
+        "2 tbsp calamansi or lime juice",
+        "1 tbsp vinegar",
+        "2 garlic cloves",
+        "1 tsp annatto",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with garlic rice and sinamak vinegar.",
+      "substitutions": "Use lemon juice when calamansi is unavailable.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Philippines",
+        "Bacolod, Negros",
+        "grill-poultry",
+        "filipino",
+        "chicken"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-filipino-inihaw-na-liempo",
+      "name": "Filipino inihaw na liempo",
+      "englishName": null,
+      "country": "Philippines",
+      "region": "Luzon",
+      "description": "Filipino inihaw na liempo is a Luzon-style dish featuring pork belly slices, marinated and grilled until browned, with 60 ml soy sauce, 2 tbsp calamansi juice. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g pork belly slices",
+        "60 ml soy sauce",
+        "2 tbsp calamansi juice",
+        "2 garlic cloves",
+        "1 tbsp brown sugar",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Serve with atchara and steamed rice.",
+      "substitutions": "Use pork shoulder steaks.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Philippines",
+        "Luzon",
+        "grill-pork",
+        "filipino",
+        "inihaw"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-australian-grilled-lamb-chops",
+      "name": "Australian grilled lamb chops",
+      "englishName": null,
+      "country": "Australia",
+      "region": "Nationwide backyard barbecue",
+      "description": "Australian grilled lamb chops is a Nationwide backyard barbecue-style dish featuring lamb chops, about 900 g, seasoned and grilled over live heat, with 1 tbsp rosemary, 2 garlic cloves. Tip: Rest whole cuts after grilling and slice across the grain when appropriate.",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 lamb chops, about 900 g",
+        "1 tbsp rosemary",
+        "2 garlic cloves",
+        "1 lemon",
+        "2 tbsp olive oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Pat the meat dry and season both sides with the listed salt, herbs and oil. Bring it out of the refrigerator while the grill heats, no longer than 30 minutes.",
+        "Heat a clean grill to high, about 230-260 C. Sear the meat, turning once; move to indirect heat if the exterior browns before the centre cooks.",
+        "Use a thermometer in the thickest part. For whole beef or lamb steaks cook to at least 63 C and rest 3 minutes; cook ground meat to 71 C.",
+        "Rest 5-10 minutes, slice across the grain if needed and serve with the stated accompaniments."
+      ],
+      "sides": "Serve with grilled zucchini and potato salad.",
+      "substitutions": "Use thick pork chops; cook to safe temperature.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Australia",
+        "Nationwide backyard barbecue",
+        "grill-steak",
+        "australian",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-french-merguez-and-pepper-brochettes",
+      "name": "French merguez and pepper brochettes",
+      "englishName": null,
+      "country": "France",
+      "region": "Southern France",
+      "description": "French merguez and pepper brochettes is a Southern France-style dish featuring merguez sausages, marinated, threaded and grilled, with 2 red peppers, 1 red onion. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 merguez sausages",
+        "2 red peppers",
+        "1 red onion",
+        "1 tbsp olive oil",
+        "1 tsp herbes de Provence"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with couscous and harissa yogurt.",
+      "substitutions": "Use another fresh spiced lamb sausage.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "France",
+        "Southern France",
+        "grill-skewer",
+        "french",
+        "merguez"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-german-bratwurst-with-grilled-onions",
+      "name": "German bratwurst with grilled onions",
+      "englishName": null,
+      "country": "Germany",
+      "region": "Thuringia-inspired",
+      "description": "German bratwurst with grilled onions is a Thuringia-inspired-style dish featuring fresh bratwurst, grilled slowly until browned, with 2 onions, 1 tbsp oil. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 10,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 fresh bratwurst",
+        "2 onions",
+        "1 tbsp oil",
+        "1 tsp mustard",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Heat the grill to medium, about 180-190 C. Oil the grate lightly and set a cool zone for thicker sausages.",
+        "Place fresh sausages over indirect heat first. Turn frequently so the casing browns without splitting or catching fire.",
+        "Finish briefly over direct heat for colour. Check the centre reaches 71 C for pork or 74 C for poultry using a thermometer.",
+        "Rest 3 minutes and serve with the listed bread, vegetables or sauce. Never pierce before cooking."
+      ],
+      "sides": "Serve with rolls, mustard and potato salad.",
+      "substitutions": "Use fresh coarse pork sausages.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Germany",
+        "Thuringia-inspired",
+        "grill-sausage",
+        "german",
+        "bratwurst"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-new-zealand-lamb-and-rosemary-skewers",
+      "name": "New Zealand lamb and rosemary skewers",
+      "englishName": null,
+      "country": "New Zealand",
+      "region": "South Island",
+      "description": "New Zealand lamb and rosemary skewers is a South Island-style dish featuring lamb leg cubes, marinated, threaded and grilled, with 1 red pepper, 1 red onion. Tip: Cut pieces to a similar size and leave small gaps so they cook evenly.",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g lamb leg cubes",
+        "1 red pepper",
+        "1 red onion",
+        "1 tbsp rosemary",
+        "2 tbsp oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Cut the main ingredient into even pieces. Whisk the listed marinade, coat the pieces and chill for 20 minutes to 4 hours; soak wooden skewers for 30 minutes.",
+        "Heat a clean grill to medium-high, about 200 C. Thread ingredients with a little space between pieces and oil the grate lightly.",
+        "Grill, turning every few minutes. Cook poultry to 74 C, ground-meat kebabs to 71 C, and whole-muscle beef or lamb to at least 63 C with a 3-minute rest.",
+        "Rest briefly and serve with the listed sauce and sides. Use clean utensils for cooked skewers."
+      ],
+      "sides": "Serve with kūmara and green salad.",
+      "substitutions": "Use beef sirloin cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "New Zealand",
+        "South Island",
+        "grill-skewer",
+        "new",
+        "zealand"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-caribbean-jerk-chicken",
+      "name": "Caribbean jerk chicken",
+      "englishName": null,
+      "country": "Jamaica",
+      "region": "Nationwide",
+      "description": "Caribbean jerk chicken is a Nationwide-style dish featuring chicken thighs, marinated and grilled over steady heat, with 2 spring onions, 1 tbsp allspice. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 kg chicken thighs",
+        "2 spring onions",
+        "1 tbsp allspice",
+        "1 Scotch bonnet",
+        "2 tbsp lime juice",
+        "1 tbsp thyme"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with rice and peas, lime and slaw.",
+      "substitutions": "Use a milder chilli; keep the aromatic marinade.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Jamaica",
+        "Nationwide",
+        "grill-poultry",
+        "caribbean",
+        "jerk"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-jamaican-jerk-pork-shoulder-steaks",
+      "name": "Jamaican jerk pork shoulder steaks",
+      "englishName": null,
+      "country": "Jamaica",
+      "region": "Nationwide",
+      "description": "Jamaican jerk pork shoulder steaks is a Nationwide-style dish featuring pork shoulder steaks, marinated and grilled until browned, with 2 spring onions, 1 tbsp allspice. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g pork shoulder steaks",
+        "2 spring onions",
+        "1 tbsp allspice",
+        "1 Scotch bonnet",
+        "1 tbsp thyme",
+        "2 tbsp lime juice"
+      ],
+      "instructions": [
+        "Marinate the pork in the measured seasonings, keeping it refrigerated. Set aside a clean portion of glaze for serving.",
+        "Heat a grill to medium and cook over direct heat for colour, then finish over the cooler zone if thick.",
+        "Check whole cuts reach at least 63 C and rest 3 minutes; ground pork reaches 71 C. Brush with clean glaze in the final minutes.",
+        "Rest, slice and serve with the listed sides."
+      ],
+      "sides": "Serve with rice and peas.",
+      "substitutions": "Use boneless chicken thighs and cook to 74 C.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Jamaica",
+        "Nationwide",
+        "grill-pork",
+        "jamaican",
+        "jerk"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "bbq-trinidadian-grilled-curry-chicken",
+      "name": "Trinidadian grilled curry chicken",
+      "englishName": null,
+      "country": "Trinidad and Tobago",
+      "region": "Trinidad",
+      "description": "Trinidadian grilled curry chicken is a Trinidad-style dish featuring chicken thighs, marinated and grilled over steady heat, with 2 tbsp curry powder, 2 garlic cloves. Tip: Marinate in the refrigerator and turn often to brown without burning the sugars.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "800 g chicken thighs",
+        "2 tbsp curry powder",
+        "2 garlic cloves",
+        "1 tbsp lime juice",
+        "1 tsp thyme",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the listed acid, oil and seasonings; coat the chicken and refrigerate for 20 minutes to 4 hours. Discard raw marinade or boil it before using as a sauce.",
+        "Heat a clean grill to medium, about 190-200 C. Oil the grate lightly and arrange chicken over indirect heat first if pieces are thick.",
+        "Turn regularly and grill until the thickest part reaches 74 C, moving over direct heat briefly to brown. Do not rely on grill marks to judge doneness.",
+        "Rest 5 minutes and serve with the listed sides. Keep raw poultry plates and utensils separate."
+      ],
+      "sides": "Serve with roti and cucumber chutney.",
+      "substitutions": "Use firm tofu and vegetables.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw meat separate from ready-to-eat foods and refrigerate promptly. Use a thermometer: poultry 74 C, ground meat 71 C, and whole beef, pork or lamb cuts at least 63 C followed by a 3-minute rest. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Trinidad and Tobago",
+        "Trinidad",
+        "grill-poultry",
+        "trinidadian",
+        "grilled"
+      ],
+      "revision": 1
+    }
+  ]
+}

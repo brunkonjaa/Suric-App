@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The bundled JSON source files and recipe manifest total **1,174,723 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
+The 28 bundled JSON files total **1,826,155 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
@@ -20,11 +20,11 @@ The bundled JSON source files and recipe manifest total **1,174,723 bytes**. The
 | Notes | 0 | Private user-created notes | None |
 | **Total** | **35** | **24 guides and 11 Cooking recipe records** | - |
 
-The 11 Cooking article records remain available. Fifteen recipe catalogue data assets contain 534 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. A version-1 manifest registers supplemental catalogues without changing the loader. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. A global offline-search screen filters all bundled guides and recipes by content and category. Recipe details offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking, a local favourite toggle and an encrypted Shopping handoff that creates separately checkable ingredient rows and skips exact repeat additions for the same recipe. The collection picker currently contains African regional, Irish, Argentinian, Bosnia and Herzegovina, Brazilian, Bulgarian, French, German, Greek, Hungarian, Indian, Japanese, Italian, Mexican, Spanish and United States of America recipes. Offline articles and recipes also support a twenty-item recently viewed list.
+The 11 Cooking article records remain available. Twenty-five recipe catalogue data assets contain 891 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. A version-1 manifest registers supplemental catalogues without changing the loader. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. A global offline-search screen filters all bundled guides and recipes by content and category. Recipe details offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking, a local favourite toggle and an encrypted Shopping handoff that creates separately checkable ingredient rows and skips exact repeat additions for the same recipe. The collection picker contains 24 traditional cuisine collections, BBQ Around the World and Fish & Seafood Around the World. Offline articles and recipes also support a twenty-item recently viewed list.
 
 ## Cuisine and special-collection quotas
 
-The requested 920 collection-entry quota is not complete. The catalogue currently declares fifteen cuisine collections with exactly 30 distinct African regional, Irish, Argentinian, Bosnia and Herzegovina, Brazilian, Bulgarian, French, German, Greek, Hungarian, Indian, Japanese, Italian, Mexican, Spanish and United States of America recipe entries. There are 534 canonical recipe records; 54 are not yet assigned to a requested collection. No BBQ or Fish & Seafood entries are assigned. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
+The requested 920 collection-entry quota is complete. The catalogue declares twenty-four traditional cuisine collections with exactly 30 entries each and two special collections with 100 entries each. There are 891 canonical recipe records; 53 are not assigned to a requested collection. Existing recipe records can be referenced by multiple collections without duplicating their canonical data.
 
 | Requested cuisine group | Entries assigned |
 | --- | ---: |
@@ -33,8 +33,8 @@ The requested 920 collection-entry quota is not complete. The catalogue currentl
 | Bosnian | 30 / 30 |
 | Brazilian | 30 / 30 |
 | Bulgarian | 30 / 30 |
-| Chinese | 0 / 30 |
-| Croatian | 0 / 30 |
+| Chinese | 30 / 30 |
+| Croatian | 30 / 30 |
 | French | 30 / 30 |
 | German | 30 / 30 |
 | Greek | 30 / 30 |
@@ -43,19 +43,19 @@ The requested 920 collection-entry quota is not complete. The catalogue currentl
 | Irish | 30 / 30 |
 | Italian | 30 / 30 |
 | Japanese | 30 / 30 |
-| Macedonian | 0 / 30 |
+| Macedonian | 30 / 30 |
 | Mexican | 30 / 30 |
-| Moroccan | 0 / 30 |
-| Nigerian | 0 / 30 |
-| Persian | 0 / 30 |
-| Romanian | 0 / 30 |
-| Serbian | 0 / 30 |
+| Moroccan | 30 / 30 |
+| Nigerian | 30 / 30 |
+| Persian | 30 / 30 |
+| Romanian | 30 / 30 |
+| Serbian | 30 / 30 |
 | Spanish | 30 / 30 |
 | United States of America | 30 / 30 |
-| BBQ Around the World | 0 / 100 |
-| Fish & Seafood Around the World | 0 / 100 |
+| BBQ Around the World | 100 / 100 |
+| Fish & Seafood Around the World | 100 / 100 |
 
-**Assigned collection total: 480 / 920.** The 54 unassigned canonical records do not count toward the requested quotas. BBQ and seafood need their own culturally appropriate collection assignments; the other 8 cuisine groups still need 30 entries apiece.
+**Assigned collection total: 920 / 920.** All requested quotas are complete. The 53 unassigned canonical records do not count toward the requested quotas.
 
 ## Recipe authorship and cultural references
 
@@ -89,11 +89,15 @@ French regional selections were cross-checked against [Explore France's regional
 
 Italian regional selections were cross-checked against [Italia.it's food and wine guide](https://www.italia.it/en/italy/things-to-do/food-and-wine), its overview of [Italian cuisine's regional heritage](https://www.italia.it/en/italy/things-to-do/italian-cuisine-unesco-heritage), and its [Lazio](https://www.italia.it/en/lazio/things-to-do/typical-food-and-dishes-in-lazio-italy) and [Sicily](https://www.italia.it/en/sicily/things-to-do/typical-sicilian-products-dishes) food guides. Recipes are Suric-authored home adaptations; seafood and raw-egg handling have recipe-specific safety notes.
 
+Chinese regional selections were informed by China Culture's overviews of the [eight traditional regional cuisines](https://en.chinaculture.org/chineseway/2013-04/17/content_455945_2.htm) and [Huaiyang cuisine](https://en.chinaculture.org/2018-01/01/content_1129489.htm). Croatian selections draw on Croatia's official tourism materials for [regional gastronomy](https://croatia.hr/cmsmedia/uputa/HTZ-ReleaseNotes-WEB.pdf) and [coastal and continental dishes](https://croatia.hr/cmsmedia/Aktivnost/Poslovni_turizam/Factsheets/Hotel_Zora_Congress_Brochure.pdf). North Macedonian dishes were cross-checked against [North Macedonia Tourism's food guide](https://northmacedoniatourism.com/plan/food-guide) and the [Tourism Macedonia traditional-tastes brochure](https://tourismmacedonia.gov.mk/wp-content/uploads/2018/09/1.-Skopje-A-WALK-THROUGH-THE-ETERNAL-CITY.pdf). Moroccan selection was guided by the [Moroccan National Tourist Office gastronomy overview](https://www.visitmorocco.com/en/discover-morocco/gastronomy) and its [food and drink guide](https://www.visitmorocco.com/en/travel-info/food-drinks). Nigerian regional selections draw on the [National Institute for Cultural Orientation's six-zone overview](https://nico.gov.ng/cuisines-in-nigeria/) and the [Federal Ministry of Information cuisine list](https://fmino.gov.ng/culture/cuisine/). Persian regional choices were informed by the FAO's note on [Iran's provincial food diversity](https://www.fao.org/fileadmin/templates/ess/CountrySTAT/ECO_Tehran/Docs/General_Information_Note_on_Iran_and_the_FAO_Representation_in_the_Country_-_July2016.pdf) and Visit Iran's [Sistan and Baluchestan Tabaheg profile](https://visitiran.ir/en/cuisine/tabaheg). Romanian selections were checked against the Romania Travel guides to [sarmale](https://www.turismorumania.com/en/food-in-romania/sarmale) and [Romanian cuisine](https://www.turismorumania.com/en/magazine/romanian-cuisine-traditional-flavors-and-a-rich-culinary-heritage). Serbian regional selections were guided by the [National Tourism Organisation of Serbia's cuisine guide](https://www.serbia.travel/en/taste-of-serbia/) and its [authentic food overview](https://www.serbia.travel/en/bilten/authentic-tastes-of-serbia/). Recipes are Suric-authored home adaptations; regional labels describe inspiration and do not claim one definitive version.
+
+The barbecue collection includes US regional styles such as Texas brisket, Carolina vinegar pulled pork, Kansas City glazed ribs and Memphis dry-rub ribs, alongside traditions from other regions. Background selections were checked against [Visit the USA's regional barbecue guide](https://traveltrade.visittheusa.com/trip/low-slow-delicious-regional-guide-to-u-s-barbecue-styles/) and [Memphis Tourism's food guide](https://tourismmemphis.com/food). Global selections include Brazilian churrasco, Korean barbecue and other regional grilling traditions, cross-checked against [Visit Brasil's gastronomy guide](https://www.visitbrasil.com/en/experience/gastronomy) and [Korea Tourism Organization's food guide](https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=904&vcontsId=221309). Seafood selection references the [FDA's guidance on selecting and serving seafood safely](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely); meat and seafood cooking-temperature guidance follows the [USDA FSIS safe-temperature chart](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart). All recipes are Suric-authored home adaptations.
+
 The added potato/tomato blight and container-watering guides draw on [RHS blight advice](https://www.rhs.org.uk/disease/tomato-blight) and [RHS watering guidance](https://www.rhs.org.uk/vegetables/watering). Wall-drilling safety is cross-checked against [Electrical Safety First's DIY guidance](https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/). Cleaner handling is cross-checked against [UK HSE cleaning-product guidance](https://www.hse.gov.uk/chemical-classification/labelling-packaging/cleaning-products-and-corrosive-pictogram.htm), with the product label controlling use. Phone recycling guidance references [WEEE Ireland's collection information](https://www.weeeireland.ie/household-recycling/where-can-i-recycle/).
 
 ## Storage and navigation
 
-The app loads the two article JSON files, the base recipe catalogue, and the supplemental catalogues named in the version-1 manifest off the main thread. Each article has a stable ID, section, title, summary, revision, tags and full text. Recipes have separate canonical records and collection references. The global offline-search screen checks article text and recipe titles, origin, ingredients and tags and can filter by section or recipes. All sixteen current cuisine collections open complete recipe details with measurements, directions, sides, substitutions, storage and food-safety notes. Back returns to the containing section. `suric://library/{id}` can open a matching bundled article in an installed Suric copy. Recipe-specific deep links and a verified HTTPS App Links domain are not configured.
+The app loads the two article JSON files, the base recipe catalogue, and the supplemental catalogues named in the version-1 manifest off the main thread. Each article has a stable ID, section, title, summary, revision, tags and full text. Recipes have separate canonical records and collection references. The global offline-search screen checks article text and recipe titles, origin, ingredients and tags and can filter by section or recipes. All 26 current recipe collections open complete recipe details with measurements, directions, sides, substitutions, storage and food-safety notes. Back returns to the containing section. `suric://library/{id}` can open a matching bundled article in an installed Suric copy. Recipe-specific deep links and a verified HTTPS App Links domain are not configured.
 
 **Copy to section** creates an independent encrypted personal entry. It does not alter the bundled article, and later edits/deletion affect only the personal copy. Personal entries can be moved among sections in their editor; the move retains the entry ID and encrypted store, and shopping-only retailer metadata is cleared when moved out of Shopping.
 
@@ -109,6 +113,6 @@ Chat history can be shared as plain text through Android Sharesheet and deleted 
 
 ## Unimplemented content depth
 
-The African regional, Irish, Argentinian, Bosnia and Herzegovina, Brazilian, Bulgarian, French, German, Greek, Hungarian, Indian, Japanese, Italian, Mexican, Spanish and United States of America 30-entry cuisine quotas are complete. The remaining 8 cuisine groups, 100-entry BBQ collection and 100-entry Fish & Seafood collection have not been added, so the total is 480 of 920 collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
+All 24 traditional cuisine quotas and both 100-entry BBQ and Fish & Seafood quotas are complete: 920 of 920 requested collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 
 No tests, lint, builds, emulator checks or GitHub Actions were run for this change, as requested.

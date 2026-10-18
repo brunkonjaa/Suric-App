@@ -1,0 +1,1111 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "macedonia-tavče-gravče",
+      "name": "Tavče gravče",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Tavče gravče, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g dried white beans, soaked",
+        "1 onion",
+        "1 tbsp sweet paprika",
+        "2 tbsp oil",
+        "1 bay leaf",
+        "500 ml water"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g dried white beans, soaked, 1 onion and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 500 ml water.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with pickled peppers and bread.",
+      "substitutions": "Use canned beans and shorten oven time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "tavče",
+        "gravče"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-ohrid-style-baked-trout",
+      "name": "Ohrid-style baked trout",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Ohrid",
+      "description": "A Suric home-cooking adaptation of Ohrid-style baked trout, using accessible ingredients and a practical method inspired by Ohrid.",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 trout fillets",
+        "1 onion",
+        "2 tomatoes",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 2 trout fillets, 1 onion and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tbsp parsley.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with potatoes and greens.",
+      "substitutions": "Use another firm white fish; avoid cross-contamination with raw fish.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "North Macedonia",
+        "Ohrid",
+        "bake",
+        "ohrid-style",
+        "baked"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-pastrmajlija-style-open-meat-pie",
+      "name": "Pastrmajlija-style open meat pie",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Štip",
+      "description": "A Suric home-cooking adaptation of Pastrmajlija-style open meat pie, using accessible ingredients and a practical method inspired by Štip.",
+      "prepMinutes": 35,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "350 g flour",
+        "200 ml warm water",
+        "7 g dry yeast",
+        "300 g pork",
+        "1 egg",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 350 g flour, 200 ml warm water and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 2 tbsp oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve hot with pickled hot peppers.",
+      "substitutions": "Use chicken thigh pieces and cook fully.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Štip",
+        "bake",
+        "pastrmajlija-style",
+        "open"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-ajvar",
+      "name": "Macedonian ajvar",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian ajvar, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 red bell peppers",
+        "1 aubergine",
+        "2 garlic cloves",
+        "3 tbsp oil",
+        "1 tbsp vinegar",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare 6 red bell peppers, 1 aubergine and arrange in a shallow roasting dish.",
+        "Add the remaining seasonings and 1 tsp salt; toss or stir so the ingredients are coated.",
+        "Roast, turning once, until tender and lightly browned; check any meat or fish is fully cooked."
+      ],
+      "sides": "Serve as a spread with bread, cheese or grilled vegetables.",
+      "substitutions": "Use roasted jarred peppers, draining them well.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "roast",
+        "macedonian",
+        "ajvar"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-pindjur-pepper-and-aubergine-relish",
+      "name": "Pindjur pepper and aubergine relish",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Pindjur pepper and aubergine relish, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 red peppers",
+        "2 aubergines",
+        "3 tomatoes",
+        "2 garlic cloves",
+        "3 tbsp oil",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare 4 red peppers, 2 aubergines and arrange in a shallow roasting dish.",
+        "Add the remaining seasonings and 1 tbsp parsley; toss or stir so the ingredients are coated.",
+        "Roast, turning once, until tender and lightly browned; check any meat or fish is fully cooked."
+      ],
+      "sides": "Serve with bread or beans.",
+      "substitutions": "Use jarred roasted peppers and cook until thick.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "roast",
+        "pindjur",
+        "pepper"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-shopska-salad",
+      "name": "Shopska salad",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Shopska salad, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "3 tomatoes",
+        "1 cucumber",
+        "1 green pepper",
+        "1 small onion",
+        "100 g white brined cheese",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Wash and prepare 3 tomatoes, 1 cucumber; cut vegetables into even bite-sized pieces.",
+        "Whisk the oil, acid and seasoning together, including 1 tbsp oil where appropriate.",
+        "Toss gently just before serving and keep chilled until needed."
+      ],
+      "sides": "Serve chilled with bread.",
+      "substitutions": "Use feta-style cheese and adjust added salt.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "salad",
+        "shopska",
+        "salad"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-tarator-cucumber-yogurt-soup",
+      "name": "Tarator cucumber yogurt soup",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Tarator cucumber yogurt soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g plain yogurt",
+        "1 cucumber",
+        "1 garlic clove",
+        "2 tbsp chopped dill",
+        "1 tbsp oil",
+        "150 ml cold water"
+      ],
+      "instructions": [
+        "Wash and prepare 400 g plain yogurt, 1 cucumber; cut vegetables into even bite-sized pieces.",
+        "Whisk the oil, acid and seasoning together, including 150 ml cold water where appropriate.",
+        "Toss gently just before serving and keep chilled until needed."
+      ],
+      "sides": "Serve cold with bread or grilled vegetables.",
+      "substitutions": "Use unsweetened plant yogurt.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "salad",
+        "tarator",
+        "cucumber"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-stuffed-peppers",
+      "name": "Macedonian stuffed peppers",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Pelagonia",
+      "description": "A Suric home-cooking adaptation of Macedonian stuffed peppers, using accessible ingredients and a practical method inspired by Pelagonia.",
+      "prepMinutes": 25,
+      "cookMinutes": 60,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 bell peppers",
+        "250 g minced beef",
+        "100 g rice",
+        "1 onion",
+        "2 tomatoes",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 4 bell peppers, 250 g minced beef and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 300 ml stock.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with yogurt and salad.",
+      "substitutions": "Use lentils and mushrooms instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Pelagonia",
+        "bake",
+        "macedonian",
+        "stuffed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-polneti-tikvichki-stuffed-courgettes",
+      "name": "Polneti tikvichki stuffed courgettes",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Polneti tikvichki stuffed courgettes, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "4 courgettes",
+        "200 g minced beef",
+        "80 g rice",
+        "1 onion",
+        "2 tomatoes",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 4 courgettes, 200 g minced beef and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tbsp parsley.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with plain yogurt.",
+      "substitutions": "Use cooked lentils instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "polneti",
+        "tikvichki"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-selsko-meso-village-style-casserole",
+      "name": "Selsko meso village-style casserole",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Pelagonia",
+      "description": "A Suric home-cooking adaptation of Selsko meso village-style casserole, using accessible ingredients and a practical method inspired by Pelagonia.",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g pork",
+        "200 g mushrooms",
+        "1 onion",
+        "1 red pepper",
+        "150 g white cheese",
+        "150 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g pork, 200 g mushrooms and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 150 ml stock.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with bread and cabbage salad.",
+      "substitutions": "Use beans, mushrooms and extra pepper instead of meat.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Pelagonia",
+        "bake",
+        "selsko",
+        "meso"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-bean-and-leek-stew",
+      "name": "Macedonian bean and leek stew",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian bean and leek stew, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g white beans, soaked",
+        "1 leek",
+        "1 carrot",
+        "1 tbsp paprika",
+        "1 bay leaf",
+        "1 litre stock"
+      ],
+      "instructions": [
+        "Prepare 300 g white beans, soaked, 1 leek. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 1 litre stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with crusty bread.",
+      "substitutions": "Use canned beans and reduce simmer time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "stew",
+        "macedonian",
+        "bean"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-moussaka-with-potatoes",
+      "name": "Moussaka with potatoes",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Moussaka with potatoes, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g potatoes",
+        "300 g minced beef",
+        "1 onion",
+        "2 eggs",
+        "200 ml milk",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 500 g potatoes, 300 g minced beef and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tbsp oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with Shopska salad.",
+      "substitutions": "Use cooked lentils and chopped mushrooms instead of beef.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "moussaka",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-sarma-cabbage-rolls",
+      "name": "Macedonian sarma cabbage rolls",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian sarma cabbage rolls, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 35,
+      "cookMinutes": 75,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "8 cabbage leaves",
+        "250 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "1 tsp paprika",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare 8 cabbage leaves, 250 g minced pork. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 500 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with yogurt or bread.",
+      "substitutions": "Use cooked rice and lentils for a meat-free version.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "stew",
+        "macedonian",
+        "sarma"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-lentil-chorba",
+      "name": "Macedonian lentil chorba",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian lentil chorba, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "200 g brown lentils",
+        "1 onion",
+        "1 carrot",
+        "1 tomato",
+        "1 tsp paprika",
+        "1.2 litres stock"
+      ],
+      "instructions": [
+        "Prepare 200 g brown lentils, 1 onion. Soften the onion and aromatics in a large saucepan.",
+        "Add the remaining ingredients and 1.2 litres stock, then bring to a boil.",
+        "Lower the heat and simmer until the vegetables, grains or protein are tender; taste and adjust before serving."
+      ],
+      "sides": "Serve with bread and lemon.",
+      "substitutions": "Use red lentils, reducing cooking time.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "soup",
+        "macedonian",
+        "lentil"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-kachamak-cornmeal-with-cheese",
+      "name": "Kachamak cornmeal with cheese",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Mountain regions",
+      "description": "A Suric home-cooking adaptation of Kachamak cornmeal with cheese, using accessible ingredients and a practical method inspired by Mountain regions.",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "180 g cornmeal",
+        "750 ml water",
+        "100 g white brined cheese",
+        "1 tbsp butter",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Rinse or prepare 180 g cornmeal, 750 ml water and add to a heavy saucepan with the listed liquid.",
+        "Bring to a gentle boil, then lower the heat and stir regularly to prevent sticking.",
+        "Cook until soft and creamy; finish with 1 tsp salt and serve warm."
+      ],
+      "sides": "Serve with yogurt or braised greens.",
+      "substitutions": "Use a plant-based butter and omit cheese if needed.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Mountain regions",
+        "porridge",
+        "kachamak",
+        "cornmeal"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-zelnik-spinach-pie",
+      "name": "Macedonian zelnik spinach pie",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian zelnik spinach pie, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g filo pastry",
+        "300 g spinach",
+        "200 g white cheese",
+        "2 eggs",
+        "1 onion",
+        "3 tbsp oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g filo pastry, 300 g spinach and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 3 tbsp oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt.",
+      "substitutions": "Use Swiss chard and a dairy-free crumbly alternative.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "macedonian",
+        "zelnik"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-leek-and-cheese-pie",
+      "name": "Macedonian leek and cheese pie",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Pelagonia",
+      "description": "A Suric home-cooking adaptation of Macedonian leek and cheese pie, using accessible ingredients and a practical method inspired by Pelagonia.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g filo pastry",
+        "3 leeks",
+        "200 g white cheese",
+        "2 eggs",
+        "3 tbsp oil",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 300 g filo pastry, 3 leeks and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp black pepper.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with tomato salad.",
+      "substitutions": "Use spinach instead of leek.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Pelagonia",
+        "bake",
+        "macedonian",
+        "leek"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-kifli-soft-rolls",
+      "name": "Macedonian kifli soft rolls",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian kifli soft rolls, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 22,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g flour",
+        "220 ml warm milk",
+        "7 g dry yeast",
+        "1 egg",
+        "50 g butter",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 400 g flour, 220 ml warm milk and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp salt.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve with cheese, ajvar or soup.",
+      "substitutions": "Use warm water and oil instead of milk and butter.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "macedonian",
+        "kifli"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-pogacha-round-bread",
+      "name": "Pogacha round bread",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Pogacha round bread, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g flour",
+        "250 ml warm water",
+        "7 g dry yeast",
+        "2 tbsp oil",
+        "1 tsp sugar",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 400 g flour, 250 ml warm water and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 1 tsp salt.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve fresh with ajvar or stew.",
+      "substitutions": "Use a bread flour blend and follow its hydration guidance.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "pogacha",
+        "round"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-grilled-kebapi",
+      "name": "Macedonian grilled kebapi",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Skopje",
+      "description": "A Suric home-cooking adaptation of Macedonian grilled kebapi, using accessible ingredients and a practical method inspired by Skopje.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "2 garlic cloves",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "1 tbsp oil",
+        "4 flatbreads"
+      ],
+      "instructions": [
+        "Combine 500 g minced beef, 2 garlic cloves with the listed seasoning and shape or portion evenly.",
+        "Grill or cook in a hot ridged pan, turning as needed until browned and cooked through.",
+        "Rest briefly, then serve with 4 flatbreads and the suggested sides."
+      ],
+      "sides": "Serve in flatbread with onion and ajvar.",
+      "substitutions": "Use minced lamb or a plant-based mince.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Skopje",
+        "grill",
+        "macedonian",
+        "grilled"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-skopje-style-pleskavica",
+      "name": "Skopje-style pleskavica",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Skopje",
+      "description": "A Suric home-cooking adaptation of Skopje-style pleskavica, using accessible ingredients and a practical method inspired by Skopje.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "1 onion",
+        "1 tsp paprika",
+        "1 tsp pepper",
+        "1 tbsp oil",
+        "4 flatbreads"
+      ],
+      "instructions": [
+        "Combine 500 g minced beef, 1 onion with the listed seasoning and shape or portion evenly.",
+        "Grill or cook in a hot ridged pan, turning as needed until browned and cooked through.",
+        "Rest briefly, then serve with 4 flatbreads and the suggested sides."
+      ],
+      "sides": "Serve with chopped onion and Shopska salad.",
+      "substitutions": "Use minced turkey and cook thoroughly.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Skopje",
+        "grill",
+        "skopje-style",
+        "pleskavica"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-šarska-pleskavica-with-cheese-centre",
+      "name": "Šarska pleskavica with cheese centre",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Šar Mountains",
+      "description": "A Suric home-cooking adaptation of Šarska pleskavica with cheese centre, using accessible ingredients and a practical method inspired by Šar Mountains.",
+      "prepMinutes": 25,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced beef",
+        "100 g firm white cheese",
+        "1 tsp paprika",
+        "1 tsp pepper",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Combine 500 g minced beef, 100 g firm white cheese with the listed seasoning and shape or portion evenly.",
+        "Grill or cook in a hot ridged pan, turning as needed until browned and cooked through.",
+        "Rest briefly, then serve with 1 tbsp oil and the suggested sides."
+      ],
+      "sides": "Serve with ajvar and salad.",
+      "substitutions": "Use minced lamb; ensure the centre is cooked through.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods; cook meat fully, then refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Šar Mountains",
+        "grill",
+        "šarska",
+        "pleskavica"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-ohrid-fish-stew",
+      "name": "Ohrid fish stew",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Ohrid",
+      "description": "A Suric home-cooking adaptation of Ohrid fish stew, using accessible ingredients and a practical method inspired by Ohrid.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g firm freshwater fish",
+        "1 onion",
+        "2 tomatoes",
+        "1 red pepper",
+        "700 ml stock",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Prepare 400 g firm freshwater fish, 1 onion. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 1 tbsp parsley; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with bread and lemon.",
+      "substitutions": "Use firm white fish and vegetable stock.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Keep seafood chilled and separate from ready-to-eat foods; cook until opaque and steaming, and refrigerate leftovers promptly.",
+      "tags": [
+        "North Macedonia",
+        "Ohrid",
+        "stew",
+        "ohrid",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-baked-beans-with-peppers",
+      "name": "Baked beans with peppers",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Baked beans with peppers, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g cooked white beans",
+        "2 red peppers",
+        "1 onion",
+        "1 tsp paprika",
+        "2 tbsp oil",
+        "200 ml stock"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 400 g cooked white beans, 2 red peppers and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 200 ml stock.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve as a side with salad and bread.",
+      "substitutions": "Use butter beans or cannellini beans.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "baked",
+        "beans"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-tomato-and-rice-stew",
+      "name": "Macedonian tomato and rice stew",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Vardar region",
+      "description": "A Suric home-cooking adaptation of Macedonian tomato and rice stew, using accessible ingredients and a practical method inspired by Vardar region.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g rice",
+        "4 ripe tomatoes",
+        "1 onion",
+        "1 red pepper",
+        "600 ml vegetable stock",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Prepare 150 g rice, 4 ripe tomatoes. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 1 tbsp parsley; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve with white cheese or beans.",
+      "substitutions": "Use canned tomatoes when fresh ones are not in season.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Vardar region",
+        "stew",
+        "macedonian",
+        "tomato"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-grilled-red-peppers-with-garlic",
+      "name": "Grilled red peppers with garlic",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Grilled red peppers with garlic, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "6 red bell peppers",
+        "2 garlic cloves",
+        "2 tbsp oil",
+        "1 tbsp vinegar",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Heat the oven to 200 C. Prepare 6 red bell peppers, 2 garlic cloves and arrange in a shallow roasting dish.",
+        "Add the remaining seasonings and 1 tbsp parsley; toss or stir so the ingredients are coated.",
+        "Roast, turning once, until tender and lightly browned; check any meat or fish is fully cooked."
+      ],
+      "sides": "Serve with bread, beans or cheese.",
+      "substitutions": "Use drained jarred roasted peppers.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "roast",
+        "grilled",
+        "red"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-stuffed-vine-leaves",
+      "name": "Macedonian stuffed vine leaves",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian stuffed vine leaves, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 35,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "20 vine leaves",
+        "150 g rice",
+        "1 onion",
+        "2 tbsp parsley",
+        "1 lemon",
+        "300 ml stock"
+      ],
+      "instructions": [
+        "Prepare 20 vine leaves, 150 g rice. Soften the onion or aromatic ingredients in a heavy saucepan with a little oil.",
+        "Add the main ingredients and 300 ml stock; bring to a gentle simmer.",
+        "Cover and cook gently until tender and the flavours have combined, stirring occasionally. Add a little water if the pan becomes dry."
+      ],
+      "sides": "Serve warm or cool with yogurt.",
+      "substitutions": "Use cabbage leaves if vine leaves are unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "stew",
+        "macedonian",
+        "stuffed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-apple-and-walnut-cake",
+      "name": "Macedonian apple and walnut cake",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian apple and walnut cake, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g flour",
+        "2 apples",
+        "80 g walnuts",
+        "2 eggs",
+        "100 g sugar",
+        "100 ml oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 250 g flour, 2 apples and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 100 ml oil.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve sliced with tea or plain yogurt.",
+      "substitutions": "Use hazelnuts instead of walnuts.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "bake",
+        "macedonian",
+        "apple"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-tulumba-style-syrup-pastries",
+      "name": "Macedonian tulumba-style syrup pastries",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Macedonian tulumba-style syrup pastries, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 35,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g flour",
+        "250 ml water",
+        "2 eggs",
+        "50 g butter",
+        "150 g sugar",
+        "150 ml water for syrup"
+      ],
+      "instructions": [
+        "Prepare 200 g flour, 250 ml water and mix the batter or filling until evenly combined.",
+        "Heat oil in a deep, heavy pan to about 170 C; fry small batches, turning until evenly golden and cooked through.",
+        "Drain on a rack or paper and finish with 150 ml water for syrup. Keep children away from hot oil."
+      ],
+      "sides": "Serve cooled with coffee.",
+      "substitutions": "Bake piped dough at 200 C for a lighter adaptation.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "North Macedonia",
+        "Nationwide",
+        "fry",
+        "macedonian",
+        "tulumba-style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "macedonia-macedonian-baked-quince-with-honey",
+      "name": "Macedonian baked quince with honey",
+      "englishName": null,
+      "country": "North Macedonia",
+      "region": "Pelagonia",
+      "description": "A Suric home-cooking adaptation of Macedonian baked quince with honey, using accessible ingredients and a practical method inspired by Pelagonia.",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 quinces",
+        "2 tbsp honey",
+        "1 cinnamon stick",
+        "150 ml water",
+        "2 tbsp chopped walnuts"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare 2 quinces, 2 tbsp honey and lightly grease a suitable baking dish.",
+        "Layer or combine the ingredients as appropriate, then add 2 tbsp chopped walnuts.",
+        "Bake until set, tender and browned at the edges; rest briefly before serving."
+      ],
+      "sides": "Serve warm with yogurt.",
+      "substitutions": "Use apples or pears if quince is unavailable.",
+      "storage": "Cool promptly, refrigerate in a covered container and use within 3 days; reheat once until steaming. For salads and chilled dishes, keep refrigerated and use within 2 days.",
+      "safety": "Wash produce, use clean utensils and refrigerate leftovers promptly; reheat cooked leftovers until steaming.",
+      "tags": [
+        "North Macedonia",
+        "Pelagonia",
+        "bake",
+        "macedonian",
+        "baked"
+      ],
+      "revision": 1
+    }
+  ]
+}

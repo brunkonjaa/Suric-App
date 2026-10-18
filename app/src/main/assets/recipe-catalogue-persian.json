@@ -1,0 +1,1120 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "persian-herb-and-kidney-bean-ghormeh-sabzi",
+      "name": "Herb and kidney bean ghormeh sabzi",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Herb and kidney bean ghormeh sabzi, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 120,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g beef",
+        "1 onion",
+        "150 g parsley",
+        "100 g chives",
+        "50 g fenugreek leaves",
+        "1 can kidney beans",
+        "2 dried limes"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with steamed basmati rice.",
+      "substitutions": "Use mushrooms and vegetable stock instead of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "stew",
+        "herb",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-fesenjan-walnut-and-pomegranate-stew",
+      "name": "Fesenjan walnut and pomegranate stew",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Gilan-inspired",
+      "description": "A Suric home-cooking adaptation of Fesenjan walnut and pomegranate stew, using accessible ingredients and a practical method inspired by Gilan-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "500 g chicken thighs",
+        "150 g ground walnuts",
+        "2 tbsp pomegranate molasses",
+        "1 onion",
+        "500 ml stock",
+        "1 tsp cinnamon"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with steamed rice and fresh herbs.",
+      "substitutions": "Use roasted aubergine instead of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Gilan-inspired",
+        "stew",
+        "fesenjan",
+        "walnut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-zereshk-polo-ba-morgh",
+      "name": "Zereshk polo ba morgh",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Zereshk polo ba morgh, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g basmati rice",
+        "500 g chicken thighs",
+        "60 g barberries",
+        "1 onion",
+        "1 tsp saffron",
+        "2 tbsp butter"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with salad shirazi and yogurt.",
+      "substitutions": "Use dried cranberries in place of barberries.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "rice",
+        "zereshk",
+        "polo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-adas-polo-lentil-and-raisin-rice",
+      "name": "Adas polo lentil and raisin rice",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Adas polo lentil and raisin rice, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g basmati rice",
+        "150 g brown lentils",
+        "1 onion",
+        "60 g raisins",
+        "1 tsp cumin",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with cucumber yogurt.",
+      "substitutions": "Use currants instead of raisins.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "rice",
+        "adas",
+        "polo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-baghali-polo-with-dill-and-broad-beans",
+      "name": "Baghali polo with dill and broad beans",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Northern Iran",
+      "description": "A Suric home-cooking adaptation of Baghali polo with dill and broad beans, using accessible ingredients and a practical method inspired by Northern Iran.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g basmati rice",
+        "150 g broad beans",
+        "3 tbsp dill",
+        "1 tsp saffron",
+        "2 tbsp butter",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve beside roasted chicken or mushrooms.",
+      "substitutions": "Use peas when broad beans are unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Northern Iran",
+        "rice",
+        "baghali",
+        "polo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-sabzi-polo-herb-rice",
+      "name": "Sabzi polo herb rice",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nowruz table",
+      "description": "A Suric home-cooking adaptation of Sabzi polo herb rice, using accessible ingredients and a practical method inspired by Nowruz table.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g basmati rice",
+        "100 g parsley",
+        "80 g dill",
+        "50 g coriander",
+        "3 spring onions",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with fish, eggs or beans.",
+      "substitutions": "Use a mix of soft fresh herbs available locally.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nowruz table",
+        "rice",
+        "sabzi",
+        "polo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-tahdig-saffron-rice-crust",
+      "name": "Tahdig saffron rice crust",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Tahdig saffron rice crust, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g basmati rice",
+        "150 g plain yogurt",
+        "1 tsp saffron",
+        "2 tbsp butter",
+        "1 egg yolk",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve crisp pieces with stew.",
+      "substitutions": "Use thick unsweetened plant yogurt and omit yolk.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "rice",
+        "tahdig",
+        "saffron"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-ash-reshteh-herb-noodle-soup",
+      "name": "Ash reshteh herb noodle soup",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Ash reshteh herb noodle soup, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 30,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g chickpeas",
+        "150 g kidney beans",
+        "100 g lentils",
+        "100 g spinach",
+        "1 onion",
+        "120 g noodles",
+        "1 litre stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Top with fried onions and yogurt.",
+      "substitutions": "Use vegetable stock and wheat-free noodles if needed.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "soup",
+        "ash",
+        "reshteh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-abgoosht-chickpea-and-lamb-broth",
+      "name": "Abgoosht chickpea and lamb broth",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Central Iran",
+      "description": "A Suric home-cooking adaptation of Abgoosht chickpea and lamb broth, using accessible ingredients and a practical method inspired by Central Iran.",
+      "prepMinutes": 20,
+      "cookMinutes": 130,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g lamb shoulder",
+        "150 g chickpeas",
+        "1 onion",
+        "2 tomatoes",
+        "2 potatoes",
+        "1 tsp turmeric",
+        "1 litre water"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve broth first, then mash the solids with flatbread.",
+      "substitutions": "Use beans and mushrooms instead of lamb.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Central Iran",
+        "stew",
+        "abgoosht",
+        "chickpea"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-khoresht-bademjan-aubergine-stew",
+      "name": "Khoresht bademjan aubergine stew",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Tehran-inspired",
+      "description": "A Suric home-cooking adaptation of Khoresht bademjan aubergine stew, using accessible ingredients and a practical method inspired by Tehran-inspired.",
+      "prepMinutes": 25,
+      "cookMinutes": 90,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g beef",
+        "2 aubergines",
+        "2 tomatoes",
+        "1 onion",
+        "2 tbsp tomato paste",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with steamed rice and herbs.",
+      "substitutions": "Use chickpeas and vegetable stock in place of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Tehran-inspired",
+        "stew",
+        "khoresht",
+        "bademjan"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-khoresht-karafs-celery-herb-stew",
+      "name": "Khoresht karafs celery herb stew",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Khoresht karafs celery herb stew, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 100,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g beef",
+        "4 celery stalks",
+        "100 g parsley",
+        "40 g mint",
+        "1 onion",
+        "2 dried limes",
+        "600 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with basmati rice.",
+      "substitutions": "Use butter beans instead of beef.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "stew",
+        "khoresht",
+        "karafs"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-khoresht-aloo-plum-stew",
+      "name": "Khoresht aloo plum stew",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Northern Iran",
+      "description": "A Suric home-cooking adaptation of Khoresht aloo plum stew, using accessible ingredients and a practical method inspired by Northern Iran.",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g chicken",
+        "8 dried plums",
+        "1 onion",
+        "1 tsp turmeric",
+        "1 tbsp lemon juice",
+        "400 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with rice and fresh herbs.",
+      "substitutions": "Use chickpeas in place of chicken.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Northern Iran",
+        "stew",
+        "khoresht",
+        "aloo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-khoresh-bamieh-okra-stew",
+      "name": "Khoresh bamieh okra stew",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Southern Iran",
+      "description": "A Suric home-cooking adaptation of Khoresh bamieh okra stew, using accessible ingredients and a practical method inspired by Southern Iran.",
+      "prepMinutes": 20,
+      "cookMinutes": 80,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g beef",
+        "250 g okra",
+        "2 tomatoes",
+        "1 onion",
+        "1 tbsp tomato paste",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with rice and torshi pickles.",
+      "substitutions": "Use mushrooms and vegetable stock.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Southern Iran",
+        "stew",
+        "khoresh",
+        "bamieh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-mirza-ghasemi-smoky-aubergine",
+      "name": "Mirza ghasemi smoky aubergine",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Gilan",
+      "description": "A Suric home-cooking adaptation of Mirza ghasemi smoky aubergine, using accessible ingredients and a practical method inspired by Gilan.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 aubergines",
+        "3 tomatoes",
+        "3 eggs",
+        "3 garlic cloves",
+        "2 tbsp oil",
+        "1 tsp turmeric"
+      ],
+      "instructions": [
+        "Prepare and evenly portion the ingredients. Heat a lightly oiled pan over medium heat.",
+        "Cook in batches, turning or stirring as needed until golden and thoroughly cooked.",
+        "Finish with the listed seasoning and serve promptly."
+      ],
+      "sides": "Serve with flatbread or rice.",
+      "substitutions": "Use tofu scramble instead of eggs.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Iran",
+        "Gilan",
+        "pan",
+        "mirza",
+        "ghasemi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-kashke-bademjan-aubergine-dip",
+      "name": "Kashke bademjan aubergine dip",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Kashke bademjan aubergine dip, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 aubergines",
+        "1 onion",
+        "2 garlic cloves",
+        "150 g kashk or thick yogurt",
+        "1 tsp dried mint",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve warm with flatbread and herbs.",
+      "substitutions": "Use thick unsweetened plant yogurt.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "stew",
+        "kashke",
+        "bademjan"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-salad-shirazi-cucumber-tomato-salad",
+      "name": "Salad shirazi cucumber tomato salad",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Shiraz",
+      "description": "A Suric home-cooking adaptation of Salad shirazi cucumber tomato salad, using accessible ingredients and a practical method inspired by Shiraz.",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cucumbers",
+        "3 tomatoes",
+        "1 small red onion",
+        "2 tbsp lime juice",
+        "2 tbsp mint",
+        "1 tbsp olive oil"
+      ],
+      "instructions": [
+        "Wash and prepare the vegetables and herbs; cut them into even bite-sized pieces.",
+        "Whisk the listed oil, acid and seasonings together in a small bowl.",
+        "Toss gently just before serving. Keep chilled until needed."
+      ],
+      "sides": "Serve chilled beside rice and stew.",
+      "substitutions": "Use lemon juice in place of lime.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Shiraz",
+        "salad",
+        "salad",
+        "shirazi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-kuku-sabzi-herb-frittata",
+      "name": "Kuku sabzi herb frittata",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nowruz table",
+      "description": "A Suric home-cooking adaptation of Kuku sabzi herb frittata, using accessible ingredients and a practical method inspired by Nowruz table.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "6 eggs",
+        "100 g parsley",
+        "80 g coriander",
+        "40 g dill",
+        "3 spring onions",
+        "30 g walnuts"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve with yogurt and flatbread.",
+      "substitutions": "Use chickpea flour batter for an egg-free variation.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Iran",
+        "Nowruz table",
+        "bake",
+        "kuku",
+        "sabzi"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-kuku-sibzamini-potato-patties",
+      "name": "Kuku sibzamini potato patties",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Kuku sibzamini potato patties, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g potatoes",
+        "3 eggs",
+        "1 onion",
+        "1 tsp turmeric",
+        "2 tbsp parsley",
+        "3 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare and evenly portion the ingredients. Heat a lightly oiled pan over medium heat.",
+        "Cook in batches, turning or stirring as needed until golden and thoroughly cooked.",
+        "Finish with the listed seasoning and serve promptly."
+      ],
+      "sides": "Serve with herbs, yogurt and pickles.",
+      "substitutions": "Use mashed chickpeas to bind instead of eggs.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "pan",
+        "kuku",
+        "sibzamini"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-dolmeh-barg-grape-leaf-rolls",
+      "name": "Dolmeh barg grape leaf rolls",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Northwest Iran",
+      "description": "A Suric home-cooking adaptation of Dolmeh barg grape leaf rolls, using accessible ingredients and a practical method inspired by Northwest Iran.",
+      "prepMinutes": 40,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "20 grape leaves",
+        "150 g rice",
+        "100 g yellow split peas",
+        "1 onion",
+        "3 tbsp parsley",
+        "2 tbsp lemon juice"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve warm or cool with yogurt.",
+      "substitutions": "Use cabbage leaves if grape leaves are unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Northwest Iran",
+        "stew",
+        "dolmeh",
+        "barg"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-koofteh-berenji-rice-and-herb-meatballs",
+      "name": "Koofteh berenji rice and herb meatballs",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Tabriz",
+      "description": "A Suric home-cooking adaptation of Koofteh berenji rice and herb meatballs, using accessible ingredients and a practical method inspired by Tabriz.",
+      "prepMinutes": 30,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g minced beef",
+        "80 g rice",
+        "1 egg",
+        "1 onion",
+        "3 tbsp parsley",
+        "500 ml stock"
+      ],
+      "instructions": [
+        "Prepare the ingredients and soften the onion in a heavy saucepan with a little oil.",
+        "Add the main ingredients, spices and liquid. Bring to a gentle simmer, stirring to prevent sticking.",
+        "Cover and cook gently until tender and the sauce thickens; add a splash of water if the pot becomes dry."
+      ],
+      "sides": "Serve with flatbread and herbs.",
+      "substitutions": "Use lentils and cooked rice for vegetarian balls.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming. Use clean, uncracked eggs and cook the centre through unless using pasteurised eggs.",
+      "tags": [
+        "Iran",
+        "Tabriz",
+        "stew",
+        "koofteh",
+        "berenji"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-joojeh-kebab-saffron-chicken",
+      "name": "Joojeh kebab saffron chicken",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Tehran style",
+      "description": "A Suric home-cooking adaptation of Joojeh kebab saffron chicken, using accessible ingredients and a practical method inspired by Tehran style.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g chicken breast",
+        "1 onion",
+        "2 tbsp lemon juice",
+        "1 tsp saffron",
+        "100 g yogurt",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve with grilled tomato and rice.",
+      "substitutions": "Use firm tofu, marinating briefly.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Tehran style",
+        "grill",
+        "joojeh",
+        "kebab"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-kabab-koobideh-home-style",
+      "name": "Kabab koobideh home-style",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Kabab koobideh home-style, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g minced lamb",
+        "1 onion",
+        "1 tsp sumac",
+        "1 tsp salt",
+        "1 tsp pepper",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Mix the spices with the listed oil or marinade and coat the main ingredient evenly. If time allows, rest it in the refrigerator for 20 minutes.",
+        "Heat a grill or heavy ridged pan to medium-high. Cook in batches, turning until browned and cooked through.",
+        "Rest briefly and serve with the listed accompaniments. Keep raw and cooked utensils separate."
+      ],
+      "sides": "Serve with flatbread, herbs and grilled tomato.",
+      "substitutions": "Use beef mince; cook patties thoroughly.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Keep raw meat separate from ready-to-eat foods. Cook meat fully, refrigerate leftovers promptly and reheat until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "grill",
+        "kabab",
+        "koobideh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-ash-e-anar-pomegranate-lentil-soup",
+      "name": "Ash-e-anar pomegranate lentil soup",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Yazd-inspired",
+      "description": "A Suric home-cooking adaptation of Ash-e-anar pomegranate lentil soup, using accessible ingredients and a practical method inspired by Yazd-inspired.",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g lentils",
+        "100 g rice",
+        "1 onion",
+        "3 tbsp pomegranate molasses",
+        "2 tbsp mint",
+        "1 litre stock"
+      ],
+      "instructions": [
+        "Prepare the vegetables and protein. Soften the onion and aromatics in a large saucepan with a little oil.",
+        "Add the remaining ingredients and stock or water; bring to a boil, then lower to a steady simmer.",
+        "Cook until the vegetables, grains and protein are tender. Taste, adjust seasoning and serve hot."
+      ],
+      "sides": "Serve warm with flatbread.",
+      "substitutions": "Use lemon juice and a little honey if molasses is unavailable.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Yazd-inspired",
+        "soup",
+        "ash-e-anar",
+        "pomegranate"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-reshteh-polo-noodle-rice",
+      "name": "Reshteh polo noodle rice",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Reshteh polo noodle rice, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g basmati rice",
+        "80 g toasted reshteh noodles",
+        "1 onion",
+        "50 g raisins",
+        "1 tsp cinnamon",
+        "2 tbsp butter"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with roasted chicken or vegetables.",
+      "substitutions": "Use thin toasted pasta broken into short pieces.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "rice",
+        "reshteh",
+        "polo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-dami-gojeh-tomato-rice",
+      "name": "Dami gojeh tomato rice",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Southern Iran",
+      "description": "A Suric home-cooking adaptation of Dami gojeh tomato rice, using accessible ingredients and a practical method inspired by Southern Iran.",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g rice",
+        "4 tomatoes",
+        "1 potato",
+        "1 onion",
+        "1 tsp turmeric",
+        "500 ml water"
+      ],
+      "instructions": [
+        "Rinse the rice until the water runs mostly clear. Prepare the aromatic ingredients and measure the cooking liquid.",
+        "Cook the onion and seasonings in a saucepan, stir in the rice, then add the measured liquid and remaining ingredients.",
+        "Cover and cook gently until the rice is tender and liquid is absorbed. Rest covered for 5 minutes, then fluff and serve."
+      ],
+      "sides": "Serve with yogurt and herbs.",
+      "substitutions": "Use canned chopped tomatoes.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Southern Iran",
+        "rice",
+        "dami",
+        "gojeh"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-torshi-style-quick-pickled-vegetables",
+      "name": "Torshi-style quick pickled vegetables",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Torshi-style quick pickled vegetables, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 carrot",
+        "1 cauliflower",
+        "1 cucumber",
+        "250 ml vinegar",
+        "250 ml water",
+        "1 tsp salt",
+        "1 tsp dried mint"
+      ],
+      "instructions": [
+        "Prepare the ingredients and bring a large pot of water to a boil.",
+        "Add the ingredients in the order listed, then simmer until tender; follow packet directions for dried or packaged ingredients.",
+        "Drain if needed, season to taste and serve or chill promptly."
+      ],
+      "sides": "Chill fully and serve in small portions with meals.",
+      "substitutions": "Choose seasonal firm vegetables.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "boil",
+        "torshi-style",
+        "quick"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-nan-e-barbari-home-flatbread",
+      "name": "Nan-e barbari home flatbread",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Tehran",
+      "description": "A Suric home-cooking adaptation of Nan-e barbari home flatbread, using accessible ingredients and a practical method inspired by Tehran.",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g bread flour",
+        "260 ml warm water",
+        "7 g dry yeast",
+        "1 tsp sugar",
+        "1 tsp salt",
+        "1 tbsp sesame seeds"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C and lightly grease a suitable baking dish. Prepare the vegetables, dough or filling.",
+        "Layer or combine the ingredients as appropriate and add the listed liquid or topping.",
+        "Bake until tender and browned at the edges; check meat, fish and egg mixtures are cooked through. Rest briefly before serving."
+      ],
+      "sides": "Serve warm with feta-style cheese, herbs or stew.",
+      "substitutions": "Use a strong white flour and adjust water gradually.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Tehran",
+        "bake",
+        "nan-e",
+        "barbari"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-persian-saffron-and-rosewater-rice-pudding",
+      "name": "Persian saffron and rosewater rice pudding",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Persian saffron and rosewater rice pudding, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 10,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g short-grain rice",
+        "1 litre milk",
+        "100 g sugar",
+        "1 tsp saffron",
+        "1 tbsp rosewater",
+        "2 tbsp pistachios"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve chilled with cinnamon and pistachios.",
+      "substitutions": "Use unsweetened oat milk and adjust cooking time.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "porridge",
+        "persian",
+        "saffron"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-sholeh-zard-saffron-rice-dessert",
+      "name": "Sholeh zard saffron rice dessert",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Nationwide",
+      "description": "A Suric home-cooking adaptation of Sholeh zard saffron rice dessert, using accessible ingredients and a practical method inspired by Nationwide.",
+      "prepMinutes": 10,
+      "cookMinutes": 70,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "150 g basmati rice",
+        "1 litre water",
+        "120 g sugar",
+        "1 tsp saffron",
+        "1 tbsp rosewater",
+        "30 g almonds"
+      ],
+      "instructions": [
+        "Bring the measured water or milk to a gentle boil in a heavy saucepan. Slowly whisk in the grain to avoid lumps.",
+        "Lower the heat and cook, stirring regularly so the mixture does not stick. Add small splashes of liquid if it becomes too thick.",
+        "When soft and fully cooked, stir in the listed finishing ingredients and serve warm."
+      ],
+      "sides": "Serve cold with cinnamon and slivered almonds.",
+      "substitutions": "Use less sugar to taste.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Nationwide",
+        "porridge",
+        "sholeh",
+        "zard"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "persian-faloodeh-lime-and-rosewater-noodles",
+      "name": "Faloodeh lime and rosewater noodles",
+      "englishName": null,
+      "country": "Iran",
+      "region": "Shiraz",
+      "description": "A Suric home-cooking adaptation of Faloodeh lime and rosewater noodles, using accessible ingredients and a practical method inspired by Shiraz.",
+      "prepMinutes": 20,
+      "cookMinutes": 5,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "100 g thin rice noodles",
+        "150 g sugar",
+        "250 ml water",
+        "1 tbsp rosewater",
+        "2 tbsp lime juice",
+        "1 tbsp pistachios"
+      ],
+      "instructions": [
+        "Heat the oven to 180 C if baking, or prepare a heavy pan if using the hob. Measure the ingredients.",
+        "Mix wet ingredients, then fold in dry ingredients until just combined; shape or portion evenly.",
+        "Cook until set and golden. Cool briefly before adding the listed topping or serving."
+      ],
+      "sides": "Freeze until slushy and serve with extra lime.",
+      "substitutions": "Use lemon juice and omit nuts.",
+      "storage": "Cool promptly, refrigerate covered and use within 3 days; reheat once until steaming. Chilled salads and spreads should be refrigerated and used within 2 days.",
+      "safety": "Wash produce and use clean utensils. Refrigerate leftovers promptly; reheat once until steaming.",
+      "tags": [
+        "Iran",
+        "Shiraz",
+        "sweet",
+        "faloodeh",
+        "lime"
+      ],
+      "revision": 1
+    }
+  ]
+}

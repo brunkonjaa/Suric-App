@@ -1,0 +1,1713 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "sea-maryland-crab-cakes",
+      "name": "Maryland crab cakes",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Maryland",
+      "description": "Maryland crab cakes is a Maryland-style dish featuring cooked crab meat, seared in a hot pan, with 1 egg, 50 g breadcrumbs. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g cooked crab meat",
+        "1 egg",
+        "50 g breadcrumbs",
+        "1 tbsp mayonnaise",
+        "1 tsp Old Bay seasoning",
+        "1 tbsp lemon juice",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve with lemon, slaw and tartar sauce.",
+      "substitutions": "Use cooked white fish flakes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "United States of America",
+        "Maryland",
+        "pan-seafood",
+        "maryland",
+        "crab"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-southern-fried-catfish",
+      "name": "Southern fried catfish",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Southern United States",
+      "description": "Southern fried catfish is a Southern United States-style dish featuring catfish fillets, about 700 g, lightly coated and fried until crisp, with 200 ml buttermilk, 120 g cornmeal. Tip: Fry in small batches so the oil temperature does not drop.",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 catfish fillets, about 700 g",
+        "200 ml buttermilk",
+        "120 g cornmeal",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "500 ml frying oil"
+      ],
+      "instructions": [
+        "Pat the seafood dry and prepare the flour or crumb coating. Heat oil in a heavy pan to 175 C, using a thermometer and leaving plenty of headroom.",
+        "Fry in small batches until crisp and golden, turning once. Keep uncooked batches chilled while the oil heats.",
+        "Check thick pieces reach 63 C; drain on a rack and let the oil return to temperature between batches.",
+        "Serve hot with the listed sauce and lemon. Keep water away from hot oil."
+      ],
+      "sides": "Serve with hush puppies, slaw and lemon.",
+      "substitutions": "Use tilapia or pollock fillets.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Southern United States",
+        "fry-seafood",
+        "southern",
+        "fried"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-louisiana-seafood-gumbo",
+      "name": "Louisiana seafood gumbo",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Louisiana",
+      "description": "Louisiana seafood gumbo is a Louisiana-style dish featuring prawns, gently simmered with aromatics, with 200 g firm white fish, 150 g crab meat. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 30,
+      "cookMinutes": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g prawns",
+        "200 g firm white fish",
+        "150 g crab meat",
+        "1 onion",
+        "1 green pepper",
+        "1 celery stalk",
+        "1 litre stock",
+        "2 tbsp flour",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve over rice with parsley.",
+      "substitutions": "Use mussels or extra fish in place of crab.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Louisiana",
+        "stew-seafood",
+        "louisiana",
+        "seafood"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-dungeness-crab-boil",
+      "name": "Dungeness crab boil",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Pacific Northwest",
+      "description": "Dungeness crab boil is a Pacific Northwest-style dish featuring raw crab sections, boiled with vegetables and spice, with 500 g baby potatoes, 2 corn cobs. Tip: Turn as needed and use a thermometer to check safe doneness.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1.2 kg raw crab sections",
+        "500 g baby potatoes",
+        "2 corn cobs",
+        "1 lemon",
+        "2 tbsp seafood seasoning",
+        "2 litres water"
+      ],
+      "instructions": [
+        "Bring the measured water to a rolling boil with the seafood seasoning, lemon and aromatics. Add potatoes first and cook until nearly tender.",
+        "Add corn and raw crab sections, return to a boil and simmer until the crab shell turns bright red and the meat is opaque; use a thermometer to check the thickest meat reaches 63 C.",
+        "Drain carefully and spread the crab, corn and potatoes on a clean platter. Do not reuse the cooking liquid as a dipping sauce.",
+        "Serve hot with melted butter and bread. Keep cooked shellfish separate from raw seafood."
+      ],
+      "sides": "Serve with melted butter and bread.",
+      "substitutions": "Use raw snow crab clusters and adjust time for their size.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Pacific Northwest",
+        "boil-seafood",
+        "dungeness",
+        "crab"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-baked-stuffed-clams",
+      "name": "Baked stuffed clams",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "New England",
+      "description": "Baked stuffed clams is a New England-style dish featuring large clams, baked with a seasoned sauce, with 100 g breadcrumbs, 2 tbsp butter. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "12 large clams",
+        "100 g breadcrumbs",
+        "2 tbsp butter",
+        "1 celery stalk",
+        "1 garlic clove",
+        "1 tbsp parsley",
+        "1 lemon"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve hot with lemon wedges.",
+      "substitutions": "Use chopped cooked mussels in clean shells.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "New England",
+        "bake-seafood",
+        "baked",
+        "stuffed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-shrimp-perloo-rice",
+      "name": "Shrimp perloo rice",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "Lowcountry, South Carolina",
+      "description": "Shrimp perloo rice is a Lowcountry, South Carolina-style dish featuring peeled shrimp, cooked with rice and seasoned stock, with 250 g rice, 1 onion. Tip: Arrange seafood near the end of cooking to avoid overcooking.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "350 g peeled shrimp",
+        "250 g rice",
+        "1 onion",
+        "1 green pepper",
+        "1 tomato",
+        "750 ml stock",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil. Stir in the rice and spices until each grain is coated.",
+        "Add the measured stock and firm vegetables, cover and cook gently until rice is nearly tender. Keep the lid on to retain steam.",
+        "Nestle fish and shellfish into the rice for the final cooking period; fish should reach 63 C and shellfish should open. Discard unopened shells.",
+        "Rest covered for 5 minutes, finish with herbs or citrus and serve."
+      ],
+      "sides": "Serve with hot sauce and greens.",
+      "substitutions": "Use firm white fish chunks.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "Lowcountry, South Carolina",
+        "rice-seafood",
+        "shrimp",
+        "perloo"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-lobster-mac-and-cheese",
+      "name": "Lobster mac and cheese",
+      "englishName": null,
+      "country": "United States of America",
+      "region": "New England",
+      "description": "Lobster mac and cheese is a New England-style dish featuring cooked lobster meat, baked with a seasoned sauce, with 250 g macaroni, 400 ml milk. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g cooked lobster meat",
+        "250 g macaroni",
+        "400 ml milk",
+        "150 g cheddar",
+        "30 g flour",
+        "30 g butter",
+        "40 g breadcrumbs"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with green salad.",
+      "substitutions": "Use cooked crab or prawns.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United States of America",
+        "New England",
+        "bake-seafood",
+        "lobster",
+        "mac"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-seafood-tourtiere-style-pie",
+      "name": "Seafood tourtière-style pie",
+      "englishName": null,
+      "country": "Canada",
+      "region": "Quebec",
+      "description": "Seafood tourtière-style pie is a Quebec-style dish featuring white fish, baked with a seasoned sauce, with 150 g shrimp, 1 onion. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "250 g white fish",
+        "150 g shrimp",
+        "1 onion",
+        "1 potato",
+        "2 pastry sheets",
+        "200 ml cream",
+        "1 tsp thyme"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with pickled beets and salad.",
+      "substitutions": "Use scallops and salmon in place of shrimp.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Canada",
+        "Quebec",
+        "bake-seafood",
+        "seafood",
+        "tourtière-style"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-smoked-haddock-and-potato-chowder",
+      "name": "Smoked haddock and potato chowder",
+      "englishName": null,
+      "country": "Ireland",
+      "region": "West coast",
+      "description": "Smoked haddock and potato chowder is a West coast-style dish featuring smoked haddock, cooked in a savoury broth, with 400 g potatoes, 1 leek. Tip: Simmer the broth first, then add seafood shortly before serving.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g smoked haddock",
+        "400 g potatoes",
+        "1 leek",
+        "600 ml milk",
+        "300 ml stock",
+        "1 tbsp parsley",
+        "1 tbsp butter"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in a saucepan with the listed oil. Add the vegetables and measured stock and bring to a simmer.",
+        "Cook until the vegetables are tender, then add fish or shellfish according to thickness, starting with the firmest pieces.",
+        "Simmer gently until fish reaches 63 C and shellfish is firm and opaque; discard clams or mussels that remain closed.",
+        "Finish with the listed herbs, citrus or dairy and serve hot."
+      ],
+      "sides": "Serve with brown soda bread.",
+      "substitutions": "Use unsmoked cod and add a little extra seasoning.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming.",
+      "tags": [
+        "Ireland",
+        "West coast",
+        "soup-seafood",
+        "smoked",
+        "haddock"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-cornish-fish-pie",
+      "name": "Cornish fish pie",
+      "englishName": null,
+      "country": "United Kingdom",
+      "region": "Cornwall",
+      "description": "Cornish fish pie is a Cornwall-style dish featuring cod, baked with a seasoned sauce, with 200 g smoked haddock, 200 ml milk. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 30,
+      "cookMinutes": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g cod",
+        "200 g smoked haddock",
+        "200 ml milk",
+        "1 leek",
+        "500 g potatoes",
+        "30 g butter",
+        "30 g flour"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with peas and parsley.",
+      "substitutions": "Use salmon or pollock for part of the fish.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "United Kingdom",
+        "Cornwall",
+        "bake-seafood",
+        "cornish",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-moules-marinieres-with-cider",
+      "name": "Moules marinières with cider",
+      "englishName": null,
+      "country": "France",
+      "region": "Brittany",
+      "description": "Moules marinières with cider is a Brittany-style dish featuring mussels, scrubbed, steamed with aromatics, with 1 shallot, 250 ml dry cider. Tip: Arrange pieces in one layer and keep the steamer covered.",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 kg mussels, scrubbed",
+        "1 shallot",
+        "250 ml dry cider",
+        "100 ml cream",
+        "2 tbsp parsley",
+        "1 tbsp butter"
+      ],
+      "instructions": [
+        "Prepare the seafood and aromatics. Bring 3-5 cm water to a steady simmer in a covered steamer or pot with a rack.",
+        "Arrange seafood in a single layer in a heatproof dish; add the listed ginger, herbs, sauce or liquid and cover.",
+        "Steam until fish reaches 63 C and flakes, or shrimp/scallops turn opaque; mussels and clams should open. Discard shells that stay closed.",
+        "Lift the dish out carefully to avoid steam burns and serve with the listed rice or sauce."
+      ],
+      "sides": "Serve with fries or crusty bread.",
+      "substitutions": "Use dry white wine instead of cider.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "France",
+        "Brittany",
+        "steam-seafood",
+        "moules",
+        "marinières"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-coquilles-saint-jacques-home-bake",
+      "name": "Coquilles Saint-Jacques home bake",
+      "englishName": null,
+      "country": "France",
+      "region": "Normandy",
+      "description": "Coquilles Saint-Jacques home bake is a Normandy-style dish featuring scallops, baked with a seasoned sauce, with 150 g mushrooms, 150 ml milk. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g scallops",
+        "150 g mushrooms",
+        "150 ml milk",
+        "20 g flour",
+        "30 g butter",
+        "50 g grated cheese",
+        "2 tbsp breadcrumbs"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with green salad and bread.",
+      "substitutions": "Use firm white fish cubes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "France",
+        "Normandy",
+        "bake-seafood",
+        "coquilles",
+        "saint-jacques"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-seafood-paella",
+      "name": "Seafood paella",
+      "englishName": null,
+      "country": "Spain",
+      "region": "Valencia",
+      "description": "Seafood paella is a Valencia-style dish featuring short-grain rice, cooked with rice and seasoned stock, with 250 g prawns, 250 g mussels. Tip: Arrange seafood near the end of cooking to avoid overcooking.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "300 g short-grain rice",
+        "250 g prawns",
+        "250 g mussels",
+        "200 g squid",
+        "1 tomato",
+        "900 ml fish stock",
+        "1 tsp saffron"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil. Stir in the rice and spices until each grain is coated.",
+        "Add the measured stock and firm vegetables, cover and cook gently until rice is nearly tender. Keep the lid on to retain steam.",
+        "Nestle fish and shellfish into the rice for the final cooking period; fish should reach 63 C and shellfish should open. Discard unopened shells.",
+        "Rest covered for 5 minutes, finish with herbs or citrus and serve."
+      ],
+      "sides": "Serve with lemon wedges and parsley.",
+      "substitutions": "Use firm fish cubes or clams, keeping the total seafood similar.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Spain",
+        "Valencia",
+        "rice-seafood",
+        "seafood",
+        "paella"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-marmitako-tuna-and-potato-stew",
+      "name": "Marmitako tuna and potato stew",
+      "englishName": null,
+      "country": "Spain",
+      "region": "Basque Country",
+      "description": "Marmitako tuna and potato stew is a Basque Country-style dish featuring fresh tuna, gently simmered with aromatics, with 500 g potatoes, 1 onion. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g fresh tuna",
+        "500 g potatoes",
+        "1 onion",
+        "1 red pepper",
+        "1 tomato",
+        "700 ml fish stock",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with crusty bread and parsley.",
+      "substitutions": "Use salmon and reduce simmer time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Spain",
+        "Basque Country",
+        "stew-seafood",
+        "marmitako",
+        "tuna"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-gambas-al-ajillo-garlic-prawns",
+      "name": "Gambas al ajillo garlic prawns",
+      "englishName": null,
+      "country": "Spain",
+      "region": "Andalusia",
+      "description": "Gambas al ajillo garlic prawns is a Andalusia-style dish featuring peeled prawns, seared in a hot pan, with 5 garlic cloves, 100 ml olive oil. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g peeled prawns",
+        "5 garlic cloves",
+        "100 ml olive oil",
+        "1 tsp chilli flakes",
+        "2 tbsp parsley",
+        "1 lemon"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve sizzling with crusty bread.",
+      "substitutions": "Use scallops or squid rings.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Spain",
+        "Andalusia",
+        "pan-seafood",
+        "gambas",
+        "al"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-bacalhau-a-bras",
+      "name": "Bacalhau à Brás",
+      "englishName": null,
+      "country": "Portugal",
+      "region": "Nationwide",
+      "description": "Bacalhau à Brás is a Nationwide-style dish featuring salt cod, desalted, seared in a hot pan, with 1 onion, 300 g matchstick potatoes. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g salt cod, desalted",
+        "1 onion",
+        "300 g matchstick potatoes",
+        "4 eggs",
+        "2 tbsp olive oil",
+        "2 tbsp parsley",
+        "12 olives"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve with olives and green salad.",
+      "substitutions": "Use cooked unsalted cod if salt cod is unavailable.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Portugal",
+        "Nationwide",
+        "pan-seafood",
+        "bacalhau",
+        "à"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-baccala-mantecato",
+      "name": "Baccalà mantecato",
+      "englishName": null,
+      "country": "Italy",
+      "region": "Veneto",
+      "description": "Baccalà mantecato is a Veneto-style dish featuring desalted cod, seared in a hot pan, with 150 ml olive oil, 1 garlic clove. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g desalted cod",
+        "150 ml olive oil",
+        "1 garlic clove",
+        "100 ml milk",
+        "2 tbsp parsley",
+        "1 lemon"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Spread on toasted polenta or bread.",
+      "substitutions": "Use cooked fresh cod and reduce added salt.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Italy",
+        "Veneto",
+        "pan-seafood",
+        "baccalà",
+        "mantecato"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-garides-saganaki-prawns-with-tomato-and-feta",
+      "name": "Garides saganaki prawns with tomato and feta",
+      "englishName": null,
+      "country": "Greece",
+      "region": "Nationwide",
+      "description": "Garides saganaki prawns with tomato and feta is a Nationwide-style dish featuring prawns, gently simmered with aromatics, with 300 g tomatoes, 1 onion. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g prawns",
+        "300 g tomatoes",
+        "1 onion",
+        "100 g feta",
+        "1 tbsp ouzo, optional",
+        "2 tbsp olive oil",
+        "1 tbsp dill"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with bread to scoop the sauce.",
+      "substitutions": "Use firm fish chunks instead of prawns.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Greece",
+        "Nationwide",
+        "stew-seafood",
+        "garides",
+        "saganaki"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-grilled-octopus-with-lemon",
+      "name": "Grilled octopus with lemon",
+      "englishName": null,
+      "country": "Greece",
+      "region": "Cyclades",
+      "description": "Grilled octopus with lemon is a Cyclades-style dish featuring cooked octopus tentacles, quick-grilled over medium-high heat, with 2 tbsp olive oil, 1 lemon. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "700 g cooked octopus tentacles",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "1 tsp oregano",
+        "1 garlic clove",
+        "1 tbsp parsley"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with fava puree and capers.",
+      "substitutions": "Use cooked squid tubes cut into pieces.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Greece",
+        "Cyclades",
+        "grill-seafood",
+        "grilled",
+        "octopus"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-miso-glazed-black-cod",
+      "name": "Miso-glazed black cod",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Nationwide",
+      "description": "Miso-glazed black cod is a Nationwide-style dish featuring black cod fillets, about 600 g, baked with a seasoned sauce, with 2 tbsp white miso, 2 tbsp mirin. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 black cod fillets, about 600 g",
+        "2 tbsp white miso",
+        "2 tbsp mirin",
+        "1 tbsp sake",
+        "1 tbsp sugar",
+        "1 tsp sesame oil"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with rice and steamed greens.",
+      "substitutions": "Use salmon or sablefish of similar thickness.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Japan",
+        "Nationwide",
+        "bake-seafood",
+        "miso-glazed",
+        "black"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-okonomiyaki-with-squid",
+      "name": "Okonomiyaki with squid",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Osaka",
+      "description": "Okonomiyaki with squid is a Osaka-style dish featuring squid rings, seared in a hot pan, with 200 g cabbage, 150 g flour. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g squid rings",
+        "200 g cabbage",
+        "150 g flour",
+        "2 eggs",
+        "150 ml dashi",
+        "2 spring onions",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Top with okonomiyaki sauce, mayonnaise and bonito flakes.",
+      "substitutions": "Use cooked shrimp or omit seafood and add extra cabbage.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Japan",
+        "Osaka",
+        "pan-seafood",
+        "okonomiyaki",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-grilled-scallops-with-miso-butter",
+      "name": "Grilled scallops with miso butter",
+      "englishName": null,
+      "country": "Japan",
+      "region": "Hokkaido",
+      "description": "Grilled scallops with miso butter is a Hokkaido-style dish featuring large scallops, quick-grilled over medium-high heat, with 30 g butter, 1 tbsp miso. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 large scallops",
+        "30 g butter",
+        "1 tbsp miso",
+        "1 tsp mirin",
+        "1 spring onion",
+        "1 lemon"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with rice and lemon.",
+      "substitutions": "Use large prawns or mussels.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Japan",
+        "Hokkaido",
+        "grill-seafood",
+        "grilled",
+        "scallops"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-haemul-pajeon-seafood-and-scallion-pancake",
+      "name": "Haemul pajeon seafood and scallion pancake",
+      "englishName": null,
+      "country": "South Korea",
+      "region": "Busan",
+      "description": "Haemul pajeon seafood and scallion pancake is a Busan-style dish featuring mixed seafood, seared in a hot pan, with 120 g flour, 1 egg. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g mixed seafood",
+        "120 g flour",
+        "1 egg",
+        "120 ml cold water",
+        "4 spring onions",
+        "2 tbsp oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve with soy-vinegar dipping sauce.",
+      "substitutions": "Use chopped shrimp and squid only.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Wash produce and use clean utensils. Keep perishable sauces chilled and refrigerate leftovers within 2 hours; reheat until steaming. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "South Korea",
+        "Busan",
+        "pan-seafood",
+        "haemul",
+        "pajeon"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-ginger-scallion-steamed-whole-fish",
+      "name": "Ginger-scallion steamed whole fish",
+      "englishName": null,
+      "country": "China",
+      "region": "Guangdong",
+      "description": "Ginger-scallion steamed whole fish is a Guangdong-style dish featuring whole sea bass, about 800 g, cleaned, steamed with aromatics, with 3 tbsp ginger, 4 spring onions. Tip: Arrange pieces in one layer and keep the steamer covered.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 whole sea bass, about 800 g, cleaned",
+        "3 tbsp ginger",
+        "4 spring onions",
+        "2 tbsp soy sauce",
+        "2 tbsp neutral oil",
+        "1 tbsp cilantro"
+      ],
+      "instructions": [
+        "Prepare the seafood and aromatics. Bring 3-5 cm water to a steady simmer in a covered steamer or pot with a rack.",
+        "Arrange seafood in a single layer in a heatproof dish; add the listed ginger, herbs, sauce or liquid and cover.",
+        "Steam until fish reaches 63 C and flakes, or shrimp/scallops turn opaque; mussels and clams should open. Discard shells that stay closed.",
+        "Lift the dish out carefully to avoid steam burns and serve with the listed rice or sauce."
+      ],
+      "sides": "Serve with steamed rice and greens.",
+      "substitutions": "Use two thick fish fillets and reduce steaming time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "China",
+        "Guangdong",
+        "steam-seafood",
+        "ginger-scallion",
+        "steamed"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-sichuan-fish-fragrant-fish",
+      "name": "Sichuan fish-fragrant fish",
+      "englishName": null,
+      "country": "China",
+      "region": "Sichuan",
+      "description": "Sichuan fish-fragrant fish is a Sichuan-style dish featuring firm white fish, gently simmered with aromatics, with 1 tbsp doubanjiang, 2 garlic cloves. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g firm white fish",
+        "1 tbsp doubanjiang",
+        "2 garlic cloves",
+        "1 tbsp ginger",
+        "1 tbsp black vinegar",
+        "1 tsp sugar",
+        "250 ml stock"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with rice and sliced spring onion.",
+      "substitutions": "Use firm tofu and vegetable stock.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "China",
+        "Sichuan",
+        "stew-seafood",
+        "sichuan",
+        "fish-fragrant"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-tom-yum-goong-shrimp-soup",
+      "name": "Tom yum goong shrimp soup",
+      "englishName": null,
+      "country": "Thailand",
+      "region": "Central Thailand",
+      "description": "Tom yum goong shrimp soup is a Central Thailand-style dish featuring shrimp, cooked in a savoury broth, with 1 litre stock, 2 lemongrass stalks. Tip: Simmer the broth first, then add seafood shortly before serving.",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "400 g shrimp",
+        "1 litre stock",
+        "2 lemongrass stalks",
+        "150 g mushrooms",
+        "2 tbsp lime juice",
+        "2 tbsp fish sauce",
+        "2 chillies"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in a saucepan with the listed oil. Add the vegetables and measured stock and bring to a simmer.",
+        "Cook until the vegetables are tender, then add fish or shellfish according to thickness, starting with the firmest pieces.",
+        "Simmer gently until fish reaches 63 C and shellfish is firm and opaque; discard clams or mussels that remain closed.",
+        "Finish with the listed herbs, citrus or dairy and serve hot."
+      ],
+      "sides": "Serve hot with jasmine rice.",
+      "substitutions": "Use mushrooms and soy sauce for a vegetarian broth.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Thailand",
+        "Central Thailand",
+        "soup-seafood",
+        "tom",
+        "yum"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-massaman-fish-curry",
+      "name": "Massaman fish curry",
+      "englishName": null,
+      "country": "Thailand",
+      "region": "Southern Thailand",
+      "description": "Massaman fish curry is a Southern Thailand-style dish featuring firm fish, simmered in a spiced sauce, with 300 ml coconut milk, 2 tbsp massaman curry paste. Tip: Keep the sauce at a gentle simmer after adding seafood.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g firm fish",
+        "300 ml coconut milk",
+        "2 tbsp massaman curry paste",
+        "300 g potatoes",
+        "1 onion",
+        "30 g peanuts",
+        "1 tbsp tamarind"
+      ],
+      "instructions": [
+        "Cook the onion and curry paste in the listed oil over medium heat until fragrant. Stir in the measured coconut milk, stock or water.",
+        "Add vegetables and simmer until nearly tender. Taste the sauce and balance with the listed acid or seasoning.",
+        "Add fish or prawns for the final 5-10 minutes, simmering gently until fish reaches 63 C and prawns are firm and opaque.",
+        "Serve hot with the listed rice or bread. Refrigerate leftovers promptly."
+      ],
+      "sides": "Serve with jasmine rice and lime.",
+      "substitutions": "Use chickpeas and vegetables instead of fish.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Thailand",
+        "Southern Thailand",
+        "curry-seafood",
+        "massaman",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-canh-chua-ca-sour-fish-soup",
+      "name": "Canh chua cá sour fish soup",
+      "englishName": null,
+      "country": "Vietnam",
+      "region": "Mekong Delta",
+      "description": "Canh chua cá sour fish soup is a Mekong Delta-style dish featuring catfish steaks, cooked in a savoury broth, with 1 tomato, 150 g pineapple. Tip: Simmer the broth first, then add seafood shortly before serving.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g catfish steaks",
+        "1 tomato",
+        "150 g pineapple",
+        "100 g bean sprouts",
+        "1 litre stock",
+        "2 tbsp tamarind",
+        "2 tbsp herbs"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in a saucepan with the listed oil. Add the vegetables and measured stock and bring to a simmer.",
+        "Cook until the vegetables are tender, then add fish or shellfish according to thickness, starting with the firmest pieces.",
+        "Simmer gently until fish reaches 63 C and shellfish is firm and opaque; discard clams or mussels that remain closed.",
+        "Finish with the listed herbs, citrus or dairy and serve hot."
+      ],
+      "sides": "Serve with rice and fresh herbs.",
+      "substitutions": "Use tilapia or another firm freshwater fish.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Vietnam",
+        "Mekong Delta",
+        "soup-seafood",
+        "canh",
+        "chua"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-caramelized-fish-in-clay-pot-style",
+      "name": "Caramelized fish in clay-pot style",
+      "englishName": null,
+      "country": "Vietnam",
+      "region": "Central Vietnam",
+      "description": "Caramelized fish in clay-pot style is a Central Vietnam-style dish featuring catfish steaks, gently simmered with aromatics, with 2 tbsp fish sauce, 2 tbsp brown sugar. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "600 g catfish steaks",
+        "2 tbsp fish sauce",
+        "2 tbsp brown sugar",
+        "1 shallot",
+        "1 tsp black pepper",
+        "150 ml water",
+        "1 spring onion"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with rice and cucumber.",
+      "substitutions": "Use salmon chunks and reduce simmer time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Vietnam",
+        "Central Vietnam",
+        "stew-seafood",
+        "caramelized",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-goan-coconut-fish-curry",
+      "name": "Goan coconut fish curry",
+      "englishName": null,
+      "country": "India",
+      "region": "Goa",
+      "description": "Goan coconut fish curry is a Goa-style dish featuring firm white fish, simmered in a spiced sauce, with 250 ml coconut milk, 1 onion. Tip: Keep the sauce at a gentle simmer after adding seafood.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g firm white fish",
+        "250 ml coconut milk",
+        "1 onion",
+        "1 tomato",
+        "1 tbsp Goan curry paste",
+        "1 tbsp tamarind",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Cook the onion and curry paste in the listed oil over medium heat until fragrant. Stir in the measured coconut milk, stock or water.",
+        "Add vegetables and simmer until nearly tender. Taste the sauce and balance with the listed acid or seasoning.",
+        "Add fish or prawns for the final 5-10 minutes, simmering gently until fish reaches 63 C and prawns are firm and opaque.",
+        "Serve hot with the listed rice or bread. Refrigerate leftovers promptly."
+      ],
+      "sides": "Serve with steamed rice.",
+      "substitutions": "Use prawns, adding them only for the final few minutes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "India",
+        "Goa",
+        "curry-seafood",
+        "goan",
+        "coconut"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-kerala-meen-moilee-coconut-fish-stew",
+      "name": "Kerala meen moilee coconut fish stew",
+      "englishName": null,
+      "country": "India",
+      "region": "Kerala",
+      "description": "Kerala meen moilee coconut fish stew is a Kerala-style dish featuring firm fish, simmered in a spiced sauce, with 250 ml coconut milk, 1 onion. Tip: Keep the sauce at a gentle simmer after adding seafood.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g firm fish",
+        "250 ml coconut milk",
+        "1 onion",
+        "1 tomato",
+        "1 tsp turmeric",
+        "1 green chilli",
+        "1 tbsp coconut oil"
+      ],
+      "instructions": [
+        "Cook the onion and curry paste in the listed oil over medium heat until fragrant. Stir in the measured coconut milk, stock or water.",
+        "Add vegetables and simmer until nearly tender. Taste the sauce and balance with the listed acid or seasoning.",
+        "Add fish or prawns for the final 5-10 minutes, simmering gently until fish reaches 63 C and prawns are firm and opaque.",
+        "Serve hot with the listed rice or bread. Refrigerate leftovers promptly."
+      ],
+      "sides": "Serve with appam or rice.",
+      "substitutions": "Use salmon or firm tofu.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "India",
+        "Kerala",
+        "curry-seafood",
+        "kerala",
+        "meen"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-shorshe-ilish-mustard-hilsa",
+      "name": "Shorshe ilish mustard hilsa",
+      "englishName": null,
+      "country": "India",
+      "region": "Bengal",
+      "description": "Shorshe ilish mustard hilsa is a Bengal-style dish featuring hilsa steaks, steamed with aromatics, with 2 tbsp mustard paste, 1 green chilli. Tip: Arrange pieces in one layer and keep the steamer covered.",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g hilsa steaks",
+        "2 tbsp mustard paste",
+        "1 green chilli",
+        "1 tsp turmeric",
+        "2 tbsp mustard oil",
+        "150 ml water"
+      ],
+      "instructions": [
+        "Prepare the seafood and aromatics. Bring 3-5 cm water to a steady simmer in a covered steamer or pot with a rack.",
+        "Arrange seafood in a single layer in a heatproof dish; add the listed ginger, herbs, sauce or liquid and cover.",
+        "Steam until fish reaches 63 C and flakes, or shrimp/scallops turn opaque; mussels and clams should open. Discard shells that stay closed.",
+        "Lift the dish out carefully to avoid steam burns and serve with the listed rice or sauce."
+      ],
+      "sides": "Serve with plain rice.",
+      "substitutions": "Use salmon steaks and adjust simmer time.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "India",
+        "Bengal",
+        "steam-seafood",
+        "shorshe",
+        "ilish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-ambul-thiyal-sour-fish-curry",
+      "name": "Ambul thiyal sour fish curry",
+      "englishName": null,
+      "country": "Sri Lanka",
+      "region": "Southern Province",
+      "description": "Ambul thiyal sour fish curry is a Southern Province-style dish featuring tuna cubes, gently simmered with aromatics, with 1 tbsp goraka paste, 1 tsp black pepper. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g tuna cubes",
+        "1 tbsp goraka paste",
+        "1 tsp black pepper",
+        "1 tsp chilli powder",
+        "1 tsp turmeric",
+        "1 cinnamon stick",
+        "150 ml water"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with rice and coconut sambol.",
+      "substitutions": "Use firm swordfish or mackerel.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Sri Lanka",
+        "Southern Province",
+        "stew-seafood",
+        "ambul",
+        "thiyal"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-chermoula-fish-tagine-with-vegetables",
+      "name": "Chermoula fish tagine with vegetables",
+      "englishName": null,
+      "country": "Morocco",
+      "region": "Atlantic coast",
+      "description": "Chermoula fish tagine with vegetables is a Atlantic coast-style dish featuring firm fish, baked with a seasoned sauce, with 2 tbsp parsley, 2 tbsp cilantro. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g firm fish",
+        "2 tbsp parsley",
+        "2 tbsp cilantro",
+        "2 garlic cloves",
+        "1 tsp cumin",
+        "1 lemon",
+        "2 tomatoes",
+        "1 potato"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve with bread or couscous.",
+      "substitutions": "Use hake, cod or pollock.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Morocco",
+        "Atlantic coast",
+        "bake-seafood",
+        "chermoula",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-thieboudienne-fish-and-rice",
+      "name": "Thieboudienne fish and rice",
+      "englishName": null,
+      "country": "Senegal",
+      "region": "Saint-Louis",
+      "description": "Thieboudienne fish and rice is a Saint-Louis-style dish featuring firm white fish, cooked with rice and seasoned stock, with 250 g rice, 1 carrot. Tip: Arrange seafood near the end of cooking to avoid overcooking.",
+      "prepMinutes": 35,
+      "cookMinutes": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "600 g firm white fish",
+        "250 g rice",
+        "1 carrot",
+        "1 cassava piece, 250 g",
+        "1 eggplant",
+        "2 tbsp tomato paste",
+        "900 ml stock"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil. Stir in the rice and spices until each grain is coated.",
+        "Add the measured stock and firm vegetables, cover and cook gently until rice is nearly tender. Keep the lid on to retain steam.",
+        "Nestle fish and shellfish into the rice for the final cooking period; fish should reach 63 C and shellfish should open. Discard unopened shells.",
+        "Rest covered for 5 minutes, finish with herbs or citrus and serve."
+      ],
+      "sides": "Serve with lime and extra vegetables.",
+      "substitutions": "Use cod or snapper and potato in place of cassava.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Senegal",
+        "Saint-Louis",
+        "rice-seafood",
+        "thieboudienne",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-red-red-with-smoked-fish",
+      "name": "Red-red with smoked fish",
+      "englishName": null,
+      "country": "Ghana",
+      "region": "Coastal Ghana",
+      "description": "Red-red with smoked fish is a Coastal Ghana-style dish featuring can black-eyed peas, gently simmered with aromatics, with 200 g smoked fish, 1 onion. Tip: Add delicate fish near the end to keep the pieces intact.",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 can black-eyed peas",
+        "200 g smoked fish",
+        "1 onion",
+        "2 tomatoes",
+        "2 tbsp palm oil",
+        "1 tsp chilli",
+        "500 ml water"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in the listed oil in a heavy pot. Add firm vegetables and spices and cook briefly.",
+        "Add the measured stock, tomatoes or coconut milk and simmer until the vegetables are nearly tender.",
+        "Add fish and shellfish near the end so they do not overcook; simmer gently until fish reaches 63 C and shellfish turns opaque or opens. Discard unopened shells.",
+        "Finish with the listed herbs or citrus and serve immediately."
+      ],
+      "sides": "Serve with fried plantain or rice.",
+      "substitutions": "Use cooked beans and smoked tofu.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Ghana",
+        "Coastal Ghana",
+        "stew-seafood",
+        "red-red",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-prawn-and-okra-soup",
+      "name": "Prawn and okra soup",
+      "englishName": null,
+      "country": "Nigeria",
+      "region": "Niger Delta",
+      "description": "Prawn and okra soup is a Niger Delta-style dish featuring prawns, cooked in a savoury broth, with 250 g sliced okra, 1 tomato. Tip: Simmer the broth first, then add seafood shortly before serving.",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "300 g prawns",
+        "250 g sliced okra",
+        "1 tomato",
+        "1 onion",
+        "1 tbsp palm oil",
+        "600 ml stock",
+        "1 tbsp ground crayfish"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in a saucepan with the listed oil. Add the vegetables and measured stock and bring to a simmer.",
+        "Cook until the vegetables are tender, then add fish or shellfish according to thickness, starting with the firmest pieces.",
+        "Simmer gently until fish reaches 63 C and shellfish is firm and opaque; discard clams or mussels that remain closed.",
+        "Finish with the listed herbs, citrus or dairy and serve hot."
+      ],
+      "sides": "Serve with eba or rice.",
+      "substitutions": "Use firm fish chunks instead of prawns.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Nigeria",
+        "Niger Delta",
+        "soup-seafood",
+        "prawn",
+        "and"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-snoek-with-apricot-glaze",
+      "name": "Snoek with apricot glaze",
+      "englishName": null,
+      "country": "South Africa",
+      "region": "Western Cape",
+      "description": "Snoek with apricot glaze is a Western Cape-style dish featuring snoek fillets, quick-grilled over medium-high heat, with 2 tbsp apricot jam, 1 tbsp lemon juice. Tip: Seafood cooks quickly; prepare the sides first and cook the seafood at the end.",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "800 g snoek fillets",
+        "2 tbsp apricot jam",
+        "1 tbsp lemon juice",
+        "1 tsp mustard",
+        "1 tbsp butter",
+        "1 tsp black pepper"
+      ],
+      "instructions": [
+        "Keep seafood chilled until preparation. Toss with measured oil, acid and seasonings, then skewer or place in a grill basket.",
+        "Heat an oiled grill to medium-high. Cook in a single layer, turning once; keep delicate fish over moderate heat.",
+        "Cook fish to 63 C. Shrimp and scallops should be firm and opaque; discard shellfish that fail to open.",
+        "Serve at once with the listed sides and a clean serving platter."
+      ],
+      "sides": "Serve with roosterkoek and green salad.",
+      "substitutions": "Use mackerel or butterflied trout.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "South Africa",
+        "Western Cape",
+        "grill-seafood",
+        "snoek",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-barramundi-with-lemon-and-herbs",
+      "name": "Barramundi with lemon and herbs",
+      "englishName": null,
+      "country": "Australia",
+      "region": "Queensland",
+      "description": "Barramundi with lemon and herbs is a Queensland-style dish featuring barramundi fillets, about 700 g, seared in a hot pan, with 1 lemon, 2 tbsp parsley. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 barramundi fillets, about 700 g",
+        "1 lemon",
+        "2 tbsp parsley",
+        "2 tbsp butter",
+        "1 garlic clove",
+        "1 tbsp oil"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve with potatoes and greens.",
+      "substitutions": "Use snapper or cod fillets.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Australia",
+        "Queensland",
+        "pan-seafood",
+        "barramundi",
+        "with"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-whitebait-fritters",
+      "name": "Whitebait fritters",
+      "englishName": null,
+      "country": "New Zealand",
+      "region": "South Island",
+      "description": "Whitebait fritters is a South Island-style dish featuring whitebait, seared in a hot pan, with 2 eggs, 1 tbsp flour. Tip: Pat seafood dry before searing to encourage browning.",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200 g whitebait",
+        "2 eggs",
+        "1 tbsp flour",
+        "1 tbsp parsley",
+        "1 tbsp lemon juice",
+        "2 tbsp oil",
+        "1 pinch salt"
+      ],
+      "instructions": [
+        "Prepare the seafood and measure the seasonings. If the recipe includes a coating, combine it in a shallow dish and coat evenly.",
+        "Heat a heavy pan with the listed oil over medium heat. Cook in batches so the pan stays hot and the seafood browns rather than steams.",
+        "Turn carefully and cook seafood to 63 C; shellfish flesh should be opaque. Drain fried pieces on a rack or paper.",
+        "Finish with the listed citrus or herbs and serve promptly."
+      ],
+      "sides": "Serve immediately with lemon and buttered bread.",
+      "substitutions": "Use small peeled shrimp, chopped.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "New Zealand",
+        "South Island",
+        "pan-seafood",
+        "whitebait",
+        "fritters"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-chupe-de-camarones-shrimp-chowder",
+      "name": "Chupe de camarones shrimp chowder",
+      "englishName": null,
+      "country": "Peru",
+      "region": "Lima",
+      "description": "Chupe de camarones shrimp chowder is a Lima-style dish featuring shrimp, cooked in a savoury broth, with 300 g potatoes, 1 corn cob. Tip: Simmer the broth first, then add seafood shortly before serving.",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "400 g shrimp",
+        "300 g potatoes",
+        "1 corn cob",
+        "1 tomato",
+        "1 onion",
+        "800 ml stock",
+        "100 ml milk",
+        "1 egg"
+      ],
+      "instructions": [
+        "Soften the onion and aromatics in a saucepan with the listed oil. Add the vegetables and measured stock and bring to a simmer.",
+        "Cook until the vegetables are tender, then add fish or shellfish according to thickness, starting with the firmest pieces.",
+        "Simmer gently until fish reaches 63 C and shellfish is firm and opaque; discard clams or mussels that remain closed.",
+        "Finish with the listed herbs, citrus or dairy and serve hot."
+      ],
+      "sides": "Serve with oregano and bread.",
+      "substitutions": "Use firm fish chunks and add them near the end.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Peru",
+        "Lima",
+        "soup-seafood",
+        "chupe",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-pastel-de-jaiba-crab-bake",
+      "name": "Pastel de jaiba crab bake",
+      "englishName": null,
+      "country": "Chile",
+      "region": "Coquimbo",
+      "description": "Pastel de jaiba crab bake is a Coquimbo-style dish featuring cooked crab meat, baked with a seasoned sauce, with 150 g bread, 150 ml milk. Tip: Check the centre of the thickest piece before removing the dish from the oven.",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "350 g cooked crab meat",
+        "150 g bread",
+        "150 ml milk",
+        "1 onion",
+        "100 ml cream",
+        "50 g cheese",
+        "1 tsp paprika"
+      ],
+      "instructions": [
+        "Heat the oven to 190 C. Prepare the seafood and vegetables and lightly oil a baking dish.",
+        "Arrange the ingredients in an even layer, pour over the measured sauce or liquid and add the listed topping.",
+        "Bake until bubbling and fish reaches 63 C; shrimp should be opaque and firm. If a crumb topping is used, brown it briefly under the grill.",
+        "Rest 5 minutes and serve with the listed sides."
+      ],
+      "sides": "Serve hot with lemon and salad.",
+      "substitutions": "Use cooked white fish flakes.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Chile",
+        "Coquimbo",
+        "bake-seafood",
+        "pastel",
+        "de"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-escovitch-fish",
+      "name": "Escovitch fish",
+      "englishName": null,
+      "country": "Jamaica",
+      "region": "Coastal Jamaica",
+      "description": "Escovitch fish is a Coastal Jamaica-style dish featuring whole snapper, about 700 g each, lightly coated and fried until crisp, with 1 carrot, 1 red pepper. Tip: Fry in small batches so the oil temperature does not drop.",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 whole snapper, about 700 g each",
+        "1 carrot",
+        "1 red pepper",
+        "1 onion",
+        "150 ml vinegar",
+        "1 Scotch bonnet",
+        "2 tbsp oil"
+      ],
+      "instructions": [
+        "Pat the seafood dry and prepare the flour or crumb coating. Heat oil in a heavy pan to 175 C, using a thermometer and leaving plenty of headroom.",
+        "Fry in small batches until crisp and golden, turning once. Keep uncooked batches chilled while the oil heats.",
+        "Check thick pieces reach 63 C; drain on a rack and let the oil return to temperature between batches.",
+        "Serve hot with the listed sauce and lemon. Keep water away from hot oil."
+      ],
+      "sides": "Top the fish with the hot pickled vegetables; serve with festival bread.",
+      "substitutions": "Use thick snapper fillets.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours.",
+      "tags": [
+        "Jamaica",
+        "Coastal Jamaica",
+        "fry-seafood",
+        "escovitch",
+        "fish"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "sea-cracked-conch-home-style",
+      "name": "Cracked conch home-style",
+      "englishName": null,
+      "country": "Bahamas",
+      "region": "Nassau",
+      "description": "Cracked conch home-style is a Nassau-style dish featuring cleaned conch, lightly coated and fried until crisp, with 100 g flour, 1 egg. Tip: Fry in small batches so the oil temperature does not drop.",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 4,
+      "difficulty": "Easy",
+      "ingredients": [
+        "500 g cleaned conch",
+        "100 g flour",
+        "1 egg",
+        "100 ml milk",
+        "1 tsp paprika",
+        "1 lemon",
+        "500 ml frying oil"
+      ],
+      "instructions": [
+        "Pat the seafood dry and prepare the flour or crumb coating. Heat oil in a heavy pan to 175 C, using a thermometer and leaving plenty of headroom.",
+        "Fry in small batches until crisp and golden, turning once. Keep uncooked batches chilled while the oil heats.",
+        "Check thick pieces reach 63 C; drain on a rack and let the oil return to temperature between batches.",
+        "Serve hot with the listed sauce and lemon. Keep water away from hot oil."
+      ],
+      "sides": "Serve with peas and rice and lime.",
+      "substitutions": "Use calamari steaks, tenderized and cut into strips.",
+      "storage": "Refrigerate cooked leftovers in a covered shallow container within 2 hours and use within 3 days; reheat once until steaming. Do not save raw marinade that touched meat or seafood.",
+      "safety": "Keep raw seafood chilled and separate from ready-to-eat foods. Cook fish to 63 C; shrimp, scallops, crab and lobster should be firm and opaque. Discard clams and mussels that do not open. Refrigerate leftovers within 2 hours. Use clean, uncracked eggs and cook the centre through.",
+      "tags": [
+        "Bahamas",
+        "Nassau",
+        "fry-seafood",
+        "cracked",
+        "conch"
+      ],
+      "revision": 1
+    }
+  ]
+}
