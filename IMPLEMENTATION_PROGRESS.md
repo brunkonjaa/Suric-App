@@ -41,6 +41,9 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - Recipe detail screens now support an offline horizontal gallery of optional image assets. Texas smoked beef brisket now has five distinct recipe-specific images covering seasoning, smoking, carving and serving; collection covers do not count toward recipe image coverage.
 - Music, offline article and recipe detail screens now explicitly opt in to the experimental Material 3 top-app-bar API required by the current Compose Material dependency.
 - Recipe images are packaged as static lossy WebP in `drawable-nodpi`. The recipe gallery targets a 960-pixel long edge and quality 76; the five brisket images are 960 x 720 and total 576,204 bytes. The wider collection covers remain 1280 pixels.
+- `COOKING_DISH_IMAGE_INDEX.md` now lists all 891 unique canonical recipes once, with stable IDs, origins, collection memberships, image search queries and serving-scene direction. `tools/build_recipe_image_index.py` regenerates it from the registered catalogue files. The first-image sourcing queue does not change the five-images-per-recipe target.
+- Recipe image specifications now call for lossy WebP at quality 87, sRGB, automatic aspect-preserving resizing, duplicate detection, offline files, and separate per-image provenance in `app/src/main/assets/recipe-image-metadata.json`. Use 960–1280 px long edges for standard images and up to 1600 px for instructional images; keep thumbnails at 320–480 px. Aim for 50 KB or less when visual quality remains clean on a phone, within a rounded 250 MB full-set budget.
+- The five currently bundled brisket images are legacy exceptions: quality 76, RGB without embedded ICC profiles, 960 x 720, and 576,204 bytes total. They are not represented as compliant with the new quality-87/sRGB standard. No recipe images have been added in this update.
 - Recipe details can add each measured ingredient as a separate checkable entry to the encrypted local Shopping section. Repeating the action skips ingredients already added for that recipe.
 - Ask Suric restores encrypted local message history and draft after process recreation, surfaces read failures without overwriting saved chat, shares text history through Android Sharesheet, and offers a confirmed local deletion action. Shared history excludes image files and attachment URIs.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
@@ -58,6 +61,8 @@ The content and feature descriptions above are source-level findings unless the 
 - Fish & Seafood Around the World: **100 / 100**.
 - BBQ and Fish & Seafood have generated offline collection-cover images; individual recipe images are bundled for one canonical recipe, while offline library article photographs are not bundled.
 - Recipe image target: five distinct images for each of 891 unique canonical recipes (4,455 total). Five recipe-specific images are assigned to Texas smoked beef brisket; 4,450 images remain to reach the target.
+- Recipe image discovery index: all 891 unique canonical dishes are listed once; five image files are currently attached to one recipe. The separate image metadata JSON records the five existing assets and defines the new encoding, offline and provenance fields.
+- A licensed web-image search/downloader and image-preparation utility are not implemented yet. New-source license checks, automatic resizing and duplicate detection remain required before images are accepted.
 
 ## Partially implemented
 
@@ -70,7 +75,7 @@ The content and feature descriptions above are source-level findings unless the 
 
 ## Not implemented
 
-- The 4,450 remaining recipe images needed to reach five distinct images for each of 891 canonical recipes, plus offline library article photography; current BBQ and seafood collection covers are separate from recipe images.
+- The 4,450 remaining recipe images needed to reach five distinct images for each of 891 canonical recipes, plus offline library article photography. The dish index and per-image metadata schema are in place; the BBQ and seafood collection covers remain separate from recipe images.
 - Comprehensive offline subject libraries for Gardening, Retro & Android, Pottery, DIY & Home and Cleaning, including their requested calendars, troubleshooting depth and photographs.
 - Application-wide Buster context, typed structured AI tools, confirmed local create/edit/move/copy actions, and AI-driven cross-section search/navigation. Existing AI prompts do not execute local writes.
 - Image attachments still depend on Android retaining the selected URI permission; chat export is text-only and does not package image attachments.
