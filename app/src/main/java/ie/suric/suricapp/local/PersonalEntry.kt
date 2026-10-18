@@ -13,8 +13,9 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.util.UUID
 import java.net.URI
+import java.time.LocalDate
 
-/** A private, on-device note associated with one Suric area. */
+/** A private, encrypted on-device record associated with one Suric area. */
 data class PersonalEntry(
     val id: String,
     val section: String,
@@ -23,7 +24,24 @@ data class PersonalEntry(
     val updatedAtEpochMillis: Long,
     val completed: Boolean = false,
     val sourceUrl: String? = null,
-    val sourceCheckedAt: String? = null
+    val sourceCheckedAt: String? = null,
+    val recordType: String = "note",
+    val category: String? = null,
+    val dueDate: String? = null,
+    val repeatRule: String? = null,
+    val project: String? = null,
+    val tags: List<String> = emptyList(),
+    val lastCompletedAtEpochMillis: Long? = null,
+    val history: List<PersonalHistoryEvent> = emptyList(),
+    val reminderEnabled: Boolean = false,
+    val photoName: String? = null
+)
+
+/** A timestamped user-recorded event attached to an existing personal record. */
+data class PersonalHistoryEvent(
+    val atEpochMillis: Long,
+    val action: String,
+    val details: String = ""
 )
 
 class PersonalEntryStore(context: Context) {
@@ -36,13 +54,24 @@ class PersonalEntryStore(context: Context) {
     fun list(section: String): List<PersonalEntry> = allEntries().filter { it.section == section }
 
     @Synchronized
-    fun add(section: String, title: String, body: String, sourceUrl: String? = null, sourceCheckedAt: String? = null): PersonalEntry {
+    fun add(section: String, title: String, body: String, sourceUrl: String? = null, sourceCheckedAt: String? = null,
+        recordType: String = "note", category: String? = null, dueDate: String? = null,
+        repeatRule: String? = null, project: String? = null, tags: List<String> = emptyList(),
+        reminderEnabled: Boolean = false, photoName: String? = null): PersonalEntry {
         require(section in SECTIONS)
         require(title.isNotBlank() || body.isNotBlank())
+        require(recordType in RECORD_TYPES)
+        require(dueDate == null || runCatching { LocalDate.parse(dueDate) }.isSuccess)
+        require(repeatRule == null || (repeatRule in REPEAT_RULES && dueDate != null))
+        require(!reminderEnabled || dueDate != null) { "A reminder needs a due date." }
+        require(photoName == null || photoName.matches(Regex("[a-f0-9-]{36}\\.simg")))
         val cleanUrl = if (section == "Shopping") sourceUrl?.let(ShoppingResearchRules::cleanSourceUrl) else null
         require(section == "Shopping" || (sourceUrl == null && sourceCheckedAt == null))
         val checkedAt = if (section == "Shopping") sourceCheckedAt?.trim()?.takeIf(String::isNotEmpty) else null
-        val entry = PersonalEntry(UUID.randomUUID().toString(), section, title.trim(), body.trim(), System.currentTimeMillis(), sourceUrl = cleanUrl, sourceCheckedAt = checkedAt)
+        val entry = PersonalEntry(UUID.randomUUID().toString(), section, title.trim(), body.trim(), System.currentTimeMillis(), sourceUrl = cleanUrl, sourceCheckedAt = checkedAt,
+            recordType = recordType, category = category?.trim()?.takeIf(String::isNotEmpty), dueDate = dueDate,
+            repeatRule = repeatRule?.trim()?.takeIf { it.isNotEmpty() && it != "None" }, project = project?.trim()?.takeIf(String::isNotEmpty),
+            tags = tags.map(String::trim).filter(String::isNotEmpty).distinct().take(20), reminderEnabled = reminderEnabled, photoName = photoName)
         val all = readAll() + entry
         writeAll(all)
         return entry
@@ -51,6 +80,11 @@ class PersonalEntryStore(context: Context) {
     @Synchronized
     fun update(entry: PersonalEntry) {
         require(entry.section in SECTIONS)
+        require(entry.recordType in RECORD_TYPES)
+        require(entry.dueDate == null || runCatching { LocalDate.parse(entry.dueDate) }.isSuccess)
+        require(entry.repeatRule == null || (entry.repeatRule in REPEAT_RULES && entry.dueDate != null))
+        require(!entry.reminderEnabled || entry.dueDate != null) { "A reminder needs a due date." }
+        require(entry.photoName == null || entry.photoName.matches(Regex("[a-f0-9-]{36}\\.simg")))
         require(entry.section == "Shopping" || (entry.sourceUrl == null && entry.sourceCheckedAt == null))
         entry.sourceUrl?.let { require(ShoppingResearchRules.cleanSourceUrl(it) == it) }
         val all = readAll()
@@ -103,14 +137,23 @@ class PersonalEntryStore(context: Context) {
     companion object {
         const val KEY = "entries"
         const val KEY_ALIAS = "suric_personal_data_v1"
-        val SECTIONS = setOf("Garden", "Pottery", "Shopping", "Bills", "Notes", "DIY & Home", "Cooking", "Cleaning", "Retro & Android")
+        val SECTIONS = setOf("Garden", "Pottery", "Shopping", "Bills", "Notes", "DIY & Home", "Cooking", "Cleaning", "Retro & Android", "Projects", "My Devices", "Inventory", "Tasks")
+        val RECORD_TYPES = setOf("note", "task", "project", "device", "inventory", "bill", "recipe", "meal", "plant", "resource")
+        val REPEAT_RULES = setOf("Daily", "Weekly", "Monthly", "Yearly")
 
         fun encode(entries: List<PersonalEntry>): String = JSONArray().apply {
             entries.forEach { entry ->
                 put(JSONObject().put("id", entry.id).put("section", entry.section).put("title", entry.title)
                     .put("body", entry.body).put("updated", entry.updatedAtEpochMillis).put("completed", entry.completed)
                     .put("source_url", entry.sourceUrl ?: JSONObject.NULL)
-                    .put("source_checked_at", entry.sourceCheckedAt ?: JSONObject.NULL))
+                    .put("source_checked_at", entry.sourceCheckedAt ?: JSONObject.NULL)
+                    .put("record_type", entry.recordType).put("category", entry.category ?: JSONObject.NULL)
+                    .put("due_date", entry.dueDate ?: JSONObject.NULL).put("repeat_rule", entry.repeatRule ?: JSONObject.NULL)
+                    .put("project", entry.project ?: JSONObject.NULL).put("tags", JSONArray(entry.tags))
+                    .put("last_completed", entry.lastCompletedAtEpochMillis ?: JSONObject.NULL)
+                    .put("history", JSONArray().apply { entry.history.forEach { event ->
+                        put(JSONObject().put("at", event.atEpochMillis).put("action", event.action).put("details", event.details))
+                    } }).put("reminder_enabled", entry.reminderEnabled).put("photo_name", entry.photoName ?: JSONObject.NULL))
             }
         }.toString()
 
@@ -120,6 +163,9 @@ class PersonalEntryStore(context: Context) {
                 val item = array.optJSONObject(index) ?: error("Local data contains an invalid item.")
                 val section = item.optString("section")
                 val id = item.optString("id")
+                val storedDueDate = (item.opt("due_date") as? String)?.also { require(runCatching { LocalDate.parse(it) }.isSuccess) }
+                val storedRepeat = (item.opt("repeat_rule") as? String)?.also { require(it in REPEAT_RULES) }
+                require(storedRepeat == null || storedDueDate != null) { "Local data contains a recurrence without a due date." }
                 require(section in SECTIONS && id.isNotBlank()) { "Local data contains an invalid item." }
                 PersonalEntry(
                     id = id,
@@ -129,7 +175,26 @@ class PersonalEntryStore(context: Context) {
                     updatedAtEpochMillis = item.optLong("updated"),
                     completed = item.optBoolean("completed"),
                     sourceUrl = item.opt("source_url") as? String,
-                    sourceCheckedAt = item.opt("source_checked_at") as? String
+                    sourceCheckedAt = item.opt("source_checked_at") as? String,
+                    recordType = item.optString("record_type", "note").also { require(it in RECORD_TYPES) { "Local data contains an unsupported record type." } },
+                    category = item.opt("category") as? String,
+                    dueDate = storedDueDate,
+                    repeatRule = storedRepeat,
+                    project = item.opt("project") as? String,
+                    tags = item.optJSONArray("tags")?.let { tags -> (0 until tags.length()).map { tags.optString(it) }.filter(String::isNotBlank).take(20) } ?: emptyList(),
+                    lastCompletedAtEpochMillis = (item.opt("last_completed") as? Number)?.toLong(),
+                    history = item.optJSONArray("history")?.let { history ->
+                        (0 until history.length()).map { index ->
+                            val event = history.optJSONObject(index) ?: error("Local data contains an invalid history event.")
+                            val action = event.optString("action").take(40)
+                            require(action.isNotBlank()) { "Local data contains an invalid history event." }
+                            PersonalHistoryEvent(event.optLong("at"), action, event.optString("details").take(240))
+                        }.takeLast(100)
+                    } ?: emptyList(),
+                    reminderEnabled = item.optBoolean("reminder_enabled", false).also { enabled ->
+                        require(!enabled || storedDueDate != null) { "Local data contains a reminder without a due date." }
+                    },
+                    photoName = (item.opt("photo_name") as? String)?.also { require(it.matches(Regex("[a-f0-9-]{36}\\.simg"))) }
                 )
             }
         }

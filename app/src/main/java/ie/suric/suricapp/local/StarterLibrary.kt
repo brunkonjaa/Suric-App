@@ -16,7 +16,8 @@ data class StarterItem(
     val revision: Int = 1,
     val reviewed: String? = null,
     val sources: List<Pair<String, String>> = emptyList(),
-    val destination: String
+    val destination: String,
+    val relatedIds: List<String> = emptyList()
 ) {
     fun asPersonalText(): String = buildString {
         append(summary)
@@ -36,7 +37,7 @@ data class StarterItem(
 
 object StarterLibrary {
     const val REVIEWED = "17 October 2026"
-    val categories = listOf("Gardening", "Cooking", "Cleaning", "DIY & Home", "Pottery", "Shopping", "Bills")
+    val categories = listOf("Gardening", "Cooking", "Cleaning", "DIY & Home", "Pottery", "Shopping", "Retro & Android", "Bills")
 
     private fun block(title: String, vararg lines: String) = StarterBlock(title, lines.toList())
     private fun guide(id: String, title: String, summary: String, vararg blocks: StarterBlock) = StarterItem(
@@ -64,7 +65,7 @@ object StarterLibrary {
         reviewed = REVIEWED, destination = when (category) { "DIY & Home" -> "DIY & Home"; "Pottery" -> "Pottery"; "Shopping" -> "Shopping"; else -> "Bills" }
     )
 
-    val items: List<StarterItem> = listOf(
+    private val foundationItems: List<StarterItem> = listOf(
         guide("garden.spring-start", "Spring preparation and seed starting", "Get beds and containers ready, then sow at a pace you can care for.",
             block("Prepare", "Remove debris and perennial weeds while avoiding damage to emerging plants.", "Check containers have drainage holes; wash reused pots and trays.", "Use clean seed compost and follow each packet's depth, spacing and timing.", "Label each sowing with crop and date."),
             block("Sow and tend", "Sow indoors only where the crop and available light/space make this worthwhile.", "Keep compost evenly moist, not waterlogged; ventilate covered trays after germination.", "Harden off suitable seedlings gradually before planting outdoors.", "Use local conditions and the seed packet; do not rely on a fixed frost date.")),
@@ -115,8 +116,9 @@ object StarterLibrary {
         template("bills.irregular", "Bills", "Annual or irregular payment organiser", "Plan for annual, seasonal or one-off household costs without prefilled assumptions.", "Payment / purpose:", "Expected amount and currency:", "Expected month or date:", "How the estimate was set:", "Reminder lead time:", "Status (update yourself):", "Notes / review date:")
     )
 
+    val items: List<StarterItem> = foundationItems + StarterLibraryExpansion.items
+
     init {
-        require(items.size == 28)
         require(items.map { it.id }.toSet().size == items.size)
         require(items.all { it.category in categories && it.blocks.isNotEmpty() && it.destination in PersonalEntryStore.SECTIONS })
     }

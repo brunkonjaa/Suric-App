@@ -8,6 +8,9 @@ object SectionVisibility {
     fun sanitize(stored: Set<String>): Set<String> = stored.intersect(sectionIds.toSet())
     fun <T> filterInDefaultOrder(items: List<T>, id: (T) -> String, visible: Set<String>): List<T> =
         items.filter { id(it) in sanitize(visible) }
+
+    fun sanitizeOrder(stored: List<String>): List<String> =
+        (stored.filter { it in sectionIds }.distinct() + sectionIds.filterNot { it in stored }).take(sectionIds.size)
 }
 
 class SectionVisibilityStore(context: Context) {
@@ -29,5 +32,22 @@ class SectionVisibilityStore(context: Context) {
     @Synchronized
     fun restoreDefaults() = saveVisibleSections(SectionVisibility.sectionIds.toSet())
 
-    companion object { private const val KEY = "visible_home_sections_v1" }
+    @Synchronized
+    fun homeOrder(): List<String> = SectionVisibility.sanitizeOrder(
+        preferences.getString(KEY_ORDER, null)?.split(DELIMITER).orEmpty()
+    )
+
+    @Synchronized
+    fun saveHomeOrder(order: List<String>) {
+        val normalized = SectionVisibility.sanitizeOrder(order)
+        check(preferences.edit().putString(KEY_ORDER, normalized.joinToString(DELIMITER)).commit()) {
+            "Could not save Home section order on this device."
+        }
+    }
+
+    companion object {
+        private const val KEY = "visible_home_sections_v1"
+        private const val KEY_ORDER = "home_section_order_v1"
+        private const val DELIMITER = "\u001f"
+    }
 }

@@ -1,33 +1,44 @@
 # Suric Starter Library
 
-The Starter Library is immutable reference material compiled into the APK. It is available without connectivity and is not inserted into personal records on installation. A user must select **Copy to my space** to create a separate, editable entry in the existing encrypted personal-entry store.
+Suric's Starter Library is immutable reference material compiled into the APK. It works offline and is not copied into personal records at installation. **Copy to my space** makes a separate, editable entry in the existing encrypted personal-entry store. Library favourites and recently viewed items remain in their separate local store.
 
-All items currently use content revision `1` and show `17 October 2026` as the review date. Library content is held in `StarterLibrary.kt`; IDs are stable across releases. Catalogue changes must preserve existing IDs where meaning is unchanged, increment the revision for edited content, and must never rewrite personal copies.
+Articles are in `StarterLibrary.kt` and `StarterLibraryExpansion.kt`. Stable IDs must be preserved when meaning is unchanged. Increment the revision when editing an existing item's meaning. A later catalogue update never rewrites a personal copy.
 
-## Inventory
+## Current inventory
 
-| Category | Stable IDs | Count |
-| --- | --- | ---: |
-| Gardening | `garden.spring-start`, `garden.summer-care`, `garden.autumn-care`, `garden.winter-protection`, `garden.herbs-in-pots`, `garden.plant-inspection` | 6 |
-| Cooking | `cook.sekeli-goulash`, `cook.tomato-lentil-soup`, `cook.chicken-traybake`, `cook.pasta-veg`, `cook.soda-bread`, `cook.apple-crumble` | 6 |
-| Cleaning | `clean.daily-kitchen`, `clean.weekly-bathroom`, `clean.weekly-home`, `clean.appliance-monthly`, `clean.deep-clean` | 5 |
-| DIY & Home | `diy.project`, `diy.tools`, `diy.measurements`, `diy.maintenance` | 4 |
-| Pottery | `pottery.project`, `pottery.glaze-test`, `pottery.kiln-log` | 3 |
-| Shopping | `shopping.research`, `shopping.comparison` | 2 |
-| Bills | `bills.monthly`, `bills.irregular` | 2 |
-| **Total** |  | **28** |
+| Category | Count | Coverage |
+| --- | ---: | --- |
+| Gardening | 11 | Irish vegetable planning, seasonal care, pots, compost, herbs, plant checks, pests and pruning |
+| Pottery | 8 | Clay bodies, handbuilding, drying, glaze testing, kiln safety and project/firing records |
+| Shopping | 7 | Research and comparison templates, specifications, Android devices, tools, appliances and storage |
+| DIY & Home | 9 | Project records, toolkit, wall fixings, painting, surface preparation, maintenance and safe trade boundaries |
+| Cooking | 9 | Six foundation recipes plus sarma, paprika pork stew and bread dumplings |
+| Cleaning | 9 | Kitchen/bathroom/whole-home checklists, appliances, laundry, stains, surface compatibility and moisture awareness |
+| Retro & Android | 16 | PS1, PS2, PS3, PS4, PS5 research, homebrew source checking, Android fundamentals, bootloaders, root, recovery and app sources |
+| Bills | 2 | Existing monthly and irregular bill templates |
+| **Total** | **71** | **69 reference articles/templates across the seven requested subjects, plus two existing bill templates** |
 
-## Source and safety notes
+## Library behaviour
 
-- Gardening guides are practical summaries informed by Teagasc's [Introduction to Vegetable Growing](https://teagasc.ie/crops/horticulture/vegetables/introduction-a-guide-to-vegetable-growing/) and [Pest and Disease guidance](https://teagasc.ie/crops/horticulture/nursery-stock/pest-and-disease/). They avoid local forecast or fixed-frost-date claims and direct users to plant-specific instructions.
-- Cleaning checklists use conservative product-label and chemical-separation advice. The cited [HSE safe-use sheet](https://www.hse.gov.uk/pubns/cais22.pdf) is written for hospitality workplaces; it supports the warning not to mix bleach products with acids or ammonia and is not presented as a household-cleaning standard.
-- Cooking content is household recipe guidance. The chicken recipe states an internal temperature of at least 75°C and general leftover handling consistent with the [Food Safety Authority of Ireland cooking and reheating guidance](https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/cooking-and-reheating). Follow package cooking instructions and current FSAI advice when they differ.
-- Sekeli goulash is labelled a household version because recipes vary. It is served with fresh bread and potato dumplings as requested.
-- DIY templates are blank planning fields. They do not instruct the user to perform gas, electrical or structural work.
-- Pottery templates record project, glaze and kiln details. They do not prescribe firing temperatures; follow the clay, glaze and kiln manufacturer's instructions and the studio's approved firing process.
-- Shopping items are blank user research templates. They do not claim live prices, stock or retailer verification and continue to use the existing HTTPS validation when saved in the Shopping section.
-- Bill templates are blank and do not request calendar permission when opened.
+- Search and category filters include the full offline catalogue.
+- Users can favourite items, see recently viewed items, and save their own HTTPS links in My Library.
+- Article detail pages show the original explanation, reviewed date and source links. Source links open only after a tap.
+- Related guides link to other offline articles. Related items are navigable from the article itself.
+- Garden, DIY & Home, Pottery, Shopping, Cooking, Cleaning and Retro & Android items copy into the matching existing personal section. These copies use current encrypted personal-entry storage.
+- Bundled section photography is reused. No image download or network request is required to read the catalogue.
 
-## Offline imagery
+## Source and currency notes
 
-Where available, the library reuses Suric's existing optimized WebP section photographs. No image is downloaded at runtime, no new image dependency is required, and the detail view remains usable if no image key is assigned.
+- Gardening references include Teagasc guidance for Irish vegetable growing and pest/disease context. Sowing and frost dates are not asserted as universal; check the crop instructions and local conditions.
+- Technical references prioritise project documentation, AOSP/Android documentation, Sony support pages and maintained specialist wikis. ConsoleMods and video/community resources are identified as community references, not Sony firmware documentation.
+- PS4 and PS5 guides intentionally contain no hard-coded supported firmware table. Their compatibility changes and must be checked against current project documentation on the day of use. The link directory's URLs and project identities were checked on 18 October 2026; this does not verify live compatibility.
+- Android bootloader, Verified Boot, Magisk, LineageOS and F-Droid entries link to their project or primary documentation. Device instructions are model-specific; unlocking normally erases user data and weakens some security guarantees.
+- Cooking articles are original household recipes. Follow current FSAI advice and appliance/manufacturer instructions; the chicken foundation recipe has its own measured-temperature guidance.
+- Cleaning guidance is label-led and avoids product mixing. The HSE safe-use sheet cited in existing material is workplace-focused; it supports conservative chemical handling but is not represented as a household cleaning standard.
+- DIY articles describe basic planning and safe observation. They do not teach gas, live electrical, structural or specialist repairs. Irish contractor registration links are provided where relevant.
+- Pottery guides do not prescribe universal firing temperatures or glaze recipes. Follow the exact clay, glaze, kiln and studio documentation. Kiln operation, silica dust and glaze handling have safety guidance.
+- Shopping guides are decision frameworks rather than product rankings. Suric does not fetch current prices, availability, product ratings or retailer pages.
+
+## Coverage gaps
+
+This is a useful offline foundation, not an exhaustive encyclopedia. It does not yet contain a plant-by-plant catalogue, month-by-month Irish sowing database, comprehensive pottery artist directory, broad recipe collection, detailed room-by-room cleaning catalogue, or a model-by-model console/Android compatibility database. No prices, current stock, live firmware status or specific device support are stored as facts. Those areas need curated, dated expansions before being described as complete.

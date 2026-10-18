@@ -20,6 +20,8 @@ import ie.suric.suricapp.auth.*
 import ie.suric.suricapp.chat.*
 import ie.suric.suricapp.local.PersonalEntry
 import ie.suric.suricapp.local.PersonalEntryStore
+import ie.suric.suricapp.local.PhotoAttachmentStore
+import ie.suric.suricapp.local.ReminderScheduler
 import ie.suric.suricapp.security.TokenVault
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -158,23 +160,38 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
 
     suspend fun reloadEntries() = localEntriesMutex.withLock {
         runCatching { withContext(Dispatchers.IO) { localEntries.allEntries() } }
-            .onSuccess { _personalEntries.value = it; _localDataError.value = null }
+            .onSuccess { entries ->
+                _personalEntries.value = entries
+                _localDataError.value = null
+                runCatching {
+                    withContext(Dispatchers.IO) {
+                        ReminderScheduler.scheduleAll(app, entries)
+                        PhotoAttachmentStore(app).removeOrphans(entries.mapNotNull { it.photoName }.toSet())
+                    }
+                }
+            }
             .onFailure { _localDataError.value = it.message ?: "Suric could not read its saved notes. They have not been changed." }
     }
-    suspend fun addEntry(section: String, title: String, body: String, sourceUrl: String? = null, sourceCheckedAt: String? = null): PersonalEntry = localEntriesMutex.withLock {
-        withContext(Dispatchers.IO) { localEntries.add(section, title, body, sourceUrl, sourceCheckedAt).also { _personalEntries.value = localEntries.allEntries() } }
+    suspend fun addEntry(section: String, title: String, body: String, sourceUrl: String? = null, sourceCheckedAt: String? = null,
+        recordType: String = "note", category: String? = null, dueDate: String? = null, repeatRule: String? = null,
+        project: String? = null, tags: List<String> = emptyList(), reminderEnabled: Boolean = false, photoName: String? = null): PersonalEntry = localEntriesMutex.withLock {
+        withContext(Dispatchers.IO) { localEntries.add(section, title, body, sourceUrl, sourceCheckedAt, recordType, category, dueDate, repeatRule, project, tags, reminderEnabled, photoName).also { _personalEntries.value = localEntries.allEntries() } }
+            .also { saved -> withContext(Dispatchers.IO) { ReminderScheduler.schedule(app, saved) } }
             .also { _localDataError.value = null }
     }
     suspend fun deleteEntry(id: String) = localEntriesMutex.withLock {
         withContext(Dispatchers.IO) { localEntries.delete(id); _personalEntries.value = localEntries.allEntries() }
+        withContext(Dispatchers.IO) { ReminderScheduler.cancel(app, id) }
         _localDataError.value = null
     }
     suspend fun updateEntry(entry: PersonalEntry) = localEntriesMutex.withLock {
         withContext(Dispatchers.IO) { localEntries.update(entry); _personalEntries.value = localEntries.allEntries() }
+        withContext(Dispatchers.IO) { ReminderScheduler.schedule(app, entry) }
         _localDataError.value = null
     }
     suspend fun restoreEntry(entry: PersonalEntry) = localEntriesMutex.withLock {
         withContext(Dispatchers.IO) { localEntries.restore(entry); _personalEntries.value = localEntries.allEntries() }
+        withContext(Dispatchers.IO) { ReminderScheduler.schedule(app, entry) }
         _localDataError.value = null
     }
     suspend fun saveAssistantResponse(text: String): PersonalEntry = aiSaveMutex.withLock {
