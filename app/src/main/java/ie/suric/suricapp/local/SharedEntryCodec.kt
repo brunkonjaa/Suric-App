@@ -20,13 +20,15 @@ object SharedEntryCodec {
     }
 
     fun decodeOrNull(text: String): SharedEntryCopy? {
+        require(text.length <= 110_000) { "This shared text is too large for Suric to import." }
         if (!text.startsWith(PREFIX)) return null
         val payload = JSONObject(text.removePrefix(PREFIX))
         require(payload.optInt("version") == 1) { "This shared Suric copy uses an unsupported version." }
         val section = payload.optString("section")
         require(section in PersonalEntryStore.SECTIONS) { "This shared Suric copy has an unknown section." }
-        val title = payload.optString("title").trim().take(200)
-        val body = payload.optString("body").take(100_000)
+        val title = payload.optString("title").trim()
+        val body = payload.optString("body")
+        require(title.length <= 200 && body.length <= 100_000) { "This shared Suric copy exceeds the supported size." }
         require(title.isNotBlank() || body.isNotBlank()) { "This shared Suric copy is empty." }
         return SharedEntryCopy(title, section, body)
     }
