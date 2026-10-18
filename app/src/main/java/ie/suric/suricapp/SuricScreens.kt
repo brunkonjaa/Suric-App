@@ -81,6 +81,9 @@ import ie.suric.suricapp.local.PersonalEntry
 import ie.suric.suricapp.local.PersonalEntryStore
 import ie.suric.suricapp.local.OfflineArticle
 import ie.suric.suricapp.local.OfflineLibrary
+import ie.suric.suricapp.local.OfflineRecipe
+import ie.suric.suricapp.local.OfflineRecipeCatalogue
+import ie.suric.suricapp.local.RecipeCatalogue
 import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
 import kotlinx.coroutines.Dispatchers
@@ -378,10 +381,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     val snackbar = remember { SnackbarHostState() }
     val sectionListState = rememberLazyListState()
     var offlineArticles by remember(section) { mutableStateOf<List<OfflineArticle>>(emptyList()) }
+    var recipeCatalogue by remember(section) { mutableStateOf<RecipeCatalogue?>(null) }
+    var selectedRecipeId by rememberSaveable(section) { mutableStateOf<String?>(null) }
     var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
     var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
     var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
     val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
+    val selectedRecipe = recipeCatalogue?.recipes?.firstOrNull { it.id == selectedRecipeId }
 
     if (section == "Music") {
         MusicSectionScreen(vm = vm, onMenu = onMenu)
@@ -389,11 +395,53 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     }
 
     LaunchedEffect(section) {
-        runCatching { withContext(Dispatchers.IO) { OfflineLibrary.load(context) } }
-            .onSuccess { offlineArticles = it; offlineLibraryError = null }
+        runCatching {
+            withContext(Dispatchers.IO) {
+                val articles = OfflineLibrary.load(context)
+                articles to if (section == "Cooking") OfflineRecipeCatalogue.load(context, articles) else null
+            }
+        }
+            .onSuccess { (articles, recipes) -> offlineArticles = articles; recipeCatalogue = recipes; offlineLibraryError = null }
             .onFailure { offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged." }
     }
-    BackHandler(enabled = selectedArticle != null) { selectedArticleId = null }
+    BackHandler(enabled = selectedArticle != null || selectedRecipe != null) {
+        if (selectedRecipe != null) selectedRecipeId = null else selectedArticleId = null
+    }
+    if (selectedRecipe != null) {
+        OfflineRecipeDetail(
+            recipe = selectedRecipe!!,
+            onBack = { selectedRecipeId = null },
+            onAsk = { onAssistant("Help me cook this recipe and adapt it to what I have. Do not invent ingredients or change the dish's origin.\n\n${selectedRecipe!!.name} (${selectedRecipe!!.country})\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\n${selectedRecipe!!.instructions.joinToString("\n")}") },
+            onCopy = {
+                scope.launch {
+                    val recipeBody = buildString {
+                        appendLine("Origin: ${selectedRecipe!!.country}${selectedRecipe!!.region?.let { " • $it" }.orEmpty()}")
+                        appendLine("Prep: ${selectedRecipe!!.prepMinutes} min | Cook: ${selectedRecipe!!.cookMinutes} min | Serves: ${selectedRecipe!!.servings}")
+                        appendLine("\nINGREDIENTS")
+                        selectedRecipe!!.ingredients.forEach { appendLine("• $it") }
+                        appendLine("\nMETHOD")
+                        selectedRecipe!!.instructions.forEachIndexed { index, step -> appendLine("${index + 1}. $step") }
+                        appendLine("\nServe with: ${selectedRecipe!!.sides}")
+                        appendLine("\nSubstitutions: ${selectedRecipe!!.substitutions}")
+                        appendLine("\nStorage: ${selectedRecipe!!.storage}")
+                    }
+                    runCatching { vm.addEntry("Cooking", selectedRecipe!!.name, recipeBody.trim()) }
+                        .onSuccess { snackbar.showSnackbar("Saved an independent recipe copy in Cooking.") }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t save a recipe copy.") }
+                }
+            },
+            onShare = {
+                val text = "${selectedRecipe!!.name} — ${selectedRecipe!!.country}\n${selectedRecipe!!.description}\n\nIngredients:\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\nMethod:\n${selectedRecipe!!.instructions.mapIndexed { index, step -> "${index + 1}. $step" }.joinToString("\n")}\n\nServe with: ${selectedRecipe!!.sides}"
+                val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, text)
+                }
+                runCatching { context.startActivity(Intent.createChooser(sendIntent, "Share recipe")) }
+                    .onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open the Android share sheet.") } }
+            }
+        )
+        return
+    }
     if (selectedArticle != null) {
         OfflineArticleDetail(
             article = selectedArticle!!,
@@ -462,6 +510,49 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
             item {
                 Text(area.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
+            if (section == "Cooking") item {
+                OutlinedTextField(
+                    value = libraryQuery,
+                    onValueChange = { libraryQuery = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    placeholder = { Text("Search recipes, ingredients and guides") },
+                    singleLine = true,
+                    shape = RoundedCornerShape(16.dp)
+                )
+            }
+            if (section == "Cooking") {
+                val irishCollection = recipeCatalogue?.collections?.firstOrNull { it.id == "cuisine:ireland" }
+                val featuredRecipes = irishCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
+                val searchedRecipes = if (libraryQuery.isBlank()) featuredRecipes else recipeCatalogue?.let { catalogue ->
+                    catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
+                }.orEmpty()
+                item {
+                    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                            Text(if (libraryQuery.isBlank()) irishCollection?.title ?: "Traditional recipes" else "Recipe search results", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Text("${searchedRecipes.size} recipes", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Text("Offline recipes with ingredients, timings and country of origin.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+                if (irishCollection == null && offlineLibraryError == null) item {
+                    Text("The recipe collection could not be opened.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                }
+                if (searchedRecipes.isEmpty() && libraryQuery.isNotBlank()) item {
+                    Text("No bundled recipes match that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                items(searchedRecipes, key = { "recipe:${it.id}" }) { recipe ->
+                    OutlinedCard(onClick = { selectedRecipeId = recipe.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                            Text(recipe.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Text(listOfNotNull(recipe.country, recipe.region).joinToString(" • "), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                            Text(recipe.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text("${recipe.prepMinutes} min prep • ${recipe.cookMinutes} min cook • Serves ${recipe.servings}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                    }
+                }
+            }
             if (section == "Shopping") item {
                 Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
                     Column(Modifier.fillMaxWidth().padding(16.dp)) {
@@ -514,27 +605,38 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 }
             }
             item {
-                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
-                        Text("Offline library", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
-                        Text("${offlineArticles.size} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                if (section == "Cooking") {
+                    Row(Modifier.fillMaxWidth().padding(top = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Text("Offline cooking guides", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("${offlineArticles.count { it.section == section }} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
-                    Text("Bundled reading opens without internet. Search checks every section.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    OutlinedTextField(
-                        value = libraryQuery,
-                        onValueChange = { libraryQuery = it },
-                        modifier = Modifier.fillMaxWidth(),
-                        leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                        placeholder = { Text("Search offline guides and recipes") },
-                        singleLine = true,
-                        shape = RoundedCornerShape(16.dp)
-                    )
+                } else {
+                    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                            Text("Offline library", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Text("${offlineArticles.size} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Text("Bundled reading opens without internet. Search checks every section.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        OutlinedTextField(
+                            value = libraryQuery,
+                            onValueChange = { libraryQuery = it },
+                            modifier = Modifier.fillMaxWidth(),
+                            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                            placeholder = { Text("Search offline guides and recipes") },
+                            singleLine = true,
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                    }
                 }
             }
             if (offlineLibraryError != null) item {
                 Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             }
+            val recipeArticleIds = recipeCatalogue?.collections?.firstOrNull { it.id == "cuisine:ireland" }
+                ?.recipeIds?.toSet()?.let { collectionIds -> recipeCatalogue?.recipes?.filter { it.id in collectionIds }?.mapNotNull { it.articleId }?.toSet() }
+                .orEmpty()
             val matchingArticles = offlineArticles.filter { article ->
+                if (section == "Cooking" && article.id in recipeArticleIds) return@filter false
                 if (libraryQuery.isBlank()) article.section == section
                 else article.searchableText.contains(libraryQuery.trim(), ignoreCase = true)
             }
@@ -880,6 +982,72 @@ private fun OfflineArticleDetail(article: OfflineArticle, onBack: () -> Unit, on
             }
             Text("The copy is saved separately from this bundled article and stays on this device.", Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
+    }
+}
+
+@Composable
+private fun OfflineRecipeDetail(
+    recipe: OfflineRecipe,
+    onBack: () -> Unit,
+    onAsk: () -> Unit,
+    onCopy: () -> Unit,
+    onShare: () -> Unit
+) {
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("${recipe.country} recipe", maxLines = 1) },
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to recipes") } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(bottom = 24.dp)) {
+            Text(recipe.name, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.SemiBold)
+            recipe.englishName?.takeIf { !it.equals(recipe.name, ignoreCase = true) }?.let {
+                Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            Spacer(Modifier.height(8.dp))
+            Text(listOfNotNull(recipe.country, recipe.region).joinToString(" • "), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            Spacer(Modifier.height(8.dp))
+            Text(recipe.description, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(8.dp))
+            Text("Prep ${recipe.prepMinutes} min • Cook ${recipe.cookMinutes} min • Serves ${recipe.servings} • ${recipe.difficulty}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(20.dp))
+            Text("Ingredients", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            recipe.ingredients.forEach { ingredient ->
+                Text("• $ingredient", Modifier.padding(top = 7.dp), style = MaterialTheme.typography.bodyLarge)
+            }
+            Spacer(Modifier.height(20.dp))
+            Text("Method", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            recipe.instructions.forEachIndexed { index, step ->
+                Row(Modifier.fillMaxWidth().padding(top = 10.dp), horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.Top) {
+                    Text("${index + 1}.", style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.primary)
+                    Text(step, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                }
+            }
+            RecipeDetailNote("Serve with", recipe.sides)
+            RecipeDetailNote("Substitutions", recipe.substitutions)
+            RecipeDetailNote("Storage", recipe.storage)
+            RecipeDetailNote("Food safety", recipe.safety)
+            Text("Offline • revision ${recipe.revision} • ${recipe.tags.joinToString(" · ")}", Modifier.padding(top = 16.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(14.dp))
+            Button(onClick = onAsk, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Ask Suric about this recipe") }
+            OutlinedButton(onClick = onCopy, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) { Text("Copy to My Space") }
+            OutlinedButton(onClick = onShare, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Icon(Icons.Default.Share, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text("Share recipe")
+            }
+        }
+    }
+}
+
+@Composable
+private fun RecipeDetailNote(title: String, body: String) {
+    Column(Modifier.fillMaxWidth().padding(top = 16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+        Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+        Text(body, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
