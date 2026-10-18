@@ -15,7 +15,7 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - Personal entries can be shared as a user-selected, readable text copy. Bundled guides can be shared using a Suric URI when the receiving Suric installation contains the same article ID.
 - Bills can be entered locally or selectively saved from upcoming calendar events after calendar permission is granted.
 - Text notes can be shared from another Android app into Suric's Notes area.
-- “Ask Suric” opens the conversation; a section's saved notes are included only after you tap “Ask Suric about these notes”.
+- “Ask Suric” opens the conversation; message history and drafts are stored encrypted on this device, and a section's saved notes are included only after you tap “Ask Suric about these notes”.
 - Android's system photo picker attaches an image to a question.
 
 Suric does not read another app's private database. Notes enter Suric only through an Android share action or manual entry. Saved option links open through Android's link handler and are not fetched by Suric.

@@ -24,6 +24,7 @@ import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.security.TokenVault
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -75,6 +76,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     val auth = _auth.asStateFlow()
     private val _conversation = MutableStateFlow(ConversationState())
     val conversation = _conversation.asStateFlow()
+    private val conversationStore = EncryptedConversationStore(app)
+    private val conversationPersistenceMutex = Mutex()
+    private var conversationSaveJob: Job? = null
+    private var conversationReadFailed = false
     private var tokenLoadError: String? = null
     private var tokens: Tokens? = runCatching { vault.load() }.getOrElse {
         tokenLoadError = "The saved ChatGPT connection could not be read. Reconnect to continue."
@@ -99,6 +104,12 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     }
 
     init {
+        runCatching { conversationStore.load() }
+            .onSuccess { saved -> saved?.let { _conversation.value = ConversationState(messages = it.messages, draft = it.draft) } }
+            .onFailure {
+                conversationReadFailed = true
+                _conversation.value = ConversationState(historyNotice = "Saved chat history could not be read and has not been overwritten.")
+            }
         if (tokenLoadError != null) _auth.value = AuthState.Failed(tokenLoadError!!)
         else if (tokens != null) _auth.value = AuthState.SignedIn(tokens?.email)
         viewModelScope.launch { reloadEntries() }
@@ -149,7 +160,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         prepareJob = null
         api.cancelActiveRequest()
         transitionAuth(AuthStateMachine.Event.Disconnect)
-        _conversation.value = ConversationState()
+        if (_conversation.value.isLoading) {
+            _conversation.value = _conversation.value.copy(isLoading = false, error = "The request stopped when you disconnected ChatGPT.")
+            scheduleConversationSave()
+        }
         credentialClearError = null
         credentialClearJob = viewModelScope.launch(Dispatchers.IO) {
             runCatching { credentialMutex.withLock { vault.clear() } }
@@ -191,13 +205,17 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         return section
     }
 
-    fun updateDraft(value: String) { _conversation.value = _conversation.value.copy(draft = value) }
+    fun updateDraft(value: String) {
+        _conversation.value = _conversation.value.copy(draft = value)
+        scheduleConversationSave()
+    }
     fun send(text: String = _conversation.value.draft, image: Uri? = null) {
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
         val displayText = cleaned.ifEmpty { "What is in this picture?" }
         val before = _conversation.value
         _conversation.value = ConversationReducer.appendUser(before, displayText, image?.toString())
+        scheduleConversationSave()
         chatJob = viewModelScope.launch {
             try {
                 val active = validAccessToken()
@@ -207,15 +225,21 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
                 withContext(Dispatchers.IO) {
                     api.stream(active, selectedModel, history, dataUrl) { delta ->
                         _conversation.value = ConversationReducer.appendDelta(_conversation.value, delta)
+                        scheduleConversationSave()
                     }
                 }
                 _conversation.value = ConversationReducer.completed(_conversation.value)
+                scheduleConversationSave()
             } catch (e: Exception) {
                 if (chatJob?.isActive != true) return@launch
                 if (e is ApiException && e.statusCode == 401) {
                     _conversation.value = ConversationReducer.failed(_conversation.value, "Your ChatGPT sign-in expired. Reconnect, then retry your question.")
+                    scheduleConversationSave()
                     transitionAuth(AuthStateMachine.Event.Expired)
-                } else _conversation.value = ConversationReducer.failed(_conversation.value, e.message ?: "The request failed. Try again.")
+                } else {
+                    _conversation.value = ConversationReducer.failed(_conversation.value, e.message ?: "The request failed. Try again.")
+                    scheduleConversationSave()
+                }
             }
         }
     }
@@ -226,6 +250,7 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         while (messages.lastOrNull()?.role == "assistant") messages.removeAt(messages.lastIndex)
         if (messages.lastOrNull()?.role == "user") messages.removeAt(messages.lastIndex)
         _conversation.value = _conversation.value.copy(messages = messages, isLoading = false)
+        scheduleConversationSave()
         send(lastUser.text, lastUser.imageUri?.let { Uri.parse(it) })
     }
 
@@ -248,6 +273,26 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     private suspend fun loadModel(access: String): String = withContext(Dispatchers.IO) {
         api.listModels(access).firstOrNull()?.also { model = it.slug; _conversation.value = _conversation.value.copy(modelLabel = it.displayName) }
             ?.slug ?: error("No models are currently available for this ChatGPT account.")
+    }
+
+    private fun scheduleConversationSave() {
+        if (conversationReadFailed) return
+        conversationSaveJob?.cancel()
+        conversationSaveJob = viewModelScope.launch {
+            delay(300)
+            runCatching {
+                conversationPersistenceMutex.withLock {
+                    val latest = _conversation.value
+                    withContext(Dispatchers.IO) { conversationStore.save(latest.messages, latest.draft) }
+                }
+            }.onSuccess {
+                if (_conversation.value.historyNotice?.startsWith("Chat history could not be saved") == true) {
+                    _conversation.value = _conversation.value.copy(historyNotice = null)
+                }
+            }.onFailure {
+                _conversation.value = _conversation.value.copy(historyNotice = "Chat history could not be saved securely on this device.")
+            }
+        }
     }
 
     private fun prepareAssistant() {

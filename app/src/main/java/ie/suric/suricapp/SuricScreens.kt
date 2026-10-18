@@ -1532,6 +1532,9 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
         containerColor = MaterialTheme.colorScheme.background
     ) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), contentPadding = PaddingValues(vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            state.historyNotice?.let { notice -> item {
+                Text(notice, modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
+            } }
             if (state.messages.isEmpty()) item {
                 Column(Modifier.fillMaxWidth().padding(top = 52.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("What’s on your mind?", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)

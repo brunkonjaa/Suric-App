@@ -5,7 +5,8 @@ data class ConversationState(
     val draft: String = "",
     val isLoading: Boolean = false,
     val error: String? = null,
-    val modelLabel: String? = null
+    val modelLabel: String? = null,
+    val historyNotice: String? = null
 )
 
 object ConversationReducer {
