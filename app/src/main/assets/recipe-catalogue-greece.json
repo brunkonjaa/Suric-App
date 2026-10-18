@@ -1,0 +1,1200 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "gr-lamb-lemonato",
+                        "name":  "Arni lemonato",
+                        "englishName":  "Lemon oregano lamb",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Lamb pieces braised with lemon, garlic and oregano until tender in a bright pan sauce.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  120,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "800 g lamb shoulder",
+                                            "3 potatoes",
+                                            "2 lemons",
+                                            "4 garlic cloves",
+                                            "600 ml stock",
+                                            "2 tsp oregano",
+                                            "2 tbsp olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown lamb in olive oil",
+                                             "add garlic and oregano",
+                                             "Add lemon juice, stock and potatoes",
+                                             "cover and simmer gently until lamb and potatoes tender, about 90 minutes",
+                                             "uncover to reduce sauce",
+                                             "season and serve."
+                                         ],
+                        "sides":  "Serve with bread and greens.",
+                        "substitutions":  "Use chicken thighs and shorten simmering time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook lamb fully and cool leftovers promptly.",
+                        "tags":  [
+                                     "lamb",
+                                     "lemon",
+                                     "stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-bakaliaros-skordalia",
+                        "name":  "Bakaliaros skordalia",
+                        "englishName":  "Fried salt cod with garlic potato dip",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Salt cod fried in a light batter and served with garlic potato dip, especially for spring feasts.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  20,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g desalted cod",
+                                            "100 g plain flour",
+                                            "150 ml sparkling water",
+                                            "600 g potatoes",
+                                            "3 garlic cloves",
+                                            "80 ml olive oil",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "If using salt cod, soak in refrigerator according to supplier directions, changing water",
+                                             "Boil potatoes until tender",
+                                             "mash with garlic, olive oil, salt and lemon to make skordalia",
+                                             "Pat fish dry, cut into portions and dust with flour",
+                                             "Dip in batter and fry in hot oil until crisp and fish flakes opaque."
+                                         ],
+                        "sides":  "Serve with greens and lemon.",
+                        "substitutions":  "Use fresh cod and season lightly.",
+                        "storage":  "Refrigerate fish promptly and use within 1 day; dip keeps 2 days chilled.",
+                        "safety":  "Keep fish cold and cook until opaque; use safe hot-oil practice.",
+                        "tags":  [
+                                     "fish",
+                                     "cod",
+                                     "potato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-briam",
+                        "name":  "Briam",
+                        "englishName":  "Baked summer vegetables",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "A tray of courgette, aubergine, potato and tomato slowly baked with olive oil and herbs.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  70,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 courgettes",
+                                            "1 aubergine",
+                                            "3 potatoes",
+                                            "1 onion",
+                                            "500 g tomatoes",
+                                            "100 ml olive oil",
+                                            "oregano",
+                                            "parsley"
+                                        ],
+                        "instructions":  [
+                                             "Slice vegetables evenly",
+                                             "salt aubergine briefly and pat dry",
+                                             "Layer vegetables and onion in a baking dish",
+                                             "add tomatoes, herbs, salt and olive oil",
+                                             "Bake at 190 C for 60 to 70 minutes, turning gently once, until vegetables are very tender and edges brown",
+                                             "rest before serving."
+                                         ],
+                        "sides":  "Serve warm or room temperature with feta and bread.",
+                        "substitutions":  "Use green beans or peppers in season.",
+                        "storage":  "Refrigerate up to 3 days; reheat until hot.",
+                        "safety":  "Cool vegetables promptly and keep chilled.",
+                        "tags":  [
+                                     "vegetables",
+                                     "oven",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-paximadia",
+                        "name":  "Paximadia me ntomata",
+                        "englishName":  "Cretan barley rusks with tomato",
+                        "country":  "Greece",
+                        "region":  "Crete",
+                        "description":  "Hard barley rusks softened with tomato and olive oil for a simple snack.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 barley rusks",
+                                            "2 ripe tomatoes",
+                                            "2 tbsp olive oil",
+                                            "80 g mizithra",
+                                            "oregano"
+                                        ],
+                        "instructions":  [
+                                             "Sprinkle rusks lightly with water to soften",
+                                             "Grate tomatoes and spoon over rusks",
+                                             "Crumble mizithra on top",
+                                             "add olive oil and oregano",
+                                             "let stand briefly and serve."
+                                         ],
+                        "sides":  "Serve as a light snack or starter.",
+                        "substitutions":  "Use feta or toasted bread.",
+                        "storage":  "Assemble just before serving.",
+                        "safety":  "Wash tomatoes and keep cheese chilled.",
+                        "tags":  [
+                                     "Crete",
+                                     "barley",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-dakos",
+                        "name":  "Dakos",
+                        "englishName":  "Cretan barley rusk salad",
+                        "country":  "Greece",
+                        "region":  "Crete",
+                        "description":  "Barley rusks softened with ripe tomato and topped with mizithra, oregano and olive oil.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 barley rusks",
+                                            "3 ripe tomatoes",
+                                            "150 g mizithra or feta",
+                                            "4 tbsp olive oil",
+                                            "1 tsp oregano",
+                                            "capers optional"
+                                        ],
+                        "instructions":  [
+                                             "Grate tomatoes into a bowl and season lightly",
+                                             "Sprinkle rusks with a little water to soften without making them mushy",
+                                             "Spoon tomato over rusks",
+                                             "add cheese, oregano, capers and olive oil",
+                                             "rest 5 minutes and serve."
+                                         ],
+                        "sides":  "Serve as a light lunch or starter.",
+                        "substitutions":  "Use toasted country bread if rusks are unavailable.",
+                        "storage":  "Assemble just before serving.",
+                        "safety":  "Wash tomatoes and keep cheese refrigerated.",
+                        "tags":  [
+                                     "Crete",
+                                     "barley",
+                                     "tomato"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-kalamata-olives",
+                        "name":  "Elies Kalamatas me portokali",
+                        "englishName":  "Herbed olive and orange salad",
+                        "country":  "Greece",
+                        "region":  "Peloponnese",
+                        "description":  "Kalamata olives tossed with orange, onion, oregano and olive oil.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "200 g Kalamata olives",
+                                            "1 orange, peeled and sliced",
+                                            "1/4 red onion",
+                                            "1 tbsp olive oil",
+                                            "oregano"
+                                        ],
+                        "instructions":  [
+                                             "Pit olives if needed",
+                                             "Slice orange and onion thinly",
+                                             "Toss with olives, olive oil and oregano",
+                                             "rest 10 minutes and serve."
+                                         ],
+                        "sides":  "Serve as meze with bread and cheese.",
+                        "substitutions":  "Use lemon zest if orange is unavailable.",
+                        "storage":  "Refrigerate covered and use within 2 days.",
+                        "safety":  "Use clean utensils when handling olives.",
+                        "tags":  [
+                                     "Peloponnese",
+                                     "olive",
+                                     "meze"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-lentil-soup",
+                        "name":  "Fakes",
+                        "englishName":  "Fakes lentil soup",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Brown lentils simmered with onion, carrot, tomato and bay, finished with vinegar.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  50,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g brown lentils",
+                                            "1 onion",
+                                            "1 carrot",
+                                            "400 g chopped tomatoes",
+                                            "1.2 litres water",
+                                            "2 bay leaves",
+                                            "60 ml olive oil",
+                                            "red wine vinegar"
+                                        ],
+                        "instructions":  [
+                                             "Rinse lentils",
+                                             "put in pot with water and bring to a boil",
+                                             "Drain once and add fresh water, onion, carrot, tomatoes and bay",
+                                             "simmer until lentils tender, 35 to 45 minutes",
+                                             "Stir in olive oil, season and serve with vinegar at table."
+                                         ],
+                        "sides":  "Serve with olives and bread.",
+                        "substitutions":  "Add celery or a little oregano.",
+                        "storage":  "Refrigerate up to 3 days; reheat until bubbling.",
+                        "safety":  "Cook lentils fully and chill leftovers promptly.",
+                        "tags":  [
+                                     "lentils",
+                                     "soup",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-fasolada",
+                        "name":  "Fasolada",
+                        "englishName":  "Greek white bean soup",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "White beans simmered with tomato, celery, carrot and olive oil into a thick soup.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  100,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g dried white beans, soaked",
+                                            "1 onion",
+                                            "2 carrots",
+                                            "2 celery stalks",
+                                            "400 g chopped tomatoes",
+                                            "1.5 litres water",
+                                            "80 ml olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Drain beans and simmer in fresh water until nearly tender",
+                                             "Add diced onion, carrots, celery and tomatoes",
+                                             "continue simmering until beans are soft",
+                                             "Stir in olive oil and salt during final 15 minutes",
+                                             "mash a few beans to thicken",
+                                             "season."
+                                         ],
+                        "sides":  "Serve with olives and crusty bread.",
+                        "substitutions":  "Use canned beans and reduce cooking time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until bubbling.",
+                        "safety":  "Boil dried beans thoroughly and chill leftovers promptly.",
+                        "tags":  [
+                                     "beans",
+                                     "soup",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-gemista",
+                        "name":  "Gemista",
+                        "englishName":  "Stuffed tomatoes and peppers",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Tomatoes and peppers filled with rice, herbs and their own pulp, baked until tender.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  75,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 tomatoes",
+                                            "4 peppers",
+                                            "200 g rice",
+                                            "1 onion",
+                                            "parsley and mint",
+                                            "400 g potatoes",
+                                            "100 ml olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Cut tops from tomatoes and peppers",
+                                             "scoop tomato pulp and chop",
+                                             "Cook onion in oil",
+                                             "stir in rice, tomato pulp, herbs and seasoning",
+                                             "Fill vegetables loosely and replace tops",
+                                             "arrange with potato wedges in tray",
+                                             "add water and remaining oil",
+                                             "Bake at 180 C until rice is tender and vegetables soft, about 70 minutes."
+                                         ],
+                        "sides":  "Serve warm or room temperature with feta.",
+                        "substitutions":  "Add cooked minced meat to filling.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat thoroughly.",
+                        "safety":  "Rice filling must be fully cooked; cool leftovers promptly.",
+                        "tags":  [
+                                     "stuffed",
+                                     "rice",
+                                     "vegetables"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-giouvetsi",
+                        "name":  "Giouvetsi",
+                        "englishName":  "Beef and orzo baked casserole",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Beef braised in tomato sauce with orzo pasta until tender and saucy.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  130,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g stewing beef",
+                                            "250 g orzo",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "700 ml stock",
+                                            "1 cinnamon stick",
+                                            "1 bay leaf",
+                                            "olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in a heavy ovenproof pot",
+                                             "add onion and soften",
+                                             "Stir in tomatoes, stock, bay and cinnamon",
+                                             "cover and braise at 160 C until beef tender, about 90 minutes",
+                                             "Stir in orzo and bake uncovered until pasta is tender, adding hot water if needed",
+                                             "remove spices and rest."
+                                         ],
+                        "sides":  "Serve with grated kefalotyri or hard cheese.",
+                        "substitutions":  "Use lamb shoulder or chicken, reducing cooking time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat with stock.",
+                        "safety":  "Cook beef thoroughly and keep leftovers chilled.",
+                        "tags":  [
+                                     "beef",
+                                     "orzo",
+                                     "oven"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-greek-salad",
+                        "name":  "Horiatiki salata",
+                        "englishName":  "Horiatiki village salad",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Tomato, cucumber, pepper and onion with olives and a slab of feta.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "4 tomatoes",
+                                            "1 cucumber",
+                                            "1 green pepper",
+                                            "1/2 red onion",
+                                            "150 g feta",
+                                            "80 g olives",
+                                            "2 tbsp olive oil",
+                                            "oregano"
+                                        ],
+                        "instructions":  [
+                                             "Cut tomatoes into wedges and cucumber into thick slices",
+                                             "Add pepper, onion and olives to a serving plate",
+                                             "Lay feta on top",
+                                             "drizzle with olive oil and sprinkle oregano",
+                                             "Serve without tossing so vegetables keep their shape."
+                                         ],
+                        "sides":  "Serve with bread to soak up dressing.",
+                        "substitutions":  "Add capers or purslane in season.",
+                        "storage":  "Prepare just before serving; refrigerate leftovers briefly.",
+                        "safety":  "Wash vegetables and keep feta chilled.",
+                        "tags":  [
+                                     "salad",
+                                     "tomato",
+                                     "feta"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-kleftiko",
+                        "name":  "Kleftiko",
+                        "englishName":  "Lamb baked with potatoes and lemon",
+                        "country":  "Greece",
+                        "region":  "Peloponnese",
+                        "description":  "Lamb and potatoes slow-baked in a sealed parcel with lemon, garlic and oregano.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  150,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 kg lamb shoulder pieces",
+                                            "700 g potatoes",
+                                            "2 lemons",
+                                            "4 garlic cloves",
+                                            "80 ml olive oil",
+                                            "1 tbsp oregano",
+                                            "parchment and foil"
+                                        ],
+                        "instructions":  [
+                                             "Heat oven to 170 C",
+                                             "season lamb with lemon juice, garlic, oregano, oil, salt and pepper",
+                                             "Arrange lamb and potato wedges on parchment",
+                                             "add lemon wedges and wrap tightly, then seal in foil",
+                                             "Bake until lamb is tender, about 2 to 2.5 hours",
+                                             "open parcel carefully and brown briefly if desired."
+                                         ],
+                        "sides":  "Serve with village salad.",
+                        "substitutions":  "Use chicken thighs and reduce baking time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until hot.",
+                        "safety":  "Cook lamb until tender; beware steam when opening parcel.",
+                        "tags":  [
+                                     "lamb",
+                                     "potato",
+                                     "lemon"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-kolokithokeftedes",
+                        "name":  "Kolokithokeftedes",
+                        "englishName":  "Courgette and feta fritters",
+                        "country":  "Greece",
+                        "region":  "Crete",
+                        "description":  "Grated courgette fritters mixed with herbs, feta and a little flour.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  15,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "3 courgettes",
+                                            "150 g feta",
+                                            "1 egg",
+                                            "3 tbsp flour",
+                                            "2 tbsp dill",
+                                            "2 spring onions",
+                                            "oil for frying"
+                                        ],
+                        "instructions":  [
+                                             "Grate courgettes, salt lightly and squeeze very dry",
+                                             "Mix courgette with crumbled feta, egg, dill, spring onion and flour",
+                                             "Heat a thin layer of oil",
+                                             "spoon small patties and flatten",
+                                             "fry until golden both sides and cooked through",
+                                             "drain."
+                                         ],
+                        "sides":  "Serve with yogurt and lemon.",
+                        "substitutions":  "Use mint or parsley in place of dill.",
+                        "storage":  "Best fresh; refrigerate leftovers up to 1 day and reheat in oven.",
+                        "safety":  "Cook egg mixture through and handle hot oil carefully.",
+                        "tags":  [
+                                     "courgette",
+                                     "fritters",
+                                     "feta"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-koulouri",
+                        "name":  "Koulouri Thessalonikis",
+                        "englishName":  "Sesame bread rings",
+                        "country":  "Greece",
+                        "region":  "Thessaloniki",
+                        "description":  "Chewy bread rings coated in sesame seeds, commonly eaten for breakfast on the go.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  90,
+                        "servings":  8,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g bread flour",
+                                            "7 g yeast",
+                                            "300 ml warm water",
+                                            "1 tsp sugar",
+                                            "1 tsp salt",
+                                            "200 g sesame seeds",
+                                            "2 tbsp honey"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, sugar, salt and water",
+                                             "knead until smooth and rise until doubled",
+                                             "Divide into 8 pieces",
+                                             "roll into ropes and join ends into rings",
+                                             "Dilute honey in warm water",
+                                             "dip rings then coat generously in sesame",
+                                             "Bake at 220 C until golden and hollow-sounding, about 15 minutes."
+                                         ],
+                        "sides":  "Serve with cheese or coffee.",
+                        "substitutions":  "Use molasses in place of honey.",
+                        "storage":  "Store in paper bag for 1 day; freeze extras.",
+                        "safety":  "Check sesame allergy and bake fully.",
+                        "tags":  [
+                                     "Thessaloniki",
+                                     "bread",
+                                     "sesame"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-kritharoto",
+                        "name":  "Kritharoto",
+                        "englishName":  "Greek tomato orzo",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Orzo simmered risotto-style with tomato, onion, herbs and cheese.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  25,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g orzo",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "700 ml vegetable stock",
+                                            "2 tbsp olive oil",
+                                            "oregano",
+                                            "60 g grated kefalotyri"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in olive oil until soft",
+                                             "Add orzo and stir to coat",
+                                             "add tomatoes and a ladle of stock",
+                                             "Cook, stirring often and adding stock gradually, until orzo is tender and creamy",
+                                             "Season with oregano and fold in cheese."
+                                         ],
+                        "sides":  "Serve with salad or grilled vegetables.",
+                        "substitutions":  "Use feta crumbled on top instead of hard cheese.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat with stock.",
+                        "safety":  "Cool pasta quickly and refrigerate leftovers.",
+                        "tags":  [
+                                     "orzo",
+                                     "tomato",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-lahanorizo",
+                        "name":  "Lahanorizo",
+                        "englishName":  "Cabbage and rice stew",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Cabbage braised with tomato and rice into a simple one-pot meal.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "600 g white cabbage, shredded",
+                                            "150 g rice",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "750 ml stock",
+                                            "60 ml olive oil",
+                                            "dill"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in olive oil until soft",
+                                             "Add cabbage and stir until it begins to wilt",
+                                             "Stir in tomatoes, rice and stock",
+                                             "cover and simmer gently until rice tender, stirring occasionally",
+                                             "Add dill and season",
+                                             "rest 5 minutes."
+                                         ],
+                        "sides":  "Serve with feta and bread.",
+                        "substitutions":  "Use leeks or spinach for a variation.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cool rice mixture quickly and chill leftovers.",
+                        "tags":  [
+                                     "cabbage",
+                                     "rice",
+                                     "one-pot"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-melitzanosalata",
+                        "name":  "Melitzanosalata",
+                        "englishName":  "Smoky aubergine dip",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Roasted aubergine mashed with olive oil, lemon, garlic and parsley.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  40,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "2 aubergines",
+                                            "1 garlic clove",
+                                            "2 tbsp olive oil",
+                                            "1 tbsp lemon juice",
+                                            "2 tbsp parsley",
+                                            "Salt"
+                                        ],
+                        "instructions":  [
+                                             "Prick aubergines and roast at 220 C, turning, until collapsed and tender",
+                                             "cool",
+                                             "Scoop flesh and drain excess liquid",
+                                             "Mash with garlic, olive oil, lemon, parsley and salt",
+                                             "chill briefly and serve."
+                                         ],
+                        "sides":  "Serve with pita and olives.",
+                        "substitutions":  "Add yogurt for a milder dip.",
+                        "storage":  "Refrigerate covered and use within 2 days.",
+                        "safety":  "Cool roasted vegetables quickly and keep dip chilled.",
+                        "tags":  [
+                                     "dip",
+                                     "aubergine",
+                                     "meze"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-moussaka",
+                        "name":  "Moussaka",
+                        "englishName":  "Greek aubergine and potato bake",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Layers of aubergine, potato and spiced meat sauce under a creamy baked topping.",
+                        "prepMinutes":  50,
+                        "cookMinutes":  70,
+                        "servings":  6,
+                        "difficulty":  "Hard",
+                        "ingredients":  [
+                                            "2 aubergines",
+                                            "500 g minced lamb or beef",
+                                            "2 potatoes",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "1 tsp cinnamon",
+                                            "500 ml milk",
+                                            "50 g butter",
+                                            "50 g flour",
+                                            "1 egg",
+                                            "60 g grated cheese"
+                                        ],
+                        "instructions":  [
+                                             "Slice aubergine, salt 20 minutes and pat dry",
+                                             "roast or pan-sear",
+                                             "Brown mince with onion",
+                                             "add tomatoes and cinnamon",
+                                             "simmer until thick",
+                                             "Layer potato, aubergine and meat sauce in a baking dish",
+                                             "Make white sauce with butter, flour and milk",
+                                             "cool slightly, whisk in egg and cheese",
+                                             "spread over top",
+                                             "Bake at 180 C until golden and set."
+                                         ],
+                        "sides":  "Serve warm with salad.",
+                        "substitutions":  "Use lentils and mushrooms for a meat-free layer.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat thoroughly.",
+                        "safety":  "Cook minced meat fully and set egg topping before serving.",
+                        "tags":  [
+                                     "aubergine",
+                                     "mince",
+                                     "bake"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-pastitsio",
+                        "name":  "Pastitsio",
+                        "englishName":  "Greek baked pasta with meat sauce",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Tubular pasta layered with cinnamon-scented meat sauce and thick bechamel.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  60,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g bucatini or penne",
+                                            "500 g minced beef",
+                                            "1 onion",
+                                            "400 g chopped tomatoes",
+                                            "1/2 tsp cinnamon",
+                                            "60 g butter",
+                                            "60 g flour",
+                                            "700 ml milk",
+                                            "1 egg",
+                                            "80 g cheese"
+                                        ],
+                        "instructions":  [
+                                             "Cook pasta until just al dente and drain",
+                                             "Brown mince and onion",
+                                             "add tomato and cinnamon",
+                                             "simmer until thick",
+                                             "Make bechamel with butter, flour and milk",
+                                             "cool slightly and whisk in egg and some cheese",
+                                             "Layer pasta and meat sauce in dish",
+                                             "pour over bechamel and bake at 190 C until golden and set."
+                                         ],
+                        "sides":  "Serve with green salad.",
+                        "substitutions":  "Use lamb mince or vegetarian lentil sauce.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until steaming.",
+                        "safety":  "Cook meat fully and egg sauce through.",
+                        "tags":  [
+                                     "pasta",
+                                     "beef",
+                                     "oven"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-peinirli",
+                        "name":  "Peinirli",
+                        "englishName":  "Boat-shaped cheese bread",
+                        "country":  "Greece",
+                        "region":  "Northern Greece",
+                        "description":  "Soft oval bread filled with cheese and finished with butter or egg.",
+                        "prepMinutes":  35,
+                        "cookMinutes":  90,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g bread flour",
+                                            "7 g yeast",
+                                            "220 ml warm water",
+                                            "2 tbsp olive oil",
+                                            "1 tsp salt",
+                                            "200 g kasseri or mozzarella",
+                                            "4 eggs optional"
+                                        ],
+                        "instructions":  [
+                                             "Mix flour, yeast, water, oil and salt into a dough",
+                                             "knead and rise until doubled",
+                                             "Divide into 4",
+                                             "roll ovals and pinch edges into boat shapes",
+                                             "Fill with cheese and bake at 220 C until bread golden and cheese melted",
+                                             "add egg near end if desired and cook until set."
+                                         ],
+                        "sides":  "Serve hot with salad.",
+                        "substitutions":  "Add cooked bacon or mushrooms.",
+                        "storage":  "Best fresh; refrigerate leftovers up to 2 days.",
+                        "safety":  "Cook optional egg until set; keep cheese chilled before baking.",
+                        "tags":  [
+                                     "bread",
+                                     "cheese",
+                                     "bake"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-revithada",
+                        "name":  "Revithada",
+                        "englishName":  "Slow-baked chickpeas",
+                        "country":  "Greece",
+                        "region":  "Sifnos",
+                        "description":  "Chickpeas slowly baked with onion, bay and olive oil until creamy.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  150,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g dried chickpeas, soaked",
+                                            "1 onion, sliced",
+                                            "2 bay leaves",
+                                            "100 ml olive oil",
+                                            "1 litre water",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Drain chickpeas and place in a covered ovenproof pot with onion, bay, oil and water",
+                                             "Bake at 160 C until chickpeas are very soft, 2 to 2.5 hours",
+                                             "Check liquid occasionally and add hot water if needed",
+                                             "Season with salt and lemon and rest before serving."
+                                         ],
+                        "sides":  "Serve with olives and bread.",
+                        "substitutions":  "Use canned chickpeas and bake for 45 minutes.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat thoroughly.",
+                        "safety":  "Soak chickpeas refrigerated in warm weather; cook until fully tender.",
+                        "tags":  [
+                                     "Sifnos",
+                                     "chickpeas",
+                                     "oven"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-yogurt-rice",
+                        "name":  "Ryzogalo",
+                        "englishName":  "Greek rice pudding",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Creamy rice pudding gently cooked with milk, lemon and cinnamon.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  45,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "100 g short-grain rice",
+                                            "1 litre milk",
+                                            "80 g sugar",
+                                            "lemon peel",
+                                            "1 cinnamon stick",
+                                            "ground cinnamon"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice",
+                                             "place in pot with water to cover and simmer until partly tender",
+                                             "Add milk, sugar, lemon peel and cinnamon stick",
+                                             "cook very gently, stirring often, until creamy",
+                                             "Remove whole spices",
+                                             "spoon into bowls and dust with cinnamon",
+                                             "chill or serve warm."
+                                         ],
+                        "sides":  "Serve with orange zest or raisins.",
+                        "substitutions":  "Use plant milk and adjust sugar.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat gently.",
+                        "safety":  "Cool rice pudding quickly and keep chilled.",
+                        "tags":  [
+                                     "rice",
+                                     "milk",
+                                     "dessert"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-saganaki",
+                        "name":  "Saganaki",
+                        "englishName":  "Pan-fried cheese",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Firm Greek cheese floured and pan-fried until golden with a squeeze of lemon.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  8,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "250 g kefalotyri or halloumi",
+                                            "2 tbsp flour",
+                                            "1 tbsp olive oil",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Cut cheese into thick slices and pat dry",
+                                             "Dust lightly with flour",
+                                             "Heat oil in pan",
+                                             "fry cheese briefly on each side until golden and soft inside",
+                                             "Serve immediately with lemon."
+                                         ],
+                        "sides":  "Serve as meze with bread.",
+                        "substitutions":  "Use halloumi if kefalotyri is unavailable.",
+                        "storage":  "Best fresh; do not store cooked cheese long.",
+                        "safety":  "Use separate clean tongs and serve hot.",
+                        "tags":  [
+                                     "cheese",
+                                     "meze",
+                                     "pan-fried"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-souvlaki",
+                        "name":  "Souvlaki",
+                        "englishName":  "Pork souvlaki skewers",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Small pork pieces marinated with lemon, oregano and olive oil, grilled on skewers.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  12,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "700 g pork shoulder, cubed",
+                                            "2 tbsp olive oil",
+                                            "1 lemon",
+                                            "2 garlic cloves",
+                                            "1 tbsp oregano",
+                                            "4 skewers"
+                                        ],
+                        "instructions":  [
+                                             "Mix oil, lemon, garlic, oregano, salt and pepper",
+                                             "coat pork and marinate chilled 30 minutes",
+                                             "Thread pork onto soaked wooden or metal skewers",
+                                             "Grill over medium-high heat, turning until browned and fully cooked",
+                                             "rest briefly."
+                                         ],
+                        "sides":  "Serve in pita with tomato, onion and tzatziki.",
+                        "substitutions":  "Use chicken thighs and cook fully.",
+                        "storage":  "Refrigerate marinating pork up to 24 hours; cooked meat lasts 3 days.",
+                        "safety":  "Keep raw pork chilled and cook through; avoid reused marinade.",
+                        "tags":  [
+                                     "pork",
+                                     "grilled",
+                                     "skewers"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-pita-spanakopita",
+                        "name":  "Spanakopita",
+                        "englishName":  "Spinach and feta pie",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Crisp filo layers filled with spinach, feta, herbs and egg.",
+                        "prepMinutes":  30,
+                        "cookMinutes":  45,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g filo",
+                                            "500 g spinach",
+                                            "250 g feta",
+                                            "3 eggs",
+                                            "3 spring onions",
+                                            "dill",
+                                            "100 ml olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Wilt spinach and squeeze very dry",
+                                             "chop",
+                                             "Mix spinach with feta, eggs, spring onions, dill and pepper",
+                                             "Brush dish with oil and layer half the filo",
+                                             "spread filling",
+                                             "cover with remaining sheets, brushing each",
+                                             "score top and bake at 190 C until crisp and golden."
+                                         ],
+                        "sides":  "Serve warm or room temperature.",
+                        "substitutions":  "Use chard or nettles in season.",
+                        "storage":  "Refrigerate within 2 hours up to 3 days; reheat in oven.",
+                        "safety":  "Cook egg filling fully and keep feta chilled.",
+                        "tags":  [
+                                     "spinach",
+                                     "feta",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-spanakorizo",
+                        "name":  "Spanakorizo",
+                        "englishName":  "Spinach and rice",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Spinach braised with rice, dill, lemon and olive oil into a soft one-pot meal.",
+                        "prepMinutes":  10,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "300 g rice",
+                                            "500 g spinach",
+                                            "1 onion",
+                                            "700 ml stock",
+                                            "60 ml olive oil",
+                                            "dill",
+                                            "1 lemon"
+                                        ],
+                        "instructions":  [
+                                             "Cook onion in olive oil until soft",
+                                             "Add spinach and stir until wilted",
+                                             "Stir in rice and stock",
+                                             "cover and simmer low until rice tender, adding liquid if needed",
+                                             "Finish with dill, lemon juice and black pepper."
+                                         ],
+                        "sides":  "Serve with feta and olives.",
+                        "substitutions":  "Use chard or mixed greens.",
+                        "storage":  "Refrigerate promptly up to 2 days; reheat until steaming.",
+                        "safety":  "Cool rice quickly and chill leftovers.",
+                        "tags":  [
+                                     "spinach",
+                                     "rice",
+                                     "vegetarian"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-stifado",
+                        "name":  "Stifado",
+                        "englishName":  "Beef and shallot stew",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Beef slowly braised with small onions, tomato, wine vinegar and warm spices.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  140,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "700 g stewing beef",
+                                            "500 g small onions",
+                                            "400 g chopped tomatoes",
+                                            "200 ml stock",
+                                            "2 tbsp vinegar",
+                                            "1 cinnamon stick",
+                                            "3 cloves",
+                                            "2 tbsp olive oil"
+                                        ],
+                        "instructions":  [
+                                             "Brown beef in olive oil",
+                                             "set aside",
+                                             "Brown peeled onions gently",
+                                             "return beef and add tomatoes, stock, vinegar and spices",
+                                             "Cover and simmer very gently until beef is tender, about 2 hours",
+                                             "remove whole spices and season."
+                                         ],
+                        "sides":  "Serve with rice, potatoes or bread.",
+                        "substitutions":  "Use rabbit or chicken, adjusting cooking time.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until hot.",
+                        "safety":  "Cook beef thoroughly and cool leftovers quickly.",
+                        "tags":  [
+                                     "beef",
+                                     "stew",
+                                     "onion"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-pita-tiropita",
+                        "name":  "Tiropita",
+                        "englishName":  "Cheese filo pie",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Filo pastry filled with feta, eggs and yogurt, baked until crisp and golden.",
+                        "prepMinutes":  25,
+                        "cookMinutes":  40,
+                        "servings":  6,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g filo",
+                                            "350 g feta",
+                                            "2 eggs",
+                                            "150 g Greek yogurt",
+                                            "80 ml olive oil",
+                                            "nutmeg"
+                                        ],
+                        "instructions":  [
+                                             "Crumble feta and mix with eggs, yogurt and a little nutmeg",
+                                             "Oil a baking dish",
+                                             "layer half the filo sheets, brushing lightly",
+                                             "Spread cheese mixture and cover with remaining filo",
+                                             "score top and bake at 190 C until crisp and set."
+                                         ],
+                        "sides":  "Serve warm with salad.",
+                        "substitutions":  "Use a mix of feta and ricotta.",
+                        "storage":  "Refrigerate promptly up to 3 days; reheat until hot.",
+                        "safety":  "Keep dairy filling chilled and cook eggs through.",
+                        "tags":  [
+                                     "cheese",
+                                     "pastry",
+                                     "pie"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-tzatziki",
+                        "name":  "Tzatziki",
+                        "englishName":  "Yogurt cucumber dip",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Thick strained yogurt mixed with cucumber, garlic, dill and olive oil.",
+                        "prepMinutes":  15,
+                        "cookMinutes":  0,
+                        "servings":  4,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g Greek yogurt",
+                                            "1 cucumber",
+                                            "1 garlic clove",
+                                            "1 tbsp olive oil",
+                                            "1 tbsp chopped dill",
+                                            "1 tsp vinegar"
+                                        ],
+                        "instructions":  [
+                                             "Grate cucumber and squeeze very dry",
+                                             "Stir into yogurt with crushed garlic, oil, dill, vinegar and salt",
+                                             "Chill 20 minutes for flavours to blend",
+                                             "serve cold."
+                                         ],
+                        "sides":  "Serve with grilled food, pita or vegetables.",
+                        "substitutions":  "Use mint instead of dill.",
+                        "storage":  "Refrigerate covered and use within 2 days.",
+                        "safety":  "Keep dairy dip chilled and use clean utensils.",
+                        "tags":  [
+                                     "yogurt",
+                                     "cucumber",
+                                     "dip"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "gr-greek-yogurt-honey",
+                        "name":  "Yiaourti me meli",
+                        "englishName":  "Yogurt with honey and walnuts",
+                        "country":  "Greece",
+                        "region":  "Nationwide",
+                        "description":  "Thick strained yogurt topped with honey and walnuts for breakfast or dessert.",
+                        "prepMinutes":  5,
+                        "cookMinutes":  0,
+                        "servings":  2,
+                        "difficulty":  "Easy",
+                        "ingredients":  [
+                                            "400 g strained yogurt",
+                                            "2 tbsp honey",
+                                            "40 g walnuts",
+                                            "pinch cinnamon"
+                                        ],
+                        "instructions":  [
+                                             "Spoon cold yogurt into bowls",
+                                             "Drizzle with honey",
+                                             "Scatter chopped walnuts and cinnamon",
+                                             "serve."
+                                         ],
+                        "sides":  "Add seasonal fruit or oats.",
+                        "substitutions":  "Use toasted almonds instead of walnuts.",
+                        "storage":  "Keep refrigerated and serve fresh.",
+                        "safety":  "Check nut allergy and keep dairy chilled.",
+                        "tags":  [
+                                     "yogurt",
+                                     "honey",
+                                     "breakfast"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:greece",
+                            "title":  "Greek recipes",
+                            "recipeIds":  [
+                                              "gr-lamb-lemonato",
+                                              "gr-bakaliaros-skordalia",
+                                              "gr-briam",
+                                              "gr-paximadia",
+                                              "gr-dakos",
+                                              "gr-kalamata-olives",
+                                              "gr-lentil-soup",
+                                              "gr-fasolada",
+                                              "gr-gemista",
+                                              "gr-giouvetsi",
+                                              "gr-greek-salad",
+                                              "gr-kleftiko",
+                                              "gr-kolokithokeftedes",
+                                              "gr-koulouri",
+                                              "gr-kritharoto",
+                                              "gr-lahanorizo",
+                                              "gr-melitzanosalata",
+                                              "gr-moussaka",
+                                              "gr-pastitsio",
+                                              "gr-peinirli",
+                                              "gr-revithada",
+                                              "gr-yogurt-rice",
+                                              "gr-saganaki",
+                                              "gr-souvlaki",
+                                              "gr-pita-spanakopita",
+                                              "gr-spanakorizo",
+                                              "gr-stifado",
+                                              "gr-pita-tiropita",
+                                              "gr-tzatziki",
+                                              "gr-greek-yogurt-honey"
+                                          ]
+                        }
+                    ]
+}
