@@ -97,6 +97,8 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     private val _localDataError = MutableStateFlow<String?>(null)
     val localDataError = _localDataError.asStateFlow()
     private val localEntriesMutex = Mutex()
+    private val aiSaveMutex = Mutex()
+    private val savedAiResponses = mutableMapOf<String, PersonalEntry>()
     private val credentialMutex = Mutex()
 
     private fun transitionAuth(event: AuthStateMachine.Event) {
@@ -235,6 +237,10 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
     }
 
     fun send(text: String = _conversation.value.draft, image: Uri? = null) {
+        if (_auth.value !is AuthState.SignedIn || tokens == null) {
+            _conversation.value = _conversation.value.copy(error = "Connect ChatGPT to request a new AI response. Your local sections and saved information remain available.")
+            return
+        }
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
         val displayText = cleaned.ifEmpty { "What is in this picture?" }

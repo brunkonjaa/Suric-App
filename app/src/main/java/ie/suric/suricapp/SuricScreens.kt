@@ -15,6 +15,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -91,10 +92,16 @@ import ie.suric.suricapp.local.OfflineReadingState
 import ie.suric.suricapp.local.RecipeCatalogue
 import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
+import ie.suric.suricapp.local.SectionVisibility
+import ie.suric.suricapp.local.SectionVisibilityStore
+import ie.suric.suricapp.local.StarterItem
+import ie.suric.suricapp.local.StarterLibrary
+import ie.suric.suricapp.local.StarterType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.sync.Mutex
 import java.text.DateFormat
 import java.util.Date
 
@@ -125,6 +132,9 @@ private val personalAreas = listOf(
 internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, deepLinkArticleId: String?, onThemeChange: (Boolean) -> Unit) {
     val appContext = LocalContext.current
     val auth by vm.auth.collectAsState()
+    val context = LocalContext.current
+    val visibilityStore = remember(context) { SectionVisibilityStore(context) }
+    var visibleSections by remember { mutableStateOf(visibilityStore.visibleSections()) }
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
     var route by rememberSaveable { mutableStateOf("home") }
@@ -245,16 +255,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                     }
                     item { HorizontalDivider(Modifier.padding(top = 8.dp)) }
                     item {
-                        Row(Modifier.fillMaxWidth().heightIn(min = 64.dp).padding(horizontal = 24.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
-                            Column(Modifier.weight(1f)) {
-                                Text("Dark appearance", style = MaterialTheme.typography.bodyLarge)
-                                Text("Saved on this device", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            }
-                            Switch(checked = darkTheme, onCheckedChange = onThemeChange, modifier = Modifier.semantics { contentDescription = "Toggle dark appearance" })
-                        }
-                    }
-                    item {
-                        TextButton(onClick = { vm.disconnect(); selectedSection = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
+                        TextButton(onClick = { vm.disconnect(); selectedSection = null; selectedStarterId = null; route = "home"; scope.launch { drawerState.close() } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
                             Icon(Icons.Default.Logout, contentDescription = null)
                             Spacer(Modifier.width(8.dp))
                             Text("Disconnect ChatGPT")
@@ -292,10 +293,11 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                 initialRecipeId = pendingRecipeId.takeIf { selectedSection == "Cooking" },
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
+                onStarterSelect = { selectedStarterId = it },
                 onAssistant = { context -> selectedSection = null; route = "assistant"; vm.send(context) }
             )
             else -> SuricHome(
-                email = (auth as? AuthState.SignedIn)?.email,
+                connected = auth is AuthState.SignedIn,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { route = "assistant" },
                 onSection = { pendingArticleId = null; pendingRecipeId = null; selectedSection = it }
@@ -318,36 +320,52 @@ private fun DrawerHeader() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun SuricHome(email: String?, onMenu: () -> Unit, onAssistant: () -> Unit, onSection: (String) -> Unit) {
+private fun SuricHome(connected: Boolean, onMenu: () -> Unit, onAssistant: () -> Unit, onSection: (String) -> Unit,
+    visibleSections: Set<String>, onLibrary: () -> Unit, onSettings: () -> Unit) {
+    val visibleAreas = SectionVisibility.filterInDefaultOrder(personalAreas, { it.name }, visibleSections)
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
                 title = { Text("Suric", fontWeight = FontWeight.Bold) },
                 navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
-                actions = { ConnectionPill() }
+                actions = { ConnectionPill(connected = connected) }
             )
         },
         containerColor = MaterialTheme.colorScheme.background
     ) { padding ->
         Column(Modifier.fillMaxSize().padding(padding)) {
             HomeHero(onAssistant)
+            Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 10.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                OutlinedButton(onClick = onLibrary, modifier = Modifier.weight(1f).heightIn(min = 48.dp), shape = RoundedCornerShape(16.dp)) { Text("Starter Library", maxLines = 1) }
+                TextButton(onClick = onSettings, modifier = Modifier.heightIn(min = 48.dp)) { Text("Settings", maxLines = 1) }
+            }
             Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp, top = 20.dp, bottom = 10.dp), verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.SpaceBetween) {
                 Column(Modifier.weight(1f)) {
                     Text("Your spaces", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
                     Text("Choose what you need right now.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
-                Text("${personalAreas.size} areas", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text("${visibleAreas.size} shown", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
-            LazyVerticalGrid(
+            if (visibleAreas.isEmpty()) {
+                Card(Modifier.fillMaxWidth().weight(1f).padding(horizontal = 18.dp, vertical = 6.dp), shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxSize().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+                        Text("No Home cards are showing", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Spacer(Modifier.height(6.dp))
+                        Text("Your sections and saved information are still here. Turn cards back on in Settings.", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(Modifier.height(12.dp))
+                        Button(onClick = onSettings, modifier = Modifier.heightIn(min = 48.dp)) { Text("Open Settings") }
+                    }
+                }
+            } else LazyVerticalGrid(
                 columns = GridCells.Fixed(2),
                 modifier = Modifier.weight(1f).fillMaxWidth(),
                 contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 4.dp, bottom = 24.dp),
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                gridItems(personalAreas, key = { it.name }) { area -> AreaTile(area, onClick = { onSection(area.name) }) }
+                gridItems(visibleAreas, key = { it.name }) { area -> AreaTile(area, onClick = { onSection(area.name) }) }
             }
-            email?.let { Text("Connected privately", Modifier.align(Alignment.CenterHorizontally).padding(bottom = 6.dp), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.labelSmall) }
+            Text(if (connected) "ChatGPT connected" else "Local mode · Ask Suric is optional", Modifier.align(Alignment.CenterHorizontally).padding(bottom = 6.dp), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.labelSmall)
         }
     }
 }
@@ -493,11 +511,11 @@ private fun AreaTile(area: PersonalArea, onClick: () -> Unit) {
 }
 
 @Composable
-private fun ConnectionPill() {
+private fun ConnectionPill(connected: Boolean) {
     Row(Modifier.padding(end = 16.dp).clip(CircleShape).background(MaterialTheme.colorScheme.primaryContainer).padding(horizontal = 11.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
         Box(Modifier.size(8.dp).clip(CircleShape).background(MaterialTheme.colorScheme.primary))
         Spacer(Modifier.width(7.dp))
-        Text("Connected", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onPrimaryContainer, maxLines = 1)
+        Text(if (connected) "Connected" else "AI optional", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onPrimaryContainer, maxLines = 1)
     }
 }
 
@@ -1495,42 +1513,16 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
     }
 }
 
-@Composable
-private fun ConnectionScreen(state: AuthState, vm: ConnectionViewModel) {
-    val failed = state as? AuthState.Failed
-    Box(Modifier.fillMaxSize()) {
-        Image(painterResource(R.drawable.suric_home), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.fillMaxWidth().height(310.dp).align(Alignment.TopCenter))
-        Box(Modifier.fillMaxWidth().height(310.dp).background(Brush.verticalGradient(listOf(Color(0x33000000), MaterialTheme.colorScheme.background))).align(Alignment.TopCenter))
-        Card(Modifier.align(Alignment.Center).fillMaxWidth().padding(horizontal = 22.dp), shape = RoundedCornerShape(28.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(8.dp)) {
-            Column(Modifier.fillMaxWidth().padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("Welcome to Suric", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
-                Spacer(Modifier.height(8.dp))
-                Text("A calmer place for the things you do every day.", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                Spacer(Modifier.height(26.dp))
-                Text(when {
-                    state == AuthState.SigningIn -> "Waiting for ChatGPT sign-in…"
-                    failed != null -> "We couldn’t connect"
-                    else -> "Connect your ChatGPT account"
-                }, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
-                failed?.let { Spacer(Modifier.height(10.dp)); Text(it.message, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
-                Spacer(Modifier.height(20.dp))
-                if (state == AuthState.SigningIn) {
-                    CircularProgressIndicator(Modifier.size(26.dp), strokeWidth = 2.dp)
-                    TextButton(onClick = vm::cancelSignIn, modifier = Modifier.heightIn(min = 48.dp)) { Text("Cancel sign-in") }
-                } else Button(onClick = vm::signIn, modifier = Modifier.fillMaxWidth().heightIn(min = 56.dp), shape = RoundedCornerShape(18.dp)) { Text("Continue with ChatGPT", maxLines = 1) }
-                Spacer(Modifier.height(12.dp))
-                Text("Your notes stay on this device. ChatGPT only receives what you choose to send.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                Spacer(Modifier.height(6.dp))
-                Text("To revoke Suric’s ChatGPT access, remove it in ChatGPT Settings → Apps.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-        }
-    }
-}
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: () -> Unit) {
+private fun ConversationScreen(auth: AuthState, vm: ConnectionViewModel, onMenu: () -> Unit, onSignIn: () -> Unit) {
+    val email = (auth as? AuthState.SignedIn)?.email
+    val connected = auth is AuthState.SignedIn
     val state by vm.conversation.collectAsState()
+    val scope = rememberCoroutineScope()
+    val snackbar = remember { SnackbarHostState() }
+    var savingIndex by remember { mutableIntStateOf(-1) }
+    var savedIndices by remember { mutableStateOf(setOf<Int>()) }
     var selectedImage by rememberSaveable { mutableStateOf<Uri?>(null) }
     var previewImage by rememberSaveable { mutableStateOf<String?>(null) }
     var confirmClearHistory by rememberSaveable { mutableStateOf(false) }
@@ -1546,7 +1538,7 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Ask Suric", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, maxLines = 1); Text(email ?: "Connected", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1) } },
+                title = { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Ask Suric", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, maxLines = 1); Text(email ?: "Optional AI assistance", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1) } },
                 navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } },
                 actions = {
                     Box {
@@ -1604,7 +1596,8 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
                 }
             }
         },
-        containerColor = MaterialTheme.colorScheme.background
+        containerColor = MaterialTheme.colorScheme.background,
+        snackbarHost = { SnackbarHost(snackbar) }
     ) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), contentPadding = PaddingValues(vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             state.historyNotice?.let { notice -> item {
@@ -1635,7 +1628,7 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
             }
             if (state.isLoading) item { Row(Modifier.padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) { CircularProgressIndicator(Modifier.size(20.dp), strokeWidth = 2.dp); Spacer(Modifier.width(10.dp)); Text("Suric is thinking…", color = MaterialTheme.colorScheme.onSurfaceVariant) } }
             state.modelLabel?.let { label -> item { Text("Model: $label", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }
-            state.error?.let { item { Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer), shape = RoundedCornerShape(18.dp)) { Column(Modifier.padding(16.dp)) { Text(it, color = MaterialTheme.colorScheme.onErrorContainer); TextButton(onClick = vm::retry, modifier = Modifier.heightIn(min = 48.dp)) { Text("Try again") } } } } }
+            state.error?.let { item { Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer), shape = RoundedCornerShape(18.dp)) { Column(Modifier.padding(16.dp)) { Text(it, color = MaterialTheme.colorScheme.onErrorContainer); if (connected) TextButton(onClick = vm::retry, modifier = Modifier.heightIn(min = 48.dp)) { Text("Try again") } else TextButton(onClick = onSignIn, modifier = Modifier.heightIn(min = 48.dp)) { Text("Connect ChatGPT") } } } } }
         }
     }
     previewImage?.let { uri -> PhotoPreviewDialog(uri, onDismiss = { previewImage = null }) }

@@ -17,6 +17,10 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - Text notes can be shared from another Android app into Suric's Notes area.
 - “Ask Suric” opens the conversation; message history and drafts are stored encrypted on this device. You can share a text transcript or delete the saved chat, and a section's saved notes are included only after you tap “Ask Suric about these notes”.
 - Android's system photo picker attaches an image to a question.
+- Suric opens directly in local mode. ChatGPT sign-in is optional and requested only when the user chooses an AI action.
+- A bundled offline Starter Library provides 38 guides, recipes, checklists and blank templates, including an Android and PS1–PS5 Retro & Android reference collection. Source links open only when tapped. Reference content is separate from encrypted personal records; a copy is made only after tapping **Copy to my space**.
+- Settings save Home-card visibility separately from personal records and ChatGPT credentials. Hidden sections remain in the drawer; all cards can be hidden and restored.
+- A completed Ask Suric response can be explicitly saved to encrypted Notes.
 
 Suric does not read another app's private database. Notes enter Suric only through an Android share action or manual entry. Saved option links open through Android's link handler and are not fetched by Suric.
 
@@ -40,12 +44,14 @@ The debug APK is unsigned for release. Do not publish or redistribute it; it is 
 
 ## First use
 
-1. Install and open Suric.
-2. Tap **Continue with ChatGPT** and approve the app in the system browser.
-3. Return to Suric, choose a space, then use **Add** to save something locally.
-4. For AI help, open **Ask Suric**. Saved personal notes are not sent unless you explicitly choose a saved-note action. In Shopping Assistant, the comparison button sends only the options you chose to save, with a reminder that current retailer details are unverified.
+1. Install and open Suric. Home, local sections, Settings and Starter Library work without an account or internet connection.
+2. Choose a space and use **Add** to save something locally, or browse and explicitly copy a library item.
+3. For optional AI help, open **Ask Suric**, tap **Continue with ChatGPT** and approve in the system browser.
+4. Saved personal notes are not sent unless you explicitly choose a saved-note action. In Shopping Assistant, the comparison button sends only the options you chose to save, with a reminder that current retailer details are unverified.
 
 A connected state means the sign-in flow completed. A genuine AI response must be verified from the installed Suric APK by sending a question and seeing the service response in the app; this workspace has no connected Android device or account credentials.
+
+Starter items and maintenance details are listed in [STARTER_LIBRARY.md](STARTER_LIBRARY.md).
 
 ## Project documents
 
