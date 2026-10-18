@@ -11,7 +11,7 @@ import java.io.IOException
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.TimeUnit
 
-data class ChatMessage(val role: String, val text: String)
+data class ChatMessage(val role: String, val text: String, val imageUri: String? = null)
 data class ModelOption(val slug: String, val displayName: String)
 
 class ChatApi(

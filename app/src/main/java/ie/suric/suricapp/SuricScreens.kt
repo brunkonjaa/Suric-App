@@ -1,8 +1,13 @@
 package ie.suric.suricapp
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
+import android.media.MediaPlayer
 import android.net.Uri
+import android.provider.OpenableColumns
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
@@ -12,9 +17,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items as gridItems
+import androidx.compose.foundation.gestures.rememberTransformableState
+import androidx.compose.foundation.gestures.transformable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
@@ -29,6 +37,13 @@ import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Logout
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Pause
+import androidx.compose.material.icons.filled.SkipNext
+import androidx.compose.material.icons.filled.SkipPrevious
 import androidx.compose.material3.*
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.*
@@ -40,6 +55,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
@@ -51,8 +68,9 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.core.content.ContextCompat
-import androidx.activity.compose.BackHandler
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.material3.SheetValue
@@ -60,8 +78,13 @@ import ie.suric.suricapp.auth.AuthState
 import ie.suric.suricapp.local.CalendarEvents
 import ie.suric.suricapp.local.LocalCalendarEvent
 import ie.suric.suricapp.local.PersonalEntry
+import ie.suric.suricapp.local.PersonalEntryStore
+import ie.suric.suricapp.local.OfflineArticle
+import ie.suric.suricapp.local.OfflineLibrary
+import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.DateFormat
@@ -85,34 +108,89 @@ private val personalAreas = listOf(
     PersonalArea("Cooking", "Meals, recipes and kitchen notes", "Help me cook with ingredients I already have and give clear, practical steps.", R.drawable.suric_cooking),
     PersonalArea("Cleaning", "Simple routines and household tasks", "Help me break cleaning into manageable steps and keep plans realistic.", R.drawable.suric_cleaning),
     PersonalArea("Retro & Android", "Consoles, phones and setup notes", "Help me with retro consoles and Android devices. Keep exact device and firmware details in mind.", R.drawable.suric_retro),
+    PersonalArea("Music", "Play audio files you choose from this device", "Help me organise local music and listening notes.", R.drawable.suric_retro),
     PersonalArea("Notes", "A private place for useful details", "Use my selected personal notes only as context for the question I ask.", R.drawable.suric_home)
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, onThemeChange: (Boolean) -> Unit) {
+internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: String?, deepLinkArticleId: String?, onThemeChange: (Boolean) -> Unit) {
+    val appContext = LocalContext.current
     val auth by vm.auth.collectAsState()
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
     var route by rememberSaveable { mutableStateOf("home") }
     var selectedSection by rememberSaveable { mutableStateOf<String?>(null) }
-    var importedSharedText by rememberSaveable { mutableStateOf(false) }
-    LaunchedEffect(auth, sharedText) {
-        if (auth is AuthState.SignedIn && !sharedText.isNullOrBlank() && !importedSharedText) {
-            runCatching { vm.importSharedText(sharedText) }.onSuccess {
-                selectedSection = "Notes"
-                importedSharedText = true
-            }
+    var showIncomingShare by rememberSaveable { mutableStateOf(false) }
+    var incomingShareError by rememberSaveable { mutableStateOf<String?>(null) }
+    var savingIncomingShare by rememberSaveable { mutableStateOf(false) }
+    var deepLinkHandled by rememberSaveable { mutableStateOf(false) }
+    var deepLinkSection by rememberSaveable { mutableStateOf<String?>(null) }
+    var deepLinkMessage by rememberSaveable { mutableStateOf<String?>(null) }
+    LaunchedEffect(auth, deepLinkArticleId) {
+        if (auth is AuthState.SignedIn && !deepLinkHandled && !deepLinkArticleId.isNullOrBlank()) {
+            val article = runCatching { withContext(Dispatchers.IO) { OfflineLibrary.load(appContext).firstOrNull { it.id == deepLinkArticleId } } }.getOrNull()
+            if (article != null) {
+                selectedSection = article.section
+                deepLinkSection = article.section
+                route = "home"
+            } else deepLinkMessage = "This article is not included in this version of Suric's offline library."
+            deepLinkHandled = true
         }
+    }
+    LaunchedEffect(auth, sharedText) {
+        if (auth is AuthState.SignedIn && !sharedText.isNullOrBlank()) showIncomingShare = true
     }
 
     if (auth !is AuthState.SignedIn) {
         ConnectionScreen(auth, vm)
         return
     }
-    BackHandler(enabled = drawerState.currentValue == DrawerValue.Closed && (selectedSection != null || route != "home")) {
+    val drawerIsVisible = drawerState.currentValue == DrawerValue.Open || drawerState.targetValue == DrawerValue.Open
+    BackHandler(enabled = drawerIsVisible) {
+        scope.launch { drawerState.close() }
+    }
+    BackHandler(enabled = !drawerIsVisible && (selectedSection != null || route != "home")) {
         selectedSection = null
         route = "home"
+    }
+    if (showIncomingShare && !sharedText.isNullOrBlank()) {
+        val decoded = remember(sharedText) { runCatching { SharedEntryCodec.decodeOrNull(sharedText) } }
+        val copy = decoded.getOrNull()
+        AlertDialog(
+            onDismissRequest = { if (!savingIncomingShare) showIncomingShare = false },
+            title = { Text(if (copy != null) "Review shared copy" else "Review shared text") },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(if (copy != null) "This will save a separate local copy in ${copy.section}." else "This text will be saved as a private note on this device.")
+                    copy?.let { Text(it.title, fontWeight = FontWeight.SemiBold) }
+                    Text(copy?.body ?: sharedText.take(1200), maxLines = 10, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("Review it before saving. Nothing is added until you choose Save.", style = MaterialTheme.typography.bodySmall)
+                    decoded.exceptionOrNull()?.let { Text(it.message ?: "This shared copy could not be read.", color = MaterialTheme.colorScheme.error) }
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    enabled = !savingIncomingShare && decoded.isSuccess,
+                    onClick = {
+                        savingIncomingShare = true
+                        scope.launch {
+                            runCatching { vm.importSharedText(sharedText) }
+                                .onSuccess { section -> selectedSection = section; route = "home"; showIncomingShare = false }
+                                .onFailure { incomingShareError = it.message ?: "Couldn’t save the shared copy." }
+                            savingIncomingShare = false
+                        }
+                    }
+                ) { Text(if (savingIncomingShare) "Saving…" else "Save copy") }
+            },
+            dismissButton = { TextButton(onClick = { showIncomingShare = false }, enabled = !savingIncomingShare) { Text("Cancel") } }
+        )
+    }
+    incomingShareError?.let { message ->
+        AlertDialog(onDismissRequest = { incomingShareError = null }, title = { Text("Couldn’t save") }, text = { Text(message) }, confirmButton = { TextButton(onClick = { incomingShareError = null }) { Text("OK") } })
+    }
+    deepLinkMessage?.let { message ->
+        AlertDialog(onDismissRequest = { deepLinkMessage = null }, title = { Text("Article unavailable") }, text = { Text(message) }, confirmButton = { TextButton(onClick = { deepLinkMessage = null }) { Text("OK") } })
     }
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -176,6 +254,7 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
             )
             selectedSection != null -> PersonalSectionScreen(
                 section = selectedSection!!,
+                initialArticleId = deepLinkArticleId.takeIf { selectedSection == deepLinkSection },
                 vm = vm,
                 onMenu = { scope.launch { drawerState.open() } },
                 onAssistant = { context -> selectedSection = null; route = "assistant"; vm.send(context) }
@@ -279,7 +358,7 @@ private fun ConnectionPill() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
+private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm: ConnectionViewModel, onMenu: () -> Unit, onAssistant: (String) -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
@@ -290,12 +369,54 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
     var editingId by rememberSaveable(section) { mutableStateOf<String?>(null) }
     val editing = savedEntries.firstOrNull { it.id == editingId }
     var showEditor by rememberSaveable(section) { mutableStateOf(false) }
+    var shareEntryId by rememberSaveable(section) { mutableStateOf<String?>(null) }
     var calendarEvents by remember { mutableStateOf<List<LocalCalendarEvent>>(emptyList()) }
     var calendarMessage by remember { mutableStateOf<String?>(null) }
     var calendarLoading by remember { mutableStateOf(false) }
     var addingCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
     var savedCalendarEvents by remember { mutableStateOf(emptySet<String>()) }
     val snackbar = remember { SnackbarHostState() }
+    val sectionListState = rememberLazyListState()
+    var offlineArticles by remember(section) { mutableStateOf<List<OfflineArticle>>(emptyList()) }
+    var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
+    var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
+    var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
+    val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
+
+    if (section == "Music") {
+        MusicSectionScreen(vm = vm, onMenu = onMenu)
+        return
+    }
+
+    LaunchedEffect(section) {
+        runCatching { withContext(Dispatchers.IO) { OfflineLibrary.load(context) } }
+            .onSuccess { offlineArticles = it; offlineLibraryError = null }
+            .onFailure { offlineLibraryError = "Offline guides could not be opened. Your saved items are unchanged." }
+    }
+    BackHandler(enabled = selectedArticle != null) { selectedArticleId = null }
+    if (selectedArticle != null) {
+        OfflineArticleDetail(
+            article = selectedArticle!!,
+            onBack = { selectedArticleId = null },
+            onShare = {
+                val link = Uri.Builder().scheme("suric").authority("library").appendPath(selectedArticle!!.id).build()
+                val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, "${selectedArticle!!.title}\n${selectedArticle!!.summary}\n$link")
+                }
+                runCatching { context.startActivity(Intent.createChooser(sendIntent, "Share library article")) }
+                    .onFailure { scope.launch { snackbar.showSnackbar("Couldn’t open the Android share sheet.") } }
+            },
+            onCopy = {
+                scope.launch {
+                    runCatching { vm.addEntry(selectedArticle!!.section, selectedArticle!!.title, selectedArticle!!.body) }
+                        .onSuccess { snackbar.showSnackbar("Saved an independent copy in ${selectedArticle!!.section}.") }
+                        .onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t save a copy.") }
+                }
+            }
+        )
+        return
+    }
 
     fun loadCalendar() {
         scope.launch {
@@ -324,6 +445,7 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
         containerColor = MaterialTheme.colorScheme.background
     ) { padding ->
         LazyColumn(
+            state = sectionListState,
             modifier = Modifier.fillMaxSize().padding(padding),
             contentPadding = PaddingValues(start = 18.dp, end = 18.dp, top = 8.dp, bottom = 96.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -392,6 +514,44 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
                 }
             }
             item {
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                        Text("Offline library", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("${offlineArticles.size} guides", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    Text("Bundled reading opens without internet. Search checks every section.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    OutlinedTextField(
+                        value = libraryQuery,
+                        onValueChange = { libraryQuery = it },
+                        modifier = Modifier.fillMaxWidth(),
+                        leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                        placeholder = { Text("Search offline guides and recipes") },
+                        singleLine = true,
+                        shape = RoundedCornerShape(16.dp)
+                    )
+                }
+            }
+            if (offlineLibraryError != null) item {
+                Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+            }
+            val matchingArticles = offlineArticles.filter { article ->
+                if (libraryQuery.isBlank()) article.section == section
+                else article.searchableText.contains(libraryQuery.trim(), ignoreCase = true)
+            }
+            if (matchingArticles.isEmpty() && offlineLibraryError == null) item {
+                Text(if (libraryQuery.isBlank()) "No bundled articles in this section yet." else "No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            items(matchingArticles, key = { "offline:${it.id}" }) { article ->
+                OutlinedCard(onClick = { selectedArticleId = article.id }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(article.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        if (libraryQuery.isNotBlank()) Text(article.section, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(article.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text("Offline • revision ${article.revision}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+            item {
                 Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                     Text(if (section == "Shopping") "Saved options" else "Saved here", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                     Text("${savedEntries.size}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -404,6 +564,7 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
                     showCheck = section in setOf("Garden", "Cleaning", "DIY & Home", "Cooking", "Retro & Android", "Pottery", "Bills"),
                     onToggle = { changed -> scope.launch { runCatching { vm.updateEntry(changed) }.onFailure { snackbar.showSnackbar(it.message ?: "Couldn’t update this item.") } } },
                     onEdit = { editingId = entry.id; showEditor = true },
+                    onShare = { shareEntryId = entry.id },
                     onOpenSource = { url -> scope.launch { runCatching { uriHandler.openUri(url) }.onFailure { snackbar.showSnackbar("Couldn’t open that link.") } } },
                     onDelete = {
                         scope.launch {
@@ -432,18 +593,293 @@ private fun PersonalSectionScreen(section: String, vm: ConnectionViewModel, onMe
             }
         }
     }
+    savedEntries.firstOrNull { it.id == shareEntryId }?.let { entry ->
+        AlertDialog(
+            onDismissRequest = { shareEntryId = null },
+            title = { Text("Share a readable copy?") },
+            text = { Text("The selected app and recipient can read this copy. Suric will include only “${entry.title}” and its contents; it will not include your other notes or sign-in details.") },
+            confirmButton = {
+                TextButton(onClick = {
+                    shareEntryId = null
+                    runCatching {
+                        val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                            type = "text/plain"
+                            putExtra(Intent.EXTRA_TEXT, SharedEntryCodec.encode(entry))
+                        }
+                        context.startActivity(Intent.createChooser(sendIntent, "Share a copy"))
+                    }.onFailure { scope.launch { snackbar.showSnackbar(it.message ?: "Couldn’t open the Android share sheet.") } }
+                }) { Text("Choose app") }
+            },
+            dismissButton = { TextButton(onClick = { shareEntryId = null }) { Text("Cancel") } }
+        )
+    }
     if (showEditor && (editingId == null || editing != null)) {
         EntryEditorSheet(
             section = section,
             area = area,
             initial = editing,
             onDismiss = { showEditor = false },
-            onSave = { title, details, sourceUrl, sourceCheckedAt ->
-                if (editing == null) vm.addEntry(section, title, details, sourceUrl, sourceCheckedAt)
-                else vm.updateEntry(editing!!.copy(title = title, body = details, sourceUrl = sourceUrl, sourceCheckedAt = sourceCheckedAt))
+            onSave = { targetSection, title, details, sourceUrl, sourceCheckedAt ->
+                if (editing == null) vm.addEntry(targetSection, title, details, sourceUrl, sourceCheckedAt)
+                else vm.updateEntry(editing!!.copy(
+                    section = targetSection,
+                    title = title,
+                    body = details,
+                    sourceUrl = sourceUrl.takeIf { targetSection == "Shopping" },
+                    sourceCheckedAt = sourceCheckedAt.takeIf { targetSection == "Shopping" }
+                ))
                 showEditor = false
             }
         )
+    }
+}
+
+@Composable
+private fun MusicSectionScreen(vm: ConnectionViewModel, onMenu: () -> Unit) {
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val allEntries by vm.personalEntries.collectAsState()
+    val tracks = allEntries.filter { it.section == "Music" && it.body.startsWith("suric-audio-v1:") }
+    val otherEntries = allEntries.filter { it.section == "Music" && !it.body.startsWith("suric-audio-v1:") }
+    val musicArea = personalAreas.first { it.name == "Music" }
+    var editingEntryId by rememberSaveable { mutableStateOf<String?>(null) }
+    val editingEntry = otherEntries.firstOrNull { it.id == editingEntryId }
+    val preferences = remember { context.getSharedPreferences("suric_music", android.content.Context.MODE_PRIVATE) }
+    var currentId by rememberSaveable { mutableStateOf(preferences.getString("last_track", null)) }
+    var isPlaying by remember { mutableStateOf(false) }
+    var isPrepared by remember { mutableStateOf(false) }
+    var duration by remember { mutableIntStateOf(0) }
+    var position by remember { mutableIntStateOf(preferences.getInt("last_position", 0)) }
+    var message by remember { mutableStateOf<String?>(null) }
+    var player by remember { mutableStateOf<MediaPlayer?>(null) }
+    val selectedTrack = tracks.firstOrNull { it.id == currentId }
+    val selectedAudio = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris ->
+        scope.launch {
+            uris.forEach { uri ->
+                runCatching { context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION) }
+                val name = runCatching {
+                    context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { cursor ->
+                        if (cursor.moveToFirst()) cursor.getString(0) else null
+                    }
+                }.getOrNull()?.substringBeforeLast('.')?.takeIf(String::isNotBlank) ?: "Local audio"
+                runCatching { vm.addEntry("Music", name, "suric-audio-v1:$uri") }
+                    .onFailure { message = it.message ?: "Couldn’t add this audio file." }
+            }
+        }
+    }
+    fun playTrack(entry: PersonalEntry) {
+        val uri = Uri.parse(entry.body.removePrefix("suric-audio-v1:"))
+        if (entry.id == currentId && isPrepared && player != null) {
+            player?.start()
+            isPlaying = true
+            return
+        }
+        runCatching {
+            player?.release()
+            isPlaying = false
+            isPrepared = false
+            val next = MediaPlayer()
+            next.setAudioAttributes(android.media.AudioAttributes.Builder()
+                .setContentType(android.media.AudioAttributes.CONTENT_TYPE_MUSIC)
+                .setUsage(android.media.AudioAttributes.USAGE_MEDIA).build())
+            next.setDataSource(context, uri)
+            next.setOnPreparedListener { ready ->
+                player = ready
+                duration = ready.duration.coerceAtLeast(0)
+                val saved = if (entry.id == preferences.getString("last_track", null)) preferences.getInt("last_position", 0) else 0
+                if (saved in 1 until ready.duration) ready.seekTo(saved)
+                position = saved.coerceIn(0, ready.duration.coerceAtLeast(0))
+                isPrepared = true
+                ready.start()
+                isPlaying = true
+                currentId = entry.id
+                preferences.edit().putString("last_track", entry.id).apply()
+                message = null
+            }
+            next.setOnCompletionListener { completed ->
+                position = 0
+                isPlaying = false
+                preferences.edit().putInt("last_position", 0).apply()
+                if (tracks.isNotEmpty()) {
+                    val nextTrack = tracks.getOrNull((tracks.indexOfFirst { it.id == entry.id } + 1) % tracks.size)
+                    if (nextTrack != null && nextTrack.id != entry.id) playTrack(nextTrack)
+                }
+            }
+            next.setOnErrorListener { _, _, _ ->
+                isPrepared = false
+                isPlaying = false
+                message = "This audio file could not be played. Re-select it if access has expired."
+                true
+            }
+            player = next
+            currentId = entry.id
+            next.prepareAsync()
+        }.onFailure { message = it.message ?: "This file could not be opened. Re-select it if its permission has expired." }
+    }
+    LaunchedEffect(isPlaying) {
+        while (isPlaying) {
+            player?.let { active ->
+                position = active.currentPosition.coerceAtLeast(0)
+                preferences.edit().putInt("last_position", position).apply()
+            }
+            delay(750)
+        }
+    }
+    DisposableEffect(Unit) {
+        onDispose {
+            player?.let { active ->
+                runCatching { preferences.edit().putInt("last_position", active.currentPosition.coerceAtLeast(0)).apply() }
+                active.release()
+            }
+        }
+    }
+    fun openExternal(url: String, title: String) {
+        runCatching {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            context.startActivity(Intent.createChooser(intent, title))
+        }.onFailure { message = "No app could open that destination." }
+    }
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text("Music", maxLines = 1, fontWeight = FontWeight.SemiBold) },
+                navigationIcon = { IconButton(onClick = onMenu, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Menu, contentDescription = "Open sections") } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(18.dp, 12.dp, 18.dp, 28.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxWidth().padding(18.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text("Listen to local audio", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("Choose audio files with Android’s document picker. Suric stores their references and plays them on this screen; playback pauses when you leave Music.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Button(onClick = { selectedAudio.launch(arrayOf("audio/*")) }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Choose audio files") }
+                    }
+                }
+            }
+            item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.fillMaxWidth().padding(18.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text("Online music", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        Text("These open another app or an online page. Internet access and the external service are required.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onPrimaryContainer)
+                        OutlinedButton(onClick = { openExternal("https://www.youtube.com/", "Open with NewPipe or another app") }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Open with NewPipe or another app") }
+                        OutlinedButton(onClick = { openExternal("https://www.naxi.rs/radio", "Open Naxi Radio") }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Open Naxi Radio") }
+                        TextButton(onClick = { openExternal("https://github.com/TeamNewPipe/NewPipe/releases", "Open NewPipe official releases") }, modifier = Modifier.heightIn(min = 48.dp)) { Text("NewPipe official releases") }
+                    }
+                }
+            }
+            message?.let { item { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) } }
+            item { Text("Your local queue (${tracks.size})", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold) }
+            if (tracks.isEmpty()) item { EmptyState("Music") }
+            items(tracks, key = { it.id }) { track ->
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = if (track.id == currentId) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f).padding(vertical = 8.dp)) {
+                            Text(track.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold, maxLines = 1)
+                            Text(if (track.id == currentId && isPlaying) "Playing" else "On this device", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        IconButton(onClick = { playTrack(track) }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.PlayArrow, contentDescription = "Play ${track.title}") }
+                        IconButton(onClick = { scope.launch { vm.deleteEntry(track.id) } }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove ${track.title} from queue") }
+                    }
+                }
+            }
+            if (otherEntries.isNotEmpty()) item { Text("Other items saved in Music", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold) }
+            items(otherEntries, key = { "music-entry:${it.id}" }) { entry ->
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text(entry.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                            Text(entry.body, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
+                        }
+                        IconButton(onClick = { editingEntryId = entry.id }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Edit, contentDescription = "Edit ${entry.title}") }
+                    }
+                }
+            }
+            if (selectedTrack != null) item {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Text(selectedTrack.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Slider(value = position.toFloat().coerceIn(0f, duration.coerceAtLeast(1).toFloat()), valueRange = 0f..duration.coerceAtLeast(1).toFloat(), onValueChange = { position = it.toInt() }, onValueChangeFinished = { runCatching { player?.seekTo(position) }.onFailure { message = "Couldn’t seek in this audio file." } })
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                            Text("${position / 60000}:${(position / 1000 % 60).toString().padStart(2, '0')}", style = MaterialTheme.typography.labelSmall)
+                            Row {
+                                IconButton(onClick = {
+                                    val index = tracks.indexOfFirst { it.id == currentId }
+                                    tracks.getOrNull((index - 1).coerceAtLeast(0))?.let(::playTrack)
+                                }) { Icon(Icons.Default.SkipPrevious, contentDescription = "Previous track") }
+                                IconButton(onClick = {
+                                    if (isPlaying) { player?.pause(); isPlaying = false } else if (isPrepared) { player?.start(); isPlaying = true } else selectedTrack.let(::playTrack)
+                                }) { Icon(if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow, contentDescription = if (isPlaying) "Pause" else "Play") }
+                                IconButton(onClick = {
+                                    val index = tracks.indexOfFirst { it.id == currentId }
+                                    tracks.getOrNull((index + 1).mod(tracks.size.coerceAtLeast(1)))?.let(::playTrack)
+                                }) { Icon(Icons.Default.SkipNext, contentDescription = "Next track") }
+                            }
+                            Text("${duration / 60000}:${(duration / 1000 % 60).toString().padStart(2, '0')}", style = MaterialTheme.typography.labelSmall)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (editingEntry != null) {
+        EntryEditorSheet(
+            section = "Music",
+            area = musicArea,
+            initial = editingEntry,
+            onDismiss = { editingEntryId = null },
+            onSave = { targetSection, title, body, sourceUrl, checkedAt ->
+                vm.updateEntry(editingEntry!!.copy(
+                    section = targetSection,
+                    title = title,
+                    body = body,
+                    sourceUrl = sourceUrl.takeIf { targetSection == "Shopping" },
+                    sourceCheckedAt = checkedAt.takeIf { targetSection == "Shopping" }
+                ))
+                editingEntryId = null
+            }
+        )
+    }
+}
+
+@Composable
+private fun OfflineArticleDetail(article: OfflineArticle, onBack: () -> Unit, onShare: () -> Unit, onCopy: () -> Unit) {
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = { Text(article.section, maxLines = 1) },
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to library") } }
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(bottom = 24.dp)) {
+            Text(article.title, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.SemiBold)
+            Spacer(Modifier.height(8.dp))
+            Text(article.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(Modifier.height(8.dp))
+            Text("Bundled offline • ${article.section} • revision ${article.revision}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+            Spacer(Modifier.height(18.dp))
+            article.body.split("\n\n").forEach { paragraph ->
+                val heading = paragraph.takeIf { it.length <= 46 && it == it.uppercase() && it.any(Char::isLetter) }
+                if (heading != null) {
+                    Text(heading, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.Bold)
+                } else {
+                    Text(paragraph, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+                }
+                Spacer(Modifier.height(12.dp))
+            }
+            Button(onClick = onCopy, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Text("Copy to My Space")
+            }
+            OutlinedButton(onClick = onShare, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), shape = RoundedCornerShape(16.dp)) {
+                Icon(Icons.Default.Share, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text("Share article link")
+            }
+            Text("The copy is saved separately from this bundled article and stays on this device.", Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
     }
 }
 
@@ -468,7 +904,7 @@ private fun EmptyState(section: String) {
 }
 
 @Composable
-private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (PersonalEntry) -> Unit, onEdit: () -> Unit, onOpenSource: (String) -> Unit, onDelete: () -> Unit) {
+private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (PersonalEntry) -> Unit, onEdit: () -> Unit, onShare: () -> Unit, onOpenSource: (String) -> Unit, onDelete: () -> Unit) {
     Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)) {
         Row(Modifier.fillMaxWidth().padding(start = 12.dp, end = 6.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
             if (showCheck) Checkbox(checked = entry.completed, onCheckedChange = { onToggle(entry.copy(completed = it)) }, modifier = Modifier.semantics { contentDescription = if (entry.completed) "Mark ${entry.title} not done" else "Mark ${entry.title} done" })
@@ -482,6 +918,7 @@ private fun EntryCard(entry: PersonalEntry, showCheck: Boolean, onToggle: (Perso
                     }
                 }
             }
+            IconButton(onClick = onShare, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Share, contentDescription = "Share a copy of ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
             IconButton(onClick = onEdit, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Edit, contentDescription = "Edit ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
             IconButton(onClick = onDelete, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.DeleteOutline, contentDescription = "Delete ${entry.title}", tint = MaterialTheme.colorScheme.onSurfaceVariant) }
         }
@@ -503,7 +940,9 @@ private fun CalendarEventCard(event: LocalCalendarEvent, adding: Boolean, saved:
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun EntryEditorSheet(section: String, area: PersonalArea, initial: PersonalEntry?, onDismiss: () -> Unit, onSave: suspend (String, String, String?, String?) -> Unit) {
+private fun EntryEditorSheet(section: String, area: PersonalArea, initial: PersonalEntry?, onDismiss: () -> Unit, onSave: suspend (String, String, String, String?, String?) -> Unit) {
+    var targetSection by rememberSaveable(initial?.id) { mutableStateOf(initial?.section ?: section) }
+    var sectionMenuExpanded by remember { mutableStateOf(false) }
     var title by rememberSaveable(initial?.id) { mutableStateOf(initial?.title.orEmpty()) }
     var sourceUrl by rememberSaveable(initial?.id) { mutableStateOf(initial?.sourceUrl.orEmpty()) }
     var sourceCheckedAt by rememberSaveable(initial?.id) { mutableStateOf(initial?.sourceCheckedAt.orEmpty()) }
@@ -519,7 +958,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
     var saving by remember { mutableStateOf(false) }
     var showDiscardConfirmation by rememberSaveable(initial?.id) { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
-    val dirty = title != initial?.title.orEmpty() || details != initialDetails ||
+    val dirty = targetSection != (initial?.section ?: section) || title != initial?.title.orEmpty() || details != initialDetails ||
         (section == "Shopping" && (sourceUrl != initial?.sourceUrl.orEmpty() || sourceCheckedAt != initial?.sourceCheckedAt.orEmpty())) ||
         (section == "Bills" && (amount != billMeta.substringAfter("Amount: ", "").substringBefore(" • Due: ").trim() || dueDate != billMeta.substringAfter("Due: ", "").trim()))
     val latestDirty by rememberUpdatedState(dirty)
@@ -533,6 +972,23 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
             Spacer(Modifier.height(6.dp))
             Text(if (section == "Shopping") "Save details you checked yourself. Suric does not verify retailer pages." else area.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(18.dp))
+            ExposedDropdownMenuBox(expanded = sectionMenuExpanded, onExpandedChange = { sectionMenuExpanded = it }) {
+                OutlinedTextField(
+                    value = targetSection,
+                    onValueChange = {},
+                    readOnly = true,
+                    label = { Text("Save in section") },
+                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = sectionMenuExpanded) },
+                    modifier = Modifier.fillMaxWidth().menuAnchor(),
+                    shape = RoundedCornerShape(16.dp)
+                )
+                ExposedDropdownMenu(expanded = sectionMenuExpanded, onDismissRequest = { sectionMenuExpanded = false }) {
+                    PersonalEntryStore.SECTIONS.sorted().forEach { destination ->
+                        DropdownMenuItem(text = { Text(destination) }, onClick = { targetSection = destination; sectionMenuExpanded = false })
+                    }
+                }
+            }
+            Spacer(Modifier.height(10.dp))
             OutlinedTextField(value = title, onValueChange = { title = it; error = null }, modifier = Modifier.fillMaxWidth(), label = { Text(if (section == "Shopping") "Product or option" else if (section == "Bills") "Bill or reminder" else "Title") }, singleLine = true, keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences), shape = RoundedCornerShape(16.dp))
             if (section == "Shopping") {
                 Spacer(Modifier.height(10.dp))
@@ -556,7 +1012,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
                     onClick = {
                         if (title.isBlank()) { error = "Add a short title first."; return@Button }
                         if (saving) return@Button
-                        val cleanedUrl = if (section == "Shopping") runCatching { ShoppingResearchRules.cleanSourceUrl(sourceUrl) }.getOrElse { error = it.message ?: "Check the retailer link."; return@Button } else null
+                        val cleanedUrl = if (targetSection == "Shopping") runCatching { ShoppingResearchRules.cleanSourceUrl(sourceUrl) }.getOrElse { error = it.message ?: "Check the retailer link."; return@Button } else null
                         saving = true
                         val savedDetails = if (section == "Bills") buildString {
                             val meta = listOf(amount.trim().takeIf { it.isNotEmpty() }?.let { "Amount: $it" }, dueDate.trim().takeIf { it.isNotEmpty() }?.let { "Due: $it" }).filterNotNull().joinToString(" • ")
@@ -564,7 +1020,7 @@ private fun EntryEditorSheet(section: String, area: PersonalArea, initial: Perso
                             if (details.isNotBlank()) { if (isNotEmpty()) append("\n"); append(details.trim()) }
                         } else details.trim()
                         scope.launch {
-                            runCatching { onSave(title.trim(), savedDetails, cleanedUrl, sourceCheckedAt.trim().takeIf { section == "Shopping" && it.isNotEmpty() }) }
+                            runCatching { onSave(targetSection, title.trim(), savedDetails, cleanedUrl, sourceCheckedAt.trim().takeIf { targetSection == "Shopping" && it.isNotEmpty() }) }
                                 .onFailure { error = it.message ?: "Couldn’t save this item. Your existing notes are unchanged." }
                             saving = false
                         }
@@ -623,7 +1079,14 @@ private fun ConnectionScreen(state: AuthState, vm: ConnectionViewModel) {
 private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: () -> Unit) {
     val state by vm.conversation.collectAsState()
     var selectedImage by rememberSaveable { mutableStateOf<Uri?>(null) }
-    val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { selectedImage = it }
+    var previewImage by rememberSaveable { mutableStateOf<String?>(null) }
+    BackHandler(enabled = previewImage != null) { previewImage = null }
+    val picker = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
+        if (uri != null) {
+            vm.keepImageAccess(uri)
+            selectedImage = uri
+        }
+    }
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
@@ -635,10 +1098,17 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
         bottomBar = {
             Surface(tonalElevation = 2.dp, color = MaterialTheme.colorScheme.surface) {
                 Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)) {
-                    selectedImage?.let { Row(Modifier.fillMaxWidth().padding(bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Text("Photo ready to send", Modifier.weight(1f), style = MaterialTheme.typography.labelMedium)
-                        IconButton(onClick = { selectedImage = null }, modifier = Modifier.size(44.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove photo") }
-                    } }
+                    selectedImage?.let { uri ->
+                        Row(Modifier.fillMaxWidth().padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                            PhotoAttachment(uri.toString(), "Selected photo", Modifier.size(72.dp), onClick = { previewImage = uri.toString() })
+                            Spacer(Modifier.width(12.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text("Photo ready to send", style = MaterialTheme.typography.labelLarge)
+                                Text("Only sent when you tap Send", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                            IconButton(onClick = { selectedImage = null }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Close, contentDescription = "Remove photo") }
+                        }
+                    }
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                         IconButton(onClick = { picker.launch(androidx.activity.result.PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) }, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.AddPhotoAlternate, "Attach a photo") }
                         OutlinedTextField(value = state.draft, onValueChange = vm::updateDraft, modifier = Modifier.weight(1f), placeholder = { Text("Ask a question", maxLines = 1) }, maxLines = 4, shape = RoundedCornerShape(20.dp))
@@ -664,13 +1134,62 @@ private fun ConversationScreen(email: String?, vm: ConnectionViewModel, onMenu: 
                     shape = RoundedCornerShape(topStart = 22.dp, topEnd = 22.dp, bottomEnd = if (message.role == "user") 7.dp else 22.dp, bottomStart = if (message.role == "user") 22.dp else 7.dp),
                     modifier = Modifier.fillMaxWidth(if (message.role == "user") .90f else 1f)
                 ) {
-                    Text(message.text, Modifier.padding(16.dp), style = MaterialTheme.typography.bodyLarge, color = if (message.role == "user") MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface)
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        message.imageUri?.let { uri ->
+                            PhotoAttachment(uri, "Photo attached to this message", Modifier.size(168.dp), onClick = { previewImage = uri })
+                        }
+                        Text(message.text, style = MaterialTheme.typography.bodyLarge, color = if (message.role == "user") MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface)
+                    }
                 }
                 }
             }
             if (state.isLoading) item { Row(Modifier.padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) { CircularProgressIndicator(Modifier.size(20.dp), strokeWidth = 2.dp); Spacer(Modifier.width(10.dp)); Text("Suric is thinking…", color = MaterialTheme.colorScheme.onSurfaceVariant) } }
             state.modelLabel?.let { label -> item { Text("Model: $label", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }
             state.error?.let { item { Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer), shape = RoundedCornerShape(18.dp)) { Column(Modifier.padding(16.dp)) { Text(it, color = MaterialTheme.colorScheme.onErrorContainer); TextButton(onClick = vm::retry, modifier = Modifier.heightIn(min = 48.dp)) { Text("Try again") } } } } }
+        }
+    }
+    previewImage?.let { uri -> PhotoPreviewDialog(uri, onDismiss = { previewImage = null }) }
+}
+
+@Composable
+private fun PhotoAttachment(uri: String, description: String, modifier: Modifier = Modifier, contentScale: ContentScale = ContentScale.Crop, onClick: () -> Unit) {
+    val context = LocalContext.current
+    var bitmap by remember(uri) { mutableStateOf<android.graphics.Bitmap?>(null) }
+    LaunchedEffect(uri) {
+        bitmap = withContext(Dispatchers.IO) {
+            runCatching {
+                val imageUri = Uri.parse(uri)
+                val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                context.contentResolver.openInputStream(imageUri)?.use { BitmapFactory.decodeStream(it, null, bounds) }
+                val sample = generateSequence(1) { it * 2 }.takeWhile { it <= 64 }
+                    .lastOrNull { bounds.outWidth / it >= 720 || bounds.outHeight / it >= 720 } ?: 1
+                val options = BitmapFactory.Options().apply { inSampleSize = sample }
+                context.contentResolver.openInputStream(imageUri)?.use { BitmapFactory.decodeStream(it, null, options) }
+            }.getOrNull()
+        }
+    }
+    Box(modifier.clip(RoundedCornerShape(14.dp)).background(MaterialTheme.colorScheme.surfaceVariant).clickable(onClick = onClick), contentAlignment = Alignment.Center) {
+        bitmap?.let { Image(it.asImageBitmap(), contentDescription = description, contentScale = contentScale, modifier = Modifier.fillMaxSize()) }
+            ?: Text("Photo unavailable", Modifier.padding(6.dp), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
+@Composable
+private fun PhotoPreviewDialog(uri: String, onDismiss: () -> Unit) {
+    var scale by remember(uri) { mutableStateOf(1f) }
+    val zoomState = rememberTransformableState { zoomChange, _, _ -> scale = (scale * zoomChange).coerceIn(1f, 5f) }
+    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Box(Modifier.fillMaxSize().background(Color.Black).clickable(onClick = onDismiss), contentAlignment = Alignment.Center) {
+            PhotoAttachment(
+                uri = uri,
+                description = "Photo preview",
+                modifier = Modifier.fillMaxWidth().fillMaxHeight(.88f).graphicsLayer(scaleX = scale, scaleY = scale).transformable(zoomState),
+                contentScale = ContentScale.Fit,
+                onClick = {}
+            )
+            IconButton(onClick = onDismiss, modifier = Modifier.align(Alignment.TopEnd).padding(12.dp).size(48.dp)) {
+                Icon(Icons.Default.Close, contentDescription = "Close photo preview", tint = Color.White)
+            }
         }
     }
 }

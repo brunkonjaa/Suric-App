@@ -9,8 +9,8 @@ data class ConversationState(
 )
 
 object ConversationReducer {
-    fun appendUser(state: ConversationState, text: String): ConversationState = state.copy(
-        messages = state.messages + ChatMessage("user", text), draft = "", isLoading = true, error = null
+    fun appendUser(state: ConversationState, text: String, imageUri: String? = null): ConversationState = state.copy(
+        messages = state.messages + ChatMessage("user", text, imageUri), draft = "", isLoading = true, error = null
     )
     fun appendDelta(state: ConversationState, delta: String): ConversationState {
         val messages = state.messages.toMutableList()

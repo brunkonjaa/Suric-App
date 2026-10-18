@@ -103,7 +103,7 @@ class PersonalEntryStore(context: Context) {
     companion object {
         const val KEY = "entries"
         const val KEY_ALIAS = "suric_personal_data_v1"
-        val SECTIONS = setOf("Garden", "Pottery", "Shopping", "Bills", "Notes", "DIY & Home", "Cooking", "Cleaning", "Retro & Android")
+        val SECTIONS = setOf("Garden", "Pottery", "Shopping", "Bills", "Notes", "DIY & Home", "Cooking", "Cleaning", "Retro & Android", "Music")
 
         fun encode(entries: List<PersonalEntry>): String = JSONArray().apply {
             entries.forEach { entry ->

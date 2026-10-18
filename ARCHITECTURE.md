@@ -33,3 +33,11 @@ The encrypted JSON codec is strict: malformed content fails visibly instead of b
 ## Navigation and forms
 
 A Material 3 modal drawer provides the same area navigation throughout the signed-in experience. Reusable area cards use bundled WebP photography from the supplied Suric section-image set. Add/edit forms use a modal bottom sheet with explicit Cancel and Save actions. List completion is an immediate tap; deleting a single entry can be undone from a snackbar. Shopping Assistant has its own link/date fields and comparison action; only options Bruno deliberately saved and sends are included in the prompt, which marks their details as user-supplied and current retailer information as unverified.
+
+The drawer has an explicit Back handler: when it is open, Back closes it; a section or article then returns to its containing screen before Home. At Home, the system retains normal Back behavior. The offline library is loaded from versioned JSON assets, can be searched across sections, and opens article text without a network request. Copying an article creates a new encrypted personal record; changing or deleting that copy does not edit the bundled source.
+
+`suric://library/{stable-id}` is the custom offline route used when sharing bundled library items. It resolves only if the receiving installation contains that stable ID; it is not a verified HTTPS Android App Link. Personal entry sharing uses an explicit confirmation followed by Android Sharesheet. The selected entry is exported as a versioned text envelope without local IDs, tokens, or other entries. Incoming shared text is previewed and saved only after confirmation; plain shared text becomes a Notes item.
+
+Music stores Android document-picker URI references in the encrypted personal entry store. The screen uses platform `MediaPlayer` for a local queue, seek and saved position. Playback currently ends when Music leaves composition; there is no background service or notification control. Online links open through Android's chooser and require the external app/site and network access.
+
+Ask Suric still uses plain text Responses messages. It does not expose typed function tools or execute model-proposed create, move, search, or delete actions. Personal entries can be moved manually by changing their destination section in the editor.

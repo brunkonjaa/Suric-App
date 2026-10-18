@@ -1,6 +1,6 @@
 # Suric
 
-A private, personal Android companion for everyday household life: gardening, pottery, weekly shopping, bills, DIY, cooking, cleaning, retro consoles, Android devices and personal notes.
+A private, personal Android companion for everyday household life: gardening, pottery, weekly shopping, bills, DIY, cooking, cleaning, music, retro consoles, Android devices and personal notes.
 
 Suric is not a public service or a business product. It is a personal-use proof of concept. Personal entries are encrypted and stored on the device. The app reuses the ChatGPT sign-in and Responses connection proven in Ask Buster; there is no separately billed API key or custom server in this project. A new package install still needs its own real sign-in and request check before it can be called verified.
 
@@ -10,6 +10,9 @@ Suric is not a public service or a business product. It is a personal-use proof 
 - Light and dark appearance, saved on this device.
 - Separate spaces with consistent add/edit bottom sheets, check-off controls where useful, and undo for deleted entries.
 - Shopping Assistant saves product options with retailer links and the date you checked them. You choose which saved options to share with Ask Suric; it does not fetch retailer pages or verify live prices or stock.
+- Each section includes bundled offline guides and recipes where available. Search the offline library from any section; a guide can be copied into encrypted personal notes without changing its bundled source.
+- Music can play audio files selected with Android's document picker, save the queue locally and open online music or Naxi Radio through Android's app chooser. Local playback stops when leaving the Music screen.
+- Personal entries can be shared as a user-selected, readable text copy. Bundled guides can be shared using a Suric URI when the receiving Suric installation contains the same article ID.
 - Bills can be entered locally or selectively saved from upcoming calendar events after calendar permission is granted.
 - Text notes can be shared from another Android app into Suric's Notes area.
 - “Ask Suric” opens the conversation; a section's saved notes are included only after you tap “Ask Suric about these notes”.
@@ -45,6 +48,10 @@ The debug APK is unsigned for release. Do not publish or redistribute it; it is 
 A connected state means the sign-in flow completed. A genuine AI response must be verified from the installed Suric APK by sending a question and seeing the service response in the app; this workspace has no connected Android device or account credentials.
 
 ## Project documents
+
+- [OFFLINE_CONTENT_INVENTORY.md](OFFLINE_CONTENT_INVENTORY.md) - current bundled content counts and gaps.
+
+- [OFFLINE_CONTENT_INVENTORY.md](OFFLINE_CONTENT_INVENTORY.md) — current bundled content counts and gaps.
 
 - [ARCHITECTURE.md](ARCHITECTURE.md) — app components and data flow.
 - [FEASIBILITY.md](FEASIBILITY.md) — integration evidence and verification limits.

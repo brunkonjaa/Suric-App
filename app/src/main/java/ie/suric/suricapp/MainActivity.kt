@@ -20,6 +20,7 @@ import ie.suric.suricapp.auth.*
 import ie.suric.suricapp.chat.*
 import ie.suric.suricapp.local.PersonalEntry
 import ie.suric.suricapp.local.PersonalEntryStore
+import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.security.TokenVault
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -53,7 +54,11 @@ class MainActivity : ComponentActivity() {
                 }
                 val vm: ConnectionViewModel = viewModel(factory = ConnectionViewModel.Factory(application))
                 val sharedText = remember { intent?.takeIf { it.action == Intent.ACTION_SEND }?.getCharSequenceExtra(Intent.EXTRA_TEXT)?.toString() }
-                SuricApp(vm, darkTheme, sharedText, onThemeChange = { enabled ->
+                val deepLinkArticleId = remember {
+                    intent?.data?.takeIf { it.scheme == "suric" && it.host == "library" }
+                        ?.lastPathSegment?.takeIf { it.matches(Regex("[a-z0-9-]{1,100}")) }
+                }
+                SuricApp(vm, darkTheme, sharedText, deepLinkArticleId, onThemeChange = { enabled ->
                     darkTheme = enabled
                     preferences.edit().putBoolean("dark_theme", enabled).apply()
                 })
@@ -76,7 +81,6 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         null
     }
     private var model: String? = null
-    private var retryImageUri: Uri? = null
     private var chatJob: Job? = null
     private var prepareJob: Job? = null
     private var credentialClearJob: Job? = null
@@ -139,7 +143,6 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         signInJob = null
         tokens = null
         model = null
-        retryImageUri = null
         chatJob?.cancel()
         chatJob = null
         prepareJob?.cancel()
@@ -175,13 +178,17 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         withContext(Dispatchers.IO) { localEntries.restore(entry); _personalEntries.value = localEntries.allEntries() }
         _localDataError.value = null
     }
-    suspend fun importSharedText(text: String) {
+    suspend fun importSharedText(text: String): String {
         val cleaned = text.trim()
-        if (cleaned.isNotEmpty()) {
-            runCatching { addEntry("Notes", "Shared note", cleaned) }
-                .onFailure { _localDataError.value = it.message ?: "Couldn’t import this shared note." }
-                .getOrThrow()
-        }
+        require(cleaned.isNotEmpty()) { "The shared content is empty." }
+        val sharedCopy = SharedEntryCodec.decodeOrNull(cleaned)
+        val section = sharedCopy?.section ?: "Notes"
+        val title = sharedCopy?.title?.ifBlank { "Shared copy" } ?: "Shared note"
+        val body = sharedCopy?.body ?: cleaned
+        runCatching { addEntry(section, title, body) }
+            .onFailure { _localDataError.value = it.message ?: "Couldn’t import this shared note." }
+            .getOrThrow()
+        return section
     }
 
     fun updateDraft(value: String) { _conversation.value = _conversation.value.copy(draft = value) }
@@ -189,9 +196,8 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         val cleaned = text.trim()
         if ((cleaned.isEmpty() && image == null) || _conversation.value.isLoading) return
         val displayText = cleaned.ifEmpty { "What is in this picture?" }
-        retryImageUri = image
         val before = _conversation.value
-        _conversation.value = ConversationReducer.appendUser(before, displayText)
+        _conversation.value = ConversationReducer.appendUser(before, displayText, image?.toString())
         chatJob = viewModelScope.launch {
             try {
                 val active = validAccessToken()
@@ -204,7 +210,6 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
                     }
                 }
                 _conversation.value = ConversationReducer.completed(_conversation.value)
-                retryImageUri = null
             } catch (e: Exception) {
                 if (chatJob?.isActive != true) return@launch
                 if (e is ApiException && e.statusCode == 401) {
@@ -221,7 +226,7 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
         while (messages.lastOrNull()?.role == "assistant") messages.removeAt(messages.lastIndex)
         if (messages.lastOrNull()?.role == "user") messages.removeAt(messages.lastIndex)
         _conversation.value = _conversation.value.copy(messages = messages, isLoading = false)
-        send(lastUser.text, retryImageUri)
+        send(lastUser.text, lastUser.imageUri?.let { Uri.parse(it) })
     }
 
     private suspend fun validAccessToken(): String {
@@ -269,6 +274,12 @@ class ConnectionViewModel(private val app: android.app.Application) : ViewModel(
             out.toByteArray()
         } ?: error("Unable to read the selected image.")
         return "data:$mime;base64," + Base64.getEncoder().encodeToString(bytes)
+    }
+
+    fun keepImageAccess(uri: Uri) {
+        runCatching {
+            app.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
     }
 
     class Factory(private val app: android.app.Application) : ViewModelProvider.Factory {
