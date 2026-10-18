@@ -40,6 +40,8 @@ import androidx.compose.material.icons.filled.Logout
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.SkipNext
@@ -83,6 +85,7 @@ import ie.suric.suricapp.local.OfflineArticle
 import ie.suric.suricapp.local.OfflineLibrary
 import ie.suric.suricapp.local.OfflineRecipe
 import ie.suric.suricapp.local.OfflineRecipeCatalogue
+import ie.suric.suricapp.local.OfflineReadingState
 import ie.suric.suricapp.local.RecipeCatalogue
 import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
@@ -365,6 +368,10 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
+    val readingState = remember(context) { OfflineReadingState(context) }
+    var favouriteIds by remember { mutableStateOf(readingState.favourites()) }
+    var recentIds by remember { mutableStateOf(readingState.recentlyViewed()) }
+    var readingFilter by rememberSaveable(section) { mutableStateOf("all") }
     val area = personalAreas.first { it.name == section }
     val allSavedEntries by vm.personalEntries.collectAsState()
     val savedEntries = allSavedEntries.filter { it.section == section }
@@ -390,6 +397,19 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
     val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
     val selectedRecipe = recipeCatalogue?.recipes?.firstOrNull { it.id == selectedRecipeId }
+
+    LaunchedEffect(selectedArticleId, selectedRecipeId) {
+        val openedId = selectedArticleId?.let { "article:$it" } ?: selectedRecipeId?.let { "recipe:$it" }
+        if (openedId != null) {
+            readingState.markViewed(openedId)
+            recentIds = readingState.recentlyViewed()
+        }
+    }
+
+    fun setFavourite(id: String, saved: Boolean) {
+        readingState.setFavourite(id, saved)
+        favouriteIds = readingState.favourites()
+    }
 
     if (section == "Music") {
         MusicSectionScreen(vm = vm, onMenu = onMenu)
@@ -420,6 +440,8 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     if (selectedRecipe != null) {
         OfflineRecipeDetail(
             recipe = selectedRecipe!!,
+            isFavourite = "recipe:${selectedRecipe!!.id}" in favouriteIds,
+            onFavourite = { saved -> setFavourite("recipe:${selectedRecipe!!.id}", saved) },
             onBack = { selectedRecipeId = null },
             onAsk = { onAssistant("Help me cook this recipe and adapt it to what I have. Do not invent ingredients or change the dish's origin.\n\n${selectedRecipe!!.name} (${selectedRecipe!!.country})\n${selectedRecipe!!.ingredients.joinToString("\n")}\n\n${selectedRecipe!!.instructions.joinToString("\n")}") },
             onCopy = {
@@ -455,6 +477,8 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
     if (selectedArticle != null) {
         OfflineArticleDetail(
             article = selectedArticle!!,
+            isFavourite = "article:${selectedArticle!!.id}" in favouriteIds,
+            onFavourite = { saved -> setFavourite("article:${selectedArticle!!.id}", saved) },
             onBack = { selectedArticleId = null },
             onShare = {
                 val link = Uri.Builder().scheme("suric").authority("library").appendPath(selectedArticle!!.id).build()
@@ -531,13 +555,26 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                     shape = RoundedCornerShape(16.dp)
                 )
             }
+            if (section == "Cooking") item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf("all" to "All", "favourites" to "Favourites", "recent" to "Recently viewed").forEach { (value, label) ->
+                        FilterChip(selected = readingFilter == value, onClick = { readingFilter = value }, label = { Text(label, maxLines = 1) })
+                    }
+                }
+            }
             if (section == "Cooking") {
                 val activeRecipeCollection = recipeCatalogue?.collections?.firstOrNull { it.id == selectedRecipeCollectionId }
                     ?: recipeCatalogue?.collections?.firstOrNull()
                 val featuredRecipes = activeRecipeCollection?.let { collection -> recipeCatalogue?.recipesIn(collection).orEmpty() }.orEmpty()
-                val searchedRecipes = if (libraryQuery.isBlank()) featuredRecipes else recipeCatalogue?.let { catalogue ->
+                val searchedRecipes = (if (libraryQuery.isBlank() && readingFilter == "all") featuredRecipes else recipeCatalogue?.let { catalogue ->
                     catalogue.sortedRecipes(catalogue.recipes.filter { it.searchableText.contains(libraryQuery.trim(), ignoreCase = true) })
-                }.orEmpty()
+                }.orEmpty()).filter { recipe ->
+                    when (readingFilter) {
+                        "favourites" -> "recipe:${recipe.id}" in favouriteIds
+                        "recent" -> "recipe:${recipe.id}" in recentIds
+                        else -> true
+                    }
+                }.let { recipes -> if (readingFilter == "recent") recipes.sortedBy { recentIds.indexOf("recipe:${it.id}").let { index -> if (index < 0) Int.MAX_VALUE else index } } else recipes }
                 item {
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
@@ -652,6 +689,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                     }
                 }
             }
+            if (section != "Cooking") item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf("all" to "All", "favourites" to "Favourites", "recent" to "Recently viewed").forEach { (value, label) ->
+                        FilterChip(selected = readingFilter == value, onClick = { readingFilter = value }, label = { Text(label, maxLines = 1) })
+                    }
+                }
+            }
             if (offlineLibraryError != null) item {
                 Text(offlineLibraryError.orEmpty(), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             }
@@ -662,7 +706,13 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, vm
                 if (section == "Cooking" && article.id in recipeArticleIds) return@filter false
                 if (libraryQuery.isBlank()) article.section == section
                 else article.searchableText.contains(libraryQuery.trim(), ignoreCase = true)
-            }
+            }.filter { article ->
+                when (readingFilter) {
+                    "favourites" -> "article:${article.id}" in favouriteIds
+                    "recent" -> "article:${article.id}" in recentIds
+                    else -> true
+                }
+            }.let { articles -> if (readingFilter == "recent") articles.sortedBy { recentIds.indexOf("article:${it.id}").let { index -> if (index < 0) Int.MAX_VALUE else index } } else articles }
             if (matchingArticles.isEmpty() && offlineLibraryError == null) item {
                 Text(if (libraryQuery.isBlank()) "No bundled articles in this section yet." else "No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
@@ -969,12 +1019,13 @@ private fun MusicSectionScreen(vm: ConnectionViewModel, onMenu: () -> Unit) {
 }
 
 @Composable
-private fun OfflineArticleDetail(article: OfflineArticle, onBack: () -> Unit, onShare: () -> Unit, onCopy: () -> Unit) {
+private fun OfflineArticleDetail(article: OfflineArticle, isFavourite: Boolean, onFavourite: (Boolean) -> Unit, onBack: () -> Unit, onShare: () -> Unit, onCopy: () -> Unit) {
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
                 title = { Text(article.section, maxLines = 1) },
-                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to library") } }
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to library") } },
+                actions = { IconButton(onClick = { onFavourite(!isFavourite) }, modifier = Modifier.size(48.dp)) { Icon(if (isFavourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = if (isFavourite) "Remove from favourites" else "Add to favourites", tint = if (isFavourite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant) } }
             )
         },
         containerColor = MaterialTheme.colorScheme.background
@@ -1011,6 +1062,8 @@ private fun OfflineArticleDetail(article: OfflineArticle, onBack: () -> Unit, on
 @Composable
 private fun OfflineRecipeDetail(
     recipe: OfflineRecipe,
+    isFavourite: Boolean,
+    onFavourite: (Boolean) -> Unit,
     onBack: () -> Unit,
     onAsk: () -> Unit,
     onCopy: () -> Unit,
@@ -1020,7 +1073,8 @@ private fun OfflineRecipeDetail(
         topBar = {
             CenterAlignedTopAppBar(
                 title = { Text("${recipe.country} recipe", maxLines = 1) },
-                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to recipes") } }
+                navigationIcon = { IconButton(onClick = onBack, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.ArrowBack, contentDescription = "Back to recipes") } },
+                actions = { IconButton(onClick = { onFavourite(!isFavourite) }, modifier = Modifier.size(48.dp)) { Icon(if (isFavourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder, contentDescription = if (isFavourite) "Remove from favourites" else "Add to favourites", tint = if (isFavourite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant) } }
             )
         },
         containerColor = MaterialTheme.colorScheme.background

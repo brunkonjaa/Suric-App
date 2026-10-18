@@ -38,6 +38,8 @@ The drawer has an explicit Back handler: when it is open, Back closes it; a sect
 
 `suric://library/{stable-id}` is the custom offline route used when sharing bundled library items. It resolves only if the receiving installation contains that stable ID; it is not a verified HTTPS Android App Link. Personal entry sharing uses an explicit confirmation followed by Android Sharesheet. The selected entry is exported as a versioned text envelope without local IDs, tokens, or other entries. Incoming shared text is previewed and saved only after confirmation; plain shared text becomes a Notes item.
 
+Bundled article and recipe favourites and the twenty most recently opened bundled items are indexed in device-local preferences by stable content ID. They remain separate from the encrypted personal-entry store and do not alter bundled material. Section filters can show all items, favourites, or recently viewed material while recipe collection references continue to point at canonical recipes.
+
 Music stores Android document-picker URI references in the encrypted personal entry store. The screen uses platform `MediaPlayer` for a local queue, seek and saved position. Playback currently ends when Music leaves composition; there is no background service or notification control. Online links open through Android's chooser and require the external app/site and network access.
 
 Ask Suric still uses plain text Responses messages. It does not expose typed function tools or execute model-proposed create, move, search, or delete actions. Personal entries can be moved manually by changing their destination section in the editor.

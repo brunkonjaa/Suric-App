@@ -20,7 +20,7 @@ The three JSON source files total **205,282 bytes** (18,252 + 21,356 + 165,674 b
 | Notes | 0 | Private user-created notes | None |
 | **Total** | **30** | **19 guides and 11 Cooking recipe records** | — |
 
-The 11 Cooking article records remain available. In addition, `recipe-catalogue.json` contains 114 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. Recipes are searched offline by title, origin, ingredients and tags. Recipe details show origin and offer Ask Suric, Android Sharesheet and an independent encrypted copy to Cooking. The collection picker currently contains Irish and Argentinian recipes.
+The 11 Cooking article records remain available. In addition, `recipe-catalogue.json` contains 114 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. Recipes are searched offline by title, origin, ingredients and tags. Recipe details show origin and offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking and a local favourite toggle. The collection picker currently contains Irish and Argentinian recipes. Offline articles and recipes also support a twenty-item recently viewed list.
 
 ## Cuisine and special-collection quotas
 
