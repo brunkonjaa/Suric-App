@@ -16,13 +16,13 @@ This ledger tracks the complete application expansion brief in the supplied requ
 - Ask Suric now restores its encrypted local message history and draft after process recreation; read failures are surfaced without overwriting the saved chat.
 - Guides and recipes can be copied into the encrypted personal space, and recipes can be shared as text. Bundled article sharing uses a `suric://library/{id}` link. Text imports and personal-entry exports use Android Sharesheet with a review step on receipt.
 - Music can select and play local audio, retain queue references and position, and open online providers through Android's app chooser. Playback stops when leaving the Music screen.
-- The 30 Irish, 30 Argentinian, 30 French and 30 United States of America recipe collections are complete. The current inventory documents 30 offline guides and all current collection counts.
+- The 30 Irish, 30 Argentinian, 30 French and 30 United States of America recipe collections are complete. Five new guides add garden disease/watering, safe wall drilling, household chemical safety and phone reuse/recycling coverage; the inventory documents 35 guides and current collection counts.
 
 These are source-level findings; this stage did not execute or independently verify the application.
 
 ## Content totals
 
-- Complete bundled offline articles: **30** across Garden (5), Cooking (11), Cleaning (3), DIY & Home (3), Pottery (3), Retro & Android (3), Bills (1), and Shopping (1). Music and Notes have no bundled guides.
+- Complete bundled offline articles: **35** across Garden (7), Cooking (11), Cleaning (4), DIY & Home (4), Pottery (3), Retro & Android (4), Bills (1), and Shopping (1). Music and Notes have no bundled guides.
 - Canonical recipe records: **174**. Collection entries assigned: **120 / 920**.
 - Traditional cuisine collections: Ireland **30 / 30**; Argentina **30 / 30**; France **30 / 30**; United States of America **30 / 30**; each of the remaining 20 requested cuisine groups **0 / 30**.
 - BBQ Around the World: **0 / 100**.

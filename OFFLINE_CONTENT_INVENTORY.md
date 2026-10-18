@@ -1,24 +1,24 @@
 # Offline content inventory
 
-This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 30 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
+This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The bundled JSON source files and recipe manifest total **312,830 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
+The bundled JSON source files and recipe manifest total **322,747 bytes**. They contain text only; no offline library or recipe photos are bundled. This is source-file size, not the final APK's compressed or installed asset size.
 
 ## Complete bundled articles by section
 
 | Section | Complete articles | Examples | Online-only functions |
 | --- | ---: | --- | --- |
-| Garden | 5 | Tomato growth diagnosis, hardening off seedlings, compost, container potatoes, potted herbs | Current weather and local frost conditions |
+| Garden | 7 | Tomato growth diagnosis, hardening off seedlings, compost, container potatoes, potted herbs, blight response, container watering | Current weather and local frost conditions |
 | Cooking | 11 | Irish stew, Sekeli-style pork and sauerkraut goulash, tomato and lentil soup, boxty, chana masala, spanakorizo | None for the bundled recipes |
-| Cleaning | 3 | Bathroom routine and chemical safety, laundry stains, kitchen touch points | None for the bundled guides |
-| DIY & Home | 3 | Wall fixings, measuring a straight cut, refreshing a small sealant joint | Current product availability and manufacturer-specific instructions |
+| Cleaning | 4 | Bathroom routine, laundry stains, kitchen touch points, cleaner labels and chemical safety | None for the bundled guides |
+| DIY & Home | 4 | Wall fixings, measuring a straight cut, refreshing a small sealant joint, safe drilling plan | Current product availability and manufacturer-specific instructions |
 | Pottery | 3 | Wedging, pinch cup, even drying | Clay, glaze and kiln maker schedules must be checked with the specific product |
-| Retro & Android | 3 | Console compatibility checks, emulator save backups, Android build details | Current firmware and exploit compatibility |
+| Retro & Android | 4 | Console compatibility checks, emulator save backups, Android build details, phone reuse and recycling | Current firmware and exploit compatibility |
 | Bills | 1 | Monthly bill review checklist | Provider balances, live account details and payments |
 | Shopping | 1 | Online option comparison checklist | Live price, stock, delivery and retailer terms |
 | Music | 0 | Personal local audio queue is user-supplied, not bundled knowledge | Online services and radio |
 | Notes | 0 | Private user-created notes | None |
-| **Total** | **30** | **19 guides and 11 Cooking recipe records** | - |
+| **Total** | **35** | **24 guides and 11 Cooking recipe records** | - |
 
 The 11 Cooking article records remain available. Three recipe catalogue data assets contain 174 canonical, metric recipe records with stable IDs, country/region, timings, servings, difficulty, ingredients, numbered directions, sides, substitutions, storage, safety notes, tags and revision. A version-1 manifest registers supplemental catalogues without changing the loader. Four catalogue records link to existing article records (including the Irish stew and boxty); each also has structured recipe fields. A global offline-search screen filters all bundled guides and recipes by content and category. Recipe details offer Ask Suric, Android Sharesheet, an independent encrypted copy to Cooking, a local favourite toggle and an encrypted Shopping handoff that creates separately checkable ingredient rows and skips exact repeat additions for the same recipe. The collection picker currently contains Irish, Argentinian, French and United States of America recipes. Offline articles and recipes also support a twenty-item recently viewed list.
 
@@ -64,6 +64,8 @@ United States regional selections were informed by the [Library of Congress comm
 Recipe directions and quantities in the catalogue JSON assets are original Suric-authored adaptations, not copied publisher text. Irish dish selections and regional descriptions were cross-checked against [Tourism Ireland's traditional food guide](https://www.ireland.com/en/magazine/food-and-drink/traditional-irish-food/) and the [National Museum of Ireland's account of Samhain foods](https://source.museum.ie/en-IE/News/2023/Ghost-turnips%2C-pucas%2C-fortune-telling-and-evil-abd). Argentinian regional dish selection was checked against [Argentina's official food-by-province guide](https://www.argentina.gob.ar/jefatura/turismo-y-ambiente/turismo/viaja-por-argentina/que-comer) and [Visit Argentina's Northwest food guide](https://www.argentina.travel/en/news/flavors-of-the-north-a-gastronomic-guide-to-explore-northern-argentina). The homemade floury roll is labelled Waterford-inspired and explicitly does not claim to reproduce the protected Waterford Blaa specification listed in [Ireland's protected-food-name register](https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/pdopgitsg-protected-food-names/).
 
 French regional selections were cross-checked against [Explore France's regional gastronomy guide](https://www.france.fr/en/list/gastronomy-and-wine/), [its Alsatian cuisine guide](https://www.france.fr/en/article/alsatian-cuisine/) and [its Burgundy cuisine guide](https://www.france.fr/en/article/burgundy-cuisine/). The collection spans regional dishes and common home cooking; recipes are Suric-authored adaptations and do not claim one definitive version.
+
+The added potato/tomato blight and container-watering guides draw on [RHS blight advice](https://www.rhs.org.uk/disease/tomato-blight) and [RHS watering guidance](https://www.rhs.org.uk/vegetables/watering). Wall-drilling safety is cross-checked against [Electrical Safety First's DIY guidance](https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/). Cleaner handling is cross-checked against [UK HSE cleaning-product guidance](https://www.hse.gov.uk/chemical-classification/labelling-packaging/cleaning-products-and-corrosive-pictogram.htm), with the product label controlling use. Phone recycling guidance references [WEEE Ireland's collection information](https://www.weeeireland.ie/household-recycling/where-can-i-recycle/).
 
 ## Storage and navigation
 
