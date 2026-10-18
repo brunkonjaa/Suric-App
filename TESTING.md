@@ -10,7 +10,7 @@ From a Java 17 + Android SDK 36 environment with network access for Gradle depen
 ./gradlew assembleDebug
 ```
 
-Unit tests cover authentication transitions and expiry policy, mocked Responses streaming/model parsing and service errors, conversation state updates and local-entry encoding/validation. Starter Library tests check size/IDs/categories/destinations, offline case-insensitive search and copy formatting, plus the Android/API 1–37 map, PS1–PS5 guide coverage, HTTPS source links, Retro & Android search and source-preserving copies. Home visibility tests check defaults, filtering order, all-hidden handling and obsolete IDs. CI builds a debug APK and uploads it as a 30-day GitHub Actions artifact without ChatGPT credentials.
+The existing unit-test suite covers authentication, mocked Responses behavior, conversation state, local-entry validation, Starter Library catalogue/search/copy behavior, and Home visibility preferences. CI also runs Android lint and builds debug and unsigned release APKs. No Retro-specific test cases were added.
 
 ## Device acceptance
 
@@ -27,14 +27,8 @@ Use a physical Android 13+ device. No real-device check should be inferred from 
 9. Switch light/dark appearance, rotate, try larger system text and verify controls stay reachable. Use the drawer from Home, an area, Starter Library and the conversation; check Back behavior.
 10. Disconnect, relaunch offline, and verify authentication is removed while local information remains available.
 
-## Baseline and current environment evidence
+## Verification status
 
-Before this enhancement, the audited `main` baseline had passed `testDebugUnitTest`, `lintDebug`, and `assembleDebug` on 17 October 2026. Its documented debug APK was 19,692,265 bytes; that artifact does not verify this feature branch.
+GitHub Actions and CodeQL run against each pull-request revision. The branch's Android CI passed unit tests, Android debug and release lint, and debug and unsigned release APK builds before the test-file cleanup; CodeQL also completed successfully on that revision. The cleanup removes the two additional Retro-specific test methods, so those results do not apply to the cleanup commit. See pull request #13 for the latest checks.
 
-For this enhancement, the requested Gradle checks were attempted but could not start. Java 17.0.20 is installed, but this environment has no Android SDK (`ANDROID_HOME`/`ANDROID_SDK_ROOT` unset and no `sdkmanager` or `adb` found). The wrapper is correctly configured for Gradle 8.13, but the Gradle cache contains only an empty `.part` file and lock file; `./gradlew` cannot reach `services.gradle.org` because network access is unavailable. The combined `./gradlew testDebugUnitTest lintDebug assembleDebug` invocation and `./gradlew lintRelease assembleRelease` both stop while bootstrapping Gradle, before any task executes. Thus unit tests, Android lint, debug build, and release checks are **BLOCKED / NOT RUN**, not passing or failing product checks. No APK from this branch is available to report. `git diff --check` passes.
-
-At this inspection, the feature branch is local and has not been published to GitHub; no remote branch run or pull-request CI result is available for these uncommitted changes. The base commit is `315241bbddf802b03630288ec773b6d13289c9fb`; the feature implementation remains uncommitted pending build and runtime verification.
-
-The source diff does not modify `PersonalEntryStore`, its encrypted payload format or Keystore alias, `TokenVault`, the manifest, or the application ID (`ie.suric.suricapp`). Static integration inspection found all nine Home IDs match both the visibility preference IDs and existing personal-entry sections; all 28 parsed starter IDs are unique; and all referenced drawable resources resolve. These checks do not replace Kotlin compilation or automated tests. Upgrade preservation of data on an installed app has **NOT BEEN DEVICE-VERIFIED**.
-
-No Android phone or emulator can be queried because `adb` is not installed. Suric's screen behavior, ChatGPT sign-in, live AI response, photo request, restart recovery, calendar flow, offline recovery, and error handling remain **NOT VERIFIED on-device**. GitHub Actions and CodeQL results are revision-specific; consult the pull request checks for the current branch head. Passing CI does not establish phone behavior.
+No Android phone or emulator verification is claimed. Passing CI does not establish device behavior; use the acceptance steps above for manual verification.

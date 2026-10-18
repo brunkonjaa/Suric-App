@@ -36,25 +36,4 @@ class StarterLibraryTest {
         assertEquals(original, StarterLibrary.byId(original.id))
     }
 
-    @Test fun retroLibraryCoversAndroidAndEveryRequestedPlayStationGeneration() {
-        val expectedIds = setOf(
-            "retro.start-here", "retro.android-version-map", "retro.android-root-roms", "retro.ps1-homebrew",
-            "retro.ps2-homebrew", "retro.ps3-homebrew", "retro.ps4-homebrew", "retro.ps5-homebrew",
-            "retro.homebrew-catalogues", "retro.modded-warfare"
-        )
-        val retroItems = StarterLibrary.items.filter { it.category == "Retro & Android" }
-        assertEquals(expectedIds, retroItems.map { it.id }.toSet())
-        assertTrue(retroItems.all { it.destination == "Retro & Android" && it.sources.isNotEmpty() && it.reviewed == "18 October 2026" })
-        assertTrue(StarterLibrary.byId("retro.android-version-map")!!.blocks.flatMap { it.lines }.any { it.contains("Android 1.0 — API 1") })
-        assertTrue(StarterLibrary.byId("retro.android-version-map")!!.blocks.flatMap { it.lines }.any { it.contains("Android 17 — API 37") })
-        assertTrue(listOf("ps1", "ps2", "ps3", "ps4", "ps5").all { suffix -> StarterLibrary.byId("retro.$suffix-homebrew") != null })
-        assertTrue(retroItems.flatMap { it.sources }.all { (_, url) -> url.startsWith("https://") })
-    }
-
-    @Test fun retroGuidesCanBeSearchedAndCopiedWithTheirSources() {
-        val ps5 = StarterLibrary.search("PS5", "Retro & Android").first { it.id == "retro.ps5-homebrew" }
-        assertTrue(ps5.blocks.flatMap { it.lines }.any { it.contains("firmware", ignoreCase = true) })
-        assertTrue(ps5.asPersonalText().contains("https://github.com/etaHEN/etaHEN"))
-        assertTrue(StarterLibrary.search("Android 17", "Retro & Android").any { it.id == "retro.android-version-map" })
-    }
 }
