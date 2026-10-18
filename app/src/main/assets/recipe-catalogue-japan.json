@@ -1,0 +1,1110 @@
+{
+    "version":  1,
+    "recipes":  [
+                    {
+                        "id":  "jp-ishikari",
+                        "name":  "Ishikari nabe",
+                        "englishName":  "Salmon and vegetable miso hotpot",
+                        "country":  "Japan",
+                        "region":  "Hokkaido",
+                        "description":  "Salmon and vegetable miso hotpot is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g salmon",
+                                            "1/4 cabbage",
+                                            "2 potatoes",
+                                            "1 onion",
+                                            "200 g tofu",
+                                            "1.2 L dashi",
+                                            "3 tbsp miso"
+                                        ],
+                        "instructions":  [
+                                             "Simmer potatoes and onion in dashi until nearly tender.",
+                                             "Add cabbage and tofu and cook until soft.",
+                                             "Add salmon and poach until opaque and flaky.",
+                                             "Dissolve miso in broth, stir in without boiling and serve."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Hokkaido",
+                                     "Salmon and vegetable miso hotpot"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-jingisukan",
+                        "name":  "Jingisukan",
+                        "englishName":  "Hokkaido lamb and vegetable grill",
+                        "country":  "Japan",
+                        "region":  "Hokkaido",
+                        "description":  "Hokkaido lamb and vegetable grill is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "600 g thin lamb",
+                                            "1 onion",
+                                            "1 cabbage",
+                                            "1 pepper",
+                                            "2 tbsp soy",
+                                            "1 tbsp mirin"
+                                        ],
+                        "instructions":  [
+                                             "Mix soy and mirin and coat lamb lightly.",
+                                             "Brown lamb in a hot skillet.",
+                                             "Add sliced vegetables and stir-fry until just tender.",
+                                             "Serve with pan juices."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Hokkaido",
+                                     "Hokkaido lamb and vegetable grill"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-gyutan",
+                        "name":  "Gyutan yaki",
+                        "englishName":  "Sendai grilled beef tongue",
+                        "country":  "Japan",
+                        "region":  "Tohoku",
+                        "description":  "Sendai grilled beef tongue is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g sliced beef tongue",
+                                            "1 tsp salt",
+                                            "1 tsp pepper",
+                                            "1 tbsp oil",
+                                            "2 scallions",
+                                            "lemon"
+                                        ],
+                        "instructions":  [
+                                             "Pat beef slices dry and season.",
+                                             "Heat a grill pan and brush with oil.",
+                                             "Grill briefly on both sides until browned and cooked to preference.",
+                                             "Serve with scallions and lemon."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tohoku",
+                                     "Sendai grilled beef tongue"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-kiritanpo",
+                        "name":  "Kiritanpo nabe",
+                        "englishName":  "Rice dumpling and chicken hotpot",
+                        "country":  "Japan",
+                        "region":  "Akita",
+                        "description":  "Rice dumpling and chicken hotpot is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g cooked rice",
+                                            "400 g chicken thigh",
+                                            "1 leek",
+                                            "200 g mushrooms",
+                                            "1.2 L dashi",
+                                            "2 tbsp soy"
+                                        ],
+                        "instructions":  [
+                                             "Mash warm rice until sticky and shape around skewers.",
+                                             "Toast rice logs until firm and cut into pieces.",
+                                             "Simmer chicken leek mushrooms dashi and soy until chicken is cooked.",
+                                             "Add rice pieces near the end and heat through."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Akita",
+                                     "Rice dumpling and chicken hotpot"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-gyoza",
+                        "name":  "Yaki gyoza",
+                        "englishName":  "Pan fried pork dumplings",
+                        "country":  "Japan",
+                        "region":  "Tochigi",
+                        "description":  "Pan fried pork dumplings is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g minced pork",
+                                            "150 g cabbage",
+                                            "2 scallions",
+                                            "1 tbsp soy",
+                                            "1 tsp ginger",
+                                            "24 wrappers",
+                                            "100 ml water"
+                                        ],
+                        "instructions":  [
+                                             "Mix pork cabbage scallions soy and ginger.",
+                                             "Fill wrappers and seal edges well.",
+                                             "Fry flat side down until golden, add water and cover to steam.",
+                                             "Uncover and cook until water evaporates and bases crisp."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tochigi",
+                                     "Pan fried pork dumplings"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-tonkatsu",
+                        "name":  "Tonkatsu",
+                        "englishName":  "Japanese breaded pork cutlet",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Japanese breaded pork cutlet is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 pork cutlets",
+                                            "60 g flour",
+                                            "2 eggs",
+                                            "120 g panko",
+                                            "oil",
+                                            "1/2 cabbage"
+                                        ],
+                        "instructions":  [
+                                             "Season pork and coat in flour egg and panko.",
+                                             "Fry in 170 C oil until golden and cooked through.",
+                                             "Drain on a rack and rest briefly.",
+                                             "Slice and serve with shredded cabbage."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Japanese breaded pork cutlet"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-tamagoyaki",
+                        "name":  "Tamagoyaki",
+                        "englishName":  "Rolled Japanese omelette",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Rolled Japanese omelette is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "5 eggs",
+                                            "1 tbsp dashi",
+                                            "1 tsp soy",
+                                            "1 tsp sugar",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Beat eggs with dashi soy and sugar.",
+                                             "Oil a rectangular pan and cook a thin egg layer.",
+                                             "Roll the nearly set layer and oil pan again.",
+                                             "Repeat with remaining egg, rest and slice."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Rolled Japanese omelette"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-onigiri",
+                        "name":  "Onigiri",
+                        "englishName":  "Seasoned rice balls",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Seasoned rice balls is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g warm Japanese rice",
+                                            "2 tbsp umeboshi or cooked salmon",
+                                            "2 nori sheets",
+                                            "1/2 tsp salt"
+                                        ],
+                        "instructions":  [
+                                             "Dampen hands and season lightly with salt.",
+                                             "Shape rice around a small filling.",
+                                             "Press gently into triangles without compacting too firmly.",
+                                             "Wrap with nori shortly before serving."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Seasoned rice balls"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-misoshiru",
+                        "name":  "Miso shiru",
+                        "englishName":  "Tofu and wakame miso soup",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Tofu and wakame miso soup is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "800 ml dashi",
+                                            "3 tbsp miso",
+                                            "150 g tofu",
+                                            "5 g dried wakame",
+                                            "2 scallions"
+                                        ],
+                        "instructions":  [
+                                             "Bring dashi to a gentle simmer.",
+                                             "Add tofu and rehydrated wakame and warm through.",
+                                             "Whisk miso with a little broth until smooth.",
+                                             "Turn off heat, stir in miso and garnish with scallions."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Tofu and wakame miso soup"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-oyakodon",
+                        "name":  "Oyakodon",
+                        "englishName":  "Chicken and egg rice bowl",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Chicken and egg rice bowl is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g chicken thigh",
+                                            "1 onion",
+                                            "4 eggs",
+                                            "200 ml dashi",
+                                            "2 tbsp soy",
+                                            "2 tbsp mirin",
+                                            "600 g cooked rice"
+                                        ],
+                        "instructions":  [
+                                             "Simmer onion in dashi soy and mirin until soft.",
+                                             "Add bite sized chicken and cook fully.",
+                                             "Pour lightly beaten eggs over chicken and cook until softly set.",
+                                             "Serve over hot rice."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Chicken and egg rice bowl"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-gyudon",
+                        "name":  "Gyudon",
+                        "englishName":  "Beef and onion rice bowl",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Beef and onion rice bowl is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g thin beef",
+                                            "1 onion",
+                                            "250 ml dashi",
+                                            "2 tbsp soy",
+                                            "2 tbsp mirin",
+                                            "600 g cooked rice"
+                                        ],
+                        "instructions":  [
+                                             "Simmer sliced onion in dashi soy and mirin.",
+                                             "Add beef and simmer until fully cooked.",
+                                             "Reduce broth slightly and adjust seasoning.",
+                                             "Spoon beef and onion over rice."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Beef and onion rice bowl"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-kare",
+                        "name":  "Kare raisu",
+                        "englishName":  "Japanese curry rice",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Japanese curry rice is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g chicken",
+                                            "2 potatoes",
+                                            "2 carrots",
+                                            "1 onion",
+                                            "700 ml stock",
+                                            "100 g curry roux",
+                                            "600 g rice"
+                                        ],
+                        "instructions":  [
+                                             "Brown chicken and soften onion.",
+                                             "Add potatoes carrots and stock",
+                                             " simmer until tender.",
+                                             "Turn off heat and stir in curry roux until dissolved.",
+                                             "Simmer until thick and serve over rice."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Japanese curry rice"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-ramen",
+                        "name":  "Shoyu ramen",
+                        "englishName":  "Soy sauce ramen",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Soy sauce ramen is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g ramen noodles",
+                                            "1.2 L chicken stock",
+                                            "3 tbsp soy",
+                                            "200 g cooked chicken",
+                                            "2 eggs",
+                                            "2 scallions",
+                                            "100 g spinach"
+                                        ],
+                        "instructions":  [
+                                             "Simmer stock with soy and ginger.",
+                                             "Cook noodles separately and drain.",
+                                             "Warm cooked chicken, blanch spinach and halve cooked eggs.",
+                                             "Divide noodles into bowls, pour over broth and add toppings."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Soy sauce ramen"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-sanuki",
+                        "name":  "Sanuki udon",
+                        "englishName":  "Chewy udon noodle soup",
+                        "country":  "Japan",
+                        "region":  "Kagawa",
+                        "description":  "Chewy udon noodle soup is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g udon",
+                                            "900 ml dashi",
+                                            "2 tbsp soy",
+                                            "1 tbsp mirin",
+                                            "2 scallions",
+                                            "ginger"
+                                        ],
+                        "instructions":  [
+                                             "Bring dashi soy and mirin to a simmer.",
+                                             "Cook udon as directed and drain.",
+                                             "Place noodles in bowls and ladle over hot broth.",
+                                             "Top with scallions and ginger."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Kagawa",
+                                     "Chewy udon noodle soup"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-zaru-soba",
+                        "name":  "Zaru soba",
+                        "englishName":  "Chilled buckwheat noodles",
+                        "country":  "Japan",
+                        "region":  "Nagano",
+                        "description":  "Chilled buckwheat noodles is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g soba",
+                                            "80 ml soy",
+                                            "80 ml dashi",
+                                            "1 tbsp mirin",
+                                            "scallion",
+                                            "wasabi"
+                                        ],
+                        "instructions":  [
+                                             "Mix soy dashi and mirin and chill.",
+                                             "Boil soba as directed.",
+                                             "Drain and rinse under cold water until cool.",
+                                             "Serve with dipping sauce scallion and wasabi."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nagano",
+                                     "Chilled buckwheat noodles"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-hoto",
+                        "name":  "Hoto",
+                        "englishName":  "Yamanashi pumpkin udon stew",
+                        "country":  "Japan",
+                        "region":  "Yamanashi",
+                        "description":  "Yamanashi pumpkin udon stew is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g udon",
+                                            "300 g pumpkin",
+                                            "1 carrot",
+                                            "1/4 cabbage",
+                                            "1.2 L dashi",
+                                            "3 tbsp miso"
+                                        ],
+                        "instructions":  [
+                                             "Simmer vegetables in dashi until nearly tender.",
+                                             "Add udon and cook as directed.",
+                                             "Dissolve miso in broth and return to pot.",
+                                             "Simmer gently until pumpkin and noodles are tender."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Yamanashi",
+                                     "Yamanashi pumpkin udon stew"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-tempura",
+                        "name":  "Tempura",
+                        "englishName":  "Lightly battered vegetables and prawns",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Lightly battered vegetables and prawns is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g prawns",
+                                            "1 sweet potato",
+                                            "1 aubergine",
+                                            "150 g flour",
+                                            "1 egg",
+                                            "200 ml ice water",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Pat prawns dry and slice vegetables evenly.",
+                                             "Mix egg ice water and flour lightly",
+                                             " keep batter cold and lumpy.",
+                                             "Fry coated ingredients in small batches in 175 C oil until crisp and cooked.",
+                                             "Drain on a rack and serve promptly."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Lightly battered vegetables and prawns"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-sushi",
+                        "name":  "Edo-mae sushi",
+                        "englishName":  "Vinegared rice with cooked toppings",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Vinegared rice with cooked toppings is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "300 g sushi rice",
+                                            "40 ml rice vinegar",
+                                            "1 tbsp sugar",
+                                            "1 tsp salt",
+                                            "200 g cooked prawns",
+                                            "2 eggs",
+                                            "1 cucumber",
+                                            "nori"
+                                        ],
+                        "instructions":  [
+                                             "Rinse rice and cook as directed.",
+                                             "Warm vinegar with sugar and salt, fold into hot rice and cool.",
+                                             "Prepare cooked omelette and slice cooked prawns and cucumber.",
+                                             "Shape rice and top with cooked ingredients",
+                                             " keep chilled until serving."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Vinegared rice with cooked toppings"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-hitsumabushi",
+                        "name":  "Hitsumabushi",
+                        "englishName":  "Nagoya grilled eel rice bowl",
+                        "country":  "Japan",
+                        "region":  "Nagoya",
+                        "description":  "Nagoya grilled eel rice bowl is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 cooked eel fillets",
+                                            "600 g cooked rice",
+                                            "2 tbsp eel sauce",
+                                            "2 scallions",
+                                            "nori",
+                                            "1 L dashi"
+                                        ],
+                        "instructions":  [
+                                             "Warm cooked eel gently and brush with eel sauce.",
+                                             "Divide rice into bowls and top with sliced eel.",
+                                             "Serve with scallions and nori.",
+                                             "Reheat eel until steaming."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nagoya",
+                                     "Nagoya grilled eel rice bowl"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-misokatsu",
+                        "name":  "Miso katsu",
+                        "englishName":  "Pork cutlet with red miso sauce",
+                        "country":  "Japan",
+                        "region":  "Nagoya",
+                        "description":  "Pork cutlet with red miso sauce is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "4 pork cutlets",
+                                            "60 g flour",
+                                            "2 eggs",
+                                            "120 g panko",
+                                            "oil",
+                                            "3 tbsp red miso",
+                                            "2 tbsp sugar",
+                                            "150 ml dashi"
+                                        ],
+                        "instructions":  [
+                                             "Bread cutlets with flour egg and panko.",
+                                             "Fry at 170 C until crisp and pork is cooked through.",
+                                             "Simmer miso sugar and dashi until smooth.",
+                                             "Slice cutlets and spoon sauce over them."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nagoya",
+                                     "Pork cutlet with red miso sauce"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-okonomiyaki",
+                        "name":  "Hiroshima okonomiyaki",
+                        "englishName":  "Layered cabbage pancake",
+                        "country":  "Japan",
+                        "region":  "Hiroshima",
+                        "description":  "Layered cabbage pancake is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "150 g flour",
+                                            "180 ml water",
+                                            "1/4 cabbage",
+                                            "200 g cooked noodles",
+                                            "2 eggs",
+                                            "150 g cooked pork",
+                                            "sauce"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour and water into a thin batter.",
+                                             "Pour a thin crepe and layer cabbage pork and noodles on top.",
+                                             "Cook until base sets, flip carefully and cook through.",
+                                             "Add fried egg and sauce."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Hiroshima",
+                                     "Layered cabbage pancake"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-takoyaki",
+                        "name":  "Takoyaki",
+                        "englishName":  "Osaka octopus batter balls",
+                        "country":  "Japan",
+                        "region":  "Osaka",
+                        "description":  "Osaka octopus batter balls is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g cooked octopus",
+                                            "200 g flour",
+                                            "2 eggs",
+                                            "500 ml dashi",
+                                            "2 scallions",
+                                            "oil",
+                                            "sauce"
+                                        ],
+                        "instructions":  [
+                                             "Whisk flour eggs and dashi into thin batter.",
+                                             "Heat an oiled takoyaki pan and fill wells.",
+                                             "Add octopus and scallions",
+                                             " turn balls as they set until browned and cooked.",
+                                             "Serve hot with sauce."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Osaka",
+                                     "Osaka octopus batter balls"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-kitsune",
+                        "name":  "Kitsune udon",
+                        "englishName":  "Udon with seasoned tofu",
+                        "country":  "Japan",
+                        "region":  "Osaka",
+                        "description":  "Udon with seasoned tofu is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g udon",
+                                            "2 fried tofu pouches",
+                                            "900 ml dashi",
+                                            "2 tbsp soy",
+                                            "1 tbsp mirin",
+                                            "2 scallions"
+                                        ],
+                        "instructions":  [
+                                             "Simmer tofu pouches with soy and mirin until seasoned.",
+                                             "Bring dashi to a simmer and cook udon separately.",
+                                             "Place noodles in bowls and ladle over broth.",
+                                             "Top with tofu and scallions."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Osaka",
+                                     "Udon with seasoned tofu"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-yudofu",
+                        "name":  "Yudofu",
+                        "englishName":  "Kyoto simmered tofu",
+                        "country":  "Japan",
+                        "region":  "Kyoto",
+                        "description":  "Kyoto simmered tofu is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g firm tofu",
+                                            "1 piece kombu",
+                                            "1 L water",
+                                            "2 tbsp soy",
+                                            "ginger",
+                                            "2 scallions"
+                                        ],
+                        "instructions":  [
+                                             "Warm kombu in water gently.",
+                                             "Add tofu cubes and heat through without vigorous boiling.",
+                                             "Mix soy ginger and scallions as dipping sauce.",
+                                             "Lift tofu carefully and serve warm."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Kyoto",
+                                     "Kyoto simmered tofu"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-chawanmushi",
+                        "name":  "Chawanmushi",
+                        "englishName":  "Savory steamed egg custard",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Savory steamed egg custard is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "3 eggs",
+                                            "450 ml dashi",
+                                            "1 tsp soy",
+                                            "100 g cooked chicken",
+                                            "4 shiitake",
+                                            "4 cooked prawns"
+                                        ],
+                        "instructions":  [
+                                             "Whisk eggs gently with cooled dashi and soy",
+                                             " strain.",
+                                             "Divide cooked chicken mushrooms and prawns among cups.",
+                                             "Pour egg mixture into heatproof cups and cover loosely.",
+                                             "Steam over low heat until just set."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Savory steamed egg custard"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-goya",
+                        "name":  "Goya champuru",
+                        "englishName":  "Okinawan bitter melon stir fry",
+                        "country":  "Japan",
+                        "region":  "Okinawa",
+                        "description":  "Okinawan bitter melon stir fry is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "1 bitter melon",
+                                            "200 g tofu",
+                                            "150 g pork",
+                                            "2 eggs",
+                                            "1 tbsp soy",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Halve melon, remove seeds, slice and salt briefly",
+                                             " rinse.",
+                                             "Brown pork and set aside",
+                                             " pan fry tofu until golden.",
+                                             "Stir fry melon until tender crisp and return pork and tofu.",
+                                             "Add eggs and soy",
+                                             " cook until egg is set."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Okinawa",
+                                     "Okinawan bitter melon stir fry"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-shogayaki",
+                        "name":  "Shogayaki",
+                        "englishName":  "Ginger pork",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Ginger pork is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "500 g thin pork",
+                                            "2 tbsp grated ginger",
+                                            "2 tbsp soy",
+                                            "1 tbsp mirin",
+                                            "1 onion",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Mix ginger soy and mirin.",
+                                             "Brown pork quickly and set aside.",
+                                             "Soften sliced onion, return pork and add sauce.",
+                                             "Cook until pork is done and sauce coats slices."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Ginger pork"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-yakisoba",
+                        "name":  "Yakisoba",
+                        "englishName":  "Japanese stir fried noodles",
+                        "country":  "Japan",
+                        "region":  "Nationwide",
+                        "description":  "Japanese stir fried noodles is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "400 g yakisoba noodles",
+                                            "250 g pork",
+                                            "1/4 cabbage",
+                                            "1 carrot",
+                                            "3 tbsp yakisoba sauce",
+                                            "oil"
+                                        ],
+                        "instructions":  [
+                                             "Stir fry pork until fully cooked.",
+                                             "Add cabbage and carrot and cook until just tender.",
+                                             "Add noodles with a splash of water and separate gently.",
+                                             "Stir in sauce and heat through."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Nationwide",
+                                     "Japanese stir fried noodles"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-matcha-mochi",
+                        "name":  "Matcha mochi",
+                        "englishName":  "Green tea rice cakes",
+                        "country":  "Japan",
+                        "region":  "Kyoto",
+                        "description":  "Green tea rice cakes is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "200 g glutinous rice flour",
+                                            "50 g sugar",
+                                            "1 tbsp matcha",
+                                            "180 ml water",
+                                            "cornstarch"
+                                        ],
+                        "instructions":  [
+                                             "Whisk rice flour sugar and matcha with water.",
+                                             "Microwave in short intervals, stirring between, until thick and translucent.",
+                                             "Dust surface with starch and turn out warm dough.",
+                                             "Cool enough to handle, divide and shape",
+                                             " keep covered."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Kyoto",
+                                     "Green tea rice cakes"
+                                 ],
+                        "revision":  1
+                    },
+                    {
+                        "id":  "jp-dorayaki",
+                        "name":  "Dorayaki",
+                        "englishName":  "Red bean filled pancakes",
+                        "country":  "Japan",
+                        "region":  "Tokyo",
+                        "description":  "Red bean filled pancakes is a Japanese home-cooking adaptation with practical preparation notes.",
+                        "prepMinutes":  20,
+                        "cookMinutes":  30,
+                        "servings":  4,
+                        "difficulty":  "Medium",
+                        "ingredients":  [
+                                            "2 eggs",
+                                            "100 g sugar",
+                                            "150 g flour",
+                                            "1 tbsp honey",
+                                            "1 tsp baking powder",
+                                            "150 g sweet red bean paste"
+                                        ],
+                        "instructions":  [
+                                             "Whisk eggs sugar and honey",
+                                             " fold in flour and baking powder with water.",
+                                             "Rest batter briefly.",
+                                             "Cook small pancakes until bubbles form, flip and cook through.",
+                                             "Cool and sandwich pairs with red bean paste."
+                                         ],
+                        "sides":  "Serve with rice, pickles, miso soup or seasonal vegetables as appropriate.",
+                        "substitutions":  "Use a locally available equivalent ingredient and adjust seasoning to taste.",
+                        "storage":  "Refrigerate leftovers promptly; use within 3 days, or within 1 day for cooked rice and fish dishes. Reheat until steaming.",
+                        "safety":  "Keep raw fish, meat and eggs chilled and separate; cook animal proteins fully.",
+                        "tags":  [
+                                     "Tokyo",
+                                     "Red bean filled pancakes"
+                                 ],
+                        "revision":  1
+                    }
+                ],
+    "collections":  [
+                        {
+                            "id":  "cuisine:japan",
+                            "title":  "Japanese recipes",
+                            "recipeIds":  [
+                                              "jp-ishikari",
+                                              "jp-jingisukan",
+                                              "jp-gyutan",
+                                              "jp-kiritanpo",
+                                              "jp-gyoza",
+                                              "jp-tonkatsu",
+                                              "jp-tamagoyaki",
+                                              "jp-onigiri",
+                                              "jp-misoshiru",
+                                              "jp-oyakodon",
+                                              "jp-gyudon",
+                                              "jp-kare",
+                                              "jp-ramen",
+                                              "jp-sanuki",
+                                              "jp-zaru-soba",
+                                              "jp-hoto",
+                                              "jp-tempura",
+                                              "jp-sushi",
+                                              "jp-hitsumabushi",
+                                              "jp-misokatsu",
+                                              "jp-okonomiyaki",
+                                              "jp-takoyaki",
+                                              "jp-kitsune",
+                                              "jp-yudofu",
+                                              "jp-chawanmushi",
+                                              "jp-goya",
+                                              "jp-shogayaki",
+                                              "jp-yakisoba",
+                                              "jp-matcha-mochi",
+                                              "jp-dorayaki"
+                                          ]
+                        }
+                    ]
+}
