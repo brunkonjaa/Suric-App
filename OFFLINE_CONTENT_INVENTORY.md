@@ -2,7 +2,7 @@
 
 This inventory describes the bundled JSON currently in `app/src/main/assets/`. The table below counts 35 article records with stable IDs and revision 1. The structured recipe catalogue is counted separately, so recipe entries do not inflate article totals.
 
-The separate, code-authored Starter Library contains 38 immutable guides, recipes, checklists and templates. It has its own IDs and does not increase the 35 article or 891 canonical-recipe counts.
+The separate, code-authored Starter Library contains 46 immutable guides, recipes, checklists and templates. It has its own IDs and does not increase the 35 JSON article or 891 canonical-recipe counts. Its 18 Retro & Android guides are searchable from the global offline search and arranged under 9 categories and 24 subcategories.
 
 The 29 bundled JSON files total **2,016,640 bytes**, including the updated `recipe-image-metadata.json`. Two AI-generated WebP collection covers add **471,028 bytes**. All 102 recipe images now total **4,771,014 bytes** (46,774 bytes average), with every recipe image at or below **50,000 bytes**. All 104 recipe and collection-cover WebP assets total **5,242,042 bytes**. These are source-file sizes, not the final APK's compressed or installed asset size.
 
@@ -116,6 +116,12 @@ Ask Suric's photo composer displays a thumbnail, the user message retains its UR
 Chat history can be shared as plain text through Android Sharesheet and deleted from this device after confirmation. Export excludes image files and their local URI references. The assistant does not yet use typed function tools or perform app writes. Existing manual Add/Edit actions remain local. No whole-store context is uploaded automatically; the existing selected-note actions remain user initiated.
 
 ## Unimplemented content depth
+
+### Retro & Android Stage 1 status
+
+The Starter Library currently has 18 Retro & Android guides, arranged into PlayStation, Android, Android TV & Google TV, NVIDIA Shield, Emulation, Homebrew Games, Development & Reverse Engineering, Networking & Streaming, and Tools & Technical Resources. PS1–PS5 each have an entry. The eight new guides cover Android architecture/development, Android TV, Shield hardware, Shield mirroring limits, whole-home streaming, emulation, console care and authorized app analysis. Global offline search includes Starter Library guides.
+
+This is a foundation, not completion of the supplied Stage 1 brief. The hierarchy is currently category and topic/article level; it does not yet provide detailed topic trees per console or comprehensive model/firmware matrices. Android versions are summarized in one guide rather than separate complete entries, Android TV/Shield and console coverage remain brief, and there are no category-specific photographs or diagrams. There are no bundled Retro photographs beyond the one reused `suric_retro` section image, and no YouTube or community-reference inventory beyond Modded Warfare. Favorites/recent tracking is not connected to Starter Library articles. Stage 1 remains in progress.
 
 All 24 traditional cuisine quotas and both 100-entry BBQ and Fish & Seafood quotas are complete: 920 of 920 requested collection entries. Gardening needs more Irish climate-aware crop and diagnosis guides; pottery, DIY, cleaning and Retro & Android need substantial topic coverage; Music has no bundled offline knowledge. There are no offline photos attached to the library articles. Shopping, bills and external firmware/radio/music information have the online-only limits described above.
 

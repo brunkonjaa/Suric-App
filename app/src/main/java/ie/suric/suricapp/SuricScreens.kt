@@ -92,6 +92,7 @@ import ie.suric.suricapp.local.OfflineRecipe
 import ie.suric.suricapp.local.OfflineRecipeCatalogue
 import ie.suric.suricapp.local.OfflineReadingState
 import ie.suric.suricapp.local.RecipeCatalogue
+import ie.suric.suricapp.local.RetroLibraryNavigation
 import ie.suric.suricapp.local.SharedEntryCodec
 import ie.suric.suricapp.local.ShoppingResearchRules
 import ie.suric.suricapp.local.SectionVisibility
@@ -301,6 +302,11 @@ internal fun SuricApp(vm: ConnectionViewModel, darkTheme: Boolean, sharedText: S
                     pendingArticleId = null
                     selectedSection = "Cooking"
                     route = "home"
+                },
+                onOpenStarter = { item ->
+                    selectedStarterId = item.id
+                    selectedSection = null
+                    route = "library"
                 }
             )
             route == "assistant" -> ConversationScreen(auth = auth, vm = vm, onMenu = { scope.launch { drawerState.open() } }, onSignIn = vm::signIn)
@@ -417,7 +423,8 @@ private fun SuricHome(connected: Boolean, onMenu: () -> Unit, onAssistant: () ->
 private fun GlobalSearchScreen(
     onMenu: () -> Unit,
     onOpenArticle: (OfflineArticle) -> Unit,
-    onOpenRecipe: (OfflineRecipe) -> Unit
+    onOpenRecipe: (OfflineRecipe) -> Unit,
+    onOpenStarter: (StarterItem) -> Unit
 ) {
     val context = LocalContext.current
     var articles by remember { mutableStateOf<List<OfflineArticle>>(emptyList()) }
@@ -443,7 +450,7 @@ private fun GlobalSearchScreen(
         loading = false
     }
 
-    val categories = remember(articles) { listOf("All", "Recipes") + articles.map(OfflineArticle::section).distinct().sorted() }
+    val categories = remember(articles) { (listOf("All", "Recipes") + articles.map(OfflineArticle::section) + StarterLibrary.categories).distinct().sortedWith(compareBy({ if (it == "All") "" else if (it == "Recipes") " " else it.lowercase() })) }
     val term = query.trim()
     val matchingArticles = articles.asSequence()
         .filter { category == "All" || it.section == category }
@@ -454,6 +461,8 @@ private fun GlobalSearchScreen(
         .filter { category == "All" || category == "Recipes" || category == "Cooking" }
         .filter { term.isNotBlank() && it.searchableText.contains(term, ignoreCase = true) }
         .let { results -> catalogue?.sortedRecipes(results.toList()).orEmpty() }
+    val matchingStarters = StarterLibrary.search(term, category.takeIf { it !in setOf("All", "Recipes") })
+        .filter { term.isNotBlank() && (category == "All" || it.category == category) }
 
     Scaffold(
         topBar = {
@@ -503,6 +512,18 @@ private fun GlobalSearchScreen(
                     }
                 }
             }
+            if (term.isNotBlank() && category != "Recipes" && matchingStarters.isNotEmpty()) item {
+                Text("Starter guides", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            }
+            items(matchingStarters, key = { "global-starter:${it.id}" }) { starter ->
+                OutlinedCard(onClick = { onOpenStarter(starter) }, shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
+                    Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Text(starter.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                        Text(starter.category, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(starter.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
             if (term.isNotBlank() && category in setOf("All", "Recipes", "Cooking") && matchingRecipes.isNotEmpty()) item {
                 Text("Recipes", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
             }
@@ -515,7 +536,7 @@ private fun GlobalSearchScreen(
                     }
                 }
             }
-            if (term.isNotBlank() && !loading && matchingArticles.isEmpty() && matchingRecipes.isEmpty() && loadError == null) item {
+            if (term.isNotBlank() && !loading && matchingArticles.isEmpty() && matchingRecipes.isEmpty() && matchingStarters.isEmpty() && loadError == null) item {
                 Text("No offline content matches that search.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
@@ -612,6 +633,25 @@ private fun SettingsScreen(
                         }, modifier = Modifier.semantics { contentDescription = "Show ${area.displayName} Home card" })
                     }
                 }
+            }
+        }
+    }
+}
+
+@Composable
+private fun RetroNavigationCard(title: String, description: String, onClick: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
+    ) {
+        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+            Image(painterResource(R.drawable.suric_retro), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp)))
+            Column(Modifier.weight(1f).padding(start = 12.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                Text(description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3, overflow = TextOverflow.Ellipsis)
+                Text("Open offline", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
             }
         }
     }
@@ -782,6 +822,7 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
     var recipeCollectionMenuExpanded by remember { mutableStateOf(false) }
     var offlineLibraryError by remember(section) { mutableStateOf<String?>(null) }
     var libraryQuery by rememberSaveable(section) { mutableStateOf("") }
+    var selectedRetroCategory by rememberSaveable(section) { mutableStateOf<String?>(null) }
     var selectedArticleId by rememberSaveable(section) { mutableStateOf(initialArticleId) }
     val selectedArticle = offlineArticles.firstOrNull { it.id == selectedArticleId }
     val selectedRecipe = recipeCatalogue?.recipes?.firstOrNull { it.id == selectedRecipeId }
@@ -835,6 +876,12 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
     }
     BackHandler(enabled = selectedArticle != null || selectedRecipe != null) {
         if (selectedRecipe != null) selectedRecipeId = null else selectedArticleId = null
+    }
+    BackHandler(enabled = section == "Retro & Android" && selectedRetroCategory != null) {
+        selectedRetroCategory = null
+    }
+    LaunchedEffect(selectedRetroCategory) {
+        if (section == "Retro & Android") sectionListState.scrollToItem(0)
     }
     if (selectedRecipe != null) {
         OfflineRecipeDetail(
@@ -954,21 +1001,38 @@ private fun PersonalSectionScreen(section: String, initialArticleId: String?, in
                 Text(area.summary, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
             if (section == "Retro & Android") {
-                val referenceItems = StarterLibrary.items.filter { it.category == "Retro & Android" }
+                val selectedCategory = RetroLibraryNavigation.categories.firstOrNull { it.title == selectedRetroCategory }
                 item {
-                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                        Text("Ready-to-use reference cards", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
-                        Text("Offline guides for Android and PS1–PS5. Open a card for its guide and project links.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                        if (selectedCategory != null) {
+                            TextButton(onClick = { selectedRetroCategory = null }, contentPadding = PaddingValues(horizontal = 0.dp), modifier = Modifier.heightIn(min = 48.dp)) {
+                                Icon(Icons.Default.ArrowBack, contentDescription = null)
+                                Spacer(Modifier.width(8.dp))
+                                Text("All Retro & Android categories")
+                            }
+                            Text(selectedCategory.title, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Text(selectedCategory.description, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        } else {
+                            Text("Browse the offline reference", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                            Text("Choose a subject, then a topic. Guides and source links open without a network connection; external pages open only when tapped.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
                     }
                 }
-                items(referenceItems, key = { it.id }) { reference ->
-                    Card(Modifier.fillMaxWidth().clickable { onStarterSelect(reference.id) }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)) {
-                        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Image(painterResource(R.drawable.suric_retro), contentDescription = null, contentScale = ContentScale.Crop, modifier = Modifier.size(64.dp).clip(RoundedCornerShape(14.dp)))
-                            Column(Modifier.weight(1f).padding(start = 12.dp)) {
-                                Text(reference.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
-                                Text(reference.summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3)
-                                Text("Open guide and links", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+                if (selectedCategory == null) {
+                    items(RetroLibraryNavigation.categories, key = { "retro-category:${it.title}" }) { category ->
+                        RetroNavigationCard(category.title, category.description) { selectedRetroCategory = category.title }
+                    }
+                } else {
+                    items(selectedCategory.subcategories, key = { "retro-subcategory:${selectedCategory.title}:${it.title}" }) { subcategory ->
+                        val articles = RetroLibraryNavigation.articles(subcategory)
+                        if (articles.size == 1) {
+                            val article = articles.single()
+                            RetroNavigationCard(article.title, article.summary) { onStarterSelect(article.id) }
+                        } else {
+                            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                Text(subcategory.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                                Text(subcategory.description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                articles.forEach { article -> RetroNavigationCard(article.title, article.summary) { onStarterSelect(article.id) } }
                             }
                         }
                     }
