@@ -25,8 +25,8 @@ object RetroLibraryNavigation {
         )),
         RetroLibraryCategory("Android", "Platform versions, device changes and development", listOf(
             RetroLibrarySubcategory("Versions and API levels", "37 distinct Android API releases, plus the current overview", StarterLibrary.androidVersionGuideIds() + "retro.android-version-map"),
-            RetroLibrarySubcategory("Architecture and development", "System layers, apps and debugging", listOf("retro.android-architecture")),
-            RetroLibrarySubcategory("Bootloader, root and ROMs", "Device-specific modification basics", listOf("retro.android-root-roms")),
+            RetroLibrarySubcategory("Architecture and development", "System layers, apps and debugging", listOf("retro.android-architecture", "retro.android-apk-anatomy")),
+            RetroLibrarySubcategory("Bootloader, root and ROMs", "Device-specific modification basics", listOf("retro.android-boot-chain", "retro.android-root-roms")),
             RetroLibrarySubcategory("Getting started", "Identify your exact phone or tablet", listOf("retro.start-here"))
         )),
         RetroLibraryCategory("Android TV & Google TV", "TV devices, apps, remotes and local media", listOf(

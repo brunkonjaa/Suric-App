@@ -5,9 +5,9 @@ import org.junit.Test
 
 class StarterLibraryTest {
     @Test fun bundledCatalogueHasUniqueIdsAndExpectedCategoryCounts() {
-        assertEquals(87, StarterLibrary.items.size)
-        assertEquals(87, StarterLibrary.items.map { it.id }.toSet().size)
-        assertEquals(mapOf("Gardening" to 6, "Cooking" to 6, "Cleaning" to 5, "DIY & Home" to 4, "Pottery" to 3, "Shopping" to 2, "Bills" to 2, "Retro & Android" to 59), StarterLibrary.items.groupingBy { it.category }.eachCount())
+        assertEquals(89, StarterLibrary.items.size)
+        assertEquals(89, StarterLibrary.items.map { it.id }.toSet().size)
+        assertEquals(mapOf("Gardening" to 6, "Cooking" to 6, "Cleaning" to 5, "DIY & Home" to 4, "Pottery" to 3, "Shopping" to 2, "Bills" to 2, "Retro & Android" to 61), StarterLibrary.items.groupingBy { it.category }.eachCount())
         assertTrue(StarterLibrary.items.all { it.blocks.isNotEmpty() && it.destination in PersonalEntryStore.SECTIONS })
     }
 
