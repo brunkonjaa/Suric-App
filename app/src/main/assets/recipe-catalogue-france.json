@@ -34,7 +34,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_aligot"]
     },
     {
       "id": "fr-blanquette-de-veau",
@@ -71,7 +72,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_blanquette_de_veau"]
     },
     {
       "id": "fr-boeuf-bourguignon",
@@ -108,7 +110,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_boeuf_bourguignon"]
     },
     {
       "id": "fr-bouillabaisse",
@@ -145,7 +148,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_bouillabaisse"]
     },
     {
       "id": "fr-brandade-de-morue",
@@ -181,7 +185,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_brandade_de_morue"]
     },
     {
       "id": "fr-cassoulet",
@@ -217,7 +222,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_cassoulet"]
     },
     {
       "id": "fr-crepes",
@@ -252,7 +258,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_crepes"]
     },
     {
       "id": "fr-galette-complete",
@@ -288,7 +295,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_galette_complete"]
     },
     {
       "id": "fr-choucroute-garnie",
@@ -325,7 +333,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_choucroute_garnie"]
     },
     {
       "id": "fr-clafoutis",
@@ -361,7 +370,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_clafoutis"]
     },
     {
       "id": "fr-coq-au-vin",
@@ -397,7 +407,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_coq_au_vin"]
     },
     {
       "id": "fr-croque-monsieur",
@@ -432,7 +443,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_croque_monsieur"]
     },
     {
       "id": "fr-gratin-dauphinois",
@@ -467,7 +479,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_gratin_dauphinois"]
     },
     {
       "id": "fr-hachis-parmentier",
@@ -504,7 +517,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_hachis_parmentier"]
     },
     {
       "id": "fr-quiche-lorraine",
@@ -539,7 +553,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_quiche_lorraine"]
     },
     {
       "id": "fr-tarte-flambee",
@@ -576,7 +591,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_tarte_flambee"]
     },
     {
       "id": "fr-tartiflette",
@@ -611,7 +627,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_tartiflette"]
     },
     {
       "id": "fr-pot-au-feu",
@@ -646,7 +663,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_pot_au_feu"]
     },
     {
       "id": "fr-ratatouille",
@@ -682,7 +700,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_ratatouille"]
     },
     {
       "id": "fr-salade-nicoise",
@@ -720,7 +739,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_salade_nicoise"]
     },
     {
       "id": "fr-soupe-a-loignon",
@@ -756,7 +776,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_soupe_a_loignon"]
     },
     {
       "id": "fr-poulet-basquaise",
@@ -792,7 +813,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_poulet_basquaise"]
     },
     {
       "id": "fr-pissaladiere",
@@ -828,7 +850,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_pissaladiere"]
     },
     {
       "id": "fr-moules-marinieres",
@@ -864,7 +887,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_moules_marinieres"]
     },
     {
       "id": "fr-madeleines",
@@ -899,7 +923,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_madeleines"]
     },
     {
       "id": "fr-tarte-tatin",
@@ -933,7 +958,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_tarte_tatin"]
     },
     {
       "id": "fr-oeufs-en-meurette",
@@ -970,7 +996,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_oeufs_en_meurette"]
     },
     {
       "id": "fr-endives-au-jambon",
@@ -1005,7 +1032,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_endives_au_jambon"]
     },
     {
       "id": "fr-far-breton",
@@ -1041,7 +1069,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_far_breton"]
     },
     {
       "id": "fr-piperade",
@@ -1077,7 +1106,8 @@
         "French cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_fr_piperade"]
     }
   ],
   "collections": [

@@ -37,7 +37,8 @@
                                      "tomato",
                                      "Nigeria"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_jollof"]
                     },
                     {
                         "id":  "af-moinmoin",
@@ -73,7 +74,8 @@
                                      "steamed",
                                      "Nigeria"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_moinmoin"]
                     },
                     {
                         "id":  "af-egusi",
@@ -109,7 +111,8 @@
                                      "greens",
                                      "Nigeria"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_egusi"]
                     },
                     {
                         "id":  "af-suya",
@@ -145,7 +148,8 @@
                                      "grilled",
                                      "Nigeria"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_suya"]
                     },
                     {
                         "id":  "af-groundnut",
@@ -181,7 +185,8 @@
                                      "chicken",
                                      "Ghana"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_groundnut"]
                     },
                     {
                         "id":  "af-waakye",
@@ -216,7 +221,8 @@
                                      "beans",
                                      "Ghana"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_waakye"]
                     },
                     {
                         "id":  "af-thieboudienne",
@@ -254,7 +260,8 @@
                                      "rice",
                                      "Senegal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_thieboudienne"]
                     },
                     {
                         "id":  "af-yassa",
@@ -290,7 +297,8 @@
                                      "lemon",
                                      "Senegal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_yassa"]
                     },
                     {
                         "id":  "af-domoda",
@@ -326,7 +334,8 @@
                                      "stew",
                                      "Gambia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_domoda"]
                     },
                     {
                         "id":  "af-akara",
@@ -361,7 +370,8 @@
                                      "snack",
                                      "Nigeria"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_akara"]
                     },
                     {
                         "id":  "af-ugali",
@@ -394,7 +404,8 @@
                                      "staple",
                                      "Kenya"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_ugali"]
                     },
                     {
                         "id":  "af-sukuma",
@@ -429,7 +440,8 @@
                                      "vegetarian",
                                      "Kenya"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_sukuma"]
                     },
                     {
                         "id":  "af-nyama-choma",
@@ -464,7 +476,8 @@
                                      "grilled",
                                      "Kenya"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_nyama_choma"]
                     },
                     {
                         "id":  "af-pilau",
@@ -501,7 +514,8 @@
                                      "beef",
                                      "Tanzania"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_pilau"]
                     },
                     {
                         "id":  "af-injera",
@@ -535,7 +549,8 @@
                                      "fermented",
                                      "Ethiopia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_injera"]
                     },
                     {
                         "id":  "af-misir",
@@ -571,7 +586,8 @@
                                      "stew",
                                      "Ethiopia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_misir"]
                     },
                     {
                         "id":  "af-doro-wot",
@@ -608,7 +624,8 @@
                                      "stew",
                                      "Ethiopia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_doro_wot"]
                     },
                     {
                         "id":  "af-shiro",
@@ -644,7 +661,8 @@
                                      "stew",
                                      "Ethiopia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_shiro"]
                     },
                     {
                         "id":  "af-bariis",
@@ -681,7 +699,8 @@
                                      "spiced",
                                      "Somalia"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_bariis"]
                     },
                     {
                         "id":  "af-rolex",
@@ -717,7 +736,8 @@
                                      "street food",
                                      "Uganda"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_rolex"]
                     },
                     {
                         "id":  "af-isombe",
@@ -753,7 +773,8 @@
                                      "peanut",
                                      "Rwanda"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_isombe"]
                     },
                     {
                         "id":  "af-ndole",
@@ -789,7 +810,8 @@
                                      "greens",
                                      "Cameroon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_ndole"]
                     },
                     {
                         "id":  "af-eru",
@@ -825,7 +847,8 @@
                                      "fish",
                                      "Cameroon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_eru"]
                     },
                     {
                         "id":  "af-moambe",
@@ -861,7 +884,8 @@
                                      "palm",
                                      "Congo"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_moambe"]
                     },
                     {
                         "id":  "af-koshari",
@@ -898,7 +922,8 @@
                                      "lentils",
                                      "Egypt"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_koshari"]
                     },
                     {
                         "id":  "af-ful",
@@ -934,7 +959,8 @@
                                      "breakfast",
                                      "Egypt"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_ful"]
                     },
                     {
                         "id":  "af-tagine",
@@ -971,7 +997,8 @@
                                      "olives",
                                      "Morocco"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_tagine"]
                     },
                     {
                         "id":  "af-couscous",
@@ -1008,7 +1035,8 @@
                                      "chickpea",
                                      "Morocco"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_couscous"]
                     },
                     {
                         "id":  "af-bobotie",
@@ -1046,7 +1074,8 @@
                                      "bake",
                                      "South Africa"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_bobotie"]
                     },
                     {
                         "id":  "af-chakalaka",
@@ -1083,7 +1112,8 @@
                                      "vegetables",
                                      "South Africa"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_af_chakalaka"]
                     }
                 ],
     "collections":  [

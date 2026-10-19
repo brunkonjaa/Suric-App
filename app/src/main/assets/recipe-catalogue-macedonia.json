@@ -36,7 +36,8 @@
         "tavče",
         "gravče"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_tavce_gravce"]
     },
     {
       "id": "macedonia-ohrid-style-baked-trout",
@@ -73,7 +74,8 @@
         "ohrid-style",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_ohrid_style_baked_trout"]
     },
     {
       "id": "macedonia-pastrmajlija-style-open-meat-pie",
@@ -110,7 +112,8 @@
         "pastrmajlija-style",
         "open"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_pastrmajlija_style_open_meat_pie"]
     },
     {
       "id": "macedonia-macedonian-ajvar",
@@ -147,7 +150,8 @@
         "macedonian",
         "ajvar"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_ajvar"]
     },
     {
       "id": "macedonia-pindjur-pepper-and-aubergine-relish",
@@ -184,7 +188,8 @@
         "pindjur",
         "pepper"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_pindjur_pepper_and_aubergine_relish"]
     },
     {
       "id": "macedonia-shopska-salad",
@@ -221,7 +226,8 @@
         "shopska",
         "salad"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_shopska_salad"]
     },
     {
       "id": "macedonia-tarator-cucumber-yogurt-soup",
@@ -258,7 +264,8 @@
         "tarator",
         "cucumber"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_tarator_cucumber_yogurt_soup"]
     },
     {
       "id": "macedonia-macedonian-stuffed-peppers",
@@ -295,7 +302,8 @@
         "macedonian",
         "stuffed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_stuffed_peppers"]
     },
     {
       "id": "macedonia-polneti-tikvichki-stuffed-courgettes",
@@ -332,7 +340,8 @@
         "polneti",
         "tikvichki"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_polneti_tikvichki_stuffed_courgettes"]
     },
     {
       "id": "macedonia-selsko-meso-village-style-casserole",
@@ -369,7 +378,8 @@
         "selsko",
         "meso"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_selsko_meso_village_style_casserole"]
     },
     {
       "id": "macedonia-macedonian-bean-and-leek-stew",
@@ -406,7 +416,8 @@
         "macedonian",
         "bean"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_bean_and_leek_stew"]
     },
     {
       "id": "macedonia-moussaka-with-potatoes",
@@ -443,7 +454,8 @@
         "moussaka",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_moussaka_with_potatoes"]
     },
     {
       "id": "macedonia-macedonian-sarma-cabbage-rolls",
@@ -480,7 +492,8 @@
         "macedonian",
         "sarma"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_sarma_cabbage_rolls"]
     },
     {
       "id": "macedonia-macedonian-lentil-chorba",
@@ -517,7 +530,8 @@
         "macedonian",
         "lentil"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_lentil_chorba"]
     },
     {
       "id": "macedonia-kachamak-cornmeal-with-cheese",
@@ -553,7 +567,8 @@
         "kachamak",
         "cornmeal"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_kachamak_cornmeal_with_cheese"]
     },
     {
       "id": "macedonia-macedonian-zelnik-spinach-pie",
@@ -590,7 +605,8 @@
         "macedonian",
         "zelnik"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_zelnik_spinach_pie"]
     },
     {
       "id": "macedonia-macedonian-leek-and-cheese-pie",
@@ -627,7 +643,8 @@
         "macedonian",
         "leek"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_leek_and_cheese_pie"]
     },
     {
       "id": "macedonia-macedonian-kifli-soft-rolls",
@@ -664,7 +681,8 @@
         "macedonian",
         "kifli"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_kifli_soft_rolls"]
     },
     {
       "id": "macedonia-pogacha-round-bread",
@@ -701,7 +719,8 @@
         "pogacha",
         "round"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_pogacha_round_bread"]
     },
     {
       "id": "macedonia-macedonian-grilled-kebapi",
@@ -738,7 +757,8 @@
         "macedonian",
         "grilled"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_grilled_kebapi"]
     },
     {
       "id": "macedonia-skopje-style-pleskavica",
@@ -775,7 +795,8 @@
         "skopje-style",
         "pleskavica"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_skopje_style_pleskavica"]
     },
     {
       "id": "macedonia-šarska-pleskavica-with-cheese-centre",
@@ -811,7 +832,8 @@
         "šarska",
         "pleskavica"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_sarska_pleskavica_with_cheese_centre_local"]
     },
     {
       "id": "macedonia-ohrid-fish-stew",
@@ -848,7 +870,8 @@
         "ohrid",
         "fish"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_ohrid_fish_stew"]
     },
     {
       "id": "macedonia-baked-beans-with-peppers",
@@ -885,7 +908,8 @@
         "baked",
         "beans"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_baked_beans_with_peppers"]
     },
     {
       "id": "macedonia-macedonian-tomato-and-rice-stew",
@@ -922,7 +946,8 @@
         "macedonian",
         "tomato"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_tomato_and_rice_stew"]
     },
     {
       "id": "macedonia-grilled-red-peppers-with-garlic",
@@ -958,7 +983,8 @@
         "grilled",
         "red"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_grilled_red_peppers_with_garlic"]
     },
     {
       "id": "macedonia-macedonian-stuffed-vine-leaves",
@@ -995,7 +1021,8 @@
         "macedonian",
         "stuffed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_stuffed_vine_leaves"]
     },
     {
       "id": "macedonia-macedonian-apple-and-walnut-cake",
@@ -1032,7 +1059,8 @@
         "macedonian",
         "apple"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_apple_and_walnut_cake"]
     },
     {
       "id": "macedonia-macedonian-tulumba-style-syrup-pastries",
@@ -1069,7 +1097,8 @@
         "macedonian",
         "tulumba-style"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_tulumba_style_syrup_pastries"]
     },
     {
       "id": "macedonia-macedonian-baked-quince-with-honey",
@@ -1105,7 +1134,8 @@
         "macedonian",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_macedonia_macedonian_baked_quince_with_honey"]
     }
   ]
 }

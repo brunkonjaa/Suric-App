@@ -37,7 +37,8 @@
                                      "flatbread",
                                      "oven"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_flammkuchen"]
                     },
                     {
                         "id":  "de-apfelpfannkuchen",
@@ -74,7 +75,8 @@
                                      "pancake",
                                      "breakfast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_apfelpfannkuchen"]
                     },
                     {
                         "id":  "de-bienenstich",
@@ -116,7 +118,8 @@
                                      "almond",
                                      "cream"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_bienenstich"]
                     },
                     {
                         "id":  "de-rinderrouladen",
@@ -157,7 +160,8 @@
                                      "braise",
                                      "comfort food"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_rinderrouladen"]
                     },
                     {
                         "id":  "de-berliner-pfannkuchen",
@@ -197,7 +201,8 @@
                                      "yeast",
                                      "doughnut"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_berliner_pfannkuchen"]
                     },
                     {
                         "id":  "de-currywurst",
@@ -236,7 +241,8 @@
                                      "Berlin",
                                      "street food"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_currywurst"]
                     },
                     {
                         "id":  "de-kaesespaetzle",
@@ -275,7 +281,8 @@
                                      "noodles",
                                      "cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_kaesespaetzle"]
                     },
                     {
                         "id":  "de-kartoffelpuffer",
@@ -311,7 +318,8 @@
                                      "pancake",
                                      "street food"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_kartoffelpuffer"]
                     },
                     {
                         "id":  "de-frankfurter-gruene-sosse",
@@ -348,7 +356,8 @@
                                      "herbs",
                                      "sauce"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_frankfurter_gruene_sosse"]
                     },
                     {
                         "id":  "de-zwiebelkuchen",
@@ -392,7 +401,8 @@
                                      "onion",
                                      "tart"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_zwiebelkuchen"]
                     },
                     {
                         "id":  "de-pfannkuchen",
@@ -428,7 +438,8 @@
                                      "basic",
                                      "family"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_pfannkuchen"]
                     },
                     {
                         "id":  "de-sauerbraten",
@@ -474,7 +485,8 @@
                                      "beef",
                                      "braise"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_sauerbraten"]
                     },
                     {
                         "id":  "de-gruenkohl",
@@ -511,7 +523,8 @@
                                      "winter",
                                      "one-pot"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_gruenkohl"]
                     },
                     {
                         "id":  "de-leipziger-allerlei",
@@ -550,7 +563,8 @@
                                      "vegetables",
                                      "spring"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_leipziger_allerlei"]
                     },
                     {
                         "id":  "de-himmel-un-aed",
@@ -588,7 +602,8 @@
                                      "potato",
                                      "apple"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_himmel_un_aed"]
                     },
                     {
                         "id":  "de-koenigsberger-klopse",
@@ -630,7 +645,8 @@
                                      "caper sauce",
                                      "comfort food"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_koenigsberger_klopse"]
                     },
                     {
                         "id":  "de-labskaus",
@@ -670,7 +686,8 @@
                                      "potato",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_labskaus"]
                     },
                     {
                         "id":  "de-bratkartoffeln",
@@ -705,7 +722,8 @@
                                      "pan-fried",
                                      "side dish"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_bratkartoffeln"]
                     },
                     {
                         "id":  "de-kartoffelkloesse",
@@ -741,7 +759,8 @@
                                      "potato",
                                      "dumpling"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_kartoffelkloesse"]
                     },
                     {
                         "id":  "de-rote-gruetze",
@@ -777,7 +796,8 @@
                                      "dessert",
                                      "summer"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_rote_gruetze"]
                     },
                     {
                         "id":  "de-eintopf",
@@ -816,7 +836,8 @@
                                      "stew",
                                      "vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_eintopf"]
                     },
                     {
                         "id":  "de-griessbrei",
@@ -852,7 +873,8 @@
                                      "semolina",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_griessbrei"]
                     },
                     {
                         "id":  "de-sauerkraut",
@@ -890,7 +912,8 @@
                                      "side dish",
                                      "fermented"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_sauerkraut"]
                     },
                     {
                         "id":  "de-nuernberger-bratwurst",
@@ -923,7 +946,8 @@
                                      "sausage",
                                      "grill"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_nuernberger_bratwurst"]
                     },
                     {
                         "id":  "de-erbsensuppe",
@@ -961,7 +985,8 @@
                                      "soup",
                                      "winter"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_erbsensuppe"]
                     },
                     {
                         "id":  "de-dampfnudeln",
@@ -999,7 +1024,8 @@
                                      "dumpling",
                                      "sweet or savoury"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_dampfnudeln"]
                     },
                     {
                         "id":  "de-spaetzle",
@@ -1036,7 +1062,8 @@
                                      "noodles",
                                      "side dish"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_spaetzle"]
                     },
                     {
                         "id":  "de-maultaschen",
@@ -1077,7 +1104,8 @@
                                      "pasta",
                                      "filled"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_maultaschen"]
                     },
                     {
                         "id":  "de-thueringer-kloesse",
@@ -1113,7 +1141,8 @@
                                      "potato",
                                      "dumpling"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_thueringer_kloesse"]
                     },
                     {
                         "id":  "de-kartoffelsalat",
@@ -1151,7 +1180,8 @@
                                      "potato",
                                      "salad"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_de_kartoffelsalat"]
                     }
                 ],
     "collections":  [

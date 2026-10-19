@@ -36,7 +36,8 @@
         "beijing",
         "zhajiangmian"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_beijing_zhajiangmian"]
     },
     {
       "id": "china-tomato-and-egg-stir-fry",
@@ -72,7 +73,8 @@
         "tomato",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_tomato_and_egg_stir_fry"]
     },
     {
       "id": "china-sichuan-mapo-tofu",
@@ -109,7 +111,8 @@
         "sichuan",
         "mapo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_sichuan_mapo_tofu"]
     },
     {
       "id": "china-yangzhou-fried-rice",
@@ -146,7 +149,8 @@
         "yangzhou",
         "fried"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_yangzhou_fried_rice"]
     },
     {
       "id": "china-cantonese-steamed-egg-custard",
@@ -182,7 +186,8 @@
         "cantonese",
         "steamed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_cantonese_steamed_egg_custard"]
     },
     {
       "id": "china-cantonese-steamed-chicken-with-ginger",
@@ -218,7 +223,8 @@
         "cantonese",
         "steamed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_cantonese_steamed_chicken_with_ginger"]
     },
     {
       "id": "china-hunan-pepper-beef",
@@ -255,7 +261,8 @@
         "hunan",
         "pepper"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_hunan_pepper_beef"]
     },
     {
       "id": "china-dongpo-style-braised-pork",
@@ -292,7 +299,8 @@
         "dongpo-style",
         "braised"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_dongpo_style_braised_pork"]
     },
     {
       "id": "china-shanghai-scallion-oil-noodles",
@@ -328,7 +336,8 @@
         "shanghai",
         "scallion"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_shanghai_scallion_oil_noodles"]
     },
     {
       "id": "china-suan-cai-fish-soup",
@@ -364,7 +373,8 @@
         "suan",
         "cai"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_suan_cai_fish_soup"]
     },
     {
       "id": "china-fujian-peanut-noodles",
@@ -401,7 +411,8 @@
         "fujian",
         "peanut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_fujian_peanut_noodles"]
     },
     {
       "id": "china-wonton-soup",
@@ -438,7 +449,8 @@
         "wonton",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_wonton_soup"]
     },
     {
       "id": "china-scallion-pancakes",
@@ -474,7 +486,8 @@
         "scallion",
         "pancakes"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_scallion_pancakes"]
     },
     {
       "id": "china-jianbing-inspired-breakfast-pancakes",
@@ -511,7 +524,8 @@
         "jianbing-inspired",
         "breakfast"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_jianbing_inspired_breakfast_pancakes"]
     },
     {
       "id": "china-congee-with-shiitake-and-ginger",
@@ -547,7 +561,8 @@
         "congee",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_congee_with_shiitake_and_ginger"]
     },
     {
       "id": "china-tea-eggs",
@@ -583,7 +598,8 @@
         "tea",
         "eggs"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_tea_eggs"]
     },
     {
       "id": "china-five-spice-braised-chicken",
@@ -620,7 +636,8 @@
         "five-spice",
         "braised"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_five_spice_braised_chicken"]
     },
     {
       "id": "china-hot-and-sour-vegetable-soup",
@@ -657,7 +674,8 @@
         "hot",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_hot_and_sour_vegetable_soup"]
     },
     {
       "id": "china-cucumber-smashed-with-garlic",
@@ -694,7 +712,8 @@
         "cucumber",
         "smashed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_cucumber_smashed_with_garlic"]
     },
     {
       "id": "china-scallion-and-egg-drop-soup",
@@ -730,7 +749,8 @@
         "scallion",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_scallion_and_egg_drop_soup"]
     },
     {
       "id": "china-tea-smoked-style-baked-tofu",
@@ -767,7 +787,8 @@
         "tea-smoked",
         "style"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_tea_smoked_style_baked_tofu"]
     },
     {
       "id": "china-cabbage-and-glass-noodle-stir-fry",
@@ -804,7 +825,8 @@
         "cabbage",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_cabbage_and_glass_noodle_stir_fry"]
     },
     {
       "id": "china-lanzhou-style-beef-noodle-soup",
@@ -841,7 +863,8 @@
         "lanzhou-style",
         "beef"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_lanzhou_style_beef_noodle_soup"]
     },
     {
       "id": "china-xinjiang-cumin-lamb-and-peppers",
@@ -878,7 +901,8 @@
         "xinjiang",
         "cumin"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_xinjiang_cumin_lamb_and_peppers"]
     },
     {
       "id": "china-lotus-root-and-peanut-soup",
@@ -914,7 +938,8 @@
         "lotus",
         "root"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_lotus_root_and_peanut_soup"]
     },
     {
       "id": "china-steamed-pork-and-winter-melon",
@@ -951,7 +976,8 @@
         "steamed",
         "pork"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_steamed_pork_and_winter_melon"]
     },
     {
       "id": "china-pan-fried-dumplings-with-cabbage",
@@ -988,7 +1014,8 @@
         "pan-fried",
         "dumplings"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_pan_fried_dumplings_with_cabbage"]
     },
     {
       "id": "china-red-braised-aubergine",
@@ -1025,7 +1052,8 @@
         "red-braised",
         "aubergine"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_red_braised_aubergine"]
     },
     {
       "id": "china-eight-treasure-vegetable-rice",
@@ -1098,7 +1126,8 @@
         "sesame",
         "rice"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_china_sesame_rice_balls"]
     }
   ]
 }

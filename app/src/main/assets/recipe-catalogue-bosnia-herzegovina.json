@@ -38,7 +38,8 @@
                                      "walnut",
                                      "pastry"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_baklava"]
                     },
                     {
                         "id":  "ba-bamija",
@@ -78,7 +79,8 @@
                                      "beef",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_bamija"]
                     },
                     {
                         "id":  "ba-sis-cevapi",
@@ -116,7 +118,8 @@
                                      "grilled",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_sis_cevapi"]
                     },
                     {
                         "id":  "ba-begova-corba",
@@ -157,7 +160,8 @@
                                      "soup",
                                      "chicken"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_begova_corba"]
                     },
                     {
                         "id":  "ba-bosanska-kafa",
@@ -191,7 +195,8 @@
                                      "drink",
                                      "traditional"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_bosanska_kafa"]
                     },
                     {
                         "id":  "ba-bosanski-lonac",
@@ -231,7 +236,8 @@
                                      "beef",
                                      "vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_bosanski_lonac"]
                     },
                     {
                         "id":  "ba-burek",
@@ -273,7 +279,8 @@
                                      "beef",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_burek"]
                     },
                     {
                         "id":  "ba-bosanski-cupavci",
@@ -314,7 +321,8 @@
                                      "chocolate",
                                      "coconut"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_bosanski_cupavci"]
                     },
                     {
                         "id":  "ba-hurmasice",
@@ -356,7 +364,8 @@
                                      "syrup",
                                      "biscuits"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_hurmasice"]
                     },
                     {
                         "id":  "ba-janjetina-ispod-saca",
@@ -396,7 +405,8 @@
                                      "lamb",
                                      "roast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_janjetina_ispod_saca"]
                     },
                     {
                         "id":  "ba-japrak",
@@ -437,7 +447,8 @@
                                      "vine leaves",
                                      "stuffed"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_japrak"]
                     },
                     {
                         "id":  "ba-sogan-sarma",
@@ -476,7 +487,8 @@
                                      "leek",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_sogan_sarma"]
                     },
                     {
                         "id":  "ba-klepe",
@@ -516,7 +528,8 @@
                                      "beef",
                                      "yogurt"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_klepe"]
                     },
                     {
                         "id":  "ba-klepe-potato",
@@ -557,7 +570,8 @@
                                      "potato",
                                      "pasta"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_klepe_potato"]
                     },
                     {
                         "id":  "ba-krompirusa",
@@ -596,7 +610,8 @@
                                      "potato",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_krompirusa"]
                     },
                     {
                         "id":  "ba-pilav",
@@ -635,7 +650,8 @@
                                      "side",
                                      "pilaf"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_pilav"]
                     },
                     {
                         "id":  "ba-sogan-pita",
@@ -674,7 +690,8 @@
                                      "pastry",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_sogan_pita"]
                     },
                     {
                         "id":  "ba-proja",
@@ -713,7 +730,8 @@
                                      "cheese",
                                      "side"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_proja"]
                     },
                     {
                         "id":  "ba-punjena-paprika",
@@ -752,7 +770,8 @@
                                      "beef",
                                      "rice"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_punjena_paprika"]
                     },
                     {
                         "id":  "ba-pura",
@@ -787,7 +806,8 @@
                                      "porridge",
                                      "side"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_pura"]
                     },
                     {
                         "id":  "ba-lokum",
@@ -825,7 +845,8 @@
                                      "rose",
                                      "coffee"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_lokum"]
                     },
                     {
                         "id":  "ba-cevapi",
@@ -861,7 +882,8 @@
                                      "grilled",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_cevapi"]
                     },
                     {
                         "id":  "ba-sarma",
@@ -900,7 +922,8 @@
                                      "rolls",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_sarma"]
                     },
                     {
                         "id":  "ba-satara",
@@ -937,7 +960,8 @@
                                      "peppers",
                                      "vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_satara"]
                     },
                     {
                         "id":  "ba-kajmak-pita",
@@ -976,7 +1000,8 @@
                                      "pastry",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_kajmak_pita"]
                     },
                     {
                         "id":  "ba-sogan-dolma",
@@ -1016,7 +1041,8 @@
                                      "stuffed onion",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_sogan_dolma"]
                     },
                     {
                         "id":  "ba-tarhana",
@@ -1053,7 +1079,8 @@
                                      "fermented",
                                      "dairy"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_tarhana"]
                     },
                     {
                         "id":  "ba-tufahije",
@@ -1091,7 +1118,8 @@
                                      "apple",
                                      "walnut"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_tufahije"]
                     },
                     {
                         "id":  "ba-ustipci",
@@ -1129,7 +1157,8 @@
                                      "fried",
                                      "snack"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_ustipci"]
                     },
                     {
                         "id":  "ba-zeljanica",
@@ -1166,7 +1195,8 @@
                                      "cheese",
                                      "pastry"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_ba_zeljanica"]
                     }
                 ],
     "collections":  [

@@ -35,7 +35,8 @@
                                      "Hokkaido",
                                      "Salmon and vegetable miso hotpot"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_ishikari"]
                     },
                     {
                         "id":  "jp-jingisukan",
@@ -70,7 +71,8 @@
                                      "Hokkaido",
                                      "Hokkaido lamb and vegetable grill"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_jingisukan"]
                     },
                     {
                         "id":  "jp-gyutan",
@@ -105,7 +107,8 @@
                                      "Tohoku",
                                      "Sendai grilled beef tongue"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_gyutan"]
                     },
                     {
                         "id":  "jp-kiritanpo",
@@ -140,7 +143,8 @@
                                      "Akita",
                                      "Rice dumpling and chicken hotpot"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_kiritanpo"]
                     },
                     {
                         "id":  "jp-gyoza",
@@ -176,7 +180,8 @@
                                      "Tochigi",
                                      "Pan fried pork dumplings"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_gyoza"]
                     },
                     {
                         "id":  "jp-tonkatsu",
@@ -211,7 +216,8 @@
                                      "Nationwide",
                                      "Japanese breaded pork cutlet"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_tonkatsu"]
                     },
                     {
                         "id":  "jp-tamagoyaki",
@@ -245,7 +251,8 @@
                                      "Tokyo",
                                      "Rolled Japanese omelette"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_tamagoyaki"]
                     },
                     {
                         "id":  "jp-onigiri",
@@ -278,7 +285,8 @@
                                      "Nationwide",
                                      "Seasoned rice balls"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_onigiri"]
                     },
                     {
                         "id":  "jp-misoshiru",
@@ -312,7 +320,8 @@
                                      "Nationwide",
                                      "Tofu and wakame miso soup"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_misoshiru"]
                     },
                     {
                         "id":  "jp-oyakodon",
@@ -348,7 +357,8 @@
                                      "Tokyo",
                                      "Chicken and egg rice bowl"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_oyakodon"]
                     },
                     {
                         "id":  "jp-gyudon",
@@ -383,7 +393,8 @@
                                      "Tokyo",
                                      "Beef and onion rice bowl"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_gyudon"]
                     },
                     {
                         "id":  "jp-kare",
@@ -420,7 +431,8 @@
                                      "Nationwide",
                                      "Japanese curry rice"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_kare"]
                     },
                     {
                         "id":  "jp-ramen",
@@ -456,7 +468,8 @@
                                      "Tokyo",
                                      "Soy sauce ramen"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_ramen"]
                     },
                     {
                         "id":  "jp-sanuki",
@@ -491,7 +504,8 @@
                                      "Kagawa",
                                      "Chewy udon noodle soup"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_sanuki"]
                     },
                     {
                         "id":  "jp-zaru-soba",
@@ -526,7 +540,8 @@
                                      "Nagano",
                                      "Chilled buckwheat noodles"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_zaru_soba"]
                     },
                     {
                         "id":  "jp-hoto",
@@ -561,7 +576,8 @@
                                      "Yamanashi",
                                      "Yamanashi pumpkin udon stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_hoto"]
                     },
                     {
                         "id":  "jp-tempura",
@@ -598,7 +614,8 @@
                                      "Nationwide",
                                      "Lightly battered vegetables and prawns"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_tempura"]
                     },
                     {
                         "id":  "jp-sushi",
@@ -636,7 +653,8 @@
                                      "Tokyo",
                                      "Vinegared rice with cooked toppings"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_sushi"]
                     },
                     {
                         "id":  "jp-hitsumabushi",
@@ -671,7 +689,8 @@
                                      "Nagoya",
                                      "Nagoya grilled eel rice bowl"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_hitsumabushi"]
                     },
                     {
                         "id":  "jp-misokatsu",
@@ -708,7 +727,8 @@
                                      "Nagoya",
                                      "Pork cutlet with red miso sauce"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_misokatsu"]
                     },
                     {
                         "id":  "jp-okonomiyaki",
@@ -744,7 +764,8 @@
                                      "Hiroshima",
                                      "Layered cabbage pancake"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_okonomiyaki"]
                     },
                     {
                         "id":  "jp-takoyaki",
@@ -781,7 +802,8 @@
                                      "Osaka",
                                      "Osaka octopus batter balls"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_takoyaki"]
                     },
                     {
                         "id":  "jp-kitsune",
@@ -816,7 +838,8 @@
                                      "Osaka",
                                      "Udon with seasoned tofu"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_kitsune"]
                     },
                     {
                         "id":  "jp-yudofu",
@@ -851,7 +874,8 @@
                                      "Kyoto",
                                      "Kyoto simmered tofu"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_yudofu"]
                     },
                     {
                         "id":  "jp-chawanmushi",
@@ -887,7 +911,8 @@
                                      "Nationwide",
                                      "Savory steamed egg custard"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_chawanmushi"]
                     },
                     {
                         "id":  "jp-goya",
@@ -925,7 +950,8 @@
                                      "Okinawa",
                                      "Okinawan bitter melon stir fry"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_goya"]
                     },
                     {
                         "id":  "jp-shogayaki",
@@ -960,7 +986,8 @@
                                      "Tokyo",
                                      "Ginger pork"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_shogayaki"]
                     },
                     {
                         "id":  "jp-yakisoba",
@@ -995,7 +1022,8 @@
                                      "Nationwide",
                                      "Japanese stir fried noodles"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_yakisoba"]
                     },
                     {
                         "id":  "jp-matcha-mochi",
@@ -1030,7 +1058,8 @@
                                      "Kyoto",
                                      "Green tea rice cakes"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_matcha_mochi"]
                     },
                     {
                         "id":  "jp-dorayaki",
@@ -1066,7 +1095,8 @@
                                      "Tokyo",
                                      "Red bean filled pancakes"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_jp_dorayaki"]
                     }
                 ],
     "collections":  [

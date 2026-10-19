@@ -35,7 +35,8 @@
                                      "dip",
                                      "no-cook"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_guacamole"]
                     },
                     {
                         "id":  "mex-pambazos",
@@ -78,7 +79,8 @@
                                      "bread",
                                      "chile"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_pambazos"]
                     },
                     {
                         "id":  "mex-nopales-salad",
@@ -116,7 +118,8 @@
                                      "salad",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_nopales_salad"]
                     },
                     {
                         "id":  "mex-quesadillas",
@@ -152,7 +155,8 @@
                                      "cheese",
                                      "snack"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_quesadillas"]
                     },
                     {
                         "id":  "mex-corn-tamales",
@@ -194,7 +198,8 @@
                                      "tamales",
                                      "corn"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_corn_tamales"]
                     },
                     {
                         "id":  "mex-enchiladas-verdes",
@@ -232,7 +237,8 @@
                                      "green salsa",
                                      "chicken"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_enchiladas_verdes"]
                     },
                     {
                         "id":  "mex-chilaquiles",
@@ -270,7 +276,8 @@
                                      "tortilla",
                                      "salsa"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_chilaquiles"]
                     },
                     {
                         "id":  "mex-tacos-al-pastor",
@@ -313,7 +320,8 @@
                                      "pork",
                                      "tacos"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_tacos_al_pastor"]
                     },
                     {
                         "id":  "mex-pollo-tinga",
@@ -352,7 +360,8 @@
                                      "chicken",
                                      "tostada"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_pollo_tinga"]
                     },
                     {
                         "id":  "mex-atole",
@@ -386,7 +395,8 @@
                                      "corn",
                                      "cinnamon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_atole"]
                     },
                     {
                         "id":  "mex-carne-asada",
@@ -423,7 +433,8 @@
                                      "beef",
                                      "tacos"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_carne_asada"]
                     },
                     {
                         "id":  "mex-elote",
@@ -458,7 +469,8 @@
                                      "street food",
                                      "snack"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_elote"]
                     },
                     {
                         "id":  "mex-pico-de-gallo",
@@ -495,7 +507,8 @@
                                      "tomato",
                                      "no-cook"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_pico_de_gallo"]
                     },
                     {
                         "id":  "mex-capirotada",
@@ -535,7 +548,8 @@
                                      "bread pudding",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_capirotada"]
                     },
                     {
                         "id":  "mex-arroz-rojo",
@@ -575,7 +589,8 @@
                                      "tomato",
                                      "side"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_arroz_rojo"]
                     },
                     {
                         "id":  "mex-molletes",
@@ -608,7 +623,8 @@
                                      "bread",
                                      "breakfast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_molletes"]
                     },
                     {
                         "id":  "mex-tlayudas",
@@ -647,7 +663,8 @@
                                      "beans",
                                      "tostada"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_tlayudas"]
                     },
                     {
                         "id":  "mex-yucatan-pickled-onions",
@@ -684,7 +701,8 @@
                                      "onion",
                                      "pickle"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_yucatan_pickled_onions"]
                     },
                     {
                         "id":  "mex-frijoles-de-olla",
@@ -723,7 +741,8 @@
                                      "staple",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_frijoles_de_olla"]
                     },
                     {
                         "id":  "mex-mole-poblano",
@@ -772,7 +791,8 @@
                                      "sauce",
                                      "chicken"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_mole_poblano"]
                     },
                     {
                         "id":  "mex-huevos-rancheros",
@@ -812,7 +832,8 @@
                                      "eggs",
                                      "tortilla"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_huevos_rancheros"]
                     },
                     {
                         "id":  "mex-pozole-rojo",
@@ -854,7 +875,8 @@
                                      "hominy",
                                      "soup"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_pozole_rojo"]
                     },
                     {
                         "id":  "mex-frijoles-refritos",
@@ -888,7 +910,8 @@
                                      "side dish",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_frijoles_refritos"]
                     },
                     {
                         "id":  "mex-calabacitas",
@@ -924,7 +947,8 @@
                                      "corn",
                                      "vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_calabacitas"]
                     },
                     {
                         "id":  "mex-chiles-rellenos",
@@ -964,7 +988,8 @@
                                      "poblano",
                                      "stuffed"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_chiles_rellenos"]
                     },
                     {
                         "id":  "mex-tamales-dulces",
@@ -1005,7 +1030,8 @@
                                      "tamales",
                                      "corn"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_tamales_dulces"]
                     },
                     {
                         "id":  "mex-gorditas",
@@ -1043,7 +1069,8 @@
                                      "masa",
                                      "street food"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_gorditas"]
                     },
                     {
                         "id":  "mex-tostadas-tuna",
@@ -1079,7 +1106,8 @@
                                      "tostada",
                                      "coastal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_tostadas_tuna"]
                     },
                     {
                         "id":  "mex-cochinita-pibil",
@@ -1120,7 +1148,8 @@
                                      "pork",
                                      "slow cooked"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_cochinita_pibil"]
                     },
                     {
                         "id":  "mex-sopa-de-lima",
@@ -1164,7 +1193,8 @@
                                      "lime",
                                      "chicken"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_mex_sopa_de_lima"]
                     }
                 ],
     "collections":  [

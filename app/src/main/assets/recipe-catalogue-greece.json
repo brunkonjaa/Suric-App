@@ -38,7 +38,8 @@
                                      "lemon",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_lamb_lemonato"]
                     },
                     {
                         "id":  "gr-bakaliaros-skordalia",
@@ -76,7 +77,8 @@
                                      "cod",
                                      "potato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_bakaliaros_skordalia"]
                     },
                     {
                         "id":  "gr-briam",
@@ -116,7 +118,8 @@
                                      "oven",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_briam"]
                     },
                     {
                         "id":  "gr-paximadia",
@@ -152,7 +155,8 @@
                                      "barley",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_paximadia"]
                     },
                     {
                         "id":  "gr-dakos",
@@ -189,7 +193,8 @@
                                      "barley",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_dakos"]
                     },
                     {
                         "id":  "gr-kalamata-olives",
@@ -224,7 +229,8 @@
                                      "olive",
                                      "meze"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_kalamata_olives"]
                     },
                     {
                         "id":  "gr-lentil-soup",
@@ -263,7 +269,8 @@
                                      "soup",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_lentil_soup"]
                     },
                     {
                         "id":  "gr-fasolada",
@@ -302,7 +309,8 @@
                                      "soup",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_fasolada"]
                     },
                     {
                         "id":  "gr-gemista",
@@ -343,7 +351,8 @@
                                      "rice",
                                      "vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_gemista"]
                     },
                     {
                         "id":  "gr-giouvetsi",
@@ -383,7 +392,8 @@
                                      "orzo",
                                      "oven"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_giouvetsi"]
                     },
                     {
                         "id":  "gr-greek-salad",
@@ -422,7 +432,8 @@
                                      "tomato",
                                      "feta"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_greek_salad"]
                     },
                     {
                         "id":  "gr-kleftiko",
@@ -461,7 +472,8 @@
                                      "potato",
                                      "lemon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_kleftiko"]
                     },
                     {
                         "id":  "gr-kolokithokeftedes",
@@ -500,7 +512,8 @@
                                      "fritters",
                                      "feta"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_kolokithokeftedes"]
                     },
                     {
                         "id":  "gr-koulouri",
@@ -540,7 +553,8 @@
                                      "bread",
                                      "sesame"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_koulouri"]
                     },
                     {
                         "id":  "gr-kritharoto",
@@ -578,7 +592,8 @@
                                      "tomato",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_kritharoto"]
                     },
                     {
                         "id":  "gr-lahanorizo",
@@ -617,7 +632,8 @@
                                      "rice",
                                      "one-pot"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_lahanorizo"]
                     },
                     {
                         "id":  "gr-melitzanosalata",
@@ -654,7 +670,8 @@
                                      "aubergine",
                                      "meze"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_melitzanosalata"]
                     },
                     {
                         "id":  "gr-moussaka",
@@ -701,7 +718,8 @@
                                      "mince",
                                      "bake"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_moussaka"]
                     },
                     {
                         "id":  "gr-pastitsio",
@@ -745,7 +763,8 @@
                                      "beef",
                                      "oven"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_pastitsio"]
                     },
                     {
                         "id":  "gr-peinirli",
@@ -784,7 +803,8 @@
                                      "cheese",
                                      "bake"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_peinirli"]
                     },
                     {
                         "id":  "gr-revithada",
@@ -820,7 +840,8 @@
                                      "chickpeas",
                                      "oven"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_revithada"]
                     },
                     {
                         "id":  "gr-yogurt-rice",
@@ -859,7 +880,8 @@
                                      "milk",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_yogurt_rice"]
                     },
                     {
                         "id":  "gr-saganaki",
@@ -894,7 +916,8 @@
                                      "meze",
                                      "pan-fried"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_saganaki"]
                     },
                     {
                         "id":  "gr-souvlaki",
@@ -931,7 +954,8 @@
                                      "grilled",
                                      "skewers"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_souvlaki"]
                     },
                     {
                         "id":  "gr-pita-spanakopita",
@@ -971,7 +995,8 @@
                                      "feta",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_pita_spanakopita"]
                     },
                     {
                         "id":  "gr-spanakorizo",
@@ -1009,7 +1034,8 @@
                                      "rice",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_spanakorizo"]
                     },
                     {
                         "id":  "gr-stifado",
@@ -1049,7 +1075,8 @@
                                      "stew",
                                      "onion"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_stifado"]
                     },
                     {
                         "id":  "gr-pita-tiropita",
@@ -1086,7 +1113,8 @@
                                      "pastry",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_pita_tiropita"]
                     },
                     {
                         "id":  "gr-tzatziki",
@@ -1122,7 +1150,8 @@
                                      "cucumber",
                                      "dip"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_tzatziki"]
                     },
                     {
                         "id":  "gr-greek-yogurt-honey",
@@ -1156,7 +1185,8 @@
                                      "honey",
                                      "breakfast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_gr_greek_yogurt_honey"]
                     }
                 ],
     "collections":  [

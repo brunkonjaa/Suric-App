@@ -37,7 +37,8 @@
         "jollof",
         "rice"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_jollof_rice"]
     },
     {
       "id": "nigeria-egusi-soup-with-spinach",
@@ -74,7 +75,8 @@
         "egusi",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_egusi_soup_with_spinach"]
     },
     {
       "id": "nigeria-efo-riro-leafy-vegetable-stew",
@@ -111,7 +113,8 @@
         "efo",
         "riro"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_efo_riro_leafy_vegetable_stew"]
     },
     {
       "id": "nigeria-afang-soup-with-greens",
@@ -148,7 +151,8 @@
         "afang",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_afang_soup_with_greens"]
     },
     {
       "id": "nigeria-edikang-ikong-vegetable-soup",
@@ -185,7 +189,8 @@
         "edikang",
         "ikong"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_edikang_ikong_vegetable_soup"]
     },
     {
       "id": "nigeria-oha-soup-with-cocoyam-thickener",
@@ -222,7 +227,8 @@
         "oha",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_oha_soup_with_cocoyam_thickener"]
     },
     {
       "id": "nigeria-nsala-style-white-soup",
@@ -259,7 +265,8 @@
         "nsala-style",
         "white"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_nsala_style_white_soup"]
     },
     {
       "id": "nigeria-banga-palm-nut-soup",
@@ -296,7 +303,8 @@
         "banga",
         "palm-nut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_banga_palm_nut_soup"]
     },
     {
       "id": "nigeria-ogbono-soup-with-okra",
@@ -333,7 +341,8 @@
         "ogbono",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_ogbono_soup_with_okra"]
     },
     {
       "id": "nigeria-okra-soup-with-prawns",
@@ -370,7 +379,8 @@
         "okra",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_okra_soup_with_prawns"]
     },
     {
       "id": "nigeria-suya-spiced-beef-skewers",
@@ -407,7 +417,8 @@
         "suya-spiced",
         "beef"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_suya_spiced_beef_skewers"]
     },
     {
       "id": "nigeria-miyan-taushe-pumpkin-soup",
@@ -444,7 +455,8 @@
         "miyan",
         "taushe"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_miyan_taushe_pumpkin_soup"]
     },
     {
       "id": "nigeria-tuwo-masara-cornmeal-swallow",
@@ -478,7 +490,8 @@
         "tuwo",
         "masara"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_tuwo_masara_cornmeal_swallow"]
     },
     {
       "id": "nigeria-tuwo-shinkafa-rice-swallow",
@@ -512,7 +525,8 @@
         "tuwo",
         "shinkafa"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_tuwo_shinkafa_rice_swallow"]
     },
     {
       "id": "nigeria-miyan-kuka-baobab-leaf-soup",
@@ -549,7 +563,8 @@
         "miyan",
         "kuka"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_miyan_kuka_baobab_leaf_soup"]
     },
     {
       "id": "nigeria-akara-black-eyed-pea-fritters",
@@ -585,7 +600,8 @@
         "akara",
         "black-eyed"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_akara_black_eyed_pea_fritters"]
     },
     {
       "id": "nigeria-moi-moi-steamed-bean-pudding",
@@ -622,7 +638,8 @@
         "moi",
         "moi"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_moi_moi_steamed_bean_pudding"]
     },
     {
       "id": "nigeria-beans-and-plantain-porridge",
@@ -659,7 +676,8 @@
         "beans",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_beans_and_plantain_porridge"]
     },
     {
       "id": "nigeria-beans-and-corn-porridge",
@@ -696,7 +714,8 @@
         "beans",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_beans_and_corn_porridge"]
     },
     {
       "id": "nigeria-nigerian-fried-rice-with-vegetables",
@@ -733,7 +752,8 @@
         "nigerian",
         "fried"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_nigerian_fried_rice_with_vegetables"]
     },
     {
       "id": "nigeria-ofada-style-rice-and-ayamase-sauce",
@@ -770,7 +790,8 @@
         "ofada-style",
         "rice"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_ofada_style_rice_and_ayamase_sauce"]
     },
     {
       "id": "nigeria-pepper-soup-with-fish",
@@ -807,7 +828,8 @@
         "pepper",
         "soup"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_pepper_soup_with_fish"]
     },
     {
       "id": "nigeria-goat-meat-pepper-soup",
@@ -844,7 +866,8 @@
         "goat",
         "meat"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_goat_meat_pepper_soup"]
     },
     {
       "id": "nigeria-yam-porridge-with-greens",
@@ -881,7 +904,8 @@
         "yam",
         "porridge"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_yam_porridge_with_greens"]
     },
     {
       "id": "nigeria-boiled-yam-with-garden-egg-sauce",
@@ -918,7 +942,8 @@
         "boiled",
         "yam"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_boiled_yam_with_garden_egg_sauce"]
     },
     {
       "id": "nigeria-ewa-agoyin-style-mashed-beans",
@@ -955,7 +980,8 @@
         "ewa",
         "agoyin-style"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_ewa_agoyin_style_mashed_beans"]
     },
     {
       "id": "nigeria-nigerian-chicken-stew",
@@ -992,7 +1018,8 @@
         "nigerian",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_nigerian_chicken_stew"]
     },
     {
       "id": "nigeria-chin-chin-baked-snack",
@@ -1029,7 +1056,8 @@
         "chin",
         "chin"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_chin_chin_baked_snack"]
     },
     {
       "id": "nigeria-puff-puff-sweet-dough-balls",
@@ -1066,7 +1094,8 @@
         "puff-puff",
         "sweet"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_puff_puff_sweet_dough_balls"]
     },
     {
       "id": "nigeria-nigerian-coconut-rice",
@@ -1103,7 +1132,8 @@
         "nigerian",
         "coconut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_nigeria_nigerian_coconut_rice"]
     }
   ]
 }

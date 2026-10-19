@@ -37,7 +37,8 @@
         "herb",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_herb_and_kidney_bean_ghormeh_sabzi"]
     },
     {
       "id": "persian-fesenjan-walnut-and-pomegranate-stew",
@@ -74,7 +75,8 @@
         "fesenjan",
         "walnut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_fesenjan_walnut_and_pomegranate_stew"]
     },
     {
       "id": "persian-zereshk-polo-ba-morgh",
@@ -111,7 +113,8 @@
         "zereshk",
         "polo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_zereshk_polo_ba_morgh"]
     },
     {
       "id": "persian-adas-polo-lentil-and-raisin-rice",
@@ -148,7 +151,8 @@
         "adas",
         "polo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_adas_polo_lentil_and_raisin_rice"]
     },
     {
       "id": "persian-baghali-polo-with-dill-and-broad-beans",
@@ -185,7 +189,8 @@
         "baghali",
         "polo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_baghali_polo_with_dill_and_broad_beans"]
     },
     {
       "id": "persian-sabzi-polo-herb-rice",
@@ -222,7 +227,8 @@
         "sabzi",
         "polo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_sabzi_polo_herb_rice"]
     },
     {
       "id": "persian-tahdig-saffron-rice-crust",
@@ -259,7 +265,8 @@
         "tahdig",
         "saffron"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_tahdig_saffron_rice_crust"]
     },
     {
       "id": "persian-ash-reshteh-herb-noodle-soup",
@@ -297,7 +304,8 @@
         "ash",
         "reshteh"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_ash_reshteh_herb_noodle_soup"]
     },
     {
       "id": "persian-abgoosht-chickpea-and-lamb-broth",
@@ -335,7 +343,8 @@
         "abgoosht",
         "chickpea"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_abgoosht_chickpea_and_lamb_broth"]
     },
     {
       "id": "persian-khoresht-bademjan-aubergine-stew",
@@ -372,7 +381,8 @@
         "khoresht",
         "bademjan"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_khoresht_bademjan_aubergine_stew"]
     },
     {
       "id": "persian-khoresht-karafs-celery-herb-stew",
@@ -410,7 +420,8 @@
         "khoresht",
         "karafs"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_khoresht_karafs_celery_herb_stew"]
     },
     {
       "id": "persian-khoresht-aloo-plum-stew",
@@ -447,7 +458,8 @@
         "khoresht",
         "aloo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_khoresht_aloo_plum_stew"]
     },
     {
       "id": "persian-khoresh-bamieh-okra-stew",
@@ -484,7 +496,8 @@
         "khoresh",
         "bamieh"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_khoresh_bamieh_okra_stew"]
     },
     {
       "id": "persian-mirza-ghasemi-smoky-aubergine",
@@ -521,7 +534,8 @@
         "mirza",
         "ghasemi"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_mirza_ghasemi_smoky_aubergine"]
     },
     {
       "id": "persian-kashke-bademjan-aubergine-dip",
@@ -558,7 +572,8 @@
         "kashke",
         "bademjan"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_kashke_bademjan_aubergine_dip"]
     },
     {
       "id": "persian-salad-shirazi-cucumber-tomato-salad",
@@ -595,7 +610,8 @@
         "salad",
         "shirazi"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_salad_shirazi_cucumber_tomato_salad"]
     },
     {
       "id": "persian-kuku-sabzi-herb-frittata",
@@ -632,7 +648,8 @@
         "kuku",
         "sabzi"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_kuku_sabzi_herb_frittata"]
     },
     {
       "id": "persian-kuku-sibzamini-potato-patties",
@@ -669,7 +686,8 @@
         "kuku",
         "sibzamini"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_kuku_sibzamini_potato_patties"]
     },
     {
       "id": "persian-dolmeh-barg-grape-leaf-rolls",
@@ -706,7 +724,8 @@
         "dolmeh",
         "barg"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_dolmeh_barg_grape_leaf_rolls"]
     },
     {
       "id": "persian-koofteh-berenji-rice-and-herb-meatballs",
@@ -743,7 +762,8 @@
         "koofteh",
         "berenji"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_koofteh_berenji_rice_and_herb_meatballs"]
     },
     {
       "id": "persian-joojeh-kebab-saffron-chicken",
@@ -780,7 +800,8 @@
         "joojeh",
         "kebab"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_joojeh_kebab_saffron_chicken"]
     },
     {
       "id": "persian-kabab-koobideh-home-style",
@@ -817,7 +838,8 @@
         "kabab",
         "koobideh"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_kabab_koobideh_home_style"]
     },
     {
       "id": "persian-ash-e-anar-pomegranate-lentil-soup",
@@ -854,7 +876,8 @@
         "ash-e-anar",
         "pomegranate"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_ash_e_anar_pomegranate_lentil_soup"]
     },
     {
       "id": "persian-reshteh-polo-noodle-rice",
@@ -891,7 +914,8 @@
         "reshteh",
         "polo"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_reshteh_polo_noodle_rice"]
     },
     {
       "id": "persian-dami-gojeh-tomato-rice",
@@ -928,7 +952,8 @@
         "dami",
         "gojeh"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_dami_gojeh_tomato_rice"]
     },
     {
       "id": "persian-torshi-style-quick-pickled-vegetables",
@@ -966,7 +991,8 @@
         "torshi-style",
         "quick"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_torshi_style_quick_pickled_vegetables"]
     },
     {
       "id": "persian-nan-e-barbari-home-flatbread",
@@ -1003,7 +1029,8 @@
         "nan-e",
         "barbari"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_nan_e_barbari_home_flatbread"]
     },
     {
       "id": "persian-persian-saffron-and-rosewater-rice-pudding",
@@ -1040,7 +1067,8 @@
         "persian",
         "saffron"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_persian_saffron_and_rosewater_rice_pudding"]
     },
     {
       "id": "persian-sholeh-zard-saffron-rice-dessert",
@@ -1077,7 +1105,8 @@
         "sholeh",
         "zard"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_sholeh_zard_saffron_rice_dessert"]
     },
     {
       "id": "persian-faloodeh-lime-and-rosewater-noodles",
@@ -1114,7 +1143,8 @@
         "faloodeh",
         "lime"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_persian_faloodeh_lime_and_rosewater_noodles"]
     }
   ]
 }

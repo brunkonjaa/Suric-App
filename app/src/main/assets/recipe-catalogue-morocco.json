@@ -36,7 +36,8 @@
         "chicken",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_chicken_and_preserved_lemon_tagine"]
     },
     {
       "id": "morocco-lamb-and-prune-tagine",
@@ -73,7 +74,8 @@
         "lamb",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_lamb_and_prune_tagine"]
     },
     {
       "id": "morocco-vegetable-couscous",
@@ -110,7 +112,8 @@
         "vegetable",
         "couscous"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_vegetable_couscous"]
     },
     {
       "id": "morocco-seven-vegetable-couscous",
@@ -148,7 +151,8 @@
         "seven",
         "vegetable"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_seven_vegetable_couscous"]
     },
     {
       "id": "morocco-harira-inspired-tomato-and-lentil-soup",
@@ -185,7 +189,8 @@
         "harira-inspired",
         "tomato"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_harira_inspired_tomato_and_lentil_soup"]
     },
     {
       "id": "morocco-bissara-fava-bean-soup",
@@ -222,7 +227,8 @@
         "bissara",
         "fava"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_bissara_fava_bean_soup"]
     },
     {
       "id": "morocco-msemen-layered-griddle-flatbread",
@@ -259,7 +265,8 @@
         "msemen",
         "layered"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_msemen_layered_griddle_flatbread"]
     },
     {
       "id": "morocco-batbout-stovetop-bread",
@@ -296,7 +303,8 @@
         "batbout",
         "stovetop"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_batbout_stovetop_bread"]
     },
     {
       "id": "morocco-khobz-moroccan-round-bread",
@@ -333,7 +341,8 @@
         "khobz",
         "moroccan"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_khobz_moroccan_round_bread"]
     },
     {
       "id": "morocco-zaalouk-aubergine-and-tomato-salad",
@@ -370,7 +379,8 @@
         "zaalouk",
         "aubergine"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_zaalouk_aubergine_and_tomato_salad"]
     },
     {
       "id": "morocco-taktouka-pepper-and-tomato-salad",
@@ -407,7 +417,8 @@
         "taktouka",
         "pepper"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_taktouka_pepper_and_tomato_salad"]
     },
     {
       "id": "morocco-carrot-salad-with-cumin-and-lemon",
@@ -444,7 +455,8 @@
         "carrot",
         "salad"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_carrot_salad_with_cumin_and_lemon"]
     },
     {
       "id": "morocco-lamb-kefta-with-cumin-and-herbs",
@@ -481,7 +493,8 @@
         "lamb",
         "kefta"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_lamb_kefta_with_cumin_and_herbs"]
     },
     {
       "id": "morocco-beef-kefta-and-tomato-tagine",
@@ -518,7 +531,8 @@
         "beef",
         "kefta"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_beef_kefta_and_tomato_tagine"]
     },
     {
       "id": "morocco-chicken-and-chickpea-tagine",
@@ -555,7 +569,8 @@
         "chicken",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_chicken_and_chickpea_tagine"]
     },
     {
       "id": "morocco-pumpkin-and-chickpea-tagine",
@@ -592,7 +607,8 @@
         "pumpkin",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_pumpkin_and_chickpea_tagine"]
     },
     {
       "id": "morocco-moroccan-fish-chermoula-tray-bake",
@@ -629,7 +645,8 @@
         "moroccan",
         "fish"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_fish_chermoula_tray_bake"]
     },
     {
       "id": "morocco-sardines-with-chermoula",
@@ -666,7 +683,8 @@
         "sardines",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_sardines_with_chermoula"]
     },
     {
       "id": "morocco-moroccan-lentil-stew-with-spinach",
@@ -703,7 +721,8 @@
         "moroccan",
         "lentil"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_lentil_stew_with_spinach"]
     },
     {
       "id": "morocco-rfissa-inspired-chicken-and-lentils",
@@ -740,7 +759,8 @@
         "rfissa-inspired",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_rfissa_inspired_chicken_and_lentils"]
     },
     {
       "id": "morocco-pastilla-inspired-chicken-filo-pie",
@@ -777,7 +797,8 @@
         "pastilla-inspired",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_pastilla_inspired_chicken_filo_pie"]
     },
     {
       "id": "morocco-moroccan-spiced-roasted-cauliflower",
@@ -814,7 +835,8 @@
         "moroccan",
         "spiced"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_spiced_roasted_cauliflower"]
     },
     {
       "id": "morocco-lamb-and-apricot-couscous",
@@ -851,7 +873,8 @@
         "lamb",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_lamb_and_apricot_couscous"]
     },
     {
       "id": "morocco-moroccan-orange-and-olive-salad",
@@ -888,7 +911,8 @@
         "moroccan",
         "orange"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_orange_and_olive_salad"]
     },
     {
       "id": "morocco-beetroot-salad-with-cumin",
@@ -925,7 +949,8 @@
         "beetroot",
         "salad"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_beetroot_salad_with_cumin"]
     },
     {
       "id": "morocco-moroccan-spiced-potatoes",
@@ -962,7 +987,8 @@
         "moroccan",
         "spiced"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_spiced_potatoes"]
     },
     {
       "id": "morocco-sellou-inspired-toasted-almond-and-sesame-bites",
@@ -999,7 +1025,8 @@
         "sellou-inspired",
         "toasted"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_sellou_inspired_toasted_almond_and_sesame_bites"]
     },
     {
       "id": "morocco-chebakia-inspired-sesame-pastries",
@@ -1036,7 +1063,8 @@
         "chebakia-inspired",
         "sesame"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_chebakia_inspired_sesame_pastries"]
     },
     {
       "id": "morocco-almond-and-orange-blossom-briouats",
@@ -1073,7 +1101,8 @@
         "almond",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_almond_and_orange_blossom_briouats"]
     },
     {
       "id": "morocco-moroccan-date-and-walnut-semolina-cake",
@@ -1110,7 +1139,8 @@
         "moroccan",
         "date"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_morocco_moroccan_date_and_walnut_semolina_cake"]
     }
   ]
 }

@@ -40,7 +40,8 @@
                                      "cold soup",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_gazpacho"]
                     },
                     {
                         "id":  "es-fabada-asturiana",
@@ -80,7 +81,8 @@
                                      "beans",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_fabada_asturiana"]
                     },
                     {
                         "id":  "es-calamares-romana",
@@ -118,7 +120,8 @@
                                      "squid",
                                      "fried"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_calamares_romana"]
                     },
                     {
                         "id":  "es-huevos-rotos",
@@ -155,7 +158,8 @@
                                      "egg",
                                      "potato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_huevos_rotos"]
                     },
                     {
                         "id":  "es-trinxat",
@@ -196,7 +200,8 @@
                                      "cabbage",
                                      "potato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_trinxat"]
                     },
                     {
                         "id":  "es-sopa-de-ajo",
@@ -235,7 +240,8 @@
                                      "soup",
                                      "garlic"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_sopa_de_ajo"]
                     },
                     {
                         "id":  "es-arroz-negro",
@@ -277,7 +283,8 @@
                                      "rice",
                                      "squid"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_arroz_negro"]
                     },
                     {
                         "id":  "es-crema-catalana",
@@ -318,7 +325,8 @@
                                      "custard",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_crema_catalana"]
                     },
                     {
                         "id":  "es-churros",
@@ -355,7 +363,8 @@
                                      "fried dough",
                                      "chocolate"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_churros"]
                     },
                     {
                         "id":  "es-bacalao-vizcaina",
@@ -392,7 +401,8 @@
                                      "cod",
                                      "fish"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_bacalao_vizcaina"]
                     },
                     {
                         "id":  "es-bacalao-al-pil-pil",
@@ -431,7 +441,8 @@
                                      "cod",
                                      "fish"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_bacalao_al_pil_pil"]
                     },
                     {
                         "id":  "es-salmorejo",
@@ -472,7 +483,8 @@
                                      "cold soup",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_salmorejo"]
                     },
                     {
                         "id":  "es-tarta-santiago",
@@ -510,7 +522,8 @@
                                      "almond",
                                      "cake"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_tarta_santiago"]
                     },
                     {
                         "id":  "es-caldo-gallego",
@@ -551,7 +564,8 @@
                                      "soup",
                                      "beans"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_caldo_gallego"]
                     },
                     {
                         "id":  "es-pulpo-gallega",
@@ -591,7 +605,8 @@
                                      "octopus",
                                      "seafood"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_pulpo_gallega"]
                     },
                     {
                         "id":  "es-empanada-gallega",
@@ -635,7 +650,8 @@
                                      "tuna",
                                      "pie"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_empanada_gallega"]
                     },
                     {
                         "id":  "es-migas",
@@ -674,7 +690,8 @@
                                      "bread",
                                      "leftovers"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_migas"]
                     },
                     {
                         "id":  "es-croquetas-jamon",
@@ -712,7 +729,8 @@
                                      "ham",
                                      "croquettes"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_croquetas_jamon"]
                     },
                     {
                         "id":  "es-cocido-madrileno",
@@ -755,7 +773,8 @@
                                      "chickpeas",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_cocido_madrileno"]
                     },
                     {
                         "id":  "es-torrijas",
@@ -794,7 +813,8 @@
                                      "bread",
                                      "Cinnamon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_torrijas"]
                     },
                     {
                         "id":  "es-zarangollo",
@@ -831,7 +851,8 @@
                                      "courgette",
                                      "egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_zarangollo"]
                     },
                     {
                         "id":  "es-patatas-bravas",
@@ -869,7 +890,8 @@
                                      "potato",
                                      "tapas"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_patatas_bravas"]
                     },
                     {
                         "id":  "es-arroz-a-la-cubana",
@@ -908,7 +930,8 @@
                                      "rice",
                                      "egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_arroz_a_la_cubana"]
                     },
                     {
                         "id":  "es-lentejas-estofadas",
@@ -948,7 +971,8 @@
                                      "lentils",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_lentejas_estofadas"]
                     },
                     {
                         "id":  "es-albondigas",
@@ -991,7 +1015,8 @@
                                      "meatballs",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_albondigas"]
                     },
                     {
                         "id":  "es-ensaladilla-rusa",
@@ -1031,7 +1056,8 @@
                                      "potato",
                                      "tuna"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_ensaladilla_rusa"]
                     },
                     {
                         "id":  "es-tortilla-espanola",
@@ -1069,7 +1095,8 @@
                                      "potato",
                                      "egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_tortilla_espanola"]
                     },
                     {
                         "id":  "es-pisto",
@@ -1110,7 +1137,8 @@
                                      "vegetables",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_pisto"]
                     },
                     {
                         "id":  "es-pan-con-tomate",
@@ -1144,7 +1172,8 @@
                                      "bread",
                                      "tapa"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_pan_con_tomate"]
                     },
                     {
                         "id":  "es-bizcocho-yogur",
@@ -1182,7 +1211,8 @@
                                      "cake",
                                      "lemon"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_es_bizcocho_yogur"]
                     }
                 ],
     "collections":  [

@@ -38,7 +38,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_arancini"]
     },
     {
       "id": "it-bucatini-amatriciana",
@@ -71,7 +72,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_bucatini_amatriciana_local"]
     },
     {
       "id": "it-cacio-e-pepe",
@@ -101,7 +103,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_cacio_e_pepe"]
     },
     {
       "id": "it-carbonara",
@@ -133,7 +136,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_carbonara_local"]
     },
     {
       "id": "it-caponata",
@@ -169,7 +173,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_caponata_local"]
     },
     {
       "id": "it-focaccia-genovese",
@@ -202,7 +207,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_focaccia_genovese_local"]
     },
     {
       "id": "it-gnocchi-romana",
@@ -235,7 +241,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_gnocchi_romana"]
     },
     {
       "id": "it-insalata-caprese",
@@ -267,7 +274,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_insalata_caprese"]
     },
     {
       "id": "it-lasagne-bolognese",
@@ -302,7 +310,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_lasagne_bolognese"]
     },
     {
       "id": "it-minestrone",
@@ -337,7 +346,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_minestrone"]
     },
     {
       "id": "it-pizza-margherita",
@@ -372,7 +382,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_pizza_margherita_local"]
     },
     {
       "id": "it-orecchiette-rapa",
@@ -406,7 +417,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_orecchiette_rapa"]
     },
     {
       "id": "it-osso-buco",
@@ -441,7 +453,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_osso_buco_local"]
     },
     {
       "id": "it-panzanella",
@@ -475,7 +488,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_panzanella"]
     },
     {
       "id": "it-pasta-norma",
@@ -509,7 +523,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_pasta_norma","recipe_it_pasta_norma_local"]
     },
     {
       "id": "it-pasta-ceci",
@@ -544,7 +559,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_pasta_ceci"]
     },
     {
       "id": "it-pasta-fagioli",
@@ -578,7 +594,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_pasta_fagioli"]
     },
     {
       "id": "it-pesto-genovese",
@@ -612,7 +629,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_pesto_genovese_local"]
     },
     {
       "id": "it-polenta-taragna",
@@ -645,7 +663,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_polenta_taragna_local"]
     },
     {
       "id": "it-risotto-milanese",
@@ -679,7 +698,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_risotto_milanese_local"]
     },
     {
       "id": "it-saltimbocca",
@@ -712,7 +732,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_saltimbocca"]
     },
     {
       "id": "it-sarde-beccafico",
@@ -748,7 +769,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_sarde_beccafico_local"]
     },
     {
       "id": "it-granita-limone",
@@ -779,7 +801,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_granita_limone"]
     },
     {
       "id": "it-sugo-pomodoro",
@@ -811,7 +834,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_sugo_pomodoro_local"]
     },
     {
       "id": "it-tiramisu",
@@ -844,7 +868,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_tiramisu_local"]
     },
     {
       "id": "it-torta-nonna",
@@ -880,7 +905,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_torta_nonna"]
     },
     {
       "id": "it-ribollita",
@@ -914,7 +940,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_ribollita"]
     },
     {
       "id": "it-spaghetti-vongole",
@@ -949,7 +976,8 @@
         "home cooking",
         "seafood"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_spaghetti_vongole_local"]
     },
     {
       "id": "it-frittata-cipolle",
@@ -981,7 +1009,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_frittata_cipolle"]
     },
     {
       "id": "it-melanzane-parmigiana",
@@ -1015,7 +1044,8 @@
         "Italian cuisine",
         "home cooking"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_it_melanzane_parmigiana"]
     }
   ],
   "collections": [

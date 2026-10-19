@@ -36,7 +36,8 @@
         "belgrade-style",
         "ćevapi"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_belgrade_style_cevapi"]
     },
     {
       "id": "serbia-leskovac-muckalica-pepper-and-meat-stew",
@@ -73,7 +74,8 @@
         "leskovac",
         "mućkalica"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_leskovac_muckalica_pepper_and_meat_stew"]
     },
     {
       "id": "serbia-karaoreva-schnitzel-home-style",
@@ -110,7 +112,8 @@
         "karađorđeva",
         "schnitzel"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_karaoreva_schnitzel_home_style"]
     },
     {
       "id": "serbia-prebranac-baked-beans",
@@ -147,7 +150,8 @@
         "prebranac",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_prebranac_baked_beans"]
     },
     {
       "id": "serbia-vojvodina-chicken-paprikash",
@@ -184,7 +188,8 @@
         "vojvodina",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_vojvodina_chicken_paprikash"]
     },
     {
       "id": "serbia-gibanica-cheese-and-filo-pie",
@@ -221,7 +226,8 @@
         "gibanica",
         "cheese"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_gibanica_cheese_and_filo_pie"]
     },
     {
       "id": "serbia-burek-with-cheese",
@@ -258,7 +264,8 @@
         "burek",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_burek_with_cheese"]
     },
     {
       "id": "serbia-burek-with-minced-meat",
@@ -295,7 +302,8 @@
         "burek",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_burek_with_minced_meat"]
     },
     {
       "id": "serbia-ajvar-roasted-pepper-spread",
@@ -332,7 +340,8 @@
         "ajvar",
         "roasted"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_ajvar_roasted_pepper_spread"]
     },
     {
       "id": "serbia-urnebes-spicy-cheese-spread",
@@ -369,7 +378,8 @@
         "urnebes",
         "spicy"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_urnebes_spicy_cheese_spread"]
     },
     {
       "id": "serbia-karaore-beans-with-sausage",
@@ -406,7 +416,8 @@
         "karađorđe",
         "beans"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_karaore_beans_with_sausage"]
     },
     {
       "id": "serbia-sarma-cabbage-rolls",
@@ -443,7 +454,8 @@
         "sarma",
         "cabbage"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_sarma_cabbage_rolls"]
     },
     {
       "id": "serbia-karaore-roast-pork-and-potatoes",
@@ -480,7 +492,8 @@
         "karađorđe",
         "roast"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_karaore_roast_pork_and_potatoes"]
     },
     {
       "id": "serbia-kacamak-cornmeal-with-cheese",
@@ -516,7 +529,8 @@
         "kačamak",
         "cornmeal"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_kacamak_cornmeal_with_cheese"]
     },
     {
       "id": "serbia-karaore-style-roast-lamb",
@@ -553,7 +567,8 @@
         "karađorđe-style",
         "roast"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_karaore_style_roast_lamb"]
     },
     {
       "id": "serbia-vojvodina-goulash-with-paprika",
@@ -590,7 +605,8 @@
         "vojvodina",
         "goulash"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_vojvodina_goulash_with_paprika"]
     },
     {
       "id": "serbia-leskovac-grilled-stuffed-peppers",
@@ -627,7 +643,8 @@
         "leskovac",
         "grilled"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_leskovac_grilled_stuffed_peppers"]
     },
     {
       "id": "serbia-vojvodina-poppy-seed-strudel",
@@ -664,7 +681,8 @@
         "vojvodina",
         "poppy"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_vojvodina_poppy_seed_strudel"]
     },
     {
       "id": "serbia-vanilice-walnut-jam-biscuits",
@@ -701,7 +719,8 @@
         "vanilice",
         "walnut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_vanilice_walnut_jam_biscuits"]
     },
     {
       "id": "serbia-knedle-plum-dumplings",
@@ -738,7 +757,8 @@
         "knedle",
         "plum"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_knedle_plum_dumplings"]
     },
     {
       "id": "serbia-svadbarski-kupus-wedding-cabbage-stew",
@@ -775,7 +795,8 @@
         "svadbarski",
         "kupus"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_svadbarski_kupus_wedding_cabbage_stew"]
     },
     {
       "id": "serbia-sour-cherry-strudla",
@@ -812,7 +833,8 @@
         "sour",
         "cherry"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_sour_cherry_strudla"]
     },
     {
       "id": "serbia-kajmak-style-fresh-cream-spread",
@@ -847,7 +869,8 @@
         "kajmak-style",
         "fresh"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_kajmak_style_fresh_cream_spread"]
     },
     {
       "id": "serbia-paprika-and-tomato-relish",
@@ -884,7 +907,8 @@
         "paprika",
         "and"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_paprika_and_tomato_relish"]
     },
     {
       "id": "serbia-riblja-corba-danube-fish-soup",
@@ -921,7 +945,8 @@
         "riblja",
         "čorba"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_riblja_corba_danube_fish_soup"]
     },
     {
       "id": "serbia-roasted-peppers-with-garlic",
@@ -958,7 +983,8 @@
         "roasted",
         "peppers"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_roasted_peppers_with_garlic"]
     },
     {
       "id": "serbia-pogaca-round-celebration-bread",
@@ -995,7 +1021,8 @@
         "pogača",
         "round"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_pogaca_round_celebration_bread"]
     },
     {
       "id": "serbia-proja-cornmeal-bread",
@@ -1032,7 +1059,8 @@
         "proja",
         "cornmeal"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_proja_cornmeal_bread"]
     },
     {
       "id": "serbia-slatko-plum-preserve",
@@ -1068,7 +1096,8 @@
         "slatko",
         "plum"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_slatko_plum_preserve"]
     },
     {
       "id": "serbia-serbian-apple-and-walnut-cake",
@@ -1105,7 +1134,8 @@
         "serbian",
         "apple"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_serbia_serbian_apple_and_walnut_cake"]
     }
   ]
 }

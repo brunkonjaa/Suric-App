@@ -37,7 +37,8 @@
                                      "cheese",
                                      "breakfast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_banitsa"]
                     },
                     {
                         "id":  "bg-patatnik",
@@ -74,7 +75,8 @@
                                      "potato",
                                      "cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_patatnik"]
                     },
                     {
                         "id":  "bg-bob-chorba",
@@ -115,7 +117,8 @@
                                      "beans",
                                      "vegetarian"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_bob_chorba"]
                     },
                     {
                         "id":  "bg-lyutenitsa-eggs",
@@ -151,7 +154,8 @@
                                      "eggs",
                                      "pepper"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_lyutenitsa_eggs"]
                     },
                     {
                         "id":  "bg-gyuvech",
@@ -192,7 +196,8 @@
                                      "vegetables",
                                      "meat-free"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_gyuvech"]
                     },
                     {
                         "id":  "bg-kachamak",
@@ -228,7 +233,8 @@
                                      "porridge",
                                      "cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kachamak"]
                     },
                     {
                         "id":  "bg-kapama",
@@ -268,7 +274,8 @@
                                      "meat",
                                      "cabbage"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kapama"]
                     },
                     {
                         "id":  "bg-katmi",
@@ -307,7 +314,8 @@
                                      "breakfast",
                                      "griddle"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_katmi"]
                     },
                     {
                         "id":  "bg-kavarma",
@@ -347,7 +355,8 @@
                                      "pork",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kavarma"]
                     },
                     {
                         "id":  "bg-kebapche",
@@ -385,7 +394,8 @@
                                      "meat",
                                      "everyday"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kebapche"]
                     },
                     {
                         "id":  "bg-kiselo-mlyako",
@@ -418,7 +428,8 @@
                                      "breakfast",
                                      "no-cook"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kiselo_mlyako"]
                     },
                     {
                         "id":  "bg-kozunak",
@@ -459,7 +470,8 @@
                                      "yeast",
                                      "sweet"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kozunak"]
                     },
                     {
                         "id":  "bg-kyufte",
@@ -495,7 +507,8 @@
                                      "patties",
                                      "grill"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kyufte"]
                     },
                     {
                         "id":  "bg-lyutenitsa",
@@ -536,7 +549,8 @@
                                      "pepper",
                                      "tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_lyutenitsa"]
                     },
                     {
                         "id":  "bg-mekitsi",
@@ -574,7 +588,8 @@
                                      "fried dough",
                                      "bread"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_mekitsi"]
                     },
                     {
                         "id":  "bg-milinki",
@@ -613,7 +628,8 @@
                                      "cheese",
                                      "yeast"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_milinki"]
                     },
                     {
                         "id":  "bg-mish-mash",
@@ -651,7 +667,8 @@
                                      "pepper",
                                      "quick meal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_mish_mash"]
                     },
                     {
                         "id":  "bg-musaka",
@@ -692,7 +709,8 @@
                                      "mince",
                                      "bake"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_musaka"]
                     },
                     {
                         "id":  "bg-oshav",
@@ -727,7 +745,8 @@
                                      "drink",
                                      "compote"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_oshav"]
                     },
                     {
                         "id":  "bg-palneni-chushki",
@@ -767,7 +786,8 @@
                                      "rice",
                                      "meat"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_palneni_chushki"]
                     },
                     {
                         "id":  "bg-fish-soup",
@@ -808,7 +828,8 @@
                                      "fish",
                                      "soup"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_fish_soup"]
                     },
                     {
                         "id":  "bg-patato-salad",
@@ -845,7 +866,8 @@
                                      "salad",
                                      "side"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_patato_salad"]
                     },
                     {
                         "id":  "bg-sarmi",
@@ -883,7 +905,8 @@
                                      "rolls",
                                      "rice"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_sarmi"]
                     },
                     {
                         "id":  "bg-shkembe",
@@ -922,7 +945,8 @@
                                      "tripe",
                                      "garlic"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_shkembe"]
                     },
                     {
                         "id":  "bg-shopska-salata",
@@ -960,7 +984,8 @@
                                      "vegetables",
                                      "cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_shopska_salata"]
                     },
                     {
                         "id":  "bg-sirene-po-shopski",
@@ -997,7 +1022,8 @@
                                      "baked",
                                      "quick"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_sirene_po_shopski"]
                     },
                     {
                         "id":  "bg-tarator-cucumber",
@@ -1032,7 +1058,8 @@
                                      "cucumber",
                                      "yogurt"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_tarator_cucumber"]
                     },
                     {
                         "id":  "bg-tarator",
@@ -1069,7 +1096,8 @@
                                      "cucumber",
                                      "yogurt"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_tarator"]
                     },
                     {
                         "id":  "bg-tikvenik",
@@ -1109,7 +1137,8 @@
                                      "pastry",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_tikvenik"]
                     },
                     {
                         "id":  "bg-kiselo-zelie",
@@ -1148,7 +1177,8 @@
                                      "beans",
                                      "stew"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_bg_kiselo_zelie"]
                     }
                 ],
     "collections":  [

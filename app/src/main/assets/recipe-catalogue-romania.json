@@ -36,7 +36,8 @@
         "sarmale",
         "cabbage"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_sarmale_cabbage_rolls"]
     },
     {
       "id": "romania-mamaliga-cornmeal-porridge",
@@ -71,7 +72,8 @@
         "mămăligă",
         "cornmeal"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_mamaliga_cornmeal_porridge"]
     },
     {
       "id": "romania-mici-grilled-minced-meat-rolls",
@@ -108,7 +110,8 @@
         "mici",
         "grilled"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_mici_grilled_minced_meat_rolls"]
     },
     {
       "id": "romania-ciorba-de-perisoare-meatball-sour-soup",
@@ -146,7 +149,8 @@
         "ciorbă",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ciorba_de_perisoare_meatball_sour_soup"]
     },
     {
       "id": "romania-ciorba-de-fasole-bean-soup",
@@ -183,7 +187,8 @@
         "ciorbă",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ciorba_de_fasole_bean_soup"]
     },
     {
       "id": "romania-ciorba-radauteana-chicken-soup",
@@ -221,7 +226,8 @@
         "ciorbă",
         "rădăuțeană"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ciorba_radauteana_chicken_soup"]
     },
     {
       "id": "romania-ciorba-de-burta-style-tripe-soup",
@@ -258,7 +264,8 @@
         "ciorbă",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ciorba_de_burta_style_tripe_soup"]
     },
     {
       "id": "romania-tochitura-pork-stew-with-polenta",
@@ -295,7 +302,8 @@
         "tochitură",
         "pork"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_tochitura_pork_stew_with_polenta"]
     },
     {
       "id": "romania-transylvanian-chicken-paprikash",
@@ -332,7 +340,8 @@
         "transylvanian",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_transylvanian_chicken_paprikash"]
     },
     {
       "id": "romania-ostropel-chicken-with-garlic-tomato-sauce",
@@ -369,7 +378,8 @@
         "ostropel",
         "chicken"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ostropel_chicken_with_garlic_tomato_sauce"]
     },
     {
       "id": "romania-ardei-umpluti-stuffed-peppers",
@@ -406,7 +416,8 @@
         "ardei",
         "umpluți"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ardei_umpluti_stuffed_peppers"]
     },
     {
       "id": "romania-salata-de-vinete-roasted-aubergine-spread",
@@ -443,7 +454,8 @@
         "salată",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_salata_de_vinete_roasted_aubergine_spread"]
     },
     {
       "id": "romania-zacusca-vegetable-spread",
@@ -480,7 +492,8 @@
         "zacuscă",
         "vegetable"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_zacusca_vegetable_spread"]
     },
     {
       "id": "romania-fasole-batuta-whipped-bean-spread",
@@ -517,7 +530,8 @@
         "fasole",
         "bătută"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_fasole_batuta_whipped_bean_spread"]
     },
     {
       "id": "romania-bulz-baked-polenta-with-cheese",
@@ -553,7 +567,8 @@
         "bulz",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_bulz_baked_polenta_with_cheese"]
     },
     {
       "id": "romania-transylvanian-cabbage-and-pork-stew",
@@ -590,7 +605,8 @@
         "transylvanian",
         "cabbage"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_transylvanian_cabbage_and_pork_stew"]
     },
     {
       "id": "romania-pastrav-prajit-with-garlic-polenta",
@@ -627,7 +643,8 @@
         "păstrăv",
         "prăjit"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_pastrav_prajit_with_garlic_polenta"]
     },
     {
       "id": "romania-danube-fish-stew",
@@ -664,7 +681,8 @@
         "danube",
         "fish"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_danube_fish_stew"]
     },
     {
       "id": "romania-placinta-with-cheese-and-dill",
@@ -701,7 +719,8 @@
         "plăcintă",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_placinta_with_cheese_and_dill"]
     },
     {
       "id": "romania-placinta-with-apples",
@@ -738,7 +757,8 @@
         "plăcintă",
         "with"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_placinta_with_apples"]
     },
     {
       "id": "romania-cozonac-walnut-sweet-bread",
@@ -775,7 +795,8 @@
         "cozonac",
         "walnut"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_cozonac_walnut_sweet_bread"]
     },
     {
       "id": "romania-papanasi-fried-cheese-doughnuts",
@@ -812,7 +833,8 @@
         "papanasi",
         "fried"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_papanasi_fried_cheese_doughnuts"]
     },
     {
       "id": "romania-romanian-plum-dumplings",
@@ -849,7 +871,8 @@
         "romanian",
         "plum"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_romanian_plum_dumplings"]
     },
     {
       "id": "romania-salata-orientala-potato-and-egg-salad",
@@ -886,7 +909,8 @@
         "salată",
         "orientală"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_salata_orientala_potato_and_egg_salad"]
     },
     {
       "id": "romania-cartofi-taranesti-country-potatoes",
@@ -923,7 +947,8 @@
         "cartofi",
         "țărănești"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_cartofi_taranesti_country_potatoes"]
     },
     {
       "id": "romania-mushroom-stew-with-polenta",
@@ -960,7 +985,8 @@
         "mushroom",
         "stew"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_mushroom_stew_with_polenta"]
     },
     {
       "id": "romania-ciorba-de-legume-vegetable-sour-soup",
@@ -998,7 +1024,8 @@
         "ciorbă",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_ciorba_de_legume_vegetable_sour_soup"]
     },
     {
       "id": "romania-salam-de-biscuiti-biscuit-and-cocoa-roll",
@@ -1035,7 +1062,8 @@
         "salam",
         "de"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_salam_de_biscuiti_biscuit_and_cocoa_roll"]
     },
     {
       "id": "romania-mucenici-baked-honey-pastries",
@@ -1072,7 +1100,8 @@
         "mucenici",
         "baked"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_mucenici_baked_honey_pastries"]
     },
     {
       "id": "romania-romanian-sour-cherry-semolina-cake",
@@ -1109,7 +1138,8 @@
         "romanian",
         "sour"
       ],
-      "revision": 1
+      "revision": 1,
+      "imageAssets": ["recipe_romania_romanian_sour_cherry_semolina_cake"]
     }
   ]
 }

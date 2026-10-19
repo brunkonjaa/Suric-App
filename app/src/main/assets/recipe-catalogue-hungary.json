@@ -35,7 +35,8 @@
                                      "soup",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_gulyas"]
                     },
                     {
                         "id":  "hu-porkolt",
@@ -68,7 +69,8 @@
                                      "stew",
                                      "beef"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_porkolt"]
                     },
                     {
                         "id":  "hu-csirkepaprikas",
@@ -101,7 +103,8 @@
                                      "stew",
                                      "chicken"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_csirkepaprikas"]
                     },
                     {
                         "id":  "hu-halaszle",
@@ -134,7 +137,8 @@
                                      "soup",
                                      "white fish"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_halaszle"]
                     },
                     {
                         "id":  "hu-toltott-kaposzta",
@@ -172,7 +176,8 @@
                                      "bake",
                                      "cabbage and pork"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_toltott_kaposzta"]
                     },
                     {
                         "id":  "hu-lecso",
@@ -205,7 +210,8 @@
                                      "stew",
                                      "green pepper and tomato"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_lecso"]
                     },
                     {
                         "id":  "hu-rakott-krumpli",
@@ -239,7 +245,8 @@
                                      "bake",
                                      "potato and egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_rakott_krumpli"]
                     },
                     {
                         "id":  "hu-hortobagyi",
@@ -275,7 +282,8 @@
                                      "pancake",
                                      "pork"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_hortobagyi"]
                     },
                     {
                         "id":  "hu-tokfozelek",
@@ -311,7 +319,8 @@
                                      "stew",
                                      "summer squash"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_tokfozelek"]
                     },
                     {
                         "id":  "hu-borsofozelek",
@@ -347,7 +356,8 @@
                                      "stew",
                                      "green peas"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_borsofozelek"]
                     },
                     {
                         "id":  "hu-nokedli",
@@ -382,7 +392,8 @@
                                      "dumpling",
                                      "flour and egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_nokedli"]
                     },
                     {
                         "id":  "hu-turos-csusza",
@@ -414,7 +425,8 @@
                                      "noodles",
                                      "egg noodles"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_turos_csusza"]
                     },
                     {
                         "id":  "hu-langos",
@@ -453,7 +465,8 @@
                                      "bread",
                                      "yeast dough"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_langos"]
                     },
                     {
                         "id":  "hu-pogacsa",
@@ -489,7 +502,8 @@
                                      "bread",
                                      "pork cracklings"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_pogacsa"]
                     },
                     {
                         "id":  "hu-korozott",
@@ -522,7 +536,8 @@
                                      "spread",
                                      "cottage cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_korozott"]
                     },
                     {
                         "id":  "hu-meggyleves",
@@ -558,7 +573,8 @@
                                      "dessert",
                                      "sour cherries"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_meggyleves"]
                     },
                     {
                         "id":  "hu-paprikaskrumpli",
@@ -591,7 +607,8 @@
                                      "stew",
                                      "potato and sausage"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_paprikaskrumpli"]
                     },
                     {
                         "id":  "hu-rakott-karfiol",
@@ -627,7 +644,8 @@
                                      "bake",
                                      "cauliflower and rice"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_rakott_karfiol"]
                     },
                     {
                         "id":  "hu-szekelykaposzta",
@@ -663,7 +681,8 @@
                                      "stew",
                                      "pork and sauerkraut"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_szekelykaposzta"]
                     },
                     {
                         "id":  "hu-gombapaprikas",
@@ -699,7 +718,8 @@
                                      "stew",
                                      "mushrooms"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_gombapaprikas"]
                     },
                     {
                         "id":  "hu-tojasleves",
@@ -735,7 +755,8 @@
                                      "soup",
                                      "egg"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_tojasleves"]
                     },
                     {
                         "id":  "hu-babgulyas",
@@ -771,7 +792,8 @@
                                      "soup",
                                      "beef and white beans"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_babgulyas"]
                     },
                     {
                         "id":  "hu-vadas",
@@ -807,7 +829,8 @@
                                      "stew",
                                      "beef and root vegetables"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_vadas"]
                     },
                     {
                         "id":  "hu-almas-retes",
@@ -843,7 +866,8 @@
                                      "pastry",
                                      "dessert"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_almas_retes"]
                     },
                     {
                         "id":  "hu-gundel",
@@ -879,7 +903,8 @@
                                      "pancake",
                                      "walnut"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_gundel"]
                     },
                     {
                         "id":  "hu-turogomboc",
@@ -912,7 +937,8 @@
                                      "dumpling",
                                      "cottage cheese"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_turogomboc"]
                     },
                     {
                         "id":  "hu-somloi",
@@ -948,7 +974,8 @@
                                      "dessert",
                                      "sponge and custard"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_somloi"]
                     },
                     {
                         "id":  "hu-dobos",
@@ -983,7 +1010,8 @@
                                      "dessert",
                                      "chocolate sponge"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_dobos"]
                     },
                     {
                         "id":  "hu-makos-guba",
@@ -1018,7 +1046,8 @@
                                      "dessert",
                                      "bread and poppy seed"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_makos_guba"]
                     },
                     {
                         "id":  "hu-aranygaluska",
@@ -1055,7 +1084,8 @@
                                      "bread",
                                      "yeast dough and walnuts"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_hu_aranygaluska"]
                     }
                 ],
     "collections":  [

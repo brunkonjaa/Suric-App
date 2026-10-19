@@ -33,7 +33,8 @@
                                      "curry",
                                      "Punjab"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_chole"]
                     },
                     {
                         "id":  "in-sarson-saag",
@@ -67,7 +68,8 @@
                                      "vegetarian",
                                      "Punjab"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_sarson_saag"]
                     },
                     {
                         "id":  "in-makki-roti",
@@ -98,7 +100,8 @@
                                      "corn",
                                      "Punjab"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_makki_roti"]
                     },
                     {
                         "id":  "in-dal-makhani",
@@ -132,7 +135,8 @@
                                      "curry",
                                      "Punjab"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_dal_makhani"]
                     },
                     {
                         "id":  "in-rajma",
@@ -166,7 +170,8 @@
                                      "curry",
                                      "rice"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_rajma"]
                     },
                     {
                         "id":  "in-palak-paneer",
@@ -200,7 +205,8 @@
                                      "paneer",
                                      "curry"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_palak_paneer"]
                     },
                     {
                         "id":  "in-aloo-paratha",
@@ -233,7 +239,8 @@
                                      "potato",
                                      "Punjab"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_aloo_paratha"]
                     },
                     {
                         "id":  "in-butter-chicken",
@@ -267,7 +274,8 @@
                                      "curry",
                                      "Delhi"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_butter_chicken"]
                     },
                     {
                         "id":  "in-hyderabadi-biryani",
@@ -301,7 +309,8 @@
                                      "vegetables",
                                      "Hyderabad"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_hyderabadi_biryani"]
                     },
                     {
                         "id":  "in-korma",
@@ -369,7 +378,8 @@
                                      "vegetarian",
                                      "North India"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_dal_tadka"]
                     },
                     {
                         "id":  "in-samosa",
@@ -402,7 +412,8 @@
                                      "potato",
                                      "snack"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_samosa"]
                     },
                     {
                         "id":  "in-pakora",
@@ -436,7 +447,8 @@
                                      "vegetables",
                                      "fried"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_pakora"]
                     },
                     {
                         "id":  "in-dosa",
@@ -469,7 +481,8 @@
                                      "lentils",
                                      "Tamil Nadu"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_dosa"]
                     },
                     {
                         "id":  "in-idli",
@@ -498,7 +511,8 @@
                                      "lentils",
                                      "steamed"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_idli"]
                     },
                     {
                         "id":  "in-sambar",
@@ -532,7 +546,8 @@
                                      "vegetables",
                                      "Tamil Nadu"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_sambar"]
                     },
                     {
                         "id":  "in-rasam",
@@ -566,7 +581,8 @@
                                      "tamarind",
                                      "South India"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_rasam"]
                     },
                     {
                         "id":  "in-lemon-rice",
@@ -600,7 +616,8 @@
                                      "lemon",
                                      "Tamil Nadu"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_lemon_rice"]
                     },
                     {
                         "id":  "in-avial",
@@ -634,7 +651,8 @@
                                      "coconut",
                                      "Kerala"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_avial"]
                     },
                     {
                         "id":  "in-fish-curry",
@@ -668,7 +686,8 @@
                                      "coconut",
                                      "Kerala"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_fish_curry"]
                     },
                     {
                         "id":  "in-appam",
@@ -699,7 +718,8 @@
                                      "coconut",
                                      "Kerala"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_appam"]
                     },
                     {
                         "id":  "in-poha",
@@ -733,7 +753,8 @@
                                      "snack",
                                      "Maharashtra"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_poha"]
                     },
                     {
                         "id":  "in-dhokla",
@@ -766,7 +787,8 @@
                                      "steamed",
                                      "Gujarat"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_dhokla"]
                     },
                     {
                         "id":  "in-pav-bhaji",
@@ -801,7 +823,8 @@
                                      "street food",
                                      "Mumbai"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_pav_bhaji"]
                     },
                     {
                         "id":  "in-gujarati-kadhi",
@@ -835,7 +858,8 @@
                                      "curry",
                                      "Gujarat"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_gujarati_kadhi"]
                     },
                     {
                         "id":  "in-shorshe-machh",
@@ -868,7 +892,8 @@
                                      "mustard",
                                      "Bengal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_shorshe_machh"]
                     },
                     {
                         "id":  "in-khichuri",
@@ -902,7 +927,8 @@
                                      "lentils",
                                      "Bengal"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_khichuri"]
                     },
                     {
                         "id":  "in-paneer-tikka",
@@ -936,7 +962,8 @@
                                      "grill",
                                      "North India"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_paneer_tikka"]
                     },
                     {
                         "id":  "in-masala-chai",
@@ -970,7 +997,8 @@
                                      "drink",
                                      "spices"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_masala_chai"]
                     },
                     {
                         "id":  "in-kheer",
@@ -1003,7 +1031,8 @@
                                      "dessert",
                                      "milk"
                                  ],
-                        "revision":  1
+                        "revision":  1,
+                        "imageAssets": ["recipe_in_kheer"]
                     }
                 ],
     "collections":  [
