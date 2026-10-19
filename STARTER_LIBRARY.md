@@ -15,12 +15,12 @@ Items use revision `1`; the general collection shows `17 October 2026` and the R
 | Pottery | `pottery.project`, `pottery.glaze-test`, `pottery.kiln-log` | 3 |
 | Shopping | `shopping.research`, `shopping.comparison` | 2 |
 | Bills | `bills.monthly`, `bills.irregular` | 2 |
-| Retro & Android | `retro.start-here`, `retro.android-version-map`, `retro.android-root-roms`, `retro.android-architecture`, `retro.android-tv`, `retro.shield-overview`, `retro.shield-mirroring`, `retro.whole-home-streaming`, `retro.emulation`, `retro.console-care`, `retro.reverse-engineering`, `retro.ps1-homebrew`, `retro.ps2-homebrew`, `retro.ps3-homebrew`, `retro.ps4-homebrew`, `retro.ps5-homebrew`, `retro.homebrew-catalogues`, `retro.modded-warfare` | 18 |
-| **Total** |  | **46** |
+| Retro & Android | 22 general guides plus 37 API-version entries (`retro.android-version.1-0` through `retro.android-version.17`) | 59 |
+| **Total** |  | **87** |
 
 ## Retro & Android navigation
 
-`RetroLibraryNavigation.kt` groups the 18 stable guide IDs into 9 categories and 24 subcategories. PlayStation has distinct PS1–PS5 entries. Android versions, architecture/development and device modification are separated. Android TV, NVIDIA Shield, emulation, homebrew, reverse engineering, streaming/networking and tools each have populated topic cards. Selecting a topic opens its existing Starter Library article; global offline search also searches these guides. The category cards currently reuse Suric's single general Retro image, so category-specific licensed photography and diagrams remain outstanding.
+`RetroLibraryNavigation.kt` groups the 59 stable guide IDs into 9 categories and 24 subcategories. PlayStation has distinct PS1–PS5 entries, with added OPL storage options and separate PS3 CFW/HEN, PS4 firmware-check and PS5 research-limit guides. Android versions/API levels 1–37 each have an individual page in addition to the overview; architecture/development and device modification are separate. Android TV, NVIDIA Shield, emulation, homebrew, reverse engineering, streaming/networking and tools each have populated topic cards. Selecting a topic opens its Starter Library article; global offline search also searches these guides. The category cards currently reuse Suric's single general Retro image, so category-specific licensed photography and diagrams remain outstanding.
 
 ## Source and safety notes
 

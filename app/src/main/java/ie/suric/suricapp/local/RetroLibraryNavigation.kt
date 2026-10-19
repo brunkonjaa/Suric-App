@@ -17,14 +17,14 @@ object RetroLibraryNavigation {
     val categories = listOf(
         RetroLibraryCategory("PlayStation", "Console generations, homebrew and preservation", listOf(
             RetroLibrarySubcategory("PlayStation 1", "PS1 hardware and homebrew", listOf("retro.ps1-homebrew")),
-            RetroLibrarySubcategory("PlayStation 2", "PS2 hardware and OPL", listOf("retro.ps2-homebrew")),
-            RetroLibrarySubcategory("PlayStation 3", "HEN, CFW and model checks", listOf("retro.ps3-homebrew")),
-            RetroLibrarySubcategory("PlayStation 4", "Firmware-aware homebrew", listOf("retro.ps4-homebrew")),
-            RetroLibrarySubcategory("PlayStation 5", "Current research and limits", listOf("retro.ps5-homebrew")),
+            RetroLibrarySubcategory("PlayStation 2", "PS2 hardware, OPL and storage", listOf("retro.ps2-homebrew", "retro.ps2-loading-options")),
+            RetroLibrarySubcategory("PlayStation 3", "HEN, CFW and model checks", listOf("retro.ps3-homebrew", "retro.ps3-cfw-hen-check")),
+            RetroLibrarySubcategory("PlayStation 4", "Firmware-aware homebrew", listOf("retro.ps4-homebrew", "retro.ps4-firmware-check")),
+            RetroLibrarySubcategory("PlayStation 5", "Current research and limits", listOf("retro.ps5-homebrew", "retro.ps5-research-limits")),
             RetroLibrarySubcategory("Hardware care", "Identification and safe troubleshooting", listOf("retro.console-care"))
         )),
         RetroLibraryCategory("Android", "Platform versions, device changes and development", listOf(
-            RetroLibrarySubcategory("Versions and API levels", "Android 1.0 through the current platform", listOf("retro.android-version-map")),
+            RetroLibrarySubcategory("Versions and API levels", "37 distinct Android API releases, plus the current overview", StarterLibrary.androidVersionGuideIds() + "retro.android-version-map"),
             RetroLibrarySubcategory("Architecture and development", "System layers, apps and debugging", listOf("retro.android-architecture")),
             RetroLibrarySubcategory("Bootloader, root and ROMs", "Device-specific modification basics", listOf("retro.android-root-roms")),
             RetroLibrarySubcategory("Getting started", "Identify your exact phone or tablet", listOf("retro.start-here"))
